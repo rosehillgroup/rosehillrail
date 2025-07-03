@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anti-Trespass Panels - Network Rail approved safety solution with conical stud design that reduces unauthorized track access by up to 78% while enhancing rail network security.">
+    <title>Anti-Trespass Panels - Rail Network Security Solutions | Rosehill Rail</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1a365d, #2d4a71);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 600;
+            font-family: 'Source Sans Pro', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 6px;
+        }
+
+        .nav-menu a:hover {
+            background: rgba(255, 107, 53, 0.2);
+            color: #ff6b35;
+        }
+
+        .nav-menu a.active {
+            background: rgba(255, 107, 53, 0.2);
+            color: #ff6b35;
+            font-weight: 600;
+        }
+
+        .contact-btn {
+            background: #ff6b35;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .contact-btn:hover {
+            background: #e55a2b !important;
+            transform: translateY(-2px);
+        }
+
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-nav-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #1a365d;
+            flex-direction: column;
+            padding: 20px;
+            gap: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .mobile-nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-nav-menu a:hover {
+            background: rgba(255, 107, 53, 0.2);
+            color: #ff6b35;
+        }
+
+        /* Mega Menu */
+        .nav-item {
+            position: relative;
+        }
+
+        .mega-menu {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            padding: 30px;
+            width: 320px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            margin-top: 10px;
+        }
+
+        .nav-item:hover .mega-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .mega-menu-content {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .mega-menu-section h4 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f0f4f8;
+        }
+
+        .mega-menu-section .section-icon {
+            width: 24px;
+            height: 24px;
+            background: #ff6b35;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+        }
+
+        .mega-menu-links {
+            list-style: none;
+        }
+
+        .mega-menu-links li {
+            margin-bottom: 6px;
+        }
+
+        .mega-menu-links a {
+            color: #666;
+            text-decoration: none;
+            padding: 8px 12px;
+            display: block;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            border-radius: 6px;
+        }
+
+        .mega-menu-links a:hover {
+            color: #ff6b35;
+            background: #fff5f2;
+            transform: translateX(4px);
+        }
+
+        .mega-menu::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid white;
+        }
+        
+        /* Product Hero */
+        .product-hero {
+            background: linear-gradient(135deg, #1a365d, #2d4a71);
+            color: white;
+            padding: 120px 0 80px;
+            margin-top: 70px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('ATP Images/Anti-Trespass Panels 4 - Platform Ends - Steeton & Silsdon.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.2;
+            z-index: 1;
+        }
+
+        .product-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, 
+                rgba(26, 54, 93, 0.95) 0%, 
+                rgba(45, 74, 113, 0.85) 50%,
+                rgba(26, 54, 93, 0.95) 100%);
+            z-index: 2;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero-text .subtitle {
+            font-size: 1.4rem;
+            opacity: 0.95;
+            margin-bottom: 30px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #ff6b35;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-features {
+            list-style: none;
+        }
+
+        .hero-features li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+
+        .hero-features .check {
+            background: #ff6b35;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        /* Security Features Section */
+        .security-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-family: 'Overpass', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 600;
+            color: #1a365d;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .security-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .security-text h3 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 25px;
+        }
+
+        .security-text p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .security-highlight {
+            background: #e8f4fd;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid #ff6b35;
+            margin-top: 30px;
+        }
+
+        .security-highlight h4 {
+            font-family: 'Overpass', sans-serif;
+            color: #1a365d;
+            margin-bottom: 10px;
+        }
+
+        .panel-variations {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 12px;
+        }
+
+        .variation-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .variation-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #ff6b35;
+        }
+
+        .variation-title {
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 8px;
+        }
+
+        .variation-desc {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Effectiveness Stats */
+        .stats-section {
+            padding: 80px 0;
+            background: #1a365d;
+            color: white;
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .stat-item {
+            padding: 30px 20px;
+        }
+
+        .stat-number {
+            font-family: 'Overpass', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #ff6b35;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Key Benefits */
+        .benefits-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .benefit-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: #ff6b35;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        .benefit-card:hover::before {
+            transform: translateX(0);
+        }
+
+        .benefit-icon {
+            width: 80px;
+            height: 80px;
+            background: #1a365d;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            margin: 0 auto 25px;
+        }
+
+        .benefit-title {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 15px;
+        }
+
+        .benefit-desc {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Technical Specs */
+        .specs-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .specs-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .specs-text h2 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 30px;
+        }
+
+        .specs-text p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .specs-table {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .specs-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .specs-table th {
+            background: #1a365d;
+            color: white;
+            padding: 20px;
+            text-align: left;
+            font-family: 'Overpass', sans-serif;
+            font-weight: 600;
+        }
+
+        .specs-table td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #e8f4fd;
+        }
+
+        .specs-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .specs-table td:first-child {
+            font-weight: 600;
+            color: #1a365d;
+            background: #f8f9fa;
+        }
+
+        /* Installation Gallery */
+        .gallery-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            padding: 30px 20px 20px;
+            font-weight: 600;
+        }
+
+        /* Applications Section */
+        .applications-section {
+            padding: 80px 0;
+            background: #1a365d;
+            color: white;
+        }
+
+        .applications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .application-card {
+            background: rgba(255,255,255,0.1);
+            padding: 40px 30px;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .application-card:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-5px);
+        }
+
+        .application-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .application-title {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .application-desc {
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 0;
+            background: white;
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-title {
+            font-family: 'Overpass', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 20px;
+        }
+
+        .cta-text {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: #ff6b35;
+            color: white;
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: #e55a2b;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+        }
+
+        .btn-secondary {
+            background: rgba(26, 54, 93, 0.1);
+            color: #1a365d;
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 2px solid #1a365d;
+        }
+
+        .btn-secondary:hover {
+            background: #1a365d;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a365d;
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #ff6b35;
+        }
+
+        .footer-section p,
+        .footer-section li {
+            opacity: 0.9;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #ff6b35;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+            text-align: center;
+            opacity: 0.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            .mobile-nav-menu.active {
+                display: flex;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .security-content,
+            .specs-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .benefits-grid,
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="rosehill_rail_logo.png" alt="Rosehill Rail" style="height: 60px;">
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="nav-item">
+                        <a href="products.html">Products</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-section">
+                                    <h4>
+                                        Crossing Systems
+                                    </h4>
+                                    <ul class="mega-menu-links">
+                                        <li><a href="connect.html">CONNECT System</a></li>
+                                        <li><a href="link.html">LINK System</a></li>
+                                        <li><a href="interlocking.html">Interlocking RRAP</a></li>
+                                        <li><a href="baseplate.html">Baseplate System</a></li>
+                                        <li><a href="titan.html">TITAN Heavy Duty</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-section">
+                                    <h4>
+                                        Safety Solutions
+                                    </h4>
+                                    <ul class="mega-menu-links">
+                                        <li><a href="antitrespass.html" class="active">Anti-Trespass Panels</a></li>
+                                        <li><a href="walkway.html">Walkway Panels</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-section">
+                                    <h4>
+                                        Edge Solutions
+                                    </h4>
+                                    <ul class="mega-menu-links">
+                                        <li><a href="edgebeams.html">Rubber Edge Beams</a></li>
+                                        <li><a href="edgebeams.html">Steel & Plastic Beams</a></li>
+                                        <li><a href="accessories.html">Accessories & Spares</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="contact-btn">Get in Touch</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="mobile-nav-menu" id="mobile-menu">
+                    <a href="index.html">Home</a>
+                    <a href="products.html" class="active">Products</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html" class="contact-btn">Get in Touch</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Product Hero -->
+    <section class="product-hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="badge">NETWORK RAIL APPROVED</div>
+                <h1>Anti-Trespass Panels</h1>
+                <p class="subtitle">Advanced safety solution with conical stud design that reduces unauthorized track access by up to 78% while enhancing rail network security.</p>
+                <ul class="hero-features">
+                    <li><span class="check">✓</span>Up to 78% reduction in trespassing</li>
+                    <li><span class="check">✓</span>Three panel variations</li>
+                    <li><span class="check">✓</span>100% recycled rubber</li>
+                    <li><span class="check">✓</span>Complete fixing kit supplied</li>
+                </ul>
+            </div>
+            <div class="hero-image">
+                <img src="ATP Images/Anti-Trespass Panels 1 - Nottingham Express Transit - ATP in track.jpg" alt="Anti-Trespass Panels installation at Nottingham Express Transit">
+            </div>
+        </div>
+    </section>
+
+    <!-- Effectiveness Stats -->
+    <section class="stats-section">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Proven Security Performance</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">78%</div>
+                    <div class="stat-label">Reduction in Trespassing Incidents</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Network Rail Approved Variations</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Recycled Rubber Construction</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Specific Tools Required</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Features Section -->
+    <section class="security-section">
+        <div class="container">
+            <h2 class="section-title">Enhanced Deterrence Technology</h2>
+            <div class="security-content">
+                <div class="security-text">
+                    <h3>Conical Stud Design</h3>
+                    <p>Our unique anti-trespass panels feature a sophisticated conical stud design that provides enhanced deterrence while reducing installation time compared to traditional security solutions.</p>
+                    <p>Manufactured from 100% recycled rubber, these panels provide an environmentally responsible solution for railway safety while delivering proven results in reducing unauthorized track access.</p>
+                    <div class="security-highlight">
+                        <h4>Network Rail Approved:</h4>
+                        <p>Three distinct panel variations approved by Network Rail ensure compliance and effectiveness across different railway infrastructure requirements.</p>
+                    </div>
+                </div>
+                <div class="panel-variations">
+                    <h4 style="font-family: 'Overpass', sans-serif; color: #1a365d; margin-bottom: 25px;">Panel Variations</h4>
+                    <div class="variation-grid">
+                        <div class="variation-item">
+                            <div class="variation-title">Double Flange</div>
+                            <div class="variation-desc">For four-foot gauge applications (1490mm × 1300mm × 147mm, 116kg)</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-title">Single Flange</div>
+                            <div class="variation-desc">For outside four-foot applications (1487mm × 1300mm × 147mm, 110kg)</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-title">Flangeless</div>
+                            <div class="variation-desc">Full-width for platform applications (1484mm × 1300mm × 147mm, 98kg)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Benefits -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Anti-Trespass Panels?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32" fill="white"><path d="M38,16.1709v1.99902c0,3.81348,2.4541,7.16406,6,8.24316,3.5459-1.0791,6-4.42969,6-8.24316v-1.99902c-2.12988-.39844-4.17773-1.22168-6-2.41211-1.82129,1.19043-3.86914,2.01367-6,2.41211ZM47.33496,17.69922c.39062.39062.39062,1.02344,0,1.41406l-3.50391,3.50391c-.38397.38391-1.03119.38281-1.41406,0l-1.75195-1.75195c-.39062-.39062-.39062-1.02344,0-1.41406s1.02344-.39062,1.41406,0l1.04492,1.04492,2.79688-2.79688c.39062-.39062,1.02344-.39062,1.41406,0Z"/><path d="M44,7c-7.16797,0-13,5.83154-13,13s5.83203,13,13,13,13-5.83154,13-13-5.83203-13-13-13ZM52,18.16992c0,4.80859-3.18262,9.02344-7.7403,10.24902-.17047.04504-.34918.04578-.51947,0-4.55762-1.22559-7.74023-5.44043-7.74023-10.24902v-2.85156c0-.50195.37207-.92578.86914-.99121,2.34961-.30957,4.61328-1.20605,6.54785-2.59277.34961-.25.81738-.25,1.16504,0,1.93652,1.38672,4.20117,2.2832,6.54883,2.59277.49707.06543.86914.48926.86914.99121v2.85156Z"/><polygon points="19 45.7207 7 41.72095 7 43.61267 19 47.61279 19 45.7207"/><polygon points="37 47.61279 49 43.61267 49 41.72095 37 45.7207 37 47.61279"/><path d="M29.01001,20.29999l-.67999-.23999c-.21002-.08002-.45001-.08002-.66003,0l-19.66455,6.88257,19.99457,6.99786,6.55707-2.29486c-3.31592-2.69434-5.46271-6.77319-5.54706-11.34558Z"/><path d="M7,35.61261l13.31641,4.43866c.52344.1748.80664.74115.63184,1.26508-.16608.49786-.73975.80731-1.26465.63239l-12.68359-4.22772v1.8916l13.31641,4.43866c.4082.13623.68359.51807.68359.94873v3.99988c0,.67041-.68701,1.15668-1.31641.94885l-12.68359-4.22772v3.27899c0,.41998.27002.79999.66998.94l19.33002,7.06v-21.29065l-20-6.99988v6.90314Z"/><path d="M36.62225,33.04163l-7.62225,2.66772v21.29065l19.33002-7.06c.39996-.14001.66998-.52002.66998-.94v-3.27899s-12.68359,4.22772-12.68365,4.22772c-.63953.21112-1.31635-.27155-1.31635-.94873v-4c0-.43066.27539-.8125.68359-.94873l13.31641-4.43866v-1.8916s-12.63641,4.21198-12.68347,4.22766c-.49579.16528-1.08893-.10474-1.26477-.63226-.1748-.52393.1084-1.09033.63184-1.26514l13.31641-4.43866v-1.4726c-1.56.56-3.23999.85999-5,.85999-2.68256,0-5.19629-.71912-7.37775-1.95837Z"/></svg></div>
+                    <h3 class="benefit-title">Enhanced Security</h3>
+                    <p class="benefit-desc">Up to 78% reduction in trespassing incidents significantly improves network safety and passenger security.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32" fill="white"><path d="M25,49c-4.63367,0-8.69751-2.44446-11-6.1037v14.1037h22v-14.1037c-2.30249,3.65924-6.36633,6.1037-11,6.1037Z"/><path d="M25,25c-6.07001,0-11,4.92999-11,11s4.92999,11,11,11,11-4.92999,11-11-4.92999-11-11-11ZM29.89001,33.45001l-4.99994,9.99989c-.18909.37819-.68021.6302-1.12005.52007-.45001-.09998-.77002-.51001-.77002-.96997v-6h-2c-.31,0-.59998-.14001-.78998-.38-.19-.25-.25-.56-.17999-.85999l2-8c.10999-.45001.50995-.76001.96997-.76001h4c.29999,0,.58002.13.77002.37.19.22998.26996.52997.20996.83002l-.76001,3.79999h1.78003c.34998,0,.66998.17999.84998.46997.18005.29999.20001.67004.04004.98004Z"/><path d="M25.22656,33.63379c-.18994-.23145-.26611-.53613-.20703-.83008l.76074-3.80371h-1.99951l-1.5,6h1.71924c.55225,0,1,.44727,1,1v2.76367l2.38184-4.76367h-1.38184c-.2998,0-.5835-.13477-.77344-.36621Z"/><path d="M7,54c0,1.6543,1.3457,3,3,3h2V17h-5v37Z"/><path d="M14,29.10345c2.30249-3.65924,6.36633-6.10345,11-6.10345s8.69751,2.44421,11,6.10345v-12.10345H14v12.10345Z"/><path d="M43,10c0-1.6543-1.3457-3-3-3H10c-1.6543,0-3,1.3457-3,3v5h36v-5ZM12,12c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1ZM34,12c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1ZM38,12c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1Z"/><path d="M56,35h-1v-2c0-.55225-.44727-1-1-1s-1,.44775-1,1v2h-2v-2c0-.55225-.44727-1-1-1s-1,.44775-1,1v2h-1c-.55273,0-1,.44727-1,1v4c0,2.41443,1.7207,4.43427,4,4.89893v2.10107c0,1.6543-1.3457,3-3,3h-5V17h-5v40h2c1.6543,0,3-1.3457,3-3v-2h5c2.75684,0,5-2.24316,5-5v-2.10107c2.2793-.46466,4-2.4845,4-4.89893v-4c0-.55273-.44727-1-1-1Z"/></svg></div>
+                    <h3 class="benefit-title">Quick Installation</h3>
+                    <p class="benefit-desc">Reduced installation time and labour costs with complete fixing kit supplied and no specific tools required.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="32" height="32" fill="white"><path d="M42.42535,29.11102c-.43408-.64319-.64319-1.42383-.58911-2.1972.09418-1.34698-.67175-2.67322-1.88354-3.26331-.69727-.33984-1.26874-.91132-1.60858-1.60852-.59485-1.22034-1.91522-1.96893-3.26331-1.88367-.76801.05408-1.55359-.15503-2.19678-.58905-1.11511-.75183-2.65253-.75183-3.76849,0-.64276.43402-1.42468.64313-2.19629.58905-1.35339-.09485-2.66937.66669-3.26331,1.88361-.33984.69727-.91138,1.26868-1.60767,1.60852-1.22131.59607-1.97925,1.90686-1.88452,3.26331.05408.77344-.15503,1.55402-.58911,2.1972-.7597,1.12579-.75903,2.6413,0,3.76715.43408.64319.64319,1.42377.58911,2.1972-.09479,1.35565.66333,2.66772,1.88354,3.26331.69727.33984,1.2688.91132,1.60864,1.60858.59497,1.2207,1.90851,1.97852,3.26324,1.88361.76709-.05316,1.55353.15503,2.19672.58905,1.1217.75702,2.64874.75446,3.76855.00006.64276-.43408,1.42377-.64227,2.19629-.58911,1.35291.09308,2.66919-.66638,3.26331-1.88354.33984-.69727.91132-1.2688,1.60858-1.60864,1.21765-.59351,1.97784-1.91376,1.88361-3.26324-.05408-.77344.15503-1.55408.58911-2.19727.75995-1.1261.75867-2.64166,0-3.76709ZM31,38.99414c-4.41113,0-8-3.58887-8-8s3.58887-8,8-8,8,3.58887,8,8-3.58887,8-8,8Z"/><path d="M31,24.99414c-3.30859,0-6,2.69141-6,6s2.69141,6,6,6,6-2.69141,6-6-2.69141-6-6-6ZM34.20703,30.20117l-3,3c-.38745.38739-1.02753.38654-1.41406,0l-2-2c-.39062-.39062-.39062-1.02344,0-1.41406s1.02344-.39062,1.41406,0l1.29297,1.29297,2.29297-2.29297c.39062-.39062,1.02344-.39062,1.41406,0s.39062,1.02344,0,1.41406Z"/><path d="M21.16998,21.84998c.29999-.14001.54004-.39001.69-.67999.47003-.96997,1.21002-1.76001,2.14001-2.29999.94135-.54657,2.07379-.80878,3.15997-.70001.30005,0,.59003-.09003.84003-.26001.31311-.2099.65179-.37103,1-.50873v-3.92078c-.97949-.65674-1.82373-1.50098-2.48047-2.48047h-13.03906c-.65674.97949-1.50098,1.82373-2.48047,2.48047v6.51953c0,2.05872,3.06848,5.4173,6.72357,8.33331.06561-.1145.12219-.23322.19641-.34332.17999-.27002.27002-.60999.25-.94-.07996-1.07001.17004-2.13.71002-3.06.52997-.92999,1.33002-1.66998,2.28998-2.14001Z"/><path d="M18.16998,34.94c.02002-.34003-.07001-.67004-.25-.94-.59998-.89001-.91998-1.92999-.91998-3.01001,0-.22168.02209-.44073.04919-.65875-3.1153-2.42273-8.04919-6.81116-8.04919-10.33124v-7.07373c0-.35645.18994-.68652.49854-.86523,1.06152-.61523,1.94727-1.50098,2.5625-2.5625.17871-.30859.50879-.49854.86523-.49854h14.14746c.35645,0,.68652.18994.86523.49854.61523,1.06152,1.50098,1.94727,2.5625,2.5625.30859.17871.49854.50879.49854.86523v4.08374c1.09003,0,2.12.31,3,.89996.25.16998.53998.26001.84003.26001.05341-.00446.10638-.01001.15997-.01001v-8.15997c0-.54999-.45001-1-1-1-1.65002,0-3-1.35004-3-3,0-.54999-.45001-1-1-1H10c-.54999,0-1,.45001-1,1,0,1.64996-1.34998,3-3,3-.54999,0-1,.45001-1,1v10c0,6.83997,9.65002,13.73999,13.21002,16.04999-.06-.37-.07001-.73999-.04004-1.10999Z"/></svg></div>
+                    <h3 class="benefit-title">Network Rail Approved</h3>
+                    <p class="benefit-desc">Three approved panel variations ensure compliance and effectiveness across different railway infrastructure needs.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32" fill="white"><path d="M32,20.99982c4.0293,0,7.30664-3.27734,7.30664-7.30615,0-2.80908-1.63965-5.39893-4.17578-6.59814-.31055-.14551-.67285-.12354-.96289.05957-.28906.18311-.46484.50195-.46484.84473v5.15869l-1.70312,1.13525-1.70312-1.13525v-5.15869c0-.34277-.17578-.66162-.46484-.84473-.29102-.18311-.65234-.20508-.96289-.05957-2.53613,1.19922-4.17578,3.78906-4.17578,6.59814,0,3.97627,3.29205,7.30616,7.30664,7.30616Z"/><path d="M32,28.99982c-3.90024,0-7.30664,3.37843-7.30664,7.30615,0,2.80908,1.63965,5.39893,4.17578,6.59814.31055.146.67188.12354.96289-.05957.28906-.18311.46484-.50195.46484-.84473v-5.15869l1.70312-1.13525,1.70312,1.13525v5.15869c0,.34264.17565.66137.46451.84451.25865.16398.65187.2065.96323.05978,2.53613-1.19922,4.17578-3.78906,4.17578-6.59814,0-4.02879-3.27732-7.30613-7.30664-7.30615Z"/><path d="M27,21.54981v6.90002c1.44-.93005,3.15997-1.45001,5-1.45001s3.54999.52997,5,1.45996v-6.91998c-1.45001.92999-3.15997,1.46002-5,1.46002s-3.56-.52002-5-1.45001Z"/><path d="M52.60699,49.06183c.01031-.02039.01886-.04163.02911-.06201h-12.63611c-1.6543,0-3,1.3457-3,3v2c0,1.6543,1.3457,3,3,3h12c1.6543,0,3-1.3457,3-3v-2c0-1.44635-1.02881-2.65656-2.39301-2.93799Z"/><path d="M53.5,17.99982c-1.90747,0-3.5,1.5979-3.5,3.5v7.95508c.3927.13623.7749.3114,1.13965.53027,2.68457,1.61133,3.69043,5.06592,2.28906,7.86475,0,0-2.7381,5.4776-2.74512,5.49164-.24408.48828-.85522.69061-1.3418.44733-.49414-.24707-.69434-.84766-.44727-1.3418l2.74512-5.49219c.93652-1.87012.26465-4.17822-1.5293-5.25488-1.8587-1.11768-4.41345-.47192-5.52539,1.38135-.00018.00024-3.87207,6.45361-3.87207,6.45361-.4668.77734-.71289,1.66699-.71289,2.57275v4.89209h13.57428c2.23981-5.12378,3.42572-10.68457,3.42572-16.2998v-9.2002c0-1.92969-1.57025-3.5-3.5-3.5Z"/><path d="M24,48.99982h-12.63611c.01025.02039.0188.04163.02911.06201-1.3642.28143-2.39301,1.49164-2.39301,2.93799v2c0,1.6543,1.3457,3,3,3h12c1.6543,0,3-1.3457,3-3v-2c0-1.6543-1.3457-3-3-3Z"/><path d="M24,46.99982v-4.89209c0-.90576-.24609-1.79541-.71289-2.57275,0,0-3.87189-6.45337-3.87207-6.45361-1.11194-1.85327-3.66669-2.49902-5.52539-1.38135-1.79395,1.07666-2.46582,3.38477-1.5293,5.25488l2.74512,5.49219c.24707.49414.04688,1.09473-.44727,1.3418-.48657.24329-1.09772.04095-1.3418-.44733-.00702-.01404-2.74512-5.49164-2.74512-5.49164-1.40137-2.79883-.39551-6.25342,2.28906-7.86475.36475-.21887.74695-.39404,1.13965-.53027v-7.95508c0-1.9021-1.59253-3.5-3.5-3.5-1.92975,0-3.5,1.57031-3.5,3.5v9.2002c0,5.61523,1.18591,11.17603,3.42572,16.2998h13.57428Z"/></svg></div>
+                    <h3 class="benefit-title">Environmentally Sustainable</h3>
+                    <p class="benefit-desc">Manufactured from 100% recycled rubber providing an environmentally responsible safety solution.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="32" height="32" fill="white"><path d="M13.6507,13.84473c.57109-.00006,1.04712-.48181,1.01597-1.05566-.04466-.815-.33882-4.94684-1.73588-6.32147-1.53715-1.51453-4.2185-1.51459-5.7557-.00006-1.56727,1.54419-1.56629,4.12378,0,5.66699,1.39706,1.37561,5.59375,1.66522,6.42094,1.70923.01833.00098.03617.00098.05468.00098Z"/><path d="M40.82505,6.46759c-1.53715-1.51459-4.2185-1.51459-5.7557,0-1.397,1.37457-1.69116,5.50586-1.73588,6.32129-.03165.57635.44475,1.05585,1.01597,1.05585.01839,0,.03678,0,.05468-.00098.82719-.04401,5.02382-.33362,6.42094-1.70923,1.56678-1.54266,1.56641-4.12561,0-5.66693Z"/><path d="M11.79007,26.18927l1.6137-1.58893c.79292-.78076,2.08466-.78076,2.87764,0l1.6137,1.58893,1.61364-1.58893c.79298-.78076,2.08472-.78076,2.87764,0l1.6137,1.58893,1.6137-1.58893c.79292-.78076,2.08466-.78076,2.87764,0l1.61364,1.58893,1.6137-1.58893c.79298-.78076,2.08472-.78076,2.87764,0l1.6137,1.58893.38543-.37939c-1.66868-5.64111-6.5105-10.71948-12.59543-10.71948s-10.92675,5.07837-12.59543,10.71948l.38543.37939Z"/><path d="M21.96508,36.05841c0,1.10461.91266,2.00378,2.03499,2.00378s2.03499-.89917,2.03499-2.00378c0-.63892-.9564-2.13-2.03499-3.45868-1.07859,1.32867-2.03499,2.81976-2.03499,3.45868Z"/><path d="M36.21007,28.19202c-.52118,0-1.04236-.19568-1.43879-.58606l-1.6137-1.58893-1.6137,1.58893c-.79292.78076-2.08472.78076-2.87764,0l-1.6137-1.58893-1.6137,1.58893c-.79292.78076-2.08466.78076-2.87758,0l-1.6137-1.58893-1.6137,1.58893c-.79292.78076-2.08472.78076-2.87764,0l-1.6137-1.58893-1.6137,1.58893c-.62033.61084-1.54332.73676-2.29653.39178-.09512.6618-.15976,1.32336-.15976,1.97772,0,7.18188,5.93373,13.02454,13.2275,13.02454s13.2275-5.84265,13.2275-13.02454c0-.6543-.06457-1.3158-.1597-1.97754-.27186.12463-.56352.19409-.8578.19409ZM14.84255,32.05084c-.56193,0-1.01749-.44855-1.01749-1.00189s.45557-1.00183,1.01749-1.00183c.56199,0,1.01749.44849,1.01749,1.00183s-.45551,1.00189-1.01749,1.00189ZM24.00007,40.06592c-2.24417,0-4.06998-1.7973-4.06998-4.00751,0-1.94507,2.75936-5.07202,3.3128-5.67865.38555-.42267,1.12881-.42267,1.51436,0,.55344.60663,3.3128,3.73358,3.3128,5.67865,0,2.21021-1.82581,4.00751-4.06998,4.00751ZM31.12259,35.05652c-.56199,0-1.01756-.44861-1.01756-1.00189,0-.55334.45557-1.00189,1.01756-1.00189.56193,0,1.01749.44855,1.01749,1.00189,0,.55328-.45557,1.00189-1.01749,1.00189Z"/><path d="M20.31858,9.00751h7.36299s1.29797-2.55615,1.2987-2.55756c.32532-.64069-.16214-1.44995-.91022-1.44995h-8.13996c-.73476,0-1.248.78479-.91022,1.44995l1.2987,2.55756Z"/><path d="M17.79332,14.68817c1.87218-1.0119,3.96826-1.60297,6.20675-1.60297s4.33457.59106,6.20675,1.60297c.54947-.36066.91571-.97174.91578-1.67303,0-1.10199-.9426-2.00385-2.03505-2.00385h-10.17495c-1.11927,0-2.03505.90167-2.03505,2.00378,0,.70129.36631,1.31244.91578,1.6731Z"/></svg></div>
+                    <h3 class="benefit-title">Self-Draining Design</h3>
+                    <p class="benefit-desc">Self-draining configuration prevents water accumulation and reduces maintenance requirements over time.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32" fill="white"><path d="M25,49c-4.63367,0-8.69751-2.44446-11-6.1037v14.1037h22v-14.1037c-2.30249,3.65924-6.36633,6.1037-11,6.1037Z"/><path d="M25,25c-6.07001,0-11,4.92999-11,11s4.92999,11,11,11,11-4.92999,11-11-4.92999-11-11-11ZM29.89001,33.45001l-4.99994,9.99989c-.18909.37819-.68021.6302-1.12005.52007-.45001-.09998-.77002-.51001-.77002-.96997v-6h-2c-.31,0-.59998-.14001-.78998-.38-.19-.25-.25-.56-.17999-.85999l2-8c.10999-.45001.50995-.76001.96997-.76001h4c.29999,0,.58002.13.77002.37.19.22998.26996.52997.20996.83002l-.76001,3.79999h1.78003c.34998,0,.66998.17999.84998.46997.18005.29999.20001.67004.04004.98004Z"/><path d="M25.22656,33.63379c-.18994-.23145-.26611-.53613-.20703-.83008l.76074-3.80371h-1.99951l-1.5,6h1.71924c.55225,0,1,.44727,1,1v2.76367l2.38184-4.76367h-1.38184c-.2998,0-.5835-.13477-.77344-.36621Z"/><path d="M7,54c0,1.6543,1.3457,3,3,3h2V17h-5v37Z"/><path d="M14,29.10345c2.30249-3.65924,6.36633-6.10345,11-6.10345s8.69751,2.44421,11,6.10345v-12.10345H14v12.10345Z"/><path d="M43,10c0-1.6543-1.3457-3-3-3H10c-1.6543,0-3,1.3457-3,3v5h36v-5ZM12,12c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1ZM34,12c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1ZM38,12c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1Z"/><path d="M56,35h-1v-2c0-.55225-.44727-1-1-1s-1,.44775-1,1v2h-2v-2c0-.55225-.44727-1-1-1s-1,.44775-1,1v2h-1c-.55273,0-1,.44727-1,1v4c0,2.41443,1.7207,4.43427,4,4.89893v2.10107c0,1.6543-1.3457,3-3,3h-5V17h-5v40h2c1.6543,0,3-1.3457,3-3v-2h5c2.75684,0,5-2.24316,5-5v-2.10107c2.2793-.46466,4-2.4845,4-4.89893v-4c0-.55273-.44727-1-1-1Z"/></svg></div>
+                    <h3 class="benefit-title">Lower Whole-Life Costs</h3>
+                    <p class="benefit-desc">Minimized track possession time and simplified maintenance requirements reduce total cost of ownership.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="specs-section">
+        <div class="container">
+            <div class="specs-content">
+                <div class="specs-text">
+                    <h2>Technical Specifications</h2>
+                    <p>Anti-Trespass Panels are engineered to provide maximum deterrent effect while maintaining ease of installation and environmental sustainability. The modular construction allows for flexible deployment across various railway environments.</p>
+                    <p>Each panel features conical stud design for enhanced deterrence and is manufactured from 100% recycled rubber with self-draining configuration to minimize maintenance requirements.</p>
+                </div>
+                <div class="specs-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Anti-Trespass Panel Specifications</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Design Type</td>
+                                <td>Conical stud design</td>
+                            </tr>
+                            <tr>
+                                <td>Construction</td>
+                                <td>Modular construction system</td>
+                            </tr>
+                            <tr>
+                                <td>Material Composition</td>
+                                <td>100% recycled rubber</td>
+                            </tr>
+                            <tr>
+                                <td>Approval Status</td>
+                                <td>Network Rail approved design</td>
+                            </tr>
+                            <tr>
+                                <td>Fixing Kit</td>
+                                <td>Complete fixing kit supplied</td>
+                            </tr>
+                            <tr>
+                                <td>Drainage</td>
+                                <td>Self-draining configuration</td>
+                            </tr>
+                            <tr>
+                                <td>Panel Variations</td>
+                                <td>Double flange, single flange, flangeless</td>
+                            </tr>
+                            <tr>
+                                <td>Standard Dimensions</td>
+                                <td>~1485mm × 1300mm × 147mm</td>
+                            </tr>
+                            <tr>
+                                <td>Weight Range</td>
+                                <td>98kg - 116kg (varies by type)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Gallery -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Installation Examples</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="ATP Images/Anti-Trespass Panels 2 - Nottingham Express Transit -  ATP on concrete.jpg" alt="Anti-Trespass Panels on concrete at Nottingham Express Transit">
+                    <div class="gallery-caption">Nottingham Express Transit</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="ATP Images/Anti-Trespass Panels 5 - Platform Ends - Steeton & Silsdon.jpg" alt="Platform end installation at Steeton & Silsdon">
+                    <div class="gallery-caption">Platform End Installation</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="ATP Images/Anti-Trespass Panels 7 - Fitting Anti-Trespass Panels.jpg" alt="Fitting Anti-Trespass Panels process">
+                    <div class="gallery-caption">Installation Process</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="ATP Images/Anti-Trespass Panels 8 - In-track.jpg" alt="In-track Anti-Trespass Panel installation">
+                    <div class="gallery-caption">In-Track Installation</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="ATP Images/Anti-Trespass Panels 6 - Rosehill ATP Lifting Hooks.jpg" alt="ATP lifting hooks installation detail">
+                    <div class="gallery-caption">Lifting Hooks Detail</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="ATP Images/Anti-Trespass Panels 3 - Nottingham Express Transit -  ATP in track.jpg" alt="ATP in track configuration">
+                    <div class="gallery-caption">Track Configuration</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications -->
+    <section class="applications-section">
+        <div class="container">
+            <h2 class="section-title">Security Applications</h2>
+            <div class="applications-grid">
+                <div class="application-card">
+                    <div class="application-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48" fill="white"><path d="M32,7c-11.5791,0-21,9.42041-21,21v28c0,.55225.44727,1,1,1h4c.55273,0,1-.44775,1-1v-28c0-8.271,6.72852-15,15-15s15,6.729,15,15v28c0,.55225.44727,1,1,1h4c.55273,0,1-.44775,1-1v-28c0-11.57959-9.4209-21-21-21Z"/><polygon points="25 32.58594 28.41406 36 31 36 31 27 25 27 25 32.58594"/><rect x="33" y="42" width="6" height="2"/><rect x="25" y="42" width="6" height="2"/><polygon points="33 36 35.58594 36 39 32.58594 39 27 33 27 33 36"/><path d="M42,21h-20c-1.6543,0-3,1.3457-3,3v23c0,1.6543,1.3457,3,3,3h2.27692l-3.14508,5.50391c-.27441.47948-.10743,1.09029.37202,1.36423.47726.27269,1.09258.10383,1.36431-.37204l1.42633-2.49609h15.41101l1.42633,2.49609c.25708.4499.87747.65045,1.36426.37207.47949-.27393.64648-.88477.37207-1.36426l-3.14508-5.50391h2.27692c1.6543,0,3-1.3457,3-3v-23c0-1.6543-1.3457-3-3-3ZM38.56262,52h-13.12524l1.14282-2h10.8396l1.14282,2ZM41,45c0,.55225-.44727,1-1,1h-16c-.55273,0-1-.44775-1-1v-4c0-.55225.44727-1,1-1h16c.55273,0,1,.44775,1,1v4ZM41,33c0,.26514-.10547.51953-.29297.70703l-4,4c-.1875.1875-.44141.29297-.70703.29297h-8c-.26562,0-.51953-.10547-.70703-.29297l-4-4c-.1875-.1875-.29297-.44189-.29297-.70703v-7c0-.55225.44727-1,1-1h16c.55273,0,1,.44775,1,1v7Z"/><path d="M37,17h-10c-1.29999,0-2.40997.83997-2.82001,2h15.64001c-.41003-1.16003-1.52002-2-2.82001-2Z"/></svg></div>
+                    <h3 class="application-title">Four-Foot Gauge</h3>
+                    <p class="application-desc">Double flange panels provide comprehensive security coverage for four-foot gauge track configurations.</p>
+                </div>
+                <div class="application-card">
+                    <div class="application-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48" fill="white"><path d="M56,47c.55273,0,1-.44775,1-1s-.44727-1-1-1h-3.18427c.11206-.31433.18427-.64764.18427-1,0-1.6543-1.3457-3-3-3s-3,1.3457-3,3c0,.35236.07227.68567.18433,1h-6.36859c.11206-.31433.18427-.64764.18427-1,0-1.6543-1.3457-3-3-3s-3,1.3457-3,3c0,.35236.07227.68567.18433,1h-6.36859c.11206-.31433.18427-.64764.18427-1,0-1.6543-1.3457-3-3-3s-3,1.3457-3,3c0,.35236.07227.68567.18433,1h-6.36859c.11206-.31433.18427-.64764.18427-1,0-1.6543-1.3457-3-3-3s-3,1.3457-3,3c0,.35236.07227.68567.18433,1h-3.18433c-.55273,0-1,.44775-1,1s.44727,1,1,1h1v2h-1c-.55273,0-1,.44775-1,1s.44727,1,1,1h48c.55273,0,1-.44775,1-1s-.44727-1-1-1h-1v-2h1ZM15,47h2v2h-2v-2ZM19,47h2v2h-2v-2ZM23,47h2v2h-2v-2ZM27,47h2v2h-2v-2ZM31,47h2v2h-2v-2ZM35,47h2v2h-2v-2ZM39,47h2v2h-2v-2ZM43,47h2v2h-2v-2ZM47,47h2v2h-2v-2ZM11,47h2v2h-2v-2ZM53,49h-2v-2h2v2Z"/><path d="M55,37H9c-1.10455,0-2,.89539-2,2v3c0,.54999.45001,1,1,1h1.09998c.46002-2.28003,2.48004-4,4.90002-4s4.44,1.71997,4.90002,4h2.19995c.46002-2.28003,2.48004-4,4.90002-4s4.44,1.71997,4.90002,4h2.19995c.46002-2.28003,2.48004-4,4.90002-4s4.44,1.71997,4.90002,4h2.19995c.46002-2.28003,2.48004-4,4.90002-4s4.44,1.71997,4.90002,4h1.09998c.54999,0,1-.45001,1-1v-3c0-1.10461-.89545-2-2-2Z"/><path d="M55,16c0-1.65002-1.34998-3-3-3H12c-1.65002,0-3,1.34998-3,3v19h46v-19ZM15,31c0,.55225-.44727,1-1,1s-1-.44775-1-1v-14c0-.55225.44727-1,1-1s1,.44775,1,1v14ZM19,31c0,.55225-.44727,1-1,1s-1-.44775-1-1v-14c0-.55225.44727-1,1-1s1,.44775,1,1v14ZM23,31c0,.55225-.44727,1-1,1s-1-.44775-1-1v-14c0-.55225.44727-1,1-1s1,.44775,1,1v14ZM27,31c0,.55225-.44727,1-1,1s-1-.44775-1-1v-14c0-.55225.44727-1,1-1s1,.44775,1,1v14ZM31,31c0,.55225-.44727,1-1,1s-1-.44775-1-1v-14c0-.55225.44727-1,1-1s1,.44775,1,1v14ZM35,31c0,.55225-.44727,1-1,1s-1-.44775-1-1v-14c0-.55225.44727-1,1-1s1,.44775,1,1v14ZM39,31c0,.55225-.44727,1-1,1s-1-.44775-1-1v-14c0-.55225.44727-1,1-1s1,.44775,1,1v14ZM43,31c0,.55225-.44727,1-1,1s-1-.44775-1-1v-14c0-.55225.44727-1,1-1s1,.44775,1,1v14ZM47,31c0,.55225-.44727,1-1,1s-1-.44775-1-1v-14c0-.55225.44727-1,1-1s1,.44775,1,1v14ZM51,31c0,.55225-.44727,1-1,1s-1-.44775-1-1v-14c0-.55225.44727-1,1-1s1,.44775,1,1v14Z"/></svg></div>
+                    <h3 class="application-title">Outside Four-Foot</h3>
+                    <p class="application-desc">Single flange design optimized for outside four-foot applications where space constraints apply.</p>
+                </div>
+                <div class="application-card">
+                    <div class="application-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48" fill="white"><polygon points="26.90479 27 21 27 21 36 26.08691 36 26.90479 27"/><polygon points="19 36 19 27 13.09521 27 13.91309 36 19 36"/><circle cx="14" cy="43" r="1"/><path d="M30,21H10c-1.6543,0-3,1.3457-3,3v23c0,1.6543,1.3457,3,3,3h2.27692l-3.14508,5.50391c-.27393.47949-.10742,1.08984.3722,1.36433.47589.27354,1.09205.10421,1.36413-.37214l1.42633-2.49609h15.41101l1.42632,2.49608c.25137.43991.88632.64691,1.36427.37209.47949-.27441.646-.88477.37207-1.36426l-3.14508-5.50391h2.27692c1.6543,0,3-1.3457,3-3v-23c0-1.6543-1.3457-3-3-3ZM11.26172,25.3252c.18945-.20703.45752-.3252.73828-.3252h16c.28076,0,.54883.11816.73828.3252.18945.20801.2832.48535.25781.76562l-1,11c-.04688.51465-.479.90918-.99609.90918h-14c-.51709,0-.94922-.39453-.99609-.90918l-1-11c-.02539-.28027.06836-.55762.25781-.76562ZM11,43c0-1.6543,1.3457-3,3-3s3,1.3457,3,3-1.3457,3-3,3-3-1.3457-3-3ZM26.56262,52h-13.12524l1.14282-2h10.8396l1.14282,2ZM26,46c-1.6543,0-3-1.3457-3-3s1.3457-3,3-3,3,1.3457,3,3-1.3457,3-3,3Z"/><circle cx="26" cy="43" r="1"/><path d="M56,7h-20c-.55225,0-1,.44727-1,1v4c0,.55273.44775,1,1,1h2v2h-2c-.55225,0-1,.44727-1,1v6c0,.55273.44775,1,1,1h2v2h-2c-.55225,0-1,.44727-1,1v6c0,.55273.44775,1,1,1h12c.55225,0,1-.44727,1-1v-6c0-.55273-.44775-1-1-1h-2v-2h2c.55225,0,1-.44727,1-1v-6c0-.55273-.44775-1-1-1h-2v-2h5v30h6V8c0-.55273-.44775-1-1-1ZM44,25h-4v-2h4v2ZM44,15h-4v-2h4v2Z"/><path d="M49,45h-13c-.55225,0-1,.44727-1,1v10c0,.55273.44775,1,1,1h20c.55225,0,1-.44727,1-1v-11h-8Z"/></svg></div>
+                    <h3 class="application-title">Platform Applications</h3>
+                    <p class="application-desc">Full-width flangeless panels specifically designed for platform end security and passenger safety.</p>
+                </div>
+                <div class="application-card">
+                    <div class="application-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48" fill="white"><path d="M32,20.99982c4.0293,0,7.30664-3.27734,7.30664-7.30615,0-2.80908-1.63965-5.39893-4.17578-6.59814-.31055-.14551-.67285-.12354-.96289.05957-.28906.18311-.46484.50195-.46484.84473v5.15869l-1.70312,1.13525-1.70312-1.13525v-5.15869c0-.34277-.17578-.66162-.46484-.84473-.29102-.18311-.65234-.20508-.96289-.05957-2.53613,1.19922-4.17578,3.78906-4.17578,6.59814,0,3.97627,3.29205,7.30616,7.30664,7.30616Z"/><path d="M32,28.99982c-3.90024,0-7.30664,3.37843-7.30664,7.30615,0,2.80908,1.63965,5.39893,4.17578,6.59814.31055.146.67188.12354.96289-.05957.28906-.18311.46484-.50195.46484-.84473v-5.15869l1.70312-1.13525,1.70312,1.13525v5.15869c0,.34264.17565.66137.46451.84451.25865.16398.65187.2065.96323.05978,2.53613-1.19922,4.17578-3.78906,4.17578-6.59814,0-4.02879-3.27732-7.30613-7.30664-7.30615Z"/><path d="M27,21.54981v6.90002c1.44-.93005,3.15997-1.45001,5-1.45001s3.54999.52997,5,1.45996v-6.91998c-1.45001.92999-3.15997,1.46002-5,1.46002s-3.56-.52002-5-1.45001Z"/><path d="M52.60699,49.06183c.01031-.02039.01886-.04163.02911-.06201h-12.63611c-1.6543,0-3,1.3457-3,3v2c0,1.6543,1.3457,3,3,3h12c1.6543,0,3-1.3457,3-3v-2c0-1.44635-1.02881-2.65656-2.39301-2.93799Z"/><path d="M53.5,17.99982c-1.90747,0-3.5,1.5979-3.5,3.5v7.95508c.3927.13623.7749.3114,1.13965.53027,2.68457,1.61133,3.69043,5.06592,2.28906,7.86475,0,0-2.7381,5.4776-2.74512,5.49164-.24408.48828-.85522.69061-1.3418.44733-.49414-.24707-.69434-.84766-.44727-1.3418l2.74512-5.49219c.93652-1.87012.26465-4.17822-1.5293-5.25488-1.8587-1.11768-4.41345-.47192-5.52539,1.38135-.00018.00024-3.87207,6.45361-3.87207,6.45361-.4668.77734-.71289,1.66699-.71289,2.57275v4.89209h13.57428c2.23981-5.12378,3.42572-10.68457,3.42572-16.2998v-9.2002c0-1.92969-1.57025-3.5-3.5-3.5Z"/><path d="M24,48.99982h-12.63611c.01025.02039.0188.04163.02911.06201-1.3642.28143-2.39301,1.49164-2.39301,2.93799v2c0,1.6543,1.3457,3,3,3h12c1.6543,0,3-1.3457,3-3v-2c0-1.6543-1.3457-3-3-3Z"/><path d="M24,46.99982v-4.89209c0-.90576-.24609-1.79541-.71289-2.57275,0,0-3.87189-6.45337-3.87207-6.45361-1.11194-1.85327-3.66669-2.49902-5.52539-1.38135-1.79395,1.07666-2.46582,3.38477-1.5293,5.25488l2.74512,5.49219c.24707.49414.04688,1.09473-.44727,1.3418-.48657.24329-1.09772.04095-1.3418-.44733-.00702-.01404-2.74512-5.49164-2.74512-5.49164-1.40137-2.79883-.39551-6.25342,2.28906-7.86475.36475-.21887.74695-.39404,1.13965-.53027v-7.95508c0-1.9021-1.59253-3.5-3.5-3.5-1.92975,0-3.5,1.57031-3.5,3.5v9.2002c0,5.61523,1.18591,11.17603,3.42572,16.2998h13.57428Z"/></svg></div>
+                    <h3 class="application-title">Transit Networks</h3>
+                    <p class="application-desc">Proven effective across light rail, metro, and heavy rail networks for comprehensive trespass prevention.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Enhance Your Network Security</h2>
+                <p class="cta-text">Discover how Anti-Trespass Panels can reduce unauthorized access by up to 78% while providing environmentally sustainable rail safety solutions.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-primary">Request Quote</a>
+                    <a href="contact.html" class="btn-secondary">Security Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><strong>Rosehill Rail</strong><br>
+                    A Division of Rosehill Group<br>
+                    Spring Bank Mills<br>
+                    Sowerby Bridge<br>
+                    West Yorkshire HX6 3BW<br>
+                    United Kingdom</p>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" style="width: 1rem; height: 1rem; fill: currentColor; vertical-align: text-bottom;"><path d="M56.71104,31.35059l-2.53662-2.53662c1.18555-1.68018,1.82959-3.69189,1.82959-5.75635,0-5.51416-4.48584-10-10-10s-10,4.48584-10,10,4.48584,10,10,10h10c.4043,0,.76904-.24365.92383-.61719.15479-.37402.06934-.8042-.2168-1.08984ZM41.00401,24.05762c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1ZM46.00401,24.05762c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1ZM51.00401,24.05762c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1Z"/><path d="M51.56309,45.40039l-10.17969-10.17969-1.25928-1.25928c-.39062-.39062-1.02344-.39062-1.41406,0s-.39062,1.02344,0,1.41406l.55225.55225-3.65576,3.65576c-.4126.4126-1.08301.41162-1.49463,0l-11.63379-11.63379c-.41211-.41211-.41211-1.08252,0-1.49463l3.65552-3.65552.5642.5642c.36332.36332,1.0301.38398,1.41407,0,.39062-.39062.39062-1.02344,0-1.41406,0,0-1.27014-1.2702-1.271-1.27148l-10.17981-10.17981-1.27087-1.27087c-.39062-.39062-1.02344-.39062-1.41406,0s-.39062,1.02344,0,1.41406l.56396.56396-5.10986,5.10986c-2.87549,2.875-3.24658,7.36328-.8833,10.67139,7.33447,10.26855,16.25928,19.19336,26.52734,26.52734,1.45703,1.04102,3.14209,1.55127,4.81787,1.55127,2.13037,0,4.24463-.82471,5.854-2.43408l5.10986-5.10986.55224.55224c.37609.37609,1.03944.37464,1.41407,0,.39062-.39062.39062-1.02344,0-1.41406l-1.25928-1.25928Z"/></svg> +44 (0)1422 839 456<br>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" style="width: 1rem; height: 1rem; fill: currentColor; vertical-align: text-bottom;"><polygon points="12 23.36124 7.69 26.95127 12 29.76127 12 23.36124"/><path d="M32.64001,7.23124c-.37-.31-.91003-.31-1.28003,0l-3.32001,2.77002h7.92004l-3.32001-2.77002Z"/><polygon points="52 23.36124 52 29.76127 56.31 26.95127 52 23.36124"/><path d="M40.8385,39.4257l15.8609,15.8609c.18713-.39111.3006-.82361.3006-1.28534v-25.10992l-16.1615,10.53436Z"/><circle cx="24" cy="50.00126" r="1"/><path d="M8.71002,56.70127c.39996.19.82996.29999,1.28998.29999h44c.46002,0,.89001-.10999,1.28998-.29999l-23.28998-23.29004-23.28998,23.29004ZM24,53.00126c-1.65002,0-3-1.35004-3-3s1.34998-3,3-3,3,1.34998,3,3-1.34998,3-3,3ZM40,47.00126c1.65002,0,3,1.34998,3,3s-1.34998,3-3,3-3-1.35004-3-3,1.34998-3,3-3ZM35,50.00126c0,1.64996-1.34998,3-3,3s-3-1.35004-3-3,1.34998-3,3-3,3,1.34998,3,3Z"/><circle cx="32" cy="50.00126" r="1"/><circle cx="40" cy="50.00126" r="1"/><path d="M7,28.89133v25.10992c0,.46173.11346.89423.3006,1.28534l15.8609-15.8609L7,28.89133Z"/><path d="M36.44727,21.92948c.33887.16943.55273.51562.55273.89453v2.15283l4,.6665v-5.99951l-7.44238-1.48828c-1.0332-.20703-2.08105-.20703-3.11523,0l-7.44238,1.48828v5.99951l4-.6665v-2.15283c0-.37891.21387-.7251.55273-.89453,2.78516-1.3916,6.10938-1.3916,8.89453,0Z"/><path d="M32,30.59122l7.39001,7.39001,10.60999-6.90997V13.00126c0-.54999-.45001-1-1-1H15c-.54999,0-1,.45001-1,1v18.07001l10.60999,6.90997,7.39001-7.39001ZM21.35352,27.5872c-.22412-.18994-.35352-.46924-.35352-.76318v-8c0-.47656.33643-.88721.80371-.98047l8.24609-1.64893c1.29395-.25977,2.60645-.25977,3.90039,0l8.24609,1.64893c.46729.09326.80371.50391.80371.98047v8c0,.29393-.12939.57322-.35349.76316-.22206.18821-.52433.27181-.81106.22317l-6-1c-.48193-.08008-.83545-.49756-.83545-.98633v-2.35547c-1.91602-.7793-4.08398-.7793-6,0v2.35547c0,.48877-.35352.90625-.83545.98633l-6,1c-.29004.04736-.58691-.03369-.81104-.22314Z"/></svg> info@rosehillrail.com</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="walkway.html">Walkway Panels</a></li>
+                        <li><a href="edgebeams.html">Edge Beams</a></li>
+                        <li><a href="accessories.html">Accessories & Spares</a></li>
+                        <li><a href="#solutions">Road Crossings</a></li>
+                        <li><a href="#solutions">Pedestrian Crossings</a></li>
+                        <li><a href="#solutions">Metro & Tramways</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quality & Compliance</h3>
+                    <p>All components designed by Rosehill Rail with exclusive design rights. Quality assured to ISO 9001:2008 standard with annual NQA audits.</p>
+                    <p style="margin-top: 20px;">
+                        <strong>Accreditations:</strong><br>
+                        ISO 9001:2008 • Network Rail Approved • Full Traceability
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Rosehill Rail. A Division of Rosehill Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

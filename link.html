@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LINK System - Advanced horizontal linking rail crossing solution for high-speed trains with tongue and groove connections to prevent panel separation.">
+    <title>LINK System - High-Speed Rail Crossing Solution | Rosehill Rail</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1a365d, #2d4a71);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 600;
+            font-family: 'Source Sans Pro', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 6px;
+        }
+
+        .nav-menu a:hover {
+            background: rgba(255, 107, 53, 0.2);
+            color: #ff6b35;
+        }
+
+        .nav-menu a.active {
+            background: rgba(255, 107, 53, 0.2);
+            color: #ff6b35;
+            font-weight: 600;
+        }
+
+        .contact-btn {
+            background: #ff6b35;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .contact-btn:hover {
+            background: #e55a2b !important;
+            transform: translateY(-2px);
+        }
+
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-nav-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #1a365d;
+            flex-direction: column;
+            padding: 20px;
+            gap: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .mobile-nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-nav-menu a:hover {
+            background: rgba(255, 107, 53, 0.2);
+            color: #ff6b35;
+        }
+
+        /* Mega Menu */
+        .nav-item {
+            position: relative;
+        }
+
+        .mega-menu {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            padding: 30px;
+            width: 320px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            margin-top: 10px;
+        }
+
+        .nav-item:hover .mega-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .mega-menu-content {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .mega-menu-section h4 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f0f4f8;
+        }
+
+
+        .mega-menu-links {
+            list-style: none;
+        }
+
+        .mega-menu-links li {
+            margin-bottom: 6px;
+        }
+
+        .mega-menu-links a {
+            color: #666;
+            text-decoration: none;
+            padding: 8px 12px;
+            display: block;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            border-radius: 6px;
+        }
+
+        .mega-menu-links a:hover {
+            color: #ff6b35;
+            background: #fff5f2;
+            transform: translateX(4px);
+        }
+
+        .mega-menu::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid white;
+        }
+        
+        /* Product Hero */
+        .product-hero {
+            background: linear-gradient(135deg, #1a365d, #2d4a71);
+            color: white;
+            padding: 120px 0 80px;
+            margin-top: 70px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('Link Images/04 LINK System.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.2;
+            z-index: 1;
+        }
+
+        .product-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, 
+                rgba(26, 54, 93, 0.95) 0%, 
+                rgba(45, 74, 113, 0.85) 50%,
+                rgba(26, 54, 93, 0.95) 100%);
+            z-index: 2;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero-text .subtitle {
+            font-size: 1.4rem;
+            opacity: 0.95;
+            margin-bottom: 30px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #ff6b35;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-features {
+            list-style: none;
+        }
+
+        .hero-features li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+
+        .hero-features .check {
+            background: #ff6b35;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        /* Wave Effect Section */
+        .wave-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-family: 'Overpass', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 600;
+            color: #1a365d;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .wave-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .wave-text h3 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 25px;
+        }
+
+        .wave-text p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .wave-diagram {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .wave-visual {
+            width: 100%;
+            height: 200px;
+            background: #1a365d;
+            border-radius: 8px;
+            position: relative;
+            margin-bottom: 20px;
+            overflow: hidden;
+            display: flex;
+            align-items: end;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .wave-bar {
+            background: linear-gradient(to top, #ff6b35, #e55a2b);
+            border-radius: 4px 4px 0 0;
+            width: 25px;
+            animation: waveEffect 3s ease-in-out infinite;
+            box-shadow: 0 0 10px rgba(255, 107, 53, 0.3);
+        }
+
+        .wave-bar:nth-child(1) { height: 40%; animation-delay: 0s; }
+        .wave-bar:nth-child(2) { height: 70%; animation-delay: 0.2s; }
+        .wave-bar:nth-child(3) { height: 90%; animation-delay: 0.4s; }
+        .wave-bar:nth-child(4) { height: 100%; animation-delay: 0.6s; }
+        .wave-bar:nth-child(5) { height: 85%; animation-delay: 0.8s; }
+        .wave-bar:nth-child(6) { height: 60%; animation-delay: 1s; }
+        .wave-bar:nth-child(7) { height: 35%; animation-delay: 1.2s; }
+
+        @keyframes waveEffect {
+            0%, 100% { transform: scaleY(1); opacity: 0.7; }
+            50% { transform: scaleY(1.3); opacity: 1; }
+        }
+
+        .wave-visual::before {
+            content: 'LOAD INTENSITY';
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 600;
+            opacity: 0.8;
+        }
+
+        .wave-visual::after {
+            content: 'PANEL POSITION →';
+            position: absolute;
+            bottom: 5px;
+            right: 20px;
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 600;
+            opacity: 0.8;
+        }
+
+        .wave-caption {
+            font-weight: 600;
+            color: #1a365d;
+        }
+
+        /* Key Benefits */
+        .benefits-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .benefit-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: #ff6b35;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        .benefit-card:hover::before {
+            transform: translateX(0);
+        }
+
+        .benefit-icon {
+            width: 80px;
+            height: 80px;
+            background: #1a365d;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            margin: 0 auto 25px;
+        }
+
+        .benefit-title {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 15px;
+        }
+
+        .benefit-desc {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Technical Specs */
+        .specs-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .specs-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .specs-text h2 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 30px;
+        }
+
+        .specs-text p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .specs-highlight {
+            background: #e8f4fd;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid #ff6b35;
+        }
+
+        .specs-highlight h4 {
+            font-family: 'Overpass', sans-serif;
+            color: #1a365d;
+            margin-bottom: 10px;
+        }
+
+        .specs-table {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .specs-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .specs-table th {
+            background: #1a365d;
+            color: white;
+            padding: 20px;
+            text-align: left;
+            font-family: 'Overpass', sans-serif;
+            font-weight: 600;
+        }
+
+        .specs-table td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #e8f4fd;
+        }
+
+        .specs-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .specs-table td:first-child {
+            font-weight: 600;
+            color: #1a365d;
+            background: #f8f9fa;
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            padding: 30px 20px 20px;
+            font-weight: 600;
+        }
+
+        /* Applications Section */
+        .applications-section {
+            padding: 80px 0;
+            background: #1a365d;
+            color: white;
+        }
+
+        .applications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .application-card {
+            background: rgba(255,255,255,0.1);
+            padding: 40px 30px;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .application-card:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-5px);
+        }
+
+        .application-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .application-title {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .application-desc {
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 0;
+            background: white;
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-title {
+            font-family: 'Overpass', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 20px;
+        }
+
+        .cta-text {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: #ff6b35;
+            color: white;
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: #e55a2b;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+        }
+
+        .btn-secondary {
+            background: rgba(26, 54, 93, 0.1);
+            color: #1a365d;
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 2px solid #1a365d;
+        }
+
+        .btn-secondary:hover {
+            background: #1a365d;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a365d;
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #ff6b35;
+        }
+
+        .footer-section p,
+        .footer-section li {
+            opacity: 0.9;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #ff6b35;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+            text-align: center;
+            opacity: 0.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            .mobile-nav-menu.active {
+                display: flex;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .wave-content,
+            .specs-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .benefits-grid,
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="rosehill_rail_logo.png" alt="Rosehill Rail" style="height: 60px;">
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="nav-item">
+                        <a href="products.html">Products</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-section">
+                                    <h4>
+                                        Crossing Systems
+                                    </h4>
+                                    <ul class="mega-menu-links">
+                                        <li><a href="connect.html">CONNECT System</a></li>
+                                        <li><a href="link.html" class="active">LINK System</a></li>
+                                        <li><a href="interlocking.html">Interlocking RRAP</a></li>
+                                        <li><a href="baseplate.html">Baseplate System</a></li>
+                                        <li><a href="titan.html">TITAN Heavy Duty</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-section">
+                                    <h4>
+                                        Safety Solutions
+                                    </h4>
+                                    <ul class="mega-menu-links">
+                                        <li><a href="antitrespass.html">Anti-Trespass Panels</a></li>
+                                        <li><a href="walkway.html">Walkway Panels</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-section">
+                                    <h4>
+                                        Edge Solutions
+                                    </h4>
+                                    <ul class="mega-menu-links">
+                                        <li><a href="edgebeams.html">Rubber Edge Beams</a></li>
+                                        <li><a href="edgebeams.html">Steel & Plastic Beams</a></li>
+                                        <li><a href="accessories.html">Accessories & Spares</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="contact-btn">Get in Touch</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="mobile-nav-menu" id="mobile-menu">
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html" class="contact-btn">Get in Touch</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Product Hero -->
+    <section class="product-hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="badge">HIGH SPEED SOLUTION</div>
+                <h1>LINK System</h1>
+                <p class="subtitle">Meeting the challenge for faster train speeds with horizontal linking technology that prevents panel separation.</p>
+                <ul class="hero-features">
+                    <li><span class="check">✓</span>Wave effect management</li>
+                    <li><span class="check">✓</span>Tongue & groove connections</li>
+                    <li><span class="check">✓</span>UK manufactured quality</li>
+                    <li><span class="check">✓</span>100% recycled materials</li>
+                </ul>
+            </div>
+            <div class="hero-image">
+                <img src="Link Images/01 LINK System.jpg" alt="LINK System showing horizontal linking technology">
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Effect Section -->
+    <section class="wave-section">
+        <div class="container">
+            <h2 class="section-title">Advanced Wave Effect Management</h2>
+            <div class="wave-content">
+                <div class="wave-text">
+                    <h3>Dynamic Load Distribution</h3>
+                    <p>The LINK System's horizontal linking technology accommodates movement during the wave effect of differing vehicle loads applied from one panel to another, preventing separation of panels under dynamic conditions.</p>
+                    <p>This innovative approach ensures consistent performance even when high-speed trains create varying load patterns across the crossing surface, maintaining dimensional stability and safety.</p>
+                    <p>Our NEW moulded rubber tongue and groove connections provide superior panel-to-panel linking compared to traditional crossing systems.</p>
+                </div>
+                <div class="wave-diagram">
+                    <div class="wave-visual">
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                    </div>
+                    <p class="wave-caption">Dynamic Load Distribution Pattern</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Benefits -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose LINK?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="32" height="32" fill="white"><path d="M39.78003,8.21998c-4.29004-4.28998-11.27002-4.28998-15.56006,0l-5.45996,5.46002c.94-.22003,1.90997-.33002,2.89996-.33002.66003,0,1.30005.04999,1.94.14001l3.23004-3.22998c3.01001-3.01001,7.90997-3.01001,10.90997,0,3.01001,3,3.01001,7.89996,0,10.90997l-6.22998,6.22998c-1.41003,1.41003-3.25,2.17004-5.10992,2.24005-2.1626.08136-4.26111-.70105-5.80011-2.24005-1.58997-1.58997-2.33997-3.70996-2.23999-5.79999-.15997.13-2.70001,2.66003-2.70001,2.66003.46002,1.89996,1.42004,3.69995,2.90002,5.17999,2.05487,2.04095,4.88367,3.20996,7.78003,3.20996,2.81995,0,5.63995-1.07001,7.77997-3.20996l5.66003-5.66003c4.28998-4.28998,4.28998-11.26996,0-15.56Z"/><path d="M24.40997,34.50001l-3.23999,3.23999c-3.01001,3.01001-7.90997,3.01001-10.90997,0-3.01001-3-3.01001-7.90002,0-10.91003l6.22998-6.22998c2.94843-2.94843,7.93805-2.97186,10.91003,0,1.5,1.5,2.25995,3.47998,2.25995,5.45001,0,.12,0,.22998-.01996.34998.15997-.13.31-.25995.45996-.40997l2.24005-2.23999c-.46002-1.90002-1.42004-3.71002-2.90002-5.19-4.23682-4.237-11.32153-4.22339-15.56,0l-5.66003,5.65997c-4.28998,4.29004-4.28998,11.27002,0,15.56s11.27002,4.29004,15.56006,0l5.45996-5.45996c-.94.21997-1.90997.32996-2.89996.32996-.65002,0-1.30005-.04999-1.93005-.14996Z"/></svg></div>
+                    <h3 class="benefit-title">Horizontal Linking</h3>
+                    <p class="benefit-desc">Advanced linking system prevents vertical lift and panel separation under dynamic loading conditions.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32" fill="white"><path d="M36.41113,30.98828c-.59708.19936-1.32455.59004-1.87891.0791-.26758-.24805-.37891-.62207-.29053-.97559.95508-3.82129.30615-7.92773-1.78125-11.2666l-.77393-1.23926c-4.65771,4.65332-11.53467,12.77344-11.53467,17.56641,0,6.5332,5.31494,11.84766,11.84814,11.84766s11.84814-5.31445,11.84814-11.84766c0-1.83105-1.03223-5.31934-2.61133-8.21289-1.01855,1.89355-2.72412,3.34863-4.82568,4.04883Z"/><path d="M32,7c-13.78516,0-25,11.21484-25,25s11.21484,25,25,25,25-11.21484,25-25S45.78516,7,32,7ZM32,53c-11.57959,0-21-9.4209-21-21,0-.55273.44775-1,1-1s1,.44727,1,1c0,10.47656,8.52344,19,19,19,.55225,0,1,.44727,1,1s-.44775,1-1,1ZM32,49c-7.63574,0-13.84814-6.21191-13.84814-13.84766,0-6.96582,10.85352-17.77637,13.0293-19.87207.2168-.20898.51318-.30957.81641-.27246.29932.03711.56592.20703.72559.46191l1.43359,2.29492c2.05078,3.28125,2.88086,7.21484,2.36719,11.02734,1.76221-.83496,3.06104-2.40625,3.54199-4.33008.09521-.38086.40381-.6709.79004-.74121.38428-.07617.77734.09082,1.00098.41211,2.16357,3.11035,3.99121,8.15723,3.99121,11.01953,0,7.63574-6.2124,13.84766-13.84814,13.84766ZM52,33c-.55225,0-1-.44727-1-1,0-10.47656-8.52344-19-19-19-.55225,0-1-.44727-1-1s.44775-1,1-1c11.57959,0,21,9.4209,21,21,0,.55273-.44775,1-1,1Z"/></svg></div>
+                    <h3 class="benefit-title">NEW Tongue & Groove</h3>
+                    <p class="benefit-desc">Moulded rubber connections provide superior panel-to-panel linking and enhanced system integrity.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="32" height="32" fill="white"><path d="M31.69425,16.21289l-.19434-.37793-.19434.37793c-.14551.2832-.41699.48047-.73047.53125l-.41992.06738.2998.30176c.22461.22559.32812.54395.2793.8584l-.06543.4209.37891-.19238c.14258-.07129.29688-.10742.45215-.10742s.30957.03613.45215.10742l.37891.19238-.06543-.4209c-.04883-.31445.05469-.63281.2793-.8584l.2998-.30176-.41992-.06738c-.31348-.05078-.58496-.24805-.73047-.53125Z"/><path d="M41.30362,10.4043c-.17285-.23242-.4375-.37891-.72656-.40137l-9.89062-.76074c-2.24902-.17188-4.44922.34863-6.37598,1.50586-1.36621.81934-2.92969,1.25195-4.52148,1.25195h-8.28906v-1.18427c1.1615-.41412,2-1.51379,2-2.81573,0-1.6543-1.3457-3-3-3s-3,1.3457-3,3c0,1.30194.8385,2.40155,2,2.81567v26.18433h-2c-.55225,0-1,.44727-1,1v4c0,.55273.44775,1,1,1h6c.55225,0,1-.44727,1-1v-4c0-.55273-.44775-1-1-1h-2v-5h8.28906c1.9541,0,3.87305-.53125,5.55029-1.53711,1.5708-.94238,3.37061-1.36621,5.19385-1.22656l9.88965.76074c.32715.02148.625-.10254.83301-.3418.20703-.23926.28906-.5625.2207-.87207l-1.95215-8.7832,1.95215-8.7832c.0625-.2832-.00098-.5791-.17285-.8125ZM35.01066,17.46973l-.69141.69531.15137.96973c.08496.53906-.1377,1.07617-.58105,1.39941-.25488.18555-.55469.28027-.85645.28027-.22363,0-.44824-.05176-.65625-.15723l-.87695-.44336-.875.44336c-.49219.24707-1.07129.20117-1.51465-.12305-.44336-.32324-.66602-.86035-.58105-1.40137l.15137-.96777-.69238-.69629c-.38672-.38867-.52246-.9541-.35254-1.47656.16992-.52148.61133-.89941,1.15332-.98633l.96777-.15625.44824-.87207c.24902-.48828.74609-.79102,1.29492-.79102s1.04492.30273,1.29492.79102h.00098l.44727.87207.96875.15625c.54102.08691.98242.46484,1.15234.98633.16992.52246.03418,1.08789-.35352,1.47754Z"/></svg></div>
+                    <h3 class="benefit-title">UK Manufactured</h3>
+                    <p class="benefit-desc">Sustainably manufactured in the UK from 100% recycled tyre rubber with unique polyurethane chemistry.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32" fill="white"><path d="M25,49c-4.63367,0-8.69751-2.44446-11-6.1037v14.1037h22v-14.1037c-2.30249,3.65924-6.36633,6.1037-11,6.1037Z"/><path d="M25,25c-6.07001,0-11,4.92999-11,11s4.92999,11,11,11,11-4.92999,11-11-4.92999-11-11-11ZM29.89001,33.45001l-4.99994,9.99989c-.18909.37819-.68021.6302-1.12005.52007-.45001-.09998-.77002-.51001-.77002-.96997v-6h-2c-.31,0-.59998-.14001-.78998-.38-.19-.25-.25-.56-.17999-.85999l2-8c.10999-.45001.50995-.76001.96997-.76001h4c.29999,0,.58002.13.77002.37.19.22998.26996.52997.20996.83002l-.76001,3.79999h1.78003c.34998,0,.66998.17999.84998.46997.18005.29999.20001.67004.04004.98004Z"/><path d="M25.22656,33.63379c-.18994-.23145-.26611-.53613-.20703-.83008l.76074-3.80371h-1.99951l-1.5,6h1.71924c.55225,0,1,.44727,1,1v2.76367l2.38184-4.76367h-1.38184c-.2998,0-.5835-.13477-.77344-.36621Z"/><path d="M7,54c0,1.6543,1.3457,3,3,3h2V17h-5v37Z"/><path d="M14,29.10345c2.30249-3.65924,6.36633-6.10345,11-6.10345s8.69751,2.44421,11,6.10345v-12.10345H14v12.10345Z"/><path d="M43,10c0-1.6543-1.3457-3-3-3H10c-1.6543,0-3,1.3457-3,3v5h36v-5ZM12,12c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1ZM34,12c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1ZM38,12c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1Z"/><path d="M56,35h-1v-2c0-.55225-.44727-1-1-1s-1,.44775-1,1v2h-2v-2c0-.55225-.44727-1-1-1s-1,.44775-1,1v2h-1c-.55273,0-1,.44727-1,1v4c0,2.41443,1.7207,4.43427,4,4.89893v2.10107c0,1.6543-1.3457,3-3,3h-5V17h-5v40h2c1.6543,0,3-1.3457,3-3v-2h5c2.75684,0,5-2.24316,5-5v-2.10107c2.2793-.46466,4-2.4845,4-4.89893v-4c0-.55273-.44727-1-1-1Z"/></svg></div>
+                    <h3 class="benefit-title">High-Speed Ready</h3>
+                    <p class="benefit-desc">Specifically engineered to handle the challenges of faster train speeds and dynamic loading effects.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="32" height="32" fill="white"><path d="M14.02886,5H6.00321c-.55402,0-1.00321.44775-1.00321,1v3h5.01603c.55402,0,1.00321.44775,1.00321,1s-.44919,1-1.00321,1h-5.01603v2h4.01283c.55402,0,1.00321.44775,1.00321,1s-.44919,1-1.00321,1h-4.01283v2h5.01603c.55402,0,1.00321.44775,1.00321,1s-.44919,1-1.00321,1h-5.01603v2h4.01283c.55402,0,1.00321.44775,1.00321,1s-.44919,1-1.00321,1h-4.01283v2h5.01603c.55402,0,1.00321.44775,1.00321,1s-.44919,1-1.00321,1h-5.01603v2h4.01283c.55402,0,1.00321.44775,1.00321,1s-.44919,1-1.00321,1h-4.01283v2h5.01603c.55402,0,1.00321.44775,1.00321,1s-.44919,1-1.00321,1h-5.01603v2h4.01283c.55402,0,1.00321.44775,1.00321,1s-.44919,1-1.00321,1h-4.01283v3c0,.55225.44919,1,1.00321,1h8.02565c.55402,0,1.00321-.44775,1.00321-1V6c0-.55225-.44919-1-1.00321-1Z"/><path d="M35.0962,23.60791c0-2.20551-1.80031-4-4.01283-4s-4.01283,1.79449-4.01283,4,1.80031,4,4.01283,4,4.01283-1.79456,4.01283-4ZM31.08338,24.60791c-.55304,0-1.00321-.44873-1.00321-1s.45017-1,1.00321-1,1.00321.44873,1.00321,1-.45017,1-1.00321,1Z"/><path d="M25.72623,26.32996l-5.8988,9.07001c-.71065,1.09406-.60306,2.47266.15051,3.45178l-.64795.9964c-.30126.46332-.16851,1.08246.2963,1.38324.4457.28845,1.08648.16699,1.3878-.29535l.64488-.9917c1.22823.28644,2.52835-.22137,3.2246-1.27435l5.88882-9.08002c-2.20707-.09998-4.10314-1.39996-5.04616-3.26001Z"/><path d="M42.84093,39.84998l-.65205-1c.75241-.97998.86274-2.35999.15044-3.45001l-5.8988-9.07001c-.63203,1.24005-1.68544,2.23004-2.96951,2.77002l-1.19382,1.85004,5.00599,7.71997c.68217,1.04999,2.00641,1.56,3.22032,1.27002,0,0,.65205.98999.65205,1,.29097.45001.92299.58997,1.38443.28998.4615-.29999.60196-.91998.30095-1.38Z"/><path d="M34.093,9.60791c0-1.65686-1.34745-3-3.00962-3s-3.00962,1.34314-3.00962,3v3h6.01924v-3Z"/><path d="M25.15445,24.60999c-.06019-.33002-.09032-.65997-.09032-1,0-3.71423,3.39801-6.64783,7.2599-5.87585,2.77731.55511,4.80209,3.10034,4.7784,5.92383-.00276.32312-.03276.63751-.09013.95203,1.70497,0,3.09994-1.3905,3.09994-3.09003v-3.91205c0-1.65686-1.34745-3-3.00962-3h-12.03848c-1.66217,0-3.00962,1.34314-3.00962,3v3.91205c0,1.69952,1.39496,3.09003,3.09994,3.09003Z"/></svg></div>
+                    <h3 class="benefit-title">Universal Compatibility</h3>
+                    <p class="benefit-desc">Full rail profile adaptability and universal gauge compatibility with 600mm sleeper centres.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32" fill="white"><path d="M32,32c-4.41113,0-8,3.58887-8,8s3.58887,8,8,8,8-3.58887,8-8-3.58887-8-8-8ZM31.26855,38.73682l2.03809.61084c1.0127.3042,1.69336,1.21924,1.69336,2.27637,0,1.18134-.86877,2.15631-2,2.33801v1.03796c0,.55225-.44727,1-1,1s-1-.44775-1-1v-1h-1c-.55273,0-1-.44775-1-1s.44727-1,1-1h2.62402c.20703,0,.37598-.16846.37598-.37598,0-.16748-.10742-.3125-.26855-.36084l-2.03809-.61084c-1.0127-.3042-1.69336-1.21924-1.69336-2.27637,0-1.18134.86877-2.15625,2-2.33795v-1.03802c0-.55225.44727-1,1-1s1,.44775,1,1v1h1c.55273,0,1,.44775,1,1s-.44727,1-1,1h-2.62402c-.20703,0-.37598.16846-.37598.37598,0,.16748.10742.3125.26855.36084Z"/><path d="M54.53223,50.45752c-.73145-.72021-1.63867-1.19287-2.61914-1.37402l-1.32812-13.26172c-.5343-5.41998-3.37207-10.23651-7.73718-13.34381-.82483.92627-2.01276,1.52203-3.34778,1.52203h-15c-1.33417,0-2.52142-.59491-3.34619-1.52014-.58191.41669-1.14734.86218-1.68506,1.34827-3.44434,3.1167-5.59375,7.37598-6.05371,11.99219l-1.32812,13.26318c-.98047.18164-1.88965.65625-2.62891,1.38428-.94043.95361-1.45801,2.20801-1.45801,3.53223,0,1.6543,1.3457,3,3,3h42c1.6543,0,3-1.3457,3-3,0-1.32422-.51758-2.57861-1.46777-3.54248ZM32,50c-5.51367,0-10-4.48584-10-10s4.48633-10,10-10,10,4.48584,10,10-4.48633,10-10,10Z"/><path d="M24.5,17c-1.38074,0-2.5,1.11926-2.5,2.5s1.11926,2.5,2.5,2.5h15c1.38074,0,2.5-1.11932,2.5-2.5s-1.11926-2.5-2.5-2.5h-15Z"/><path d="M25.19623,15h13.60754l4.04388-6.47021c.19336-.30811.20312-.69678.02734-1.01465-.17676-.31787-.51172-.51514-.875-.51514h-20c-.36328,0-.69824.19727-.875.51514-.17578.31787-.16602.70654.02734,1.01465l4.04388,6.47021Z"/></svg></div>
+                    <h3 class="benefit-title">Cost Efficient</h3>
+                    <p class="benefit-desc">Reduces installation time and minimises track possession requirements for significant cost savings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="specs-section">
+        <div class="container">
+            <div class="specs-content">
+                <div class="specs-text">
+                    <h2>Technical Specifications</h2>
+                    <p>The LINK System represents the next generation of rail crossing technology, specifically designed to meet the challenges of modern high-speed rail networks.</p>
+                    <p>Each panel is compression-manufactured using our exclusive cold cure moulding process and unique polyurethane chemistry, ensuring the panels have the surface deflection of rubber but the strength required for demanding applications.</p>
+                    <div class="specs-highlight">
+                        <h4>Key Innovation:</h4>
+                        <p>NEW moulded rubber tongue and groove connections secure against vertical lift and manage dynamic loading effects while maintaining dimensional stability.</p>
+                    </div>
+                </div>
+                <div class="specs-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">LINK System Specifications</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Connection Type</td>
+                                <td>NEW moulded tongue & groove</td>
+                            </tr>
+                            <tr>
+                                <td>Linking System</td>
+                                <td>Horizontal linking technology</td>
+                            </tr>
+                            <tr>
+                                <td>Manufacturing Process</td>
+                                <td>Compression-manufactured panels</td>
+                            </tr>
+                            <tr>
+                                <td>Gauge Compatibility</td>
+                                <td>Universal gauge compatibility</td>
+                            </tr>
+                            <tr>
+                                <td>Rail Profile Support</td>
+                                <td>Full rail profile adaptability</td>
+                            </tr>
+                            <tr>
+                                <td>Construction</td>
+                                <td>Modular construction system</td>
+                            </tr>
+                            <tr>
+                                <td>Sleeper Centres</td>
+                                <td>Compatible with 600mm centres</td>
+                            </tr>
+                            <tr>
+                                <td>Matrix System</td>
+                                <td>Single matrix containment</td>
+                            </tr>
+                            <tr>
+                                <td>Material Origin</td>
+                                <td>UK manufactured, 100% recycled</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Gallery -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">LINK System in Detail</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="Link Images/02 LINK System.jpg" alt="LINK System panel detail">
+                    <div class="gallery-caption">Panel Construction Detail</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Link Images/03 LINK System.jpg" alt="LINK System tongue and groove connection">
+                    <div class="gallery-caption">Tongue & Groove Connection</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Link Images/05 LINK System.jpg" alt="LINK System installation process">
+                    <div class="gallery-caption">Installation Process</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Link Images/06 LINK System.jpg" alt="LINK System horizontal linking">
+                    <div class="gallery-caption">Horizontal Linking System</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Link Images/07 LINK System.jpg" alt="LINK System completed installation">
+                    <div class="gallery-caption">Completed Installation</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Link Images/08 LINK System.jpg" alt="LINK System performance testing">
+                    <div class="gallery-caption">Performance Testing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications -->
+    <section class="applications-section">
+        <div class="container">
+            <h2 class="section-title">Ideal Applications</h2>
+            <div class="applications-grid">
+                <div class="application-card">
+                    <div class="application-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48" fill="white"><path d="M25,31.48047c4.42578,2.01367,9.57422,2.01367,14,0v-11.48047h-14v11.48047Z"/><rect x="19" y="39" width="6" height="2"/><rect x="39" y="39" width="6" height="2"/><path d="M42,11h-20c-1.6543,0-3,1.3457-3,3v23h7c.55273,0,1,.44727,1,1v4c0,.55273-.44727,1-1,1h-7v1c0,1.6543,1.3457,3,3,3h2.52283l-3.45154,8.62891c-.20508.5127.04492,1.09473.55762,1.2998.12109.04883.24707.07129.37109.07129.39648,0,.77246-.2373.92871-.62891l1.34845-3.37109h15.44568l1.34845,3.37109c.15625.3916.53223.62891.92871.62891.12402,0,.25-.02246.37109-.07129.5127-.20508.7627-.78711.55762-1.2998l-3.45154-8.62891h2.52283c1.6543,0,3-1.3457,3-3v-1h-7c-.55273,0-1-.44727-1-1v-4c0-.55273.44727-1,1-1h7V14c0-1.6543-1.3457-3-3-3ZM28,14h8c.55273,0,1,.44727,1,1s-.44727,1-1,1h-8c-.55273,0-1-.44727-1-1s.44727-1,1-1ZM24,14c.55231,0,1,.44769,1,1,0,.55225-.44769,1-1,1s-1-.44775-1-1c0-.55231.44769-1,1-1ZM38.92285,51h-13.8457l1.59998-4h10.64575l1.59998,4ZM41,32.11133c0,.37891-.21387.72461-.55273.89453-2.64453,1.32227-5.5459,1.9834-8.44727,1.9834s-5.80273-.66113-8.44727-1.9834c-.33887-.16992-.55273-.51562-.55273-.89453v-13.11133c0-.55273.44727-1,1-1h16c.55273,0,1,.44727,1,1v13.11133ZM40,16c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1Z"/><path d="M36,7h-8c-1.29999,0-2.40997.83997-2.82001,2h13.64001c-.41003-1.16003-1.52002-2-2.82001-2Z"/></svg></div>
+                    <h3 class="application-title">High-Speed Rail Networks</h3>
+                    <p class="application-desc">Specifically designed to handle the dynamic loads and wave effects created by high-speed train operations.</p>
+                </div>
+                <div class="application-card">
+                    <div class="application-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48" fill="white"><path d="M25,32.48047c4.42578,2.01367,9.57422,2.01367,14,0v-9.48047h-14v9.48047Z"/><path d="M42,13h-2.46484l-2.66669-4h1.71747l1.70702,1.70702c.36489.36489,1.01748.39661,1.41407.00001.39062-.39062.39062-1.02344,0-1.41406l-2-2c-.1875-.1875-.44189-.29297-.70703-.29297h-14c-.26514,0-.51953.10547-.70703.29297l-2,2c-.39062.39062-.39062,1.02344,0,1.41406s1.02344.39062,1.41406,0l1.70703-1.70703h1.71747l-2.66669,4h-2.46484c-1.6543,0-3,1.3457-3,3v28c0,1.6543,1.3457,3,3,3h2.52283s-3.45154,8.62891-3.45167,8.62924c-.46713,1.16901,1.38989,1.91029,1.85755.74186l1.34845-3.37109h15.44568l1.34842,3.37102c.47126,1.17813,2.34097.46669,1.85745-.74212l-3.45154-8.62891h2.52283c1.6543,0,3-1.3457,3-3v-28c0-1.6543-1.3457-3-3-3ZM29.53516,9h4.92969l2.66669,4h-10.26306l2.66669-4ZM37,18c0,.55273-.44775,1-1,1h-8c-.55225,0-1-.44727-1-1s.44775-1,1-1h8c.55225,0,1,.44727,1,1ZM24,17c.55231,0,1,.44769,1,1,0,.55225-.44769,1-1,1s-1-.44775-1-1c0-.55231.44769-1,1-1ZM23,40c0-1.6543,1.3457-3,3-3s3,1.3457,3,3-1.3457,3-3,3-3-1.3457-3-3ZM38.92285,51h-13.8457l1.59998-4h10.64575l1.59998,4ZM38,43c-1.6543,0-3-1.3457-3-3s1.3457-3,3-3,3,1.3457,3,3-1.3457,3-3,3ZM41,33.11133c0,.37891-.21387.72461-.55273.89453-2.64453,1.32227-5.5459,1.9834-8.44727,1.9834s-5.80273-.66113-8.44727-1.9834c-.33887-.16992-.55273-.51562-.55273-.89453v-11.11133c0-.55273.44775-1,1-1h16c.55225,0,1,.44727,1,1v11.11133ZM40,19c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1Z"/><circle cx="38" cy="40" r="1"/><circle cx="26" cy="40" r="1"/></svg></div>
+                    <h3 class="application-title">Urban Transit Systems</h3>
+                    <p class="application-desc">Perfect for busy urban crossings where consistent performance under varying load conditions is critical.</p>
+                </div>
+                <div class="application-card">
+                    <div class="application-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48" fill="white"><rect x="30" y="7" width="4" height="16"/><path d="M28,7h-12.5293c-1.31934,0-2.4707.8457-2.86328,2.10547l-4.3421,13.89453h19.73468V7Z"/><path d="M51.39258,9.10547c-.39258-1.25977-1.54395-2.10547-2.86328-2.10547h-12.5293v16h19.73468l-4.3421-13.89453Z"/><path d="M35,25H8v28c0,2.20605,1.79395,4,4,4h40c2.20605,0,4-1.79395,4-4v-28h-21ZM28,51.23047h-3.82812c-1.03613,0-1.98438-.52344-2.53711-1.39941-.55273-.87695-.61621-1.95898-.16992-2.89355l2.29498-4.8031-.41217.12927c-.53027.16504-1.08887-.12891-1.25391-.6543-.16504-.52734.12793-1.08887.6543-1.25391,0,0,2.69769-.8465,2.69824-.84668.52289-.16412,1.08942.13434,1.25391.65527l.84668,2.69922c.16504.52637-.12793,1.08789-.65533,1.25293-.52002.16467-1.08984-.13635-1.25287-.65527,0-.00006-.11761-.37439-.11761-.37439l-2.25153,4.71228c-.15137.31641-.12988.66797.05664.96484.1875.29688.49512.4668.8457.4668h3.82812c.55273,0,1,.44727,1,1s-.44727,1-1,1ZM31.09766,31.4375l-2.97559,6.22461c-.23828.49707-.83398.70801-1.33398.4707-.49805-.23828-.70898-.83496-.4707-1.33398l2.97559-6.22461c.50391-1.05176,1.54102-1.70605,2.70703-1.70605s2.20312.6543,2.70703,1.70605l2.06354,4.31671.11517-.33917c.17773-.52344.74609-.80371,1.26855-.62598.52344.17773.80273.74609.62598,1.26855,0,0-.90741,2.67352-.90918,2.67871-.17438.51379-.75592.79999-1.26855.62598l-2.67871-.90918c-.52344-.17773-.80273-.74609-.62598-1.26855.17773-.52344.74707-.80371,1.26855-.62598l.4433.15051-2.10736-4.40833c-.33985-.71289-1.46485-.71289-1.80469,0ZM42.36523,49.83105c-.55274.87598-1.50098,1.39941-2.53711,1.39941h-4.68835l.16101.13477c.42383.35449.47949.98438.125,1.4082-.34088.40753-.98383.48083-1.4082.125,0,0-2.16589-1.81207-2.16992-1.81543-.41833-.35004-.47607-.99097-.125-1.4082l1.81543-2.16895c.35352-.42188.98535-.48145,1.4082-.125.42383.35449.47949.98535.125,1.4082l-.36914.44141h5.12598c.35059,0,.6582-.16992.8457-.4668.18652-.29688.20801-.64844.05664-.96484l-2.93262-6.1377c-.23828-.49805-.02734-1.09473.47168-1.33301.49512-.23828,1.09473-.02734,1.33301.47168l2.93262,6.1377c.44629.93457.38281,2.0166-.16992,2.89355Z"/></svg></div>
+                    <h3 class="application-title">Dynamic Load Environments</h3>
+                    <p class="application-desc">Ideal for crossings experiencing variable loading patterns that require advanced panel linking technology.</p>
+                </div>
+                <div class="application-card">
+                    <div class="application-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48" fill="white"><path d="M27,26.38214l4.55273-2.27637c.14062-.07031.29395-.10547.44727-.10547s.30664.03516.44727.10547l4.55273,2.27637v-9.38184h-10v9.38184Z"/><path d="M46,20.00031v18c0,1.64996-1.34998,3-3,3h-22c-1.65002,0-3-1.35004-3-3v-18c0-1.65002,1.34998-3,3-3h4v11c0,.34998.17999.66998.46997.84998.30005.17999.67004.20001.98004.04004l5.54999-2.77002s5.54999,2.77002,5.55008,2.77007c.65705.32815,1.44992-.1608,1.44992-.89006v-11h4c1.65002,0,3,1.34998,3,3Z"/><path d="M50,43.00031H14c-3.85999,0-7,3.14001-7,7s3.14001,7,7,7h36c3.85999,0,7-3.14001,7-7s-3.14001-7-7-7ZM14,53.00031c-1.65002,0-3-1.35004-3-3s1.34998-3,3-3,3,1.34998,3,3-1.34998,3-3,3ZM23,53.00031c-1.65002,0-3-1.35004-3-3s1.34998-3,3-3,3,1.34998,3,3-1.34998,3-3,3ZM32,53.00031c-1.65002,0-3-1.35004-3-3s1.34998-3,3-3,3,1.34998,3,3-1.34998,3-3,3ZM41,53.00031c-1.65002,0-3-1.35004-3-3s1.34998-3,3-3,3,1.34998,3,3-1.34998,3-3,3ZM50,53.00031c-1.65002,0-3-1.35004-3-3s1.34998-3,3-3,3,1.34998,3,3-1.34998,3-3,3Z"/><circle cx="41" cy="50.00031" r="1"/><circle cx="32" cy="50.00031" r="1"/><circle cx="14" cy="50.00031" r="1"/><circle cx="23" cy="50.00031" r="1"/><circle cx="50" cy="50.00031" r="1"/><path d="M32.52979,11.00031c2.41443,0,4.43427,1.7207,4.89893,4h4.77704c-1.47699-.36505-2.36591-1.73773-2.36591-3.02979,0-.53564.14844-1.08105.43018-1.57715.27051-.47754.10547-1.08447-.37012-1.35938l-3.29004-1.8999c-.47803-.27637-1.08789-.11279-1.36523.36475-.57031.98389-1.58496,1.57129-2.71484,1.57129-1.13623,0-2.1499-.58545-2.71191-1.56689-.13184-.23047-.35059-.39893-.60693-.46826-.25635-.06982-.53027-.03369-.76074.09912l-3.29004,1.8999c-.47559.2749-.64062.88184-.36963,1.35938.28516.50342.42969,1.03027.42969,1.56689,0,1.29657-.88922,2.67413-2.36688,3.04004h4.77753c.46466-2.2793,2.4845-4,4.89893-4Z"/><path d="M32.52979,13.00031c-1.30194,0-2.40161.8385-2.81573,2h5.63147c-.41412-1.1615-1.51379-2-2.81573-2Z"/></svg></div>
+                    <h3 class="application-title">Retrofit Projects</h3>
+                    <p class="application-desc">Excellent for upgrading existing crossings to handle increased speeds and improved safety standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready for High-Speed Performance?</h2>
+                <p class="cta-text">Discover how the LINK System can enhance your rail network's performance with advanced wave effect management and superior panel linking technology.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-primary">Request Quote</a>
+                    <a href="contact.html" class="btn-secondary">Technical Support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><strong>Rosehill Rail</strong><br>
+                    A Division of Rosehill Group<br>
+                    Spring Bank Mills<br>
+                    Sowerby Bridge<br>
+                    West Yorkshire HX6 3BW<br>
+                    United Kingdom</p>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" style="width: 1rem; height: 1rem; fill: currentColor; vertical-align: text-bottom;"><path d="M56.71104,31.35059l-2.53662-2.53662c1.18555-1.68018,1.82959-3.69189,1.82959-5.75635,0-5.51416-4.48584-10-10-10s-10,4.48584-10,10s4.48584,10,10,10h10c.4043,0,.76904-.24365.92383-.61719.15479-.37402.06934-.8042-.2168-1.08984ZM41.00401,24.05762c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1ZM46.00401,24.05762c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1ZM51.00401,24.05762c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1Z"/><path d="M51.56309,45.40039l-10.17969-10.17969-1.25928-1.25928c-.39062-.39062-1.02344-.39062-1.41406,0s-.39062,1.02344,0,1.41406l.55225.55225-3.65576,3.65576c-.4126.4126-1.08301.41162-1.49463,0l-11.63379-11.63379c-.41211-.41211-.41211-1.08252,0-1.49463l3.65552-3.65552.5642.5642c.36332.36332,1.0301.38398,1.41407,0,.39062-.39062.39062-1.02344,0-1.41406,0,0-1.27014-1.2702-1.271-1.27148l-10.17981-10.17981-1.27087-1.27087c-.39062-.39062-1.02344-.39062-1.41406,0s-.39062,1.02344,0,1.41406l.56396.56396-5.10986,5.10986c-2.87549,2.875-3.24658,7.36328-.8833,10.67139,7.33447,10.26855,16.25928,19.19336,26.52734,26.52734,1.45703,1.04102,3.14209,1.55127,4.81787,1.55127,2.13037,0,4.24463-.82471,5.854-2.43408l5.10986-5.10986.55224.55224c.37609.37609,1.03944.37464,1.41407,0,.39062-.39062.39062-1.02344,0-1.41406l-1.25928-1.25928Z"/></svg> +44 (0)1422 839 456<br>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" style="width: 1rem; height: 1rem; fill: currentColor; vertical-align: text-bottom;"><polygon points="12 23.36124 7.69 26.95127 12 29.76127 12 23.36124"/><path d="M32.64001,7.23124c-.37-.31-.91003-.31-1.28003,0l-3.32001,2.77002h7.92004l-3.32001-2.77002Z"/><polygon points="52 23.36124 52 29.76127 56.31 26.95127 52 23.36124"/><path d="M40.8385,39.4257l15.8609,15.8609c.18713-.39111.3006-.82361.3006-1.28534v-25.10992l-16.1615,10.53436Z"/><circle cx="24" cy="50.00126" r="1"/><path d="M8.71002,56.70127c.39996.19.82996.29999,1.28998.29999h44c.46002,0,.89001-.10999,1.28998-.29999l-23.28998-23.29004-23.28998,23.29004ZM24,53.00126c-1.65002,0-3-1.35004-3-3s1.34998-3,3-3,3,1.34998,3,3-1.34998,3-3,3ZM40,47.00126c1.65002,0,3,1.34998,3,3s-1.34998,3-3,3-3-1.35004-3-3,1.34998-3,3-3ZM35,50.00126c0,1.64996-1.34998,3-3,3s-3-1.35004-3-3,1.34998-3,3-3,3,1.34998,3,3Z"/><circle cx="32" cy="50.00126" r="1"/><circle cx="40" cy="50.00126" r="1"/><path d="M7,28.89133v25.10992c0,.46173.11346.89423.3006,1.28534l15.8609-15.8609L7,28.89133Z"/><path d="M36.44727,21.92948c.33887.16943.55273.51562.55273.89453v2.15283l4,.6665v-5.99951l-7.44238-1.48828c-1.0332-.20703-2.08105-.20703-3.11523,0l-7.44238,1.48828v5.99951l4-.6665v-2.15283c0-.37891.21387-.7251.55273-.89453,2.78516-1.3916,6.10938-1.3916,8.89453,0Z"/><path d="M32,30.59122l7.39001,7.39001,10.60999-6.90997V13.00126c0-.54999-.45001-1-1-1H15c-.54999,0-1,.45001-1,1v18.07001l10.60999,6.90997,7.39001-7.39001ZM21.35352,27.5872c-.22412-.18994-.35352-.46924-.35352-.76318v-8c0-.47656.33643-.88721.80371-.98047l8.24609-1.64893c1.29395-.25977,2.60645-.25977,3.90039,0l8.24609,1.64893c.46729.09326.80371.50391.80371.98047v8c0,.29393-.12939.57322-.35349.76316-.22206.18821-.52433.27181-.81106.22317l-6-1c-.48193-.08008-.83545-.49756-.83545-.98633v-2.35547c-1.91602-.7793-4.08398-.7793-6,0v2.35547c0,.48877-.35352.90625-.83545.98633l-6,1c-.29004.04736-.58691-.03369-.81104-.22314Z"/></svg> info@rosehillrail.com</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="walkway.html">Walkway Panels</a></li>
+                        <li><a href="edgebeams.html">Edge Beams</a></li>
+                        <li><a href="accessories.html">Accessories & Spares</a></li>
+                        <li><a href="index.html#solutions">Road Crossings</a></li>
+                        <li><a href="index.html#solutions">Pedestrian Crossings</a></li>
+                        <li><a href="index.html#solutions">Metro & Tramways</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quality & Compliance</h3>
+                    <p>All components designed by Rosehill Rail with exclusive design rights. Quality assured to ISO 9001:2008 standard with annual NQA audits.</p>
+                    <p style="margin-top: 20px;">
+                        <strong>Accreditations:</strong><br>
+                        ISO 9001:2008 • Network Rail Approved • Full Traceability
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Rosehill Rail. A Division of Rosehill Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

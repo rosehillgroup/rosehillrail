@@ -1,0 +1,24 @@
+# Netlify Redirects Configuration
+
+# Force HTTPS
+http://rosehillrail.netlify.app/* https://rosehillrail.netlify.app/:splat 301!
+
+# Clean URLs - remove .html extension
+/home /index.html 200
+/about /about.html 200
+/products /products.html 200
+/contact /contact.html 200
+
+# Product page redirects
+/antitrespass /antitrespass.html 200
+/baseplate /baseplate.html 200
+/connect /connect.html 200
+/interlocking /interlocking.html 200
+/link /link.html 200
+/titan /titan.html 200
+/walkway /walkway.html 200
+/accessories /accessories.html 200
+/edgebeams /edgebeams.html 200
+
+# Fallback for 404 errors
+/* /index.html 404

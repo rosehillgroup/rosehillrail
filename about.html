@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Rosehill Rail's two decades of innovation in rail crossing solutions, bespoke manufacturing, and commitment to sustainability.">
+    <title>About Us - Rosehill Rail</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1a365d, #2d4a71);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 600;
+            font-family: 'Source Sans Pro', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 6px;
+        }
+
+        .nav-menu a:hover {
+            background: rgba(255, 107, 53, 0.2);
+            color: #ff6b35;
+        }
+
+        .nav-menu a.active {
+            background: rgba(255, 107, 53, 0.2);
+            color: #ff6b35;
+            font-weight: 600;
+        }
+
+        .contact-btn {
+            background: #ff6b35;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .contact-btn:hover {
+            background: #e55a2b !important;
+            transform: translateY(-2px);
+        }
+
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-nav-menu {
+            display: none;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #1a365d, #2d4a71);
+            flex-direction: column;
+            padding: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            z-index: 999;
+        }
+
+        .mobile-nav-menu.active {
+            display: flex;
+        }
+
+        .mobile-nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            transition: color 0.3s ease;
+        }
+
+        .mobile-nav-menu a:hover {
+            color: #ff6b35;
+        }
+
+        .mobile-nav-menu a.active {
+            color: #ff6b35;
+            font-weight: 600;
+        }
+
+        .mobile-nav-menu a:last-child {
+            border-bottom: none;
+        }
+
+        .mobile-nav-menu .contact-btn {
+            background: #ff6b35;
+            padding: 15px 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 10px;
+            border-bottom: none;
+        }
+
+        /* Mega Menu */
+        .nav-item {
+            position: relative;
+        }
+
+        .mega-menu {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            padding: 30px;
+            width: 320px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            margin-top: 10px;
+        }
+
+        .nav-item:hover .mega-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .mega-menu-content {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .mega-menu-section h4 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f0f4f8;
+        }
+
+
+        .mega-menu-links {
+            list-style: none;
+        }
+
+        .mega-menu-links li {
+            margin-bottom: 6px;
+        }
+
+        .mega-menu-links a {
+            color: #666;
+            text-decoration: none;
+            padding: 8px 12px;
+            display: block;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            border-radius: 6px;
+        }
+
+        .mega-menu-links a:hover {
+            color: #ff6b35;
+            background: #fff5f2;
+            transform: translateX(4px);
+        }
+
+        .mega-menu::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid white;
+        }
+        
+        /* About Hero */
+        .about-hero {
+            background: linear-gradient(135deg, #1a365d, #2d4a71);
+            color: white;
+            padding: 120px 0 60px;
+            margin-top: 70px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('Rosehill_Polymers_BeechRd.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.2;
+            z-index: 1;
+        }
+
+        .about-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, 
+                rgba(26, 54, 93, 0.95) 0%, 
+                rgba(45, 74, 113, 0.85) 50%,
+                rgba(26, 54, 93, 0.95) 100%);
+            z-index: 2;
+        }
+
+        .about-hero-content {
+            position: relative;
+            z-index: 3;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .about-hero h1 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 3.2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .about-hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+
+        /* Main Content */
+        .about-content {
+            padding: 80px 0;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .content-section {
+            margin-bottom: 80px;
+        }
+
+        .section-title {
+            font-family: 'Overpass', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            font-family: 'Overpass', sans-serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 30px;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .content-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            background: #ff6b35;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 15px;
+        }
+
+        .card-text {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: #ff6b35;
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 60px;
+            width: 100%;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-left: 0;
+            margin-right: 55%;
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-left: 55%;
+            margin-right: 0;
+            text-align: left;
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            position: relative;
+        }
+
+        .timeline-year {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #ff6b35;
+            color: white;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Overpass', sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            z-index: 10;
+        }
+
+        .timeline-title {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 15px;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background: #1a365d;
+            color: white;
+            padding: 80px 0;
+            margin: 80px 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 20px;
+        }
+
+        .stat-number {
+            font-family: 'Overpass', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #ff6b35;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a365d;
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #ff6b35;
+        }
+
+        .footer-section p,
+        .footer-section li {
+            opacity: 0.9;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #ff6b35;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+            text-align: center;
+            opacity: 0.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item:nth-child(odd) .timeline-content,
+            .timeline-item:nth-child(even) .timeline-content {
+                margin-left: 60px;
+                margin-right: 0;
+                text-align: left;
+            }
+
+            .timeline-year {
+                left: 20px;
+                transform: none;
+                width: 60px;
+                height: 60px;
+                font-size: 0.9rem;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="rosehill_rail_logo.png" alt="Rosehill Rail" style="height: 60px;">
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="nav-item">
+                        <a href="products.html">Products</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-section">
+                                    <h4>
+                                        Crossing Systems
+                                    </h4>
+                                    <ul class="mega-menu-links">
+                                        <li><a href="connect.html">CONNECT System</a></li>
+                                        <li><a href="link.html">LINK System</a></li>
+                                        <li><a href="interlocking.html">Interlocking RRAP</a></li>
+                                        <li><a href="baseplate.html">Baseplate System</a></li>
+                                        <li><a href="titan.html">TITAN Heavy Duty</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-section">
+                                    <h4>
+                                        Safety Solutions
+                                    </h4>
+                                    <ul class="mega-menu-links">
+                                        <li><a href="antitrespass.html">Anti-Trespass Panels</a></li>
+                                        <li><a href="walkway.html">Walkway Panels</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-section">
+                                    <h4>
+                                        Edge Solutions
+                                    </h4>
+                                    <ul class="mega-menu-links">
+                                        <li><a href="edgebeams.html">Rubber Edge Beams</a></li>
+                                        <li><a href="edgebeams.html">Steel & Plastic Beams</a></li>
+                                        <li><a href="accessories.html">Accessories & Spares</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="contact.html" class="contact-btn">Get in Touch</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="mobile-nav-menu" id="mobile-menu">
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="about.html" class="active">About Us</a>
+                    <a href="contact.html" class="contact-btn">Get in Touch</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="about-hero-content">
+            <h1>Two Decades of Rail Innovation</h1>
+            <p>From pioneering cold cure technology to becoming a trusted global leader in sustainable rail crossing solutions.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="about-content">
+        <div class="container">
+            <!-- Our Story Section -->
+            <div class="content-section">
+                <h2 class="section-title">Our Story</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">1991</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">The Beginning</h3>
+                            <p>Rosehill Rail, a subsidiary of Rosehill Polymers Group, entered the rail industry when approached by American company Reidel Omni to develop a revolutionary polyurethane-based bonding system for rubber railway crossing surfaces.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">1990s</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Innovation Breakthrough</h3>
+                            <p>Our team successfully developed a cold cure bonding process, reducing curing time to just 1.5 hours - a massive improvement over traditional vulcanisation methods that required extended high-temperature heating.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">1999</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Independence & Growth</h3>
+                            <p>When Omni ceased railway panel production, Rosehill seized the opportunity by purchasing their moulds and beginning our own production of railway crossing panels, marking the true start of Rosehill Rail.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">Today</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Global Leadership</h3>
+                            <p>Now a trusted industry leader, we collaborate with rail infrastructure firms worldwide, delivering bespoke crossing solutions that meet specific project requirements across all continents.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- What Sets Us Apart -->
+            <div class="content-section">
+                <h2 class="section-title">What Sets Us Apart</h2>
+                <div class="content-grid">
+                    <div class="content-card">
+                        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" style="width: 32px; height: 32px; fill: currentColor;"><path d="M26.99219,13.37598c-.0625-.50049-.48828-.87598-.99219-.87598h-4c-.50391,0-.92969.37549-.99219.87598l-.8905,6.12402h7.76538l-.8905-6.12402Z"/><rect x="26" y="34.5" width="2" height="6"/><rect x="30" y="34.5" width="2" height="6"/><rect x="10" y="34.5" width="2" height="6"/><path d="M5,31.5v8c0,.55225.44727,1,1,1h2v-7c0-.55225.44727-1,1-1h4c.55273,0,1,.44775,1,1v7h3v-12h-9c-1.6543,0-3,1.3457-3,3Z"/><path d="M19,40.5h5v-7c0-.55225.44727-1,1-1h8c.55273,0,1,.44775,1,1v7h6c.55273,0,1-.44775,1-1v-13h-22v14ZM36,28.5c.55231,0,1,.44769,1,1,0,.55225-.44769,1-1,1s-1-.44775-1-1c0-.55231.44769-1,1-1ZM32,28.5c.55231,0,1,.44769,1,1,0,.55225-.44769,1-1,1s-1-.44775-1-1c0-.55231.44769-1,1-1ZM28,28.5c.55231,0,1,.44769,1,1,0,.55225-.44769,1-1,1s-1-.44775-1-1c0-.55231.44769-1,1-1ZM24,28.5c.55231,0,1,.44769,1,1,0,.55225-.44769,1-1,1s-1-.44775-1-1c0-.55231.44769-1,1-1Z"/><path d="M41.5,21.5h-25c-.82843,0-1.5.67157-1.5,1.5s.67157,1.5,1.5,1.5h25c.82843,0,1.5-.67157,1.5-1.5s-.67157-1.5-1.5-1.5Z"/><path d="M36.99707,8.42334c-.04004-.521-.47461-.92334-.99707-.92334h-4c-.52246,0-.95703.40234-.99707.92334l-.92896,11.07666h7.85205l-.92896-11.07666Z"/></svg></div>
+                        <h3 class="card-title">Bespoke Manufacturing</h3>
+                        <p class="card-text">Every product is tailored to meet specific client needs. Our manufacturing process follows comprehensive operating instructions with meticulous documentation management within robust production and quality frameworks.</p>
+                    </div>
+                    <div class="content-card">
+                        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" style="width: 32px; height: 32px; fill: currentColor;"><path d="M37,37h1.89893c-.39874-1.9563-1.94263-3.50018-3.89893-3.89893v1.89893c0,.55225-.44727,1-1,1s-1-.44775-1-1v-1.89893c-1.9563.39874-3.50018,1.94263-3.89893,3.89893h1.89893c.55273,0,1,.44775,1,1s-.44727,1-1,1h-1.89893c.39874,1.9563,1.94263,3.50018,3.89893,3.89893v-1.89893c0-.55225.44727-1,1-1s1,.44775,1,1v1.89893c1.9563-.39874,3.50018-1.94263,3.89893-3.89893h-1.89893c-.55273,0-1-.44775-1-1s.44727-1,1-1Z"/><path d="M6,8v4c0,.55225.44727,1,1,1h11v-7.84698l-11.16406,1.86066c-.48242.08008-.83594.49756-.83594.98633Z"/><path d="M42,12c0-2.75684-2.24316-5-5-5h-2.38184l-.72363-1.44727c-.16992-.33887-.51562-.55273-.89453-.55273h-3v8h11c.55273,0,1-.44775,1-1Z"/><path d="M20,9h4c.54999,0,1,.45001,1,1s-.45001,1-1,1h-4v2h2c.54999,0,1,.45001,1,1s-.45001,1-1,1h-2v2h4c.54999,0,1,.45001,1,1s-.45001,1-1,1h-4v2h2c.54999,0,1,.45001,1,1s-.45001,1-1,1h-2v2h4c.54999,0,1,.45001,1,1s-.45001,1-1,1h-4v2h2c.54999,0,1,.45001,1,1s-.45001,1-1,1h-2v2h4c.54999,0,1,.45001,1,1s-.45001,1-1,1h-4v2h2c.54999,0,1,.45001,1,1s-.45001,1-1,1h-2v3c0,.55225.44769,1,1,1h7v-1.40002c-.64001-1.04999-1-2.27997-1-3.59998s.35999-2.54999,1-3.60004V5h-8v4Z"/><path d="M41,15h-11v7h4.11816l.5-1h2.38184c2.75684,0,5-2.24316,5-5,0-.55225-.44727-1-1-1Z"/><path d="M34,28v-4h-4v5h3c.55273,0,1-.44775,1-1Z"/><path d="M6,16v4c0,.43066.27539.8125.68359.94873l5.31641,1.77197v2.2793c0,1.6543,1.3457,3,3,3h3v-13H7c-.55273,0-1,.44775-1,1Z"/></svg></div>
+                        <h3 class="card-title">Precision & Quality</h3>
+                        <p class="card-text">ISO 9001:2008 certified with annual NQA audits. Our state-of-the-art computer-controlled manufacturing is overseen by highly trained professionals using purpose-built machinery for railway crossing panels.</p>
+                    </div>
+                    <div class="content-card">
+                        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" style="width: 32px; height: 32px; fill: currentColor;"><path d="M7.5,19h14c1.10455,0,2-.89545,2-2V7c0-1.10461-.89545-2-2-2H7.5c-1.10455,0-2,.89539-2,2v10c0,1.10455.89545,2,2,2ZM9.5,7h10c.55225,0,1,.44727,1,1s-.44775,1-1,1h-10c-.55225,0-1-.44727-1-1s.44775-1,1-1ZM9.5,11h10c.55225,0,1,.44727,1,1s-.44775,1-1,1h-10c-.55225,0-1-.44727-1-1s.44775-1,1-1ZM9.5,15h10c.55225,0,1,.44727,1,1s-.44775,1-1,1h-10c-.55225,0-1-.44727-1-1s.44775-1,1-1Z"/><circle cx="17.5" cy="31" r="6"/><path d="M10.5,34.85999c-.15997-.28003-.29999-.57001-.40997-.87l-3.18005,2.47998c-.82996.64001-1.33997,1.60999-1.39996,2.65002-.07001,1.04999.32001,2.07001,1.06,2.81.67999.69,1.60999,1.07001,2.58002,1.07001.06995,0,.14996,0,.22998-.01001,1.03998-.06,2.01001-.57001,2.65002-1.40002l2.01996-2.58997.46002-.59003c-1.71002-.67999-3.13-1.95001-4.01001-3.54999Z"/><path d="M40.5,13.18427v19.81573h2v-17c0-1.30194-.8385-2.40161-2-2.81573Z"/><polygon points="34.5 42.40997 41.90997 35 34.5 35 34.5 42.40997"/><path d="M15.68433,41c.41412,1.1615,1.51373,2,2.81567,2h14v-2H15.68433Z"/><path d="M38.5,12c0-1.65002-1.34998-3-3-3h-10v8c0,2.20996-1.78998,4-4,4h-11v6.14001c1.35999-2.47003,3.98999-4.14001,7-4.14001,2.02002,0,3.85999.76001,5.27002,2h10.72998c.54999,0,1,.45001,1,1s-.45001,1-1,1h-9.08002c.36005.62.63,1.28998.82001,2h8.26001c.54999,0,1,.45001,1,1s-.45001,1-1,1h-8c0,.69-.09998,1.35999-.26001,2h4.26001c.54999,0,1,.45001,1,1s-.45001,1-1,1h-5.08002c-1.38995,2.39001-3.96997,4-6.91998,4h15v-5c0-.54999.45001-1,1-1h5V12ZM33.5,23h-4c-.54999,0-1-.45001-1-1s.45001-1,1-1h4c.54999,0,1,.45001,1,1s-.45001,1-1,1ZM33.5,19h-4c-.54999,0-1-.45001-1-1s.45001-1,1-1h4c.54999,0,1,.45001,1,1s-.45001,1-1,1ZM33.5,15h-4c-.54999,0-1-.45001-1-1s.45001-1,1-1h4c.54999,0,1,.45001,1,1s-.45001,1-1,1Z"/></svg></div>
+                        <h3 class="card-title">Complete Traceability</h3>
+                        <p class="card-text">Every panel is digitally tracked with production data, weight checks, and visual inspections. Each panel is marked with crossing grade, rail type, sleeper type, fastener type, and year of manufacture for easy site verification.</p>
+                    </div>
+                    <div class="content-card">
+                        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" style="width: 32px; height: 32px; fill: currentColor;"><path d="M31,55.46002c0,.62.45001,1.10999,1,1.10999s1-.48999,1-1.10999v-11.89001h-2v11.89001Z"/><path d="M15.33002,33.57001h13.33997c.86005,0,1.66003.23999,2.33002.64996v-2.64996c0-1.10004-1.07001-2-2.38-2h-11.23999c-1.41003,0-2.65002-.62-3.45001-1.56-.41998,1.32996-.69,2.70996-.83002,4.10999.28003.83002,1.17004,1.45001,2.23004,1.45001Z"/><path d="M48.66998,33.57001c1.06,0,1.95001-.62,2.23004-1.45001-.14001-1.40002-.41003-2.78003-.83002-4.10999-.79999.94-2.03998,1.56-3.45001,1.56h-11.23999c-1.31,0-2.38.89996-2.38,2v2.64996c.66998-.40997,1.46997-.64996,2.33002-.64996h13.33997Z"/><path d="M21,21.57001h8c.72998,0,1.40997.20001,2,.53998V7.42999l-.59003,2.06c-.37994,1.35999-1.06,2.59003-2,3.67999-.94,1.07001-2.08997,1.91003-3.38995,2.47998-2.25.99005-4.28003,2.36005-6.01001,4.06006.08002,1.03998.94,1.85999,1.98999,1.85999Z"/><path d="M43,21.57001c1.04999,0,1.90997-.82001,1.98999-1.85999-1.72998-1.70001-3.76001-3.07001-6.01001-4.06006-1.29999-.56995-2.44995-1.40997-3.38995-2.47998-.94-1.08997-1.62006-2.32001-2-3.69l-.59003-2.04999v14.67999c.59003-.33997,1.27002-.53998,2-.53998h8Z"/><path d="M17.38,27.57001h11.23999c.88,0,1.70001.23999,2.38.65997v-2.65997c0-1.10004-.90002-2-2-2h-8c-1.53003,0-2.84998-.88-3.52002-2.15002-.42999.53003-.82996,1.06-1.20996,1.63-.47003.72998-.89001,1.48999-1.27002,2.27002v.25c0,1.09998,1.07001,2,2.38,2Z"/><path d="M46.62,27.57001c1.31,0,2.38-.90002,2.38-2v-.25c-.38-.78003-.79999-1.54004-1.27002-2.27002-.38-.57001-.77997-1.09998-1.20996-1.63-.67004,1.27002-1.98999,2.15002-3.52002,2.15002h-8c-1.09998,0-2,.89996-2,2v2.65997c.67999-.41998,1.5-.65997,2.38-.65997h11.23999Z"/><path d="M28.66998,35.57001h-13.33997c-.84003,0-1.62-.23004-2.29004-.62.09003.94995.32001,1.85999.69,2.73999.48999,1.15997,1.17999,2.20001,2.06,3.08997,1.80005,1.80005,4.20001,2.79004,6.75,2.79004h8.46002v-6c0-1.10004-1.04999-2-2.33002-2Z"/><path d="M48.66998,35.57001h-13.33997c-1.28003,0-2.33002.89996-2.33002,2v6h8.46002c2.54999,0,4.94995-.98999,6.75-2.79004.88-.88995,1.57001-1.92999,2.06-3.08997.37-.88.59998-1.79004.69-2.73999-.67004.38995-1.45001.62-2.29004.62Z"/></svg></div>
+                        <h3 class="card-title">Environmental Leadership</h3>
+                        <p class="card-text">Manufactured using 100% recycled rubber tyres with advanced polyurethane binders through our revolutionary cold-cure process. Our panels pose no environmental risk and won't leach chemicals or emit harmful vapours.</p>
+                    </div>
+                    <div class="content-card">
+                        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" style="width: 32px; height: 32px; fill: currentColor;"><path d="M11.29297,9.70703c.19531.19531.45117.29297.70703.29297s.51172-.09766.70703-.29297l3-3c.39062-.39062.39062-1.02344,0-1.41406s-1.02344-.39062-1.41406,0l-2.29297,2.29297-1.29297-1.29297c-.39062-.39062-1.02344-.39062-1.41406,0s-.39062,1.02344,0,1.41406l2,2Z"/><path d="M35.29297,9.70703c.19531.19531.45117.29297.70703.29297s.51172-.09766.70703-.29297l3-3c.39062-.39062.39062-1.02344,0-1.41406s-1.02344-.39062-1.41406,0l-2.29297,2.29297-1.29297-1.29297c-.39062-.39062-1.02344-.39062-1.41406,0s-.39062,1.02344,0,1.41406l2,2Z"/><circle cx="24" cy="8" r="3"/><path d="M43,16c0-1.10004-.90002-2-2-2h-14v-2c-.83002.63-1.87,1-3,1s-2.16998-.37-3-1v2H7c-1.09998,0-2,.89996-2,2,0,1.09998.90002,2,2,2h3.47998l-2.13995,5h-1.34003c-.54999,0-1,.45001-1,1v1c0,3.31,2.69,6,6,6s6-2.69,6-6v-1c0-.54999-.45001-1-1-1h-1.34003l-2.13995-5h7.47998v10h6v-10h7.47998l-2.13995,5h-1.34003c-.54999,0-1,.45001-1,1v1c0,3.31,2.69,6,6,6s6-2.69,6-6v-1c0-.54999-.45001-1-1-1h-1.34003l-2.13995-5h3.47998c1.09998,0,2-.90002,2-2ZM10.52002,23l1.47998-3.46002,1.47998,3.46002h-2.95996ZM34.52002,23l1.47998-3.46002,1.47998,3.46002h-2.95996Z"/><path d="M13,37v1h22v-1c0-1.10461-.89545-2-2-2H15c-1.10455,0-2,.89539-2,2Z"/><path d="M28,30h-8c-1.10455,0-2,.89539-2,2v1h12v-1c0-1.10461-.89545-2-2-2Z"/><rect x="9" y="40" width="30" height="3" rx="1" ry="1"/></svg></div>
+                        <h3 class="card-title">Exclusive Design Rights</h3>
+                        <p class="card-text">All components in our level crossing systems are designed by Rosehill Rail, including those supplied under other names by our global distributors, ensuring consistent quality and innovation.</p>
+                    </div>
+                    <div class="content-card">
+                        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" style="width: 32px; height: 32px; fill: currentColor;"><path d="M57,38c0,.54999-.45001,1-1,1h-1v4.67999c0,3.96997-2.84003,7.32001-6.75,7.97998-5.39001.89001-10.82001,1.34003-16.25,1.34003s-10.85999-.45001-16.25-1.34003c-3.90997-.65997-6.75-4.01001-6.75-7.97998v-4.67999h-1c-.54999,0-1-.45001-1-1s.45001-1,1-1h18c.54999,0,1,.45001,1,1s-.45001,1-1,1h-1v2.67999c0,.54999.45001,1,1,1h12c.54999,0,1-.45001,1-1v-2.67999h-1c-.54999,0-1-.45001-1-1s.45001-1,1-1h18c.54999,0,1,.45001,1,1Z"/><circle cx="32" cy="23" r="6"/><path d="M31.37012,38.77637c.18359.14893.40625.22363.62988.22363s.44629-.07471.62988-.22363c.46484-.37646,11.37012-9.29932,11.37012-15.77637,0-6.6167-5.38281-12-12-12s-12,5.3833-12,12c0,6.47705,10.90527,15.3999,11.37012,15.77637ZM24,23c0-4.41113,3.58887-8,8-8s8,3.58887,8,8-3.58887,8-8,8-8-3.58887-8-8Z"/></svg></div>
+                        <h3 class="card-title">Strategic Location</h3>
+                        <p class="card-text">Based in Sowerby Bridge, West Yorkshire, we benefit from strategic access to major transport links, enhancing our ability to deliver products efficiently both locally and globally.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">Years of Innovation</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Recycled Materials</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1.5</div>
+                    <div class="stat-label">Hour Cure Time</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">Global</div>
+                    <div class="stat-label">Reach & Delivery</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><strong>Rosehill Rail</strong><br>
+                    A Division of Rosehill Group<br>
+                    Spring Bank Mills<br>
+                    Sowerby Bridge<br>
+                    West Yorkshire HX6 3BW<br>
+                    United Kingdom</p>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" style="width: 1rem; height: 1rem; fill: currentColor; vertical-align: text-bottom;"><path d="M56.71104,31.35059l-2.53662-2.53662c1.18555-1.68018,1.82959-3.69189,1.82959-5.75635,0-5.51416-4.48584-10-10-10s-10,4.48584-10,10,4.48584,10,10,10h10c.4043,0,.76904-.24365,.92383-.61719.15479-.37402.06934-.8042-.2168-1.08984ZM41.00401,24.05762c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1ZM46.00401,24.05762c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1ZM51.00401,24.05762c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1Z"/><path d="M51.56309,45.40039l-10.17969-10.17969-1.25928-1.25928c-.39062-.39062-1.02344-.39062-1.41406,0s-.39062,1.02344,0,1.41406l.55225.55225-3.65576,3.65576c-.4126.4126-1.08301.41162-1.49463,0l-11.63379-11.63379c-.41211-.41211-.41211-1.08252,0-1.49463l3.65552-3.65552.5642.5642c.36332.36332,1.0301.38398,1.41407,0,.39062-.39062.39062-1.02344,0-1.41406,0,0-1.27014-1.2702-1.271-1.27148l-10.17981-10.17981-1.27087-1.27087c-.39062-.39062-1.02344-.39062-1.41406,0s-.39062,1.02344,0,1.41406l.56396.56396-5.10986,5.10986c-2.87549,2.875-3.24658,7.36328-.8833,10.67139,7.33447,10.26855,16.25928,19.19336,26.52734,26.52734,1.45703,1.04102,3.14209,1.55127,4.81787,1.55127,2.13037,0,4.24463-.82471,5.854-2.43408l5.10986-5.10986.55224.55224c.37609.37609,1.03944.37464,1.41407,0,.39062-.39062.39062-1.02344,0-1.41406l-1.25928-1.25928Z"/></svg> +44 (0)1422 839 456<br>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" style="width: 1rem; height: 1rem; fill: currentColor; vertical-align: text-bottom;"><polygon points="12 23.36124 7.69 26.95127 12 29.76127 12 23.36124"/><path d="M32.64001,7.23124c-.37-.31-.91003-.31-1.28003,0l-3.32001,2.77002h7.92004l-3.32001-2.77002Z"/><polygon points="52 23.36124 52 29.76127 56.31 26.95127 52 23.36124"/><path d="M40.8385,39.4257l15.8609,15.8609c.18713-.39111.3006-.82361.3006-1.28534v-25.10992l-16.1615,10.53436Z"/><circle cx="24" cy="50.00126" r="1"/><path d="M8.71002,56.70127c.39996.19.82996.29999,1.28998.29999h44c.46002,0,.89001-.10999,1.28998-.29999l-23.28998-23.29004-23.28998,23.29004ZM24,53.00126c-1.65002,0-3-1.35004-3-3s1.34998-3,3-3,3,1.34998,3,3-1.34998,3-3,3ZM40,47.00126c1.65002,0,3,1.34998,3,3s-1.34998,3-3,3-3-1.35004-3-3,1.34998-3,3-3ZM35,50.00126c0,1.64996-1.34998,3-3,3s-3-1.35004-3-3,1.34998-3,3-3,3,1.34998,3,3Z"/><circle cx="32" cy="50.00126" r="1"/><circle cx="40" cy="50.00126" r="1"/><path d="M7,28.89133v25.10992c0,.46173.11346.89423.3006,1.28534l15.8609-15.8609L7,28.89133Z"/><path d="M36.44727,21.92948c.33887.16943.55273.51562.55273.89453v2.15283l4,.6665v-5.99951l-7.44238-1.48828c-1.0332-.20703-2.08105-.20703-3.11523,0l-7.44238,1.48828v5.99951l4-.6665v-2.15283c0-.37891.21387-.7251.55273-.89453,2.78516-1.3916,6.10938-1.3916,8.89453,0Z"/><path d="M32,30.59122l7.39001,7.39001,10.60999-6.90997V13.00126c0-.54999-.45001-1-1-1H15c-.54999,0-1,.45001-1,1v18.07001l10.60999,6.90997,7.39001-7.39001ZM21.35352,27.5872c-.22412-.18994-.35352-.46924-.35352-.76318v-8c0-.47656.33643-.88721.80371-.98047l8.24609-1.64893c1.29395-.25977,2.60645-.25977,3.90039,0l8.24609,1.64893c.46729.09326.80371.50391.80371.98047v8c0,.29393-.12939.57322-.35349.76316-.22206.18821-.52433.27181-.81106.22317l-6-1c-.48193-.08008-.83545-.49756-.83545-.98633v-2.35547c-1.91602-.7793-4.08398-.7793-6,0v2.35547c0,.48877-.35352.90625-.83545.98633l-6,1c-.29004.04736-.58691-.03369-.81104-.22314Z"/></svg> info@rosehillrail.com</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="walkway.html">Walkway Panels</a></li>
+                        <li><a href="edgebeams.html">Edge Beams</a></li>
+                        <li><a href="accessories.html">Accessories & Spares</a></li>
+                        <li><a href="#solutions">Road Crossings</a></li>
+                        <li><a href="#solutions">Pedestrian Crossings</a></li>
+                        <li><a href="#solutions">Metro & Tramways</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quality & Compliance</h3>
+                    <p>All components designed by Rosehill Rail with exclusive design rights. Quality assured to ISO 9001:2008 standard with annual NQA audits.</p>
+                    <p style="margin-top: 20px;">
+                        <strong>Accreditations:</strong><br>
+                        ISO 9001:2008 • Network Rail Approved • Full Traceability
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Rosehill Rail. A Division of Rosehill Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Enhanced scroll effect for header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'linear-gradient(135deg, rgba(26, 54, 93, 0.98), rgba(45, 74, 113, 0.98))';
+                header.style.backdropFilter = 'blur(10px)';
+                header.style.boxShadow = '0 8px 32px rgba(0,0,0,0.15)';
+            } else {
+                header.style.background = 'linear-gradient(135deg, #1a365d, #2d4a71)';
+                header.style.backdropFilter = 'none';
+                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            }
+        });
+
+        // Mobile menu toggle functionality
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileToggle && mobileMenu) {
+            mobileToggle.addEventListener('click', function() {
+                mobileToggle.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('.mobile-nav-menu a').forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileToggle.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                });
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!mobileToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
+                    mobileToggle.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
