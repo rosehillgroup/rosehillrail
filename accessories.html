@@ -330,16 +330,18 @@
         }
 
         .overview-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
             margin-bottom: 60px;
+        }
+
+        .overview-text {
+            max-width: 900px;
+            margin: 0 auto 50px;
+            text-align: center;
         }
 
         .overview-text h3 {
             font-family: 'Overpass', sans-serif;
-            font-size: 2rem;
+            font-size: 2.2rem;
             font-weight: 600;
             color: #1a365d;
             margin-bottom: 25px;
@@ -347,41 +349,110 @@
 
         .overview-text p {
             color: #666;
-            font-size: 1.1rem;
-            line-height: 1.7;
+            font-size: 1.15rem;
+            line-height: 1.8;
             margin-bottom: 20px;
         }
 
         .overview-highlight {
-            background: #e8f4fd;
-            padding: 25px;
-            border-radius: 12px;
+            background: linear-gradient(135deg, #e8f4fd 0%, #f5fbff 100%);
+            padding: 30px 40px;
+            border-radius: 16px;
             border-left: 5px solid #ff6b35;
-            margin-top: 30px;
+            margin: 40px auto 0;
+            max-width: 700px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
         }
 
         .overview-highlight h4 {
             font-family: 'Overpass', sans-serif;
             color: #1a365d;
             margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .overview-highlight p {
+            margin-bottom: 0;
+            color: #555;
         }
 
         .overview-image {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .overview-img {
-            border-radius: 12px;
+            position: relative;
+            border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+            transition: all 0.3s ease;
+            background: #1a1a1a;
+            height: 280px;
+        }
+
+        .overview-img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .overview-img.featured {
+            grid-column: span 1;
         }
 
         .overview-img img {
             width: 100%;
-            height: 200px;
+            height: 100%;
             object-fit: cover;
+            display: block;
+        }
+
+        .overview-img-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.7));
+            color: white;
+            padding: 30px 20px 20px;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .overview-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 280px;
+            background: #f8f9fa;
+            border: 2px dashed #e0e0e0;
+            border-radius: 16px;
+        }
+
+        .overview-placeholder-content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .overview-placeholder-icon {
+            width: 60px;
+            height: 60px;
+            background: #ff6b35;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            color: white;
+        }
+
+        .overview-placeholder-text {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.5;
         }
 
         /* Categories Section */
@@ -658,12 +729,21 @@
             }
 
             .overview-content {
-                grid-template-columns: 1fr;
-                gap: 40px;
+                text-align: center;
             }
 
             .overview-image {
                 grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            
+            .overview-img {
+                height: 250px;
+            }
+            
+            .overview-highlight {
+                padding: 25px 30px;
             }
 
             .gallery-grid {
@@ -758,21 +838,28 @@
             <h2 class="section-title">Everything You Need</h2>
             <div class="overview-content">
                 <div class="overview-text">
-                    <h3>Complete Support Range</h3>
                     <p>We offer a comprehensive range of spares and accessories designed to support every aspect of your rail crossing installation, maintenance, and operation. From lifting pins and hooks to aid the elevation of our products, to specialised fixings, tools, and finishing solutions.</p>
                     <p>Our extensive inventory includes everything from precision-engineered connector bars and cover plates to line marking systems and specialty fasteners, ensuring you have access to the right components when you need them.</p>
-                    <div class="overview-highlight">
-                        <h4>Bespoke Solutions Available:</h4>
-                        <p>Can't find exactly what you need? Our technical team can often develop custom accessories to meet specific project requirements and site conditions.</p>
-                    </div>
                 </div>
+                
                 <div class="overview-image">
                     <div class="overview-img">
                         <img src="Accessories Images/lifting_hooks_01.jpg" alt="Lifting hooks for rail crossing installation">
+                        <div class="overview-img-caption">Professional Lifting Equipment</div>
                     </div>
                     <div class="overview-img">
                         <img src="Accessories Images/OmniScrews.jpg" alt="Omni screws specialist fasteners">
+                        <div class="overview-img-caption">Specialist Fixings</div>
                     </div>
+                    <div class="overview-img">
+                        <img src="Accessories Images/Rosehill Rail Accessories - CHAIN GUARD INTERLOCKING SYSTEM-4800.jpg" alt="Chain guard interlocking system finishing solutions">
+                        <div class="overview-img-caption">Finishing Solutions</div>
+                    </div>
+                </div>
+                
+                <div class="overview-highlight">
+                    <h4>Bespoke Solutions Available:</h4>
+                    <p>Can't find exactly what you need? Our technical team can often develop custom accessories to meet specific project requirements and site conditions.</p>
                 </div>
             </div>
         </div>

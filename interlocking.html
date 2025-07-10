@@ -660,16 +660,6 @@
             display: block;
         }
 
-        .gallery-caption {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(transparent, rgba(0,0,0,0.8));
-            color: white;
-            padding: 30px 20px 20px;
-            font-weight: 600;
-        }
 
         /* Applications Section */
         .applications-section {
@@ -875,15 +865,68 @@
                 grid-template-columns: 1fr;
             }
 
-            .sleeper-visual {
-                flex-direction: column;
-                height: auto;
+            .spacing-comparison {
+                grid-template-columns: 1fr;
                 gap: 20px;
             }
-
+            
+            .modular-diagram {
+                padding: 20px;
+            }
+            
+            .sleeper-visual {
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto 10px auto;
+            }
+            
+            .spacing-example {
+                padding: 15px;
+            }
+            
+            .spacing-title {
+                font-size: 0.9rem;
+            }
+            
+            .spacing-measurement {
+                font-size: 0.65rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .sleeper-visual {
+                max-width: 250px;
+            }
+            
             .sleeper {
-                width: 80%;
-                margin: 0 auto;
+                width: 12px;
+                height: 50px;
+            }
+            
+            .panel-block {
+                height: 16px;
+                left: -6px;
+                right: -6px;
+            }
+            
+            /* Adjust sleeper positions for smaller screens */
+            .sleeper.regular-1 { left: 8px; }
+            .sleeper.regular-2 { left: 50px; }
+            .sleeper.regular-3 { left: 92px; }
+            .sleeper.regular-4 { left: 134px; }
+            
+            .sleeper.irregular-1 { left: 8px; }
+            .sleeper.irregular-2 { left: 42px; }
+            .sleeper.irregular-3 { left: 108px; }
+            .sleeper.irregular-4 { left: 138px; }
+            
+            .spacing-measurement {
+                font-size: 0.6rem;
+                line-height: 1.2;
+            }
+            
+            .modular-diagram p {
+                font-size: 0.85rem;
             }
         }
     </style>
@@ -1128,22 +1171,22 @@
             <h2 class="section-title">Installation Process</h2>
             <div class="gallery-grid">
                 <div class="gallery-item">
+                    <img src="Interlocking Images/Interlocking System 1 - RRAP - With concrete infill.jpg" alt="RRAP system with concrete infill installation">
+                </div>
+                <div class="gallery-item">
                     <img src="Interlocking Images/Interlocking System 2 - RRAP - Connecting Bars.jpg" alt="RRAP connecting bars system">
                 </div>
                 <div class="gallery-item">
                     <img src="Interlocking Images/Interlocking System 3 - RRAP - Fixings.jpg" alt="RRAP fixing system detail">
                 </div>
                 <div class="gallery-item">
-                    <img src="Interlocking Images/Rosehill Interlocking Panels 02 Slideshow.jpg" alt="Interlocking panel installation">
-                </div>
-                <div class="gallery-item">
-                    <img src="Interlocking Images/Rosehill Interlocking Panels 03 Slideshow.jpg" alt="Interlocking system assembly">
+                    <img src="Interlocking Images/Rosehill Interlocking Panels 02 Slideshow.jpg" alt="Interlocking panel installation process">
                 </div>
                 <div class="gallery-item">
                     <img src="Interlocking Images/Rosehill Interlocking Panels 04 Slideshow.jpg" alt="Completed interlocking installation">
                 </div>
                 <div class="gallery-item">
-                    <img src="Interlocking Images/Rosehill Interlocking Panels 05 Slideshow.jpg" alt="Interlocking RRAP in operation">
+                    <img src="Interlocking Images/Rosehill Interlocking Panels 06 Slideshow.jpg" alt="Interlocking panels detailed view">
                 </div>
             </div>
         </div>
