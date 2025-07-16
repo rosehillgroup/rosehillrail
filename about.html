@@ -259,7 +259,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: url('Rosehill_Polymers_BeechRd.jpg');
+            background-image: url('Rosehill_Polymers_BeechRd.webp');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -586,7 +586,11 @@
     <header class="header">
         <div class="header-container">
             <a href="index.html" class="logo">
-                <img src="rosehill_rail_logo.png" alt="Rosehill Rail" style="height: 60px;">
+                <picture>
+        <source srcset="rosehill_rail_logo.avif" type="image/avif">
+        <source srcset="rosehill_rail_logo.webp" type="image/webp">
+        <img src="rosehill_rail_logo.png" alt="Rosehill Rail" style="height: 60px;">
+    </picture>
             </a>
             <nav>
                 <ul class="nav-menu">

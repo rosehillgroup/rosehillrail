@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Rosehill Rail for expert rail crossing solutions, technical support, and professional training courses at our Sowerby Bridge facility.">
+    <title>Get in Touch - Rosehill Rail</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1a365d, #2d4a71);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 600;
+            font-family: 'Source Sans Pro', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 6px;
+        }
+
+        .nav-menu a:hover {
+            background: rgba(255, 107, 53, 0.2);
+            color: #ff6b35;
+        }
+
+        .nav-menu a.active {
+            background: rgba(255, 107, 53, 0.2);
+            color: #ff6b35;
+            font-weight: 600;
+        }
+
+        .contact-btn {
+            background: #ff6b35;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .contact-btn:hover {
+            background: #e55a2b !important;
+            transform: translateY(-2px);
+        }
+
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-nav-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #1a365d;
+            flex-direction: column;
+            padding: 20px;
+            gap: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .mobile-nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-nav-menu a:hover {
+            background: rgba(255, 107, 53, 0.2);
+            color: #ff6b35;
+        }
+
+        /* Mega Menu */
+        .nav-item {
+            position: relative;
+        }
+
+        .mega-menu {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            padding: 30px;
+            width: 320px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            margin-top: 10px;
+        }
+
+        .nav-item:hover .mega-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .mega-menu-content {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .mega-menu-section h4 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f0f4f8;
+        }
+
+        .mega-menu-section .section-icon {
+            width: 24px;
+            height: 24px;
+            background: #ff6b35;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+        }
+
+        .mega-menu-links {
+            list-style: none;
+        }
+
+        .mega-menu-links li {
+            margin-bottom: 6px;
+        }
+
+        .mega-menu-links a {
+            color: #666;
+            text-decoration: none;
+            padding: 8px 12px;
+            display: block;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            border-radius: 6px;
+        }
+
+        .mega-menu-links a:hover {
+            color: #ff6b35;
+            background: #fff5f2;
+            transform: translateX(4px);
+        }
+
+        .mega-menu::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid white;
+        }
+        
+        /* Contact Hero */
+        .contact-hero {
+            background: linear-gradient(135deg, #1a365d, #2d4a71);
+            color: white;
+            padding: 120px 0 60px;
+            margin-top: 70px;
+            text-align: center;
+        }
+
+        .contact-hero h1 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 3.2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .contact-hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+
+        /* Main Content */
+        .contact-content {
+            padding: 80px 0;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .content-section {
+            margin-bottom: 80px;
+        }
+
+        .section-title {
+            font-family: 'Overpass', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        /* Contact Grid */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 80px;
+        }
+
+        /* Contact Info */
+        .contact-info {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .contact-info h3 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: #ff6b35;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .contact-details h4 {
+            font-family: 'Overpass', sans-serif;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 5px;
+        }
+
+        .contact-details p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .contact-form h3 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e8f4fd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #ff6b35;
+            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        .submit-btn {
+            background: #ff6b35;
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .submit-btn:hover {
+            background: #e55a2b;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+        }
+
+        /* Training Section */
+        .training-section {
+            background: white;
+            padding: 60px 0;
+            margin: 80px 0;
+        }
+
+        .training-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .training-text h2 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 30px;
+        }
+
+        .training-text p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .training-features {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 12px;
+        }
+
+        .training-features h3 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 25px;
+        }
+
+        .feature-list {
+            list-style: none;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            padding: 12px 0;
+        }
+
+        .feature-icon {
+            width: 30px;
+            height: 30px;
+            background: #ff6b35;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        .training-cta {
+            background: #1a365d;
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .training-cta h4 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .training-cta p {
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .cta-btn {
+            background: #ff6b35;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background: #e55a2b;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a365d;
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #ff6b35;
+        }
+
+        .footer-section p,
+        .footer-section li {
+            opacity: 0.9;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #ff6b35;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+            text-align: center;
+            opacity: 0.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            .mobile-nav-menu.active {
+                display: flex;
+            }
+
+            .contact-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .training-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="rosehill_rail_logo.png" alt="Rosehill Rail" style="height: 60px;">
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="nav-item">
+                        <a href="products.html">Products</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-section">
+                                    <h4>
+                                        Crossing Systems
+                                    </h4>
+                                    <ul class="mega-menu-links">
+                                        <li><a href="connect.html">CONNECT System</a></li>
+                                        <li><a href="link.html">LINK System</a></li>
+                                        <li><a href="interlocking.html">Interlocking RRAP</a></li>
+                                        <li><a href="baseplate.html">Baseplate System</a></li>
+                                        <li><a href="titan.html">TITAN Heavy Duty</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-section">
+                                    <h4>
+                                        Safety Solutions
+                                    </h4>
+                                    <ul class="mega-menu-links">
+                                        <li><a href="antitrespass.html">Anti-Trespass Panels</a></li>
+                                        <li><a href="walkway.html">Walkway Panels</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-section">
+                                    <h4>
+                                        Edge Solutions
+                                    </h4>
+                                    <ul class="mega-menu-links">
+                                        <li><a href="edgebeams.html">Rubber Edge Beams</a></li>
+                                        <li><a href="edgebeams.html">Steel & Plastic Beams</a></li>
+                                        <li><a href="accessories.html">Accessories & Spares</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="active contact-btn">Get in Touch</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="mobile-nav-menu" id="mobile-menu">
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="#solutions">Solutions</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html" class="active contact-btn">Get in Touch</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <h1>Get in Touch</h1>
+        <p>Expert support for your rail infrastructure projects. From technical advice to professional training - we're here to help.</p>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 64 64" style="width: 24px; height: 24px; fill: white;">
+                                <path d="M57,38c0,.54999-.45001,1-1,1h-1v4.67999c0,3.96997-2.84003,7.32001-6.75,7.97998-5.39001.89001-10.82001,1.34003-16.25,1.34003s-10.85999-.45001-16.25-1.34003c-3.90997-.65997-6.75-4.01001-6.75-7.97998v-4.67999h-1c-.54999,0-1-.45001-1-1s.45001-1,1-1h18c.54999,0,1,.45001,1,1s-.45001,1-1,1h-1v2.67999c0,.54999.45001,1,1,1h12c.54999,0,1-.45001,1-1v-2.67999h-1c-.54999,0-1-.45001-1-1s.45001-1,1-1h18c.54999,0,1,.45001,1,1Z"/>
+                                <circle cx="32" cy="23" r="6"/>
+                                <path d="M31.37012,38.77637c.18359.14893.40625.22363.62988.22363s.44629-.07471.62988-.22363c.46484-.37646,11.37012-9.29932,11.37012-15.77637,0-6.6167-5.38281-12-12-12s-12,5.3833-12,12c0,6.47705,10.90527,15.3999,11.37012,15.77637ZM24,23c0-4.41113,3.58887-8,8-8s8,3.58887,8,8-3.58887,8-8,8-8-3.58887-8-8Z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Our Location</h4>
+                            <p>Spring Bank Mills<br>
+                            Sowerby Bridge<br>
+                            West Yorkshire HX6 3BW<br>
+                            United Kingdom</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 64 64" style="width: 24px; height: 24px; fill: white;">
+                                <path d="M56.71104,31.35059l-2.53662-2.53662c1.18555-1.68018,1.82959-3.69189,1.82959-5.75635,0-5.51416-4.48584-10-10-10s-10,4.48584-10,10,4.48584,10,10,10h10c.4043,0,.76904-.24365.92383-.61719.15479-.37402.06934-.8042-.2168-1.08984ZM41.00401,24.05762c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1ZM46.00401,24.05762c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1ZM51.00401,24.05762c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1Z"/>
+                                <path d="M51.56309,45.40039l-10.17969-10.17969-1.25928-1.25928c-.39062-.39062-1.02344-.39062-1.41406,0s-.39062,1.02344,0,1.41406l.55225.55225-3.65576,3.65576c-.4126.4126-1.08301.41162-1.49463,0l-11.63379-11.63379c-.41211-.41211-.41211-1.08252,0-1.49463l3.65552-3.65552.5642.5642c.36332.36332,1.0301.38398,1.41407,0,.39062-.39062.39062-1.02344,0-1.41406,0,0-1.27014-1.2702-1.271-1.27148l-10.17981-10.17981-1.27087-1.27087c-.39062-.39062-1.02344-.39062-1.41406,0s-.39062,1.02344,0,1.41406l.56396.56396-5.10986,5.10986c-2.87549,2.875-3.24658,7.36328-.8833,10.67139,7.33447,10.26855,16.25928,19.19336,26.52734,26.52734,1.45703,1.04102,3.14209,1.55127,4.81787,1.55127,2.13037,0,4.24463-.82471,5.854-2.43408l5.10986-5.10986.55224.55224c.37609.37609,1.03944.37464,1.41407,0,.39062-.39062.39062-1.02344,0-1.41406l-1.25928-1.25928Z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+44 (0)1422 839 456</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 64 64" style="width: 24px; height: 24px; fill: white;">
+                                <polygon points="12 23.36124 7.69 26.95127 12 29.76127 12 23.36124"/>
+                                <path d="M32.64001,7.23124c-.37-.31-.91003-.31-1.28003,0l-3.32001,2.77002h7.92004l-3.32001-2.77002Z"/>
+                                <polygon points="52 23.36124 52 29.76127 56.31 26.95127 52 23.36124"/>
+                                <path d="M40.8385,39.4257l15.8609,15.8609c.18713-.39111.3006-.82361.3006-1.28534v-25.10992l-16.1615,10.53436Z"/>
+                                <circle cx="24" cy="50.00126" r="1"/>
+                                <path d="M8.71002,56.70127c.39996.19.82996.29999,1.28998.29999h44c.46002,0,.89001-.10999,1.28998-.29999l-23.28998-23.29004-23.28998,23.29004ZM24,53.00126c-1.65002,0-3-1.35004-3-3s1.34998-3,3-3,3,1.34998,3,3-1.34998,3-3,3ZM40,47.00126c1.65002,0,3,1.34998,3,3s-1.34998,3-3,3-3-1.35004-3-3,1.34998-3,3-3ZM35,50.00126c0,1.64996-1.34998,3-3,3s-3-1.35004-3-3,1.34998-3,3-3,3,1.34998,3,3Z"/>
+                                <circle cx="32" cy="50.00126" r="1"/>
+                                <circle cx="40" cy="50.00126" r="1"/>
+                                <path d="M7,28.89133v25.10992c0,.46173.11346.89423.3006,1.28534l15.8609-15.8609L7,28.89133Z"/>
+                                <path d="M36.44727,21.92948c.33887.16943.55273.51562.55273.89453v2.15283l4,.6665v-5.99951l-7.44238-1.48828c-1.0332-.20703-2.08105-.20703-3.11523,0l-7.44238,1.48828v5.99951l4-.6665v-2.15283c0-.37891.21387-.7251.55273-.89453,2.78516-1.3916,6.10938-1.3916,8.89453,0Z"/>
+                                <path d="M32,30.59122l7.39001,7.39001,10.60999-6.90997V13.00126c0-.54999-.45001-1-1-1H15c-.54999,0-1,.45001-1,1v18.07001l10.60999,6.90997,7.39001-7.39001ZM21.35352,27.5872c-.22412-.18994-.35352-.46924-.35352-.76318v-8c0-.47656.33643-.88721.80371-.98047l8.24609-1.64893c1.29395-.25977,2.60645-.25977,3.90039,0l8.24609,1.64893c.46729.09326.80371.50391.80371.98047v8c0,.29393-.12939.57322-.35349.76316-.22206.18821-.52433.27181-.81106.22317l-6-1c-.48193-.08008-.83545-.49756-.83545-.98633v-2.35547c-1.91602-.7793-4.08398-.7793-6,0v2.35547c0,.48877-.35352.90625-.83545.98633l-6,1c-.29004.04736-.58691-.03369-.81104-.22314Z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@rosehillrail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 48 48" style="width: 24px; height: 24px; fill: white;">
+                                <path d="M42,41h-24v-1c0-1.6543-1.3457-3-3-3h-1V14c0-2.75684,2.24316-5,5-5v4h-2c-.55225,0-1,.44727-1,1s.44775,1,1,1h2v3.76495c-1.82629,1.46753-3,3.71539-3,6.23505,0,4.41113,3.58887,8,8,8s8-3.58887,8-8c0-2.51965-1.17371-4.76752-3-6.23505v-3.76495h2c.55273,0,1-.44727,1-1s-.44727-1-1-1h-2v-4h1.18433c.41412,1.1615,1.51373,2,2.81567,2,1.6543,0,3-1.3457,3-3s-1.3457-3-3-3c-1.30194,0-2.40161.8385-2.81573,2h-11.18427c-3.85986,0-7,3.14062-7,7v23h-1c-1.6543,0-3,1.3457-3,3v1h-2c-.55225,0-1,.44727-1,1s.44775,1,1,1h36c.55273,0,1-.44727,1-1s-.44727-1-1-1ZM26.82715,27.82715c-.37451.37451-1.02362.39044-1.41406,0l-2.12012-2.12012c-.1875-.1875-.29297-.44141-.29297-.70703v-3c0-.55273.44775-1,1-1s1,.44727,1,1v2.58594l1.82715,1.82715c.39062.39062.39062,1.02338,0,1.41406ZM21,9h6v4h-6v-4ZM21,15h6v2.58899c-.92743-.37683-1.93884-.58899-3-.58899s-2.07257.21216-3,.58899v-2.58899Z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Response Time</h4>
+                            <p>We respond to all enquiries within one working day</p>
+                        </div>
+                    </div>
+
+                    <!-- Google Map -->
+                    <div style="margin-top: 30px;">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2357.2!2d-1.9167!3d53.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDQyJzAwLjAiTiAxwrA1NScwMC4wIlc!5e0!3m2!1sen!2suk!4v1635000000000!5m2!1sen!2suk&q=Spring+Bank+Mills,+Sowerby+Bridge,+West+Yorkshire+HX6+3BW,+UK" 
+                            width="100%" 
+                            height="200" 
+                            style="border: 0; border-radius: 8px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Rosehill Rail Location - Spring Bank Mills, Sowerby Bridge">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company/Organisation</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="enquiryType">Enquiry Type</label>
+                            <select id="enquiryType" name="enquiryType">
+                                <option value="">Please select...</option>
+                                <option value="product-enquiry">Product Enquiry</option>
+                                <option value="technical-support">Technical Support</option>
+                                <option value="training-course">Training Course</option>
+                                <option value="quotation">Request Quotation</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" placeholder="Please provide details about your enquiry, including project requirements, timelines, or specific questions..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Section -->
+    <section class="training-section">
+        <div class="container">
+            <div class="training-content">
+                <div class="training-text">
+                    <h2>Professional Training Courses</h2>
+                    <img src="Rail_Training.jpg" alt="Professional rail training course at Rosehill Rail facility" style="width: 100%; height: 250px; object-fit: cover; border-radius: 12px; margin: 20px 0 30px 0;">
+                    <p>At Rosehill Rail, we're dedicated to working closely with our partners and customers, providing all the support you need to specify, install, and maintain our products effectively.</p>
+                    <p>As part of this commitment, we offer <strong>free training courses</strong> at our dedicated training centre in Sowerby Bridge, covering all aspects of installation, commissioning, and maintenance of our level crossing and RRAP systems.</p>
+                    <p>Whether you're an installer, specifier, or network operator, our training sessions can be tailored to your specific needs. Our technical team is also available to answer queries related to design, specification advice, or compatibility checks.</p>
+                </div>
+
+                <div class="training-features">
+                    <h3>Course Features</h3>
+                    <ul class="feature-list">
+                        <li>
+                            <div class="feature-icon">✓</div>
+                            <span><strong>Free of charge</strong> training at our Sowerby Bridge facility</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">✓</div>
+                            <span><strong>Flexible duration</strong> - half day or full day courses</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">✓</div>
+                            <span><strong>Tailored content</strong> for installers, specifiers, and operators</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">✓</div>
+                            <span><strong>Expert instruction</strong> from our technical team</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">✓</div>
+                            <span><strong>Hands-on training</strong> with actual products and systems</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">✓</div>
+                            <span><strong>Available year-round</strong> with refreshments provided</span>
+                        </li>
+                    </ul>
+
+                    <div class="training-cta">
+                        <h4>On Time & On Budget</h4>
+                        <p>Expert training is invaluable for ensuring projects run on time and on budget. Fill out the contact form above and we'll get back to you within one working day to discuss your requirements and available dates.</p>
+                        <a href="#contact-form" class="cta-btn">Book Training Course</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><strong>Rosehill Rail</strong><br>
+                    A Division of Rosehill Group<br>
+                    Spring Bank Mills<br>
+                    Sowerby Bridge<br>
+                    West Yorkshire HX6 3BW<br>
+                    United Kingdom</p>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 64 64" style="width: 16px; height: 16px; fill: white; vertical-align: middle; margin-right: 8px;">
+                        <path d="M56.71104,31.35059l-2.53662-2.53662c1.18555-1.68018,1.82959-3.69189,1.82959-5.75635,0-5.51416-4.48584-10-10-10s-10,4.48584-10,10,4.48584,10,10,10h10c.4043,0,.76904-.24365.92383-.61719.15479-.37402.06934-.8042-.2168-1.08984ZM41.00401,24.05762c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1ZM46.00401,24.05762c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1ZM51.00401,24.05762c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1Z"/>
+                        <path d="M51.56309,45.40039l-10.17969-10.17969-1.25928-1.25928c-.39062-.39062-1.02344-.39062-1.41406,0s-.39062,1.02344,0,1.41406l.55225.55225-3.65576,3.65576c-.4126.4126-1.08301.41162-1.49463,0l-11.63379-11.63379c-.41211-.41211-.41211-1.08252,0-1.49463l3.65552-3.65552.5642.5642c.36332.36332,1.0301.38398,1.41407,0,.39062-.39062.39062-1.02344,0-1.41406,0,0-1.27014-1.2702-1.271-1.27148l-10.17981-10.17981-1.27087-1.27087c-.39062-.39062-1.02344-.39062-1.41406,0s-.39062,1.02344,0,1.41406l.56396.56396-5.10986,5.10986c-2.87549,2.875-3.24658,7.36328-.8833,10.67139,7.33447,10.26855,16.25928,19.19336,26.52734,26.52734,1.45703,1.04102,3.14209,1.55127,4.81787,1.55127,2.13037,0,4.24463-.82471,5.854-2.43408l5.10986-5.10986.55224.55224c.37609.37609,1.03944.37464,1.41407,0,.39062-.39062.39062-1.02344,0-1.41406l-1.25928-1.25928Z"/>
+                    </svg>+44 (0)1422 839 456<br>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 64 64" style="width: 16px; height: 16px; fill: white; vertical-align: middle; margin-right: 8px;">
+                        <polygon points="12 23.36124 7.69 26.95127 12 29.76127 12 23.36124"/>
+                        <path d="M32.64001,7.23124c-.37-.31-.91003-.31-1.28003,0l-3.32001,2.77002h7.92004l-3.32001-2.77002Z"/>
+                        <polygon points="52 23.36124 52 29.76127 56.31 26.95127 52 23.36124"/>
+                        <path d="M40.8385,39.4257l15.8609,15.8609c.18713-.39111.3006-.82361.3006-1.28534v-25.10992l-16.1615,10.53436Z"/>
+                        <circle cx="24" cy="50.00126" r="1"/>
+                        <path d="M8.71002,56.70127c.39996.19.82996.29999,1.28998.29999h44c.46002,0,.89001-.10999,1.28998-.29999l-23.28998-23.29004-23.28998,23.29004ZM24,53.00126c-1.65002,0-3-1.35004-3-3s1.34998-3,3-3,3,1.34998,3,3-1.34998,3-3,3ZM40,47.00126c1.65002,0,3,1.34998,3,3s-1.34998,3-3,3-3-1.35004-3-3,1.34998-3,3-3ZM35,50.00126c0,1.64996-1.34998,3-3,3s-3-1.35004-3-3,1.34998-3,3-3,3,1.34998,3,3Z"/>
+                        <circle cx="32" cy="50.00126" r="1"/>
+                        <circle cx="40" cy="50.00126" r="1"/>
+                        <path d="M7,28.89133v25.10992c0,.46173.11346.89423.3006,1.28534l15.8609-15.8609L7,28.89133Z"/>
+                        <path d="M36.44727,21.92948c.33887.16943.55273.51562.55273.89453v2.15283l4,.6665v-5.99951l-7.44238-1.48828c-1.0332-.20703-2.08105-.20703-3.11523,0l-7.44238,1.48828v5.99951l4-.6665v-2.15283c0-.37891.21387-.7251.55273-.89453,2.78516-1.3916,6.10938-1.3916,8.89453,0Z"/>
+                        <path d="M32,30.59122l7.39001,7.39001,10.60999-6.90997V13.00126c0-.54999-.45001-1-1-1H15c-.54999,0-1,.45001-1,1v18.07001l10.60999,6.90997,7.39001-7.39001ZM21.35352,27.5872c-.22412-.18994-.35352-.46924-.35352-.76318v-8c0-.47656.33643-.88721.80371-.98047l8.24609-1.64893c1.29395-.25977,2.60645-.25977,3.90039,0l8.24609,1.64893c.46729.09326.80371.50391.80371.98047v8c0,.29393-.12939.57322-.35349.76316-.22206.18821-.52433.27181-.81106.22317l-6-1c-.48193-.08008-.83545-.49756-.83545-.98633v-2.35547c-1.91602-.7793-4.08398-.7793-6,0v2.35547c0,.48877-.35352.90625-.83545.98633l-6,1c-.29004.04736-.58691-.03369-.81104-.22314Z"/>
+                    </svg>info@rosehillrail.com</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="walkway.html">Walkway Panels</a></li>
+                        <li><a href="edgebeams.html">Edge Beams</a></li>
+                        <li><a href="accessories.html">Accessories & Spares</a></li>
+                        <li><a href="#solutions">Road Crossings</a></li>
+                        <li><a href="#solutions">Pedestrian Crossings</a></li>
+                        <li><a href="#solutions">Metro & Tramways</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quality & Compliance</h3>
+                    <p>All components designed by Rosehill Rail with exclusive design rights. Quality assured to ISO 9001:2008 standard with annual NQA audits.</p>
+                    <p style="margin-top: 20px;">
+                        <strong>Accreditations:</strong><br>
+                        ISO 9001:2008 • Network Rail Approved • Full Traceability
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Rosehill Rail. A Division of Rosehill Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Smooth scroll for training CTA button
+        document.querySelector('.cta-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('.contact-form').scrollIntoView({
+                behaviour: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

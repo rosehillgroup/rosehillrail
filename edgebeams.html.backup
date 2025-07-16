@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Edge Beams - Lightweight rubber edge beam solutions using 100% recycled tyre rubber with cold cure technology, plus steel and plastic alternatives for specialised applications.">
+    <title>Edge Beams - Sustainable Crossing Support Solutions | Rosehill Rail</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1a365d, #2d4a71);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 600;
+            font-family: 'Source Sans Pro', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 6px;
+        }
+
+        .nav-menu a:hover {
+            background: rgba(255, 107, 53, 0.2);
+            color: #ff6b35;
+        }
+
+        .nav-menu a.active {
+            background: rgba(255, 107, 53, 0.2);
+            color: #ff6b35;
+            font-weight: 600;
+        }
+
+        .contact-btn {
+            background: #ff6b35;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .contact-btn:hover {
+            background: #e55a2b !important;
+            transform: translateY(-2px);
+        }
+
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-nav-menu {
+            display: none;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #1a365d, #2d4a71);
+            flex-direction: column;
+            padding: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            z-index: 999;
+        }
+
+        .mobile-nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            transition: color 0.3s ease;
+        }
+
+        .mobile-nav-menu a:hover {
+            color: #ff6b35;
+        }
+
+        .mobile-nav-menu a.active {
+            color: #ff6b35;
+            font-weight: 600;
+        }
+
+        .mobile-nav-menu a:last-child {
+            border-bottom: none;
+        }
+
+        .mobile-nav-menu .contact-btn {
+            background: #ff6b35;
+            padding: 15px 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 10px;
+            border-bottom: none;
+        }
+
+        /* Mega Menu */
+        .nav-item {
+            position: relative;
+        }
+
+        .mega-menu {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            padding: 30px;
+            width: 320px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            margin-top: 10px;
+        }
+
+        .nav-item:hover .mega-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .mega-menu-content {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .mega-menu-section h4 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f0f4f8;
+        }
+
+        .mega-menu-section .section-icon {
+            width: 24px;
+            height: 24px;
+            background: #ff6b35;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+        }
+
+        .mega-menu-links {
+            list-style: none;
+        }
+
+        .mega-menu-links li {
+            margin-bottom: 6px;
+        }
+
+        .mega-menu-links a {
+            color: #666;
+            text-decoration: none;
+            padding: 8px 12px;
+            display: block;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            border-radius: 6px;
+        }
+
+        .mega-menu-links a:hover {
+            color: #ff6b35;
+            background: #fff5f2;
+            transform: translateX(4px);
+        }
+
+        .mega-menu::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid white;
+        }
+        
+        /* Product Hero */
+        .product-hero {
+            background: linear-gradient(135deg, #1a365d, #2d4a71);
+            color: white;
+            padding: 120px 0 80px;
+            margin-top: 70px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('Edge Beam Images/Rubber Edge Beam - Connect Crossing - Installation on dry mix concrete.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.2;
+            z-index: 1;
+        }
+
+        .product-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, 
+                rgba(26, 54, 93, 0.95) 0%, 
+                rgba(45, 74, 113, 0.85) 50%,
+                rgba(26, 54, 93, 0.95) 100%);
+            z-index: 2;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero-text .subtitle {
+            font-size: 1.4rem;
+            opacity: 0.95;
+            margin-bottom: 30px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #ff6b35;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-features {
+            list-style: none;
+        }
+
+        .hero-features li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+
+        .hero-features .check {
+            background: #ff6b35;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        /* Rubber Edge Beam Section */
+        .rubber-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-family: 'Overpass', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 600;
+            color: #1a365d;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .rubber-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .rubber-text h3 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 25px;
+        }
+
+        .rubber-text p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .rubber-highlight {
+            background: #e8f4fd;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid #ff6b35;
+            margin-top: 30px;
+        }
+
+        .rubber-highlight h4 {
+            font-family: 'Overpass', sans-serif;
+            color: #1a365d;
+            margin-bottom: 10px;
+        }
+
+        .weight-comparison {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .weight-demo {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .weight-item {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            border: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .weight-item.rubber {
+            border-color: #ff6b35;
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.2);
+        }
+
+        .weight-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-size: 24px;
+        }
+
+        .concrete-icon {
+            background: #c0c0c0;
+            color: #666;
+        }
+
+        .rubber-icon {
+            background: #ff6b35;
+            color: white;
+        }
+
+        .weight-label {
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 10px;
+        }
+
+        .weight-value {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ff6b35;
+            margin-bottom: 5px;
+        }
+
+        .weight-desc {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Material Options Section */
+        .materials-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .materials-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .material-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .material-card.primary {
+            border: 3px solid #ff6b35;
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.15);
+        }
+
+
+        .material-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        .material-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            margin: 0 auto 25px;
+        }
+
+        .rubber-bg { background: #ff6b35; }
+        .steel-bg { background: #666; }
+        .plastic-bg { background: #4CAF50; }
+
+        .material-title {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .material-desc {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .material-features {
+            list-style: none;
+        }
+
+        .material-features li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        .feature-check {
+            background: #ff6b35;
+            color: white;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            flex-shrink: 0;
+        }
+
+        /* Key Benefits */
+        .benefits-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .benefit-card {
+            background: #f8f9fa;
+            padding: 40px 30px;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .benefit-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: #ff6b35;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            background: white;
+        }
+
+        .benefit-card:hover::before {
+            transform: translateX(0);
+        }
+
+        .benefit-icon {
+            width: 80px;
+            height: 80px;
+            background: #1a365d;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            margin: 0 auto 25px;
+        }
+
+        .benefit-title {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 15px;
+        }
+
+        .benefit-desc {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Technical Specs */
+        .specs-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .specs-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .specs-text h2 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 30px;
+        }
+
+        .specs-text p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .specs-table {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .specs-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .specs-table th {
+            background: #1a365d;
+            color: white;
+            padding: 20px;
+            text-align: left;
+            font-family: 'Overpass', sans-serif;
+            font-weight: 600;
+        }
+
+        .specs-table td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #e8f4fd;
+        }
+
+        .specs-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .specs-table td:first-child {
+            font-weight: 600;
+            color: #1a365d;
+            background: #f8f9fa;
+        }
+
+        /* Installation Gallery */
+        .gallery-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            padding: 30px 20px 20px;
+            font-weight: 600;
+        }
+
+        /* Applications Section */
+        .applications-section {
+            padding: 80px 0;
+            background: #1a365d;
+            color: white;
+        }
+
+        .applications-section .section-title {
+            color: white;
+        }
+
+        .applications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .application-card {
+            background: rgba(255,255,255,0.1);
+            padding: 40px 30px;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .application-card:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-5px);
+        }
+
+        .application-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .application-title {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .application-desc {
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 0;
+            background: white;
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-title {
+            font-family: 'Overpass', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 20px;
+        }
+
+        .cta-text {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: #ff6b35;
+            color: white;
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: #e55a2b;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+        }
+
+        .btn-secondary {
+            background: rgba(26, 54, 93, 0.1);
+            color: #1a365d;
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 2px solid #1a365d;
+        }
+
+        .btn-secondary:hover {
+            background: #1a365d;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a365d;
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #ff6b35;
+        }
+
+        .footer-section p,
+        .footer-section li {
+            opacity: 0.9;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #ff6b35;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+            text-align: center;
+            opacity: 0.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            .mobile-nav-menu.active {
+                display: flex;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .rubber-content,
+            .specs-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .weight-demo {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .materials-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .benefits-grid,
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="rosehill_rail_logo.png" alt="Rosehill Rail" style="height: 60px;">
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="nav-item">
+                        <a href="products.html">Products</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-section">
+                                    <h4>Crossing Systems</h4>
+                                    <ul class="mega-menu-links">
+                                        <li><a href="connect.html">CONNECT System</a></li>
+                                        <li><a href="link.html">LINK System</a></li>
+                                        <li><a href="interlocking.html">Interlocking RRAP</a></li>
+                                        <li><a href="baseplate.html">Baseplate System</a></li>
+                                        <li><a href="titan.html">TITAN Heavy Duty</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-section">
+                                    <h4>Safety Solutions</h4>
+                                    <ul class="mega-menu-links">
+                                        <li><a href="antitrespass.html">Anti-Trespass Panels</a></li>
+                                        <li><a href="walkway.html">Walkway Panels</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-section">
+                                    <h4>Edge Solutions</h4>
+                                    <ul class="mega-menu-links">
+                                        <li><a href="edgebeams.html" class="active">Rubber Edge Beams</a></li>
+                                        <li><a href="edgebeams.html">Steel & Plastic Beams</a></li>
+                                        <li><a href="accessories.html">Accessories & Spares</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="contact-btn">Get in Touch</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="mobile-nav-menu" id="mobile-menu">
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html" class="contact-btn">Get in Touch</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Product Hero -->
+    <section class="product-hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="badge">NETWORK RAIL ACCEPTED</div>
+                <h1>Edge Beams</h1>
+                <p class="subtitle">Lightweight alternative to concrete solutions using 100% recycled tyre rubber with cold cure technology, plus steel and plastic options for specialised applications.</p>
+                <ul class="hero-features">
+                    <li><span class="check">✓</span>Significant weight reduction vs concrete</li>
+                    <li><span class="check">✓</span>100% recycled tyre rubber</li>
+                    <li><span class="check">✓</span>Cold cure bonding technology</li>
+                    <li><span class="check">✓</span>Compatible with all crossing systems</li>
+                </ul>
+            </div>
+            <div class="hero-image">
+                <img src="rubber_edge_beam_web_01.jpg" alt="Rubber Edge Beam showing same profile as concrete alternatives">
+            </div>
+        </div>
+    </section>
+
+    <!-- Rubber Edge Beam Section -->
+    <section class="rubber-section">
+        <div class="container">
+            <h2 class="section-title">Rubber Edge Beams - Our Recommended Solution</h2>
+            <div class="rubber-content">
+                <div class="rubber-text">
+                    <h3>Lightweight Innovation</h3>
+                    <p>Rosehill Rail's rubber edge beams provide a durable, lightweight alternative to traditional concrete solutions. Manufactured from 100% recycled tyre rubber and bonded using cutting-edge cold cure technology, these beams offer significant weight savings whilst maintaining exceptional durability.</p>
+                    <p>With integrated drainage channels, non-spalling design, and strategic lifting points, our rubber edge beams deliver enhanced crossing support with improved sustainability credentials and reduced transport costs.</p>
+                    <div class="rubber-highlight">
+                        <h4>Key Advantages:</h4>
+                        <p>Network Rail acceptance, quick-fit installation system, and compatibility with all crossing systems make rubber edge beams the preferred choice for most applications.</p>
+                    </div>
+                </div>
+                <div class="weight-comparison">
+                    <h4 style="font-family: 'Overpass', sans-serif; color: #1a365d; margin-bottom: 25px;">Weight Comparison</h4>
+                    <div class="weight-demo">
+                        <div class="weight-item">
+                            <div class="weight-icon concrete-icon"><svg width="24" height="24" viewBox="0 0 64 64" fill="currentColor"><rect x="33" y="16" width="10" height="20"/><path d="M31,26v10H7v-9c0-.54999.45001-1,1-1h23Z"/><path d="M56,26h-11v22h11c.55225,0,1-.44727,1-1v-20c0-.55273-.44775-1-1-1Z"/><path d="M43,38v10h-23c-.54999,0-1-.45001-1-1v-9h24Z"/></svg></div>
+                            <div class="weight-label">Traditional Concrete</div>
+                            <div class="weight-value" style="color: #666;">Heavy</div>
+                            <div class="weight-desc">Difficult handling, high transport costs</div>
+                        </div>
+                        <div class="weight-item rubber">
+                            <div class="weight-icon rubber-icon"><svg width="24" height="24" viewBox="0 0 64 64" fill="currentColor"><path d="M28.26941,25.53821l.71057-3.53821-.50311-2.50183c-2.1134.59662-4.01001,1.70862-5.54095,3.20087l1.91418,1.68573,3.41931,1.15344Z"/><path d="M24.53906,32l-2.70898-2.38477-2.41547-.81403c-.26093,1.02545-.41461,2.09326-.41461,3.19879s.15369,2.17334.41461,3.19879l2.41547-.81403,2.70898-2.38477Z"/><path d="M23.00049,27.98145l2.29407,2.01953c.31781-1.0639.88373-2.01941,1.6283-2.80579l-2.90283-.97937c-.12549-.04248-.2417-.10938-.34131-.19727l-2.05841-1.81274c-.62506.83026-1.16284,1.72937-1.57678,2.69666l2.61566.88171c.12598.04248.2417.10938.34131.19727Z"/><path d="M24.8501,39.61523l-1.91418,1.68573c1.53094,1.49225,3.42755,2.60425,5.54095,3.20087l.50311-2.50183-.71057-3.53821-3.41931,1.15344Z"/><path d="M24.02002,37.78418l2.90283-.97937c-.74457-.78638-1.31049-1.74188-1.6283-2.80579l-2.29407,2.01953c-.09961.08789-.21533.15479-.34131.19727l-2.61566.88171c.41394.96729.95172,1.86639,1.57678,2.69666l2.05841-1.81274c.09961-.08789.21582-.15479.34131-.19727Z"/><path d="M39.46094,32l2.70898,2.38477,2.41547.81403c.26093-1.02545.41461-2.09326.41461-3.19879s-.15369-2.17334-.41461-3.19879l-2.41547.81403-2.70898,2.38477Z"/><path d="M35.73059,38.46179l-.71057,3.53821.50311,2.50183c2.1134-.59662,4.01001-1.70862,5.54095-3.20087l-1.91418-1.68573-3.41931-1.15344Z"/><path d="M33.62219,38.80261c-.52161.12445-1.06299.19739-1.62219.19739s-1.10059-.07294-1.62219-.19739l.60266,3.00061c.02588.12988.02588.26367,0,.39404l-.54279,2.69952c.51324.06189,1.03265.10321,1.56232.10321s1.04907-.04132,1.56232-.10321l-.54279-2.69952c-.02588-.13037-.02588-.26416,0-.39404l.60266-3.00061Z"/><path d="M30.37781,25.19739c.52161-.12445,1.06299-.19739,1.62219-.19739s1.10059.07294,1.62219.19739l-.60266-3.00061c-.02588-.12988-.02588-.26367,0-.39404l.54279-2.69952c-.51324-.06189-1.03265-.10321-1.56232-.10321s-1.04907.04132-1.56232.10321l.54279,2.69952c.02588.13037.02588.26416,0,.39404l-.60266,3.00061Z"/><circle cx="32" cy="32" r="5"/><path d="M32,7c-13.78516,0-25,11.21484-25,25s11.21484,25,25,25,25-11.21484,25-25S45.78516,7,32,7ZM32,53c-5.52588,0-10.74658-2.13672-14.7002-6.0166-.39453-.38672-.40039-1.02002-.01367-1.41406.38672-.39551,1.02051-.40039,1.41406-.01367,3.57764,3.51074,8.30078,5.44434,13.2998,5.44434.55225,0,1,.44775,1,1s-.44775,1-1,1ZM32,47c-8.271,0-15-6.729-15-15s6.729-15,15-15,15,6.729,15,15-6.729,15-15,15Z"/><path d="M40.32129,26.01855c-.09961.08789-.21582.15479-.34131.19727l-2.90283.97937c.74457.78638,1.31049,1.74188,1.6283,2.80579l2.29407-2.01953c.09961-.08789.21533-.15479.34131-.19727l2.61566-.88171c-.41394-.96729-.95172-1.86639-1.57678-2.69666l-2.05841,1.81274Z"/><path d="M40.99951,36.01855l-2.29407-2.01953c-.31781,1.0639-.88373,2.01941-1.6283,2.80579l2.90283.97937c.12549.04248.2417.10938.34131.19727l2.05841,1.81274c.62506-.83026,1.16284-1.72937,1.57678-2.69666l-2.61566-.88171c-.12598-.04248-.2417-.10938-.34131-.19727Z"/><path d="M39.1499,24.38477l1.91418-1.68573c-1.53094-1.49225-3.42755-2.60425-5.54095-3.20087l-.50311,2.50183.71057,3.53821,3.41931-1.15344Z"/></svg></div>
+                            <div class="weight-label">Rubber Edge Beams</div>
+                            <div class="weight-value">Lightweight</div>
+                            <div class="weight-desc">Easy handling, reduced transport costs</div>
+                        </div>
+                    </div>
+                    <p style="color: #666; font-size: 0.9rem;">Significant weight reduction for easier installation and lower logistics costs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Material Options Section -->
+    <section class="materials-section">
+        <div class="container">
+            <h2 class="section-title">Material Options for Every Application</h2>
+            <div class="materials-grid">
+                <div class="material-card primary">
+                    <div class="material-icon rubber-bg"><svg width="40" height="40" viewBox="0 0 64 64" fill="currentColor"><path d="M28.26941,25.53821l.71057-3.53821-.50311-2.50183c-2.1134.59662-4.01001,1.70862-5.54095,3.20087l1.91418,1.68573,3.41931,1.15344Z"/><path d="M24.53906,32l-2.70898-2.38477-2.41547-.81403c-.26093,1.02545-.41461,2.09326-.41461,3.19879s.15369,2.17334.41461,3.19879l2.41547-.81403,2.70898-2.38477Z"/><path d="M23.00049,27.98145l2.29407,2.01953c.31781-1.0639.88373-2.01941,1.6283-2.80579l-2.90283-.97937c-.12549-.04248-.2417-.10938-.34131-.19727l-2.05841-1.81274c-.62506.83026-1.16284,1.72937-1.57678,2.69666l2.61566.88171c.12598.04248.2417.10938.34131.19727Z"/><path d="M24.8501,39.61523l-1.91418,1.68573c1.53094,1.49225,3.42755,2.60425,5.54095,3.20087l.50311-2.50183-.71057-3.53821-3.41931,1.15344Z"/><path d="M24.02002,37.78418l2.90283-.97937c-.74457-.78638-1.31049-1.74188-1.6283-2.80579l-2.29407,2.01953c-.09961.08789-.21533.15479-.34131.19727l-2.61566.88171c.41394.96729.95172,1.86639,1.57678,2.69666l2.05841-1.81274c.09961-.08789.21582-.15479.34131-.19727Z"/><path d="M39.46094,32l2.70898,2.38477,2.41547.81403c.26093-1.02545.41461-2.09326.41461-3.19879s-.15369-2.17334-.41461-3.19879l-2.41547.81403-2.70898,2.38477Z"/><path d="M35.73059,38.46179l-.71057,3.53821.50311,2.50183c2.1134-.59662,4.01001-1.70862,5.54095-3.20087l-1.91418-1.68573-3.41931-1.15344Z"/><path d="M33.62219,38.80261c-.52161.12445-1.06299.19739-1.62219.19739s-1.10059-.07294-1.62219-.19739l.60266,3.00061c.02588.12988.02588.26367,0,.39404l-.54279,2.69952c.51324.06189,1.03265.10321,1.56232.10321s1.04907-.04132,1.56232-.10321l-.54279-2.69952c-.02588-.13037-.02588-.26416,0-.39404l.60266-3.00061Z"/><path d="M30.37781,25.19739c.52161-.12445,1.06299-.19739,1.62219-.19739s1.10059.07294,1.62219.19739l-.60266-3.00061c-.02588-.12988-.02588-.26367,0-.39404l.54279-2.69952c-.51324-.06189-1.03265-.10321-1.56232-.10321s-1.04907.04132-1.56232.10321l.54279,2.69952c.02588.13037.02588.26416,0,.39404l-.60266,3.00061Z"/><circle cx="32" cy="32" r="5"/><path d="M32,7c-13.78516,0-25,11.21484-25,25s11.21484,25,25,25,25-11.21484,25-25S45.78516,7,32,7ZM32,53c-5.52588,0-10.74658-2.13672-14.7002-6.0166-.39453-.38672-.40039-1.02002-.01367-1.41406.38672-.39551,1.02051-.40039,1.41406-.01367,3.57764,3.51074,8.30078,5.44434,13.2998,5.44434.55225,0,1,.44775,1,1s-.44775,1-1,1ZM32,47c-8.271,0-15-6.729-15-15s6.729-15,15-15,15,6.729,15,15-6.729,15-15,15Z"/><path d="M40.32129,26.01855c-.09961.08789-.21582.15479-.34131.19727l-2.90283.97937c.74457.78638,1.31049,1.74188,1.6283,2.80579l2.29407-2.01953c.09961-.08789.21533-.15479.34131-.19727l2.61566-.88171c-.41394-.96729-.95172-1.86639-1.57678-2.69666l-2.05841,1.81274Z"/><path d="M40.99951,36.01855l-2.29407-2.01953c-.31781,1.0639-.88373,2.01941-1.6283,2.80579l2.90283.97937c.12549.04248.2417.10938.34131.19727l2.05841,1.81274c.62506-.83026,1.16284-1.72937,1.57678-2.69666l-2.61566-.88171c-.12598-.04248-.2417-.10938-.34131-.19727Z"/><path d="M39.1499,24.38477l1.91418-1.68573c-1.53094-1.49225-3.42755-2.60425-5.54095-3.20087l-.50311,2.50183.71057,3.53821,3.41931-1.15344Z"/></svg></div>
+                    <h3 class="material-title">Rubber Edge Beams</h3>
+                    <p class="material-desc">Our flagship solution combining sustainability, performance, and cost-effectiveness. Made from 100% recycled tyre rubber with cold cure bonding technology.</p>
+                    <ul class="material-features">
+                        <li><span class="feature-check">✓</span>100% recycled tyre rubber</li>
+                        <li><span class="feature-check">✓</span>Cold cure bonding technology</li>
+                        <li><span class="feature-check">✓</span>Significant weight reduction</li>
+                        <li><span class="feature-check">✓</span>Network Rail accepted</li>
+                        <li><span class="feature-check">✓</span>Integrated drainage channels</li>
+                        <li><span class="feature-check">✓</span>Non-spalling design</li>
+                        <li><span class="feature-check">✓</span>Quick-fit installation</li>
+                        <li><span class="feature-check">✓</span>Extended service life</li>
+                    </ul>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon steel-bg"><svg width="40" height="40" viewBox="0 0 64 64" fill="currentColor"><path d="M53.60999,14.78998c.25-.19.39001-.47998.39001-.78998v-6c0-.10999-.02002-.22003-.04999-.32001-.14001-.41003-.52002-.67999-.95001-.67999h-16c-.21997,0-.44.07001-.60999.20996,0,0-26,20-25.98999,20.01001-.24005.17999-.40002.46002-.40002.78003v6c0,.54999.45001,1,1,1h4v14h-4c-.54999,0-1,.45001-1,1v6c0,.54999.45001,1,1,1h16c.12,0,.23999-.03003.35999-.07001.04004-.02002.07001-.03998.10999-.06.05005-.03003.10004-.04004.14001-.08002l26-20c.25-.19.39001-.47998.39001-.78998v-6c0-.49977-.43825-.98999-.95001-.98999-.01996,0-.02997-.01001-.04999-.01001h-4v-10.66003l4.60999-3.54999ZM37.34003,9h12.71997l-23.40002,18h-12.71997l23.40002-18ZM52,35.51001l-24,18.45996v-3.47998l24-18.46002v3.48004ZM50.06,31l-23.40002,18h-3.65997v-3c0-.54999-.45001-1-1-1s-1,.45001-1,1v4c0,.54999.45001,1,1,1h4v4h-14v-4h4c.54999,0,1-.45001,1-1v-16c0-.54999-.45001-1-1-1h-4v-4h14v4h-4c-.54999,0-1,.45001-1,1v4c0,.54999.45001,1,1,1s1-.45001,1-1v-3h4c.22998,0,.42999-.09003.59998-.22003l.01001.01001,19.39001-14.90997v10.12c0,.54999.45001,1,1,1h2.06ZM28,31.96997v-3.47998l24-18.46002v3.48004l-24,18.45996Z"/><circle cx="22" cy="42" r="1"/></svg></div>
+                    <h3 class="material-title">Steel Edge Beams</h3>
+                    <p class="material-desc">Maximum durability and strength for high-traffic areas where robustness is critical. Designed for the most demanding conditions.</p>
+                    <ul class="material-features">
+                        <li><span class="feature-check">✓</span>Maximum durability</li>
+                        <li><span class="feature-check">✓</span>High-traffic applications</li>
+                        <li><span class="feature-check">✓</span>Extreme strength</li>
+                        <li><span class="feature-check">✓</span>Long-term stability</li>
+                        <li><span class="feature-check">✓</span>Minimal wear</li>
+                    </ul>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon plastic-bg"><svg width="40" height="40" viewBox="0 0 64 64" fill="currentColor"><path d="M16.89001,19.60999l.88.88,8.48999-8.48999-.88-.88c-.39001-.39001-1.03003-.39001-1.41998,0l-7.07001,7.07001c-.39001.38995-.39001,1.02997,0,1.41998Z"/><path d="M16.19,16.07001l5.65002-5.65002-.70001-.71002c-1.17004-1.16998-3.08002-1.16998-4.25,0l-1.41003,1.41003c-.57001.57001-.88,1.32001-.88,2.12s.31,1.56.88,2.12l.71002.71002Z"/><path d="M13.5,38.00098c0,.55029.44873.99902,1,.99902s.99951-.44824,1-.99902c-.0083-.30615-.42432-1.17725-1-2.14746-.57617.9707-.9917,1.8418-1,2.14746Z"/><path d="M21.5,37c0-3.85986-3.14014-7-7-7s-7,3.14014-7,7,3.14014,7,7,7,7-3.14014,7-7ZM14.5,41c-1.6543,0-3-1.3457-3-3,0-1.27832,1.52246-3.62061,2.17725-4.56836.37305-.54102,1.27246-.54102,1.64551,0,.65479.94775,2.17725,3.29004,2.17725,4.56836,0,1.6543-1.3457,3-3,3Z"/><path d="M47.78998,28.26001l2.44-2.43005-1.41998-1.41998-2.42999,2.44c-.19.19-.44.29004-.71002.29004h-16.33997c-.27002,0-.52002-.10004-.71002-.29004l-2.42999-2.44-1.41998,1.41998,2.44,2.43005c.17999.19.28998.44995.28998.70996v16.34003c0,.26996-.10999.51996-.28998.70996l-2.44,2.44,1.41998,1.41003,2.42999-2.42999c.19-.19.44-.29999.71002-.29999h16.33997c.27002,0,.52002.10999.71002.29999l2.42999,2.42999,1.41998-1.41003-2.44-2.44c-.17999-.19-.28998-.44-.28998-.70996v-16.34003c0-.26001.10999-.51996.28998-.70996ZM45.5,44.14001c0,.54999-.45001,1-1,1h-14c-.54999,0-1-.45001-1-1v-14c0-.55005.45001-1,1-1h14c.54999,0,1,.44995,1,1v14Z"/><path d="M37.5,39.14209c.55078,0,1-.44824,1-.99902-.00879-.30615-.4248-1.17725-1-2.14746-.57617.9707-.99219,1.8418-1,2.14746,0,.55029.44824.99902,1,.99902Z"/><path d="M31.5,43.14001h12v-12h-12v12ZM36.67999,33.57001c.37-.54004,1.27002-.54004,1.64001,0,.65997.94995,2.17999,3.28998,2.17999,4.57001,0,1.65997-1.34998,3-3,3s-3-1.34003-3-3c0-1.28003,1.52002-3.62006,2.17999-4.57001Z"/><path d="M53.5,13h-1v-3c0-1.6543-1.57031-3-3.5-3h-15c-1.92969,0-3.5,1.3457-3.5,3v3h-2c-.27002,0-.52002.10999-.71002.28998l-9,9c-.17999.19-.28998.44-.28998.71002v5.94c2.96002,1.46997,5,4.52997,5,8.06s-2.03998,6.58997-5,8.06v8.94c0,1.64996,1.34998,3,3,3h32c1.65002,0,3-1.35004,3-3V16c0-1.65002-1.34998-3-3-3ZM32.5,10c0-.53271.70117-1,1.5-1h15c.79883,0,1.5.46729,1.5,1v3h-18v-3ZM52.34998,47.75c.19.19.29004.44.29004.70996,0,.26001-.10004.52002-.29004.70001l-2.82996,2.83002c-.19.20001-.45001.28998-.71002.28998-.25,0-.51001-.08997-.70001-.28998l-2.84998-2.84998h-15.52002l-2.84998,2.84998c-.39001.39001-1.02002.39001-1.41003,0l-2.82996-2.83002c-.19-.17999-.29004-.44-.29004-.70001,0-.26996.10004-.51996.29004-.70996l2.84998-2.85004v-15.51996l-2.84998-2.84003c-.39001-.39001-.39001-1.02997,0-1.41998l2.82996-2.83002c.39001-.39001,1.02002-.39001,1.41003,0l2.84998,2.85004h15.52002l2.84998-2.85004c.39001-.39001,1.02002-.39001,1.41003,0l2.82996,2.83002c.19.19.29004.44.29004.70996,0,.26001-.10004.52002-.29004.71002l-2.84998,2.84003v15.51996l2.84998,2.85004Z"/></svg></div>
+                    <h3 class="material-title">Plastic Edge Beams</h3>
+                    <p class="material-desc">Lightweight, corrosion-resistant option perfect for installations requiring ease of handling and rapid deployment.</p>
+                    <ul class="material-features">
+                        <li><span class="feature-check">✓</span>Lightweight design</li>
+                        <li><span class="feature-check">✓</span>Corrosion resistant</li>
+                        <li><span class="feature-check">✓</span>Easy handling</li>
+                        <li><span class="feature-check">✓</span>Rapid deployment</li>
+                        <li><span class="feature-check">✓</span>Weather resistant</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Benefits -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Edge Beams?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon"><svg width="40" height="40" viewBox="0 0 64 64" fill="currentColor"><path d="M47.21002,42.62c-.19-.25-.25-.56-.17999-.85999l.68994-2.76001h-1.96997l-1.41998,5h1.66998c.29999,0,.58002.13.77002.37.19.22998.26996.52997.20996.83002l-.13995.66998,2.15997-2.87h-1c-.31,0-.59998-.14001-.78998-.38Z"/><path d="M47,34c-5.51001,0-10,4.48999-10,10s4.48999,10,10,10,10-4.48999,10-10-4.48999-10-10-10ZM51.79999,42.59998s-5.97644,7.96863-5.99994,7.99988c-.59259.79016-1.98627.25397-1.78003-.79987l.76001-3.79999h-1.78003c-.31,0-.60999-.15002-.79999-.40002s-.25-.57001-.16003-.87l2-7c.12-.42999.51001-.72998.96002-.72998h4c.31,0,.59998.14001.78998.38.19.25.25.56.17999.85999l-.68994,2.76001h1.71997c.38,0,.71997.20996.89001.54999.16998.34003.14001.75-.09003,1.04999Z"/><path d="M19.10156,18.43262l2.52246,1.26172c.78418.3916,1.35547,1.10449,1.56836,1.95605l.45898,1.83496c.09766.38672.41309.67871.80566.74414l3.25.54102c.43848.06934.86133-.14355,1.05859-.53906l.65625-1.3125c.60254-1.20703,1.94531-1.86523,3.27246-1.59961l2.78711.55762c.69043.1377,1.31445.5166,1.75488,1.06836l2.67383,3.34082c.25977.3252.69922.45605,1.0957.32422l.95312-.31738c.2334-.07812.42969-.23828.55176-.45215l3.34076-5.84631c-3.70386-5.9856-10.30975-9.99451-17.8515-9.99451-4.17578,0-8.06091,1.2392-11.33447,3.34857l1.96436,4.58405c.09277.2168.26074.39453.47168.5Z"/><path d="M25.62598,43.74219l-.86426-1.29688c-.18555-.2793-.49707-.44531-.83203-.44531h-3.32422c-.59375,0-1.16992-.17383-1.66406-.50391l-1.60547-1.07031c-.83691-.55762-1.33594-1.49121-1.33594-2.49609v-1.10156c0-.80078.3125-1.55469.87891-2.12109l1.82812-1.82812c.18652-.18652.29297-.44434.29297-.70703v-2.03906c0-.34961-.18652-.67871-.48633-.8584l-3.05762-1.83398c-.89844-.54004-1.45605-1.52637-1.45605-2.57324v-1.90625c0-.30469-.13672-.58984-.37598-.78125l-3.23224-2.58521c-2.13702,3.28796-3.39178,7.20007-3.39178,11.40552,0,10.01617,7.05267,18.4032,16.44977,20.48932l2.29242-6.87799c.09668-.29004.05273-.61523-.11621-.86914Z"/><path d="M47,32c.66998,0,1.32001.04999,1.96002.15997.02997-.38.03998-.76996.03998-1.15997,0-3.19983-.74042-6.22278-2.02576-8.93958l-2.72717,4.77258c-.36719.64258-.95508,1.12402-1.65625,1.35742l-.95117.31641c-.30957.10352-.62793.15332-.94336.15332-.89551,0-1.76953-.40137-2.34863-1.12402l-2.67383-3.3418c-.14648-.18457-.35352-.31055-.58398-.35645l-2.78809-.55762c-.44727-.08887-.89062.13086-1.09082.5332l-.65625,1.3125c-.59277,1.18555-1.86816,1.83594-3.17676,1.61719l-3.24902-.54102c-1.17871-.19629-2.12695-1.07227-2.41699-2.23145l-.45898-1.83594c-.07129-.2832-.26172-.52051-.52246-.65137l-2.52246-1.26172c-.63379-.31641-1.13672-.84961-1.41602-1.50195l-1.79169-4.18103c-1.27411,1.0083-2.42731,2.15778-3.43793,3.42999l3.31165,2.64948c.71582.57324,1.12598,1.42676,1.12598,2.34277v1.90625c0,.34961.18652.67871.48633.8584l3.05762,1.83398c.89844.54004,1.45605,1.52637,1.45605,2.57324v2.03906c0,.80078-.3125,1.55469-.87891,2.12109l-1.82812,1.82812c-.18652.18652-.29297.44434-.29297.70703v1.10156c0,.33496.16602.64648.44531.83203l1.60547,1.07031c.16504.11035.35645.16797.55469.16797h3.32422c1.00488,0,1.93848.49902,2.49609,1.33594l.86328,1.2959c.50977.7627.6416,1.74023.34961,2.6123l-2.19446,6.58423c.83954.10254,1.68903.17163,2.55579.17163,3.09003,0,6.03003-.67004,8.67999-1.89001-1.07001-1.78998-1.67999-3.88-1.67999-6.10999,0-6.62,5.38-12,12-12Z"/></svg></div>
+                    <h3 class="benefit-title">Sustainable Materials</h3>
+                    <p class="benefit-desc">Rubber edge beams use 100% recycled tyre rubber, delivering improved sustainability credentials and environmental benefits.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><svg width="40" height="40" viewBox="0 0 64 64" fill="currentColor"><circle cx="32" cy="32" r="1"/><path d="M56,27h-2.58105c-.5459-2.35742-1.46191-4.57568-2.73242-6.61523l1.81934-1.81982c.39062-.39062.39062-1.02344,0-1.41406l-5.65674-5.65674c-.39062-.39062-1.02344-.39062-1.41406,0l-1.81982,1.81934c-2.03906-1.27002-4.25781-2.18652-6.61523-2.73242v-2.58105c0-.55225-.44775-1-1-1h-8c-.55225,0-1,.44775-1,1v2.58105c-2.35742.5459-4.57617,1.4624-6.61523,2.73242l-1.81982-1.81934c-.39062-.39062-1.02344-.39062-1.41406,0l-5.65674,5.65674c-.39062.39062-.39062,1.02344,0,1.41406l1.81934,1.81982c-1.27051,2.03955-2.18652,4.25781-2.73242,6.61523h-2.58105c-.55225,0-1,.44775-1,1v8c0,.55225.44775,1,1,1h2.58105c.5459,2.35742,1.4624,4.57617,2.73242,6.61523l-1.81934,1.81982c-.39062.39062-.39062,1.02344,0,1.41406l5.65674,5.65674c.39062.39062,1.02344.39062,1.41406,0l1.81982-1.81934c2.03906,1.27002,4.25781,2.18652,6.61523,2.73242v2.58105c0,.55225.44775,1,1,1h8c.55225,0,1-.44775,1-1v-2.58105c2.35742-.5459,4.57617-1.4624,6.61523-2.73242l1.81982,1.81934c.39062.39062,1.02344.39062,1.41406,0l5.65674-5.65674c.39062-.39062.39062-1.02344,0-1.41406l-1.81934-1.81982c1.27002-2.03906,2.18652-4.25781,2.73242-6.61523h2.58105c.55225,0,1-.44775,1-1v-8c0-.55225-.44775-1-1-1ZM32,49c-9.37402,0-17-7.62598-17-17s7.62598-17,17-17c2.96436,0,5.88086.77441,8.4375,2.23926.06739.03271.13575.0708.20264.11084.83527.49237,1.62225,1.06091,2.35986,1.6864v-1.0365c0-.55225.44775-1,1-1s1,.44775,1,1v3c0,.43066-.27539.8125-.68359.94873,0,0-3,1-3.00059,1.0002-.51935.17356-1.09081-.11178-1.26455-.63252-.1748-.52393.1084-1.09033.63232-1.26514l1.12274-.37415c-.68353-.5918-1.40198-1.14423-2.18427-1.60583-.04395-.01758-.10107-.05176-.14209-.0752-1.97516-1.13977-4.19745-1.81024-6.47998-1.96228v.96619c0,.55225-.44775,1-1,1s-1-.44775-1-1v-.94934c-3.38281.22473-6.45715,1.56934-8.8609,3.67438l.66852.66852c.39043.39043.39062,1.02282.00057,1.41349-.354.35456-1.03123.38397-1.41463.00057l-.66852-.66852c-2.10504,2.40375-3.44965,5.47809-3.67438,8.8609h.94934c.55225,0,1,.44775,1,1s-.44775,1-1,1h-.94934c.22473,3.38281,1.56934,6.45715,3.67438,8.8609l.66852-.66852c.39062-.39062,1.02344-.39062,1.41406,0s.39062,1.02344,0,1.41406l-.66852.66852c2.40375,2.10504,5.47809,3.44965,8.8609,3.67438v-.94934c0-.55225.44775-1,1-1s1,.44775,1,1v.94934c3.38281-.22473,6.45715-1.56934,8.8609-3.67438l-.66852-.66852c-.39062-.39062-.39062-1.02344,0-1.41406s1.02344-.39062,1.41406,0l.66852.66852c2.10504-2.40375,3.44965-5.47809,3.67438-8.8609h-.94934c-.55225,0-1-.44775-1-1s.44775-1,1-1h.93866c-.14142-2.10254-.69781-4.17108-1.68231-6.03223-.2583-.48828-.07178-1.09326.41602-1.35156.48975-.25781,1.09424-.07178,1.35156.41602,1.29297,2.44385,1.97607,5.19873,1.97607,7.96777,0,9.37402-7.62598,17-17,17ZM29.18433,33h-5.18433c-.55225,0-1-.44775-1-1s.44775-1,1-1h5.18427c.30206-.84717.96857-1.51367,1.81573-1.81573v-7.18427c0-.55225.44775-1,1-1s1,.44775,1,1v7.18427c.84717.30206,1.51367.96857,1.81573,1.81573h1.18427c.55225,0,1,.44775,1,1s-.44775,1-1,1h-1.18427c-.30206.84717-.96857,1.51367-1.81573,1.81573v1.18427c0,.55225-.44775,1-1,1s-1-.44775-1-1v-1.18433c-.84717-.30206-1.51361-.96851-1.81567-1.81567Z"/></svg></div>
+                    <h3 class="benefit-title">Quick Installation</h3>
+                    <p class="benefit-desc">Quick-fit installation system with strategic lifting points reduces installation time and associated labour costs.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><svg width="40" height="40" viewBox="0 0 48 48" fill="currentColor"><path d="M8.29301,9.70708c.3874.38735,1.02667.3873,1.41402-.00004.39062-.39062.39062-1.02344,0-1.41406l-3-3c-.39062-.39062-1.02344-.39062-1.41406,0s-.39062,1.02344,0,1.41406c0,0,3,3,3.00004,3.00004Z"/><path d="M42.70703,5.29297c-.39062-.39062-1.02344-.39062-1.41406,0l-3,3c-.39059.39059-.39062,1.02328-.00009,1.41391.36155.36164,1.03014.38417,1.41416.00015l3-3c.39062-.39062.39062-1.02344,0-1.41406Z"/><path d="M42.70703,41.29297l-3-3c-.39062-.39062-1.02344-.39062-1.41406,0s-.39062,1.02344,0,1.41406l3,3c.37018.37018,1.01847.39559,1.41406,0,.39062-.39062.39062-1.02344,0-1.41406Z"/><path d="M8.29297,38.29297l-3,3c-.39062.39062-.39062,1.02344.00002,1.41408.3874.38737,1.02741.38661,1.41404-.00002l3-3c.39062-.39062.39062-1.02344,0-1.41406s-1.02344-.39062-1.41406,0Z"/><path d="M24.45117,19.11523c-.08691-.26123-.0625-.54688.06836-.78955l3.40625-6.32568h-6.05078l-3.5918,8.89307,4.73779,2.19971c.42383.19678.65527.66113.55664,1.11768l-1.78857,8.30469,7.69385-10.7168-4.50391-2.09131c-.25-.11621-.44092-.33008-.52783-.5918Z"/><path d="M24,5C13.52344,5,5,13.52344,5,24s8.52344,19,19,19,19-8.52344,19-19S34.47656,5,24,5ZM14.80762,33.19238c.39062.39062.39062,1.02344,0,1.41406-.38625.38625-1.0279.38616-1.41406,0-2.8291-2.82861-4.38721-6.5957-4.38721-10.60645s1.55811-7.77783,4.38721-10.60645c.39062-.39062,1.02344-.39062,1.41406,0s.39062,1.02344,0,1.41406c-2.45117,2.45117-3.80127,5.71582-3.80127,9.19238s1.3501,6.74121,3.80127,9.19238ZM31.8125,21.98291s-11.17634,15.56687-11.20016,15.60004c-.25969.36171-.79138.52045-1.21781.33111-.43311-.19189-.67188-.66162-.57227-1.12451l2.63184-12.21924-4.875-2.26318c-.4834-.22461-.70557-.78809-.50635-1.28174l4.2002-10.3999c.15283-.37793.51953-.62549.92725-.62549h8.39989c.7444,0,1.23433.81693.88038,1.47412l-3.69678,6.86572,4.63721,2.15283c.27051.12549.4707.36523.54639.65332s.01904.59521-.15479.83691ZM34.60645,34.60645c-.36814.36798-1.02435.38971-1.41406,0-.39062-.39062-.39062-1.02344,0-1.41406,2.45117-2.45117,3.80127-5.71582,3.80127-9.19238s-1.3501-6.74121-3.80127-9.19238c-.39062-.39062-.39062-1.02344,0-1.41406s1.02344-.39062,1.41406,0c2.8291,2.82861,4.38721,6.5957,4.38721,10.60645s-1.55807,7.77775-4.38721,10.60645Z"/></svg></div>
+                    <h3 class="benefit-title">Enhanced Durability</h3>
+                    <p class="benefit-desc">Non-spalling design prevents cracking and maintains structural integrity throughout the extended service life.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><svg width="40" height="40" viewBox="0 0 64 64" fill="currentColor"><path d="M16,41c-2.20544,0-4,1.79449-4,4s1.79456,4,4,4,4-1.79456,4-4-1.79456-4-4-4ZM16,46c-.55151,0-1-.44849-1-1s.44849-1,1-1,1,.44849,1,1-.44849,1-1,1Z"/><path d="M42,41c-2.20544,0-4,1.79449-4,4s1.79456,4,4,4,4-1.79456,4-4-1.79456-4-4-4ZM42,46c-.55151,0-1-.44849-1-1s.44849-1,1-1,1,.44849,1,1-.44849,1-1,1Z"/><path d="M7,44c0,.54999.45001,1,1,1h2c0-1.5379.58563-2.93744,1.53943-4h-4.53943v3Z"/><path d="M53,35c0,.55127.44873,1,1,1h3v-2h-3c-.55127,0-1,.44873-1,1Z"/><path d="M22,45h14c0-1.22003.35999-2.35999,1-3.31v-.69h-16.53943c.9538,1.06256,1.53943,2.4621,1.53943,4Z"/><path d="M34,15H10c-1.65002,0-3,1.34998-3,3v21h30v-21c0-1.65686-1.34314-3-3-3ZM13,35c0,.55225-.44775,1-1,1s-1-.44775-1-1v-16c0-.55225.44775-1,1-1s1,.44775,1,1v16ZM18,35c0,.55225-.44775,1-1,1s-1-.44775-1-1v-16c0-.55225.44775-1,1-1s1,.44775,1,1v16ZM23,35c0,.55225-.44775,1-1,1s-1-.44775-1-1v-16c0-.55225.44775-1,1-1s1,.44775,1,1v16ZM28,35c0,.55225-.44775,1-1,1s-1-.44775-1-1v-16c0-.55225.44775-1,1-1s1,.44775,1,1v16ZM33,35c0,.55225-.44775,1-1,1s-1-.44775-1-1v-16c0-.55225.44775-1,1-1s1,.44775,1,1v16Z"/><path d="M56.84998,27.46997l-5-8c-.17999-.28998-.50995-.46997-.84998-.46997h-12v20.81c.88-.52002,1.90002-.81,3-.81,3.31,0,6,2.69,6,6h6c1.65002,0,3-1.35004,3-3v-4h-3c-1.6543,0-3-1.3457-3-3s1.3457-3,3-3h3v-4c0-.19-.04999-.37-.15002-.53003ZM44,35h-2c-.55225,0-1-.44775-1-1s.44775-1,1-1h2c.55225,0,1,.44775,1,1s-.44775,1-1,1ZM52.87012,29.49268c-.17725.31348-.50977.50732-.87012.50732h-10c-.55225,0-1-.44775-1-1v-5c0-.55225.44775-1,1-1h7c.35107,0,.67676.18408.85742.48535l3,5c.18555.30908.19043.69385.0127,1.00732Z"/><polygon points="43 25 43 28 50.23389 28 48.43359 25 43 25"/></svg></div>
+                    <h3 class="benefit-title">Reduced Transport Costs</h3>
+                    <p class="benefit-desc">Significant weight reduction versus concrete alternatives lowers transport costs and enables easier handling on site.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><svg width="40" height="40" viewBox="0 0 64 64" fill="currentColor"><path d="M26.93749,31.00195c1.81837-0.11816,3.06837-0.5498,4.39259-1.00781c1.03418-0.35742,2.10449-0.72754,3.49219-0.97852c2.29962-0.41046,4.729-0.32648,7.24622,0.23486c-1.28052-2.35052-2.95758-4.92932-5.01184-7.67529C35.52832,19.5332,33.83105,17.44824,32,15.36426c-1.83105,2.08398-3.52832,4.16895-5.05664,6.21094c-2.35956,3.15399-4.22388,6.08881-5.55603,8.70758C23.25043,30.86133,25.11371,31.11798,26.93749,31.00195z"/><path d="M43.27002,31.64001c-2.85004-0.88-5.57001-1.10004-8.09003-0.66003c-1.23999,0.22998-2.19,0.56-3.20001,0.90002C30.59003,32.37,29.15997,32.85999,27.06,33c-0.34003,0.01996-0.67999,0.02997-1.02002,0.02997c-1.82996,0-3.67999-0.32001-5.51996-0.91998C19.52002,34.39996,19,36.39001,19,38c0,7.16998,5.83002,13,13,13c2.71002,0,5.22998-0.83002,7.32001-2.26001l-1.03003-1.03003c-0.38995-0.38995-0.38995-1.02997,0-1.41998c0.39001-0.39001,1.03003-0.39001,1.42004,0l1.17999,1.17999C43.41998,45.10999,45,41.72998,45,38C45,36.27997,44.40002,34.13,43.27002,31.64001z M32,49c-6.07001,0-11-4.92999-11-11c0-0.54999,0.45001-1,1-1s1,0.45001,1,1c0,4.95996,4.03998,9,9,9c0.54999,0,1,0.45001,1,1S32.54999,49,32,49z"/><path d="M32,53c-8.27002,0-15-6.73004-15-15c0-4.17004,2.96002-10.42999,8.34003-17.62c1.76996-2.37,3.75995-4.78003,5.90997-7.19c0.39001-0.42004,1.10999-0.42004,1.5,0c2.15002,2.40997,4.14001,4.82001,5.90997,7.19C44.03998,27.57001,47,33.82996,47,38c0,4.27997-1.81,8.14996-4.70001,10.89001L45.13,51.71997C48.75,48.26001,51,43.39001,51,38C51,25.72998,33.45001,8.03998,32.71002,7.28998c-0.39001-0.39001-1.03003-0.39001-1.42004,0c-0.23932,0.24255-2.24054,2.26331-4.83398,5.29309l-2.68744-3.22369C23.57812,9.13184,23.29688,9,23,9h-8.18427C14.40161,7.8385,13.30194,7,12,7c-1.6543,0-3,1.3457-3,3s1.3457,3,3,3c1.30194,0,2.40161-0.8385,2.81573-2h7.71552l2.61609,3.13837C19.82935,20.58295,13,30.34564,13,38c0,10.47998,8.52002,19,19,19c4.37,0,8.40002-1.48004,11.60999-3.97003L40.75,50.16998C38.28998,51.95001,35.27002,53,32,53z"/><path d="M8,21h10c0.55273,0,1-0.44727,1-1v-4c0-0.55273-0.44727-1-1-1H8c-0.55273,0-1,0.44727-1,1v4C7,20.55273,7.44727,21,8,21z"/><path d="M8,25h6c0.55273,0,1-0.44727,1-1s-0.44727-1-1-1H8c-0.55273,0-1,0.44727-1,1S7.44727,25,8,25z"/><path d="M12,27H8c-0.55273,0-1,0.44727-1,1s0.44727,1,1,1h4c0.55273,0,1-0.44727,1-1S12.55273,27,12,27z"/><path d="M54,51c-1.30194,0-2.40161,0.8385-2.81573,2h-4.77429L45.13,51.71997c-0.47998,0.46002-0.98999,0.90002-1.52002,1.31l1.67999,1.67999C45.47998,54.89001,45.72998,55,46,55h5.18433c0.41412,1.1615,1.51373,2,2.81567,2c1.6543,0,3-1.3457,3-3S55.6543,51,54,51z"/><path d="M56,47h-5c-0.55273,0-1,0.44727-1,1s0.44727,1,1,1h5c0.55273,0,1-0.44727,1-1S56.55273,47,56,47z"/><path d="M53,45h3c0.55273,0,1-0.44727,1-1s-0.44727-1-1-1h-3c-0.55273,0-1,0.44727-1,1S52.44727,45,53,45z"/></svg></div>
+                    <h3 class="benefit-title">Integrated Drainage</h3>
+                    <p class="benefit-desc">Built-in drainage channels prevent water accumulation and reduce maintenance requirements over time.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><svg width="40" height="40" viewBox="0 0 48 48" fill="currentColor"><path d="M39.78003,8.21998c-4.29004-4.28998-11.27002-4.28998-15.56006,0l-5.45996,5.46002c.94-.22003,1.90997-.33002,2.89996-.33002.66003,0,1.30005.04999,1.94.14001l3.23004-3.22998c3.01001-3.01001,7.90997-3.01001,10.90997,0,3.01001,3,3.01001,7.89996,0,10.90997l-6.22998,6.22998c-1.41003,1.41003-3.25,2.17004-5.10992,2.24005-2.1626.08136-4.26111-.70105-5.80011-2.24005-1.58997-1.58997-2.33997-3.70996-2.23999-5.79999-.15997.13-2.70001,2.66003-2.70001,2.66003.46002,1.89996,1.42004,3.69995,2.90002,5.17999,2.05487,2.04095,4.88367,3.20996,7.78003,3.20996,2.81995,0,5.63995-1.07001,7.77997-3.20996l5.66003-5.66003c4.28998-4.28998,4.28998-11.26996,0-15.56Z"/><path d="M24.40997,34.50001l-3.23999,3.23999c-3.01001,3.01001-7.90997,3.01001-10.90997,0-3.01001-3-3.01001-7.90002,0-10.91003l6.22998-6.22998c2.94843-2.94843,7.93805-2.97186,10.91003,0,1.5,1.5,2.25995,3.47998,2.25995,5.45001,0,.12,0,.22998-.01996.34998.15997-.13.31-.25995.45996-.40997l2.24005-2.23999c-.46002-1.90002-1.42004-3.71002-2.90002-5.19-4.23682-4.237-11.32153-4.22339-15.56,0l-5.66003,5.65997c-4.28998,4.29004-4.28998,11.27002,0,15.56s11.27002,4.29004,15.56006,0l5.45996-5.45996c-.94.21997-1.90997.32996-2.89996.32996-.65002,0-1.30005-.04999-1.93005-.14996Z"/></svg></div>
+                    <h3 class="benefit-title">Universal Compatibility</h3>
+                    <p class="benefit-desc">Compatible with all crossing systems and available in 1.8-metre standard length for flexible installation options.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="specs-section">
+        <div class="container">
+            <div class="specs-content">
+                <div class="specs-text">
+                    <h2>Technical Specifications</h2>
+                    <p>Our edge beam solutions are engineered to provide optimal crossing support while reducing installation complexity and lifecycle costs. Rubber edge beams represent our premium solution combining environmental responsibility with superior performance.</p>
+                    <p>Steel and plastic alternatives are available for specialised applications where specific material properties are required, though we recommend rubber edge beams for most installations due to their comprehensive benefits.</p>
+                </div>
+                <div class="specs-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Rubber Edge Beam Specifications</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Material Composition</td>
+                                <td>100% recycled tyre rubber</td>
+                            </tr>
+                            <tr>
+                                <td>Bonding Technology</td>
+                                <td>Cold cure bonding technology</td>
+                            </tr>
+                            <tr>
+                                <td>Lifting Points</td>
+                                <td>Strategic lifting points</td>
+                            </tr>
+                            <tr>
+                                <td>Standard Length</td>
+                                <td>1.8-metre standard length</td>
+                            </tr>
+                            <tr>
+                                <td>Approval Status</td>
+                                <td>Network Rail acceptance</td>
+                            </tr>
+                            <tr>
+                                <td>System Compatibility</td>
+                                <td>Compatible with all crossing systems</td>
+                            </tr>
+                            <tr>
+                                <td>Drainage Features</td>
+                                <td>Integrated drainage channels</td>
+                            </tr>
+                            <tr>
+                                <td>Design Type</td>
+                                <td>Non-spalling design</td>
+                            </tr>
+                            <tr>
+                                <td>Installation Method</td>
+                                <td>Quick-fit installation system</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Gallery -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Installation Examples</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="rubber_edge_beam_web_01.jpg" alt="Rubber edge beam installation on concrete cills">
+                </div>
+                <div class="gallery-item">
+                    <img src="rubber_edge_beam_web_02.jpg" alt="Baseplate crossing installation with rubber edge beams">
+                </div>
+                <div class="gallery-item">
+                    <img src="rubber_edge_beam_web_03.jpg" alt="Fitting crossing panel with rubber edge beam">
+                </div>
+                <div class="gallery-item">
+                    <img src="rubber_edge_beam_web_04.jpg" alt="CONNECT crossing with rubber edge beams">
+                </div>
+                <div class="gallery-item">
+                    <img src="rubber_edge_beam_web_05.jpg" alt="Completed baseplate crossing with rubber edge beams">
+                </div>
+                <div class="gallery-item">
+                    <img src="rubber_edge_beam_web_06.jpg" alt="Steel and plastic edge beam alternatives">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications -->
+    <section class="applications-section">
+        <div class="container">
+            <h2 class="section-title">Application Recommendations</h2>
+            <div class="applications-grid">
+                <div class="application-card">
+                    <div class="application-icon"><svg width="48" height="48" viewBox="0 0 48 48" fill="currentColor"><path d="M15,6c0-.54999-.45001-1-1-1h-4c-.54999,0-1,.45001-1,1v1h6v-1Z"/><rect x="9" y="17" width="6" height="2"/><rect x="9" y="29" width="6" height="2"/><path d="M9,42c0,.54999.45001,1,1,1h4c.54999,0,1-.45001,1-1v-1h-6v1Z"/><path d="M39.01001,6c0-.54999-.44-1-1-1h-4c-.54999,0-1,.45001-1,1v1h6v-1Z"/><rect x="33.01001" y="17" width="6" height="2"/><rect x="33.01001" y="29" width="6" height="2"/><path d="M33.01001,42c0,.54999.45001,1,1,1h4c.56,0,1-.45001,1-1v-1h-6v1Z"/><path d="M40,33H8c-.54999,0-1,.45001-1,1v4c0,.54999.45001,1,1,1h32c.54999,0,1-.45001,1-1v-4c0-.54999-.45001-1-1-1ZM10,37c-.54999,0-1-.45001-1-1s.45001-1,1-1,1,.45001,1,1-.45001,1-1,1ZM14,37c-.54999,0-1-.45001-1-1s.45001-1,1-1,1,.45001,1,1-.45001,1-1,1ZM34,37c-.52002,0-.94-.40002-.98999-.90002v-.20001c.04999-.5.46997-.89996.98999-.89996.54999,0,1,.45001,1,1s-.45001,1-1,1ZM38,37c-.54999,0-1-.45001-1-1s.45001-1,1-1,1,.45001,1,1-.45001,1-1,1Z"/><path d="M40,21H8c-.54999,0-1,.45001-1,1v4c0,.54999.45001,1,1,1h32c.54999,0,1-.45001,1-1v-4c0-.54999-.45001-1-1-1ZM10,25c-.54999,0-1-.45001-1-1s.45001-1,1-1,1,.45001,1,1-.45001,1-1,1ZM14,25c-.54999,0-1-.45001-1-1s.45001-1,1-1,1,.45001,1,1-.45001,1-1,1ZM34,25c-.52002,0-.94-.40002-.98999-.90002v-.20001c.04999-.5.46997-.89996.98999-.89996.54999,0,1,.45001,1,1s-.45001,1-1,1ZM38,25c-.54999,0-1-.45001-1-1s.45001-1,1-1,1,.45001,1,1-.45001,1-1,1Z"/><path d="M40,9H8c-.54999,0-1,.45001-1,1v4c0,.54999.45001,1,1,1h32c.54999,0,1-.45001,1-1v-4c0-.54999-.45001-1-1-1ZM10,13c-.54999,0-1-.45001-1-1s.45001-1,1-1,1,.45001,1,1-.45001,1-1,1ZM14,13c-.54999,0-1-.45001-1-1s.45001-1,1-1,1,.45001,1,1-.45001,1-1,1ZM34,13c-.52002,0-.94-.40002-.98999-.90002v-.20001c.04999-.5.46997-.89996.98999-.89996.54999,0,1,.45001,1,1s-.45001,1-1,1ZM38,13c-.54999,0-1-.45001-1-1s.45001-1,1-1,1,.45001,1,1-.45001,1-1,1Z"/></svg></div>
+                    <h3 class="application-title">Standard Installations</h3>
+                    <p class="application-desc">Rubber edge beams recommended for most applications due to sustainability, weight reduction, and comprehensive performance benefits.</p>
+                </div>
+                <div class="application-card">
+                    <div class="application-icon"><svg width="48" height="48" viewBox="0 0 64 64" fill="currentColor"><path d="M16.00044,44.5c-2.20557,0-4,1.79395-4,4s1.79443,4,4,4,4-1.79395,4-4-1.79443-4-4-4ZM16.00044,49.5c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1Z"/><path d="M48.00044,44.5c-2.21002,0-4,1.78998-4,4s1.78998,4,4,4,4-1.79004,4-4-1.78998-4-4-4ZM48.00044,49.5c-.54999,0-1-.45001-1-1s.45001-1,1-1,1,.45001,1,1-.45001,1-1,1Z"/><path d="M56.71046,27.78998l-2.28998-2.28998h-9.42004v6h12v-3c0-.27002-.10999-.52002-.28998-.71002Z"/><rect x="53.00044" y="37.5" width="4" height="2"/><path d="M39.00044,20.5v11h4v-7c0-.55225.44775-1,1-1h8.42004l-3.71002-3.71002c-.19-.17999-.44-.28998-.71002-.28998h-8c-.54999,0-1,.45001-1,1Z"/><path d="M52.00044,35.5h5v-2h-18v5H8.00044c-.54999,0-1,.45001-1,1v6c0,.54999.45001,1,1,1h2.34998c.81-2.33002,3.04004-4,5.65002-4s4.84003,1.66998,5.65002,4h14.34998c.54999,0,1-.45001,1-1v-1h2v1c0,.54999.45001,1,1,1h2.34998c.81-2.33002,3.04004-4,5.65002-4s4.84003,1.66998,5.65002,4h2.34998c.54999,0,1-.45001,1-1v-4h-5c-.54999,0-1-.45001-1-1v-4c0-.54999.45001-1,1-1ZM39.00044,42.5h-2v-2h2v2ZM46.00044,37.5h-2c-.54999,0-1-.45001-1-1s.45001-1,1-1h2c.54999,0,1,.45001,1,1s-.45001,1-1,1Z"/><rect x="25.00044" y="24.5" width="2" height="8"/><polygon points="18.00044 32.5 18.00044 24.5 14.23335 24.5 16.01118 32.5 18.00044 32.5"/><rect x="20.00044" y="24.5" width="3" height="8"/><path d="M37.00044,36.5v-19h7c.54999,0,1-.45001,1-1v-4c0-.54999-.45001-1-1-1h-12c-.42999,0-.81.27997-.95001.67999l-2.76996,8.32001H8.00044c-.29999,0-.59003.14001-.78003.37-.18994.23999-.25995.54999-.19995.84998l3.28998,14.78003h26.69ZM12.21046,22.87c.19-.22998.46997-.37.77997-.37h19.01001c.54999,0,1,.45001,1,1v10c0,.54999-.45001,1-1,1H15.21046c-.47003,0-.88-.33002-.98004-.78003l-2.21997-10c-.07001-.29999.01001-.60999.20001-.84998Z"/><rect x="29.00044" y="24.5" width="2" height="8"/></svg></div>
+                    <h3 class="application-title">Heavy-Duty Requirements</h3>
+                    <p class="application-desc">Steel edge beams for extreme load conditions and high-traffic areas where maximum durability and strength are critical.</p>
+                </div>
+                <div class="application-card">
+                    <div class="application-icon"><svg width="48" height="48" viewBox="0 0 64 64" fill="currentColor"><path d="M54.71002,43.71002l-5.71002-5.71002v13.04004l4.54999,2.27002c.14001.06995.29999.10999.45001.10999.17999,0,.37-.04999.53003-.15002.28998-.17999.46997-.5.46997-.84998v-8c0-.27002-.10999-.52002-.28998-.71002Z"/><path d="M9,44.42004v8c0,.34998.17999.66998.46997.84998.16003.10004.35004.15002.53003.15002.15002,0,.31-.04004.45001-.10999l4.54999-2.27002v-13.04004l-5.71002,5.71002c-.17999.19-.28998.44-.28998.71002Z"/><path d="M32,23c-5.40051,0-10.29944-1.51257-13.90167-3.95636-.71167,1.97589-1.09833,4.09167-1.09833,6.27423v25.68213h12v-5c0-1.6543,1.3457-3,3-3s3,1.3457,3,3v5h12v-25.68213c0-2.18256-.38666-4.29834-1.09833-6.27423-3.60223,2.44379-8.50116,3.95636-13.90167,3.95636ZM40,38c0,1.6543-1.3457,3-3,3h-10c-1.6543,0-3-1.3457-3-3v-10c0-1.6543,1.3457-3,3-3h10c1.6543,0,3,1.3457,3,3v10Z"/><path d="M37,27h-1v5c0,.36865-.20312.70752-.52832.88184-.14746.0791-.31006.11816-.47168.11816-.19385,0-.38721-.05615-.55469-.16797l-2.44531-1.63037-2.44531,1.63037c-.30713.20312-.70312.22314-1.02637.0498-.3252-.17432-.52832-.51318-.52832-.88184v-5h-1c-.55127,0-1,.44873-1,1v10c0,.55127.44873,1,1,1h10c.55127,0,1-.44873,1-1v-10c0-.55127-.44873-1-1-1Z"/><path d="M32,29c.19336,0,.38672.05615.55469.16797l1.44531.96338v-3.13135h-4v3.13135l1.44531-.96338c.16797-.11182.36133-.16797.55469-.16797Z"/><path d="M32,45c-.55127,0-1,.44873-1,1v5h2v-5c0-.55127-.44873-1-1-1Z"/><path d="M39.61816,53h-15.23633l-1.27637,2.55273c-.15479.31006-.13818.67822.04395.97314.18213.29443.50391.47412.85059.47412h16c.34668,0,.66846-.17969.85059-.47412.18213-.29492.19873-.66309.04395-.97314l-1.27637-2.55273Z"/><path d="M45.10968,17.19696c-2.46448-5.06366-7.1474-8.94196-12.90021-10.17499-.1377-.0293-.28125-.0293-.41895,0-5.75281,1.23303-10.43573,5.11133-12.90021,10.17499,3.28607,2.33435,7.94019,3.80304,13.10968,3.80304s9.82361-1.46869,13.10968-3.80304Z"/></svg></div>
+                    <h3 class="application-title">Rapid Deployment</h3>
+                    <p class="application-desc">Plastic edge beams for installations requiring rapid deployment, ease of handling, and corrosion resistance.</p>
+                </div>
+                <div class="application-card">
+                    <div class="application-icon"><svg width="48" height="48" viewBox="0 0 64 64" fill="currentColor"><path d="M22,48.70996v1.53003c0,.40997.25,.77002.62,.92999,2.97003,1.21002,6.13,1.83002,9.38,1.83002s6.40997-.62,9.38-1.83002c.37-.15997.62-.52002.62-.92999v-1.53003c-3.02002,1.47003-6.41998,2.29004-10,2.29004s-6.97998-.82001-10-2.29004Z"/><path d="M28,54.70001v1.29999c0,.54999.45001,1,1,1h6c.54999,0,1-.45001,1-1v-1.29999c-1.31.19995-2.65002.29999-4,.29999s-2.69-.10004-4-.29999Z"/><path d="M41.86078,16.72473c-2.63971-2.31152-6.08466-3.72473-9.86078-3.72473s-7.22107,1.41321-9.86078,3.72473l9.86078,9.86121,9.86078-9.86121ZM29,18c0-1.6543,1.3457-3,3-3s3,1.3457,3,3-1.3457,3-3,3-3-1.3457-3-3Z"/><path d="M23,26c0-.55176-.44873-1-1-1h-1v2h1c.55127,0,1-.44824,1-1Z"/><circle cx="32" cy="18" r="1"/><path d="M32,29.41406l-9.86078,9.86121c2.63971,2.31152,6.08466,3.72473,9.86078,3.72473s7.22107-1.41321,9.86078-3.72473l-9.86078-9.86121ZM32,41c-1.6543,0-3-1.3457-3-3s1.3457-3,3-3,3,1.3457,3,3-1.3457,3-3,3Z"/><path d="M20.72998,18.14001c-2.32001,2.63995-3.72998,6.07996-3.72998,9.85999s1.40997,7.21997,3.72998,9.85999l9.86005-9.85999-9.86005-9.85999ZM23.71002,30.28998c.62,.62,.15997,1.71002-.71002,1.71002-.26001,0-.51001-.10004-.71002-.29004l-1.28998-1.29999v.59003c0,.54999-.45001,1-1,1s-1-.45001-1-1v-7c0-.54999.45001-1,1-1h2c1.65002,0,3,1.34998,3,3,0,1.52997-1.15002,2.76996-2.62,2.95996,0,0,1.32001,1.33002,1.33002,1.33002Z"/><path d="M47.88599,22h4.22961c-2.02039-6.76001-7.35547-12.09521-14.1156-14.1156v4.22961c4.54852,1.72406,8.16193,5.33746,9.88599,9.88599Z"/><path d="M52.6073,24h-4.10229c.31171,1.28534,.495,2.62018,.495,4s-.18329,2.71466-.495,4h4.10229c.25122-1.29626.3927-2.63141.3927-4s-.14148-2.70374-.3927-4Z"/><circle cx="32" cy="38" r="1"/><path d="M36,11.495v-4.10229c-1.29626-.25122-2.63141-.3927-4-.3927s-2.70374.14148-4,.3927v4.10229c1.28534-.31171,2.62018-.495,4-.495s2.71466.18329,4,.495Z"/><path d="M26,43.88599c-4.54852-1.72406-8.16193-5.33746-9.88599-9.88599h-4.22961c2.02039,6.76001,7.35547,12.09521,14.1156,14.1156v-4.22961Z"/><path d="M43,26c0-.55176-.44873-1-1-1h-1v2h1c.55127,0,1-.44824,1-1Z"/><path d="M26,12.11401v-4.22961c-6.76013,2.02039-12.09521,7.35559-14.1156,14.1156h4.22961c1.72406-4.54852,5.33746-8.16193,9.88599-9.88599Z"/><path d="M28,44.505v4.10229c1.29626.25122,2.63141.3927,4,.3927s2.70374-.14148,4-.3927v-4.10229c-1.28534.31171-2.62018.495-4,.495s-2.71466-.18329-4-.495Z"/><path d="M38,43.88599v4.22961c6.76013-2.02039,12.09521-7.35559,14.1156-14.1156h-4.22961c-1.72406,4.54852-5.33746,8.16193-9.88599,9.88599Z"/><path d="M15,28c0-1.37982.18329-2.71466.495-4h-4.10229c-.25122,1.29626-.3927,2.63141-.3927,4s.14148,2.70374.3927,4h4.10229c-.31171-1.28534-.495-2.62018-.495-4Z"/><path d="M43.27002,18.14001l-9.86005,9.85999,9.86005,9.85999c2.32001-2.64001,3.72998-6.08002,3.72998-9.85999s-1.40997-7.22003-3.72998-9.85999ZM43.71002,30.28998c.38995.39001,.38995,1.03003,0,1.41998-.39001.39001-1.03003.38-1.42004,0l-1.28998-1.29999v.59003c0,.54999-.45001,1-1,1s-1-.45001-1-1v-7c0-.54999.45001-1,1-1h2c1.65002,0,3,1.34998,3,3,0,1.52997-1.15002,2.76996-2.62,2.95996l1.33002,1.33002Z"/></svg></div>
+                    <h3 class="application-title">All Crossing Systems</h3>
+                    <p class="application-desc">Compatible with CONNECT, LINK, TITAN, Baseplate, and Interlocking RRAP systems for comprehensive crossing support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Need the Right Edge Beam Solution?</h2>
+                <p class="cta-text">Discover how our rubber edge beams can provide lightweight, sustainable crossing support with significant cost and environmental benefits.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-primary">Request Quote</a>
+                    <a href="contact.html" class="btn-secondary">Material Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><strong>Rosehill Rail</strong><br>
+                    A Division of Rosehill Group<br>
+                    Spring Bank Mills<br>
+                    Sowerby Bridge<br>
+                    West Yorkshire HX6 3BW<br>
+                    United Kingdom</p>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" style="width: 1rem; height: 1rem; fill: currentColor; vertical-align: text-bottom;"><path d="M56.71104,31.35059l-2.53662-2.53662c1.18555-1.68018,1.82959-3.69189,1.82959-5.75635,0-5.51416-4.48584-10-10-10s-10,4.48584-10,10,4.48584,10,10,10h10c.4043,0,.76904-.24365.92383-.61719.15479-.37402.06934-.8042-.2168-1.08984ZM41.00401,24.05762c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1ZM46.00401,24.05762c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1ZM51.00401,24.05762c-.55231,0-1-.44775-1-1,0-.55231.44769-1,1-1s1,.44769,1,1c0,.55225-.44769,1-1,1Z"/><path d="M51.56309,45.40039l-10.17969-10.17969-1.25928-1.25928c-.39062-.39062-1.02344-.39062-1.41406,0s-.39062,1.02344,0,1.41406l.55225.55225-3.65576,3.65576c-.4126.4126-1.08301.41162-1.49463,0l-11.63379-11.63379c-.41211-.41211-.41211-1.08252,0-1.49463l3.65552-3.65552.5642.5642c.36332.36332,1.0301.38398,1.41407,0,.39062-.39062.39062-1.02344,0-1.41406,0,0-1.27014-1.2702-1.271-1.27148l-10.17981-10.17981-1.27087-1.27087c-.39062-.39062-1.02344-.39062-1.41406,0s-.39062,1.02344,0,1.41406l.56396.56396-5.10986,5.10986c-2.87549,2.875-3.24658,7.36328-.8833,10.67139,7.33447,10.26855,16.25928,19.19336,26.52734,26.52734,1.45703,1.04102,3.14209,1.55127,4.81787,1.55127,2.13037,0,4.24463-.82471,5.854-2.43408l5.10986-5.10986.55224.55224c.37609.37609,1.03944.37464,1.41407,0,.39062-.39062.39062-1.02344,0-1.41406l-1.25928-1.25928Z"/></svg> +44 (0)1422 839 456<br>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" style="width: 1rem; height: 1rem; fill: currentColor; vertical-align: text-bottom;"><polygon points="12 23.36124 7.69 26.95127 12 29.76127 12 23.36124"/><path d="M32.64001,7.23124c-.37-.31-.91003-.31-1.28003,0l-3.32001,2.77002h7.92004l-3.32001-2.77002Z"/><polygon points="52 23.36124 52 29.76127 56.31 26.95127 52 23.36124"/><path d="M40.8385,39.4257l15.8609,15.8609c.18713-.39111.3006-.82361.3006-1.28534v-25.10992l-16.1615,10.53436Z"/><circle cx="24" cy="50.00126" r="1"/><path d="M8.71002,56.70127c.39996.19.82996.29999,1.28998.29999h44c.46002,0,.89001-.10999,1.28998-.29999l-23.28998-23.29004-23.28998,23.29004ZM24,53.00126c-1.65002,0-3-1.35004-3-3s1.34998-3,3-3,3,1.34998,3,3-1.34998,3-3,3ZM40,47.00126c1.65002,0,3,1.34998,3,3s-1.34998,3-3,3-3-1.35004-3-3,1.34998-3,3-3ZM35,50.00126c0,1.64996-1.34998,3-3,3s-3-1.35004-3-3,1.34998-3,3-3,3,1.34998,3,3Z"/><circle cx="32" cy="50.00126" r="1"/><circle cx="40" cy="50.00126" r="1"/><path d="M7,28.89133v25.10992c0,.46173.11346.89423.3006,1.28534l15.8609-15.8609L7,28.89133Z"/><path d="M36.44727,21.92948c.33887.16943.55273.51562.55273.89453v2.15283l4,.6665v-5.99951l-7.44238-1.48828c-1.0332-.20703-2.08105-.20703-3.11523,0l-7.44238,1.48828v5.99951l4-.6665v-2.15283c0-.37891.21387-.7251.55273-.89453,2.78516-1.3916,6.10938-1.3916,8.89453,0Z"/><path d="M32,30.59122l7.39001,7.39001,10.60999-6.90997V13.00126c0-.54999-.45001-1-1-1H15c-.54999,0-1,.45001-1,1v18.07001l10.60999,6.90997,7.39001-7.39001ZM21.35352,27.5872c-.22412-.18994-.35352-.46924-.35352-.76318v-8c0-.47656.33643-.88721.80371-.98047l8.24609-1.64893c1.29395-.25977,2.60645-.25977,3.90039,0l8.24609,1.64893c.46729.09326.80371.50391.80371.98047v8c0,.29393-.12939.57322-.35349.76316-.22206.18821-.52433.27181-.81106.22317l-6-1c-.48193-.08008-.83545-.49756-.83545-.98633v-2.35547c-1.91602-.7793-4.08398-.7793-6,0v2.35547c0,.48877-.35352.90625-.83545.98633l-6,1c-.29004.04736-.58691-.03369-.81104-.22314Z"/></svg> info@rosehillrail.com</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="walkway.html">Walkway Panels</a></li>
+                        <li><a href="edgebeams.html">Edge Beams</a></li>
+                        <li><a href="accessories.html">Accessories & Spares</a></li>
+                        <li><a href="#solutions">Road Crossings</a></li>
+                        <li><a href="#solutions">Pedestrian Crossings</a></li>
+                        <li><a href="#solutions">Metro & Tramways</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quality & Compliance</h3>
+                    <p>All components designed by Rosehill Rail with exclusive design rights. Quality assured to ISO 9001:2008 standard with annual NQA audits.</p>
+                    <p style="margin-top: 20px;">
+                        <strong>Accreditations:</strong><br>
+                        ISO 9001:2008 • Network Rail Approved • Full Traceability
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Rosehill Rail. A Division of Rosehill Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
