@@ -286,23 +286,71 @@
         .products-hero {
             background: linear-gradient(135deg, #1a365d, #2d4a71);
             color: white;
-            padding: 120px 0 60px;
+            padding: 140px 0 100px;
+            position: relative;
+            overflow: hidden;
             margin-top: 70px;
+        }
+        
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+        
+        .hero-background picture {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        
+        .hero-background img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            opacity: 0.4;
+        }
+        
+        .products-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, 
+                rgba(26, 54, 93, 0.6) 0%, 
+                rgba(45, 74, 113, 0.5) 50%,
+                rgba(26, 54, 93, 0.6) 100%);
+            z-index: 2;
+        }
+        
+        .products-hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 3;
             text-align: center;
         }
         
         .products-hero h1 {
             font-family: 'Overpass', sans-serif;
-            font-size: 3rem;
+            font-size: 3.5rem;
             font-weight: 600;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            letter-spacing: -1px;
         }
         
         .products-hero p {
-            font-size: 1.3rem;
-            max-width: 800px;
-            margin: 0 auto;
+            font-size: 1.4rem;
             opacity: 0.95;
+            max-width: 900px;
+            margin: 0 auto;
         }
         
         /* Product Categories */
@@ -554,7 +602,11 @@
                 display: flex;
             }
             .products-hero h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
+            }
+            
+            .products-hero p {
+                font-size: 1.2rem;
             }
             
             .category-container {
@@ -615,8 +667,17 @@
 
     <!-- Products Hero -->
     <section class="products-hero">
-        <h1>Complete Rail Infrastructure Solutions</h1>
-        <p>From heavy-duty crossing systems to safety panels, discover our comprehensive range of sustainable, high-performance products engineered for modern rail networks.</p>
+        <div class="hero-background">
+            <picture>
+                <source srcset="rosehill_rail_hero.avif" type="image/avif">
+                <source srcset="rosehill_rail_hero.webp" type="image/webp">
+                <img src="rosehill_rail_hero.jpg" alt="Rosehill Rail Infrastructure">
+            </picture>
+        </div>
+        <div class="products-hero-content">
+            <h1>Complete Rail Infrastructure Solutions</h1>
+            <p>From heavy-duty crossing systems to safety panels, discover our comprehensive range of sustainable, high-performance products engineered for modern rail networks.</p>
+        </div>
     </section>
 
     <!-- Category Navigation -->

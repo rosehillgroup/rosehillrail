@@ -257,26 +257,33 @@
         .about-hero {
             background: linear-gradient(135deg, #1a365d, #2d4a71);
             color: white;
-            padding: 120px 0 60px;
-            margin-top: 70px;
-            text-align: center;
+            padding: 140px 0 100px;
             position: relative;
             overflow: hidden;
+            margin-top: 70px;
         }
-
-        .about-hero::after {
-            content: '';
+        
+        .hero-background {
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: url('Rosehill_Polymers_BeechRd.webp');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            opacity: 0.2;
             z-index: 1;
+        }
+        
+        .hero-background picture {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        
+        .hero-background img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            opacity: 0.4;
         }
 
         .about-hero::before {
@@ -287,32 +294,34 @@
             right: 0;
             bottom: 0;
             background: linear-gradient(135deg, 
-                rgba(26, 54, 93, 0.95) 0%, 
-                rgba(45, 74, 113, 0.85) 50%,
-                rgba(26, 54, 93, 0.95) 100%);
+                rgba(26, 54, 93, 0.6) 0%, 
+                rgba(45, 74, 113, 0.5) 50%,
+                rgba(26, 54, 93, 0.6) 100%);
             z-index: 2;
         }
 
         .about-hero-content {
-            position: relative;
-            z-index: 3;
             max-width: 1400px;
             margin: 0 auto;
             padding: 0 20px;
+            position: relative;
+            z-index: 3;
+            text-align: center;
         }
 
         .about-hero h1 {
             font-family: 'Overpass', sans-serif;
-            font-size: 3.2rem;
+            font-size: 3.5rem;
             font-weight: 600;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            letter-spacing: -1px;
         }
 
         .about-hero p {
-            font-size: 1.3rem;
-            max-width: 800px;
-            margin: 0 auto;
+            font-size: 1.4rem;
             opacity: 0.95;
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         /* Main Content */
@@ -557,7 +566,11 @@
         
         @media (max-width: 768px) {
             .about-hero h1 {
-                font-size: 2.2rem;
+                font-size: 2.5rem;
+            }
+            
+            .about-hero p {
+                font-size: 1.2rem;
             }
 
             .section-title {
@@ -669,6 +682,13 @@
 
     <!-- About Hero -->
     <section class="about-hero">
+        <div class="hero-background">
+            <picture>
+                <source srcset="rosehill_rail_hero.avif" type="image/avif">
+                <source srcset="rosehill_rail_hero.webp" type="image/webp">
+                <img src="rosehill_rail_hero.jpg" alt="Rosehill Rail Infrastructure">
+            </picture>
+        </div>
         <div class="about-hero-content">
             <h1>Three Decades of Rail Innovation</h1>
             <p>From pioneering cold cure technology to becoming a trusted global leader in sustainable rail crossing solutions.</p>
