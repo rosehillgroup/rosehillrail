@@ -11,6 +11,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WJDDB8VZ');</script>
+    <!-- End Google Tag Manager -->
     <style>
         * {
             margin: 0;
@@ -990,6 +998,10 @@
     </style>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJDDB8VZ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- Header -->
     <header class="header">
         <div class="header-container">
@@ -1571,6 +1583,79 @@
             el.style.transform = 'translateY(30px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(el);
+        });
+
+        // Track rail product engagement
+        document.addEventListener('click', function(e) {
+            const target = e.target.closest('a');
+            if (!target) return;
+            
+            const href = target.getAttribute('href');
+            if (!href) return;
+            
+            // Track product page access with specific product types
+            const productMapping = {
+                'connect.html': 'connect_system',
+                'link.html': 'link_system',
+                'interlocking.html': 'interlocking_rrap',
+                'baseplate.html': 'baseplate_system',
+                'titan.html': 'titan_heavy_duty',
+                'antitrespass.html': 'anti_trespass_panels',
+                'walkway.html': 'walkway_panels',
+                'edgebeams.html': 'edge_beams',
+                'accessories.html': 'accessories_spares'
+            };
+            
+            // Check if it's a product page
+            const productKey = Object.keys(productMapping).find(key => href.includes(key));
+            if (productKey) {
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    'event': 'engagement',
+                    'engagement_type': 'product_page_access',
+                    'business_area': 'rail',
+                    'product_type': productMapping[productKey],
+                    'click_text': target.textContent.trim(),
+                    'page_location': window.location.href,
+                    'source_section': target.closest('section')?.className || 'unknown'
+                });
+            }
+            
+            // Track general products page access
+            if (href.includes('products.html')) {
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    'event': 'engagement',
+                    'engagement_type': 'products_overview_access',
+                    'business_area': 'rail',
+                    'click_text': target.textContent.trim(),
+                    'page_location': window.location.href
+                });
+            }
+            
+            // Track about page access
+            if (href.includes('about.html')) {
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    'event': 'engagement',
+                    'engagement_type': 'about_access',
+                    'business_area': 'rail',
+                    'click_text': target.textContent.trim(),
+                    'page_location': window.location.href
+                });
+            }
+            
+            // Track contact requests
+            if (href.includes('contact.html')) {
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    'event': 'engagement',
+                    'engagement_type': 'contact_request',
+                    'business_area': 'rail',
+                    'click_text': target.textContent.trim(),
+                    'page_location': window.location.href
+                });
+            }
         });
     </script>
 </body>
