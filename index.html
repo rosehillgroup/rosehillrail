@@ -13,6 +13,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
     
+    <!-- Critical Image Preloading -->
+    <link rel="preload" as="image" href="rosehill_rail_logo.avif" type="image/avif">
+    <link rel="preload" as="image" href="rosehill_rail_logo.webp" type="image/webp">
+    <link rel="preload" as="image" href="rosehill_rail_logo.png" type="image/png">
+    <link rel="preload" as="image" href="rosehill_rail_hero.avif" type="image/avif">
+    <link rel="preload" as="image" href="rosehill_rail_hero.webp" type="image/webp">
+    <link rel="preload" as="image" href="rosehill_rail_hero.jpg" type="image/jpeg">
+    
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -1351,7 +1359,7 @@
                 <picture>
         <source srcset="rosehill_rail_logo.avif" type="image/avif">
         <source srcset="rosehill_rail_logo.webp" type="image/webp">
-        <img src="rosehill_rail_logo.png" alt="Rosehill Rail" style="height: 60px;">
+        <img src="rosehill_rail_logo.png" alt="Rosehill Rail" width="183" height="60" loading="eager">
     </picture>
             </a>
             <nav>
@@ -1419,7 +1427,7 @@
             <picture>
                 <source srcset="rosehill_rail_hero.avif" type="image/avif">
                 <source srcset="rosehill_rail_hero.webp" type="image/webp">
-                <img src="rosehill_rail_hero.jpg" alt="Rosehill Rail Infrastructure">
+                <img src="rosehill_rail_hero.jpg" alt="Rosehill Rail Infrastructure" width="1918" height="1280" loading="eager">
             </picture>
         </div>
         <div class="hero-content">
