@@ -1,6 +1,6 @@
 [build]
-  # No build command needed for static site
-  command = ""
+  # Replace environment variables in HTML files
+  command = "find . -name '*.html' -exec sed -i 's/GOOGLE_MAPS_API_KEY/'$GOOGLE_MAPS_API_KEY'/g' {} +"
   
   # Publish directory (root of the repository)
   publish = "."
