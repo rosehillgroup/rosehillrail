@@ -672,6 +672,7 @@
             display: none;
         }
     </style>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4thkNOBcCg5KV5z9U4RCUXVVJ2tv7lU8&callback=initMap"></script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -837,16 +838,7 @@
 
                     <!-- Google Map -->
                     <div style="margin-top: 30px;">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2357.2!2d-1.9167!3d53.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDQyJzAwLjAiTiAxwrA1NScwMC4wIlc!5e0!3m2!1sen!2suk!4v1635000000000!5m2!1sen!2suk&q=Spring+Bank+Mills,+Sowerby+Bridge,+West+Yorkshire+HX6+3BW,+UK" 
-                            width="100%" 
-                            height="200" 
-                            style="border: 0; border-radius: 8px;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade"
-                            title="Rosehill Rail Location - Spring Bank Mills, Sowerby Bridge">
-                        </iframe>
+                        <div id="map" style="width: 100%; height: 200px; border-radius: 8px;" title="Rosehill Rail Location - Spring Bank Mills, Sowerby Bridge"></div>
                     </div>
                 </div>
 
@@ -1048,6 +1040,75 @@
             document.querySelector('.contact-form').scrollIntoView({
                 behaviour: 'smooth'
             });
+        });
+
+        // Initialize Google Map
+        function initMap() {
+            // Coordinates for Spring Bank Mills, Sowerby Bridge, West Yorkshire HX6 3BW
+            const rosehillLocation = { lat: 53.712, lng: -1.923 };
+            
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: rosehillLocation,
+                styles: [
+                    {
+                        "featureType": "all",
+                        "elementType": "geometry.fill",
+                        "stylers": [{"weight": "2.00"}]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{"color": "#9c9c9c"}]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text",
+                        "stylers": [{"visibility": "on"}]
+                    }
+                ]
+            });
+
+            // Add marker
+            const marker = new google.maps.Marker({
+                position: rosehillLocation,
+                map: map,
+                title: "Rosehill Rail - Spring Bank Mills",
+                icon: {
+                    url: 'data:image/svg+xml;charset=UTF-8,<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="12" fill="%23ff6b35" stroke="%23ffffff" stroke-width="3"/><circle cx="16" cy="16" r="4" fill="%23ffffff"/></svg>',
+                    scaledSize: new google.maps.Size(32, 32),
+                    anchor: new google.maps.Point(16, 16)
+                }
+            });
+
+            // Add info window
+            const infoWindow = new google.maps.InfoWindow({
+                content: `
+                    <div style="font-family: 'Source Sans Pro', sans-serif; padding: 10px; max-width: 250px;">
+                        <h3 style="color: #1a365d; margin: 0 0 8px 0; font-size: 16px;">Rosehill Rail</h3>
+                        <p style="margin: 0 0 8px 0; font-size: 14px; color: #495057;">Spring Bank Mills, Watson Mill Lane<br>
+                        Sowerby Bridge, West Yorkshire<br>
+                        HX6 3BW, United Kingdom</p>
+                        <p style="margin: 0; font-size: 14px;">
+                            <strong style="color: #ff6b35;">📞</strong> +44 (0)1422 839 456<br>
+                            <strong style="color: #ff6b35;">📧</strong> info@rosehill.group
+                        </p>
+                    </div>
+                `
+            });
+
+            marker.addListener("click", () => {
+                infoWindow.open(map, marker);
+            });
+        }
+
+        // Fallback if Google Maps fails to load
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                if (typeof google === 'undefined' || !document.getElementById('map').hasChildNodes()) {
+                    document.getElementById('map').innerHTML = '<div style="display: flex; align-items: center; justify-content: center; height: 100%; background: #f8f9fa; color: #6c757d; font-family: inherit; border-radius: 8px;"><p>📍 Spring Bank Mills, Watson Mill Lane, Sowerby Bridge, West Yorkshire HX6 3BW</p></div>';
+                }
+            }, 3000);
         });
     </script>
 </body>
