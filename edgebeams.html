@@ -167,6 +167,50 @@
             margin-top: 10px;
             border-bottom: none;
         }
+        
+        /* Mobile Dropdown Styles */
+        .mobile-dropdown {
+            width: 100%;
+        }
+        
+        .mobile-dropdown-toggle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .dropdown-arrow {
+            font-size: 0.8em;
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-dropdown.active .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+        
+        .mobile-dropdown-content {
+            display: none;
+            background: rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+            border-radius: 8px;
+            padding: 10px 0;
+        }
+        
+        .mobile-dropdown.active .mobile-dropdown-content {
+            display: block;
+        }
+        
+        .mobile-dropdown-content a {
+            display: block;
+            padding: 10px 20px !important;
+            font-size: 0.9em;
+            border-bottom: none !important;
+        }
+        
+        .mobile-dropdown-content a:hover {
+            background: rgba(255, 107, 53, 0.1);
+        }
 
         /* Mega Menu */
         .nav-item {
@@ -1046,7 +1090,14 @@
                 </button>
                 <div class="mobile-nav-menu" id="mobile-menu">
                     <a href="index.html">Home</a>
-                    <a href="products.html">Products</a>
+                    <div class="mobile-dropdown">
+                        <a href="products.html" class="mobile-dropdown-toggle active">Products <span class="dropdown-arrow">▼</span></a>
+                        <div class="mobile-dropdown-content">
+                            <a href="products.html#crossing">Level Crossing Systems</a>
+                            <a href="products.html#safety">Safety Solutions</a>
+                            <a href="products.html#edge">Edge Beam Solutions</a>
+                        </div>
+                    </div>
                     <a href="about.html">About Us</a>
                     <a href="contact.html" class="contact-btn">Get in Touch</a>
                 </div>
@@ -1415,6 +1466,25 @@
         mobileToggle.addEventListener('click', () => {
             mobileMenu.classList.toggle('active');
         });
+        
+        // Close mobile menu when clicking on a link (except dropdown toggles)
+        document.querySelectorAll('.mobile-nav-menu a:not(.mobile-dropdown-toggle)').forEach(link => {
+            link.addEventListener('click', function() {
+                mobileToggle.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+        
+        // Mobile dropdown functionality
+        const mobileDropdown = document.querySelector('.mobile-dropdown');
+        const dropdownToggle = document.querySelector('.mobile-dropdown-toggle');
+        
+        if (dropdownToggle && mobileDropdown) {
+            dropdownToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                mobileDropdown.classList.toggle('active');
+            });
+        }
     </script>
 </body>
 </html>
