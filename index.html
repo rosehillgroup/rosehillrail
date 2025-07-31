@@ -1228,6 +1228,12 @@
             .solution-visual {
                 height: 280px;
             }
+
+            .solution-visual picture {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
             
             .solution-visual .icon {
                 font-size: 6rem;
@@ -1235,6 +1241,30 @@
 
             .system-links {
                 grid-template-columns: 1fr;
+            }
+        }
+
+        /* Additional mobile styles for very small screens */
+        @media (max-width: 480px) {
+            .solution-visual {
+                height: 250px;
+            }
+            
+            .solution-visual picture {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+            
+            .solution-visual img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            
+            .solutions-inner {
+                gap: 20px;
             }
         }
 
