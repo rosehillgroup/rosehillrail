@@ -1406,6 +1406,10 @@
             object-fit: cover;
         }
 
+        .drainage-image-mobile {
+            display: none;
+        }
+
         @media (max-width: 768px) {
             .drainage-content-wrapper {
                 grid-template-columns: 1fr;
@@ -1416,7 +1420,22 @@
             }
             
             .drainage-image {
-                height: 250px;
+                display: none;
+            }
+            
+            .drainage-image-mobile {
+                display: block;
+                height: 200px;
+                margin: 20px 0;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            
+            .drainage-image-mobile img,
+            .drainage-image-mobile picture img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
         }
     </style>
@@ -1727,6 +1746,15 @@
             <div class="drainage-content-wrapper">
                 <div class="drainage-text">
                     <h3>Modular Trackside Drainage Systems</h3>
+                    
+                    <div class="drainage-image-mobile">
+                        <picture>
+                            <source srcset="railway_drainage_web.avif" type="image/avif">
+                            <source srcset="railway_drainage_web.webp" type="image/webp">
+                            <img src="railway_drainage_web.jpg" alt="Rosehill Railway Drainage Systems" onerror="this.style.display='none'">
+                        </picture>
+                    </div>
+                    
                     <p>Our revolutionary drainage technology transforms railway water management through innovative polymer solutions made from 100% recycled materials. Designed specifically for the challenging demands of railway environments.</p>
                     
                     <ul class="benefits-list">
