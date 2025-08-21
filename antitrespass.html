@@ -484,15 +484,63 @@
         .variation-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 20px;
-            margin-top: 25px;
+            gap: 15px;
+            margin-top: 20px;
         }
 
         .variation-item {
             background: white;
-            padding: 20px;
+            padding: 15px;
             border-radius: 8px;
             border-left: 4px solid #ff6b35;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .variation-image {
+            width: 200px;
+            height: auto;
+        }
+
+        .variation-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .conical-image-container {
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .conical-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        @media (max-width: 768px) {
+            .variation-item {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding: 12px;
+            }
+            .variation-image {
+                justify-self: center;
+                margin-bottom: 15px;
+                width: 180px;
+                height: auto;
+            }
+            .conical-image-container {
+                height: 140px;
+                margin: 15px 0;
+            }
         }
 
         .variation-title {
@@ -949,7 +997,7 @@
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li class="nav-item">
-                        <a href="products.html">Products</a>
+                        <a href="products.html" class="active">Products</a>
                         <div class="mega-menu">
                             <div class="mega-menu-content">
                                 <div class="mega-menu-section">
@@ -1068,6 +1116,13 @@
                 <div class="security-text">
                     <h3>Conical Stud Design</h3>
                     <p>Our unique anti-trespass panels feature a sophisticated conical stud design that provides enhanced deterrence while reducing installation time compared to traditional security solutions.</p>
+                    <div class="conical-image-container">
+                        <picture>
+                            <source srcset="atp_conical.avif" type="image/avif">
+                            <source srcset="atp_conical.webp" type="image/webp">
+                            <img src="atp_conical.jpg" alt="Anti-Trespass Panel conical stud design detail" class="conical-image">
+                        </picture>
+                    </div>
                     <p>Manufactured from 100% recycled rubber, these panels provide an environmentally responsible solution for railway safety while delivering proven results in reducing unauthorised track access.</p>
                     <div class="security-highlight">
                         <h4>Network Rail Approved:</h4>
@@ -1078,16 +1133,37 @@
                     <h4 style="font-family: 'Overpass', sans-serif; color: #1a365d; margin-bottom: 25px;">Panel Variations</h4>
                     <div class="variation-grid">
                         <div class="variation-item">
-                            <div class="variation-title">Double Flange</div>
-                            <div class="variation-desc">For four-foot gauge applications (1490mm × 1300mm × 147mm, 116kg)</div>
+                            <picture>
+                                <source srcset="atp_double_flange.avif" type="image/avif">
+                                <source srcset="atp_double_flange.webp" type="image/webp">
+                                <img src="atp_double_flange.jpg" alt="Double Flange Anti-Trespass Panel cut-out" class="variation-image">
+                            </picture>
+                            <div class="variation-content">
+                                <div class="variation-title">Double Flange</div>
+                                <div class="variation-desc">For four-foot gauge applications (1490mm × 1300mm × 147mm, 116kg)</div>
+                            </div>
                         </div>
                         <div class="variation-item">
-                            <div class="variation-title">Single Flange</div>
-                            <div class="variation-desc">For outside four-foot applications (1487mm × 1300mm × 147mm, 110kg)</div>
+                            <picture>
+                                <source srcset="atp_single_flange.avif" type="image/avif">
+                                <source srcset="atp_single_flange.webp" type="image/webp">
+                                <img src="atp_single_flange.jpg" alt="Single Flange Anti-Trespass Panel cut-out" class="variation-image">
+                            </picture>
+                            <div class="variation-content">
+                                <div class="variation-title">Single Flange</div>
+                                <div class="variation-desc">For outside four-foot applications (1487mm × 1300mm × 147mm, 110kg)</div>
+                            </div>
                         </div>
                         <div class="variation-item">
-                            <div class="variation-title">Flangeless</div>
-                            <div class="variation-desc">Full-width for platform applications (1484mm × 1300mm × 147mm, 98kg)</div>
+                            <picture>
+                                <source srcset="atp_flangeless.avif" type="image/avif">
+                                <source srcset="atp_flangeless.webp" type="image/webp">
+                                <img src="atp_flangeless.jpg" alt="Flangeless Anti-Trespass Panel cut-out" class="variation-image">
+                            </picture>
+                            <div class="variation-content">
+                                <div class="variation-title">Flangeless</div>
+                                <div class="variation-desc">Full-width for platform applications (1484mm × 1300mm × 147mm, 98kg)</div>
+                            </div>
                         </div>
                     </div>
                 </div>
