@@ -482,35 +482,35 @@ async function processFile(sourceFile, targetLang) {
   $('head').append(languageSwitcherCSS);
   $('body').append(languageSwitcherJS);
   
-  // Fix favicon paths in link tags
-  $('link[rel="icon"], link[rel="apple-touch-icon"], link[rel="manifest"]').each(function() {
-    const currentHref = $(this).attr('href');
-    if (currentHref && currentHref.startsWith('favicon_io/')) {
-      $(this).attr('href', `src/assets/${currentHref}`);
-    }
-  });
+  // Rail site: favicon paths are already correct, no modification needed
+  // $('link[rel="icon"], link[rel="apple-touch-icon"], link[rel="manifest"]').each(function() {
+  //   const currentHref = $(this).attr('href');
+  //   if (currentHref && currentHref.startsWith('favicon_io/')) {
+  //     $(this).attr('href', `src/assets/${currentHref}`);
+  //   }
+  // });
   
-  // Fix PDF download links
-  $('a[href$=".pdf"]').each(function() {
-    const currentHref = $(this).attr('href');
-    if (currentHref && !currentHref.startsWith('http') && !currentHref.startsWith('/') && !currentHref.startsWith('src/assets/')) {
-      // Handle both direct PDF links and those in Case Studies folder
-      $(this).attr('href', `src/assets/${currentHref}`);
-    }
-  });
+  // Rail site: PDF paths are already correct, no modification needed
+  // $('a[href$=".pdf"]').each(function() {
+  //   const currentHref = $(this).attr('href');
+  //   if (currentHref && !currentHref.startsWith('http') && !currentHref.startsWith('/') && !currentHref.startsWith('src/assets/')) {
+  //     $(this).attr('href', `src/assets/${currentHref}`);
+  //   }
+  // });
   
   // Fix image paths and add performance hints
   $('img[src]').each(function() {
     const currentSrc = $(this).attr('src');
     // Skip if already has correct path or is external URL or starts with /
-    if (!currentSrc.startsWith('src/assets/') && 
-        !currentSrc.startsWith('http') && 
-        !currentSrc.startsWith('//') &&
-        !currentSrc.startsWith('/') &&
-        !currentSrc.startsWith('data:') &&
-        !currentSrc.includes('favicon')) {
-      $(this).attr('src', `src/assets/${currentSrc}`);
-    }
+    // Rail site: image paths are already correct, no modification needed
+    // if (!currentSrc.startsWith('src/assets/') && 
+    //     !currentSrc.startsWith('http') && 
+    //     !currentSrc.startsWith('//') &&
+    //     !currentSrc.startsWith('/') &&
+    //     !currentSrc.startsWith('data:') &&
+    //     !currentSrc.includes('favicon')) {
+    //   $(this).attr('src', `src/assets/${currentSrc}`);
+    // }
     
     // Add performance optimizations
     if (!$(this).attr('loading')) {
@@ -524,48 +524,51 @@ async function processFile(sourceFile, targetLang) {
   // Fix source elements srcset attributes
   $('source[srcset]').each(function() {
     const currentSrcset = $(this).attr('srcset');
-    if (!currentSrcset.startsWith('src/assets/') && 
-        !currentSrcset.startsWith('http') && 
-        !currentSrcset.startsWith('//') &&
-        !currentSrcset.startsWith('/') &&
-        !currentSrcset.includes('favicon')) {
-      $(this).attr('srcset', `src/assets/${currentSrcset}`);
-    }
+    // Rail site: srcset paths are already correct, no modification needed
+    // if (!currentSrcset.startsWith('src/assets/') && 
+    //     !currentSrcset.startsWith('http') && 
+    //     !currentSrcset.startsWith('//') &&
+    //     !currentSrcset.startsWith('/') &&
+    //     !currentSrcset.includes('favicon')) {
+    //   $(this).attr('srcset', `src/assets/${currentSrcset}`);
+    // }
   });
   
   // Fix background images in style attributes
   $('[style*="background-image"]').each(function() {
     const style = $(this).attr('style');
-    if (style && style.includes('url(') && !style.includes('src/assets/')) {
-      const updatedStyle = style.replace(/url\(['"]?([^'"()]+)['"]?\)/g, (match, imagePath) => {
-        if (!imagePath.startsWith('src/assets/') && 
-            !imagePath.startsWith('http') && 
-            !imagePath.startsWith('//') &&
-            !imagePath.startsWith('/')) {
-          return `url('src/assets/${imagePath}')`;
-        }
-        return match;
-      });
-      $(this).attr('style', updatedStyle);
-    }
+    // Rail site: background image paths are already correct, no modification needed
+    // if (style && style.includes('url(') && !style.includes('src/assets/')) {
+    //   const updatedStyle = style.replace(/url\(['"]?([^'"()]+)['"]?\)/g, (match, imagePath) => {
+    //     if (!imagePath.startsWith('src/assets/') && 
+    //         !imagePath.startsWith('http') && 
+    //         !imagePath.startsWith('//') &&
+    //         !imagePath.startsWith('/')) {
+    //       return `url('src/assets/${imagePath}')`;
+    //     }
+    //     return match;
+    //   });
+    //   $(this).attr('style', updatedStyle);
+    // }
   });
   
   // Fix CSS background images in style tags
   $('style').each(function() {
     const cssContent = $(this).html();
     if (cssContent && cssContent.includes('url(')) {
-      const updatedCSS = cssContent.replace(/url\(['"]?([^'"()]+)['"]?\)/g, (match, imagePath) => {
-        if (!imagePath.startsWith('src/assets/') && 
-            !imagePath.startsWith('http') && 
-            !imagePath.startsWith('//') &&
-            !imagePath.startsWith('/') &&
-            !imagePath.includes('data:') &&
-            !imagePath.includes('favicon')) {
-          return `url('src/assets/${imagePath}')`;
-        }
-        return match;
-      });
-      $(this).html(updatedCSS);
+      // Rail site: CSS background paths are already correct, no modification needed
+      // const updatedCSS = cssContent.replace(/url\(['"]?([^'"()]+)['"]?\)/g, (match, imagePath) => {
+      //   if (!imagePath.startsWith('src/assets/') && 
+      //       !imagePath.startsWith('http') && 
+      //       !imagePath.startsWith('//') &&
+      //       !imagePath.startsWith('/') &&
+      //       !imagePath.includes('data:') &&
+      //       !imagePath.includes('favicon')) {
+      //     return `url('src/assets/${imagePath}')`;
+      //   }
+      //   return match;
+      // });
+      // $(this).html(updatedCSS);
     }
   });
   
@@ -588,8 +591,62 @@ async function processFile(sourceFile, targetLang) {
  * Copy assets to language directories
  */
 function copyAssets() {
-  // For Rail site, assets are in the root directory, not src/assets
-  console.log('⚠️  Rail site does not use src/assets structure - skipping asset copy');
+  // For Rail site, copy image and asset files from root to all language directories
+  console.log('📁 Copying Rail assets from root directory...');
+  
+  const rootDir = path.join(__dirname, '../dist');
+  const sourceDir = path.join(__dirname, '../');
+  
+  // Common asset file extensions for Rail
+  const assetExtensions = ['.avif', '.webp', '.jpg', '.png', '.pdf', '.svg'];
+  
+  // Get all files in source directory
+  const allFiles = fs.readdirSync(sourceDir);
+  const assetFiles = allFiles.filter(file => 
+    assetExtensions.some(ext => file.toLowerCase().endsWith(ext))
+  );
+  
+  console.log(`Found ${assetFiles.length} asset files to copy`);
+  
+  // Copy favicon directory
+  const faviconSource = path.join(sourceDir, 'favicon_io');
+  if (fs.existsSync(faviconSource)) {
+    // Copy to root
+    const rootFaviconTarget = path.join(rootDir, 'favicon_io');
+    if (!fs.existsSync(rootFaviconTarget)) {
+      fs.cpSync(faviconSource, rootFaviconTarget, { recursive: true });
+    }
+    
+    // Copy to each language directory
+    CONFIG.languages.forEach(lang => {
+      const langFaviconTarget = path.join(rootDir, lang, 'favicon_io');
+      if (!fs.existsSync(langFaviconTarget)) {
+        fs.cpSync(faviconSource, langFaviconTarget, { recursive: true });
+      }
+    });
+    console.log('✓ Copied favicon_io directory');
+  }
+  
+  // Copy individual asset files
+  assetFiles.forEach(file => {
+    const source = path.join(sourceDir, file);
+    
+    // Copy to root
+    const rootTarget = path.join(rootDir, file);
+    if (!fs.existsSync(rootTarget)) {
+      fs.copyFileSync(source, rootTarget);
+    }
+    
+    // Copy to each language directory
+    CONFIG.languages.forEach(lang => {
+      const langTarget = path.join(rootDir, lang, file);
+      if (!fs.existsSync(langTarget)) {
+        fs.copyFileSync(source, langTarget);
+      }
+    });
+  });
+  
+  console.log(`✓ Copied ${assetFiles.length} asset files to all directories`);
 }
 
 /**
