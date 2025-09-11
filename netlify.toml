@@ -1,12 +1,34 @@
 [build]
-  # Replace environment variables in HTML files
-  command = "./build.sh"
+  # Run existing build.sh then translate for multilingual support
+  command = "./build.sh && npm install && npm run translate"
   
-  # Publish directory (root of the repository)
-  publish = "."
+  # Publish directory (dist folder with all language versions)
+  publish = "dist"
 
 [build.environment]
-  # No environment variables needed
+  # DeepL API key for translation (set in Netlify dashboard)
+  # DEEPL_API_KEY = "your-key-here"
+
+# Redirects for language paths
+[[redirects]]
+  from = "/"
+  to = "/en/"
+  status = 200
+
+[[redirects]]
+  from = "/fr/*"
+  to = "/fr/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/it/*"
+  to = "/it/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/de/*"
+  to = "/de/:splat"
+  status = 200
 
 [[headers]]
   # Apply security headers to all pages

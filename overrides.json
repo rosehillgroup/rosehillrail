@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "description": "Manual translation overrides for quality control. These take precedence over cache and API results.",
+  "overrides": {
+    "de": {
+      "Speed Calmers": "Verkehrsberuhigung",
+      "Speed Calmer": "Verkehrsberuhigung",
+      "Beruhigungsmittel": "Verkehrsberuhigung",
+      "Speed Cushions": "Geschwindigkeitsschwellen", 
+      "Speed Cushion": "Geschwindigkeitsschwelle",
+      "One-Piece Speed Cushions": "Einteilige Geschwindigkeitsschwellen",
+      "Two-Piece Speed Cushions": "Zweiteilige Geschwindigkeitsschwellen",
+      "Traffic Calming": "Verkehrsberuhigung"
+    },
+    "es": {
+      "Speed Cushions": "Cojines reductores de velocidad",
+      "Speed Cushion": "Cojín reductor de velocidad", 
+      "Cojines Speed": "Cojines reductores de velocidad",
+      "One-Piece Speed Cushions": "Cojines reductores de velocidad de una pieza",
+      "Two-Piece Speed Cushions": "Cojines reductores de velocidad de dos piezas",
+      "Speed Calmers": "Reductores de velocidad",
+      "Speed Calmer": "Reductor de velocidad",
+      "Traffic Calming": "Moderación del tráfico"
+    },
+    "fr": {
+      "Speed Cushions": "Coussins de vitesse",
+      "Speed Cushion": "Coussin de vitesse",
+      "Speed Calmers": "Ralentisseurs de vitesse",
+      "Speed Calmer": "Ralentisseur de vitesse",
+      "Traffic Calming": "Modération de la circulation"
+    }
+  },
+  "notes": {
+    "de": "German traffic management terminology should use proper compound words",
+    "es": "Spanish should avoid anglicisms like 'Speed' mixed with Spanish words",
+    "fr": "French terms should be consistent with European traffic standards"
+  }
+}

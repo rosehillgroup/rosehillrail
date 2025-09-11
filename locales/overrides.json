@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "description": "Manual translation overrides for quality control. These take precedence over cache and API results.",
+  "overrides": {
+    "de": {
+      "Anti-Trespass Panels": "Anti-Eindringlingsmatten",
+      "Walkway Panels": "Laufsteg-Paneele",
+      "Baseplates": "Grundplatten",
+      "Interlocking": "Interlocking",
+      "Connect": "Connect",
+      "TITAN": "TITAN",
+      "NCLD": "NCLD",
+      "Rail Division": "Bahnabteilung",
+      "Level Crossing": "Bahnübergang",
+      "Edge Beams": "Randbalken",
+      "Contact us": "Kontaktieren Sie uns",
+      "Get a Quote": "Angebot anfordern"
+    },
+    "it": {
+      "Anti-Trespass Panels": "Pannelli anti-intrusione",
+      "Walkway Panels": "Pannelli passerella",
+      "Baseplates": "Piastre di base",
+      "Interlocking": "Interlocking",
+      "Connect": "Connect", 
+      "TITAN": "TITAN",
+      "NCLD": "NCLD",
+      "Rail Division": "Divisione Ferroviaria",
+      "Level Crossing": "Passaggio a livello",
+      "Edge Beams": "Travi di bordo",
+      "Contact us": "Contattaci",
+      "Get a Quote": "Richiedi preventivo"
+    },
+    "fr": {
+      "Anti-Trespass Panels": "Panneaux anti-intrusion",
+      "Walkway Panels": "Panneaux de passerelle",
+      "Baseplates": "Plaques de base",
+      "Interlocking": "Interlocking",
+      "Connect": "Connect",
+      "TITAN": "TITAN", 
+      "NCLD": "NCLD",
+      "Rail Division": "Division Ferroviaire",
+      "Level Crossing": "Passage à niveau",
+      "Edge Beams": "Poutres de bordure",
+      "Contact us": "Contactez-nous",
+      "Get a Quote": "Demander un devis"
+    }
+  },
+  "notes": {
+    "de": "German rail terminology should use proper compound words. Product names stay English.",
+    "it": "Italian rail terms should follow European railway standards. Brand names unchanged.", 
+    "fr": "French terms should be consistent with European railway standards. Product codes unchanged."
+  }
+}
