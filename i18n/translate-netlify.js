@@ -266,7 +266,7 @@ async function processFile(sourceFile, targetLang) {
         ${currentLang} <span class="dropdown-arrow">▼</span>
       </a>
       <div class="language-dropdown" id="lang-dropdown">
-        <a href="/en/${currentPageName}" class="lang-option ${targetLang === 'en' ? 'active' : ''}">EN</a>
+        <a href="/${currentPageName}" class="lang-option ${targetLang === 'en' ? 'active' : ''}">EN</a>
         <a href="/fr/${currentPageName}" class="lang-option ${targetLang === 'fr' ? 'active' : ''}">FR</a>
         <a href="/it/${currentPageName}" class="lang-option ${targetLang === 'it' ? 'active' : ''}">IT</a>
         <a href="/de/${currentPageName}" class="lang-option ${targetLang === 'de' ? 'active' : ''}">DE</a>
@@ -278,7 +278,7 @@ async function processFile(sourceFile, targetLang) {
   const mobileSwitcher = `
     <div class="language-switcher-mobile">
       <div class="mobile-lang-buttons">
-        <a href="/en/${currentPageName}" class="mobile-lang-btn ${targetLang === 'en' ? 'active' : ''}">EN</a>
+        <a href="/${currentPageName}" class="mobile-lang-btn ${targetLang === 'en' ? 'active' : ''}">EN</a>
         <a href="/fr/${currentPageName}" class="mobile-lang-btn ${targetLang === 'fr' ? 'active' : ''}">FR</a>
         <a href="/it/${currentPageName}" class="mobile-lang-btn ${targetLang === 'it' ? 'active' : ''}">IT</a>
         <a href="/de/${currentPageName}" class="mobile-lang-btn ${targetLang === 'de' ? 'active' : ''}">DE</a>
@@ -616,8 +616,8 @@ async function main() {
   }
   fs.mkdirSync(rootDir, { recursive: true });
   
-  // Create language directories
-  ['en', ...CONFIG.languages].forEach(lang => {
+  // Create language directories (no /en/ directory - English at root)
+  CONFIG.languages.forEach(lang => {
     const langDir = path.join(rootDir, lang);
     fs.mkdirSync(langDir, { recursive: true });
   });
@@ -636,12 +636,7 @@ async function main() {
       continue;
     }
     
-    // Process English version (add language switcher and fix paths)
-    console.log(`📄 Processing ${pageFile} for en`);
-    const englishHTML = await processFile(sourcePath, 'en');
-    const enPath = path.join(rootDir, 'en', pageFile);
-    fs.writeFileSync(enPath, englishHTML);
-    console.log(`✓ Processed ${pageFile} for en`);
+    // English will be processed directly to root in the separate section below
     
     // Process translations
     for (const lang of CONFIG.languages) {
@@ -665,8 +660,8 @@ async function main() {
       const rootTarget = path.join(rootDir, file);
       fs.copyFileSync(source, rootTarget);
       
-      // Copy to each language directory  
-      ['en', ...CONFIG.languages].forEach(lang => {
+      // Copy to each language directory (no /en/ - English at root)
+      CONFIG.languages.forEach(lang => {
         const target = path.join(rootDir, lang, file);
         fs.copyFileSync(source, target);
       });
@@ -674,63 +669,28 @@ async function main() {
     }
   });
   
-  // Create root index.html that redirects to English
-  console.log('\n📋 Creating root redirect...');
-  const rootIndexHTML = `<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=/en/">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rosehill Highways - Redirecting...</title>
-    <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            text-align: center; 
-            padding: 50px; 
-            background: #f8f9fa; 
-        }
-        .loading { 
-            color: #1a365d; 
-            font-size: 18px; 
-        }
-        .spinner {
-            border: 3px solid #f3f3f3;
-            border-top: 3px solid #ff6b35;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin: 20px auto;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
-</head>
-<body>
-    <div class="loading">
-        <div class="spinner"></div>
-        <p>Redirecting to Rosehill Highways...</p>
-        <p><a href="/en/">Click here if not redirected automatically</a></p>
-    </div>
-    <script>
-        // JavaScript fallback redirect
-        setTimeout(function() {
-            window.location.href = '/en/';
-        }, 1000);
-    </script>
-</body>
-</html>`;
+  // Copy English content directly to root (no /en/ subdirectory)
+  console.log('\n📋 Copying English content to root...');
   
-  fs.writeFileSync(path.join(rootDir, 'index.html'), rootIndexHTML);
-  console.log('✓ Created root index.html redirect');
+  // Process each priority page and copy English version to root
+  for (const pageFile of CONFIG.priorityPages) {
+    const sourcePath = path.join(sourceDir, pageFile);
+    
+    if (fs.existsSync(sourcePath)) {
+      console.log(`📄 Processing ${pageFile} for root (English)`);
+      const englishHTML = await processFile(sourcePath, 'en');
+      const rootPath = path.join(rootDir, pageFile);
+      fs.writeFileSync(rootPath, englishHTML);
+      console.log(`✓ Copied English ${pageFile} to root`);
+    }
+  }
+  
+  console.log('✓ English content served directly at root (no redirect)');
   
   // Final summary
   const elapsed = Math.round((Date.now() - startTime) / 1000);
   console.log(`\n✅ Build complete in ${elapsed}s`);
-  console.log(`📁 Output: dist/{${['en', ...CONFIG.languages].join(',')}}/ `);
+  console.log(`📁 Output: dist/ (root=EN), dist/{${CONFIG.languages.join(',')}}/ `);
   
   // Show final structure
   console.log('\n📋 Final directory structure:');

@@ -11,11 +11,6 @@
 
 # Redirects for language paths
 [[redirects]]
-  from = "/"
-  to = "/en/"
-  status = 200
-
-[[redirects]]
   from = "/fr/*"
   to = "/fr/:splat"
   status = 200
@@ -29,6 +24,13 @@
   from = "/de/*"
   to = "/de/:splat"
   status = 200
+
+# Redirect legacy /en/* links to root with permanent redirect
+[[redirects]]
+  from = "/en/*"
+  to = "/:splat"
+  status = 301
+  force = true
 
 [[headers]]
   # Apply security headers to all pages
