@@ -170,7 +170,7 @@ async function processFile(sourceFile, targetLang) {
     }
     
     // 2. DOM-aware text node extraction for content elements
-    const translatableTags = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'li', 'td', 'th', 'label', 'button', 'a', 'span', 'figcaption'];
+    const translatableTags = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'li', 'td', 'th', 'label', 'button', 'a', 'span', 'figcaption', 'div', 'strong', 'em', 'b', 'i'];
     const skipClasses = ['icon', 'breadcrumb', 'pagination'];
     const skipAttributes = ['aria-hidden', 'data-', 'role'];
     
