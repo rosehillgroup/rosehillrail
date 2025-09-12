@@ -5,6 +5,14 @@ Allow: /
 Disallow: /admin/
 Disallow: /tmp/
 Disallow: /.well-known/
+Disallow: /src/
+Disallow: /backup/
+Disallow: /node_modules/
+
+# Explicitly allow multilingual routes for international SEO
+Allow: /fr/
+Allow: /it/
+Allow: /de/
 
 # Allow crawling of images and assets
 Allow: /*.jpg$
