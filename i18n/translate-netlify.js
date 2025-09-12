@@ -106,8 +106,9 @@ async function processFile(sourceFile, targetLang) {
     ];
     
     for (const { selector, attr } of attributeSelectors) {
-      $(selector).each(async function() {
-        const el = $(this);
+      const elements = $(selector).toArray();
+      for (const element of elements) {
+        const el = $(element);
         const value = attr === 'text' ? el.text() : el.attr(attr);
         if (value && value.length >= 3) {
           const translated = await translate(value, targetLang);
@@ -118,7 +119,7 @@ async function processFile(sourceFile, targetLang) {
           }
           translationCount++;
         }
-      });
+      }
     }
     
     // 2. DOM-aware text node extraction for content elements
@@ -129,8 +130,9 @@ async function processFile(sourceFile, targetLang) {
     let textsToTranslate = [];
     
     // Extract text nodes from translatable elements
-    translatableTags.forEach(tag => {
-      $(tag).each((i, element) => {
+    for (const tag of translatableTags) {
+      const elements = $(tag).toArray();
+      for (const element of elements) {
         const el = $(element);
         
         // Skip elements with certain classes or attributes
@@ -141,18 +143,19 @@ async function processFile(sourceFile, targetLang) {
             el.attr(attr)
         );
         
-        if (hasSkipClass || hasSkipAttr) return;
+        if (hasSkipClass || hasSkipAttr) continue;
         
         // Get the direct text content (not nested element text)
         const textNodes = [];
-        el.contents().each((i, node) => {
+        const contents = el.contents().toArray();
+        for (const node of contents) {
           if (node.type === 'text') {
             const text = node.data.trim();
             if (text && text.length >= 3) {
               textNodes.push({ node, text });
             }
           }
-        });
+        }
         
         // If element has only text nodes (no child elements with text), translate the whole element
         if (textNodes.length > 0 && el.children().length === 0) {
@@ -177,8 +180,8 @@ async function processFile(sourceFile, targetLang) {
             }
           });
         }
-      });
-    });
+      }
+    }
     
     
     // 3. Handle elements with specific classes that contain UI text
@@ -190,12 +193,13 @@ async function processFile(sourceFile, targetLang) {
     ];
     
     for (const selector of classBasedSelectors) {
-      $(selector).each((i, element) => {
+      const elements = $(selector).toArray();
+      for (const element of elements) {
         const el = $(element);
         
         // Skip if it has excluded classes
         const hasSkipClass = skipClasses.some(cls => el.hasClass(cls));
-        if (hasSkipClass) return;
+        if (hasSkipClass) continue;
         
         // Only process elements with simple text content (no complex children)
         if (el.children().filter(':not(span)').length === 0) {
@@ -209,7 +213,7 @@ async function processFile(sourceFile, targetLang) {
             });
           }
         }
-      });
+      }
     }
     
     // 4. Handle additional attributes that may contain translatable text
@@ -221,7 +225,8 @@ async function processFile(sourceFile, targetLang) {
     ];
     
     for (const { selector, attr } of attributeElements) {
-      $(selector).each((i, element) => {
+      const elements = $(selector).toArray();
+      for (const element of elements) {
         const el = $(element);
         const value = el.attr(attr);
         if (value && value.length >= 3 && value.length < 100) {
@@ -232,7 +237,7 @@ async function processFile(sourceFile, targetLang) {
             attr: attr
           });
         }
-      });
+      }
     }
     
     // Now translate all collected texts (including the new ones)
