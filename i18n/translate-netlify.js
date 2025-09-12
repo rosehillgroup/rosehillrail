@@ -45,7 +45,13 @@ async function translate(text, targetLang) {
   
   const cacheKey = `${targetLang}:${text}`;
   if (cache[cacheKey]) {
-    return cache[cacheKey];
+    // Skip mock translations in cache (they start with [FR], [IT], [DE])
+    if (cache[cacheKey].match(/^\[(FR|IT|DE)\]/)) {
+      console.log(`⚠️  Skipping mock translation in cache for: "${text.substring(0, 30)}..."`);
+      delete cache[cacheKey]; // Remove mock from cache
+    } else {
+      return cache[cacheKey];
+    }
   }
   
   if (!DEEPL_API_KEY) {
@@ -55,6 +61,9 @@ async function translate(text, targetLang) {
     cache[cacheKey] = mockTranslation;
     return mockTranslation;
   }
+  
+  // Debug: Log first few translation attempts (remove later)
+  // console.log(`🔍 Translating to ${targetLang}: "${text.substring(0, 50)}..."`)
   
   try {
     const response = await fetch('https://api.deepl.com/v2/translate', {
@@ -73,6 +82,13 @@ async function translate(text, targetLang) {
 
     const data = await response.json();
     const translated = data.translations[0].text;
+    
+    // Debug: Check if translation is actually happening
+    if (!cache['_debug_logged']) {
+      console.log(`✅ API Response for "${text.substring(0, 30)}..." -> "${translated.substring(0, 30)}..."`);
+      cache['_debug_logged'] = true;
+    }
+    
     cache[cacheKey] = translated;
     return translated;
     
