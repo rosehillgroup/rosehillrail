@@ -20,6 +20,15 @@ const CONFIG = {
 
 const DEEPL_API_KEY = process.env.DEEPL_API_KEY;
 const CACHE_FILE = path.join(__dirname, '../locales/cache.json');
+const SCHEMA_VERSION = 3; // Bump to invalidate old cache
+
+// Stats tracking
+let stats = {
+  cacheHits: 0,
+  cacheMisses: 0,
+  apiCalls: 0,
+  mockSkipped: 0
+};
 
 // Ensure locales directory exists
 const localesDir = path.dirname(CACHE_FILE);
@@ -31,10 +40,24 @@ if (!fs.existsSync(localesDir)) {
 let cache = {};
 if (fs.existsSync(CACHE_FILE)) {
   try {
-    cache = JSON.parse(fs.readFileSync(CACHE_FILE, 'utf8'));
+    const cacheData = JSON.parse(fs.readFileSync(CACHE_FILE, 'utf8'));
+    // Check schema version
+    if (cacheData.schema === SCHEMA_VERSION) {
+      cache = cacheData.translations || {};
+      console.log(`📚 Loaded cache with ${Object.keys(cache).length} entries`);
+    } else {
+      console.log(`🔄 Cache schema outdated (${cacheData.schema} vs ${SCHEMA_VERSION}), starting fresh`);
+    }
   } catch (e) {
     console.log('⚠️  Cache file corrupted, starting fresh');
   }
+}
+
+/**
+ * Check if a string looks like a mock translation
+ */
+function looksMock(str) {
+  return /^\s*\[(FR|IT|DE)\]/i.test(str);
 }
 
 /**
@@ -45,14 +68,17 @@ async function translate(text, targetLang) {
   
   const cacheKey = `${targetLang}:${text}`;
   if (cache[cacheKey]) {
-    // Skip mock translations in cache (they start with [FR], [IT], [DE])
-    if (cache[cacheKey].match(/^\[(FR|IT|DE)\]/)) {
-      console.log(`⚠️  Skipping mock translation in cache for: "${text.substring(0, 30)}..."`);
+    // Skip mock translations in cache
+    if (looksMock(cache[cacheKey])) {
+      stats.mockSkipped++;
       delete cache[cacheKey]; // Remove mock from cache
     } else {
+      stats.cacheHits++;
       return cache[cacheKey];
     }
   }
+  
+  stats.cacheMisses++;
   
   if (!DEEPL_API_KEY) {
     console.log('⚠️  No API key, using mock translation');
@@ -83,13 +109,12 @@ async function translate(text, targetLang) {
     const data = await response.json();
     const translated = data.translations[0].text;
     
-    // Debug: Check if translation is actually happening
-    if (!cache['_debug_logged']) {
-      console.log(`✅ API Response for "${text.substring(0, 30)}..." -> "${translated.substring(0, 30)}..."`);
-      cache['_debug_logged'] = true;
-    }
+    stats.apiCalls++;
     
-    cache[cacheKey] = translated;
+    // Never cache mock translations
+    if (!looksMock(translated)) {
+      cache[cacheKey] = translated;
+    }
     return translated;
     
   } catch (error) {
@@ -103,6 +128,12 @@ async function translate(text, targetLang) {
  */
 async function processFile(sourceFile, targetLang) {
   console.log(`📄 Processing ${path.basename(sourceFile)} for ${targetLang}`);
+  
+  // Reset page-level stats
+  const pageStats = {
+    cacheHits: stats.cacheHits,
+    apiCalls: stats.apiCalls
+  };
   
   const html = fs.readFileSync(sourceFile, 'utf8');
   const $ = cheerio.load(html);
@@ -603,7 +634,9 @@ async function processFile(sourceFile, targetLang) {
     `);
   }
   
-  console.log(`  ✓ Translated ${translationCount} items`);
+  const pageHits = stats.cacheHits - pageStats.cacheHits;
+  const pageAPICalls = stats.apiCalls - pageStats.apiCalls;
+  console.log(`  ✓ Translated ${translationCount} items (hits: ${pageHits}, API calls: ${pageAPICalls})`);  
   
   return $.html();
 }
@@ -618,14 +651,18 @@ function copyAssets() {
   const rootDir = path.join(__dirname, '../dist');
   const sourceDir = path.join(__dirname, '../');
   
-  // Common asset file extensions for Rail
+  // Common asset file extensions for Rail (explicitly exclude HTML)
   const assetExtensions = ['.avif', '.webp', '.jpg', '.png', '.pdf', '.svg'];
+  const excludeExtensions = ['.html', '.htm'];
   
   // Get all files in source directory
   const allFiles = fs.readdirSync(sourceDir);
-  const assetFiles = allFiles.filter(file => 
-    assetExtensions.some(ext => file.toLowerCase().endsWith(ext))
-  );
+  const assetFiles = allFiles.filter(file => {
+    const lowerFile = file.toLowerCase();
+    // Include if it has an asset extension and NOT an excluded extension
+    return assetExtensions.some(ext => lowerFile.endsWith(ext)) &&
+           !excludeExtensions.some(ext => lowerFile.endsWith(ext));
+  });
   
   console.log(`Found ${assetFiles.length} asset files to copy`);
   
@@ -722,8 +759,19 @@ async function main() {
       const targetPath = path.join(rootDir, lang, pageFile);
       fs.writeFileSync(targetPath, translatedHTML);
       
-      // Save cache after each file
-      fs.writeFileSync(CACHE_FILE, JSON.stringify(cache, null, 2));
+      // Save cache with schema after each file
+      const cacheData = {
+        schema: SCHEMA_VERSION,
+        timestamp: new Date().toISOString(),
+        stats: {
+          totalEntries: Object.keys(cache).length,
+          lastCacheHits: stats.cacheHits,
+          lastApiCalls: stats.apiCalls,
+          lastMockSkipped: stats.mockSkipped
+        },
+        translations: cache
+      };
+      fs.writeFileSync(CACHE_FILE, JSON.stringify(cacheData, null, 2));
     }
   }
   
@@ -765,23 +813,71 @@ async function main() {
   
   console.log('✓ English content served directly at root (no redirect)');
   
+  // Validation: Check for mock translations in output
+  console.log('\n🔍 Validating output for mock translations...');
+  let mockFound = false;
+  for (const lang of CONFIG.languages) {
+    for (const pageFile of CONFIG.priorityPages) {
+      const filePath = path.join(rootDir, lang, pageFile);
+      if (fs.existsSync(filePath)) {
+        const content = fs.readFileSync(filePath, 'utf8');
+        if (content.match(/\[(FR|IT|DE)\]/)) {
+          console.error(`❌ Mock translation marker found in ${lang}/${pageFile}`);
+          mockFound = true;
+        }
+      }
+    }
+  }
+  
+  if (mockFound) {
+    console.error('\n❌ Build failed: Mock translation markers found in output');
+    console.error('This usually means the DeepL API key is not set or not working');
+    process.exit(1);
+  } else {
+    console.log('✅ No mock translations found in output');
+  }
+  
   // Final summary
   const elapsed = Math.round((Date.now() - startTime) / 1000);
   console.log(`\n✅ Build complete in ${elapsed}s`);
   console.log(`📁 Output: dist/ (root=EN), dist/{${CONFIG.languages.join(',')}}/ `);
+  console.log(`📊 Stats: ${stats.cacheHits} cache hits, ${stats.apiCalls} API calls, ${stats.mockSkipped} mocks skipped`);
+  
+  // Clean up any mistakenly created HTML directories
+  console.log('\n🧹 Cleaning up any HTML directories...');
+  try {
+    const distContents = fs.readdirSync(rootDir);
+    distContents.forEach(item => {
+      if (item.endsWith('.html') || item.endsWith('.htm')) {
+        const itemPath = path.join(rootDir, item);
+        if (fs.statSync(itemPath).isDirectory()) {
+          fs.rmSync(itemPath, { recursive: true });
+          console.log(`  Removed directory: ${item}/`);
+        }
+      }
+    });
+  } catch (e) {
+    console.log(`  Error during cleanup: ${e.message}`);
+  }
   
   // Show final structure
   console.log('\n📋 Final directory structure:');
   try {
     const distContents = fs.readdirSync(rootDir);
     distContents.forEach(dir => {
-      console.log(`  ${dir}/`);
       const dirPath = path.join(rootDir, dir);
       if (fs.statSync(dirPath).isDirectory()) {
-        const files = fs.readdirSync(dirPath);
+        console.log(`  ${dir}/`);
+        const files = fs.readdirSync(dirPath).slice(0, 5); // Show first 5 files
         files.forEach(file => {
           console.log(`    ${file}`);
         });
+        const totalFiles = fs.readdirSync(dirPath).length;
+        if (totalFiles > 5) {
+          console.log(`    ... and ${totalFiles - 5} more files`);
+        }
+      } else {
+        console.log(`  ${dir}`);
       }
     });
   } catch (e) {
