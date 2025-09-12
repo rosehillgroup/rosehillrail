@@ -685,6 +685,37 @@ function copyAssets() {
     console.log('✓ Copied favicon_io directory');
   }
   
+  // Copy image directories (like "Connect Images", "TITAN Images", etc.)
+  console.log('📁 Copying image directories...');
+  const imageDirs = fs.readdirSync(sourceDir)
+    .filter(item => {
+      const itemPath = path.join(sourceDir, item);
+      return fs.statSync(itemPath).isDirectory() && item.endsWith('Images');
+    });
+  
+  imageDirs.forEach(dir => {
+    const source = path.join(sourceDir, dir);
+    
+    // Copy to root
+    const rootTarget = path.join(rootDir, dir);
+    if (!fs.existsSync(rootTarget)) {
+      fs.cpSync(source, rootTarget, { recursive: true });
+    }
+    
+    // Copy to each language directory
+    CONFIG.languages.forEach(lang => {
+      const langTarget = path.join(rootDir, lang, dir);
+      if (!fs.existsSync(langTarget)) {
+        fs.cpSync(source, langTarget, { recursive: true });
+      }
+    });
+  });
+  
+  console.log(`✓ Copied ${imageDirs.length} image directories: ${imageDirs.join(', ')}`);
+  if (imageDirs.length === 0) {
+    console.log('  No image directories found (directories ending with "Images")');
+  }
+  
   // Copy individual asset files
   assetFiles.forEach(file => {
     const source = path.join(sourceDir, file);
