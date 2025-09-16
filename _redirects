@@ -1,6 +1,14 @@
-# Netlify Redirects Configuration
+# Netlify Redirects Configuration for Rosehill Rail
+# Redirects from rosehillrail.com to rail.rosehill.group
+
+# Force old domain to new subdomain
+https://rosehillrail.com/* https://rail.rosehill.group/:splat 301!
+http://rosehillrail.com/* https://rail.rosehill.group/:splat 301!
+https://www.rosehillrail.com/* https://rail.rosehill.group/:splat 301!
+http://www.rosehillrail.com/* https://rail.rosehill.group/:splat 301!
 
 # Force HTTPS
+http://rail.rosehill.group/* https://rail.rosehill.group/:splat 301!
 http://rosehillrail.netlify.app/* https://rosehillrail.netlify.app/:splat 301!
 
 # Clean URLs - redirect to canonical .html version
