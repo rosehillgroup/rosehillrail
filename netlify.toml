@@ -9,6 +9,10 @@
   # DeepL API key for translation (set in Netlify dashboard)
   # DEEPL_API_KEY = "your-key-here"
 
+[[edge_functions]]
+  path = "/*"
+  function = "geo-cookie"
+
 # Redirects for language paths
 [[redirects]]
   from = "/fr/*"
