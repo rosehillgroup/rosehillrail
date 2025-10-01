@@ -2468,6 +2468,17 @@
             }
         });
 
+        // Language switcher functionality
+        document.querySelectorAll('[data-language]').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const lang = this.getAttribute('data-language');
+                if (window.i18n) {
+                    window.i18n.changeLanguage(lang);
+                }
+            });
+        });
+
         // Mobile menu toggle functionality
         const mobileToggle = document.getElementById('mobile-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
