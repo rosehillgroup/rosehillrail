@@ -1,0 +1,14 @@
+{
+  "schema": 3,
+  "glossary_version": 1,
+  "stats": {
+    "total_strings": 0,
+    "last_build": "2025-10-01",
+    "api_calls_saved": 0,
+    "build_time_saved": 0,
+    "cache_hits": 0,
+    "api_calls": 0,
+    "overrides_used": 0
+  },
+  "translations": {}
+}
