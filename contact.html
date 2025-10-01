@@ -29,7 +29,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-    
+
+    <!-- Leaflet CSS for OpenStreetMap -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -748,8 +751,20 @@
         .hidden {
             display: none;
         }
+
+        /* Leaflet Map Styling */
+        #map {
+            height: 420px;
+            border-radius: 15px;
+        }
+
+        @media (max-width: 640px) {
+            #map {
+                height: 320px;
+            }
+        }
     </style>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=GOOGLE_MAPS_API_KEY&callback=initMap"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-o9N1j8Mk64S3ZP0s2mNI3GgQ9T6nLhQvZ8R+0l0Aq0M=" crossorigin=""></script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -919,9 +934,15 @@
                         </div>
                     </div>
 
-                    <!-- Google Map -->
+                    <!-- Map -->
                     <div style="margin-top: 30px;">
-                        <div id="map" style="width: 100%; height: 200px; border-radius: 8px;" title="Rosehill Rail Location - Spring Bank Mills, Sowerby Bridge"></div>
+                        <div id="map" aria-label="Rosehill Rail location map"></div>
+                        <noscript>
+                            <p style="padding: 20px; text-align: center; background: #f8f9fa; border-radius: 8px;">
+                                Map requires JavaScript. View our location on
+                                <a href="https://www.openstreetmap.org/?mlat=53.71108204&mlon=-1.90884397#map=15/53.71108204/-1.90884397" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>.
+                            </p>
+                        </noscript>
                     </div>
                 </div>
 
@@ -1166,74 +1187,64 @@
             });
         });
 
-        // Initialize Google Map
-        function initMap() {
-            // Coordinates for Spring Bank Mills, Sowerby Bridge, West Yorkshire HX6 3BW
-            const rosehillLocation = { lat: 53.703265, lng: -1.916364 };
-            
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 15,
-                center: rosehillLocation,
-                styles: [
-                    {
-                        "featureType": "all",
-                        "elementType": "geometry.fill",
-                        "stylers": [{"weight": "2.00"}]
-                    },
-                    {
-                        "featureType": "all",
-                        "elementType": "geometry.stroke",
-                        "stylers": [{"color": "#9c9c9c"}]
-                    },
-                    {
-                        "featureType": "all",
-                        "elementType": "labels.text",
-                        "stylers": [{"visibility": "on"}]
-                    }
-                ]
-            });
+        // Initialize Leaflet Map with OpenStreetMap
+        function initLeaflet(title, centre) {
+            const run = () => {
+                const map = L.map('map', { scrollWheelZoom: false }).setView(centre, 15);
 
-            // Add marker
-            const marker = new google.maps.Marker({
-                position: rosehillLocation,
-                map: map,
-                title: "Rosehill Rail - Spring Bank Mills",
-                icon: {
-                    url: 'data:image/svg+xml;charset=UTF-8,<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="12" fill="%23ff6b35" stroke="%23ffffff" stroke-width="3"/><circle cx="16" cy="16" r="4" fill="%23ffffff"/></svg>',
-                    scaledSize: new google.maps.Size(32, 32),
-                    anchor: new google.maps.Point(16, 16)
-                }
-            });
+                // Add OpenStreetMap tiles
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 19,
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
 
-            // Add info window
-            const infoWindow = new google.maps.InfoWindow({
-                content: `
-                    <div style="font-family: 'Source Sans Pro', sans-serif; padding: 10px; max-width: 250px;">
-                        <h3 style="color: #1a365d; margin: 0 0 8px 0; font-size: 16px;">Rosehill Rail</h3>
-                        <p style="margin: 0 0 8px 0; font-size: 14px; color: #495057;">Spring Bank Mills, Watson Mill Lane<br>
-                        Sowerby Bridge, West Yorkshire<br>
-                        HX6 3BW, United Kingdom</p>
-                        <p style="margin: 0; font-size: 14px;">
-                            <strong style="color: #ff6b35;">📞</strong> +44 (0)1422 839 456<br>
-                            <strong style="color: #ff6b35;">📧</strong> info@rosehill.group
+                // Custom orange marker icon
+                const orangeIcon = L.divIcon({
+                    className: 'custom-marker',
+                    html: '<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#ff6b35"/></svg>',
+                    iconSize: [32, 32],
+                    iconAnchor: [16, 32],
+                    popupAnchor: [0, -32]
+                });
+
+                // Add marker with popup
+                const marker = L.marker(centre, { icon: orangeIcon }).addTo(map);
+                marker.bindPopup(`
+                    <div style="font-family: 'Source Sans Pro', sans-serif; min-width: 200px;">
+                        <h3 style="margin: 0 0 8px 0; color: #1a365d; font-size: 16px; font-weight: 600;">${title}</h3>
+                        <p style="margin: 0 0 8px 0; font-size: 14px; color: #495057; line-height: 1.4;">
+                            Spring Bank Mills, Watson Mill Lane<br>
+                            Sowerby Bridge, West Yorkshire<br>
+                            HX6 3BW, United Kingdom
+                        </p>
+                        <p style="margin: 0; font-size: 14px; color: #495057;">
+                            <strong>Phone:</strong> +44 (0)1422 839 456<br>
+                            <strong>Email:</strong> info@rosehill.group
                         </p>
                     </div>
-                `
-            });
+                `).openPopup();
+            };
 
-            marker.addListener("click", () => {
-                infoWindow.open(map, marker);
-            });
+            const el = document.getElementById('map');
+            if (!el) return;
+
+            // Lazy load when map scrolls into view
+            if ('IntersectionObserver' in window) {
+                const io = new IntersectionObserver(entries => {
+                    if (entries.some(e => e.isIntersecting)) {
+                        run();
+                        io.disconnect();
+                    }
+                }, { rootMargin: '200px' });
+                io.observe(el);
+            } else {
+                run();
+            }
         }
 
-        // Fallback if Google Maps fails to load
-        window.addEventListener('load', function() {
-            setTimeout(function() {
-                if (typeof google === 'undefined' || !document.getElementById('map').hasChildNodes()) {
-                    document.getElementById('map').innerHTML = '<div style="display: flex; align-items: center; justify-content: center; height: 100%; background: #f8f9fa; color: #6c757d; font-family: inherit; border-radius: 8px;"><p>📍 Spring Bank Mills, Watson Mill Lane, Sowerby Bridge, West Yorkshire HX6 3BW</p></div>';
-                }
-            }, 3000);
-        });
+        // Initialize Rail map
+        const centre = [53.711082043401305, -1.9088439659047385];
+        initLeaflet('Rosehill Rail', centre);
     </script>
 
     <!-- Geolocation and Form Enhancement Script -->
