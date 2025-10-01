@@ -1,0 +1,360 @@
+{
+  "meta": {
+    "lang": "it",
+    "dir": "ltr",
+    "name": "Italian",
+    "nativeName": "Italiano",
+    "flag": "🇮🇹"
+  },
+  "navigation": {
+    "home": "Home",
+    "products": "Prodotti",
+    "aboutUs": "Chi Siamo",
+    "getInTouch": "Contattaci",
+    "requestQuote": "Richiedi Preventivo",
+    "exploreProducts": "Esplora i Prodotti",
+    "crossingSystems": "Sistemi di Attraversamento",
+    "safetySolutions": "Soluzioni di Sicurezza",
+    "edgeSolutions": "Soluzioni per Bordi",
+    "connectSystem": "Sistema CONNECT",
+    "linkSystem": "Sistema LINK",
+    "interlockingRRAP": "RRAP ad Incastro",
+    "baseplateSystem": "Sistema a Piastra di Base",
+    "titanHeavyDuty": "TITAN Heavy Duty",
+    "antiTrespassPanels": "Pannelli Anti-Intrusione",
+    "walkwayPanels": "Pannelli per Camminamenti",
+    "rubberEdgeBeams": "Travi di Bordo in Gomma",
+    "steelPlasticBeams": "Travi in Acciaio e Plastica",
+    "accessoriesSpares": "Accessori e Ricambi",
+    "levelCrossingSystems": "Sistemi per Passaggi a Livello",
+    "edgeBeamSolutions": "Soluzioni per Travi di Bordo"
+  },
+  "hero": {
+    "title": "Soluzioni Innovative per Attraversamenti Ferroviari",
+    "subtitle": "Tre decenni di esperienza nella progettazione, produzione e fornitura di sistemi di attraversamento ferroviario su misura per progetti infrastrutturali ferroviari in tutto il mondo.",
+    "ctaPrimary": "Esplora i Prodotti",
+    "ctaSecondary": "Richiedi Preventivo"
+  },
+  "solutions": {
+    "title": "Soluzioni per Attraversamenti Ferroviari per Tipologia",
+    "subtitle": "Sistemi di attraversamento completi progettati per ogni esigenza infrastrutturale ferroviaria",
+    "roadCrossings": {
+      "title": "Passaggi a Livello Stradali",
+      "description": "Prodotti innovativi per attraversamenti stradali progettati per garantire stabilità dimensionale a qualsiasi angolazione in tutte le condizioni operative. Dal traffico industriale pesante ai passaggi a livello stradali standard, i nostri sistemi sopportano carichi estremi mantenendo l'integrità strutturale.",
+      "recommendedSystems": "Sistemi Consigliati per Livello di Traffico:",
+      "titanSystem": {
+        "name": "Sistema TITAN",
+        "grade": "Traffico Estremo"
+      },
+      "connectSystem": {
+        "name": "Sistema CONNECT",
+        "grade": "Alto Utilizzo"
+      },
+      "linkSystem": {
+        "name": "Sistema LINK",
+        "grade": "Alta Velocità"
+      },
+      "baseplateSystem": {
+        "name": "Sistema a Piastra di Base",
+        "grade": "Utilizzo Standard"
+      }
+    },
+    "roadRailAccessPoints": {
+      "title": "Punti di Accesso Strada-Rotaia (RRAP)",
+      "description": "Soluzioni perfette per Punti di Accesso Strada-Rotaia permanenti e temporanei con installazione rapida ed efficiente. I nostri sistemi di attraversamento versatili sono progettati per consentire una configurazione veloce mantenendo gli standard di sicurezza per l'accesso di manutenzione.",
+      "solutionsBy": "Soluzioni per Requisiti di Installazione:",
+      "interlocking": {
+        "name": "RRAP ad Incastro",
+        "grade": "Interassi Irregolari delle Traverse"
+      },
+      "baseplate": {
+        "name": "Sistema a Piastra di Base",
+        "grade": "Interassi delle Traverse a 600mm"
+      }
+    },
+    "userWorkedCrossings": {
+      "title": "Passaggi a Comando Manuale",
+      "description": "Attraversamenti azionati manualmente tipicamente presenti su strade private o di campagna dove i livelli di traffico sono limitati. Questi attraversamenti richiedono soluzioni affidabili e durevoli che possano resistere a carichi pesanti intermittenti mantenendo la sicurezza.",
+      "systemsFor": "Sistemi per Applicazioni a Traffico Limitato:"
+    },
+    "pedestrianCrossings": {
+      "title": "Attraversamenti Pedonali",
+      "description": "Soluzioni di transito sicure per il traffico pedonale attraverso i binari, fornite a reti ferroviarie in tutta Europa, Australia e Nuova Zelanda. I nostri pannelli pedonali forniscono superfici di attraversamento sicure e confortevoli che possono essere personalizzate per configurazioni di binario specifiche.",
+      "pedestrianSpecific": "Soluzioni Specifiche per Pedoni:",
+      "variousGrades": "Vari Gradi Disponibili"
+    },
+    "metroTramways": {
+      "title": "Metropolitane e Tramvie",
+      "description": "Particolarmente adatti per attraversamenti lunghi e quelli con scambi complessi, deviatoi e curve strette che sono comuni nei sistemi tramviari. Le nostre soluzioni possono essere tagliate e sagomate per adattarsi a elementi e infrastrutture complesse del binario.",
+      "flexibleSolutions": "Soluzioni Flessibili per Layout Complessi:",
+      "idealForComplex": "Ideale per Layout Complessi",
+      "customCutting": "Servizio di Taglio Personalizzato",
+      "fishplatesCheckRails": "Giunzioni e Controrotaie"
+    }
+  },
+  "drainage": {
+    "title": "Soluzioni di Drenaggio Ferroviario",
+    "subtitle": "Gestione avanzata delle acque a bordo binario con sistemi di drenaggio sostenibili progettati specificamente per ambienti ferroviari e conformità Network Rail."
+  },
+  "products": {
+    "title": "Soluzioni Complete per Infrastrutture Ferroviarie",
+    "subtitle": "Dai sistemi di attraversamento heavy-duty ai pannelli di sicurezza, scopri la nostra gamma completa di prodotti sostenibili ad alte prestazioni progettati per reti ferroviarie moderne.",
+    "allProducts": "Tutti i Prodotti",
+    "crossingSystems": "Sistemi di Attraversamento",
+    "safetySolutions": "Soluzioni di Sicurezza",
+    "edgeSolutions": "Soluzioni per Bordi",
+    "viewSpecifications": "Visualizza specifiche",
+    "viewAccessories": "Visualizza accessori",
+    "levelCrossingSystems": "Sistemi per Passaggi a Livello",
+    "connectSystem": {
+      "name": "Sistema CONNECT",
+      "description": "Soluzione innovativa per stabilità dimensionale per traffico pesante e attraversamenti ad angolo acuto. Caratterizzato da design a matrice integrata con semplici collegamenti a bullone.",
+      "tags": {
+        "panels1800mm": "Pannelli da 1800mm",
+        "recycled": "100% riciclato",
+        "quickInstall": "Installazione rapida",
+        "allGauges": "Tutti gli scartamenti"
+      },
+      "badge": "Traffico Pesante"
+    },
+    "linkSystem": {
+      "name": "Sistema LINK",
+      "description": "Sistema di collegamento orizzontale progettato per ferrovie ad alta velocità. NUOVE connessioni a incastro maschio-femmina prevengono la separazione dei pannelli sotto carichi dinamici.",
+      "tags": {
+        "waveEffect": "Gestione effetto onda",
+        "ukManufactured": "Prodotto nel Regno Unito",
+        "universalGauge": "Scartamento universale"
+      },
+      "badge": "Alta Velocità"
+    },
+    "interlockingRRAP": {
+      "name": "RRAP ad Incastro",
+      "description": "Sistema modulare ad alta resistenza per Punti di Accesso Strada-Rotaia. Design indipendente dalla spaziatura delle traverse per installazioni temporanee o permanenti.",
+      "tags": {
+        "quickDeploy": "Dispiegamento rapido",
+        "modular": "Modulare",
+        "costEffective": "Economicamente conveniente"
+      }
+    },
+    "baseplateSystem": {
+      "name": "Sistema a Piastra di Base",
+      "description": "Sistema di installazione rapida ideale per attraversamenti di dimensioni medie. I pannelli possono essere tagliati per adattarsi a giunzioni, controrotaie e curve strette.",
+      "tags": {
+        "cutToFit": "Taglio su misura",
+        "noSpecialTools": "Nessun attrezzo speciale",
+        "tramwaySuitable": "Adatto per tramvie"
+      }
+    },
+    "titanSystem": {
+      "name": "Sistema TITAN Heavy Duty",
+      "description": "Soluzione definitiva per ambienti minerari e di costruzione. Progettato per gestire dumper articolati e autocarri multiasse con resistenza simile all'acciaio.",
+      "tags": {
+        "miningGrade": "Grado minerario",
+        "coldCureMoulding": "Stampaggio a indurimento a freddo",
+        "antiCompression": "Anti-compressione"
+      },
+      "badge": "Heavy Duty"
+    },
+    "antiTrespassPanels": {
+      "name": "Pannelli Anti-Intrusione",
+      "description": "Pannelli con design a stud conico che riducono l'accesso non autorizzato al binario fino al 78%. Disponibili in tre varianti per diverse applicazioni.",
+      "tags": {
+        "reduction78": "Riduzione del 78%",
+        "selfDraining": "Auto-drenante",
+        "variations3": "3 varianti"
+      },
+      "badge": "Approvato Network Rail"
+    },
+    "walkwayPanels": {
+      "name": "Pannelli per Camminamenti",
+      "description": "Alternativa sostenibile al calcestruzzo con vita progettuale di oltre 40 anni. Superficie antiscivolo (PSV 45) con preparazione minima del terreno richiesta.",
+      "tags": {
+        "year40Life": "Vita di 40 anni",
+        "reusable": "Riutilizzabile",
+        "weatherResistant": "Resistente alle intemperie"
+      }
+    },
+    "rubberEdgeBeams": {
+      "name": "Travi di Bordo in Gomma",
+      "description": "Alternativa leggera al calcestruzzo con punti di sollevamento strategici. Design anti-scheggiatura con canali di drenaggio integrati.",
+      "tags": {
+        "weightReduction": "Riduzione del peso",
+        "quickFit": "Montaggio rapido",
+        "noCracking": "Nessuna fessurazione"
+      }
+    },
+    "steelPlasticEdgeBeams": {
+      "name": "Travi di Bordo in Acciaio e Plastica",
+      "description": "Soluzioni versatili per requisiti variabili. Acciaio per la massima durabilità in aree ad alto traffico, plastica per applicazioni leggere resistenti alla corrosione.",
+      "tags": {
+        "dualOptions": "Doppia opzione",
+        "weatherResistant": "Resistente alle intemperie",
+        "siteSpecific": "Specifico per sito"
+      }
+    },
+    "accessories": {
+      "name": "Accessori e Ricambi",
+      "description": "Gamma completa di perni di sollevamento, ganci, primer per marcatura linee e viti omni per supportare le vostre esigenze di installazione e manutenzione.",
+      "tags": {
+        "installationAids": "Aiuti per installazione",
+        "maintenanceTools": "Strumenti di manutenzione",
+        "directQuotes": "Preventivi diretti"
+      }
+    }
+  },
+  "about": {
+    "title": "Tre Decenni di Innovazione Ferroviaria",
+    "subtitle": "Dalla pionieristica tecnologia di indurimento a freddo a leader globale di fiducia nelle soluzioni sostenibili per attraversamenti ferroviari.",
+    "ourStory": "La Nostra Storia",
+    "whatSetsUsApart": "Ciò Che Ci Distingue",
+    "theBeginning": {
+      "year": "1991",
+      "title": "L'Inizio",
+      "description": "Rosehill Rail, una sussidiaria del Gruppo Rosehill Polymers, è entrata nel settore ferroviario quando è stata contattata dalla società americana Reidel Omni per sviluppare un rivoluzionario sistema di incollaggio a base di poliuretano per superfici di attraversamento ferroviario in gomma."
+    },
+    "innovationBreakthrough": {
+      "year": "Anni '90",
+      "title": "Innovazione Rivoluzionaria",
+      "description": "Il nostro team ha sviluppato con successo un processo di incollaggio a indurimento a freddo, riducendo il tempo di indurimento a sole 1,5 ore - un enorme miglioramento rispetto ai metodi tradizionali di vulcanizzazione che richiedevano riscaldamento prolungato ad alta temperatura."
+    },
+    "independenceGrowth": {
+      "year": "1999",
+      "title": "Indipendenza e Crescita",
+      "description": "Quando Omni ha cessato la produzione di pannelli ferroviari, Rosehill ha colto l'opportunità acquistando i loro stampi e iniziando la nostra produzione di pannelli per attraversamenti ferroviari, segnando il vero inizio di Rosehill Rail."
+    },
+    "globalLeadership": {
+      "year": "Oggi",
+      "title": "Leadership Globale",
+      "description": "Oggi siamo un leader di settore affidabile, collaboriamo con aziende di infrastrutture ferroviarie in tutto il mondo, fornendo soluzioni di attraversamento su misura che soddisfano i requisiti specifici dei progetti in tutti i continenti."
+    },
+    "bespokeManufacturing": {
+      "title": "Produzione Su Misura",
+      "description": "Ogni prodotto è personalizzato per soddisfare le esigenze specifiche del cliente. Il nostro processo di produzione segue istruzioni operative complete con gestione meticolosa della documentazione all'interno di solidi framework di produzione e qualità."
+    },
+    "precisionQuality": {
+      "title": "Precisione e Qualità",
+      "description": "Certificazione ISO 9001:2008 con audit NQA annuali. La nostra produzione all'avanguardia controllata da computer è supervisionata da professionisti altamente qualificati che utilizzano macchinari appositamente costruiti per pannelli di attraversamento ferroviario."
+    },
+    "completeTraceability": {
+      "title": "Tracciabilità Completa",
+      "description": "Ogni pannello è tracciato digitalmente con dati di produzione, controlli di peso e ispezioni visive. Ogni pannello è contrassegnato con grado di attraversamento, tipo di rotaia, tipo di traversa, tipo di fissaggio e anno di produzione per una facile verifica in cantiere."
+    },
+    "environmentalLeadership": {
+      "title": "Leadership Ambientale",
+      "description": "Prodotto utilizzando gomma da pneumatici 100% riciclati con leganti avanzati in poliuretano attraverso il nostro processo rivoluzionario di indurimento a freddo. I nostri pannelli non presentano rischi ambientali e non rilasciano sostanze chimiche né emettono vapori nocivi."
+    },
+    "exclusiveDesignRights": {
+      "title": "Diritti di Design Esclusivi",
+      "description": "Tutti i componenti nei nostri sistemi per passaggi a livello sono progettati da Rosehill Rail, inclusi quelli forniti con altri nomi dai nostri distributori globali, garantendo qualità e innovazione costanti."
+    },
+    "strategicLocation": {
+      "title": "Posizione Strategica",
+      "description": "Con sede a Sowerby Bridge, West Yorkshire, beneficiamo dell'accesso strategico ai principali collegamenti di trasporto, migliorando la nostra capacità di consegnare prodotti in modo efficiente sia a livello locale che globale."
+    },
+    "stats": {
+      "yearsOfInnovation": "Anni di Innovazione",
+      "recycledMaterials": "Materiali Riciclati",
+      "hourCureTime": "Tempo di Indurimento in Ore",
+      "globalReach": "Portata e Consegna Globale"
+    }
+  },
+  "contact": {
+    "title": "Contattaci",
+    "subtitle": "Supporto esperto per i vostri progetti di infrastrutture ferroviarie. Da consulenza tecnica a formazione professionale - siamo qui per aiutarvi.",
+    "contactInformation": "Informazioni di Contatto",
+    "ourLocation": "La Nostra Sede",
+    "phone": "Telefono",
+    "email": "Email",
+    "responseTime": "Tempo di Risposta",
+    "responseTimeMessage": "Rispondiamo a tutte le richieste entro un giorno lavorativo",
+    "address": {
+      "name": "Rosehill Rail",
+      "division": "Una Divisione del Gruppo Rosehill",
+      "line1": "Spring Bank Mills",
+      "line2": "Sowerby Bridge",
+      "line3": "West Yorkshire HX6 3BW",
+      "country": "Regno Unito"
+    },
+    "form": {
+      "title": "Inviaci un Messaggio",
+      "firstName": "Nome",
+      "lastName": "Cognome",
+      "email": "Indirizzo Email",
+      "phone": "Numero di Telefono",
+      "company": "Azienda/Organizzazione",
+      "enquiryType": "Tipo di Richiesta",
+      "message": "Messaggio",
+      "submit": "Invia Messaggio",
+      "required": "*",
+      "messagePlaceholder": "Si prega di fornire dettagli sulla vostra richiesta, inclusi requisiti del progetto, tempistiche o domande specifiche...",
+      "enquiryTypes": {
+        "select": "Seleziona...",
+        "productEnquiry": "Richiesta Prodotto",
+        "technicalSupport": "Supporto Tecnico",
+        "trainingCourse": "Corso di Formazione",
+        "quotation": "Richiesta Preventivo",
+        "partnership": "Opportunità di Partnership",
+        "other": "Altro"
+      }
+    },
+    "training": {
+      "title": "Corsi di Formazione Professionale",
+      "description1": "In Rosehill Rail, siamo dedicati a lavorare a stretto contatto con i nostri partner e clienti, fornendo tutto il supporto necessario per specificare, installare e mantenere efficacemente i nostri prodotti.",
+      "description2": "Come parte di questo impegno, offriamo corsi di formazione gratuiti presso il nostro centro di formazione dedicato a Sowerby Bridge, che coprono tutti gli aspetti dell'installazione, messa in servizio e manutenzione dei nostri sistemi per passaggi a livello e RRAP.",
+      "description3": "Che siate installatori, progettisti o operatori di rete, le nostre sessioni di formazione possono essere personalizzate in base alle vostre esigenze specifiche. Il nostro team tecnico è anche disponibile per rispondere a domande relative a progettazione, consigli sulle specifiche o verifiche di compatibilità.",
+      "courseFeatures": "Caratteristiche del Corso",
+      "features": {
+        "freeOfCharge": "Formazione gratuita presso la nostra struttura di Sowerby Bridge",
+        "flexibleDuration": "Durata flessibile - corsi di mezza giornata o giornata intera",
+        "tailoredContent": "Contenuti personalizzati per installatori, progettisti e operatori",
+        "expertInstruction": "Istruzione esperta dal nostro team tecnico",
+        "handsOnTraining": "Formazione pratica con prodotti e sistemi reali",
+        "availableYearRound": "Disponibile tutto l'anno con rinfreschi forniti"
+      },
+      "onTimeOnBudget": "In Orario e Nel Budget",
+      "expertTrainingValue": "La formazione esperta è inestimabile per garantire che i progetti procedano nei tempi e nel budget. Compilate il modulo di contatto sopra e vi ricontatteremo entro un giorno lavorativo per discutere i vostri requisiti e le date disponibili.",
+      "bookTrainingCourse": "Prenota Corso di Formazione"
+    }
+  },
+  "footer": {
+    "contactUs": "Contattaci",
+    "products": "Prodotti",
+    "company": "Azienda",
+    "qualityCompliance": "Qualità e Conformità",
+    "complianceText": "Tutti i componenti progettati da Rosehill Rail con diritti di design esclusivi. Qualità assicurata secondo lo standard ISO 9001:2008 con audit NQA annuali.",
+    "accreditations": "Accreditamenti:",
+    "accreditationsList": "ISO 9001:2008 • Approvato Network Rail • Tracciabilità Completa",
+    "copyright": "© 2025 Rosehill Rail. Una Divisione del Gruppo Rosehill. Tutti i diritti riservati.",
+    "links": {
+      "walkwayPanels": "Pannelli per Camminamenti",
+      "edgeBeams": "Travi di Bordo",
+      "accessoriesSpares": "Accessori e Ricambi",
+      "roadCrossings": "Passaggi a Livello Stradali",
+      "pedestrianCrossings": "Attraversamenti Pedonali",
+      "metroTramways": "Metropolitane e Tramvie",
+      "aboutUs": "Chi Siamo",
+      "contact": "Contatti"
+    }
+  },
+  "thankYou": {
+    "title": "Grazie!",
+    "message": "Il vostro messaggio è stato inviato con successo. Il nostro team esaminerà la vostra richiesta e vi ricontatterà entro un giorno lavorativo.",
+    "needUrgentHelp": "Serve Aiuto Urgente?",
+    "urgentMessage": "Se la vostra richiesta è urgente, non esitate a chiamarci direttamente:",
+    "phone": "+44 (0)1422 839 456",
+    "email": "info@rosehillrail.com",
+    "returnHome": "Torna alla Homepage"
+  },
+  "common": {
+    "loading": "Caricamento...",
+    "error": "Errore",
+    "success": "Successo",
+    "learnMore": "Scopri di Più",
+    "readMore": "Leggi di Più",
+    "viewAll": "Visualizza Tutto",
+    "close": "Chiudi",
+    "back": "Indietro",
+    "next": "Avanti",
+    "previous": "Precedente"
+  }
+}

@@ -1,0 +1,360 @@
+{
+  "meta": {
+    "lang": "en",
+    "dir": "ltr",
+    "name": "English",
+    "nativeName": "English",
+    "flag": "🇬🇧"
+  },
+  "navigation": {
+    "home": "Home",
+    "products": "Products",
+    "aboutUs": "About Us",
+    "getInTouch": "Get in Touch",
+    "requestQuote": "Request Quote",
+    "exploreProducts": "Explore Products",
+    "crossingSystems": "Crossing Systems",
+    "safetySolutions": "Safety Solutions",
+    "edgeSolutions": "Edge Solutions",
+    "connectSystem": "CONNECT System",
+    "linkSystem": "LINK System",
+    "interlockingRRAP": "Interlocking RRAP",
+    "baseplateSystem": "Baseplate System",
+    "titanHeavyDuty": "TITAN Heavy Duty",
+    "antiTrespassPanels": "Anti-Trespass Panels",
+    "walkwayPanels": "Walkway Panels",
+    "rubberEdgeBeams": "Rubber Edge Beams",
+    "steelPlasticBeams": "Steel & Plastic Beams",
+    "accessoriesSpares": "Accessories & Spares",
+    "levelCrossingSystems": "Level Crossing Systems",
+    "edgeBeamSolutions": "Edge Beam Solutions"
+  },
+  "hero": {
+    "title": "Innovative Rail Crossing Solutions",
+    "subtitle": "Three decades of expertise in designing, manufacturing and supplying bespoke rail crossing systems for worldwide rail infrastructure projects.",
+    "ctaPrimary": "Explore Products",
+    "ctaSecondary": "Request Quote"
+  },
+  "solutions": {
+    "title": "Railway Crossing Solutions by Type",
+    "subtitle": "Comprehensive crossing systems designed for every rail infrastructure need",
+    "roadCrossings": {
+      "title": "Road Crossings",
+      "description": "Innovative road crossing products designed to provide dimensional stability at any angle in all operating conditions. From heavy industrial traffic to standard road crossings, our systems accommodate extreme loading while maintaining structural integrity.",
+      "recommendedSystems": "Recommended Systems by Traffic Level:",
+      "titanSystem": {
+        "name": "TITAN System",
+        "grade": "Extreme Traffic"
+      },
+      "connectSystem": {
+        "name": "CONNECT System",
+        "grade": "High Use"
+      },
+      "linkSystem": {
+        "name": "LINK System",
+        "grade": "High Speed"
+      },
+      "baseplateSystem": {
+        "name": "Baseplate System",
+        "grade": "Standard Use"
+      }
+    },
+    "roadRailAccessPoints": {
+      "title": "Road Rail Access Points (RRAPs)",
+      "description": "Perfect solutions for permanent and temporary Road Rail Access Points with fast, efficient installation. Our versatile crossing systems are designed to allow for quick setup while maintaining safety standards for maintenance access.",
+      "solutionsBy": "Solutions by Installation Requirements:",
+      "interlocking": {
+        "name": "Interlocking RRAP",
+        "grade": "Irregular Sleeper Centres"
+      },
+      "baseplate": {
+        "name": "Baseplate System",
+        "grade": "600mm Sleeper Centres"
+      }
+    },
+    "userWorkedCrossings": {
+      "title": "User Worked Crossings",
+      "description": "Manually operated crossings typically found on private or country roads where traffic levels are limited. These crossings require reliable, durable solutions that can withstand intermittent heavy loads while maintaining safety.",
+      "systemsFor": "Systems for Limited Traffic Applications:"
+    },
+    "pedestrianCrossings": {
+      "title": "Pedestrian Crossings",
+      "description": "Safe transit solutions for foot traffic across tracks, supplied to rail networks throughout Europe, Australia and New Zealand. Our pedestrian panels provide secure, comfortable crossing surfaces that can be customised for specific track configurations.",
+      "pedestrianSpecific": "Pedestrian-Specific Solutions:",
+      "variousGrades": "Various Grades Available"
+    },
+    "metroTramways": {
+      "title": "Metro & Tramways",
+      "description": "Especially suitable for long crossings and those with complex crossovers, turnouts and tight bends which are commonplace in tramway systems. Our solutions can be cut and shaped to fit around complex track furniture and infrastructure.",
+      "flexibleSolutions": "Flexible Solutions for Complex Layouts:",
+      "idealForComplex": "Ideal for Complex Layouts",
+      "customCutting": "Custom Cutting Service",
+      "fishplatesCheckRails": "Fishplates & Check Rails"
+    }
+  },
+  "drainage": {
+    "title": "Railway Drainage Solutions",
+    "subtitle": "Advanced trackside water management with sustainable drainage systems designed specifically for railway environments and Network Rail compliance."
+  },
+  "products": {
+    "title": "Complete Rail Infrastructure Solutions",
+    "subtitle": "From heavy-duty crossing systems to safety panels, discover our comprehensive range of sustainable, high-performance products engineered for modern rail networks.",
+    "allProducts": "All Products",
+    "crossingSystems": "Crossing Systems",
+    "safetySolutions": "Safety Solutions",
+    "edgeSolutions": "Edge Solutions",
+    "viewSpecifications": "View specifications",
+    "viewAccessories": "View accessories",
+    "levelCrossingSystems": "Level Crossing Systems",
+    "connectSystem": {
+      "name": "CONNECT System",
+      "description": "Innovative dimensional stability solution for heavy traffic and acute-angle crossings. Features integrated matrix design with simple bolt connections.",
+      "tags": {
+        "panels1800mm": "1800mm panels",
+        "recycled": "100% recycled",
+        "quickInstall": "Quick install",
+        "allGauges": "All gauges"
+      },
+      "badge": "Heavy Traffic"
+    },
+    "linkSystem": {
+      "name": "LINK System",
+      "description": "Horizontal linking system designed for high-speed rail. NEW tongue and groove connections prevent panel separation under dynamic loads.",
+      "tags": {
+        "waveEffect": "Wave effect management",
+        "ukManufactured": "UK manufactured",
+        "universalGauge": "Universal gauge"
+      },
+      "badge": "High Speed"
+    },
+    "interlockingRRAP": {
+      "name": "Interlocking RRAP",
+      "description": "High-strength modular Road Rail Access Point system. Sleeper-spacing independent design for temporary or permanent installations.",
+      "tags": {
+        "quickDeploy": "Quick deploy",
+        "modular": "Modular",
+        "costEffective": "Cost effective"
+      }
+    },
+    "baseplateSystem": {
+      "name": "Baseplate System",
+      "description": "Fast installation system ideal for average-sized crossings. Panels can be cut to fit around fishplates, check rails, and tight curves.",
+      "tags": {
+        "cutToFit": "Cut-to-fit",
+        "noSpecialTools": "No special tools",
+        "tramwaySuitable": "Tramway suitable"
+      }
+    },
+    "titanSystem": {
+      "name": "TITAN Heavy Duty System",
+      "description": "Ultimate solution for mining and construction environments. Engineered to handle articulated dumpers and multi-axle haul trucks with steel-like strength.",
+      "tags": {
+        "miningGrade": "Mining grade",
+        "coldCureMoulding": "Cold cure moulding",
+        "antiCompression": "Anti-compression"
+      },
+      "badge": "Heavy Duty"
+    },
+    "antiTrespassPanels": {
+      "name": "Anti-Trespass Panels",
+      "description": "Conical stud design panels reducing unauthorised track access by up to 78%. Available in three variations for different applications.",
+      "tags": {
+        "reduction78": "78% reduction",
+        "selfDraining": "Self-draining",
+        "variations3": "3 variations"
+      },
+      "badge": "Network Rail Approved"
+    },
+    "walkwayPanels": {
+      "name": "Walkway Panels",
+      "description": "Sustainable alternative to concrete with 40+ year design life. Slip-resistant surface (PSV 45) with minimal ground preparation required.",
+      "tags": {
+        "year40Life": "40 year life",
+        "reusable": "Reusable",
+        "weatherResistant": "Weather resistant"
+      }
+    },
+    "rubberEdgeBeams": {
+      "name": "Rubber Edge Beams",
+      "description": "Lightweight alternative to concrete with strategic lifting points. Non-spalling design with integrated drainage channels.",
+      "tags": {
+        "weightReduction": "Weight reduction",
+        "quickFit": "Quick-fit",
+        "noCracking": "No cracking"
+      }
+    },
+    "steelPlasticEdgeBeams": {
+      "name": "Steel & Plastic Edge Beams",
+      "description": "Versatile solutions for varying requirements. Steel for maximum durability in high-traffic areas, plastic for lightweight corrosion-resistant applications.",
+      "tags": {
+        "dualOptions": "Dual options",
+        "weatherResistant": "Weather resistant",
+        "siteSpecific": "Site specific"
+      }
+    },
+    "accessories": {
+      "name": "Accessories & Spares",
+      "description": "Complete range of lifting pins, hooks, line marking primer, and omni screws to support your installation and maintenance needs.",
+      "tags": {
+        "installationAids": "Installation aids",
+        "maintenanceTools": "Maintenance tools",
+        "directQuotes": "Direct quotes"
+      }
+    }
+  },
+  "about": {
+    "title": "Three Decades of Rail Innovation",
+    "subtitle": "From pioneering cold cure technology to becoming a trusted global leader in sustainable rail crossing solutions.",
+    "ourStory": "Our Story",
+    "whatSetsUsApart": "What Sets Us Apart",
+    "theBeginning": {
+      "year": "1991",
+      "title": "The Beginning",
+      "description": "Rosehill Rail, a subsidiary of Rosehill Polymers Group, entered the rail industry when approached by American company Reidel Omni to develop a revolutionary polyurethane-based bonding system for rubber railway crossing surfaces."
+    },
+    "innovationBreakthrough": {
+      "year": "1990s",
+      "title": "Innovation Breakthrough",
+      "description": "Our team successfully developed a cold cure bonding process, reducing curing time to just 1.5 hours - a massive improvement over traditional vulcanisation methods that required extended high-temperature heating."
+    },
+    "independenceGrowth": {
+      "year": "1999",
+      "title": "Independence & Growth",
+      "description": "When Omni ceased railway panel production, Rosehill seized the opportunity by purchasing their moulds and beginning our own production of railway crossing panels, marking the true start of Rosehill Rail."
+    },
+    "globalLeadership": {
+      "year": "Today",
+      "title": "Global Leadership",
+      "description": "Now a trusted industry leader, we collaborate with rail infrastructure firms worldwide, delivering bespoke crossing solutions that meet specific project requirements across all continents."
+    },
+    "bespokeManufacturing": {
+      "title": "Bespoke Manufacturing",
+      "description": "Every product is tailored to meet specific client needs. Our manufacturing process follows comprehensive operating instructions with meticulous documentation management within robust production and quality frameworks."
+    },
+    "precisionQuality": {
+      "title": "Precision & Quality",
+      "description": "ISO 9001:2008 certified with annual NQA audits. Our state-of-the-art computer-controlled manufacturing is overseen by highly trained professionals using purpose-built machinery for railway crossing panels."
+    },
+    "completeTraceability": {
+      "title": "Complete Traceability",
+      "description": "Every panel is digitally tracked with production data, weight checks, and visual inspections. Each panel is marked with crossing grade, rail type, sleeper type, fastener type, and year of manufacture for easy site verification."
+    },
+    "environmentalLeadership": {
+      "title": "Environmental Leadership",
+      "description": "Manufactured using 100% recycled rubber tyres with advanced polyurethane binders through our revolutionary cold-cure process. Our panels pose no environmental risk and won't leach chemicals or emit harmful vapours."
+    },
+    "exclusiveDesignRights": {
+      "title": "Exclusive Design Rights",
+      "description": "All components in our level crossing systems are designed by Rosehill Rail, including those supplied under other names by our global distributors, ensuring consistent quality and innovation."
+    },
+    "strategicLocation": {
+      "title": "Strategic Location",
+      "description": "Based in Sowerby Bridge, West Yorkshire, we benefit from strategic access to major transport links, enhancing our ability to deliver products efficiently both locally and globally."
+    },
+    "stats": {
+      "yearsOfInnovation": "Years of Innovation",
+      "recycledMaterials": "Recycled Materials",
+      "hourCureTime": "Hour Cure Time",
+      "globalReach": "Global Reach & Delivery"
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Expert support for your rail infrastructure projects. From technical advice to professional training - we're here to help.",
+    "contactInformation": "Contact Information",
+    "ourLocation": "Our Location",
+    "phone": "Phone",
+    "email": "Email",
+    "responseTime": "Response Time",
+    "responseTimeMessage": "We respond to all enquiries within one working day",
+    "address": {
+      "name": "Rosehill Rail",
+      "division": "A Division of Rosehill Group",
+      "line1": "Spring Bank Mills",
+      "line2": "Sowerby Bridge",
+      "line3": "West Yorkshire HX6 3BW",
+      "country": "United Kingdom"
+    },
+    "form": {
+      "title": "Send us a Message",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "company": "Company/Organisation",
+      "enquiryType": "Enquiry Type",
+      "message": "Message",
+      "submit": "Send Message",
+      "required": "*",
+      "messagePlaceholder": "Please provide details about your enquiry, including project requirements, timelines, or specific questions...",
+      "enquiryTypes": {
+        "select": "Please select...",
+        "productEnquiry": "Product Enquiry",
+        "technicalSupport": "Technical Support",
+        "trainingCourse": "Training Course",
+        "quotation": "Request Quotation",
+        "partnership": "Partnership Opportunity",
+        "other": "Other"
+      }
+    },
+    "training": {
+      "title": "Professional Training Courses",
+      "description1": "At Rosehill Rail, we're dedicated to working closely with our partners and customers, providing all the support you need to specify, install, and maintain our products effectively.",
+      "description2": "As part of this commitment, we offer free training courses at our dedicated training centre in Sowerby Bridge, covering all aspects of installation, commissioning, and maintenance of our level crossing and RRAP systems.",
+      "description3": "Whether you're an installer, specifier, or network operator, our training sessions can be tailored to your specific needs. Our technical team is also available to answer queries related to design, specification advice, or compatibility checks.",
+      "courseFeatures": "Course Features",
+      "features": {
+        "freeOfCharge": "Free of charge training at our Sowerby Bridge facility",
+        "flexibleDuration": "Flexible duration - half day or full day courses",
+        "tailoredContent": "Tailored content for installers, specifiers, and operators",
+        "expertInstruction": "Expert instruction from our technical team",
+        "handsOnTraining": "Hands-on training with actual products and systems",
+        "availableYearRound": "Available year-round with refreshments provided"
+      },
+      "onTimeOnBudget": "On Time & On Budget",
+      "expertTrainingValue": "Expert training is invaluable for ensuring projects run on time and on budget. Fill out the contact form above and we'll get back to you within one working day to discuss your requirements and available dates.",
+      "bookTrainingCourse": "Book Training Course"
+    }
+  },
+  "footer": {
+    "contactUs": "Contact Us",
+    "products": "Products",
+    "company": "Company",
+    "qualityCompliance": "Quality & Compliance",
+    "complianceText": "All components designed by Rosehill Rail with exclusive design rights. Quality assured to ISO 9001:2008 standard with annual NQA audits.",
+    "accreditations": "Accreditations:",
+    "accreditationsList": "ISO 9001:2008 • Network Rail Approved • Full Traceability",
+    "copyright": "© 2025 Rosehill Rail. A Division of Rosehill Group. All rights reserved.",
+    "links": {
+      "walkwayPanels": "Walkway Panels",
+      "edgeBeams": "Edge Beams",
+      "accessoriesSpares": "Accessories & Spares",
+      "roadCrossings": "Road Crossings",
+      "pedestrianCrossings": "Pedestrian Crossings",
+      "metroTramways": "Metro & Tramways",
+      "aboutUs": "About Us",
+      "contact": "Contact"
+    }
+  },
+  "thankYou": {
+    "title": "Thank You!",
+    "message": "Your message has been successfully sent. Our team will review your enquiry and get back to you within one working day.",
+    "needUrgentHelp": "Need Urgent Help?",
+    "urgentMessage": "If your enquiry is urgent, please don't hesitate to call us directly:",
+    "phone": "+44 (0)1422 839 456",
+    "email": "info@rosehillrail.com",
+    "returnHome": "Return to Homepage"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous"
+  }
+}

@@ -1,40 +1,10 @@
 [build]
-  # Run existing build.sh then translate for multilingual support
-  command = "./build.sh && npm install && npm run translate"
-  
-  # Publish directory (dist folder with all language versions)
-  publish = "dist"
-
-[build.environment]
-  # DeepL API key for translation (set in Netlify dashboard)
-  # DEEPL_API_KEY = "your-key-here"
+  # Publish root directory - static site with client-side translations
+  publish = "."
 
 [[edge_functions]]
   path = "/*"
   function = "geo-cookie"
-
-# Redirects for language paths
-[[redirects]]
-  from = "/fr/*"
-  to = "/fr/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/it/*"
-  to = "/it/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/de/*"
-  to = "/de/:splat"
-  status = 200
-
-# Redirect legacy /en/* links to root with permanent redirect
-[[redirects]]
-  from = "/en/*"
-  to = "/:splat"
-  status = 301
-  force = true
 
 [[headers]]
   # Apply security headers to all pages

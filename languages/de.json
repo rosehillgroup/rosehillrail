@@ -1,0 +1,360 @@
+{
+  "meta": {
+    "lang": "de",
+    "dir": "ltr",
+    "name": "German",
+    "nativeName": "Deutsch",
+    "flag": "🇩🇪"
+  },
+  "navigation": {
+    "home": "Startseite",
+    "products": "Produkte",
+    "aboutUs": "Über uns",
+    "getInTouch": "Kontakt",
+    "requestQuote": "Angebot anfordern",
+    "exploreProducts": "Produkte entdecken",
+    "crossingSystems": "Übergangssysteme",
+    "safetySolutions": "Sicherheitslösungen",
+    "edgeSolutions": "Randbefestigungen",
+    "connectSystem": "CONNECT System",
+    "linkSystem": "LINK System",
+    "interlockingRRAP": "Interlocking RRAP",
+    "baseplateSystem": "Grundplatten-System",
+    "titanHeavyDuty": "TITAN Heavy Duty",
+    "antiTrespassPanels": "Anti-Unbefugt-Begehungs-Platten",
+    "walkwayPanels": "Gehwegplatten",
+    "rubberEdgeBeams": "Gummi-Randträger",
+    "steelPlasticBeams": "Stahl- & Kunststoffträger",
+    "accessoriesSpares": "Zubehör & Ersatzteile",
+    "levelCrossingSystems": "Bahnübergangssysteme",
+    "edgeBeamSolutions": "Randträger-Lösungen"
+  },
+  "hero": {
+    "title": "Innovative Bahnübergangslösungen",
+    "subtitle": "Drei Jahrzehnte Expertise in der Entwicklung, Herstellung und Lieferung maßgeschneiderter Bahnübergangssysteme für weltweite Schieneninfrastrukturprojekte.",
+    "ctaPrimary": "Produkte entdecken",
+    "ctaSecondary": "Angebot anfordern"
+  },
+  "solutions": {
+    "title": "Bahnübergangslösungen nach Typ",
+    "subtitle": "Umfassende Übergangssysteme für jeden Bedarf der Schieneninfrastruktur",
+    "roadCrossings": {
+      "title": "Straßenbahnübergänge",
+      "description": "Innovative Straßenübergangsprodukte für dimensionale Stabilität in jedem Winkel und unter allen Betriebsbedingungen. Von schwerem Industrieverkehr bis zu Standard-Straßenübergängen – unsere Systeme bewältigen extreme Belastungen bei gleichzeitiger struktureller Integrität.",
+      "recommendedSystems": "Empfohlene Systeme nach Verkehrsaufkommen:",
+      "titanSystem": {
+        "name": "TITAN System",
+        "grade": "Extremer Verkehr"
+      },
+      "connectSystem": {
+        "name": "CONNECT System",
+        "grade": "Hohe Nutzung"
+      },
+      "linkSystem": {
+        "name": "LINK System",
+        "grade": "Hochgeschwindigkeit"
+      },
+      "baseplateSystem": {
+        "name": "Grundplatten-System",
+        "grade": "Standardnutzung"
+      }
+    },
+    "roadRailAccessPoints": {
+      "title": "Straße-Schiene-Zugangspunkte (RRAPs)",
+      "description": "Perfekte Lösungen für permanente und temporäre Straße-Schiene-Zugangspunkte mit schneller, effizienter Installation. Unsere vielseitigen Übergangssysteme ermöglichen einen schnellen Aufbau unter Einhaltung der Sicherheitsstandards für Wartungszugänge.",
+      "solutionsBy": "Lösungen nach Installationsanforderungen:",
+      "interlocking": {
+        "name": "Interlocking RRAP",
+        "grade": "Unregelmäßige Schwellenabstände"
+      },
+      "baseplate": {
+        "name": "Grundplatten-System",
+        "grade": "600mm Schwellenabstände"
+      }
+    },
+    "userWorkedCrossings": {
+      "title": "Handbediente Übergänge",
+      "description": "Manuell bediente Übergänge, typischerweise auf Privatstraßen oder Landstraßen mit begrenztem Verkehrsaufkommen. Diese Übergänge erfordern zuverlässige, langlebige Lösungen, die intermittierenden hohen Lasten standhalten und dabei die Sicherheit gewährleisten.",
+      "systemsFor": "Systeme für Anwendungen mit begrenztem Verkehr:"
+    },
+    "pedestrianCrossings": {
+      "title": "Fußgängerübergänge",
+      "description": "Sichere Transitlösungen für Fußgängerverkehr über Gleise, geliefert an Bahnnetze in ganz Europa, Australien und Neuseeland. Unsere Fußgängerplatten bieten sichere, komfortable Übergangsflächen, die auf spezifische Gleiskonfigurationen angepasst werden können.",
+      "pedestrianSpecific": "Fußgängerspezifische Lösungen:",
+      "variousGrades": "Verschiedene Ausführungen verfügbar"
+    },
+    "metroTramways": {
+      "title": "U-Bahn & Straßenbahnen",
+      "description": "Besonders geeignet für lange Übergänge und solche mit komplexen Kreuzungen, Weichen und engen Kurven, die in Straßenbahnsystemen üblich sind. Unsere Lösungen können zugeschnitten und geformt werden, um komplexe Gleisanlagen und Infrastruktur zu umschließen.",
+      "flexibleSolutions": "Flexible Lösungen für komplexe Layouts:",
+      "idealForComplex": "Ideal für komplexe Layouts",
+      "customCutting": "Maßgeschnittener Service",
+      "fishplatesCheckRails": "Laschen & Führungsschienen"
+    }
+  },
+  "drainage": {
+    "title": "Bahnentwässerungslösungen",
+    "subtitle": "Fortschrittliche gleisseitige Wasserwirtschaft mit nachhaltigen Entwässerungssystemen, speziell für Bahnumgebungen und Network Rail-Konformität entwickelt."
+  },
+  "products": {
+    "title": "Komplette Schieneninfrastruktur-Lösungen",
+    "subtitle": "Von schwerlastfähigen Übergangssystemen bis zu Sicherheitsplatten – entdecken Sie unser umfassendes Sortiment an nachhaltigen Hochleistungsprodukten für moderne Bahnnetze.",
+    "allProducts": "Alle Produkte",
+    "crossingSystems": "Übergangssysteme",
+    "safetySolutions": "Sicherheitslösungen",
+    "edgeSolutions": "Randbefestigungen",
+    "viewSpecifications": "Spezifikationen anzeigen",
+    "viewAccessories": "Zubehör anzeigen",
+    "levelCrossingSystems": "Bahnübergangssysteme",
+    "connectSystem": {
+      "name": "CONNECT System",
+      "description": "Innovative Lösung für dimensionale Stabilität bei starkem Verkehr und Spitzwinkelübergängen. Verfügt über integriertes Matrixdesign mit einfachen Schraubverbindungen.",
+      "tags": {
+        "panels1800mm": "1800mm Platten",
+        "recycled": "100% recycelt",
+        "quickInstall": "Schnellinstallation",
+        "allGauges": "Alle Spurweiten"
+      },
+      "badge": "Starker Verkehr"
+    },
+    "linkSystem": {
+      "name": "LINK System",
+      "description": "Horizontales Verbindungssystem für Hochgeschwindigkeitsverkehr. NEUE Nut-und-Feder-Verbindungen verhindern Plattentrennung unter dynamischen Lasten.",
+      "tags": {
+        "waveEffect": "Welleneffekt-Management",
+        "ukManufactured": "UK-Herstellung",
+        "universalGauge": "Universelle Spurweite"
+      },
+      "badge": "Hochgeschwindigkeit"
+    },
+    "interlockingRRAP": {
+      "name": "Interlocking RRAP",
+      "description": "Hochfestes modulares Straße-Schiene-Zugangspunkt-System. Schwellenabstands-unabhängiges Design für temporäre oder permanente Installationen.",
+      "tags": {
+        "quickDeploy": "Schneller Einsatz",
+        "modular": "Modular",
+        "costEffective": "Kosteneffizient"
+      }
+    },
+    "baseplateSystem": {
+      "name": "Grundplatten-System",
+      "description": "Schnellinstallationssystem ideal für durchschnittlich große Übergänge. Platten können zugeschnitten werden, um Laschen, Führungsschienen und enge Kurven zu umschließen.",
+      "tags": {
+        "cutToFit": "Maßgeschnitten",
+        "noSpecialTools": "Keine Spezialwerkzeuge",
+        "tramwaySuitable": "Straßenbahngeeignet"
+      }
+    },
+    "titanSystem": {
+      "name": "TITAN Heavy Duty System",
+      "description": "Ultimative Lösung für Bergbau- und Bauumgebungen. Entwickelt für Gelenkdumper und mehrachsige Schwertransporter mit stahlähnlicher Festigkeit.",
+      "tags": {
+        "miningGrade": "Bergbauqualität",
+        "coldCureMoulding": "Kalthärtungsformung",
+        "antiCompression": "Kompressionsbeständig"
+      },
+      "badge": "Schwerlast"
+    },
+    "antiTrespassPanels": {
+      "name": "Anti-Unbefugt-Begehungs-Platten",
+      "description": "Platten mit konischem Stiftdesign reduzieren unbefugten Gleiszugang um bis zu 78%. In drei Varianten für verschiedene Anwendungen erhältlich.",
+      "tags": {
+        "reduction78": "78% Reduzierung",
+        "selfDraining": "Selbstentwässernd",
+        "variations3": "3 Varianten"
+      },
+      "badge": "Network Rail zugelassen"
+    },
+    "walkwayPanels": {
+      "name": "Gehwegplatten",
+      "description": "Nachhaltige Alternative zu Beton mit 40+ Jahren Auslegungslebensdauer. Rutschfeste Oberfläche (PSV 45) mit minimaler Bodenvorbereitung erforderlich.",
+      "tags": {
+        "year40Life": "40 Jahre Lebensdauer",
+        "reusable": "Wiederverwendbar",
+        "weatherResistant": "Wetterbeständig"
+      }
+    },
+    "rubberEdgeBeams": {
+      "name": "Gummi-Randträger",
+      "description": "Leichtgewichtige Alternative zu Beton mit strategischen Hebepunkten. Splitterfreies Design mit integrierten Entwässerungskanälen.",
+      "tags": {
+        "weightReduction": "Gewichtsreduzierung",
+        "quickFit": "Schnellmontage",
+        "noCracking": "Keine Rissbildung"
+      }
+    },
+    "steelPlasticEdgeBeams": {
+      "name": "Stahl- & Kunststoff-Randträger",
+      "description": "Vielseitige Lösungen für unterschiedliche Anforderungen. Stahl für maximale Haltbarkeit in stark frequentierten Bereichen, Kunststoff für leichte korrosionsbeständige Anwendungen.",
+      "tags": {
+        "dualOptions": "Duale Optionen",
+        "weatherResistant": "Wetterbeständig",
+        "siteSpecific": "Standortspezifisch"
+      }
+    },
+    "accessories": {
+      "name": "Zubehör & Ersatzteile",
+      "description": "Komplettes Sortiment an Hebestiften, Haken, Fahrbahnmarkierungsgrundierung und Universalschrauben zur Unterstützung Ihrer Installations- und Wartungsanforderungen.",
+      "tags": {
+        "installationAids": "Installationshilfen",
+        "maintenanceTools": "Wartungswerkzeuge",
+        "directQuotes": "Direkte Angebote"
+      }
+    }
+  },
+  "about": {
+    "title": "Drei Jahrzehnte Bahninnovation",
+    "subtitle": "Von der Pionierarbeit in der Kalthärtungstechnologie zum vertrauenswürdigen globalen Marktführer für nachhaltige Bahnübergangslösungen.",
+    "ourStory": "Unsere Geschichte",
+    "whatSetsUsApart": "Was uns auszeichnet",
+    "theBeginning": {
+      "year": "1991",
+      "title": "Der Anfang",
+      "description": "Rosehill Rail, eine Tochtergesellschaft der Rosehill Polymers Group, trat in die Bahnindustrie ein, als das amerikanische Unternehmen Reidel Omni uns beauftragte, ein revolutionäres Polyurethan-basiertes Bindesystem für Gummi-Bahnübergangsoberflächen zu entwickeln."
+    },
+    "innovationBreakthrough": {
+      "year": "1990er",
+      "title": "Innovationsdurchbruch",
+      "description": "Unser Team entwickelte erfolgreich einen Kalthärtungsprozess, der die Aushärtezeit auf nur 1,5 Stunden reduzierte – eine massive Verbesserung gegenüber traditionellen Vulkanisierungsmethoden, die eine langwierige Hochtemperaturerhitzung erforderten."
+    },
+    "independenceGrowth": {
+      "year": "1999",
+      "title": "Unabhängigkeit & Wachstum",
+      "description": "Als Omni die Bahnplattenproduktion einstellte, ergriff Rosehill die Gelegenheit durch den Kauf ihrer Formen und begann mit der eigenen Produktion von Bahnübergangsplatten – der wahre Beginn von Rosehill Rail."
+    },
+    "globalLeadership": {
+      "year": "Heute",
+      "title": "Globale Marktführerschaft",
+      "description": "Als vertrauenswürdiger Branchenführer arbeiten wir heute mit Schieneninfrastrukturunternehmen weltweit zusammen und liefern maßgeschneiderte Übergangslösungen, die spezifische Projektanforderungen auf allen Kontinenten erfüllen."
+    },
+    "bespokeManufacturing": {
+      "title": "Maßgeschneiderte Fertigung",
+      "description": "Jedes Produkt wird auf spezifische Kundenanforderungen zugeschnitten. Unser Fertigungsprozess folgt umfassenden Betriebsanweisungen mit akribischem Dokumentenmanagement innerhalb robuster Produktions- und Qualitätsrahmen."
+    },
+    "precisionQuality": {
+      "title": "Präzision & Qualität",
+      "description": "ISO 9001:2008-zertifiziert mit jährlichen NQA-Audits. Unsere hochmoderne computergesteuerte Fertigung wird von hochqualifizierten Fachkräften mit speziell entwickelten Maschinen für Bahnübergangsplatten überwacht."
+    },
+    "completeTraceability": {
+      "title": "Vollständige Rückverfolgbarkeit",
+      "description": "Jede Platte wird digital mit Produktionsdaten, Gewichtskontrollen und Sichtprüfungen erfasst. Jede Platte ist mit Übergangsklasse, Schienentyp, Schwellentyp, Befestigungstyp und Herstellungsjahr gekennzeichnet für einfache Standortverifizierung."
+    },
+    "environmentalLeadership": {
+      "title": "Umweltführerschaft",
+      "description": "Hergestellt aus 100% recycelten Gummireifen mit fortschrittlichen Polyurethan-Bindemitteln durch unseren revolutionären Kalthärtungsprozess. Unsere Platten stellen kein Umweltrisiko dar und laugen keine Chemikalien aus oder emittieren schädliche Dämpfe."
+    },
+    "exclusiveDesignRights": {
+      "title": "Exklusive Designrechte",
+      "description": "Alle Komponenten unserer Bahnübergangssysteme werden von Rosehill Rail entwickelt, einschließlich solcher, die unter anderen Namen von unseren globalen Vertriebspartnern geliefert werden, um gleichbleibende Qualität und Innovation zu gewährleisten."
+    },
+    "strategicLocation": {
+      "title": "Strategische Lage",
+      "description": "Mit Sitz in Sowerby Bridge, West Yorkshire, profitieren wir von strategischem Zugang zu wichtigen Verkehrsverbindungen, was unsere Fähigkeit verbessert, Produkte sowohl lokal als auch global effizient zu liefern."
+    },
+    "stats": {
+      "yearsOfInnovation": "Jahre Innovation",
+      "recycledMaterials": "Recycelte Materialien",
+      "hourCureTime": "Stunde Aushärtezeit",
+      "globalReach": "Globale Reichweite & Lieferung"
+    }
+  },
+  "contact": {
+    "title": "Kontakt aufnehmen",
+    "subtitle": "Fachkundige Unterstützung für Ihre Schieneninfrastrukturprojekte. Von technischer Beratung bis zu professioneller Schulung – wir sind für Sie da.",
+    "contactInformation": "Kontaktinformationen",
+    "ourLocation": "Unser Standort",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "responseTime": "Antwortzeit",
+    "responseTimeMessage": "Wir antworten auf alle Anfragen innerhalb eines Werktages",
+    "address": {
+      "name": "Rosehill Rail",
+      "division": "Eine Division der Rosehill Group",
+      "line1": "Spring Bank Mills",
+      "line2": "Sowerby Bridge",
+      "line3": "West Yorkshire HX6 3BW",
+      "country": "Vereinigtes Königreich"
+    },
+    "form": {
+      "title": "Nachricht senden",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail-Adresse",
+      "phone": "Telefonnummer",
+      "company": "Unternehmen/Organisation",
+      "enquiryType": "Anfrageart",
+      "message": "Nachricht",
+      "submit": "Nachricht senden",
+      "required": "*",
+      "messagePlaceholder": "Bitte geben Sie Details zu Ihrer Anfrage an, einschließlich Projektanforderungen, Zeitrahmen oder spezifischer Fragen...",
+      "enquiryTypes": {
+        "select": "Bitte auswählen...",
+        "productEnquiry": "Produktanfrage",
+        "technicalSupport": "Technischer Support",
+        "trainingCourse": "Schulungskurs",
+        "quotation": "Angebot anfordern",
+        "partnership": "Partnerschaftsmöglichkeit",
+        "other": "Sonstiges"
+      }
+    },
+    "training": {
+      "title": "Professionelle Schulungskurse",
+      "description1": "Bei Rosehill Rail arbeiten wir eng mit unseren Partnern und Kunden zusammen und bieten Ihnen die gesamte Unterstützung, die Sie benötigen, um unsere Produkte effektiv zu spezifizieren, zu installieren und zu warten.",
+      "description2": "Als Teil dieses Engagements bieten wir kostenlose Schulungskurse in unserem speziellen Schulungszentrum in Sowerby Bridge an, die alle Aspekte der Installation, Inbetriebnahme und Wartung unserer Bahnübergangs- und RRAP-Systeme abdecken.",
+      "description3": "Ob Sie Installateur, Spezifizierer oder Netzbetreiber sind – unsere Schulungssitzungen können auf Ihre spezifischen Bedürfnisse zugeschnitten werden. Unser technisches Team steht auch für Anfragen zu Design, Spezifikationsberatung oder Kompatibilitätsprüfungen zur Verfügung.",
+      "courseFeatures": "Kursmerkmale",
+      "features": {
+        "freeOfCharge": "Kostenlose Schulung in unserer Einrichtung in Sowerby Bridge",
+        "flexibleDuration": "Flexible Dauer – Halbtages- oder Ganztageskurse",
+        "tailoredContent": "Maßgeschneiderte Inhalte für Installateure, Spezifizierer und Betreiber",
+        "expertInstruction": "Fachkundige Anleitung von unserem technischen Team",
+        "handsOnTraining": "Praktische Schulung mit tatsächlichen Produkten und Systemen",
+        "availableYearRound": "Ganzjährig verfügbar mit Erfrischungen"
+      },
+      "onTimeOnBudget": "Pünktlich & im Budget",
+      "expertTrainingValue": "Fachkundige Schulung ist von unschätzbarem Wert, um sicherzustellen, dass Projekte pünktlich und im Budget bleiben. Füllen Sie das obige Kontaktformular aus und wir melden uns innerhalb eines Werktages bei Ihnen, um Ihre Anforderungen und verfügbare Termine zu besprechen.",
+      "bookTrainingCourse": "Schulungskurs buchen"
+    }
+  },
+  "footer": {
+    "contactUs": "Kontakt",
+    "products": "Produkte",
+    "company": "Unternehmen",
+    "qualityCompliance": "Qualität & Konformität",
+    "complianceText": "Alle Komponenten von Rosehill Rail entwickelt mit exklusiven Designrechten. Qualitätsgesichert nach ISO 9001:2008-Standard mit jährlichen NQA-Audits.",
+    "accreditations": "Akkreditierungen:",
+    "accreditationsList": "ISO 9001:2008 • Network Rail zugelassen • Vollständige Rückverfolgbarkeit",
+    "copyright": "© 2025 Rosehill Rail. Eine Division der Rosehill Group. Alle Rechte vorbehalten.",
+    "links": {
+      "walkwayPanels": "Gehwegplatten",
+      "edgeBeams": "Randträger",
+      "accessoriesSpares": "Zubehör & Ersatzteile",
+      "roadCrossings": "Straßenbahnübergänge",
+      "pedestrianCrossings": "Fußgängerübergänge",
+      "metroTramways": "U-Bahn & Straßenbahnen",
+      "aboutUs": "Über uns",
+      "contact": "Kontakt"
+    }
+  },
+  "thankYou": {
+    "title": "Vielen Dank!",
+    "message": "Ihre Nachricht wurde erfolgreich gesendet. Unser Team wird Ihre Anfrage prüfen und sich innerhalb eines Werktages bei Ihnen melden.",
+    "needUrgentHelp": "Dringender Hilfebedarf?",
+    "urgentMessage": "Wenn Ihre Anfrage dringend ist, rufen Sie uns bitte direkt an:",
+    "phone": "+44 (0)1422 839 456",
+    "email": "info@rosehillrail.com",
+    "returnHome": "Zur Startseite zurückkehren"
+  },
+  "common": {
+    "loading": "Lädt...",
+    "error": "Fehler",
+    "success": "Erfolg",
+    "learnMore": "Mehr erfahren",
+    "readMore": "Weiterlesen",
+    "viewAll": "Alle anzeigen",
+    "close": "Schließen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "previous": "Zurück"
+  }
+}
