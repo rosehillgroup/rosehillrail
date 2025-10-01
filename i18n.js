@@ -138,6 +138,9 @@ class RosehillI18n {
 
         // Update forms
         this.updateForms();
+
+        // Update language switcher display
+        this.updateLanguageSwitcherDisplay();
     }
 
     updateTranslatableElements() {
@@ -279,6 +282,26 @@ class RosehillI18n {
                 const language = option.getAttribute('data-language');
                 this.changeLanguage(language);
             });
+        });
+    }
+
+    updateLanguageSwitcherDisplay() {
+        // Update desktop language switcher text
+        const desktopToggle = document.querySelector('.language-dropdown-toggle, #lang-toggle');
+        if (desktopToggle) {
+            const arrow = desktopToggle.querySelector('.dropdown-arrow');
+            const arrowText = arrow ? arrow.outerHTML : '';
+            desktopToggle.innerHTML = `${this.currentLanguage.toUpperCase()} ${arrowText}`;
+        }
+
+        // Update active states on all language options
+        document.querySelectorAll('[data-language]').forEach(option => {
+            const lang = option.getAttribute('data-language');
+            if (lang === this.currentLanguage) {
+                option.classList.add('active');
+            } else {
+                option.classList.remove('active');
+            }
         });
     }
 
