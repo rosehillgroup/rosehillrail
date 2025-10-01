@@ -993,7 +993,32 @@
                 gap: 30px;
             }
         }
+
+        /* Desktop Language Switcher */
+        .language-switcher-desktop { position: relative; }
+        .language-dropdown-toggle { display: flex; align-items: center; gap: 6px; font-size: 0.9rem; padding: 8px 16px; color: white !important; text-decoration: none; font-weight: 500; transition: all 0.3s ease; border-radius: 6px; }
+        .language-dropdown-toggle:hover { background: rgba(255, 107, 53, 0.15) !important; color: #ff6b35 !important; }
+        .language-dropdown-toggle .dropdown-arrow { font-size: 0.7em; transition: transform 0.3s ease; }
+        .language-switcher-desktop:hover .dropdown-arrow { transform: rotate(180deg); }
+        .language-dropdown { position: absolute; top: 100%; right: 0; background: white !important; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); padding: 8px 0; min-width: 120px; opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; z-index: 10000 !important; margin-top: 8px; }
+        .language-switcher-desktop:hover .language-dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+        .lang-option { display: block; padding: 8px 16px; color: #475569 !important; background: transparent !important; text-decoration: none; font-weight: 500; font-size: 0.9rem; transition: all 0.2s ease; }
+        .lang-option:hover { background: #f8fafc; color: #ff6b35 !important; }
+        .language-switcher-desktop .language-dropdown .lang-option.active { background: #ff6b35 !important; color: white !important; font-weight: 600; text-decoration: none !important; }
+        .language-dropdown a.lang-option.active { background: #ff6b35 !important; color: white !important; }
+
+        /* Mobile Language Switcher */
+        .language-switcher-mobile { margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .mobile-lang-buttons { display: flex; gap: 8px; justify-content: space-between; }
+        .mobile-lang-btn { flex: 1; text-align: center; padding: 10px 12px; background: rgba(255, 255, 255, 0.1); color: white; text-decoration: none; border-radius: 6px; font-weight: 500; font-size: 0.9rem; transition: all 0.3s ease; border: 1px solid rgba(255, 255, 255, 0.2); }
+        .mobile-lang-btn:hover { background: rgba(255, 107, 53, 0.3); border-color: #ff6b35; }
+        .mobile-lang-btn.active { background: #ff6b35; border-color: #ff6b35; color: white !important; box-shadow: 0 2px 8px rgba(255,107,53,0.3); }
+
+        @media (max-width: 900px) { .language-switcher-desktop { display: none; } }
+        @media (min-width: 901px) { .language-switcher-mobile { display: none; } }
+        @media (max-width: 1024px) { .language-dropdown-toggle { padding: 5px 12px; font-size: 0.85rem; } }
     </style>
+    <script src="/i18n.js"></script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -1053,6 +1078,17 @@
                     </li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="contact.html" class="contact-btn">Get in Touch</a></li>
+                    <li class="language-switcher-desktop">
+                      <a href="#" class="language-dropdown-toggle" id="lang-toggle">
+                        EN <span class="dropdown-arrow">▼</span>
+                      </a>
+                      <div class="language-dropdown" id="lang-dropdown">
+                        <a href="#" data-language="en" class="lang-option active">EN</a>
+                        <a href="#" data-language="fr" class="lang-option">FR</a>
+                        <a href="#" data-language="it" class="lang-option">IT</a>
+                        <a href="#" data-language="de" class="lang-option">DE</a>
+                      </div>
+                    </li>
                 </ul>
                 <button class="mobile-menu-toggle" id="mobile-toggle">
                     <span></span>
@@ -1071,6 +1107,14 @@
                     </div>
                     <a href="about.html">About Us</a>
                     <a href="contact.html" class="contact-btn">Get in Touch</a>
+                    <div class="language-switcher-mobile">
+                      <div class="mobile-lang-buttons">
+                        <a href="#" data-language="en" class="mobile-lang-btn active">EN</a>
+                        <a href="#" data-language="fr" class="mobile-lang-btn">FR</a>
+                        <a href="#" data-language="it" class="mobile-lang-btn">IT</a>
+                        <a href="#" data-language="de" class="mobile-lang-btn">DE</a>
+                      </div>
+                    </div>
                 </div>
             </nav>
         </div>
