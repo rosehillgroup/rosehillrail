@@ -851,10 +851,10 @@
             </a>
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html" class="active">Products</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html" class="contact-btn">Get in Touch</a></li>
+                    <li><a href="index.html" data-i18n="navigation.home">Home</a></li>
+                    <li><a href="products.html" class="active" data-i18n="navigation.products">Products</a></li>
+                    <li><a href="about.html" data-i18n="navigation.aboutUs">About Us</a></li>
+                    <li><a href="contact.html" class="contact-btn" data-i18n="navigation.getInTouch">Get in Touch</a></li>
                     <li class="language-switcher-desktop">
                       <a href="#" class="language-dropdown-toggle" id="lang-toggle">
                         EN <span class="dropdown-arrow">▼</span>
@@ -873,17 +873,17 @@
                     <span></span>
                 </button>
                 <div class="mobile-nav-menu" id="mobile-menu">
-                    <a href="index.html">Home</a>
+                    <a href="index.html" data-i18n="navigation.home">Home</a>
                     <div class="mobile-dropdown">
-                        <a href="products.html" class="mobile-dropdown-toggle active">Products <span class="dropdown-arrow">▼</span></a>
+                        <a href="products.html" class="mobile-dropdown-toggle active"><span data-i18n="navigation.products">Products</span> <span class="dropdown-arrow">▼</span></a>
                         <div class="mobile-dropdown-content">
-                            <a href="products.html#crossing">Level Crossing Systems</a>
-                            <a href="products.html#safety">Safety Solutions</a>
-                            <a href="products.html#edge">Edge Beam Solutions</a>
+                            <a href="products.html#crossing" data-i18n="navigation.levelCrossingSystems">Level Crossing Systems</a>
+                            <a href="products.html#safety" data-i18n="navigation.safetySolutions">Safety Solutions</a>
+                            <a href="products.html#edge" data-i18n="navigation.edgeBeamSolutions">Edge Beam Solutions</a>
                         </div>
                     </div>
-                    <a href="about.html">About Us</a>
-                    <a href="contact.html" class="contact-btn">Get in Touch</a>
+                    <a href="about.html" data-i18n="navigation.aboutUs">About Us</a>
+                    <a href="contact.html" class="contact-btn" data-i18n="navigation.getInTouch">Get in Touch</a>
                     <div class="language-switcher-mobile">
                       <div class="mobile-lang-buttons">
                         <a href="#" data-language="en" class="mobile-lang-btn active">EN</a>
@@ -907,18 +907,18 @@
             </picture>
         </div>
         <div class="products-hero-content">
-            <h1>Complete Rail Infrastructure Solutions</h1>
-            <p>From heavy-duty crossing systems to safety panels, discover our comprehensive range of sustainable, high-performance products engineered for modern rail networks.</p>
+            <h1 data-i18n="products.title">Complete Rail Infrastructure Solutions</h1>
+            <p data-i18n="products.subtitle">From heavy-duty crossing systems to safety panels, discover our comprehensive range of sustainable, high-performance products engineered for modern rail networks.</p>
         </div>
     </section>
 
     <!-- Category Navigation -->
     <div class="category-nav">
         <div class="category-container">
-            <button class="category-btn active" onclick="filterCategory('all')">All Products</button>
-            <button class="category-btn" onclick="filterCategory('crossing')">Crossing Systems</button>
-            <button class="category-btn" onclick="filterCategory('safety')">Safety Solutions</button>
-            <button class="category-btn" onclick="filterCategory('edge')">Edge Solutions</button>
+            <button class="category-btn active" onclick="filterCategory('all')" data-i18n="products.allProducts">All Products</button>
+            <button class="category-btn" onclick="filterCategory('crossing')" data-i18n="products.crossingSystems">Crossing Systems</button>
+            <button class="category-btn" onclick="filterCategory('safety')" data-i18n="products.safetySolutions">Safety Solutions</button>
+            <button class="category-btn" onclick="filterCategory('edge')" data-i18n="products.edgeSolutions">Edge Solutions</button>
         </div>
     </div>
 
@@ -927,48 +927,48 @@
         <div class="container">
             <!-- Crossing Systems -->
             <div class="category-section" id="crossing" data-category="crossing">
-                <h2 class="category-title">
+                <h2 class="category-title" data-i18n="products.levelCrossingSystems">
                     Level Crossing Systems
                 </h2>
                 <div class="products-grid">
                     <!-- CONNECT System -->
                     <div class="product-card" id="connect">
-                        <div class="product-badge">Heavy Traffic</div>
+                        <div class="product-badge" data-i18n="products.connectSystem.badge">Heavy Traffic</div>
                         <picture>
         <source srcset="connect_home.avif" type="image/avif">
         <source srcset="connect_home.webp" type="image/webp">
         <img src="connect_home.jpg" alt="CONNECT System" class="product-image">
     </picture>
                         <div class="product-content">
-                            <h3 class="product-name">CONNECT System</h3>
-                            <p class="product-desc">Innovative dimensional stability solution for heavy traffic and acute-angle crossings. Features integrated matrix design with simple bolt connections.</p>
+                            <h3 class="product-name" data-i18n="products.connectSystem.name">CONNECT System</h3>
+                            <p class="product-desc" data-i18n="products.connectSystem.description">Innovative dimensional stability solution for heavy traffic and acute-angle crossings. Features integrated matrix design with simple bolt connections.</p>
                             <div class="product-features">
-                                <span class="feature-tag">1800mm panels</span>
-                                <span class="feature-tag">100% recycled</span>
-                                <span class="feature-tag">Quick install</span>
-                                <span class="feature-tag">All gauges</span>
+                                <span class="feature-tag" data-i18n="products.connectSystem.tags.panels1800mm">1800mm panels</span>
+                                <span class="feature-tag" data-i18n="products.connectSystem.tags.recycled">100% recycled</span>
+                                <span class="feature-tag" data-i18n="products.connectSystem.tags.quickInstall">Quick install</span>
+                                <span class="feature-tag" data-i18n="products.connectSystem.tags.allGauges">All gauges</span>
                             </div>
-                            <a href="connect.html" class="product-link">View specifications</a>
+                            <a href="connect.html" class="product-link" data-i18n="products.viewSpecifications">View specifications</a>
                         </div>
                     </div>
 
                     <!-- LINK System -->
                     <div class="product-card" id="link">
-                        <div class="product-badge">High Speed</div>
+                        <div class="product-badge" data-i18n="products.linkSystem.badge">High Speed</div>
                         <picture>
         <source srcset="link_home.avif" type="image/avif">
         <source srcset="link_home.webp" type="image/webp">
         <img src="link_home.jpg" alt="LINK System" class="product-image">
     </picture>
                         <div class="product-content">
-                            <h3 class="product-name">LINK System</h3>
-                            <p class="product-desc">Horizontal linking system designed for high-speed rail. NEW tongue and groove connections prevent panel separation under dynamic loads.</p>
+                            <h3 class="product-name" data-i18n="products.linkSystem.name">LINK System</h3>
+                            <p class="product-desc" data-i18n="products.linkSystem.description">Horizontal linking system designed for high-speed rail. NEW tongue and groove connections prevent panel separation under dynamic loads.</p>
                             <div class="product-features">
-                                <span class="feature-tag">Wave effect management</span>
-                                <span class="feature-tag">UK manufactured</span>
-                                <span class="feature-tag">Universal gauge</span>
+                                <span class="feature-tag" data-i18n="products.linkSystem.tags.waveEffect">Wave effect management</span>
+                                <span class="feature-tag" data-i18n="products.linkSystem.tags.ukManufactured">UK manufactured</span>
+                                <span class="feature-tag" data-i18n="products.linkSystem.tags.universalGauge">Universal gauge</span>
                             </div>
-                            <a href="link.html" class="product-link">View specifications</a>
+                            <a href="link.html" class="product-link" data-i18n="products.viewSpecifications">View specifications</a>
                         </div>
                     </div>
 
@@ -980,14 +980,14 @@
         <img src="rrap.jpg" alt="Interlocking RRAP" class="product-image">
     </picture>
                         <div class="product-content">
-                            <h3 class="product-name">Interlocking RRAP</h3>
-                            <p class="product-desc">High-strength modular Road Rail Access Point system. Sleeper-spacing independent design for temporary or permanent installations.</p>
+                            <h3 class="product-name" data-i18n="products.interlockingRRAP.name">Interlocking RRAP</h3>
+                            <p class="product-desc" data-i18n="products.interlockingRRAP.description">High-strength modular Road Rail Access Point system. Sleeper-spacing independent design for temporary or permanent installations.</p>
                             <div class="product-features">
-                                <span class="feature-tag">Quick deploy</span>
-                                <span class="feature-tag">Modular</span>
-                                <span class="feature-tag">Cost effective</span>
+                                <span class="feature-tag" data-i18n="products.interlockingRRAP.tags.quickDeploy">Quick deploy</span>
+                                <span class="feature-tag" data-i18n="products.interlockingRRAP.tags.modular">Modular</span>
+                                <span class="feature-tag" data-i18n="products.interlockingRRAP.tags.costEffective">Cost effective</span>
                             </div>
-                            <a href="interlocking.html" class="product-link">View specifications</a>
+                            <a href="interlocking.html" class="product-link" data-i18n="products.viewSpecifications">View specifications</a>
                         </div>
                     </div>
 
@@ -999,34 +999,34 @@
         <img src="baseplate_home.jpg" alt="Baseplate System" class="product-image">
     </picture>
                         <div class="product-content">
-                            <h3 class="product-name">Baseplate System</h3>
-                            <p class="product-desc">Fast installation system ideal for average-sized crossings. Panels can be cut to fit around fishplates, check rails, and tight curves.</p>
+                            <h3 class="product-name" data-i18n="products.baseplateSystem.name">Baseplate System</h3>
+                            <p class="product-desc" data-i18n="products.baseplateSystem.description">Fast installation system ideal for average-sized crossings. Panels can be cut to fit around fishplates, check rails, and tight curves.</p>
                             <div class="product-features">
-                                <span class="feature-tag">Cut-to-fit</span>
-                                <span class="feature-tag">No special tools</span>
-                                <span class="feature-tag">Tramway suitable</span>
+                                <span class="feature-tag" data-i18n="products.baseplateSystem.tags.cutToFit">Cut-to-fit</span>
+                                <span class="feature-tag" data-i18n="products.baseplateSystem.tags.noSpecialTools">No special tools</span>
+                                <span class="feature-tag" data-i18n="products.baseplateSystem.tags.tramwaySuitable">Tramway suitable</span>
                             </div>
-                            <a href="baseplate.html" class="product-link">View specifications</a>
+                            <a href="baseplate.html" class="product-link" data-i18n="products.viewSpecifications">View specifications</a>
                         </div>
                     </div>
 
                     <!-- TITAN System -->
                     <div class="product-card" id="titan">
-                        <div class="product-badge">Heavy Duty</div>
+                        <div class="product-badge" data-i18n="products.titanSystem.badge">Heavy Duty</div>
                         <picture>
         <source srcset="titan_home.avif" type="image/avif">
         <source srcset="titan_home.webp" type="image/webp">
         <img src="titan_home.jpg" alt="TITAN Heavy Duty System" class="product-image">
     </picture>
                         <div class="product-content">
-                            <h3 class="product-name">TITAN Heavy Duty System</h3>
-                            <p class="product-desc">Ultimate solution for mining and construction environments. Engineered to handle articulated dumpers and multi-axle haul trucks with steel-like strength.</p>
+                            <h3 class="product-name" data-i18n="products.titanSystem.name">TITAN Heavy Duty System</h3>
+                            <p class="product-desc" data-i18n="products.titanSystem.description">Ultimate solution for mining and construction environments. Engineered to handle articulated dumpers and multi-axle haul trucks with steel-like strength.</p>
                             <div class="product-features">
-                                <span class="feature-tag">Mining grade</span>
-                                <span class="feature-tag">Cold cure moulding</span>
-                                <span class="feature-tag">Anti-compression</span>
+                                <span class="feature-tag" data-i18n="products.titanSystem.tags.miningGrade">Mining grade</span>
+                                <span class="feature-tag" data-i18n="products.titanSystem.tags.coldCureMoulding">Cold cure moulding</span>
+                                <span class="feature-tag" data-i18n="products.titanSystem.tags.antiCompression">Anti-compression</span>
                             </div>
-                            <a href="titan.html" class="product-link">View specifications</a>
+                            <a href="titan.html" class="product-link" data-i18n="products.viewSpecifications">View specifications</a>
                         </div>
                     </div>
                 </div>
@@ -1034,27 +1034,27 @@
 
             <!-- Safety Solutions -->
             <div class="category-section" id="safety" data-category="safety">
-                <h2 class="category-title">
+                <h2 class="category-title" data-i18n="products.safetySolutions">
                     Safety Solutions
                 </h2>
                 <div class="products-grid">
                     <!-- Anti-Trespass Panels -->
                     <div class="product-card" id="antitrespass">
-                        <div class="product-badge">Network Rail Approved</div>
+                        <div class="product-badge" data-i18n="products.antiTrespassPanels.badge">Network Rail Approved</div>
                         <picture>
         <source srcset="antitrespass_home.avif" type="image/avif">
         <source srcset="antitrespass_home.webp" type="image/webp">
         <img src="antitrespass_home.jpg" alt="Anti-Trespass Panels" class="product-image">
     </picture>
                         <div class="product-content">
-                            <h3 class="product-name">Anti-Trespass Panels</h3>
-                            <p class="product-desc">Conical stud design panels reducing unauthorised track access by up to 78%. Available in three variations for different applications.</p>
+                            <h3 class="product-name" data-i18n="products.antiTrespassPanels.name">Anti-Trespass Panels</h3>
+                            <p class="product-desc" data-i18n="products.antiTrespassPanels.description">Conical stud design panels reducing unauthorised track access by up to 78%. Available in three variations for different applications.</p>
                             <div class="product-features">
-                                <span class="feature-tag">78% reduction</span>
-                                <span class="feature-tag">Self-draining</span>
-                                <span class="feature-tag">3 variations</span>
+                                <span class="feature-tag" data-i18n="products.antiTrespassPanels.tags.reduction78">78% reduction</span>
+                                <span class="feature-tag" data-i18n="products.antiTrespassPanels.tags.selfDraining">Self-draining</span>
+                                <span class="feature-tag" data-i18n="products.antiTrespassPanels.tags.variations3">3 variations</span>
                             </div>
-                            <a href="antitrespass.html" class="product-link">View specifications</a>
+                            <a href="antitrespass.html" class="product-link" data-i18n="products.viewSpecifications">View specifications</a>
                         </div>
                     </div>
 
@@ -1066,14 +1066,14 @@
         <img src="walkway_install_06.jpg" alt="Walkway Panels" class="product-image">
     </picture>
                         <div class="product-content">
-                            <h3 class="product-name">Walkway Panels</h3>
-                            <p class="product-desc">Sustainable alternative to concrete with 40+ year design life. Slip-resistant surface (PSV 45) with minimal ground preparation required.</p>
+                            <h3 class="product-name" data-i18n="products.walkwayPanels.name">Walkway Panels</h3>
+                            <p class="product-desc" data-i18n="products.walkwayPanels.description">Sustainable alternative to concrete with 40+ year design life. Slip-resistant surface (PSV 45) with minimal ground preparation required.</p>
                             <div class="product-features">
-                                <span class="feature-tag">40 year life</span>
-                                <span class="feature-tag">Reusable</span>
-                                <span class="feature-tag">Weather resistant</span>
+                                <span class="feature-tag" data-i18n="products.walkwayPanels.tags.year40Life">40 year life</span>
+                                <span class="feature-tag" data-i18n="products.walkwayPanels.tags.reusable">Reusable</span>
+                                <span class="feature-tag" data-i18n="products.walkwayPanels.tags.weatherResistant">Weather resistant</span>
                             </div>
-                            <a href="walkway.html" class="product-link">View specifications</a>
+                            <a href="walkway.html" class="product-link" data-i18n="products.viewSpecifications">View specifications</a>
                         </div>
                     </div>
                 </div>
@@ -1081,7 +1081,7 @@
 
             <!-- Edge Solutions -->
             <div class="category-section" id="edge" data-category="edge">
-                <h2 class="category-title">
+                <h2 class="category-title" data-i18n="navigation.edgeBeamSolutions">
                     Edge Beam Solutions
                 </h2>
                 <div class="products-grid">
@@ -1093,14 +1093,14 @@
         <img src="rubber_edge_beam_web_03.jpg" alt="Rubber Edge Beams" class="product-image">
     </picture>
                         <div class="product-content">
-                            <h3 class="product-name">Rubber Edge Beams</h3>
-                            <p class="product-desc">Lightweight alternative to concrete with strategic lifting points. Non-spalling design with integrated drainage channels.</p>
+                            <h3 class="product-name" data-i18n="products.rubberEdgeBeams.name">Rubber Edge Beams</h3>
+                            <p class="product-desc" data-i18n="products.rubberEdgeBeams.description">Lightweight alternative to concrete with strategic lifting points. Non-spalling design with integrated drainage channels.</p>
                             <div class="product-features">
-                                <span class="feature-tag">Weight reduction</span>
-                                <span class="feature-tag">Quick-fit</span>
-                                <span class="feature-tag">No cracking</span>
+                                <span class="feature-tag" data-i18n="products.rubberEdgeBeams.tags.weightReduction">Weight reduction</span>
+                                <span class="feature-tag" data-i18n="products.rubberEdgeBeams.tags.quickFit">Quick-fit</span>
+                                <span class="feature-tag" data-i18n="products.rubberEdgeBeams.tags.noCracking">No cracking</span>
                             </div>
-                            <a href="edgebeams.html" class="product-link">View specifications</a>
+                            <a href="edgebeams.html" class="product-link" data-i18n="products.viewSpecifications">View specifications</a>
                         </div>
                     </div>
 
@@ -1112,14 +1112,14 @@
         <img src="plastic_steel_edge_beam_web_01.jpg" alt="Steel & Plastic Edge Beams" class="product-image">
     </picture>
                         <div class="product-content">
-                            <h3 class="product-name">Steel & Plastic Edge Beams</h3>
-                            <p class="product-desc">Versatile solutions for varying requirements. Steel for maximum durability in high-traffic areas, plastic for lightweight corrosion-resistant applications.</p>
+                            <h3 class="product-name" data-i18n="products.steelPlasticEdgeBeams.name">Steel & Plastic Edge Beams</h3>
+                            <p class="product-desc" data-i18n="products.steelPlasticEdgeBeams.description">Versatile solutions for varying requirements. Steel for maximum durability in high-traffic areas, plastic for lightweight corrosion-resistant applications.</p>
                             <div class="product-features">
-                                <span class="feature-tag">Dual options</span>
-                                <span class="feature-tag">Weather resistant</span>
-                                <span class="feature-tag">Site specific</span>
+                                <span class="feature-tag" data-i18n="products.steelPlasticEdgeBeams.tags.dualOptions">Dual options</span>
+                                <span class="feature-tag" data-i18n="products.steelPlasticEdgeBeams.tags.weatherResistant">Weather resistant</span>
+                                <span class="feature-tag" data-i18n="products.steelPlasticEdgeBeams.tags.siteSpecific">Site specific</span>
                             </div>
-                            <a href="edgebeams.html" class="product-link">View specifications</a>
+                            <a href="edgebeams.html" class="product-link" data-i18n="products.viewSpecifications">View specifications</a>
                         </div>
                     </div>
 
@@ -1131,14 +1131,14 @@
         <img src="lifting_hooks_01.jpg" alt="Accessories & Spares" class="product-image">
     </picture>
                         <div class="product-content">
-                            <h3 class="product-name">Accessories & Spares</h3>
-                            <p class="product-desc">Complete range of lifting pins, hooks, line marking primer, and omni screws to support your installation and maintenance needs.</p>
+                            <h3 class="product-name" data-i18n="products.accessories.name">Accessories & Spares</h3>
+                            <p class="product-desc" data-i18n="products.accessories.description">Complete range of lifting pins, hooks, line marking primer, and omni screws to support your installation and maintenance needs.</p>
                             <div class="product-features">
-                                <span class="feature-tag">Installation aids</span>
-                                <span class="feature-tag">Maintenance tools</span>
-                                <span class="feature-tag">Direct quotes</span>
+                                <span class="feature-tag" data-i18n="products.accessories.tags.installationAids">Installation aids</span>
+                                <span class="feature-tag" data-i18n="products.accessories.tags.maintenanceTools">Maintenance tools</span>
+                                <span class="feature-tag" data-i18n="products.accessories.tags.directQuotes">Direct quotes</span>
                             </div>
-                            <a href="accessories.html" class="product-link">View accessories</a>
+                            <a href="accessories.html" class="product-link" data-i18n="products.viewAccessories">View accessories</a>
                         </div>
                     </div>
                 </div>
@@ -1151,7 +1151,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Contact Us</h3>
+                    <h3 data-i18n="footer.contactUs">Contact Us</h3>
                     <p><strong>Rosehill Rail</strong><br>
                     A Division of <a href="https://rosehill.group/" style="color: #ff6b35; text-decoration: underline;">Rosehill Group</a><br>
                     Spring Bank Mills<br>
@@ -1163,37 +1163,37 @@
                 </div>
                 
                 <div class="footer-section">
-                    <h3>Products</h3>
+                    <h3 data-i18n="footer.products">Products</h3>
                     <ul>
-                        <li><a href="walkway.html">Walkway Panels</a></li>
-                        <li><a href="edgebeams.html">Edge Beams</a></li>
-                        <li><a href="accessories.html">Accessories & Spares</a></li>
-                        <li><a href="index.html#solutions">Road Crossings</a></li>
-                        <li><a href="index.html#solutions">Pedestrian Crossings</a></li>
-                        <li><a href="index.html#solutions">Metro & Tramways</a></li>
+                        <li><a href="walkway.html" data-i18n="footer.links.walkwayPanels">Walkway Panels</a></li>
+                        <li><a href="edgebeams.html" data-i18n="footer.links.edgeBeams">Edge Beams</a></li>
+                        <li><a href="accessories.html" data-i18n="footer.links.accessoriesSpares">Accessories & Spares</a></li>
+                        <li><a href="index.html#solutions" data-i18n="footer.links.roadCrossings">Road Crossings</a></li>
+                        <li><a href="index.html#solutions" data-i18n="footer.links.pedestrianCrossings">Pedestrian Crossings</a></li>
+                        <li><a href="index.html#solutions" data-i18n="footer.links.metroTramways">Metro & Tramways</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
-                    <h3>Company</h3>
+                    <h3 data-i18n="footer.company">Company</h3>
                     <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html" data-i18n="footer.links.aboutUs">About Us</a></li>
+                        <li><a href="contact.html" data-i18n="footer.links.contact">Contact</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
-                    <h3>Quality & Compliance</h3>
-                    <p>All components designed by Rosehill Rail with exclusive design rights. Quality assured to ISO 9001:2008 standard with annual NQA audits.</p>
+                    <h3 data-i18n="footer.qualityCompliance">Quality & Compliance</h3>
+                    <p data-i18n="footer.complianceText">All components designed by Rosehill Rail with exclusive design rights. Quality assured to ISO 9001:2008 standard with annual NQA audits.</p>
                     <p style="margin-top: 20px;">
-                        <strong>Accreditations:</strong><br>
-                        ISO 9001:2008 • Network Rail Approved • Full Traceability
+                        <strong data-i18n="footer.accreditations">Accreditations:</strong><br>
+                        <span data-i18n="footer.accreditationsList">ISO 9001:2008 • Network Rail Approved • Full Traceability</span>
                     </p>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>© 2025 Rosehill Rail. A Division of <a href="https://rosehill.group/" style="color: #ff6b35; text-decoration: underline;">Rosehill Group</a>. All rights reserved.</p>
+                <p data-i18n="footer.copyright">© 2025 Rosehill Rail. A Division of <a href="https://rosehill.group/" style="color: #ff6b35; text-decoration: underline;">Rosehill Group</a>. All rights reserved.</p>
             </div>
         </div>
     </footer>
