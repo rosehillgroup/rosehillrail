@@ -2435,11 +2435,11 @@
     </div>
 
     <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        // Smooth scrolling for navigation links (but not language switcher)
+        document.querySelectorAll('a[href^="#"]:not([data-language])').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 const href = this.getAttribute('href');
-                // Skip empty anchors (like language switcher links)
+                // Skip empty anchors
                 if (href === '#' || href.length <= 1) {
                     return;
                 }
