@@ -94,7 +94,56 @@
   },
   "drainage": {
     "title": "Bahnentwässerungslösungen",
-    "subtitle": "Fortschrittliche gleisseitige Wasserwirtschaft mit nachhaltigen Entwässerungssystemen, speziell für Bahnumgebungen und Network Rail-Konformität entwickelt."
+    "subtitle": "Fortschrittliche gleisseitige Wasserwirtschaft mit nachhaltigen Entwässerungssystemen, speziell für Bahnumgebungen und Network Rail-Konformität entwickelt.",
+    "modularTitle": "Modulare Gleisseitige Entwässerungssysteme",
+    "intro": "Unsere revolutionäre Entwässerungstechnologie transformiert das Bahnwassermanagement durch innovative Polymerlösungen aus 100% recycelten Materialien. Speziell entwickelt für die anspruchsvollen Anforderungen von Bahnumgebungen.",
+    "benefits": {
+      "rapidInstall": "Schnelle Installation: Deutlich schnellerer Einsatz als traditionelle Betonsysteme, minimiert Gleissperrungen",
+      "superiorPerformance": "Überlegene Leistung: Verbesserte hydraulische Kapazität mit bewährten Hochwasserschutzfähigkeiten",
+      "networkRailApproved": "Network Rail Zugelassen: Vollständig konform mit Bahninfrastruktur-Standards und Spezifikationen",
+      "sustainable": "Nachhaltige Lösung: 614kg CO₂e Einsparung pro m³ im Vergleich zu Betonalternativen",
+      "modularDesign": "Modulares Design: Flexibles System passt sich verschiedenen Gleiskonfigurationen und Entwässerungsanforderungen an",
+      "provenDurability": "Bewährte Haltbarkeit: Konstruiert für die anspruchsvollen Bedingungen von Bahnumgebungen"
+    },
+    "outro": "Unverzichtbar für gleisseitige Bereiche, Einschnittsentwässerung, Bahnsteigwassermanagement und jede Bahnfläche, wo effektives Wassermanagement für Betriebssicherheit und Infrastrukturschutz kritisch ist.",
+    "cta": "Bahnentwässerungslösungen Erkunden"
+  },
+  "homepage": {
+    "featuredProducts": {
+      "title": "Ausgewählte Übergangssysteme",
+      "subtitle": "Unsere führenden Bahnübergangssysteme für überlegene Leistung konstruiert"
+    },
+    "benefits": {
+      "title": "Der Rosehill Rail Vorteil",
+      "subtitle": "Drei Jahrzehnte Innovation in Bahnübergangstechnologie",
+      "ukManufacturing": {
+        "title": "UK-Fertigung",
+        "description": "Mit Sitz in Sowerby Bridge, West Yorkshire, mit strategischem Zugang zu wichtigen Verkehrsverbindungen für effiziente globale Lieferung."
+      },
+      "recycledMaterials": {
+        "title": "100% Recycelte Materialien",
+        "description": "Nachhaltig hergestellt aus recyceltem Reifengummi unter Verwendung unseres einzigartigen Kalthärtungs-Bindeverfahrens zur Unterstützung von Kreislaufwirtschaftszielen."
+      },
+      "bespokeManufacturing": {
+        "title": "Maßgeschneiderte Fertigung",
+        "description": "Kundenspezifische Lösungen zugeschnitten auf Ihre spezifischen Projektanforderungen mit umfassender Qualitätssicherung und ISO 9001:2008 Zertifizierung."
+      },
+      "fullTraceability": {
+        "title": "Vollständige Rückverfolgbarkeit",
+        "description": "Jede Platte mit wesentlichen Informationen gekennzeichnet und digital bis zur Bestellung und Fertigungscharge zurückverfolgt für vollständige Sicherheit."
+      }
+    },
+    "history": {
+      "highlight": "Seit 1991",
+      "title": "Eine Stolze Geschichte über Drei Jahrzehnte in der Bahnindustrie",
+      "paragraph1": "Rosehill Rail begann seine Reise 1991, als Reidel Omni uns beauftragte, ein schnelleres, umweltfreundlicheres Polyurethan-basiertes System zum Verkleben von Gummiplatten zu entwickeln. Unser innovativer Kalthärtungsprozess reduzierte die Aushärtezeit auf nur 1,5 Stunden und revolutionierte die Produktionseffizienz.",
+      "paragraph2": "Nach dem Kauf der Formen von Omni im Jahr 1999 gründeten wir Rosehill Rail und setzen unser Engagement für Innovation und Nachhaltigkeit in der Bahntechnologie fort, indem wir mit weltweiten Bahninfrastrukturunternehmen zusammenarbeiten, um maßgeschneiderte Übergangslösungen zu entwickeln."
+    },
+    "cta": {
+      "title": "Bereit, Ihr Bahnübergangsprojekt zu besprechen?",
+      "consultation": "Beratung Anfordern",
+      "catalogue": "Produktkatalog Herunterladen"
+    }
   },
   "products": {
     "title": "Komplette Schieneninfrastruktur-Lösungen",
@@ -356,5 +405,393 @@
     "back": "Zurück",
     "next": "Weiter",
     "previous": "Zurück"
+  },
+  "titanPage": {
+    "hero": {
+      "badge": "ULTIMATE SCHWERLAST",
+      "title": "TITAN System",
+      "subtitle": "Das weltweit stärkste Bahnübergangssystem, entwickelt für Gelenkdumper, mehrachsige Schwertransporter und den schwersten Industrieverkehr.",
+      "feature1": "Oberflächenauslenkung von Gummi",
+      "feature2": "Festigkeit von Stahl",
+      "feature3": "Bekämpft Druckverformung",
+      "feature4": "Nut- und Federverbindungen"
+    },
+    "benefits": {
+      "sectionTitle": "Gummiflexibilität, Stahlfestigkeit",
+      "engineeringTitle": "Revolutionäre Technik",
+      "engineeringDesc1": "TITAN repräsentiert den Höhepunkt der Übergangstechnologie und kombiniert den exklusiven Kalthärtungsformprozess von Rosehill Rail mit einzigartiger Polyurethan-Chemie, um Platten mit der Oberflächenauslenkung von Gummi, aber der Festigkeit von Stahl zu schaffen.",
+      "engineeringDesc2": "Einzelne Platten werden unter Kompression hergestellt, um dimensionale Stabilität zu gewährleisten und Druckverformung zu bekämpfen, wodurch Verzerrung und Lückenbildung verhindert werden, die Sicherheit und Leistung in Schwerlastanwendungen beeinträchtigen können.",
+      "highlightTitle": "Ultimative Leistung:",
+      "highlightDesc": "Speziell entwickelt für Bergbau-, Bau- und Schwerstindustrieumgebungen, in denen Standard-Übergangslösungen mit den extremen Lastbedingungen einfach nicht zurechtkommen können.",
+      "performanceTitle": "TITAN Leistungsprofil",
+      "surfaceLabel": "Oberflächenauslenkung",
+      "surfaceDesc": "Flexible Gummioberfläche passt sich der Fahrzeugbelastung an und behält gleichzeitig Grip und Komfort",
+      "strengthLabel": "Strukturelle Festigkeit",
+      "strengthDesc": "Festigkeit auf Stahlniveau verhindert Verzerrung unter extremen industriellen Lastbedingungen",
+      "performanceNote": "Revolutionärer Kalthärtungsformprozess liefert unübertroffene Leistung",
+      "whyChooseTitle": "Warum TITAN Wählen?",
+      "extremeLoadTitle": "Extreme Tragfähigkeit",
+      "extremeLoadDesc": "Bewältigt Gelenkdumper, mehrachsige Schwertransporter und Schottertraktoren in den anspruchsvollsten Industrieumgebungen.",
+      "advancedMaterialsTitle": "Fortschrittliche Materialien",
+      "advancedMaterialsDesc": "Exklusiver Kalthärtungsformprozess und einzigartige Polyurethan-Chemie für unvergleichliche Haltbarkeit und Leistung.",
+      "antiCompressiveTitle": "Anti-Druckverformung",
+      "antiCompressiveDesc": "Unter Kompression hergestellt, um Verzerrung und Lückenbildung zu verhindern und dimensionale Stabilität unter extremen Lasten zu erhalten.",
+      "tongueGrooveTitle": "Nut und Feder",
+      "tongueGrooveDesc": "NEUE geformte Gummi-Nut- und Federverbindungen sichern gegen vertikalen Hub und Plattentrennung.",
+      "matrixSystemTitle": "Matrixsystem",
+      "matrixSystemDesc": "Gesamter Übergang in einer Matrix gehalten, verhindert versehentliches Lösen von Platten mit Endrückhaltesicherheit.",
+      "longCrossingsTitle": "Lange Übergänge",
+      "longCrossingsDesc": "Besonders geeignet für lange Übergänge und abgewinkelte Straßenkreuzungen, die maximale strukturelle Integrität erfordern."
+    },
+    "specs": {
+      "sectionTitle": "Technische Spezifikationen",
+      "intro1": "TITAN ist für die extremsten Bedingungen konstruiert und kombiniert innovative Fertigungstechniken mit Premium-Materialien, um die ultimative Schwerlast-Übergangslösung zu schaffen.",
+      "intro2": "Der einzigartige Kompressionsferttigungsprozess des Systems stellt sicher, dass jede Platte dimensionale Stabilität behält, während die Nut- und Federverbindungen sichere Verriegelung bieten, um vertikalen Hub unter extremer Belastung zu verhindern.",
+      "intro3": "Die empfohlene Installation umfasst das exklusive Gummi-Randträger-System von Rosehill Rail mit breiten Außenplatten für maximale Leistung und Langlebigkeit.",
+      "tableTitle": "TITAN Schwerlast-Spezifikationen",
+      "loadCapacity": "Tragfähigkeit",
+      "loadCapacityValue": "Extreme Schwerlastanwendungen",
+      "manufacturingProcess": "Fertigungsprozess",
+      "manufacturingProcessValue": "Kompressionsformung",
+      "materialTechnology": "Materialtechnologie",
+      "materialTechnologyValue": "Kalthärtungs-Polyurethan-Chemie",
+      "compressiveSet": "Druckverformung",
+      "compressiveSetValue": "Anti-Druckverformungs-Design",
+      "connectionSystem": "Verbindungssystem",
+      "connectionSystemValue": "Geformte Nut und Feder",
+      "sleeperCompatibility": "Schwellenkompatibilität",
+      "sleeperCompatibilityValue": "600mm Abstände",
+      "gaugeSupport": "Spurweitenunterstützung",
+      "gaugeSupportValue": "Alle Spurweitentypen",
+      "railCompatibility": "Schienenkompatibilität",
+      "railCompatibilityValue": "Alle Schienentypen, Clips, Schwellen",
+      "installationMethod": "Installationsmethode",
+      "installationMethodValue": "Verbinder-Verbindungssystem",
+      "toolsRequired": "Benötigte Werkzeuge",
+      "toolsRequiredValue": "Keine spezifischen Werkzeuge erforderlich",
+      "matrixDesign": "Matrix-Design",
+      "matrixDesignValue": "Einzelmatrix mit Endrückhalt",
+      "recommendedEdgeBeam": "Empfohlener Randträger",
+      "recommendedEdgeBeamValue": "Gummi-Randträger mit breiten Platten"
+    },
+    "gallery": {
+      "sectionTitle": "TITAN Installationsprozess",
+      "alt1": "TITAN Plattenkonstruktionsdetails",
+      "alt2": "TITAN Verbindungssystem",
+      "alt3": "TITAN Plattenhebevorgang",
+      "alt4": "TITAN Installation im Gange",
+      "alt5": "TITAN Oberflächendetail",
+      "alt6": "Abgeschlossene TITAN Installation"
+    },
+    "applications": {
+      "sectionTitle": "Industrielle Anwendungen",
+      "miningTitle": "Bergbaubetriebe",
+      "miningDesc": "Entwickelt, um die extremen Lasten von Bergbauausrüstung einschließlich Gelenkdumper und schwerer Transportfahrzeuge zu bewältigen.",
+      "constructionTitle": "Baustellen",
+      "constructionDesc": "Perfekt für Bauumgebungen mit mehrachsigen Schwertransportern und schweren Maschinen, die robuste Übergangslösungen erfordern.",
+      "haulageTitle": "Schwertransport",
+      "haulageDesc": "Bewältigt den schwersten Verkehr der Welt einschließlich Schottertraktoren und übergroßen Industrietransport.",
+      "industrialTitle": "Industrieanlagen",
+      "industrialDesc": "Ideal für schwere Industrieumgebungen, in denen Standard-Übergangslösungen mit extremen Lastbedingungen nicht zurechtkommen können."
+    },
+    "cta": {
+      "title": "Benötigen Sie Ultimate Schwerlast-Leistung?",
+      "description": "Entdecken Sie, wie TITAN Ihre extremsten industriellen Übergangsanforderungen mit unübertroffener Festigkeit und Haltbarkeit bewältigen kann.",
+      "requestQuote": "Angebot Anfordern",
+      "technicalSupport": "Technischer Support"
+    }
+  },
+  "linkPage": {
+    "hero": {
+      "feature1": "Welleneffekt-Management",
+      "feature2": "Nut- und Federverbindungen",
+      "feature3": "UK-Fertigungsqualität",
+      "feature4": "100% recycelte Materialien"
+    },
+    "waveSection": {
+      "title": "Fortschrittliches Welleneffekt-Management",
+      "dynamicLoadTitle": "Dynamische Lastverteilung",
+      "paragraph1": "Die horizontale Verbindungstechnologie des LINK Systems berücksichtigt Bewegungen während des Welleneffekts unterschiedlicher Fahrzeuglasten von einer Platte zur anderen und verhindert die Trennung von Platten unter dynamischen Bedingungen.",
+      "paragraph2": "Dieser innovative Ansatz gewährleistet konstante Leistung, selbst wenn Hochgeschwindigkeitszüge variierende Lastmuster über die Übergangsoberfläche erzeugen, und erhält dabei dimensionale Stabilität und Sicherheit.",
+      "paragraph3": "Unsere NEUEN geformten Gummi-Nut- und Federverbindungen bieten überlegene Platte-zu-Platte-Verbindung im Vergleich zu traditionellen Übergangssystemen.",
+      "diagramCaption": "Dynamisches Lastverteilungsmuster"
+    },
+    "benefits": {
+      "title": "Warum LINK Wählen?",
+      "horizontalLinking": {
+        "title": "Horizontale Verbindung",
+        "desc": "Das fortschrittliche Verbindungssystem verhindert vertikalen Hub und Plattentrennung unter dynamischen Lastbedingungen."
+      },
+      "tongueGroove": {
+        "title": "NEUE Nut und Feder",
+        "desc": "Geformte Gummiverbindungen bieten überlegene Platte-zu-Platte-Verbindung und verbesserte Systemintegrität."
+      },
+      "ukManufactured": {
+        "title": "UK-Herstellung",
+        "desc": "Nachhaltig hergestellt im Vereinigten Königreich aus 100% recyceltem Reifengummi mit einzigartiger Polyurethan-Chemie."
+      },
+      "highSpeed": {
+        "title": "Hochgeschwindigkeitsbereit",
+        "desc": "Speziell entwickelt, um die Herausforderungen schnellerer Zuggeschwindigkeiten und dynamischer Lasteffekte zu bewältigen."
+      },
+      "universalCompatibility": {
+        "title": "Universelle Kompatibilität",
+        "desc": "Vollständige Schienenprofilanpassbarkeit und universelle Spurweitenkompatibilität mit 600 mm Schwellenabständen."
+      },
+      "costEfficient": {
+        "title": "Kosteneffizient",
+        "desc": "Reduziert Installationszeit und minimiert Gleisbesetzungsanforderungen für erhebliche Kosteneinsparungen."
+      }
+    },
+    "specs": {
+      "title": "Technische Spezifikationen",
+      "intro1": "Das LINK System repräsentiert die nächste Generation der Bahnübergangstechnologie, speziell entwickelt, um die Herausforderungen moderner Hochgeschwindigkeits-Bahnnetze zu meistern.",
+      "intro2": "Jede Platte wird im Kompressionsverfahren unter Verwendung unseres exklusiven Kalthärtungsformprozesses und einzigartiger Polyurethan-Chemie hergestellt, um sicherzustellen, dass die Platten die Oberflächenauslenkung von Gummi, aber die für anspruchsvolle Anwendungen erforderliche Festigkeit haben.",
+      "keyInnovationTitle": "Schlüsselinnovation:",
+      "keyInnovationDesc": "NEUE geformte Gummi-Nut- und Federverbindungen sichern gegen vertikalen Hub und verwalten dynamische Lasteffekte bei gleichzeitiger Aufrechterhaltung der dimensionalen Stabilität.",
+      "tableTitle": "LINK System Spezifikationen",
+      "connectionType": "Verbindungstyp",
+      "connectionTypeValue": "NEUE geformte Nut und Feder",
+      "linkingSystem": "Verbindungssystem",
+      "linkingSystemValue": "Horizontale Verbindungstechnologie",
+      "manufacturingProcess": "Fertigungsprozess",
+      "manufacturingProcessValue": "Im Kompressionsverfahren hergestellte Platten",
+      "gaugeCompatibility": "Spurweitenkompatibilität",
+      "gaugeCompatibilityValue": "Universelle Spurweitenkompatibilität",
+      "railProfileSupport": "Schienenprofilunterstützung",
+      "railProfileSupportValue": "Vollständige Schienenprofilanpassbarkeit",
+      "construction": "Konstruktion",
+      "constructionValue": "Modulares Konstruktionssystem",
+      "sleeperCentres": "Schwellenabstände",
+      "sleeperCentresValue": "Kompatibel mit 600 mm Abständen",
+      "matrixSystem": "Matrixsystem",
+      "matrixSystemValue": "Einzelmatrix-Eindämmung",
+      "materialOrigin": "Materialherkunft",
+      "materialOriginValue": "UK-hergestellt, 100% recycelt"
+    },
+    "gallery": {
+      "title": "LINK System im Detail"
+    },
+    "applications": {
+      "title": "Ideale Anwendungen",
+      "highSpeedRail": {
+        "title": "Hochgeschwindigkeits-Bahnnetze",
+        "desc": "Speziell entwickelt, um die dynamischen Lasten und Welleneffekte zu bewältigen, die durch Hochgeschwindigkeits-Zugoperationen erzeugt werden."
+      },
+      "urbanTransit": {
+        "title": "Städtische Transitsysteme",
+        "desc": "Perfekt für stark frequentierte städtische Übergänge, bei denen konstante Leistung unter variierenden Lastbedingungen entscheidend ist."
+      },
+      "dynamicLoad": {
+        "title": "Dynamische Lastumgebungen",
+        "desc": "Ideal für Übergänge, die variable Lastmuster erfahren und fortschrittliche Plattenverbindungstechnologie erfordern."
+      },
+      "retrofit": {
+        "title": "Nachrüstungsprojekte",
+        "desc": "Hervorragend geeignet für die Modernisierung bestehender Übergänge, um erhöhte Geschwindigkeiten und verbesserte Sicherheitsstandards zu bewältigen."
+      }
+    },
+    "cta": {
+      "title": "Bereit für Hochgeschwindigkeitsleistung?",
+      "description": "Entdecken Sie, wie das LINK System die Leistung Ihres Bahnnetzes mit fortschrittlichem Welleneffekt-Management und überlegener Plattenverbindungstechnologie verbessern kann.",
+      "technicalSupport": "Technischer Support"
+    }
+  },
+  "connectPage": {
+    "hero": {
+      "feature1": "Ideal für sehr lange Übergänge",
+      "feature2": "Perfekt für spitze Straßenwinkel",
+      "feature3": "Einzelne Plattenentfernung",
+      "feature4": "100% recycelte Materialien"
+    },
+    "benefits": {
+      "title": "Warum CONNECT Wählen?",
+      "integratedMatrix": {
+        "title": "Integriertes Matrixdesign",
+        "desc": "Einheitliches System mit einfachen Schraubverbindungen gewährleistet Stabilität und verhindert Plattenverschiebung unter hohen Lasten."
+      },
+      "quickInstall": {
+        "title": "Schnelle Installation",
+        "desc": "Schneller Einsatz reduziert Gleisbesetzungszeiten und minimiert Servicestörungen für stark frequentierte Bahnnetze."
+      },
+      "selectiveMaintenance": {
+        "title": "Selektive Wartung",
+        "desc": "Einzelne Platten können entfernt und ersetzt werden, ohne das gesamte Übergangssystem zu demontieren."
+      },
+      "sustainable": {
+        "title": "Nachhaltige Lösung",
+        "desc": "Hergestellt aus 100% recyceltem Gummi mit einzigartiger Polyurethan-Verbindungstechnologie."
+      },
+      "universalCompatibility": {
+        "title": "Universelle Kompatibilität",
+        "desc": "Anpassbar an alle Spurweitentypen, Schienenprofile und Befestigungen unter Beibehaltung der dimensionalen Stabilität."
+      },
+      "costEffective": {
+        "title": "Kosteneffizient",
+        "desc": "Geringere Lebenszykluswartungskosten und vereinfachte Bestandsverwaltung reduzieren die Gesamtbetriebskosten."
+      }
+    },
+    "specs": {
+      "title": "Technische Spezifikationen",
+      "intro1": "Das CONNECT System bietet dimensionale Stabilität in jedem Winkel unter allen Betriebsbedingungen. Speziell für starke Verkehrsszenarien entwickelt, zeichnet sich dieses System bei sehr langen Übergängen und solchen aus, die in spitzen Winkeln zur Straße positioniert sind.",
+      "intro2": "Jede Platte wird im Kompressionsverfahren hergestellt, um konsistente Leistung zu gewährleisten, und verfügt über unsere einzigartige Kalthärtungs-Polyurethan-Verbindungstechnologie für überlegene Haltbarkeit und Umweltleistung.",
+      "tableTitle": "CONNECT System Spezifikationen",
+      "panelLength": "Plattenlänge",
+      "panelLengthValue": "1800mm (standardisiert)",
+      "sleeperCompat": "Schwellenkompatibilität",
+      "sleeperCompatValue": "600mm Abstände",
+      "gaugeCompat": "Spurweitenkompatibilität",
+      "gaugeCompatValue": "Alle Spurweitentypen",
+      "railProfile": "Schienenprofil-Unterstützung",
+      "railProfileValue": "Alle Schienenprofile und Befestigungen",
+      "material": "Materialzusammensetzung",
+      "materialValue": "100% recycelter Gummi",
+      "bonding": "Verbindungstechnologie",
+      "bondingValue": "Polyurethan-Kalthärtung",
+      "connection": "Verbindungsmethode",
+      "connectionValue": "Einfacher Schraubmechanismus",
+      "installation": "Installation",
+      "installationValue": "Schnelle Installation/Entfernung",
+      "maintenance": "Wartung",
+      "maintenanceValue": "Austausch einzelner Platten"
+    },
+    "gallery": {
+      "title": "Installationen aus der Praxis"
+    },
+    "applications": {
+      "title": "Ideale Anwendungen",
+      "heavyTraffic": {
+        "title": "Übergänge mit Starkem Verkehr",
+        "desc": "Entwickelt, um extreme Verkehrslasten zu bewältigen und dabei dimensionale Stabilität und Sicherheitsstandards zu wahren."
+      },
+      "acuteAngle": {
+        "title": "Spitzwinkel-Übergänge",
+        "desc": "Perfekte Lösung für Übergänge, die in herausfordernden Winkeln zur Straßeninfrastruktur positioniert sind."
+      },
+      "longCrossings": {
+        "title": "Lange Übergänge",
+        "desc": "Ideal für ausgedehnte Übergangsinstallationen, bei denen traditionelle Lösungen Schwierigkeiten mit der Konsistenz haben können."
+      },
+      "industrial": {
+        "title": "Industriestandorte",
+        "desc": "Geeignet für Industrieumgebungen, die robuste, zuverlässige Übergangslösungen mit minimalem Wartungsaufwand erfordern."
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihre Übergänge zu Verbessern?",
+      "text": "Entdecken Sie, wie das CONNECT System dimensionale Stabilität bieten und Wartungskosten für Ihre Schieneninfrastrukturprojekte reduzieren kann.",
+      "technicalSupport": "Technischer Support"
+    }
+  },
+  "baseplatePage": {
+    "hero": {
+      "badge": "SCHNELLE INSTALLATION",
+      "title": "Grundplatten-System",
+      "subtitle": "Vielseitige Gummi-Übergangsplatten, die zugeschnitten werden können, um Laschen, Führungsschienen und Weichen für schnellen Einsatz zu umschließen.",
+      "feature1": "Maßgeschnittene Fähigkeit",
+      "feature2": "Extrem schnelle Installation",
+      "feature3": "Keine spezifischen Werkzeuge erforderlich",
+      "feature4": "Mehrere Qualitätsoptionen"
+    },
+    "cutToFit": {
+      "sectionTitle": "Maßgeschnittene Flexibilität",
+      "title": "Ultimative Anpassungsfähigkeit",
+      "paragraph1": "Die massiven Gummiplatten des Grundplatten-Systems können zugeschnitten werden, um Laschen, Führungsschienen (einfach und doppelt) und Weichen zu umschließen, wodurch sie besonders nützlich für Straßenbahnanwendungen und enge Kurven sind.",
+      "paragraph2": "Diese Flexibilität ermöglicht eine sehr schnelle Installation und macht das System ideal für durchschnittlich große Übergänge in verschiedenen Anwendungen von Gleiszugang und Depots bis zu landwirtschaftlicher und Fußgängernutzung.",
+      "highlightTitle": "Modifikationsfreundlich:",
+      "highlightText": "Platten können für maßgeschnittene Installationen modifiziert werden, und einzelne Platten können entfernt und ersetzt werden, ohne benachbarte Platten zu verschieben.",
+      "featuresTitle": "Hauptmerkmale",
+      "feature1": "Kann zugeschnitten werden, um komplexe Infrastruktur zu umschließen",
+      "feature2": "Perfekt für Straßenbahnanwendungen und enge Kurven",
+      "feature3": "1,8 Meter Standardlänge, kann halbiert werden",
+      "feature4": "Einfache Grundplatte zieht Platten sicher zusammen",
+      "feature5": "Kompatibel mit allen Randträgertypen",
+      "feature6": "Entspricht Rutschfestigkeitsanforderungen"
+    },
+    "benefits": {
+      "sectionTitle": "Warum das Grundplatten-System Wählen?",
+      "rapidInstallation": {
+        "title": "Schnelle Installation",
+        "description": "Extrem schnell zu installieren und zu entfernen unter Verwendung eines einfachen Grundplattenmechanismus, der keine spezifischen Werkzeuge erfordert."
+      },
+      "cutToFitDesign": {
+        "title": "Maßgeschnittenes Design",
+        "description": "Massive Gummiplatten können zugeschnitten werden, um Laschen, Führungsschienen und Weichen für komplexe Installationen zu umschließen."
+      },
+      "versatileApplications": {
+        "title": "Vielseitige Anwendungen",
+        "description": "Verfügbar in verschiedenen Qualitäten, um Gleiszugang, Depots, landwirtschaftliche und Fußgängeranwendungen zu berücksichtigen."
+      },
+      "tramwayCompatible": {
+        "title": "Straßenbahnkompatibel",
+        "description": "Platten können hergestellt werden, um enge Kurven zu umschließen, wodurch sie besonders nützlich für Straßenbahnanwendungen sind."
+      },
+      "individualReplacement": {
+        "title": "Individueller Austausch",
+        "description": "Einzelne Platten können entfernt und ersetzt werden, ohne benachbarte Platten für einfache Wartung zu verschieben."
+      },
+      "universalCompatibility": {
+        "title": "Universelle Kompatibilität",
+        "description": "Angepasst für alle Arten von Schienen, Clips, Schwellen und Spurweiten mit Rutschfestigkeitskonformität."
+      }
+    },
+    "specs": {
+      "title": "Technische Spezifikationen",
+      "paragraph1": "Das Grundplatten-System bietet maximale Flexibilität für Übergangsinstallationen, bei denen Standardlösungen möglicherweise nicht passen. Entwickelt für durchschnittlich große Übergänge, zeichnet sich dieses System in Situationen aus, die Anpassung an bestehende Infrastruktur erfordern.",
+      "paragraph2": "Jede Platte wird auf 1,8 Meter hergestellt und kann für kürzere Übergänge halbiert werden, was beispiellose Installationsflexibilität bietet und gleichzeitig strukturelle Integrität und Sicherheitskonformität beibehält.",
+      "tableTitle": "Grundplatten-System Spezifikationen",
+      "panelLength": "Plattenlänge",
+      "panelLengthValue": "1,8 Meter (kann halbiert werden)",
+      "sleeperCompatibility": "Schwellenkompatibilität",
+      "sleeperCompatibilityValue": "600mm Abstände",
+      "gaugeSupport": "Spurweitenunterstützung",
+      "gaugeSupportValue": "Alle Spurweitentypen",
+      "railCompatibility": "Schienenkompatibilität",
+      "railCompatibilityValue": "Alle Schienentypen, Clips und Schwellen",
+      "cutToFit": "Maßgeschnitten",
+      "cutToFitValue": "Um Laschen, Führungsschienen, Weichen",
+      "installationMethod": "Installationsmethode",
+      "installationMethodValue": "Einfaches Grundplattensystem",
+      "toolsRequired": "Benötigte Werkzeuge",
+      "toolsRequiredValue": "Keine spezifischen Werkzeuge erforderlich",
+      "edgeBeamSupport": "Randträgerunterstützung",
+      "edgeBeamSupportValue": "Alle Arten von Randträgern",
+      "safetyCompliance": "Sicherheitskonformität",
+      "safetyComplianceValue": "Rutschfestigkeitsanforderungen"
+    },
+    "gallery": {
+      "sectionTitle": "Reale Anwendungen",
+      "image1Alt": "Grundplattensystem in Dean Lane Manchester",
+      "image2Alt": "Grundplattensystem in Felixstowe",
+      "image3Alt": "Maßgeschnittene Grundplatteninstallation in Thornton Gate",
+      "image4Alt": "Grundplattensystem für Straßenbahnen",
+      "image5Alt": "Grundplatten-RRAPs und TAPs",
+      "image6Alt": "Fußgängerübergang mit Grundplattensystem"
+    },
+    "applications": {
+      "sectionTitle": "Ideale Anwendungen",
+      "tramwaySystems": {
+        "title": "Straßenbahnsysteme",
+        "description": "Perfekt für Straßenbahnanwendungen mit engen Kurven und komplexen Gleiskonfigurationen, die maßgeschnittene Lösungen erfordern."
+      },
+      "pedestrianCrossings": {
+        "title": "Fußgängerübergänge",
+        "description": "Ideal für Fußgängerübergänge, die schnelle Installation und Einhaltung von Rutschfestigkeits-Sicherheitsanforderungen erfordern."
+      },
+      "agriculturalAccess": {
+        "title": "Landwirtschaftlicher Zugang",
+        "description": "Geeignet für landwirtschaftliche Übergänge, bei denen flexible Installation und einfache Modifikationsfähigkeiten wesentlich sind."
+      },
+      "depotMaintenance": {
+        "title": "Depot & Wartung",
+        "description": "Perfekt für Depot- und Wartungsanlagen-Zugangspunkte, die schnelle Einsatz- und Entfernungsfähigkeiten erfordern."
+      }
+    },
+    "cta": {
+      "title": "Benötigen Sie Schnelle, Flexible Installation?",
+      "text": "Entdecken Sie, wie das Grundplatten-System schnellen Einsatz und maßgeschnittene Flexibilität für Ihre Übergangsanforderungen bieten kann.",
+      "primaryButton": "Angebot Anfordern",
+      "secondaryButton": "Technischer Support"
+    }
   }
 }

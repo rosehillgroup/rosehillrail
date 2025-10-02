@@ -94,7 +94,56 @@
   },
   "drainage": {
     "title": "Solutions de Drainage Ferroviaire",
-    "subtitle": "Gestion avancée de l'eau en bord de voie avec des systèmes de drainage durables conçus spécifiquement pour les environnements ferroviaires et la conformité Network Rail."
+    "subtitle": "Gestion avancée de l'eau en bord de voie avec des systèmes de drainage durables conçus spécifiquement pour les environnements ferroviaires et la conformité Network Rail.",
+    "modularTitle": "Systèmes Modulaires de Drainage en Bord de Voie",
+    "intro": "Notre technologie révolutionnaire de drainage transforme la gestion de l'eau ferroviaire grâce à des solutions polymères innovantes fabriquées à partir de matériaux 100% recyclés. Conçue spécifiquement pour les exigences difficiles des environnements ferroviaires.",
+    "benefits": {
+      "rapidInstall": "Installation Rapide : Déploiement nettement plus rapide que les systèmes en béton traditionnels, minimisant les temps d'arrêt des voies",
+      "superiorPerformance": "Performance Supérieure : Capacité hydraulique améliorée avec capacités éprouvées de protection contre les inondations",
+      "networkRailApproved": "Approuvé Network Rail : Entièrement conforme aux normes et spécifications d'infrastructure ferroviaire",
+      "sustainable": "Solution Durable : Économie de 614 kg CO₂e par m³ par rapport aux alternatives en béton",
+      "modularDesign": "Conception Modulaire : Système flexible s'adaptant à diverses configurations en bord de voie et exigences de drainage",
+      "provenDurability": "Durabilité Éprouvée : Conçu pour les conditions exigeantes des environnements ferroviaires"
+    },
+    "outro": "Essentiel pour les zones en bord de voie, le drainage des tranchées, la gestion de l'eau des quais et toute surface ferroviaire où une gestion efficace de l'eau est essentielle pour la sécurité opérationnelle et la protection des infrastructures.",
+    "cta": "Découvrir les Solutions de Drainage Ferroviaire"
+  },
+  "homepage": {
+    "featuredProducts": {
+      "title": "Systèmes de Traversée en Vedette",
+      "subtitle": "Nos systèmes de traversée ferroviaire phares conçus pour des performances supérieures"
+    },
+    "benefits": {
+      "title": "L'Avantage Rosehill Rail",
+      "subtitle": "Trois décennies d'innovation dans la technologie de traversée ferroviaire",
+      "ukManufacturing": {
+        "title": "Fabrication au Royaume-Uni",
+        "description": "Basés à Sowerby Bridge, West Yorkshire, avec accès stratégique aux principales liaisons de transport pour une livraison mondiale efficace."
+      },
+      "recycledMaterials": {
+        "title": "Matériaux 100% Recyclés",
+        "description": "Fabriqué de manière durable à partir de caoutchouc de pneus recyclés en utilisant notre processus unique de liaison par durcissement à froid, soutenant les objectifs d'économie circulaire."
+      },
+      "bespokeManufacturing": {
+        "title": "Fabrication Sur Mesure",
+        "description": "Solutions personnalisées adaptées aux besoins spécifiques de votre projet avec assurance qualité complète et certification ISO 9001:2008."
+      },
+      "fullTraceability": {
+        "title": "Traçabilité Complète",
+        "description": "Chaque panneau marqué avec des informations essentielles et suivi numériquement jusqu'à la commande et au lot de fabrication pour une tranquillité d'esprit totale."
+      }
+    },
+    "history": {
+      "highlight": "Depuis 1991",
+      "title": "Une Fière Histoire Couvrant Trois Décennies dans l'Industrie Ferroviaire",
+      "paragraph1": "Rosehill Rail a commencé son parcours en 1991 lorsque Reidel Omni nous a approchés pour développer un système à base de polyuréthane plus rapide et plus respectueux de l'environnement pour lier les panneaux en caoutchouc. Notre processus innovant de liaison par durcissement à froid a réduit le temps de durcissement à seulement 1,5 heure, révolutionnant l'efficacité de la production.",
+      "paragraph2": "Après avoir acheté les moules d'Omni en 1999, nous avons établi Rosehill Rail et continuons notre dévouement à l'innovation et à la durabilité dans la technologie ferroviaire, en collaborant avec des entreprises d'infrastructure ferroviaire du monde entier pour développer des solutions de traversée sur mesure."
+    },
+    "cta": {
+      "title": "Prêt à discuter de votre projet de traversée ferroviaire ?",
+      "consultation": "Demander une Consultation",
+      "catalogue": "Télécharger le Catalogue Produits"
+    }
   },
   "products": {
     "title": "Solutions Complètes d'Infrastructure Ferroviaire",
@@ -356,5 +405,393 @@
     "back": "Retour",
     "next": "Suivant",
     "previous": "Précédent"
+  },
+  "linkPage": {
+    "hero": {
+      "feature1": "Gestion de l'effet de vague",
+      "feature2": "Connexions à rainure et languette",
+      "feature3": "Qualité de fabrication britannique",
+      "feature4": "Matériaux 100% recyclés"
+    },
+    "waveSection": {
+      "title": "Gestion Avancée de l'Effet de Vague",
+      "dynamicLoadTitle": "Distribution Dynamique de la Charge",
+      "paragraph1": "La technologie de liaison horizontale du système LINK s'adapte aux mouvements pendant l'effet de vague des différentes charges de véhicules appliquées d'un panneau à l'autre, empêchant la séparation des panneaux dans des conditions dynamiques.",
+      "paragraph2": "Cette approche innovante garantit des performances constantes même lorsque les trains à grande vitesse créent des schémas de charge variables sur la surface de traversée, maintenant la stabilité dimensionnelle et la sécurité.",
+      "paragraph3": "Nos NOUVELLES connexions à rainure et languette en caoutchouc moulé offrent une liaison panneau à panneau supérieure par rapport aux systèmes de traversée traditionnels.",
+      "diagramCaption": "Schéma de Distribution Dynamique de la Charge"
+    },
+    "benefits": {
+      "title": "Pourquoi Choisir LINK ?",
+      "horizontalLinking": {
+        "title": "Liaison Horizontale",
+        "desc": "Le système de liaison avancé empêche le soulèvement vertical et la séparation des panneaux dans des conditions de charge dynamique."
+      },
+      "tongueGroove": {
+        "title": "NOUVELLE Rainure et Languette",
+        "desc": "Les connexions en caoutchouc moulé offrent une liaison panneau à panneau supérieure et une intégrité système améliorée."
+      },
+      "ukManufactured": {
+        "title": "Fabriqué au Royaume-Uni",
+        "desc": "Fabriqué de manière durable au Royaume-Uni à partir de caoutchouc de pneus 100% recyclé avec une chimie polyuréthane unique."
+      },
+      "highSpeed": {
+        "title": "Prêt pour la Grande Vitesse",
+        "desc": "Spécialement conçu pour gérer les défis des vitesses de train plus rapides et des effets de charge dynamique."
+      },
+      "universalCompatibility": {
+        "title": "Compatibilité Universelle",
+        "desc": "Adaptabilité complète du profil de rail et compatibilité d'écartement universel avec entraxes de traverses de 600 mm."
+      },
+      "costEfficient": {
+        "title": "Économique",
+        "desc": "Réduit le temps d'installation et minimise les besoins de possession de voie pour des économies significatives."
+      }
+    },
+    "specs": {
+      "title": "Spécifications Techniques",
+      "intro1": "Le système LINK représente la prochaine génération de technologie de traversée ferroviaire, spécialement conçu pour relever les défis des réseaux ferroviaires à grande vitesse modernes.",
+      "intro2": "Chaque panneau est fabriqué par compression en utilisant notre processus de moulage par durcissement à froid exclusif et notre chimie polyuréthane unique, garantissant que les panneaux ont la déflexion de surface du caoutchouc mais la résistance requise pour les applications exigeantes.",
+      "keyInnovationTitle": "Innovation Clé :",
+      "keyInnovationDesc": "Les NOUVELLES connexions à rainure et languette en caoutchouc moulé sécurisent contre le soulèvement vertical et gèrent les effets de charge dynamique tout en maintenant la stabilité dimensionnelle.",
+      "tableTitle": "Spécifications du Système LINK",
+      "connectionType": "Type de Connexion",
+      "connectionTypeValue": "NOUVELLE rainure et languette moulée",
+      "linkingSystem": "Système de Liaison",
+      "linkingSystemValue": "Technologie de liaison horizontale",
+      "manufacturingProcess": "Processus de Fabrication",
+      "manufacturingProcessValue": "Panneaux fabriqués par compression",
+      "gaugeCompatibility": "Compatibilité d'Écartement",
+      "gaugeCompatibilityValue": "Compatibilité d'écartement universelle",
+      "railProfileSupport": "Support de Profil de Rail",
+      "railProfileSupportValue": "Adaptabilité complète du profil de rail",
+      "construction": "Construction",
+      "constructionValue": "Système de construction modulaire",
+      "sleeperCentres": "Entraxes des Traverses",
+      "sleeperCentresValue": "Compatible avec entraxes de 600 mm",
+      "matrixSystem": "Système Matriciel",
+      "matrixSystemValue": "Confinement matriciel unique",
+      "materialOrigin": "Origine du Matériau",
+      "materialOriginValue": "Fabriqué au Royaume-Uni, 100% recyclé"
+    },
+    "gallery": {
+      "title": "Système LINK en Détail"
+    },
+    "applications": {
+      "title": "Applications Idéales",
+      "highSpeedRail": {
+        "title": "Réseaux Ferroviaires à Grande Vitesse",
+        "desc": "Spécialement conçu pour gérer les charges dynamiques et les effets de vague créés par les opérations de trains à grande vitesse."
+      },
+      "urbanTransit": {
+        "title": "Systèmes de Transport Urbain",
+        "desc": "Parfait pour les passages à niveau urbains fréquentés où des performances constantes sous des conditions de charge variables sont essentielles."
+      },
+      "dynamicLoad": {
+        "title": "Environnements à Charge Dynamique",
+        "desc": "Idéal pour les passages à niveau subissant des schémas de charge variables nécessitant une technologie de liaison de panneaux avancée."
+      },
+      "retrofit": {
+        "title": "Projets de Rénovation",
+        "desc": "Excellent pour moderniser les passages à niveau existants afin de gérer des vitesses accrues et des normes de sécurité améliorées."
+      }
+    },
+    "cta": {
+      "title": "Prêt pour des Performances à Grande Vitesse ?",
+      "description": "Découvrez comment le système LINK peut améliorer les performances de votre réseau ferroviaire avec une gestion avancée de l'effet de vague et une technologie de liaison de panneaux supérieure.",
+      "technicalSupport": "Support Technique"
+    }
+  },
+  "titanPage": {
+    "hero": {
+      "badge": "USAGE ULTRA INTENSIF",
+      "title": "Système TITAN",
+      "subtitle": "Le système de traversée ferroviaire le plus résistant au monde, conçu pour les tombereaux articulés, les camions multibennes et le trafic industriel le plus lourd.",
+      "feature1": "Déflexion de surface en caoutchouc",
+      "feature2": "Résistance de l'acier",
+      "feature3": "Lutte contre la déformation permanente",
+      "feature4": "Connexions à rainure et languette"
+    },
+    "benefits": {
+      "sectionTitle": "Flexibilité du Caoutchouc, Résistance de l'Acier",
+      "engineeringTitle": "Ingénierie Révolutionnaire",
+      "engineeringDesc1": "TITAN représente le summum de la technologie de traversée, combinant le processus exclusif de moulage à durcissement à froid de Rosehill Rail avec une chimie de polyuréthane unique pour créer des panneaux avec la déflexion de surface du caoutchouc mais la résistance de l'acier.",
+      "engineeringDesc2": "Les panneaux individuels sont fabriqués sous compression pour garantir la stabilité dimensionnelle et lutter contre la déformation permanente, empêchant la distorsion et les espaces qui peuvent compromettre la sécurité et les performances dans les applications usage intensif.",
+      "highlightTitle": "Performance Ultime :",
+      "highlightDesc": "Conçu spécifiquement pour les environnements miniers, de construction et industriels lourds où les solutions de traversée standard ne peuvent tout simplement pas faire face aux conditions de chargement extrêmes.",
+      "performanceTitle": "Profil de Performance TITAN",
+      "surfaceLabel": "Déflexion de Surface",
+      "surfaceDesc": "La surface en caoutchouc flexible s'adapte au chargement des véhicules tout en maintenant l'adhérence et le confort",
+      "strengthLabel": "Résistance Structurelle",
+      "strengthDesc": "Résistance de niveau acier empêche la distorsion dans des conditions de chargement industriel extrêmes",
+      "performanceNote": "Le processus révolutionnaire de moulage à durcissement à froid offre des performances inégalées",
+      "whyChooseTitle": "Pourquoi Choisir TITAN ?",
+      "extremeLoadTitle": "Capacité de Charge Extrême",
+      "extremeLoadDesc": "Supporte les tombereaux articulés, les camions multibennes et les tracteurs à ballast dans les environnements industriels les plus exigeants.",
+      "advancedMaterialsTitle": "Matériaux Avancés",
+      "advancedMaterialsDesc": "Processus exclusif de moulage à durcissement à froid et chimie de polyuréthane unique pour une durabilité et des performances inégalées.",
+      "antiCompressiveTitle": "Anti-Déformation Permanente",
+      "antiCompressiveDesc": "Fabriqué sous compression pour empêcher la distorsion et les espaces, maintenant la stabilité dimensionnelle sous charges extrêmes.",
+      "tongueGrooveTitle": "Rainure et Languette",
+      "tongueGrooveDesc": "NOUVELLES connexions moulées en caoutchouc à rainure et languette sécurisent contre le soulèvement vertical et la séparation des panneaux.",
+      "matrixSystemTitle": "Système Matriciel",
+      "matrixSystemDesc": "Toute la traversée maintenue dans une matrice empêchant le délogement accidentel des panneaux avec sécurité de retenue d'extrémité.",
+      "longCrossingsTitle": "Longues Traversées",
+      "longCrossingsDesc": "Particulièrement adapté aux longues traversées et aux intersections routières en angle nécessitant une intégrité structurelle maximale."
+    },
+    "specs": {
+      "sectionTitle": "Spécifications Techniques",
+      "intro1": "TITAN est conçu pour les conditions les plus extrêmes, combinant des techniques de fabrication innovantes avec des matériaux premium pour créer la solution de traversée usage intensif ultime.",
+      "intro2": "Le processus unique de fabrication sous compression du système garantit que chaque panneau maintient la stabilité dimensionnelle tandis que les connexions à rainure et languette offrent un verrouillage sécurisé pour empêcher le soulèvement vertical sous charge extrême.",
+      "intro3": "L'installation recommandée comprend le système exclusif de longrine en caoutchouc de Rosehill Rail avec des panneaux extérieurs larges pour des performances et une longévité maximales.",
+      "tableTitle": "Spécifications TITAN Usage Intensif",
+      "loadCapacity": "Capacité de Charge",
+      "loadCapacityValue": "Applications usage ultra intensif",
+      "manufacturingProcess": "Processus de Fabrication",
+      "manufacturingProcessValue": "Moulage par compression",
+      "materialTechnology": "Technologie des Matériaux",
+      "materialTechnologyValue": "Chimie de polyuréthane à durcissement à froid",
+      "compressiveSet": "Déformation Permanente",
+      "compressiveSetValue": "Conception anti-déformation permanente",
+      "connectionSystem": "Système de Connexion",
+      "connectionSystemValue": "Rainure et languette moulées",
+      "sleeperCompatibility": "Compatibilité des Traverses",
+      "sleeperCompatibilityValue": "Entraxes de 600mm",
+      "gaugeSupport": "Support d'Écartement",
+      "gaugeSupportValue": "Tous types d'écartement",
+      "railCompatibility": "Compatibilité des Rails",
+      "railCompatibilityValue": "Tous types de rails, clips, traverses",
+      "installationMethod": "Méthode d'Installation",
+      "installationMethodValue": "Système de liaison par connecteur",
+      "toolsRequired": "Outils Requis",
+      "toolsRequiredValue": "Aucun outil spécifique requis",
+      "matrixDesign": "Conception Matricielle",
+      "matrixDesignValue": "Matrice unique avec retenue d'extrémité",
+      "recommendedEdgeBeam": "Longrine Recommandée",
+      "recommendedEdgeBeamValue": "Longrine en caoutchouc avec panneaux larges"
+    },
+    "gallery": {
+      "sectionTitle": "Processus d'Installation TITAN",
+      "alt1": "Détails de construction du panneau TITAN",
+      "alt2": "Système de liaison TITAN",
+      "alt3": "Processus de levage du panneau TITAN",
+      "alt4": "Installation TITAN en cours",
+      "alt5": "Détail de surface TITAN",
+      "alt6": "Installation TITAN terminée"
+    },
+    "applications": {
+      "sectionTitle": "Applications Industrielles",
+      "miningTitle": "Opérations Minières",
+      "miningDesc": "Conçu pour gérer les charges extrêmes des équipements miniers, y compris les tombereaux articulés et les véhicules de transport lourd.",
+      "constructionTitle": "Sites de Construction",
+      "constructionDesc": "Parfait pour les environnements de construction avec des camions multibennes et des machines lourdes nécessitant des solutions de traversée robustes.",
+      "haulageTitle": "Transport Lourd",
+      "haulageDesc": "Supporte le trafic le plus lourd au monde, y compris les tracteurs à ballast et le transport industriel surdimensionné.",
+      "industrialTitle": "Installations Industrielles",
+      "industrialDesc": "Idéal pour les environnements industriels lourds où les solutions de traversée standard ne peuvent pas faire face aux conditions de chargement extrêmes."
+    },
+    "cta": {
+      "title": "Besoin de Performances Ultra Intensives ?",
+      "description": "Découvrez comment TITAN peut gérer vos exigences de traversée industrielle les plus extrêmes avec une résistance et une durabilité inégalées.",
+      "requestQuote": "Demander un Devis",
+      "technicalSupport": "Support Technique"
+    }
+  },
+  "connectPage": {
+    "hero": {
+      "feature1": "Idéal pour les très longues traversées",
+      "feature2": "Parfait pour les angles de route aigus",
+      "feature3": "Retrait de panneaux individuels",
+      "feature4": "Matériaux 100% recyclés"
+    },
+    "benefits": {
+      "title": "Pourquoi Choisir CONNECT ?",
+      "integratedMatrix": {
+        "title": "Conception Matricielle Intégrée",
+        "desc": "Système unifié avec connexions boulonnées simples assurant la stabilité et prévenant le déplacement des panneaux sous charges lourdes."
+      },
+      "quickInstall": {
+        "title": "Installation Rapide",
+        "desc": "Le déploiement rapide réduit les temps d'occupation de voie et minimise les perturbations de service pour les réseaux ferroviaires occupés."
+      },
+      "selectiveMaintenance": {
+        "title": "Maintenance Sélective",
+        "desc": "Les panneaux individuels peuvent être retirés et remplacés sans démanteler l'ensemble du système de traversée."
+      },
+      "sustainable": {
+        "title": "Solution Durable",
+        "desc": "Fabriqué à partir de caoutchouc 100% recyclé avec technologie unique de liaison au polyuréthane."
+      },
+      "universalCompatibility": {
+        "title": "Compatibilité Universelle",
+        "desc": "Adaptable à tous les types d'écartement, profils de rail et attaches tout en maintenant la stabilité dimensionnelle."
+      },
+      "costEffective": {
+        "title": "Économique",
+        "desc": "Coûts de maintenance du cycle de vie réduits et gestion simplifiée des stocks réduisent les coûts totaux de possession."
+      }
+    },
+    "specs": {
+      "title": "Spécifications Techniques",
+      "intro1": "Le Système CONNECT offre une stabilité dimensionnelle à tout angle dans toutes les conditions d'exploitation. Conçu spécifiquement pour les scénarios de trafic lourd, ce système excelle dans les très longues traversées et celles positionnées à des angles aigus par rapport à la route.",
+      "intro2": "Chaque panneau est fabriqué par compression pour garantir des performances constantes et intègre notre technologie unique de liaison au polyuréthane à durcissement à froid pour une durabilité supérieure et des performances environnementales.",
+      "tableTitle": "Spécifications du Système CONNECT",
+      "panelLength": "Longueur du Panneau",
+      "panelLengthValue": "1800mm (standardisé)",
+      "sleeperCompat": "Compatibilité des Traverses",
+      "sleeperCompatValue": "Entraxes de 600mm",
+      "gaugeCompat": "Compatibilité d'Écartement",
+      "gaugeCompatValue": "Tous types d'écartement",
+      "railProfile": "Support de Profil de Rail",
+      "railProfileValue": "Tous profils de rail et attaches",
+      "material": "Composition du Matériau",
+      "materialValue": "Caoutchouc 100% recyclé",
+      "bonding": "Technologie de Liaison",
+      "bondingValue": "Durcissement à froid au polyuréthane",
+      "connection": "Méthode de Connexion",
+      "connectionValue": "Mécanisme de boulon simple",
+      "installation": "Installation",
+      "installationValue": "Installation/retrait rapide",
+      "maintenance": "Maintenance",
+      "maintenanceValue": "Remplacement de panneaux individuels"
+    },
+    "gallery": {
+      "title": "Installations Réelles"
+    },
+    "applications": {
+      "title": "Applications Idéales",
+      "heavyTraffic": {
+        "title": "Passages à Niveau à Trafic Lourd",
+        "desc": "Conçu pour gérer des charges de trafic extrêmes tout en maintenant la stabilité dimensionnelle et les normes de sécurité."
+      },
+      "acuteAngle": {
+        "title": "Passages à Niveau à Angle Aigu",
+        "desc": "Solution parfaite pour les passages à niveau positionnés à des angles difficiles par rapport à l'infrastructure routière."
+      },
+      "longCrossings": {
+        "title": "Longues Traversées",
+        "desc": "Idéal pour les installations de traversée étendues où les solutions traditionnelles peuvent avoir des difficultés avec la cohérence."
+      },
+      "industrial": {
+        "title": "Sites Industriels",
+        "desc": "Convient aux environnements industriels nécessitant des solutions de traversée robustes et fiables avec un minimum de maintenance."
+      }
+    },
+    "cta": {
+      "title": "Prêt à Améliorer Vos Passages à Niveau ?",
+      "text": "Découvrez comment le Système CONNECT peut offrir une stabilité dimensionnelle et réduire les coûts de maintenance pour vos projets d'infrastructure ferroviaire.",
+      "technicalSupport": "Support Technique"
+    }
+  },
+  "baseplatePage": {
+    "hero": {
+      "badge": "INSTALLATION RAPIDE",
+      "title": "Système à Selle",
+      "subtitle": "Panneaux de traversée en caoutchouc polyvalents qui peuvent être découpés pour s'adapter aux éclisses, contre-rails et aiguillages pour un déploiement rapide.",
+      "feature1": "Capacité de découpe sur mesure",
+      "feature2": "Installation extrêmement rapide",
+      "feature3": "Aucun outil spécifique requis",
+      "feature4": "Plusieurs options de catégorie"
+    },
+    "cutToFit": {
+      "sectionTitle": "Flexibilité de Découpe sur Mesure",
+      "title": "Adaptabilité Ultime",
+      "paragraph1": "Les panneaux en caoutchouc solide du système à Selle peuvent être découpés pour s'adapter aux éclisses, contre-rails (simples et doubles) et aiguillages, les rendant particulièrement utiles pour les applications de tramway et les courbes serrées.",
+      "paragraph2": "Cette flexibilité permet une installation très rapide et rend le système idéal pour les passages à niveau de taille moyenne dans diverses applications, de l'accès aux voies et dépôts aux utilisations agricoles et piétonnes.",
+      "highlightTitle": "Modification Facile :",
+      "highlightText": "Les panneaux peuvent être modifiés pour des installations sur mesure, et les panneaux individuels peuvent être retirés et remplacés sans déloger les panneaux voisins.",
+      "featuresTitle": "Caractéristiques Clés",
+      "feature1": "Peut être découpé pour s'adapter aux infrastructures complexes",
+      "feature2": "Parfait pour les applications de tramway et les courbes serrées",
+      "feature3": "Longueur standard de 1,8 mètre, peut être coupé en deux",
+      "feature4": "Une selle simple assemble les panneaux en toute sécurité",
+      "feature5": "Compatible avec tous les types de longrines",
+      "feature6": "Conforme aux exigences antidérapantes"
+    },
+    "benefits": {
+      "sectionTitle": "Pourquoi Choisir le Système à Selle ?",
+      "rapidInstallation": {
+        "title": "Installation Rapide",
+        "description": "Extrêmement rapide à installer et retirer en utilisant un mécanisme de selle simple qui ne nécessite aucun outil spécifique."
+      },
+      "cutToFitDesign": {
+        "title": "Conception Découpe sur Mesure",
+        "description": "Les panneaux en caoutchouc solide peuvent être découpés pour s'adapter aux éclisses, contre-rails et aiguillages pour des installations complexes."
+      },
+      "versatileApplications": {
+        "title": "Applications Polyvalentes",
+        "description": "Disponible en différentes catégories pour s'adapter à l'accès aux voies, aux dépôts, aux applications agricoles et piétonnes."
+      },
+      "tramwayCompatible": {
+        "title": "Compatible Tramway",
+        "description": "Les panneaux peuvent être fabriqués pour s'adapter aux courbes serrées, les rendant particulièrement utiles pour les applications de tramway."
+      },
+      "individualReplacement": {
+        "title": "Remplacement Individuel",
+        "description": "Les panneaux individuels peuvent être retirés et remplacés sans déloger les panneaux voisins pour une maintenance facile."
+      },
+      "universalCompatibility": {
+        "title": "Compatibilité Universelle",
+        "description": "Adapté à tous les types de rails, clips, traverses et écartements avec conformité antidérapante."
+      }
+    },
+    "specs": {
+      "title": "Spécifications Techniques",
+      "paragraph1": "Le système à Selle offre une flexibilité maximale pour les installations de passages à niveau où les solutions standard peuvent ne pas convenir. Conçu pour les passages à niveau de taille moyenne, ce système excelle dans les situations nécessitant une adaptation à l'infrastructure existante.",
+      "paragraph2": "Chaque panneau est fabriqué à 1,8 mètre et peut être coupé en deux pour les passages à niveau plus courts, offrant une flexibilité d'installation sans précédent tout en maintenant l'intégrité structurelle et la conformité de sécurité.",
+      "tableTitle": "Spécifications du Système à Selle",
+      "panelLength": "Longueur du Panneau",
+      "panelLengthValue": "1,8 mètre (peut être coupé en deux)",
+      "sleeperCompatibility": "Compatibilité des Traverses",
+      "sleeperCompatibilityValue": "Entraxes de 600mm",
+      "gaugeSupport": "Support d'Écartement",
+      "gaugeSupportValue": "Tous types d'écartement",
+      "railCompatibility": "Compatibilité des Rails",
+      "railCompatibilityValue": "Tous types de rails, clips et traverses",
+      "cutToFit": "Découpe sur Mesure",
+      "cutToFitValue": "Autour des éclisses, contre-rails, aiguillages",
+      "installationMethod": "Méthode d'Installation",
+      "installationMethodValue": "Système de selle simple",
+      "toolsRequired": "Outils Requis",
+      "toolsRequiredValue": "Aucun outil spécifique requis",
+      "edgeBeamSupport": "Support de Longrine",
+      "edgeBeamSupportValue": "Tous types de longrines",
+      "safetyCompliance": "Conformité de Sécurité",
+      "safetyComplianceValue": "Exigences antidérapantes"
+    },
+    "gallery": {
+      "sectionTitle": "Applications Réelles",
+      "image1Alt": "Système à selle à Dean Lane Manchester",
+      "image2Alt": "Système à selle à Felixstowe",
+      "image3Alt": "Installation sur mesure à Thornton Gate",
+      "image4Alt": "Système à selle pour tramways",
+      "image5Alt": "RRAPs et TAPs à selle",
+      "image6Alt": "Passage piéton avec système à selle"
+    },
+    "applications": {
+      "sectionTitle": "Applications Idéales",
+      "tramwaySystems": {
+        "title": "Systèmes de Tramway",
+        "description": "Parfait pour les applications de tramway avec courbes serrées et configurations de voies complexes nécessitant des solutions sur mesure."
+      },
+      "pedestrianCrossings": {
+        "title": "Passages Piétons",
+        "description": "Idéal pour les passages piétons nécessitant une installation rapide et une conformité aux exigences de sécurité antidérapantes."
+      },
+      "agriculturalAccess": {
+        "title": "Accès Agricole",
+        "description": "Adapté aux passages à niveau agricoles où une installation flexible et des capacités de modification faciles sont essentielles."
+      },
+      "depotMaintenance": {
+        "title": "Dépôt & Maintenance",
+        "description": "Parfait pour les points d'accès aux dépôts et installations de maintenance nécessitant un déploiement et un retrait rapides."
+      }
+    },
+    "cta": {
+      "title": "Besoin d'une Installation Rapide et Flexible ?",
+      "text": "Découvrez comment le système à Selle peut offrir un déploiement rapide et une flexibilité de découpe sur mesure pour vos besoins de passage à niveau.",
+      "primaryButton": "Demander un Devis",
+      "secondaryButton": "Support Technique"
+    }
   }
 }

@@ -94,7 +94,56 @@
   },
   "drainage": {
     "title": "Soluzioni di Drenaggio Ferroviario",
-    "subtitle": "Gestione avanzata delle acque a bordo binario con sistemi di drenaggio sostenibili progettati specificamente per ambienti ferroviari e conformità Network Rail."
+    "subtitle": "Gestione avanzata delle acque a bordo binario con sistemi di drenaggio sostenibili progettati specificamente per ambienti ferroviari e conformità Network Rail.",
+    "modularTitle": "Sistemi Modulari di Drenaggio a Bordo Binario",
+    "intro": "La nostra tecnologia rivoluzionaria di drenaggio trasforma la gestione delle acque ferroviarie attraverso soluzioni polimeriche innovative realizzate con materiali 100% riciclati. Progettata specificamente per le esigenze impegnative degli ambienti ferroviari.",
+    "benefits": {
+      "rapidInstall": "Installazione Rapida: Distribuzione significativamente più veloce rispetto ai sistemi tradizionali in calcestruzzo, minimizzando i tempi di inattività del binario",
+      "superiorPerformance": "Prestazioni Superiori: Capacità idraulica migliorata con comprovate capacità di protezione dalle inondazioni",
+      "networkRailApproved": "Approvato Network Rail: Completamente conforme agli standard e alle specifiche dell'infrastruttura ferroviaria",
+      "sustainable": "Soluzione Sostenibile: Risparmio di 614kg CO₂e per m³ rispetto alle alternative in calcestruzzo",
+      "modularDesign": "Design Modulare: Sistema flessibile che si adatta a varie configurazioni a bordo binario e requisiti di drenaggio",
+      "provenDurability": "Durabilità Comprovata: Progettato per le condizioni impegnative degli ambienti ferroviari"
+    },
+    "outro": "Essenziale per aree a bordo binario, drenaggio di trincea, gestione dell'acqua delle piattaforme e qualsiasi superficie ferroviaria in cui una gestione efficace dell'acqua è fondamentale per la sicurezza operativa e la protezione delle infrastrutture.",
+    "cta": "Esplora le Soluzioni di Drenaggio Ferroviario"
+  },
+  "homepage": {
+    "featuredProducts": {
+      "title": "Sistemi di Attraversamento in Evidenza",
+      "subtitle": "I nostri sistemi di attraversamento ferroviario di punta progettati per prestazioni superiori"
+    },
+    "benefits": {
+      "title": "Il Vantaggio Rosehill Rail",
+      "subtitle": "Tre decenni di innovazione nella tecnologia di attraversamento ferroviario",
+      "ukManufacturing": {
+        "title": "Produzione nel Regno Unito",
+        "description": "Con sede a Sowerby Bridge, West Yorkshire, con accesso strategico ai principali collegamenti di trasporto per una consegna globale efficiente."
+      },
+      "recycledMaterials": {
+        "title": "Materiali 100% Riciclati",
+        "description": "Prodotto in modo sostenibile da gomma di pneumatici riciclati utilizzando il nostro esclusivo processo di incollaggio a indurimento a freddo, sostenendo gli obiettivi dell'economia circolare."
+      },
+      "bespokeManufacturing": {
+        "title": "Produzione Su Misura",
+        "description": "Soluzioni personalizzate su misura per le esigenze specifiche del vostro progetto con garanzia di qualità completa e certificazione ISO 9001:2008."
+      },
+      "fullTraceability": {
+        "title": "Tracciabilità Completa",
+        "description": "Ogni pannello contrassegnato con informazioni essenziali e tracciato digitalmente fino all'ordine e al lotto di produzione per una completa tranquillità."
+      }
+    },
+    "history": {
+      "highlight": "Dal 1991",
+      "title": "Una Storia Orgogliosa che Abbraccia Tre Decenni nell'Industria Ferroviaria",
+      "paragraph1": "Rosehill Rail ha iniziato il suo viaggio nel 1991 quando Reidel Omni ci ha contattato per sviluppare un sistema a base di poliuretano più veloce ed ecologico per incollare pannelli in gomma. Il nostro innovativo processo di incollaggio a indurimento a freddo ha ridotto il tempo di indurimento a sole 1,5 ore, rivoluzionando l'efficienza produttiva.",
+      "paragraph2": "Dopo aver acquistato gli stampi di Omni nel 1999, abbiamo fondato Rosehill Rail e continuiamo la nostra dedizione all'innovazione e alla sostenibilità nella tecnologia ferroviaria, collaborando con aziende di infrastrutture ferroviarie in tutto il mondo per sviluppare soluzioni di attraversamento su misura."
+    },
+    "cta": {
+      "title": "Pronti a discutere il vostro progetto di attraversamento ferroviario?",
+      "consultation": "Richiedi Consulenza",
+      "catalogue": "Scarica Catalogo Prodotti"
+    }
   },
   "products": {
     "title": "Soluzioni Complete per Infrastrutture Ferroviarie",
@@ -356,5 +405,393 @@
     "back": "Indietro",
     "next": "Avanti",
     "previous": "Precedente"
+  },
+  "titanPage": {
+    "hero": {
+      "badge": "ULTIMATE HEAVY DUTY",
+      "title": "Sistema TITAN",
+      "subtitle": "Il sistema di attraversamento ferroviario più resistente al mondo, progettato per dumper articolati, autocarri multiasse e il traffico industriale più pesante.",
+      "feature1": "Deviazione superficiale della gomma",
+      "feature2": "Resistenza dell'acciaio",
+      "feature3": "Combatte la deformazione permanente",
+      "feature4": "Connessioni maschio-femmina"
+    },
+    "benefits": {
+      "sectionTitle": "Flessibilità della Gomma, Resistenza dell'Acciaio",
+      "engineeringTitle": "Ingegneria Rivoluzionaria",
+      "engineeringDesc1": "TITAN rappresenta l'apice della tecnologia di attraversamento, combinando il processo esclusivo di stampaggio a indurimento a freddo di Rosehill Rail con una chimica di poliuretano unica per creare pannelli con la deviazione superficiale della gomma ma la resistenza dell'acciaio.",
+      "engineeringDesc2": "I pannelli individuali sono prodotti sotto compressione per garantire la stabilità dimensionale e combattere la deformazione permanente, prevenendo distorsioni e spazi vuoti che possono compromettere la sicurezza e le prestazioni nelle applicazioni heavy-duty.",
+      "highlightTitle": "Prestazioni Ultime:",
+      "highlightDesc": "Progettato specificamente per ambienti minerari, di costruzione e industriali pesanti dove le soluzioni di attraversamento standard semplicemente non possono far fronte alle condizioni di carico estremo.",
+      "performanceTitle": "Profilo Prestazionale TITAN",
+      "surfaceLabel": "Deviazione Superficiale",
+      "surfaceDesc": "La superficie in gomma flessibile si adatta al carico dei veicoli mantenendo aderenza e comfort",
+      "strengthLabel": "Resistenza Strutturale",
+      "strengthDesc": "Resistenza di livello acciaio previene la distorsione in condizioni di carico industriale estremo",
+      "performanceNote": "Il processo rivoluzionario di stampaggio a indurimento a freddo offre prestazioni senza pari",
+      "whyChooseTitle": "Perché Scegliere TITAN?",
+      "extremeLoadTitle": "Capacità di Carico Estremo",
+      "extremeLoadDesc": "Gestisce dumper articolati, autocarri multiasse e trattori per ballast negli ambienti industriali più esigenti.",
+      "advancedMaterialsTitle": "Materiali Avanzati",
+      "advancedMaterialsDesc": "Processo esclusivo di stampaggio a indurimento a freddo e chimica di poliuretano unica per durabilità e prestazioni senza pari.",
+      "antiCompressiveTitle": "Anti-Deformazione Permanente",
+      "antiCompressiveDesc": "Prodotto sotto compressione per prevenire distorsioni e spazi vuoti, mantenendo la stabilità dimensionale sotto carichi estremi.",
+      "tongueGrooveTitle": "Maschio e Femmina",
+      "tongueGrooveDesc": "NUOVE connessioni maschio-femmina in gomma stampata proteggono contro il sollevamento verticale e la separazione dei pannelli.",
+      "matrixSystemTitle": "Sistema a Matrice",
+      "matrixSystemDesc": "Intero attraversamento mantenuto in una matrice che previene lo spostamento accidentale dei pannelli con sicurezza di contenimento finale.",
+      "longCrossingsTitle": "Attraversamenti Lunghi",
+      "longCrossingsDesc": "Particolarmente adatto per attraversamenti lunghi e incroci stradali angolati che richiedono massima integrità strutturale."
+    },
+    "specs": {
+      "sectionTitle": "Specifiche Tecniche",
+      "intro1": "TITAN è progettato per le condizioni più estreme, combinando tecniche di produzione innovative con materiali premium per creare la soluzione di attraversamento heavy-duty definitiva.",
+      "intro2": "Il processo unico di produzione sotto compressione del sistema garantisce che ogni pannello mantenga la stabilità dimensionale mentre le connessioni maschio-femmina forniscono un bloccaggio sicuro per prevenire il sollevamento verticale sotto carico estremo.",
+      "intro3": "L'installazione raccomandata include il sistema esclusivo di travi di bordo in gomma di Rosehill Rail con pannelli esterni larghi per massime prestazioni e longevità.",
+      "tableTitle": "Specifiche TITAN Heavy Duty",
+      "loadCapacity": "Capacità di Carico",
+      "loadCapacityValue": "Applicazioni heavy-duty estreme",
+      "manufacturingProcess": "Processo di Produzione",
+      "manufacturingProcessValue": "Stampaggio a compressione",
+      "materialTechnology": "Tecnologia dei Materiali",
+      "materialTechnologyValue": "Chimica di poliuretano a indurimento a freddo",
+      "compressiveSet": "Deformazione Permanente",
+      "compressiveSetValue": "Design anti-deformazione permanente",
+      "connectionSystem": "Sistema di Connessione",
+      "connectionSystemValue": "Maschio e femmina stampati",
+      "sleeperCompatibility": "Compatibilità Traverse",
+      "sleeperCompatibilityValue": "Interassi di 600mm",
+      "gaugeSupport": "Supporto Scartamento",
+      "gaugeSupportValue": "Tutti i tipi di scartamento",
+      "railCompatibility": "Compatibilità Rotaie",
+      "railCompatibilityValue": "Tutti i tipi di rotaie, clip, traverse",
+      "installationMethod": "Metodo di Installazione",
+      "installationMethodValue": "Sistema di collegamento a connettore",
+      "toolsRequired": "Strumenti Richiesti",
+      "toolsRequiredValue": "Nessuno strumento specifico richiesto",
+      "matrixDesign": "Design a Matrice",
+      "matrixDesignValue": "Matrice singola con contenimento finale",
+      "recommendedEdgeBeam": "Trave di Bordo Raccomandata",
+      "recommendedEdgeBeamValue": "Trave di bordo in gomma con pannelli larghi"
+    },
+    "gallery": {
+      "sectionTitle": "Processo di Installazione TITAN",
+      "alt1": "Dettagli di costruzione del pannello TITAN",
+      "alt2": "Sistema di collegamento TITAN",
+      "alt3": "Processo di sollevamento del pannello TITAN",
+      "alt4": "Installazione TITAN in corso",
+      "alt5": "Dettaglio superficie TITAN",
+      "alt6": "Installazione TITAN completata"
+    },
+    "applications": {
+      "sectionTitle": "Applicazioni Industriali",
+      "miningTitle": "Operazioni Minerarie",
+      "miningDesc": "Progettato per gestire i carichi estremi delle attrezzature minerarie inclusi dumper articolati e veicoli da trasporto pesante.",
+      "constructionTitle": "Cantieri Edili",
+      "constructionDesc": "Perfetto per ambienti di costruzione con autocarri multiasse e macchinari pesanti che richiedono soluzioni di attraversamento robuste.",
+      "haulageTitle": "Trasporto Pesante",
+      "haulageDesc": "Accoglie il traffico più pesante al mondo inclusi trattori per ballast e trasporto industriale sovradimensionato.",
+      "industrialTitle": "Impianti Industriali",
+      "industrialDesc": "Ideale per ambienti industriali pesanti dove le soluzioni di attraversamento standard non possono far fronte a condizioni di carico estreme."
+    },
+    "cta": {
+      "title": "Hai Bisogno di Prestazioni Heavy Duty Estreme?",
+      "description": "Scopri come TITAN può gestire i tuoi requisiti di attraversamento industriale più estremi con resistenza e durabilità senza pari.",
+      "requestQuote": "Richiedi Preventivo",
+      "technicalSupport": "Supporto Tecnico"
+    }
+  },
+  "linkPage": {
+    "hero": {
+      "feature1": "Gestione dell'effetto onda",
+      "feature2": "Connessioni maschio-femmina",
+      "feature3": "Qualità di produzione britannica",
+      "feature4": "Materiali 100% riciclati"
+    },
+    "waveSection": {
+      "title": "Gestione Avanzata dell'Effetto Onda",
+      "dynamicLoadTitle": "Distribuzione Dinamica del Carico",
+      "paragraph1": "La tecnologia di collegamento orizzontale del sistema LINK si adatta al movimento durante l'effetto onda dei diversi carichi dei veicoli applicati da un pannello all'altro, prevenendo la separazione dei pannelli in condizioni dinamiche.",
+      "paragraph2": "Questo approccio innovativo garantisce prestazioni costanti anche quando i treni ad alta velocità creano schemi di carico variabili sulla superficie di attraversamento, mantenendo la stabilità dimensionale e la sicurezza.",
+      "paragraph3": "Le nostre NUOVE connessioni maschio-femmina in gomma stampata forniscono un collegamento pannello-pannello superiore rispetto ai sistemi di attraversamento tradizionali.",
+      "diagramCaption": "Schema di Distribuzione Dinamica del Carico"
+    },
+    "benefits": {
+      "title": "Perché Scegliere LINK?",
+      "horizontalLinking": {
+        "title": "Collegamento Orizzontale",
+        "desc": "Il sistema di collegamento avanzato previene il sollevamento verticale e la separazione dei pannelli in condizioni di carico dinamico."
+      },
+      "tongueGroove": {
+        "title": "NUOVO Maschio e Femmina",
+        "desc": "Le connessioni in gomma stampata forniscono un collegamento pannello-pannello superiore e un'integrità di sistema migliorata."
+      },
+      "ukManufactured": {
+        "title": "Prodotto nel Regno Unito",
+        "desc": "Prodotto in modo sostenibile nel Regno Unito da gomma di pneumatici 100% riciclata con chimica di poliuretano unica."
+      },
+      "highSpeed": {
+        "title": "Pronto per l'Alta Velocità",
+        "desc": "Progettato specificamente per gestire le sfide delle velocità dei treni più elevate e gli effetti di carico dinamico."
+      },
+      "universalCompatibility": {
+        "title": "Compatibilità Universale",
+        "desc": "Completa adattabilità del profilo rotaia e compatibilità scartamento universale con interassi traverse di 600 mm."
+      },
+      "costEfficient": {
+        "title": "Economicamente Efficiente",
+        "desc": "Riduce il tempo di installazione e minimizza i requisiti di occupazione del binario per risparmi significativi."
+      }
+    },
+    "specs": {
+      "title": "Specifiche Tecniche",
+      "intro1": "Il sistema LINK rappresenta la prossima generazione di tecnologia di attraversamento ferroviario, specificamente progettato per affrontare le sfide delle moderne reti ferroviarie ad alta velocità.",
+      "intro2": "Ogni pannello è prodotto a compressione utilizzando il nostro processo esclusivo di stampaggio a indurimento a freddo e la chimica di poliuretano unica, garantendo che i pannelli abbiano la deviazione superficiale della gomma ma la resistenza richiesta per applicazioni esigenti.",
+      "keyInnovationTitle": "Innovazione Chiave:",
+      "keyInnovationDesc": "Le NUOVE connessioni maschio-femmina in gomma stampata proteggono contro il sollevamento verticale e gestiscono gli effetti di carico dinamico mantenendo la stabilità dimensionale.",
+      "tableTitle": "Specifiche del Sistema LINK",
+      "connectionType": "Tipo di Connessione",
+      "connectionTypeValue": "NUOVO maschio e femmina stampato",
+      "linkingSystem": "Sistema di Collegamento",
+      "linkingSystemValue": "Tecnologia di collegamento orizzontale",
+      "manufacturingProcess": "Processo di Produzione",
+      "manufacturingProcessValue": "Pannelli prodotti a compressione",
+      "gaugeCompatibility": "Compatibilità Scartamento",
+      "gaugeCompatibilityValue": "Compatibilità scartamento universale",
+      "railProfileSupport": "Supporto Profilo Rotaia",
+      "railProfileSupportValue": "Completa adattabilità del profilo rotaia",
+      "construction": "Costruzione",
+      "constructionValue": "Sistema di costruzione modulare",
+      "sleeperCentres": "Interassi Traverse",
+      "sleeperCentresValue": "Compatibile con interassi di 600 mm",
+      "matrixSystem": "Sistema a Matrice",
+      "matrixSystemValue": "Contenimento a matrice singola",
+      "materialOrigin": "Origine del Materiale",
+      "materialOriginValue": "Prodotto nel Regno Unito, 100% riciclato"
+    },
+    "gallery": {
+      "title": "Sistema LINK nel Dettaglio"
+    },
+    "applications": {
+      "title": "Applicazioni Ideali",
+      "highSpeedRail": {
+        "title": "Reti Ferroviarie ad Alta Velocità",
+        "desc": "Specificamente progettato per gestire i carichi dinamici e gli effetti onda creati dalle operazioni di treni ad alta velocità."
+      },
+      "urbanTransit": {
+        "title": "Sistemi di Trasporto Urbano",
+        "desc": "Perfetto per attraversamenti urbani trafficati dove prestazioni costanti sotto condizioni di carico variabili sono critiche."
+      },
+      "dynamicLoad": {
+        "title": "Ambienti a Carico Dinamico",
+        "desc": "Ideale per attraversamenti che sperimentano schemi di carico variabili che richiedono tecnologia di collegamento pannelli avanzata."
+      },
+      "retrofit": {
+        "title": "Progetti di Retrofit",
+        "desc": "Eccellente per aggiornare attraversamenti esistenti per gestire velocità aumentate e standard di sicurezza migliorati."
+      }
+    },
+    "cta": {
+      "title": "Pronti per Prestazioni ad Alta Velocità?",
+      "description": "Scopri come il sistema LINK può migliorare le prestazioni della tua rete ferroviaria con gestione avanzata dell'effetto onda e tecnologia di collegamento pannelli superiore.",
+      "technicalSupport": "Supporto Tecnico"
+    }
+  },
+  "connectPage": {
+    "hero": {
+      "feature1": "Ideale per attraversamenti molto lunghi",
+      "feature2": "Perfetto per angoli stradali acuti",
+      "feature3": "Rimozione di pannelli individuali",
+      "feature4": "Materiali 100% riciclati"
+    },
+    "benefits": {
+      "title": "Perché Scegliere CONNECT?",
+      "integratedMatrix": {
+        "title": "Design a Matrice Integrata",
+        "desc": "Sistema unificato con semplici collegamenti a bullone garantisce stabilità e previene lo spostamento dei pannelli sotto carichi pesanti."
+      },
+      "quickInstall": {
+        "title": "Installazione Rapida",
+        "desc": "Il dispiegamento rapido riduce i tempi di occupazione del binario e minimizza le interruzioni del servizio per le reti ferroviarie trafficate."
+      },
+      "selectiveMaintenance": {
+        "title": "Manutenzione Selettiva",
+        "desc": "I pannelli individuali possono essere rimossi e sostituiti senza smontare l'intero sistema di attraversamento."
+      },
+      "sustainable": {
+        "title": "Soluzione Sostenibile",
+        "desc": "Prodotto da gomma 100% riciclata con tecnologia unica di incollaggio al poliuretano."
+      },
+      "universalCompatibility": {
+        "title": "Compatibilità Universale",
+        "desc": "Adattabile a tutti i tipi di scartamento, profili di rotaia e clip mantenendo la stabilità dimensionale."
+      },
+      "costEffective": {
+        "title": "Economicamente Conveniente",
+        "desc": "Costi di manutenzione del ciclo di vita ridotti e gestione semplificata dell'inventario riducono i costi totali di proprietà."
+      }
+    },
+    "specs": {
+      "title": "Specifiche Tecniche",
+      "intro1": "Il Sistema CONNECT fornisce stabilità dimensionale a qualsiasi angolazione in tutte le condizioni operative. Progettato specificamente per scenari di traffico pesante, questo sistema eccelle in attraversamenti molto lunghi e quelli posizionati ad angoli acuti rispetto alla strada.",
+      "intro2": "Ogni pannello è prodotto per compressione per garantire prestazioni costanti e presenta la nostra tecnologia unica di incollaggio al poliuretano a indurimento a freddo per una durabilità superiore e prestazioni ambientali.",
+      "tableTitle": "Specifiche del Sistema CONNECT",
+      "panelLength": "Lunghezza del Pannello",
+      "panelLengthValue": "1800mm (standardizzato)",
+      "sleeperCompat": "Compatibilità delle Traverse",
+      "sleeperCompatValue": "Interassi di 600mm",
+      "gaugeCompat": "Compatibilità dello Scartamento",
+      "gaugeCompatValue": "Tutti i tipi di scartamento",
+      "railProfile": "Supporto Profilo Rotaia",
+      "railProfileValue": "Tutti i profili di rotaia e clip",
+      "material": "Composizione del Materiale",
+      "materialValue": "Gomma 100% riciclata",
+      "bonding": "Tecnologia di Incollaggio",
+      "bondingValue": "Indurimento a freddo al poliuretano",
+      "connection": "Metodo di Connessione",
+      "connectionValue": "Meccanismo a bullone semplice",
+      "installation": "Installazione",
+      "installationValue": "Installazione/rimozione rapida",
+      "maintenance": "Manutenzione",
+      "maintenanceValue": "Sostituzione di pannelli individuali"
+    },
+    "gallery": {
+      "title": "Installazioni nel Mondo Reale"
+    },
+    "applications": {
+      "title": "Applicazioni Ideali",
+      "heavyTraffic": {
+        "title": "Attraversamenti a Traffico Pesante",
+        "desc": "Progettato per gestire carichi di traffico estremi mantenendo la stabilità dimensionale e gli standard di sicurezza."
+      },
+      "acuteAngle": {
+        "title": "Attraversamenti ad Angolo Acuto",
+        "desc": "Soluzione perfetta per attraversamenti posizionati ad angoli impegnativi rispetto all'infrastruttura stradale."
+      },
+      "longCrossings": {
+        "title": "Attraversamenti Lunghi",
+        "desc": "Ideale per installazioni di attraversamento estese dove le soluzioni tradizionali possono avere difficoltà con la coerenza."
+      },
+      "industrial": {
+        "title": "Siti Industriali",
+        "desc": "Adatto per ambienti industriali che richiedono soluzioni di attraversamento robuste e affidabili con manutenzione minima."
+      }
+    },
+    "cta": {
+      "title": "Pronti ad Aggiornare i Vostri Attraversamenti?",
+      "text": "Scoprite come il Sistema CONNECT può fornire stabilità dimensionale e ridurre i costi di manutenzione per i vostri progetti di infrastrutture ferroviarie.",
+      "technicalSupport": "Supporto Tecnico"
+    }
+  },
+  "baseplatePage": {
+    "hero": {
+      "badge": "INSTALLAZIONE RAPIDA",
+      "title": "Sistema a Piastra di Base",
+      "subtitle": "Pannelli di attraversamento in gomma versatili che possono essere tagliati per adattarsi a giunzioni, controrotaie e deviatoi per un dispiegamento rapido.",
+      "feature1": "Capacità di taglio su misura",
+      "feature2": "Installazione estremamente rapida",
+      "feature3": "Nessun attrezzo specifico richiesto",
+      "feature4": "Opzioni di grado multiple"
+    },
+    "cutToFit": {
+      "sectionTitle": "Flessibilità di Taglio su Misura",
+      "title": "Adattabilità Definitiva",
+      "paragraph1": "I pannelli in gomma solida del sistema a Piastra di Base possono essere tagliati per adattarsi a giunzioni, controrotaie (singole e doppie) e deviatoi, rendendoli particolarmente utili per applicazioni tramviarie e curve strette.",
+      "paragraph2": "Questa flessibilità consente un'installazione molto rapida e rende il sistema ideale per attraversamenti di dimensioni medie in varie applicazioni, dall'accesso ai binari e depositi all'uso agricolo e pedonale.",
+      "highlightTitle": "Modifica Semplice:",
+      "highlightText": "I pannelli possono essere modificati per installazioni su misura e i pannelli individuali possono essere rimossi e sostituiti senza spostare i pannelli vicini.",
+      "featuresTitle": "Caratteristiche Chiave",
+      "feature1": "Può essere tagliato per adattarsi a infrastrutture complesse",
+      "feature2": "Perfetto per applicazioni tramviarie e curve strette",
+      "feature3": "Lunghezza standard di 1,8 metri, può essere tagliato a metà",
+      "feature4": "Una semplice piastra di base unisce i pannelli in sicurezza",
+      "feature5": "Compatibile con tutti i tipi di travi di bordo",
+      "feature6": "Conforme ai requisiti antiscivolo"
+    },
+    "benefits": {
+      "sectionTitle": "Perché Scegliere il Sistema a Piastra di Base?",
+      "rapidInstallation": {
+        "title": "Installazione Rapida",
+        "description": "Estremamente rapido da installare e rimuovere utilizzando un semplice meccanismo a piastra di base che non richiede attrezzi specifici."
+      },
+      "cutToFitDesign": {
+        "title": "Design Taglio su Misura",
+        "description": "I pannelli in gomma solida possono essere tagliati per adattarsi a giunzioni, controrotaie e deviatoi per installazioni complesse."
+      },
+      "versatileApplications": {
+        "title": "Applicazioni Versatili",
+        "description": "Disponibile in vari gradi per adattarsi all'accesso ai binari, depositi, applicazioni agricole e pedonali."
+      },
+      "tramwayCompatible": {
+        "title": "Compatibile con Tramvie",
+        "description": "I pannelli possono essere prodotti per adattarsi a curve strette, rendendoli particolarmente utili per applicazioni tramviarie."
+      },
+      "individualReplacement": {
+        "title": "Sostituzione Individuale",
+        "description": "I pannelli individuali possono essere rimossi e sostituiti senza spostare i pannelli vicini per una manutenzione semplice."
+      },
+      "universalCompatibility": {
+        "title": "Compatibilità Universale",
+        "description": "Adattato per tutti i tipi di rotaia, clip, traverse e scartamenti con conformità antiscivolo."
+      }
+    },
+    "specs": {
+      "title": "Specifiche Tecniche",
+      "paragraph1": "Il Sistema a Piastra di Base offre massima flessibilità per installazioni di attraversamento dove le soluzioni standard potrebbero non adattarsi. Progettato per attraversamenti di dimensioni medie, questo sistema eccelle in situazioni che richiedono adattamento all'infrastruttura esistente.",
+      "paragraph2": "Ogni pannello è prodotto a 1,8 metri e può essere tagliato a metà per attraversamenti più corti, fornendo una flessibilità di installazione senza precedenti mantenendo l'integrità strutturale e la conformità di sicurezza.",
+      "tableTitle": "Specifiche Sistema a Piastra di Base",
+      "panelLength": "Lunghezza Pannello",
+      "panelLengthValue": "1,8 metri (può essere tagliato a metà)",
+      "sleeperCompatibility": "Compatibilità Traverse",
+      "sleeperCompatibilityValue": "Interassi di 600mm",
+      "gaugeSupport": "Supporto Scartamento",
+      "gaugeSupportValue": "Tutti i tipi di scartamento",
+      "railCompatibility": "Compatibilità Rotaia",
+      "railCompatibilityValue": "Tutti i tipi di rotaia, clip e traverse",
+      "cutToFit": "Taglio su Misura",
+      "cutToFitValue": "Intorno a giunzioni, controrotaie, deviatoi",
+      "installationMethod": "Metodo di Installazione",
+      "installationMethodValue": "Sistema a piastra di base semplice",
+      "toolsRequired": "Attrezzi Richiesti",
+      "toolsRequiredValue": "Nessun attrezzo specifico richiesto",
+      "edgeBeamSupport": "Supporto Trave di Bordo",
+      "edgeBeamSupportValue": "Tutti i tipi di travi di bordo",
+      "safetyCompliance": "Conformità di Sicurezza",
+      "safetyComplianceValue": "Requisiti antiscivolo"
+    },
+    "gallery": {
+      "sectionTitle": "Applicazioni nel Mondo Reale",
+      "image1Alt": "Sistema a piastra di base a Dean Lane Manchester",
+      "image2Alt": "Sistema a piastra di base a Felixstowe",
+      "image3Alt": "Installazione su misura a Thornton Gate",
+      "image4Alt": "Sistema a piastra di base per tramvie",
+      "image5Alt": "RRAP e TAP a piastra di base",
+      "image6Alt": "Attraversamento pedonale con sistema a piastra di base"
+    },
+    "applications": {
+      "sectionTitle": "Applicazioni Ideali",
+      "tramwaySystems": {
+        "title": "Sistemi Tramviari",
+        "description": "Perfetto per applicazioni tramviarie con curve strette e configurazioni di binario complesse che richiedono soluzioni su misura."
+      },
+      "pedestrianCrossings": {
+        "title": "Attraversamenti Pedonali",
+        "description": "Ideale per attraversamenti pedonali che richiedono installazione rapida e conformità ai requisiti di sicurezza antiscivolo."
+      },
+      "agriculturalAccess": {
+        "title": "Accesso Agricolo",
+        "description": "Adatto per attraversamenti agricoli dove l'installazione flessibile e le capacità di modifica facili sono essenziali."
+      },
+      "depotMaintenance": {
+        "title": "Deposito e Manutenzione",
+        "description": "Perfetto per punti di accesso a depositi e strutture di manutenzione che richiedono capacità di dispiegamento e rimozione rapidi."
+      }
+    },
+    "cta": {
+      "title": "Serve un'Installazione Rapida e Flessibile?",
+      "text": "Scopri come il Sistema a Piastra di Base può fornire un dispiegamento rapido e flessibilità di taglio su misura per le tue esigenze di attraversamento.",
+      "primaryButton": "Richiedi Preventivo",
+      "secondaryButton": "Supporto Tecnico"
+    }
   }
 }

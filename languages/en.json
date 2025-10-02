@@ -405,5 +405,393 @@
     "back": "Back",
     "next": "Next",
     "previous": "Previous"
+  },
+  "linkPage": {
+    "hero": {
+      "feature1": "Wave effect management",
+      "feature2": "Tongue & groove connections",
+      "feature3": "UK manufactured quality",
+      "feature4": "100% recycled materials"
+    },
+    "waveSection": {
+      "title": "Advanced Wave Effect Management",
+      "dynamicLoadTitle": "Dynamic Load Distribution",
+      "paragraph1": "The LINK System's horizontal linking technology accommodates movement during the wave effect of differing vehicle loads applied from one panel to another, preventing separation of panels under dynamic conditions.",
+      "paragraph2": "This innovative approach ensures consistent performance even when high-speed trains create varying load patterns across the crossing surface, maintaining dimensional stability and safety.",
+      "paragraph3": "Our NEW moulded rubber tongue and groove connections provide superior panel-to-panel linking compared to traditional crossing systems.",
+      "diagramCaption": "Dynamic Load Distribution Pattern"
+    },
+    "benefits": {
+      "title": "Why Choose LINK?",
+      "horizontalLinking": {
+        "title": "Horizontal Linking",
+        "desc": "Advanced linking system prevents vertical lift and panel separation under dynamic loading conditions."
+      },
+      "tongueGroove": {
+        "title": "NEW Tongue & Groove",
+        "desc": "Moulded rubber connections provide superior panel-to-panel linking and enhanced system integrity."
+      },
+      "ukManufactured": {
+        "title": "UK Manufactured",
+        "desc": "Sustainably manufactured in the UK from 100% recycled tyre rubber with unique polyurethane chemistry."
+      },
+      "highSpeed": {
+        "title": "High-Speed Ready",
+        "desc": "Specifically engineered to handle the challenges of faster train speeds and dynamic loading effects."
+      },
+      "universalCompatibility": {
+        "title": "Universal Compatibility",
+        "desc": "Full rail profile adaptability and universal gauge compatibility with 600mm sleeper centres."
+      },
+      "costEfficient": {
+        "title": "Cost Efficient",
+        "desc": "Reduces installation time and minimises track possession requirements for significant cost savings."
+      }
+    },
+    "specs": {
+      "title": "Technical Specifications",
+      "intro1": "The LINK System represents the next generation of rail crossing technology, specifically designed to meet the challenges of modern high-speed rail networks.",
+      "intro2": "Each panel is compression-manufactured using our exclusive cold cure moulding process and unique polyurethane chemistry, ensuring the panels have the surface deflection of rubber but the strength required for demanding applications.",
+      "keyInnovationTitle": "Key Innovation:",
+      "keyInnovationDesc": "NEW moulded rubber tongue and groove connections secure against vertical lift and manage dynamic loading effects while maintaining dimensional stability.",
+      "tableTitle": "LINK System Specifications",
+      "connectionType": "Connection Type",
+      "connectionTypeValue": "NEW moulded tongue & groove",
+      "linkingSystem": "Linking System",
+      "linkingSystemValue": "Horizontal linking technology",
+      "manufacturingProcess": "Manufacturing Process",
+      "manufacturingProcessValue": "Compression-manufactured panels",
+      "gaugeCompatibility": "Gauge Compatibility",
+      "gaugeCompatibilityValue": "Universal gauge compatibility",
+      "railProfileSupport": "Rail Profile Support",
+      "railProfileSupportValue": "Full rail profile adaptability",
+      "construction": "Construction",
+      "constructionValue": "Modular construction system",
+      "sleeperCentres": "Sleeper Centres",
+      "sleeperCentresValue": "Compatible with 600mm centres",
+      "matrixSystem": "Matrix System",
+      "matrixSystemValue": "Single matrix containment",
+      "materialOrigin": "Material Origin",
+      "materialOriginValue": "UK manufactured, 100% recycled"
+    },
+    "gallery": {
+      "title": "LINK System in Detail"
+    },
+    "applications": {
+      "title": "Ideal Applications",
+      "highSpeedRail": {
+        "title": "High-Speed Rail Networks",
+        "desc": "Specifically designed to handle the dynamic loads and wave effects created by high-speed train operations."
+      },
+      "urbanTransit": {
+        "title": "Urban Transit Systems",
+        "desc": "Perfect for busy urban crossings where consistent performance under varying load conditions is critical."
+      },
+      "dynamicLoad": {
+        "title": "Dynamic Load Environments",
+        "desc": "Ideal for crossings experiencing variable loading patterns that require advanced panel linking technology."
+      },
+      "retrofit": {
+        "title": "Retrofit Projects",
+        "desc": "Excellent for upgrading existing crossings to handle increased speeds and improved safety standards."
+      }
+    },
+    "cta": {
+      "title": "Ready for High-Speed Performance?",
+      "description": "Discover how the LINK System can enhance your rail network's performance with advanced wave effect management and superior panel linking technology.",
+      "technicalSupport": "Technical Support"
+    }
+  },
+  "titanPage": {
+    "hero": {
+      "badge": "ULTIMATE HEAVY DUTY",
+      "title": "TITAN System",
+      "subtitle": "The world's strongest rail crossing system designed for articulated dumpers, multi-axle haul trucks, and the heaviest industrial traffic.",
+      "feature1": "Surface deflection of rubber",
+      "feature2": "Strength of steel",
+      "feature3": "Combat compressive set",
+      "feature4": "Tongue & groove connections"
+    },
+    "benefits": {
+      "sectionTitle": "Rubber Flexibility, Steel Strength",
+      "engineeringTitle": "Revolutionary Engineering",
+      "engineeringDesc1": "TITAN represents the pinnacle of crossing technology, combining Rosehill Rail's exclusive cold cure moulding process with unique polyurethane chemistry to create panels with the surface deflection of rubber but the strength of steel.",
+      "engineeringDesc2": "Individual panels are manufactured under compression to ensure dimensional stability and combat Compressive Set, preventing distortion and gapping that can compromise safety and performance in heavy-duty applications.",
+      "highlightTitle": "Ultimate Performance:",
+      "highlightDesc": "Designed specifically for mining, construction, and heavyweight industrial environments where standard crossing solutions simply cannot cope with the extreme loading conditions.",
+      "performanceTitle": "TITAN Performance Profile",
+      "surfaceLabel": "Surface Deflection",
+      "surfaceDesc": "Flexible rubber surface adapts to vehicle loading while maintaining grip and comfort",
+      "strengthLabel": "Structural Strength",
+      "strengthDesc": "Steel-level strength prevents distortion under extreme industrial loading conditions",
+      "performanceNote": "Revolutionary cold cure moulding process delivers unmatched performance",
+      "whyChooseTitle": "Why Choose TITAN?",
+      "extremeLoadTitle": "Extreme Load Capacity",
+      "extremeLoadDesc": "Handles articulated dumpers, multi-axle haul trucks, and ballast tractors in the most demanding industrial environments.",
+      "advancedMaterialsTitle": "Advanced Materials",
+      "advancedMaterialsDesc": "Exclusive cold cure moulding process and unique polyurethane chemistry for unparalleled durability and performance.",
+      "antiCompressiveTitle": "Anti-Compressive Set",
+      "antiCompressiveDesc": "Manufactured under compression to prevent distortion and gapping, maintaining dimensional stability under extreme loads.",
+      "tongueGrooveTitle": "Tongue & Groove",
+      "tongueGrooveDesc": "NEW moulded rubber tongue and groove connections secure against vertical lift and panel separation.",
+      "matrixSystemTitle": "Matrix System",
+      "matrixSystemDesc": "Entire crossing held in one matrix preventing accidental panel dislodging with end restraint security.",
+      "longCrossingsTitle": "Long Crossings",
+      "longCrossingsDesc": "Particularly suitable for long crossings and angled road intersections requiring maximum structural integrity."
+    },
+    "specs": {
+      "sectionTitle": "Technical Specifications",
+      "intro1": "TITAN is engineered for the most extreme conditions, combining innovative manufacturing techniques with premium materials to create the ultimate heavy-duty crossing solution.",
+      "intro2": "The system's unique compression manufacturing process ensures each panel maintains dimensional stability while the tongue and groove connections provide secure interlocking to prevent vertical lift under extreme loading.",
+      "intro3": "Recommended installation includes Rosehill Rail's exclusive Rubber Edge Beam system with wide outer panels for maximum performance and longevity.",
+      "tableTitle": "TITAN Heavy Duty Specifications",
+      "loadCapacity": "Load Capacity",
+      "loadCapacityValue": "Extreme heavy-duty applications",
+      "manufacturingProcess": "Manufacturing Process",
+      "manufacturingProcessValue": "Compression moulding",
+      "materialTechnology": "Material Technology",
+      "materialTechnologyValue": "Cold cure polyurethane chemistry",
+      "compressiveSet": "Compressive Set",
+      "compressiveSetValue": "Anti-compressive set design",
+      "connectionSystem": "Connection System",
+      "connectionSystemValue": "Moulded tongue & groove",
+      "sleeperCompatibility": "Sleeper Compatibility",
+      "sleeperCompatibilityValue": "600mm centres",
+      "gaugeSupport": "Gauge Support",
+      "gaugeSupportValue": "All gauge types",
+      "railCompatibility": "Rail Compatibility",
+      "railCompatibilityValue": "All rail types, clips, sleepers",
+      "installationMethod": "Installation Method",
+      "installationMethodValue": "Connector linking system",
+      "toolsRequired": "Tools Required",
+      "toolsRequiredValue": "No specific tools required",
+      "matrixDesign": "Matrix Design",
+      "matrixDesignValue": "Single matrix with end restraint",
+      "recommendedEdgeBeam": "Recommended Edge Beam",
+      "recommendedEdgeBeamValue": "Rubber Edge Beam with wide panels"
+    },
+    "gallery": {
+      "sectionTitle": "TITAN Installation Process",
+      "alt1": "TITAN panel construction details",
+      "alt2": "TITAN linking system",
+      "alt3": "TITAN panel lifting process",
+      "alt4": "TITAN installation in progress",
+      "alt5": "TITAN surface detail",
+      "alt6": "Completed TITAN installation"
+    },
+    "applications": {
+      "sectionTitle": "Industrial Applications",
+      "miningTitle": "Mining Operations",
+      "miningDesc": "Designed to handle the extreme loads of mining equipment including articulated dumpers and heavy haul vehicles.",
+      "constructionTitle": "Construction Sites",
+      "constructionDesc": "Perfect for construction environments with multi-axle haul trucks and heavy machinery requiring robust crossing solutions.",
+      "haulageTitle": "Heavy Haulage",
+      "haulageDesc": "Accommodates the world's heaviest traffic including ballast tractors and oversized industrial transportation.",
+      "industrialTitle": "Industrial Facilities",
+      "industrialDesc": "Ideal for heavy industrial environments where standard crossing solutions cannot cope with extreme loading conditions."
+    },
+    "cta": {
+      "title": "Need Ultimate Heavy-Duty Performance?",
+      "description": "Discover how TITAN can handle your most extreme industrial crossing requirements with unmatched strength and durability.",
+      "requestQuote": "Request Quote",
+      "technicalSupport": "Technical Support"
+    }
+  },
+  "baseplatePage": {
+    "hero": {
+      "badge": "FAST INSTALLATION",
+      "title": "Baseplate System",
+      "subtitle": "Versatile rubber crossing panels that can be cut to fit around fishplates, check rails, and turnouts for rapid deployment.",
+      "feature1": "Cut-to-fit capability",
+      "feature2": "Extremely quick installation",
+      "feature3": "No specific tools required",
+      "feature4": "Multiple grade options"
+    },
+    "cutToFit": {
+      "sectionTitle": "Cut-to-Fit Flexibility",
+      "title": "Ultimate Adaptability",
+      "paragraph1": "The Baseplate system's solid rubber panels can be cut to fit around fishplates, check rails (single and double), and turnouts, making them especially useful for tramway applications and tight curves.",
+      "paragraph2": "This flexibility allows for very fast installation and makes the system ideal for average sized crossings across various applications from track access and depots to agricultural and pedestrian use.",
+      "highlightTitle": "Modification Friendly:",
+      "highlightText": "Panels can be modified for cut-to-fit installations, and individual panels can be removed and replaced without dislodging neighbouring panels.",
+      "featuresTitle": "Key Features",
+      "feature1": "Can be cut to fit around complex infrastructure",
+      "feature2": "Perfect for tramway applications and tight curves",
+      "feature3": "1.8 metre standard length, can be cut in half",
+      "feature4": "Simple baseplate pulls panels together securely",
+      "feature5": "Compatible with all edge beam types",
+      "feature6": "Complies with anti-skid requirements"
+    },
+    "benefits": {
+      "sectionTitle": "Why Choose Baseplate System?",
+      "rapidInstallation": {
+        "title": "Rapid Installation",
+        "description": "Extremely quick to install and remove using a simple baseplate mechanism that requires no specific tools."
+      },
+      "cutToFitDesign": {
+        "title": "Cut-to-Fit Design",
+        "description": "Solid rubber panels can be cut to fit around fishplates, check rails, and turnouts for complex installations."
+      },
+      "versatileApplications": {
+        "title": "Versatile Applications",
+        "description": "Available in various grades to accommodate track access, depots, agricultural, and pedestrian applications."
+      },
+      "tramwayCompatible": {
+        "title": "Tramway Compatible",
+        "description": "Panels can be manufactured to fit around tight curves, making them especially useful for tramway applications."
+      },
+      "individualReplacement": {
+        "title": "Individual Replacement",
+        "description": "Individual panels can be removed and replaced without dislodging neighbouring panels for easy maintenance."
+      },
+      "universalCompatibility": {
+        "title": "Universal Compatibility",
+        "description": "Adapted for all types of rail, clips, sleepers, and gauge types with anti-skid compliance."
+      }
+    },
+    "specs": {
+      "title": "Technical Specifications",
+      "paragraph1": "The Baseplate System provides maximum flexibility for crossing installations where standard solutions may not fit. Designed for average sized crossings, this system excels in situations requiring adaptation to existing infrastructure.",
+      "paragraph2": "Each panel is manufactured to 1.8 meters and can be cut in half for shorter crossings, providing unprecedented installation flexibility while maintaining structural integrity and safety compliance.",
+      "tableTitle": "Baseplate System Specifications",
+      "panelLength": "Panel Length",
+      "panelLengthValue": "1.8 meters (can be cut in half)",
+      "sleeperCompatibility": "Sleeper Compatibility",
+      "sleeperCompatibilityValue": "600mm centres",
+      "gaugeSupport": "Gauge Support",
+      "gaugeSupportValue": "All gauge types",
+      "railCompatibility": "Rail Compatibility",
+      "railCompatibilityValue": "All rail types, clips and sleepers",
+      "cutToFit": "Cut-to-Fit",
+      "cutToFitValue": "Around fishplates, check rails, turnouts",
+      "installationMethod": "Installation Method",
+      "installationMethodValue": "Simple baseplate system",
+      "toolsRequired": "Tools Required",
+      "toolsRequiredValue": "No specific tools required",
+      "edgeBeamSupport": "Edge Beam Support",
+      "edgeBeamSupportValue": "All types of edge beams",
+      "safetyCompliance": "Safety Compliance",
+      "safetyComplianceValue": "Anti-skid requirements"
+    },
+    "gallery": {
+      "sectionTitle": "Real-World Applications",
+      "image1Alt": "Baseplate system at Dean Lane Manchester",
+      "image2Alt": "Baseplate system at Felixstowe",
+      "image3Alt": "Cut-to-fit baseplate installation at Thornton Gate",
+      "image4Alt": "Baseplate system for tramways",
+      "image5Alt": "Baseplate RRAPs and TAPs",
+      "image6Alt": "Pedestrian crossing with baseplate system"
+    },
+    "applications": {
+      "sectionTitle": "Ideal Applications",
+      "tramwaySystems": {
+        "title": "Tramway Systems",
+        "description": "Perfect for tramway applications with tight curves and complex track configurations requiring cut-to-fit solutions."
+      },
+      "pedestrianCrossings": {
+        "title": "Pedestrian Crossings",
+        "description": "Ideal for pedestrian crossings requiring quick installation and compliance with anti-skid safety requirements."
+      },
+      "agriculturalAccess": {
+        "title": "Agricultural Access",
+        "description": "Suitable for agricultural crossings where flexible installation and easy modification capabilities are essential."
+      },
+      "depotMaintenance": {
+        "title": "Depot & Maintenance",
+        "description": "Perfect for depot and maintenance facility access points requiring rapid deployment and removal capabilities."
+      }
+    },
+    "cta": {
+      "title": "Need Fast, Flexible Installation?",
+      "text": "Discover how the Baseplate System can provide rapid deployment and cut-to-fit flexibility for your crossing requirements.",
+      "primaryButton": "Request Quote",
+      "secondaryButton": "Technical Support"
+    }
+  },
+  "connectPage": {
+    "hero": {
+      "feature1": "Ideal for very long crossings",
+      "feature2": "Perfect for acute road angles",
+      "feature3": "Individual panel removal",
+      "feature4": "100% recycled materials"
+    },
+    "benefits": {
+      "title": "Why Choose CONNECT?",
+      "integratedMatrix": {
+        "title": "Integrated Matrix Design",
+        "desc": "Unified system with simple bolt connections ensures stability and prevents panel displacement under heavy loads."
+      },
+      "quickInstall": {
+        "title": "Quick Installation",
+        "desc": "Rapid deployment reduces track possession times and minimises service disruption for busy rail networks."
+      },
+      "selectiveMaintenance": {
+        "title": "Selective Maintenance",
+        "desc": "Individual panels can be removed and replaced without dismantling the entire crossing system."
+      },
+      "sustainable": {
+        "title": "Sustainable Solution",
+        "desc": "Manufactured from 100% recycled rubber with unique polyurethane bonding technology."
+      },
+      "universalCompatibility": {
+        "title": "Universal Compatibility",
+        "desc": "Adaptable to all gauge types, rail profiles, and clips while maintaining dimensional stability."
+      },
+      "costEffective": {
+        "title": "Cost Effective",
+        "desc": "Lower lifecycle maintenance costs and simplified inventory management reduce total ownership costs."
+      }
+    },
+    "specs": {
+      "title": "Technical Specifications",
+      "intro1": "The CONNECT System provides dimensional stability at any angle in all operating conditions. Designed specifically for heavy traffic scenarios, this system excels in very long crossings and those positioned at acute angles to the road.",
+      "intro2": "Each panel is compression-manufactured to ensure consistent performance and features our unique cold-cure polyurethane bonding technology for superior durability and environmental performance.",
+      "tableTitle": "CONNECT System Specifications",
+      "panelLength": "Panel Length",
+      "panelLengthValue": "1800mm (standardised)",
+      "sleeperCompat": "Sleeper Compatibility",
+      "sleeperCompatValue": "600mm centres",
+      "gaugeCompat": "Gauge Compatibility",
+      "gaugeCompatValue": "All gauge types",
+      "railProfile": "Rail Profile Support",
+      "railProfileValue": "All rail profiles and clips",
+      "material": "Material Composition",
+      "materialValue": "100% recycled rubber",
+      "bonding": "Bonding Technology",
+      "bondingValue": "Polyurethane cold-cure",
+      "connection": "Connection Method",
+      "connectionValue": "Simple bolt mechanism",
+      "installation": "Installation",
+      "installationValue": "Quick installation/removal",
+      "maintenance": "Maintenance",
+      "maintenanceValue": "Individual panel replacement"
+    },
+    "gallery": {
+      "title": "Real-World Installations"
+    },
+    "applications": {
+      "title": "Ideal Applications",
+      "heavyTraffic": {
+        "title": "Heavy Traffic Crossings",
+        "desc": "Designed to handle extreme traffic loads while maintaining dimensional stability and safety standards."
+      },
+      "acuteAngle": {
+        "title": "Acute Angle Crossings",
+        "desc": "Perfect solution for crossings positioned at challenging angles to the road infrastructure."
+      },
+      "longCrossings": {
+        "title": "Long Crossings",
+        "desc": "Ideal for extended crossing installations where traditional solutions may struggle with consistency."
+      },
+      "industrial": {
+        "title": "Industrial Sites",
+        "desc": "Suitable for industrial environments requiring robust, reliable crossing solutions with minimal maintenance."
+      }
+    },
+    "cta": {
+      "title": "Ready to Upgrade Your Crossings?",
+      "text": "Discover how the CONNECT System can provide dimensional stability and reduce maintenance costs for your rail infrastructure projects.",
+      "technicalSupport": "Technical Support"
+    }
   }
 }
