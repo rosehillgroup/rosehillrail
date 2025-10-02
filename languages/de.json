@@ -319,9 +319,10 @@
     "address": {
       "name": "Rosehill Rail",
       "division": "Eine Division der Rosehill Group",
-      "line1": "Spring Bank Mills",
+      "line1": "Beech Road",
       "line2": "Sowerby Bridge",
-      "line3": "West Yorkshire HX6 3BW",
+      "line3": "West Yorkshire",
+      "postcode": "HX6 2JT",
       "country": "Vereinigtes Königreich"
     },
     "form": {
