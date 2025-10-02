@@ -51,14 +51,8 @@ class RosehillI18n {
             return;
         }
 
-        // Check browser language
-        const browserLang = this.getBrowserLanguage();
-        if (browserLang && this.supportedLanguages.includes(browserLang)) {
-            this.currentLanguage = browserLang;
-            return;
-        }
-
-        // Default to English
+        // Always default to English for new visitors
+        // Browser language detection removed to ensure consistent English default
         this.currentLanguage = this.defaultLanguage;
     }
 
