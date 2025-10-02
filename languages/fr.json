@@ -793,5 +793,493 @@
       "primaryButton": "Demander un Devis",
       "secondaryButton": "Support Technique"
     }
+  },
+  "interlockingPage": {
+    "hero": {
+      "badge": "FLEXIBILITÉ MODULAIRE",
+      "title": "RRAP à Emboîtement",
+      "subtitle": "Système modulaire haute résistance de point d'accès route-rail installable indépendamment de l'entraxe des traverses.",
+      "feature1": "Indépendant de l'entraxe des traverses",
+      "feature2": "Processus d'installation rapide",
+      "feature3": "Garantie d'ajustement parfait",
+      "feature4": "Économies importantes"
+    },
+    "modularSection": {
+      "sectionTitle": "Indépendance de l'Entraxe des Traverses",
+      "title": "Flexibilité Ultime",
+      "paragraph1": "Les panneaux individuels sont fabriqués pour s'adapter au type spécifique de rail, de traverse et d'attache afin d'assurer un ajustement parfait, puis reliés ensemble pour éviter qu'ils ne se délogent.",
+      "paragraph2": "Cette approche innovante signifie que vous n'êtes pas contraint par les schémas d'espacement existants des traverses - le système s'adapte à votre infrastructure, et non l'inverse.",
+      "highlightTitle": "Garantie d'Ajustement Parfait :",
+      "highlightText": "Chaque panneau est fabriqué sur mesure pour votre profil de rail spécifique, votre type de traverse et votre configuration d'attache, garantissant des performances et une sécurité optimales.",
+      "diagramTitle": "Comparaison de l'Espacement des Traverses",
+      "standardTitle": "Exigence du Système Standard",
+      "standardMeasurement": "Entraxes de 600mm (espacement régulier)",
+      "interlockingTitle": "Capacité du RRAP à Emboîtement",
+      "interlockingMeasurement": "Entraxes de 450mm / 825mm / 375mm (irrégulier)",
+      "caption": "Le RRAP à Emboîtement s'adapte à n'importe quelle configuration d'espacement des traverses - les systèmes standard nécessitent des entraxes de 600mm"
+    },
+    "benefits": {
+      "sectionTitle": "Pourquoi Choisir le RRAP à Emboîtement ?",
+      "flexibleInstallation": {
+        "title": "Installation Flexible",
+        "description": "Installation rapide et simple utilisant des boulons de connexion sans outils spécifiques requis pour un déploiement rapide."
+      },
+      "reducedPossession": {
+        "title": "Occupation Réduite",
+        "description": "Conçu pour être rapide et facile à installer, réduisant considérablement les temps d'occupation des voies et les coûts associés."
+      },
+      "perfectFit": {
+        "title": "Ajustement Parfait",
+        "description": "Panneaux individuels fabriqués pour s'adapter aux types spécifiques de rail, traverse et attache garantissant des performances optimales."
+      },
+      "interlockingDesign": {
+        "title": "Conception à Emboîtement",
+        "description": "Les panneaux sont reliés ensemble pour éviter le délogement tout en maintenant une stabilité de performance constante."
+      },
+      "costEffective": {
+        "title": "Économique",
+        "description": "Coûts d'installation réduits et temps d'occupation réduits offrent des économies importantes pour les exploitants ferroviaires."
+      },
+      "multiPurpose": {
+        "title": "Multifonction",
+        "description": "Idéal pour les points d'accès temporaires, semi-permanents et permanents avec support latéral amélioré."
+      }
+    },
+    "specs": {
+      "sectionTitle": "Spécifications Techniques",
+      "paragraph1": "Le système RRAP à Emboîtement représente une ingénierie modulaire avancée, conçue spécifiquement pour surmonter les limitations des solutions de traversée traditionnelles à espacement fixe.",
+      "paragraph2": "Chaque installation est configurée sur mesure pour correspondre exactement à vos exigences, du profil de rail et du type d'écartement à la configuration des traverses et aux systèmes d'attache.",
+      "paragraph3": "La flexibilité du système le rend idéal pour les installations difficiles où les solutions standard ne conviennent tout simplement pas.",
+      "tableTitle": "Spécifications du RRAP à Emboîtement",
+      "designIndependence": "Indépendance de Conception",
+      "designIndependenceValue": "Indépendant de l'entraxe des traverses",
+      "panelLength": "Longueur du Panneau",
+      "panelLengthValue": "Longueur comprimée de 1800mm",
+      "connectionSystem": "Système de Connexion",
+      "connectionSystemValue": "Système de connecteur à emboîtement",
+      "constructionType": "Type de Construction",
+      "constructionTypeValue": "Construction modulaire de panneaux",
+      "gaugeCompatibility": "Compatibilité d'Écartement",
+      "gaugeCompatibilityValue": "Compatibilité d'écartement universelle",
+      "fixingSystem": "Système de Fixation",
+      "fixingSystemValue": "Cavités de fixation protégées",
+      "matrixDesign": "Conception Matricielle",
+      "matrixDesignValue": "Conception matricielle unifiée",
+      "edgeBeamSupport": "Support de Longrine",
+      "edgeBeamSupportValue": "Compatibilité avec plusieurs longrines",
+      "installationMethod": "Méthode d'Installation",
+      "installationMethodValue": "Système de boulons de connexion"
+    },
+    "gallery": {
+      "sectionTitle": "Processus d'Installation"
+    },
+    "applications": {
+      "sectionTitle": "Applications Idéales",
+      "temporaryAccess": {
+        "title": "Points d'Accès Temporaires",
+        "description": "Parfait pour les projets de construction nécessitant un accès ferroviaire temporaire avec capacités de déploiement et de retrait rapides."
+      },
+      "semiPermanent": {
+        "title": "Solutions Semi-Permanentes",
+        "description": "Idéal pour les projets à moyen terme où la flexibilité et l'adaptabilité aux exigences changeantes sont essentielles."
+      },
+      "permanent": {
+        "title": "Installations Permanentes",
+        "description": "Points d'accès à long terme pour installations industrielles, dépôts et installations de maintenance nécessitant des performances fiables."
+      },
+      "irregular": {
+        "title": "Infrastructure Irrégulière",
+        "description": "Spécialement conçu pour les installations difficiles où les solutions d'espacement standard ne fonctionneront pas."
+      }
+    },
+    "cta": {
+      "title": "Besoin de Solutions d'Accès Flexibles ?",
+      "description": "Découvrez comment le système RRAP à Emboîtement peut résoudre vos exigences de points d'accès les plus difficiles avec une conception modulaire sur mesure.",
+      "requestQuote": "Demander un Devis",
+      "technicalSupport": "Support Technique"
+    }
+  },
+  "accessoriesPage": {
+    "hero": {
+      "badge": "SOLUTIONS COMPLÈTES"
+    },
+    "overview": {
+      "title": "Tout Ce Dont Vous Avez Besoin",
+      "paragraph1": "Nous offrons une gamme complète de pièces détachées et d'accessoires conçus pour soutenir tous les aspects de l'installation, de la maintenance et de l'exploitation de votre passage à niveau ferroviaire. Des broches et crochets de levage pour faciliter l'élévation de nos produits, aux fixations spécialisées, outils et solutions de finition.",
+      "paragraph2": "Notre vaste inventaire comprend tout, des barres de connexion et plaques de couverture de précision aux systèmes de marquage de lignes et fixations spécialisées, garantissant que vous avez accès aux bons composants quand vous en avez besoin.",
+      "image1Caption": "Équipement de Levage Professionnel",
+      "image2Caption": "Fixations Spécialisées",
+      "image3Caption": "Solutions de Finition",
+      "highlightTitle": "Solutions Sur Mesure Disponibles :",
+      "highlightText": "Vous ne trouvez pas exactement ce dont vous avez besoin ? Notre équipe technique peut souvent développer des accessoires personnalisés pour répondre aux exigences spécifiques du projet et aux conditions du site."
+    },
+    "categories": {
+      "title": "Catégories d'Accessoires",
+      "installation": {
+        "title": "Équipement d'Installation",
+        "description": "Outils et équipements essentiels pour une installation sûre et efficace des systèmes de traversée.",
+        "examples": "Broches de levage, crochets de levage, kits d'outils, dispositifs de retenue"
+      },
+      "fixing": {
+        "title": "Fixation et Connexion",
+        "description": "Fixations, boulons et solutions de connexion spécialisés pour un assemblage sécurisé du système.",
+        "examples": "Barres de connexion, vis omni, boulons M18, kits de fixation"
+      },
+      "protection": {
+        "title": "Protection et Sécurité",
+        "description": "Équipement de sécurité et composants de protection pour une sécurité d'installation et d'exploitation améliorée.",
+        "examples": "Protections de chaîne, plaques déflectrices, limiteurs de mouvement"
+      },
+      "finishing": {
+        "title": "Solutions de Finition",
+        "description": "Touches de finition professionnelles incluant couvercles, joints et systèmes de marquage.",
+        "examples": "Plaques de couverture, bouchons en caoutchouc, primaire de marquage de lignes"
+      },
+      "components": {
+        "title": "Composants du Système",
+        "description": "Pièces de remplacement et composants de mise à niveau pour tous les types de systèmes de traversée.",
+        "examples": "Plaques de base à tourelle, retenues d'extrémité, composants de remplissage"
+      },
+      "tools": {
+        "title": "Outils Spécialisés",
+        "description": "Outils et équipements spécialement conçus pour les systèmes Rosehill Rail.",
+        "examples": "Visseuses à choc, douilles spécialisées, aides à l'installation"
+      }
+    },
+    "gallery": {
+      "title": "Exemples de Produits"
+    },
+    "cta": {
+      "title": "Besoin de Quelque Chose de Spécifique ?",
+      "text": "Notre gamme complète d'accessoires est en constante expansion. Contactez-nous directement pour des devis, des spécifications techniques ou pour discuter de solutions personnalisées pour vos besoins spécifiques.",
+      "phoneTitle": "Support Téléphonique",
+      "phoneInfo": "+44 (0)1422 839 456<br>Conseils techniques disponibles",
+      "emailTitle": "Demandes par E-mail",
+      "emailInfo": "info@rosehillrail.com<br>Spécifications détaillées fournies",
+      "consultationTitle": "Consultation Projet",
+      "consultationInfo": "Solutions personnalisées<br>Support technique",
+      "button": "Obtenir un Devis & Support Technique"
+    }
+  },
+  "edgebeamsPage": {
+    "hero": {
+      "weightReduction": "Réduction de poids significative vs béton",
+      "recycledRubber": "Caoutchouc de pneus 100% recyclé",
+      "coldCure": "Technologie de liaison à froid",
+      "compatible": "Compatible avec tous les systèmes de traversée"
+    },
+    "rubberSection": {
+      "title": "Longrines en Caoutchouc - Notre Solution Recommandée",
+      "subtitle": "Innovation Légère",
+      "description1": "Les longrines en caoutchouc de Rosehill Rail offrent une alternative durable et légère aux solutions traditionnelles en béton. Fabriquées à partir de caoutchouc de pneus 100% recyclé et liées grâce à une technologie de durcissement à froid de pointe, ces longrines offrent des économies de poids importantes tout en maintenant une durabilité exceptionnelle.",
+      "description2": "Avec des canaux de drainage intégrés, une conception non écaillable et des points de levage stratégiques, nos longrines en caoutchouc offrent un support de traversée amélioré avec des références de durabilité améliorées et des coûts de transport réduits.",
+      "advantagesTitle": "Avantages Clés :",
+      "advantages": "Acceptation Network Rail, système d'installation rapide et compatibilité avec tous les systèmes de traversée font des longrines en caoutchouc le choix privilégié pour la plupart des applications."
+    },
+    "weightComparison": {
+      "title": "Comparaison de Poids",
+      "concrete": {
+        "label": "Béton Traditionnel",
+        "value": "Lourd",
+        "desc": "Manipulation difficile, coûts de transport élevés"
+      },
+      "rubber": {
+        "label": "Longrines en Caoutchouc",
+        "value": "Léger",
+        "desc": "Manipulation facile, coûts de transport réduits"
+      },
+      "summary": "Réduction de poids significative pour une installation plus facile et des coûts logistiques réduits"
+    },
+    "materials": {
+      "title": "Options de Matériaux pour Chaque Application",
+      "rubber": {
+        "description": "Notre solution phare combinant durabilité, performance et rentabilité. Fabriquée à partir de caoutchouc de pneus 100% recyclé avec technologie de liaison à durcissement à froid.",
+        "feature1": "Caoutchouc de pneus 100% recyclé",
+        "feature2": "Technologie de liaison à durcissement à froid",
+        "feature3": "Réduction de poids significative",
+        "feature4": "Accepté par Network Rail",
+        "feature5": "Canaux de drainage intégrés",
+        "feature6": "Conception non écaillable",
+        "feature7": "Installation rapide",
+        "feature8": "Durée de vie prolongée"
+      },
+      "steel": {
+        "name": "Longrines en Acier",
+        "description": "Durabilité et résistance maximales pour les zones à fort trafic où la robustesse est critique. Conçues pour les conditions les plus exigeantes.",
+        "feature1": "Durabilité maximale",
+        "feature2": "Applications à fort trafic",
+        "feature3": "Résistance extrême",
+        "feature4": "Stabilité à long terme",
+        "feature5": "Usure minimale"
+      },
+      "plastic": {
+        "name": "Longrines en Plastique",
+        "description": "Option légère et résistante à la corrosion parfaite pour les installations nécessitant facilité de manipulation et déploiement rapide.",
+        "feature1": "Conception légère",
+        "feature2": "Résistant à la corrosion",
+        "feature3": "Manipulation facile",
+        "feature4": "Déploiement rapide",
+        "feature5": "Résistant aux intempéries"
+      }
+    },
+    "benefits": {
+      "title": "Pourquoi Choisir Nos Longrines ?",
+      "sustainability": {
+        "title": "Matériaux Durables",
+        "desc": "Les longrines en caoutchouc utilisent du caoutchouc de pneus 100% recyclé, offrant des références de durabilité améliorées et des avantages environnementaux."
+      },
+      "installation": {
+        "title": "Installation Rapide",
+        "desc": "Le système d'installation rapide avec points de levage stratégiques réduit le temps d'installation et les coûts de main-d'œuvre associés."
+      },
+      "durability": {
+        "title": "Durabilité Améliorée",
+        "desc": "La conception non écaillable empêche la fissuration et maintient l'intégrité structurelle tout au long de la durée de vie prolongée."
+      },
+      "transport": {
+        "title": "Coûts de Transport Réduits",
+        "desc": "La réduction de poids significative par rapport aux alternatives en béton réduit les coûts de transport et permet une manipulation plus facile sur site."
+      },
+      "drainage": {
+        "title": "Drainage Intégré",
+        "desc": "Les canaux de drainage intégrés empêchent l'accumulation d'eau et réduisent les besoins de maintenance au fil du temps."
+      },
+      "compatibility": {
+        "title": "Compatibilité Universelle",
+        "desc": "Compatible avec tous les systèmes de traversée et disponible en longueur standard de 1,8 mètre pour des options d'installation flexibles."
+      }
+    },
+    "gallery": {
+      "title": "Exemples d'Installation"
+    },
+    "applications": {
+      "title": "Recommandations d'Application",
+      "standard": {
+        "title": "Installations Standard",
+        "desc": "Longrines en caoutchouc recommandées pour la plupart des applications en raison de la durabilité, de la réduction de poids et des avantages de performance complets."
+      },
+      "heavyDuty": {
+        "title": "Exigences Usage Intensif",
+        "desc": "Longrines en acier pour conditions de charge extrêmes et zones à fort trafic où durabilité et résistance maximales sont critiques."
+      },
+      "rapidDeployment": {
+        "title": "Déploiement Rapide",
+        "desc": "Longrines en plastique pour installations nécessitant déploiement rapide, facilité de manipulation et résistance à la corrosion."
+      },
+      "allSystems": {
+        "title": "Tous les Systèmes de Traversée",
+        "desc": "Compatible avec les systèmes CONNECT, LINK, TITAN, à Selle et RRAP à Emboîtement pour un support de traversée complet."
+      }
+    },
+    "cta": {
+      "title": "Besoin de la Bonne Solution de Longrine ?",
+      "text": "Découvrez comment nos longrines en caoutchouc peuvent fournir un support de traversée léger et durable avec des avantages environnementaux et de coûts significatifs.",
+      "requestQuote": "Demander un Devis",
+      "consultation": "Consultation Matériaux"
+    }
+  },
+  "antitrespassPage": {
+    "stats": {
+      "sectionTitle": "Performance de Sécurité Prouvée",
+      "reductionNumber": "78%",
+      "reductionLabel": "Réduction des Incidents d'Intrusion",
+      "variationsNumber": "3",
+      "variationsLabel": "Variantes Approuvées Network Rail",
+      "recycledNumber": "100%",
+      "recycledLabel": "Construction en Caoutchouc Recyclé",
+      "toolsNumber": "0",
+      "toolsLabel": "Outils Spécifiques Requis"
+    },
+    "security": {
+      "sectionTitle": "Technologie de Dissuasion Améliorée",
+      "conicalTitle": "Conception à Picots Coniques",
+      "conicalParagraph1": "Nos panneaux anti-intrusion uniques présentent une conception sophistiquée à picots coniques qui offre une dissuasion améliorée tout en réduisant le temps d'installation par rapport aux solutions de sécurité traditionnelles.",
+      "conicalParagraph2": "Fabriqués à partir de caoutchouc 100% recyclé, ces panneaux offrent une solution respectueuse de l'environnement pour la sécurité ferroviaire tout en offrant des résultats prouvés dans la réduction de l'accès non autorisé aux voies.",
+      "networkRailTitle": "Approuvé Network Rail :",
+      "networkRailDesc": "Trois variantes de panneaux distinctes approuvées par Network Rail garantissent la conformité et l'efficacité pour différentes exigences d'infrastructure ferroviaire.",
+      "variationsTitle": "Variantes de Panneaux",
+      "doubleFlangeTitle": "Double Boudin",
+      "doubleFlangeDesc": "Pour applications d'écartement à quatre pieds (1490mm × 1300mm × 147mm, 116kg)",
+      "singleFlangeTitle": "Simple Boudin",
+      "singleFlangeDesc": "Pour applications extérieures à quatre pieds (1487mm × 1300mm × 147mm, 110kg)",
+      "flangelessTitle": "Sans Boudin",
+      "flangelessDesc": "Pleine largeur pour applications de quai (1484mm × 1300mm × 147mm, 98kg)"
+    },
+    "benefits": {
+      "sectionTitle": "Pourquoi Choisir les Panneaux Anti-Intrusion ?",
+      "enhancedSecurity": {
+        "title": "Sécurité Améliorée",
+        "description": "Réduction jusqu'à 78% des incidents d'intrusion améliore considérablement la sécurité du réseau et des passagers."
+      },
+      "quickInstallation": {
+        "title": "Installation Rapide",
+        "description": "Temps d'installation et coûts de main-d'œuvre réduits avec kit de fixation complet fourni et aucun outil spécifique requis."
+      },
+      "networkRailApproved": {
+        "title": "Approuvé Network Rail",
+        "description": "Trois variantes de panneaux approuvées garantissent la conformité et l'efficacité pour différents besoins d'infrastructure ferroviaire."
+      },
+      "environmentallySustainable": {
+        "title": "Écologiquement Durable",
+        "description": "Fabriqué à partir de caoutchouc 100% recyclé offrant une solution de sécurité respectueuse de l'environnement."
+      },
+      "selfDrainingDesign": {
+        "title": "Conception Auto-Drainante",
+        "description": "La configuration auto-drainante empêche l'accumulation d'eau et réduit les besoins de maintenance au fil du temps."
+      },
+      "lowerWholeLifeCosts": {
+        "title": "Coûts de Cycle de Vie Réduits",
+        "description": "Temps d'occupation de voie minimisé et exigences de maintenance simplifiées réduisent le coût total de possession."
+      }
+    },
+    "specs": {
+      "sectionTitle": "Spécifications Techniques",
+      "paragraph1": "Les Panneaux Anti-Intrusion sont conçus pour fournir un effet dissuasif maximal tout en maintenant la facilité d'installation et la durabilité environnementale. La construction modulaire permet un déploiement flexible dans divers environnements ferroviaires.",
+      "paragraph2": "Chaque panneau présente une conception à picots coniques pour une dissuasion améliorée et est fabriqué à partir de caoutchouc 100% recyclé avec une configuration auto-drainante pour minimiser les besoins de maintenance.",
+      "tableTitle": "Spécifications des Panneaux Anti-Intrusion",
+      "designType": "Type de Conception",
+      "designTypeValue": "Conception à picots coniques",
+      "construction": "Construction",
+      "constructionValue": "Système de construction modulaire",
+      "materialComposition": "Composition du Matériau",
+      "materialCompositionValue": "Caoutchouc 100% recyclé",
+      "approvalStatus": "Statut d'Approbation",
+      "approvalStatusValue": "Conception approuvée Network Rail",
+      "fixingKit": "Kit de Fixation",
+      "fixingKitValue": "Kit de fixation complet fourni",
+      "drainage": "Drainage",
+      "drainageValue": "Configuration auto-drainante",
+      "panelVariations": "Variantes de Panneaux",
+      "panelVariationsValue": "Double boudin, simple boudin, sans boudin",
+      "standardDimensions": "Dimensions Standard",
+      "standardDimensionsValue": "~1485mm × 1300mm × 147mm",
+      "weightRange": "Plage de Poids",
+      "weightRangeValue": "98kg - 116kg (varie selon le type)"
+    },
+    "gallery": {
+      "sectionTitle": "Exemples d'Installation"
+    },
+    "applications": {
+      "sectionTitle": "Applications de Sécurité",
+      "fourFootGauge": {
+        "title": "Écartement à Quatre Pieds",
+        "description": "Les panneaux à double boudin offrent une couverture de sécurité complète pour les configurations de voie à écartement de quatre pieds."
+      },
+      "outsideFourFoot": {
+        "title": "Extérieur Quatre Pieds",
+        "description": "Conception à simple boudin optimisée pour les applications extérieures à quatre pieds où les contraintes d'espace s'appliquent."
+      },
+      "platformApplications": {
+        "title": "Applications de Quai",
+        "description": "Panneaux sans boudin pleine largeur spécialement conçus pour la sécurité des extrémités de quai et la sécurité des passagers."
+      },
+      "transitNetworks": {
+        "title": "Réseaux de Transport",
+        "description": "Efficacité prouvée sur les réseaux de transport léger, de métro et de rail lourd pour une prévention complète de l'intrusion."
+      }
+    },
+    "cta": {
+      "title": "Améliorez la Sécurité de Votre Réseau",
+      "description": "Découvrez comment les Panneaux Anti-Intrusion peuvent réduire l'accès non autorisé jusqu'à 78% tout en offrant des solutions de sécurité ferroviaire écologiquement durables.",
+      "securityConsultation": "Consultation Sécurité"
+    }
+  },
+  "walkwayPage": {
+    "sustainability": {
+      "title": "Solutions de Cheminement Durables",
+      "beyondConcreteTitle": "Au-Delà du Béton",
+      "paragraph1": "Le Panneau de Cheminement Rosehill offre une alternative plus sécurisée, durable et rentable aux pavés en béton traditionnels et aux sentiers en agrégats.",
+      "paragraph2": "Avec une préparation minimale du sol requise et des capacités d'ajustement indépendantes des conditions météorologiques, ces panneaux offrent des avantages immédiats tout en fournissant des performances exceptionnelles à long terme avec un impact environnemental réduit.",
+      "environmentalTitle": "Avantages Environnementaux :",
+      "environmentalText": "Empreinte carbone considérablement réduite par rapport aux alternatives en béton, avec réutilisabilité complète et conception relocalisable offrant des avantages environnementaux immédiats et à long terme.",
+      "comparisonTitle": "Comparaison de Durée de Vie de Conception",
+      "concreteLabel": "Béton Traditionnel",
+      "concreteYears": "20-25",
+      "concreteDesc": "Années de durée de vie typique avec remplacement requis",
+      "walkwayLabel": "Panneaux de Cheminement",
+      "walkwayYears": "40+",
+      "walkwayDesc": "Années de vie de conception avec réutilisabilité complète",
+      "comparisonNote": "Durée de vie prolongée avec conception réutilisable et relocalisable"
+    },
+    "benefits": {
+      "title": "Pourquoi Choisir les Panneaux de Cheminement ?",
+      "carbonFootprint": {
+        "title": "Empreinte Carbone Réduite",
+        "desc": "Impact environnemental considérablement réduit par rapport au béton avec composition en caoutchouc recyclé et conception réutilisable."
+      },
+      "quickInstallation": {
+        "title": "Installation Rapide",
+        "desc": "Ajustement indépendant des conditions météorologiques avec préparation minimale du sol et options d'installation flexibles pour un déploiement rapide."
+      },
+      "slipResistant": {
+        "title": "Sécurité Antidérapante",
+        "desc": "Surface antidérapante PSV 45 améliore la sécurité des travailleurs et fournit un accès fiable dans toutes les conditions météorologiques."
+      },
+      "minimalMaintenance": {
+        "title": "Maintenance Minimale",
+        "desc": "Conception résistante aux mauvaises herbes et aux rongeurs avec exigences de maintenance continue minimales réduit les coûts du cycle de vie."
+      },
+      "fullyReusable": {
+        "title": "Entièrement Réutilisable",
+        "desc": "Réutilisabilité complète et conception relocalisable permet aux panneaux d'être déplacés et réutilisés plusieurs fois à travers les projets."
+      },
+      "lowerCosts": {
+        "title": "Coûts de Durée de Vie Réduits",
+        "desc": "Durée de vie de conception prolongée de 40+ ans et réutilisabilité offrent une valeur supérieure par rapport aux solutions en béton traditionnelles."
+      }
+    },
+    "specs": {
+      "title": "Spécifications Techniques",
+      "intro1": "Les Panneaux de Cheminement sont conçus pour des performances à long terme avec construction modulaire permettant une installation flexible dans diverses applications de voies d'accès. La surface antidérapante répond aux normes PSV 45 pour un accès piéton sûr.",
+      "intro2": "Chaque panneau de 700mm × 500mm est conçu pour une installation simple avec préparation minimale du sol, les rendant idéaux pour les solutions de sentiers temporaires et permanents où la durabilité environnementale est une priorité.",
+      "tableTitle": "Spécifications des Panneaux de Cheminement",
+      "panelSize": "Taille du Panneau",
+      "panelSizeValue": "700mm × 500mm",
+      "surfaceStandard": "Norme de Surface",
+      "surfaceStandardValue": "Antidérapant (PSV 45)",
+      "groundPrep": "Préparation du Sol",
+      "groundPrepValue": "Préparation minimale requise",
+      "installOptions": "Options d'Installation",
+      "installOptionsValue": "Méthodes d'installation flexibles",
+      "weatherDependency": "Dépendance Météorologique",
+      "weatherDependencyValue": "Ajustement indépendant des conditions météorologiques",
+      "resistanceFeatures": "Caractéristiques de Résistance",
+      "resistanceFeaturesValue": "Résistant aux mauvaises herbes et aux rongeurs",
+      "constructionType": "Type de Construction",
+      "constructionTypeValue": "Système de construction modulaire",
+      "materialComp": "Composition du Matériau",
+      "materialCompValue": "Composition en caoutchouc recyclé",
+      "designLife": "Durée de Vie de Conception",
+      "designLifeValue": "40+ ans",
+      "reusability": "Réutilisabilité",
+      "reusabilityValue": "Entièrement réutilisable et relocalisable"
+    },
+    "gallery": {
+      "title": "Processus d'Installation"
+    },
+    "applications": {
+      "title": "Applications de Sentiers",
+      "pedestrian": {
+        "title": "Sentiers Piétons",
+        "desc": "Alternative au pavage en béton pour les voies d'accès piétonnes avec sécurité et avantages environnementaux améliorés."
+      },
+      "construction": {
+        "title": "Accès aux Chantiers",
+        "desc": "Voies d'accès temporaires et permanentes pour les chantiers de construction avec installation rapide et conception réutilisable."
+      },
+      "industrial": {
+        "title": "Passerelles Industrielles",
+        "desc": "Solutions de passerelles durables pour installations industrielles nécessitant un accès antidérapant et indépendant des conditions météorologiques."
+      },
+      "environmental": {
+        "title": "Sites Environnementaux",
+        "desc": "Solutions de sentiers durables pour zones écologiquement sensibles avec exigences minimales de perturbation du sol."
+      }
+    },
+    "cta": {
+      "title": "Prêt pour des Sentiers Durables ?",
+      "text": "Découvrez comment les Panneaux de Cheminement peuvent fournir une alternative durable et réutilisable au pavage en béton avec une durée de vie de conception de 40+ ans et des avantages environnementaux améliorés.",
+      "secondaryButton": "Consultation Durabilité"
+    }
   }
 }

@@ -793,5 +793,493 @@
       "primaryButton": "Angebot Anfordern",
       "secondaryButton": "Technischer Support"
     }
+  },
+  "interlockingPage": {
+    "hero": {
+      "badge": "MODULARE FLEXIBILITÄT",
+      "title": "Interlocking RRAP",
+      "subtitle": "Hochfestes modulares Straße-Schiene-Zugangspunkt-System, das unabhängig von der Schwellenabstandsanordnung installiert werden kann.",
+      "feature1": "Schwellenabstands-unabhängig",
+      "feature2": "Schneller Installationsprozess",
+      "feature3": "Perfekte Passform-Garantie",
+      "feature4": "Erhebliche Kosteneinsparungen"
+    },
+    "modularSection": {
+      "sectionTitle": "Schwellenabstands-Unabhängigkeit",
+      "title": "Ultimative Flexibilität",
+      "paragraph1": "Einzelne Platten werden für den spezifischen Schienen-, Schwellen- und Befestigungstyp hergestellt, um perfekte Passform zu gewährleisten, dann miteinander verbunden, um ein Lösen zu verhindern.",
+      "paragraph2": "Dieser innovative Ansatz bedeutet, dass Sie nicht durch bestehende Schwellenabstandsmuster eingeschränkt sind - das System passt sich Ihrer Infrastruktur an, nicht umgekehrt.",
+      "highlightTitle": "Perfekte Passform-Garantie:",
+      "highlightText": "Jede Platte ist maßgefertigt für Ihr spezifisches Schienenprofil, Schwellentyp und Befestigungskonfiguration, um optimale Leistung und Sicherheit zu gewährleisten.",
+      "diagramTitle": "Schwellenabstands-Vergleich",
+      "standardTitle": "Standard-Systemanforderung",
+      "standardMeasurement": "600mm Abstände (regelmäßige Abstände)",
+      "interlockingTitle": "Interlocking RRAP Fähigkeit",
+      "interlockingMeasurement": "450mm / 825mm / 375mm Abstände (unregelmäßig)",
+      "caption": "Interlocking RRAP passt sich jeder Schwellenabstandskonfiguration an - Standardsysteme erfordern 600mm Abstände"
+    },
+    "benefits": {
+      "sectionTitle": "Warum Interlocking RRAP Wählen?",
+      "flexibleInstallation": {
+        "title": "Flexible Installation",
+        "description": "Schnelle und einfache Installation mit Verbindungsschrauben ohne spezifische Werkzeuge für schnellen Einsatz erforderlich."
+      },
+      "reducedPossession": {
+        "title": "Reduzierte Besetzung",
+        "description": "Für schnelle und einfache Installation konzipiert, reduziert erheblich Gleisbesetzungszeiten und damit verbundene Kosten."
+      },
+      "perfectFit": {
+        "title": "Perfekte Passform",
+        "description": "Einzelne Platten für spezifische Schienen-, Schwellen- und Befestigungstypen gefertigt, um optimale Leistung zu gewährleisten."
+      },
+      "interlockingDesign": {
+        "title": "Verriegelungsdesign",
+        "description": "Platten sind miteinander verbunden, um Lösen zu verhindern und gleichzeitig konstante Leistungsstabilität zu gewährleisten."
+      },
+      "costEffective": {
+        "title": "Kosteneffizient",
+        "description": "Geringere Installationskosten und reduzierte Besetzungszeiten bieten erhebliche Kosteneinsparungen für Bahnbetreiber."
+      },
+      "multiPurpose": {
+        "title": "Mehrzweck",
+        "description": "Ideal für temporäre, semi-permanente und permanente Zugangspunkte mit verbesserter Seitenstützung."
+      }
+    },
+    "specs": {
+      "sectionTitle": "Technische Spezifikationen",
+      "paragraph1": "Das Interlocking RRAP System repräsentiert fortschrittliche modulare Technik, speziell entwickelt, um die Einschränkungen traditioneller fester Abstandsübergangslösungen zu überwinden.",
+      "paragraph2": "Jede Installation ist maßgeschneidert konfiguriert, um genau Ihren Anforderungen zu entsprechen, vom Schienenprofil und Spurweitentyp bis zur Schwellenkonfiguration und Befestigungssystemen.",
+      "paragraph3": "Die Flexibilität des Systems macht es ideal für anspruchsvolle Installationen, wo Standardlösungen einfach nicht passen.",
+      "tableTitle": "Interlocking RRAP Spezifikationen",
+      "designIndependence": "Design-Unabhängigkeit",
+      "designIndependenceValue": "Schwellenabstands-unabhängig",
+      "panelLength": "Plattenlänge",
+      "panelLengthValue": "1800mm komprimierte Länge",
+      "connectionSystem": "Verbindungssystem",
+      "connectionSystemValue": "Interlocking Verbindersystem",
+      "constructionType": "Konstruktionstyp",
+      "constructionTypeValue": "Modulare Plattenkonstruktion",
+      "gaugeCompatibility": "Spurweitenkompatibilität",
+      "gaugeCompatibilityValue": "Universelle Spurweitenkompatibilität",
+      "fixingSystem": "Befestigungssystem",
+      "fixingSystemValue": "Geschützte Befestigungshohlräume",
+      "matrixDesign": "Matrix-Design",
+      "matrixDesignValue": "Einheitliches Matrix-Design",
+      "edgeBeamSupport": "Randträgerunterstützung",
+      "edgeBeamSupportValue": "Mehrfache Randträgerkompatibilität",
+      "installationMethod": "Installationsmethode",
+      "installationMethodValue": "Verbindungsschraubensystem"
+    },
+    "gallery": {
+      "sectionTitle": "Installationsprozess"
+    },
+    "applications": {
+      "sectionTitle": "Ideale Anwendungen",
+      "temporaryAccess": {
+        "title": "Temporäre Zugangspunkte",
+        "description": "Perfekt für Bauprojekte, die temporären Gleiszugang mit schnellen Einsatz- und Entfernungsfähigkeiten erfordern."
+      },
+      "semiPermanent": {
+        "title": "Semi-Permanente Lösungen",
+        "description": "Ideal für mittelfristige Projekte, bei denen Flexibilität und Anpassungsfähigkeit an sich ändernde Anforderungen wesentlich sind."
+      },
+      "permanent": {
+        "title": "Permanente Installationen",
+        "description": "Langfristige Zugangspunkte für Industrieanlagen, Depots und Wartungsanlagen, die zuverlässige Leistung erfordern."
+      },
+      "irregular": {
+        "title": "Unregelmäßige Infrastruktur",
+        "description": "Speziell entwickelt für anspruchsvolle Installationen, bei denen Standard-Abstandslösungen nicht funktionieren."
+      }
+    },
+    "cta": {
+      "title": "Benötigen Sie Flexible Zugangslösungen?",
+      "description": "Entdecken Sie, wie das Interlocking RRAP System Ihre anspruchsvollsten Zugangspunkt-Anforderungen mit maßgeschneidertem modularem Design lösen kann.",
+      "requestQuote": "Angebot Anfordern",
+      "technicalSupport": "Technischer Support"
+    }
+  },
+  "accessoriesPage": {
+    "hero": {
+      "badge": "KOMPLETTE LÖSUNGEN"
+    },
+    "overview": {
+      "title": "Alles Was Sie Benötigen",
+      "paragraph1": "Wir bieten ein umfassendes Sortiment an Ersatzteilen und Zubehör, das entwickelt wurde, um alle Aspekte Ihrer Bahnübergangsinstallation, Wartung und Betrieb zu unterstützen. Von Hebestiften und Haken zur Erleichterung der Hebung unserer Produkte bis zu spezialisierten Befestigungen, Werkzeugen und Endbearbeitungslösungen.",
+      "paragraph2": "Unser umfangreiches Inventar umfasst alles von präzisionsgefertigten Verbindungsstangen und Abdeckplatten bis zu Fahrbahnmarkierungssystemen und spezialisierten Befestigungen, um sicherzustellen, dass Sie Zugang zu den richtigen Komponenten haben, wenn Sie sie benötigen.",
+      "image1Caption": "Professionelle Hebeausrüstung",
+      "image2Caption": "Spezialisierte Befestigungen",
+      "image3Caption": "Endbearbeitungslösungen",
+      "highlightTitle": "Maßgeschneiderte Lösungen Verfügbar:",
+      "highlightText": "Finden Sie nicht genau, was Sie brauchen? Unser technisches Team kann oft maßgeschneiderte Zubehörteile entwickeln, um spezifische Projektanforderungen und Standortbedingungen zu erfüllen."
+    },
+    "categories": {
+      "title": "Zubehörkategorien",
+      "installation": {
+        "title": "Installationsausrüstung",
+        "description": "Wesentliche Werkzeuge und Ausrüstung für sichere und effiziente Installation von Übergangssystemen.",
+        "examples": "Hebestifte, Hebehaken, Werkzeugkits, Rückhaltungen"
+      },
+      "fixing": {
+        "title": "Befestigung & Verbindung",
+        "description": "Spezialisierte Befestigungen, Schrauben und Verbindungslösungen für sichere Systemmontage.",
+        "examples": "Verbindungsstangen, Universalschrauben, M18 Schrauben, Befestigungskits"
+      },
+      "protection": {
+        "title": "Schutz & Sicherheit",
+        "description": "Sicherheitsausrüstung und Schutzkomponenten für verbesserte Installations- und Betriebssicherheit.",
+        "examples": "Kettenschutz, Ablenkplatten, Bewegungsbegrenzer"
+      },
+      "finishing": {
+        "title": "Endbearbeitungslösungen",
+        "description": "Professionelle Abschlussarbeiten einschließlich Abdeckungen, Dichtungen und Markierungssystemen.",
+        "examples": "Abdeckplatten, Gummistopfen, Fahrbahnmarkierungsgrundierung"
+      },
+      "components": {
+        "title": "Systemkomponenten",
+        "description": "Ersatzteile und Upgrade-Komponenten für alle Übergangssystemtypen.",
+        "examples": "Turret-Grundplatten, Endrückhaltungen, Füllkomponenten"
+      },
+      "tools": {
+        "title": "Spezialwerkzeuge",
+        "description": "Speziell entwickelte Werkzeuge und Ausrüstung für Rosehill Rail Systeme.",
+        "examples": "Schlagschrauber, Spezialsteckschlüssel, Installationshilfen"
+      }
+    },
+    "gallery": {
+      "title": "Produktbeispiele"
+    },
+    "cta": {
+      "title": "Benötigen Sie Etwas Spezifisches?",
+      "text": "Unser umfassendes Zubehörsortiment wird ständig erweitert. Kontaktieren Sie uns direkt für Angebote, technische Spezifikationen oder um maßgeschneiderte Lösungen für Ihre spezifischen Anforderungen zu besprechen.",
+      "phoneTitle": "Telefonsupport",
+      "phoneInfo": "+44 (0)1422 839 456<br>Technische Beratung verfügbar",
+      "emailTitle": "E-Mail-Anfragen",
+      "emailInfo": "info@rosehillrail.com<br>Detaillierte Spezifikationen bereitgestellt",
+      "consultationTitle": "Projektberatung",
+      "consultationInfo": "Maßgeschneiderte Lösungen<br>Technischer Support",
+      "button": "Angebot & Technischen Support Erhalten"
+    }
+  },
+  "edgebeamsPage": {
+    "hero": {
+      "weightReduction": "Erhebliche Gewichtsreduzierung vs Beton",
+      "recycledRubber": "100% recycelter Reifengummi",
+      "coldCure": "Kalthärtungs-Verbindungstechnologie",
+      "compatible": "Kompatibel mit allen Übergangssystemen"
+    },
+    "rubberSection": {
+      "title": "Gummi-Randträger - Unsere Empfohlene Lösung",
+      "subtitle": "Leichtgewichtige Innovation",
+      "description1": "Die Gummi-Randträger von Rosehill Rail bieten eine langlebige, leichtgewichtige Alternative zu traditionellen Betonlösungen. Hergestellt aus 100% recyceltem Reifengummi und verbunden mit modernster Kalthärtungstechnologie, bieten diese Träger erhebliche Gewichtseinsparungen bei gleichzeitiger Aufrechterhaltung außergewöhnlicher Haltbarkeit.",
+      "description2": "Mit integrierten Entwässerungskanälen, splitterfreiem Design und strategischen Hebepunkten bieten unsere Gummi-Randträger verbesserte Übergangsunterstützung mit verbesserten Nachhaltigkeitsnachweisen und reduzierten Transportkosten.",
+      "advantagesTitle": "Hauptvorteile:",
+      "advantages": "Network Rail-Akzeptanz, Schnellinstallationssystem und Kompatibilität mit allen Übergangssystemen machen Gummi-Randträger zur bevorzugten Wahl für die meisten Anwendungen."
+    },
+    "weightComparison": {
+      "title": "Gewichtsvergleich",
+      "concrete": {
+        "label": "Traditioneller Beton",
+        "value": "Schwer",
+        "desc": "Schwierige Handhabung, hohe Transportkosten"
+      },
+      "rubber": {
+        "label": "Gummi-Randträger",
+        "value": "Leicht",
+        "desc": "Einfache Handhabung, reduzierte Transportkosten"
+      },
+      "summary": "Erhebliche Gewichtsreduzierung für einfachere Installation und reduzierte Logistikkosten"
+    },
+    "materials": {
+      "title": "Materialoptionen für Jede Anwendung",
+      "rubber": {
+        "description": "Unsere Flaggschiff-Lösung, die Nachhaltigkeit, Leistung und Kosteneffizienz kombiniert. Hergestellt aus 100% recyceltem Reifengummi mit Kalthärtungs-Verbindungstechnologie.",
+        "feature1": "100% recycelter Reifengummi",
+        "feature2": "Kalthärtungs-Verbindungstechnologie",
+        "feature3": "Erhebliche Gewichtsreduzierung",
+        "feature4": "Network Rail akzeptiert",
+        "feature5": "Integrierte Entwässerungskanäle",
+        "feature6": "Splitterfreies Design",
+        "feature7": "Schnellinstallation",
+        "feature8": "Verlängerte Lebensdauer"
+      },
+      "steel": {
+        "name": "Stahl-Randträger",
+        "description": "Maximale Haltbarkeit und Festigkeit für stark frequentierte Bereiche, wo Robustheit kritisch ist. Entwickelt für anspruchsvollste Bedingungen.",
+        "feature1": "Maximale Haltbarkeit",
+        "feature2": "Hochverkehrsanwendungen",
+        "feature3": "Extreme Festigkeit",
+        "feature4": "Langzeitstabilität",
+        "feature5": "Minimaler Verschleiß"
+      },
+      "plastic": {
+        "name": "Kunststoff-Randträger",
+        "description": "Leichte, korrosionsbeständige Option perfekt für Installationen, die einfache Handhabung und schnellen Einsatz erfordern.",
+        "feature1": "Leichtgewichtiges Design",
+        "feature2": "Korrosionsbeständig",
+        "feature3": "Einfache Handhabung",
+        "feature4": "Schneller Einsatz",
+        "feature5": "Wetterbeständig"
+      }
+    },
+    "benefits": {
+      "title": "Warum Unsere Randträger Wählen?",
+      "sustainability": {
+        "title": "Nachhaltige Materialien",
+        "desc": "Gummi-Randträger verwenden 100% recycelten Reifengummi und bieten verbesserte Nachhaltigkeitsnachweise und Umweltvorteile."
+      },
+      "installation": {
+        "title": "Schnelle Installation",
+        "desc": "Schnellinstallationssystem mit strategischen Hebepunkten reduziert Installationszeit und damit verbundene Arbeitskosten."
+      },
+      "durability": {
+        "title": "Verbesserte Haltbarkeit",
+        "desc": "Splitterfreies Design verhindert Rissbildung und erhält strukturelle Integrität während der gesamten verlängerten Lebensdauer."
+      },
+      "transport": {
+        "title": "Reduzierte Transportkosten",
+        "desc": "Erhebliche Gewichtsreduzierung gegenüber Betonalternativen senkt Transportkosten und ermöglicht einfachere Handhabung vor Ort."
+      },
+      "drainage": {
+        "title": "Integrierte Entwässerung",
+        "desc": "Eingebaute Entwässerungskanäle verhindern Wasseransammlung und reduzieren Wartungsanforderungen im Laufe der Zeit."
+      },
+      "compatibility": {
+        "title": "Universelle Kompatibilität",
+        "desc": "Kompatibel mit allen Übergangssystemen und verfügbar in 1,8-Meter-Standardlänge für flexible Installationsoptionen."
+      }
+    },
+    "gallery": {
+      "title": "Installationsbeispiele"
+    },
+    "applications": {
+      "title": "Anwendungsempfehlungen",
+      "standard": {
+        "title": "Standardinstallationen",
+        "desc": "Gummi-Randträger empfohlen für die meisten Anwendungen aufgrund von Nachhaltigkeit, Gewichtsreduzierung und umfassenden Leistungsvorteilen."
+      },
+      "heavyDuty": {
+        "title": "Schwerlastanforderungen",
+        "desc": "Stahl-Randträger für extreme Lastbedingungen und stark frequentierte Bereiche, wo maximale Haltbarkeit und Festigkeit kritisch sind."
+      },
+      "rapidDeployment": {
+        "title": "Schneller Einsatz",
+        "desc": "Kunststoff-Randträger für Installationen, die schnellen Einsatz, einfache Handhabung und Korrosionsbeständigkeit erfordern."
+      },
+      "allSystems": {
+        "title": "Alle Übergangssysteme",
+        "desc": "Kompatibel mit CONNECT, LINK, TITAN, Grundplatten- und Interlocking RRAP-Systemen für umfassende Übergangsunterstützung."
+      }
+    },
+    "cta": {
+      "title": "Benötigen Sie die Richtige Randträgerlösung?",
+      "text": "Entdecken Sie, wie unsere Gummi-Randträger leichte, nachhaltige Übergangsunterstützung mit erheblichen Kosten- und Umweltvorteilen bieten können.",
+      "requestQuote": "Angebot Anfordern",
+      "consultation": "Materialberatung"
+    }
+  },
+  "antitrespassPage": {
+    "stats": {
+      "sectionTitle": "Bewährte Sicherheitsleistung",
+      "reductionNumber": "78%",
+      "reductionLabel": "Reduzierung der Unbefugt-Begehungs-Vorfälle",
+      "variationsNumber": "3",
+      "variationsLabel": "Network Rail Zugelassene Varianten",
+      "recycledNumber": "100%",
+      "recycledLabel": "Recycelte Gummikonstruktion",
+      "toolsNumber": "0",
+      "toolsLabel": "Spezifische Werkzeuge Erforderlich"
+    },
+    "security": {
+      "sectionTitle": "Verbesserte Abschreckungstechnologie",
+      "conicalTitle": "Konisches Stiftdesign",
+      "conicalParagraph1": "Unsere einzigartigen Anti-Unbefugt-Begehungs-Platten verfügen über ein ausgeklügeltes konisches Stiftdesign, das verbesserte Abschreckung bietet und gleichzeitig die Installationszeit im Vergleich zu traditionellen Sicherheitslösungen reduziert.",
+      "conicalParagraph2": "Hergestellt aus 100% recyceltem Gummi, bieten diese Platten eine umweltverantwortliche Lösung für Bahnsicherheit und liefern gleichzeitig bewährte Ergebnisse bei der Reduzierung unbefugten Gleiszugangs.",
+      "networkRailTitle": "Network Rail Zugelassen:",
+      "networkRailDesc": "Drei verschiedene von Network Rail zugelassene Plattenvarianten gewährleisten Konformität und Wirksamkeit für unterschiedliche Bahninfrastrukturanforderungen.",
+      "variationsTitle": "Plattenvarianten",
+      "doubleFlangeTitle": "Doppelflansch",
+      "doubleFlangeDesc": "Für Vier-Fuß-Spuranwendungen (1490mm × 1300mm × 147mm, 116kg)",
+      "singleFlangeTitle": "Einzelflansch",
+      "singleFlangeDesc": "Für Außen-Vier-Fuß-Anwendungen (1487mm × 1300mm × 147mm, 110kg)",
+      "flangelessTitle": "Flanschlos",
+      "flangelessDesc": "Volle Breite für Bahnsteiganwendungen (1484mm × 1300mm × 147mm, 98kg)"
+    },
+    "benefits": {
+      "sectionTitle": "Warum Anti-Unbefugt-Begehungs-Platten Wählen?",
+      "enhancedSecurity": {
+        "title": "Verbesserte Sicherheit",
+        "description": "Bis zu 78% Reduzierung der Unbefugt-Begehungs-Vorfälle verbessert die Netz- und Passagiersicherheit erheblich."
+      },
+      "quickInstallation": {
+        "title": "Schnelle Installation",
+        "description": "Reduzierte Installationszeit und Arbeitskosten mit vollständigem Befestigungskit geliefert und ohne spezifische Werkzeuge erforderlich."
+      },
+      "networkRailApproved": {
+        "title": "Network Rail Zugelassen",
+        "description": "Drei zugelassene Plattenvarianten gewährleisten Konformität und Wirksamkeit für unterschiedliche Bahninfrastrukturbedürfnisse."
+      },
+      "environmentallySustainable": {
+        "title": "Umweltverträglich Nachhaltig",
+        "description": "Hergestellt aus 100% recyceltem Gummi und bietet eine umweltverantwortliche Sicherheitslösung."
+      },
+      "selfDrainingDesign": {
+        "title": "Selbstentwässerndes Design",
+        "description": "Selbstentwässernde Konfiguration verhindert Wasseransammlung und reduziert Wartungsanforderungen im Laufe der Zeit."
+      },
+      "lowerWholeLifeCosts": {
+        "title": "Geringere Lebenszykluskosten",
+        "description": "Minimierte Gleisbesetzungszeit und vereinfachte Wartungsanforderungen reduzieren die Gesamtbetriebskosten."
+      }
+    },
+    "specs": {
+      "sectionTitle": "Technische Spezifikationen",
+      "paragraph1": "Anti-Unbefugt-Begehungs-Platten sind konstruiert, um maximale Abschreckungswirkung zu bieten und gleichzeitig Installationsfreundlichkeit und Umweltnachhaltigkeit zu gewährleisten. Die modulare Konstruktion ermöglicht flexible Bereitstellung in verschiedenen Bahnumgebungen.",
+      "paragraph2": "Jede Platte verfügt über konisches Stiftdesign für verbesserte Abschreckung und ist aus 100% recyceltem Gummi mit selbstentwässernder Konfiguration hergestellt, um Wartungsanforderungen zu minimieren.",
+      "tableTitle": "Anti-Unbefugt-Begehungs-Platten Spezifikationen",
+      "designType": "Designtyp",
+      "designTypeValue": "Konisches Stiftdesign",
+      "construction": "Konstruktion",
+      "constructionValue": "Modulares Konstruktionssystem",
+      "materialComposition": "Materialzusammensetzung",
+      "materialCompositionValue": "100% recycelter Gummi",
+      "approvalStatus": "Genehmigungsstatus",
+      "approvalStatusValue": "Network Rail zugelassenes Design",
+      "fixingKit": "Befestigungskit",
+      "fixingKitValue": "Vollständiges Befestigungskit geliefert",
+      "drainage": "Entwässerung",
+      "drainageValue": "Selbstentwässernde Konfiguration",
+      "panelVariations": "Plattenvarianten",
+      "panelVariationsValue": "Doppelflansch, Einzelflansch, flanschlos",
+      "standardDimensions": "Standardabmessungen",
+      "standardDimensionsValue": "~1485mm × 1300mm × 147mm",
+      "weightRange": "Gewichtsbereich",
+      "weightRangeValue": "98kg - 116kg (variiert nach Typ)"
+    },
+    "gallery": {
+      "sectionTitle": "Installationsbeispiele"
+    },
+    "applications": {
+      "sectionTitle": "Sicherheitsanwendungen",
+      "fourFootGauge": {
+        "title": "Vier-Fuß-Spurweite",
+        "description": "Doppelflansch-Platten bieten umfassende Sicherheitsabdeckung für Vier-Fuß-Spur-Gleiskonfigurationen."
+      },
+      "outsideFourFoot": {
+        "title": "Außen Vier-Fuß",
+        "description": "Einzelflansch-Design optimiert für Außen-Vier-Fuß-Anwendungen, wo Platzeinschränkungen gelten."
+      },
+      "platformApplications": {
+        "title": "Bahnsteiganwendungen",
+        "description": "Flanschlose Platten voller Breite speziell entwickelt für Bahnsteigend-Sicherheit und Passagiersicherheit."
+      },
+      "transitNetworks": {
+        "title": "Transitnetze",
+        "description": "Bewährte Wirksamkeit in Stadtbahn-, U-Bahn- und Schwerlastbahn-Netzen für umfassende Unbefugt-Begehungs-Prävention."
+      }
+    },
+    "cta": {
+      "title": "Verbessern Sie Ihre Netzsicherheit",
+      "description": "Entdecken Sie, wie Anti-Unbefugt-Begehungs-Platten unbefugten Zugang um bis zu 78% reduzieren können und gleichzeitig umweltverträglich nachhaltige Bahnsicherheitslösungen bieten.",
+      "securityConsultation": "Sicherheitsberatung"
+    }
+  },
+  "walkwayPage": {
+    "sustainability": {
+      "title": "Nachhaltige Gehweglösungen",
+      "beyondConcreteTitle": "Jenseits von Beton",
+      "paragraph1": "Die Rosehill Gehwegplatte bietet eine sicherere, nachhaltigere und kosteneffizientere Alternative zu traditionellen Betonpflastersteinen und Aggregat-Fußwegen.",
+      "paragraph2": "Mit minimaler Bodenvorbereitung erforderlich und wetterunabhängigen Montagefähigkeiten liefern diese Platten sofortige Vorteile und bieten gleichzeitig außergewöhnliche Langzeitleistung mit reduzierter Umweltbelastung.",
+      "environmentalTitle": "Umweltvorteile:",
+      "environmentalText": "Deutlich reduzierter CO2-Fußabdruck im Vergleich zu Betonalternativen, mit voller Wiederverwendbarkeit und verlegbarem Design, das sowohl sofortige als auch langfristige Umweltvorteile liefert.",
+      "comparisonTitle": "Vergleich der Auslegungslebensdauer",
+      "concreteLabel": "Traditioneller Beton",
+      "concreteYears": "20-25",
+      "concreteDesc": "Jahre typische Lebensdauer mit erforderlichem Austausch",
+      "walkwayLabel": "Gehwegplatten",
+      "walkwayYears": "40+",
+      "walkwayDesc": "Jahre Auslegungslebensdauer mit voller Wiederverwendbarkeit",
+      "comparisonNote": "Verlängerte Lebensdauer mit wiederverwendbarem und verlegbarem Design"
+    },
+    "benefits": {
+      "title": "Warum Gehwegplatten Wählen?",
+      "carbonFootprint": {
+        "title": "Reduzierter CO2-Fußabdruck",
+        "desc": "Deutlich reduzierte Umweltbelastung im Vergleich zu Beton mit recycelter Gummizusammensetzung und wiederverwendbarem Design."
+      },
+      "quickInstallation": {
+        "title": "Schnelle Installation",
+        "desc": "Wetterunabhängige Montage mit minimaler Bodenvorbereitung und flexiblen Installationsoptionen für schnellen Einsatz."
+      },
+      "slipResistant": {
+        "title": "Rutschfeste Sicherheit",
+        "desc": "PSV 45 rutschfeste Oberfläche verbessert Arbeitersicherheit und bietet zuverlässigen Zugang bei allen Wetterbedingungen."
+      },
+      "minimalMaintenance": {
+        "title": "Minimale Wartung",
+        "desc": "Unkraut- und nagetierresistentes Design mit minimalen laufenden Wartungsanforderungen reduziert Lebenszykluskosten."
+      },
+      "fullyReusable": {
+        "title": "Vollständig Wiederverwendbar",
+        "desc": "Vollständige Wiederverwendbarkeit und verlegbares Design ermöglicht es, Platten mehrfach über Projekte hinweg zu verschieben und wiederzuverwenden."
+      },
+      "lowerCosts": {
+        "title": "Geringere Lebenszykluskosten",
+        "desc": "Verlängerte 40+ Jahre Auslegungslebensdauer und Wiederverwendbarkeit bieten überlegenen Wert im Vergleich zu traditionellen Betonlösungen."
+      }
+    },
+    "specs": {
+      "title": "Technische Spezifikationen",
+      "intro1": "Gehwegplatten sind für Langzeitleistung konstruiert mit modularer Konstruktion, die flexible Installation in verschiedenen Zugangsweganwendungen ermöglicht. Die rutschfeste Oberfläche erfüllt PSV 45 Standards für sicheren Fußgängerzugang.",
+      "intro2": "Jede 700mm × 500mm Platte ist für einfache Installation mit minimaler Bodenvorbereitung konzipiert, was sie ideal für temporäre und permanente Fußweglösungen macht, wo Umweltnachhaltigkeit eine Priorität ist.",
+      "tableTitle": "Gehwegplatten Spezifikationen",
+      "panelSize": "Plattengröße",
+      "panelSizeValue": "700mm × 500mm",
+      "surfaceStandard": "Oberflächenstandard",
+      "surfaceStandardValue": "Rutschfest (PSV 45)",
+      "groundPrep": "Bodenvorbereitung",
+      "groundPrepValue": "Minimale Vorbereitung erforderlich",
+      "installOptions": "Installationsoptionen",
+      "installOptionsValue": "Flexible Installationsmethoden",
+      "weatherDependency": "Wetterabhängigkeit",
+      "weatherDependencyValue": "Wetterunabhängige Montage",
+      "resistanceFeatures": "Resistenzmerkmale",
+      "resistanceFeaturesValue": "Unkraut- und nagetierresistent",
+      "constructionType": "Konstruktionstyp",
+      "constructionTypeValue": "Modulares Konstruktionssystem",
+      "materialComp": "Materialzusammensetzung",
+      "materialCompValue": "Recycelte Gummizusammensetzung",
+      "designLife": "Auslegungslebensdauer",
+      "designLifeValue": "40+ Jahre",
+      "reusability": "Wiederverwendbarkeit",
+      "reusabilityValue": "Vollständig wiederverwendbar und verlegbar"
+    },
+    "gallery": {
+      "title": "Installationsprozess"
+    },
+    "applications": {
+      "title": "Fußweganwendungen",
+      "pedestrian": {
+        "title": "Fußgängerwege",
+        "desc": "Alternative zu Betonpflasterung für Fußgängerzugangswege mit verbesserter Sicherheit und Umweltvorteilen."
+      },
+      "construction": {
+        "title": "Bauzugang",
+        "desc": "Temporäre und permanente Zugangswege für Baustellen mit schneller Installation und wiederverwendbarem Design."
+      },
+      "industrial": {
+        "title": "Industrielle Gehwege",
+        "desc": "Langlebige Gehweglösungen für Industrieanlagen, die rutschfesten und wetterunabhängigen Zugang erfordern."
+      },
+      "environmental": {
+        "title": "Umweltstandorte",
+        "desc": "Nachhaltige Fußweglösungen für umweltsensible Bereiche mit minimalen Anforderungen an Bodenstörung."
+      }
+    },
+    "cta": {
+      "title": "Bereit für Nachhaltige Fußwege?",
+      "text": "Entdecken Sie, wie Gehwegplatten eine langlebige, wiederverwendbare Alternative zu Betonpflasterung mit 40+ Jahren Auslegungslebensdauer und verbesserten Umweltvorteilen bieten können.",
+      "secondaryButton": "Nachhaltigkeitsberatung"
+    }
   }
 }

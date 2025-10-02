@@ -793,5 +793,493 @@
       "primaryButton": "Richiedi Preventivo",
       "secondaryButton": "Supporto Tecnico"
     }
+  },
+  "interlockingPage": {
+    "hero": {
+      "badge": "FLESSIBILITÀ MODULARE",
+      "title": "RRAP ad Incastro",
+      "subtitle": "Sistema modulare ad alta resistenza per punto di accesso strada-rotaia installabile indipendentemente dalla spaziatura delle traverse.",
+      "feature1": "Indipendente dalla spaziatura delle traverse",
+      "feature2": "Processo di installazione rapido",
+      "feature3": "Garanzia di adattamento perfetto",
+      "feature4": "Risparmi significativi"
+    },
+    "modularSection": {
+      "sectionTitle": "Indipendenza dalla Spaziatura delle Traverse",
+      "title": "Flessibilità Definitiva",
+      "paragraph1": "I pannelli individuali sono prodotti per adattarsi al tipo specifico di rotaia, traversa e fissaggio per garantire l'adattamento perfetto, quindi collegati insieme per impedire che si spostino.",
+      "paragraph2": "Questo approccio innovativo significa che non siete vincolati dai modelli di spaziatura esistenti delle traverse - il sistema si adatta alla vostra infrastruttura, non viceversa.",
+      "highlightTitle": "Garanzia di Adattamento Perfetto:",
+      "highlightText": "Ogni pannello è prodotto su misura per il vostro profilo rotaia specifico, tipo di traversa e configurazione di fissaggio, garantendo prestazioni e sicurezza ottimali.",
+      "diagramTitle": "Confronto Spaziatura Traverse",
+      "standardTitle": "Requisito Sistema Standard",
+      "standardMeasurement": "Interassi di 600mm (spaziatura regolare)",
+      "interlockingTitle": "Capacità RRAP ad Incastro",
+      "interlockingMeasurement": "Interassi di 450mm / 825mm / 375mm (irregolare)",
+      "caption": "Il RRAP ad Incastro si adatta a qualsiasi configurazione di spaziatura traverse - i sistemi standard richiedono interassi di 600mm"
+    },
+    "benefits": {
+      "sectionTitle": "Perché Scegliere il RRAP ad Incastro?",
+      "flexibleInstallation": {
+        "title": "Installazione Flessibile",
+        "description": "Installazione rapida e semplice utilizzando bulloni di collegamento senza attrezzi specifici richiesti per un dispiegamento rapido."
+      },
+      "reducedPossession": {
+        "title": "Occupazione Ridotta",
+        "description": "Progettato per essere rapido e facile da installare, riducendo significativamente i tempi di occupazione del binario e i costi associati."
+      },
+      "perfectFit": {
+        "title": "Adattamento Perfetto",
+        "description": "Pannelli individuali prodotti per adattarsi a tipi specifici di rotaia, traversa e fissaggio garantendo prestazioni ottimali."
+      },
+      "interlockingDesign": {
+        "title": "Design ad Incastro",
+        "description": "I pannelli sono collegati insieme per impedire lo spostamento mantenendo una stabilità di prestazioni costante."
+      },
+      "costEffective": {
+        "title": "Economicamente Conveniente",
+        "description": "Costi di installazione ridotti e tempi di occupazione ridotti offrono risparmi significativi per gli operatori ferroviari."
+      },
+      "multiPurpose": {
+        "title": "Multiuso",
+        "description": "Ideale per punti di accesso temporanei, semi-permanenti e permanenti con supporto laterale migliorato."
+      }
+    },
+    "specs": {
+      "sectionTitle": "Specifiche Tecniche",
+      "paragraph1": "Il sistema RRAP ad Incastro rappresenta un'ingegneria modulare avanzata, progettata specificamente per superare i limiti delle soluzioni di attraversamento tradizionali a spaziatura fissa.",
+      "paragraph2": "Ogni installazione è configurata su misura per corrispondere esattamente ai vostri requisiti, dal profilo rotaia e tipo di scartamento alla configurazione delle traverse e sistemi di fissaggio.",
+      "paragraph3": "La flessibilità del sistema lo rende ideale per installazioni impegnative dove le soluzioni standard semplicemente non si adattano.",
+      "tableTitle": "Specifiche RRAP ad Incastro",
+      "designIndependence": "Indipendenza di Design",
+      "designIndependenceValue": "Indipendente dalla spaziatura delle traverse",
+      "panelLength": "Lunghezza Pannello",
+      "panelLengthValue": "Lunghezza compressa di 1800mm",
+      "connectionSystem": "Sistema di Connessione",
+      "connectionSystemValue": "Sistema di connettore ad incastro",
+      "constructionType": "Tipo di Costruzione",
+      "constructionTypeValue": "Costruzione modulare del pannello",
+      "gaugeCompatibility": "Compatibilità Scartamento",
+      "gaugeCompatibilityValue": "Compatibilità scartamento universale",
+      "fixingSystem": "Sistema di Fissaggio",
+      "fixingSystemValue": "Cavità di fissaggio protette",
+      "matrixDesign": "Design a Matrice",
+      "matrixDesignValue": "Design a matrice unificato",
+      "edgeBeamSupport": "Supporto Trave di Bordo",
+      "edgeBeamSupportValue": "Compatibilità con più travi di bordo",
+      "installationMethod": "Metodo di Installazione",
+      "installationMethodValue": "Sistema di bulloni di collegamento"
+    },
+    "gallery": {
+      "sectionTitle": "Processo di Installazione"
+    },
+    "applications": {
+      "sectionTitle": "Applicazioni Ideali",
+      "temporaryAccess": {
+        "title": "Punti di Accesso Temporanei",
+        "description": "Perfetto per progetti di costruzione che richiedono accesso ferroviario temporaneo con capacità di dispiegamento e rimozione rapidi."
+      },
+      "semiPermanent": {
+        "title": "Soluzioni Semi-Permanenti",
+        "description": "Ideale per progetti a medio termine dove la flessibilità e l'adattabilità ai requisiti mutevoli sono essenziali."
+      },
+      "permanent": {
+        "title": "Installazioni Permanenti",
+        "description": "Punti di accesso a lungo termine per impianti industriali, depositi e strutture di manutenzione che richiedono prestazioni affidabili."
+      },
+      "irregular": {
+        "title": "Infrastruttura Irregolare",
+        "description": "Specificamente progettato per installazioni impegnative dove le soluzioni di spaziatura standard non funzioneranno."
+      }
+    },
+    "cta": {
+      "title": "Serve Soluzioni di Accesso Flessibili?",
+      "description": "Scopri come il sistema RRAP ad Incastro può risolvere i tuoi requisiti di punto di accesso più impegnativi con design modulare su misura.",
+      "requestQuote": "Richiedi Preventivo",
+      "technicalSupport": "Supporto Tecnico"
+    }
+  },
+  "accessoriesPage": {
+    "hero": {
+      "badge": "SOLUZIONI COMPLETE"
+    },
+    "overview": {
+      "title": "Tutto Ciò di Cui Hai Bisogno",
+      "paragraph1": "Offriamo una gamma completa di ricambi e accessori progettati per supportare ogni aspetto dell'installazione, manutenzione e funzionamento del vostro attraversamento ferroviario. Dai perni e ganci di sollevamento per facilitare l'elevazione dei nostri prodotti, a fissaggi specializzati, strumenti e soluzioni di finitura.",
+      "paragraph2": "Il nostro vasto inventario include tutto, dalle barre di connessione e piastre di copertura di precisione ai sistemi di marcatura linee e fissaggi specializzati, garantendo di avere accesso ai componenti giusti quando ne avete bisogno.",
+      "image1Caption": "Attrezzatura di Sollevamento Professionale",
+      "image2Caption": "Fissaggi Specializzati",
+      "image3Caption": "Soluzioni di Finitura",
+      "highlightTitle": "Soluzioni Su Misura Disponibili:",
+      "highlightText": "Non trovi esattamente ciò di cui hai bisogno? Il nostro team tecnico può spesso sviluppare accessori personalizzati per soddisfare requisiti specifici del progetto e condizioni del sito."
+    },
+    "categories": {
+      "title": "Categorie di Accessori",
+      "installation": {
+        "title": "Attrezzatura di Installazione",
+        "description": "Strumenti e attrezzature essenziali per un'installazione sicura ed efficiente dei sistemi di attraversamento.",
+        "examples": "Perni di sollevamento, ganci di sollevamento, kit di strumenti, dispositivi di contenimento"
+      },
+      "fixing": {
+        "title": "Fissaggio e Connessione",
+        "description": "Fissaggi, bulloni e soluzioni di connessione specializzati per un assemblaggio sicuro del sistema.",
+        "examples": "Barre di connessione, viti omni, bulloni M18, kit di fissaggio"
+      },
+      "protection": {
+        "title": "Protezione e Sicurezza",
+        "description": "Attrezzatura di sicurezza e componenti di protezione per una sicurezza di installazione e funzionamento migliorata.",
+        "examples": "Protezioni catena, piastre deflettore, limitatori di movimento"
+      },
+      "finishing": {
+        "title": "Soluzioni di Finitura",
+        "description": "Tocchi finali professionali inclusi coperture, guarnizioni e sistemi di marcatura.",
+        "examples": "Piastre di copertura, tappi in gomma, primer per marcatura linee"
+      },
+      "components": {
+        "title": "Componenti del Sistema",
+        "description": "Parti di ricambio e componenti di aggiornamento per tutti i tipi di sistemi di attraversamento.",
+        "examples": "Piastre di base a torretta, contenimenti finali, componenti di riempimento"
+      },
+      "tools": {
+        "title": "Strumenti Specializzati",
+        "description": "Strumenti e attrezzature appositamente costruiti per i sistemi Rosehill Rail.",
+        "examples": "Avvitatori a impatto, chiavi specializzate, aiuti per l'installazione"
+      }
+    },
+    "gallery": {
+      "title": "Esempi di Prodotti"
+    },
+    "cta": {
+      "title": "Serve Qualcosa di Specifico?",
+      "text": "La nostra gamma completa di accessori è in costante espansione. Contattateci direttamente per preventivi, specifiche tecniche o per discutere soluzioni personalizzate per le vostre esigenze specifiche.",
+      "phoneTitle": "Supporto Telefonico",
+      "phoneInfo": "+44 (0)1422 839 456<br>Consulenza tecnica disponibile",
+      "emailTitle": "Richieste via Email",
+      "emailInfo": "info@rosehillrail.com<br>Specifiche dettagliate fornite",
+      "consultationTitle": "Consulenza Progetto",
+      "consultationInfo": "Soluzioni personalizzate<br>Supporto tecnico",
+      "button": "Ottieni Preventivo & Supporto Tecnico"
+    }
+  },
+  "edgebeamsPage": {
+    "hero": {
+      "weightReduction": "Riduzione del peso significativa vs calcestruzzo",
+      "recycledRubber": "Gomma da pneumatici 100% riciclata",
+      "coldCure": "Tecnologia di incollaggio a indurimento a freddo",
+      "compatible": "Compatibile con tutti i sistemi di attraversamento"
+    },
+    "rubberSection": {
+      "title": "Travi di Bordo in Gomma - La Nostra Soluzione Raccomandata",
+      "subtitle": "Innovazione Leggera",
+      "description1": "Le travi di bordo in gomma di Rosehill Rail offrono un'alternativa durevole e leggera alle soluzioni tradizionali in calcestruzzo. Prodotte da gomma da pneumatici 100% riciclata e incollate utilizzando una tecnologia all'avanguardia di indurimento a freddo, queste travi offrono risparmi di peso significativi mantenendo una durabilità eccezionale.",
+      "description2": "Con canali di drenaggio integrati, design anti-scheggiatura e punti di sollevamento strategici, le nostre travi di bordo in gomma offrono un supporto di attraversamento migliorato con credenziali di sostenibilità migliorate e costi di trasporto ridotti.",
+      "advantagesTitle": "Vantaggi Chiave:",
+      "advantages": "Accettazione Network Rail, sistema di installazione rapida e compatibilità con tutti i sistemi di attraversamento rendono le travi di bordo in gomma la scelta preferita per la maggior parte delle applicazioni."
+    },
+    "weightComparison": {
+      "title": "Confronto Peso",
+      "concrete": {
+        "label": "Calcestruzzo Tradizionale",
+        "value": "Pesante",
+        "desc": "Movimentazione difficile, costi di trasporto elevati"
+      },
+      "rubber": {
+        "label": "Travi di Bordo in Gomma",
+        "value": "Leggero",
+        "desc": "Movimentazione facile, costi di trasporto ridotti"
+      },
+      "summary": "Riduzione del peso significativa per installazione più facile e costi logistici ridotti"
+    },
+    "materials": {
+      "title": "Opzioni di Materiale per Ogni Applicazione",
+      "rubber": {
+        "description": "La nostra soluzione di punta che combina sostenibilità, prestazioni e convenienza. Realizzata da gomma da pneumatici 100% riciclata con tecnologia di incollaggio a indurimento a freddo.",
+        "feature1": "Gomma da pneumatici 100% riciclata",
+        "feature2": "Tecnologia di incollaggio a indurimento a freddo",
+        "feature3": "Riduzione del peso significativa",
+        "feature4": "Accettato Network Rail",
+        "feature5": "Canali di drenaggio integrati",
+        "feature6": "Design anti-scheggiatura",
+        "feature7": "Installazione rapida",
+        "feature8": "Vita utile estesa"
+      },
+      "steel": {
+        "name": "Travi di Bordo in Acciaio",
+        "description": "Massima durabilità e resistenza per aree ad alto traffico dove la robustezza è critica. Progettate per le condizioni più esigenti.",
+        "feature1": "Massima durabilità",
+        "feature2": "Applicazioni ad alto traffico",
+        "feature3": "Resistenza estrema",
+        "feature4": "Stabilità a lungo termine",
+        "feature5": "Usura minima"
+      },
+      "plastic": {
+        "name": "Travi di Bordo in Plastica",
+        "description": "Opzione leggera e resistente alla corrosione perfetta per installazioni che richiedono facilità di movimentazione e dispiegamento rapido.",
+        "feature1": "Design leggero",
+        "feature2": "Resistente alla corrosione",
+        "feature3": "Movimentazione facile",
+        "feature4": "Dispiegamento rapido",
+        "feature5": "Resistente alle intemperie"
+      }
+    },
+    "benefits": {
+      "title": "Perché Scegliere le Nostre Travi di Bordo?",
+      "sustainability": {
+        "title": "Materiali Sostenibili",
+        "desc": "Le travi di bordo in gomma utilizzano gomma da pneumatici 100% riciclata, offrendo credenziali di sostenibilità migliorate e benefici ambientali."
+      },
+      "installation": {
+        "title": "Installazione Rapida",
+        "desc": "Il sistema di installazione rapida con punti di sollevamento strategici riduce il tempo di installazione e i costi di manodopera associati."
+      },
+      "durability": {
+        "title": "Durabilità Migliorata",
+        "desc": "Il design anti-scheggiatura previene la fessurazione e mantiene l'integrità strutturale per tutta la vita utile estesa."
+      },
+      "transport": {
+        "title": "Costi di Trasporto Ridotti",
+        "desc": "La riduzione del peso significativa rispetto alle alternative in calcestruzzo riduce i costi di trasporto e consente una movimentazione più facile in cantiere."
+      },
+      "drainage": {
+        "title": "Drenaggio Integrato",
+        "desc": "I canali di drenaggio integrati prevengono l'accumulo di acqua e riducono i requisiti di manutenzione nel tempo."
+      },
+      "compatibility": {
+        "title": "Compatibilità Universale",
+        "desc": "Compatibile con tutti i sistemi di attraversamento e disponibile in lunghezza standard di 1,8 metri per opzioni di installazione flessibili."
+      }
+    },
+    "gallery": {
+      "title": "Esempi di Installazione"
+    },
+    "applications": {
+      "title": "Raccomandazioni di Applicazione",
+      "standard": {
+        "title": "Installazioni Standard",
+        "desc": "Travi di bordo in gomma raccomandate per la maggior parte delle applicazioni grazie a sostenibilità, riduzione del peso e vantaggi prestazionali completi."
+      },
+      "heavyDuty": {
+        "title": "Requisiti Heavy Duty",
+        "desc": "Travi di bordo in acciaio per condizioni di carico estreme e aree ad alto traffico dove massima durabilità e resistenza sono critiche."
+      },
+      "rapidDeployment": {
+        "title": "Dispiegamento Rapido",
+        "desc": "Travi di bordo in plastica per installazioni che richiedono dispiegamento rapido, facilità di movimentazione e resistenza alla corrosione."
+      },
+      "allSystems": {
+        "title": "Tutti i Sistemi di Attraversamento",
+        "desc": "Compatibile con sistemi CONNECT, LINK, TITAN, Piastra di Base e RRAP ad Incastro per supporto di attraversamento completo."
+      }
+    },
+    "cta": {
+      "title": "Serve la Soluzione di Trave di Bordo Giusta?",
+      "text": "Scopri come le nostre travi di bordo in gomma possono fornire un supporto di attraversamento leggero e sostenibile con benefici ambientali e di costo significativi.",
+      "requestQuote": "Richiedi Preventivo",
+      "consultation": "Consulenza Materiali"
+    }
+  },
+  "antitrespassPage": {
+    "stats": {
+      "sectionTitle": "Prestazioni di Sicurezza Comprovate",
+      "reductionNumber": "78%",
+      "reductionLabel": "Riduzione degli Incidenti di Intrusione",
+      "variationsNumber": "3",
+      "variationsLabel": "Varianti Approvate Network Rail",
+      "recycledNumber": "100%",
+      "recycledLabel": "Costruzione in Gomma Riciclata",
+      "toolsNumber": "0",
+      "toolsLabel": "Strumenti Specifici Richiesti"
+    },
+    "security": {
+      "sectionTitle": "Tecnologia di Deterrenza Migliorata",
+      "conicalTitle": "Design a Stud Conico",
+      "conicalParagraph1": "I nostri pannelli anti-intrusione unici presentano un sofisticato design a stud conico che fornisce una deterrenza migliorata riducendo il tempo di installazione rispetto alle soluzioni di sicurezza tradizionali.",
+      "conicalParagraph2": "Prodotti da gomma 100% riciclata, questi pannelli forniscono una soluzione ambientalmente responsabile per la sicurezza ferroviaria fornendo risultati comprovati nella riduzione dell'accesso non autorizzato al binario.",
+      "networkRailTitle": "Approvato Network Rail:",
+      "networkRailDesc": "Tre distinte varianti di pannelli approvate da Network Rail garantiscono conformità ed efficacia per diversi requisiti di infrastruttura ferroviaria.",
+      "variationsTitle": "Varianti di Pannello",
+      "doubleFlangeTitle": "Doppia Flangia",
+      "doubleFlangeDesc": "Per applicazioni a scartamento di quattro piedi (1490mm × 1300mm × 147mm, 116kg)",
+      "singleFlangeTitle": "Flangia Singola",
+      "singleFlangeDesc": "Per applicazioni esterne a quattro piedi (1487mm × 1300mm × 147mm, 110kg)",
+      "flangelessTitle": "Senza Flangia",
+      "flangelessDesc": "Larghezza intera per applicazioni di piattaforma (1484mm × 1300mm × 147mm, 98kg)"
+    },
+    "benefits": {
+      "sectionTitle": "Perché Scegliere i Pannelli Anti-Intrusione?",
+      "enhancedSecurity": {
+        "title": "Sicurezza Migliorata",
+        "description": "Fino al 78% di riduzione degli incidenti di intrusione migliora significativamente la sicurezza della rete e dei passeggeri."
+      },
+      "quickInstallation": {
+        "title": "Installazione Rapida",
+        "description": "Tempo di installazione e costi di manodopera ridotti con kit di fissaggio completo fornito e nessuno strumento specifico richiesto."
+      },
+      "networkRailApproved": {
+        "title": "Approvato Network Rail",
+        "description": "Tre varianti di pannelli approvate garantiscono conformità ed efficacia per diverse esigenze di infrastruttura ferroviaria."
+      },
+      "environmentallySustainable": {
+        "title": "Ambientalmente Sostenibile",
+        "description": "Prodotto da gomma 100% riciclata fornendo una soluzione di sicurezza ambientalmente responsabile."
+      },
+      "selfDrainingDesign": {
+        "title": "Design Auto-Drenante",
+        "description": "La configurazione auto-drenante previene l'accumulo di acqua e riduce i requisiti di manutenzione nel tempo."
+      },
+      "lowerWholeLifeCosts": {
+        "title": "Costi di Ciclo di Vita Ridotti",
+        "description": "Tempo di occupazione del binario minimizzato e requisiti di manutenzione semplificati riducono il costo totale di proprietà."
+      }
+    },
+    "specs": {
+      "sectionTitle": "Specifiche Tecniche",
+      "paragraph1": "I Pannelli Anti-Intrusione sono progettati per fornire il massimo effetto deterrente mantenendo facilità di installazione e sostenibilità ambientale. La costruzione modulare consente un dispiegamento flessibile in vari ambienti ferroviari.",
+      "paragraph2": "Ogni pannello presenta un design a stud conico per deterrenza migliorata ed è prodotto da gomma 100% riciclata con configurazione auto-drenante per minimizzare i requisiti di manutenzione.",
+      "tableTitle": "Specifiche Pannello Anti-Intrusione",
+      "designType": "Tipo di Design",
+      "designTypeValue": "Design a stud conico",
+      "construction": "Costruzione",
+      "constructionValue": "Sistema di costruzione modulare",
+      "materialComposition": "Composizione del Materiale",
+      "materialCompositionValue": "Gomma 100% riciclata",
+      "approvalStatus": "Stato di Approvazione",
+      "approvalStatusValue": "Design approvato Network Rail",
+      "fixingKit": "Kit di Fissaggio",
+      "fixingKitValue": "Kit di fissaggio completo fornito",
+      "drainage": "Drenaggio",
+      "drainageValue": "Configurazione auto-drenante",
+      "panelVariations": "Varianti di Pannello",
+      "panelVariationsValue": "Doppia flangia, flangia singola, senza flangia",
+      "standardDimensions": "Dimensioni Standard",
+      "standardDimensionsValue": "~1485mm × 1300mm × 147mm",
+      "weightRange": "Range di Peso",
+      "weightRangeValue": "98kg - 116kg (varia per tipo)"
+    },
+    "gallery": {
+      "sectionTitle": "Esempi di Installazione"
+    },
+    "applications": {
+      "sectionTitle": "Applicazioni di Sicurezza",
+      "fourFootGauge": {
+        "title": "Scartamento a Quattro Piedi",
+        "description": "I pannelli a doppia flangia forniscono copertura di sicurezza completa per configurazioni di binario a scartamento di quattro piedi."
+      },
+      "outsideFourFoot": {
+        "title": "Esterno Quattro Piedi",
+        "description": "Design a flangia singola ottimizzato per applicazioni esterne a quattro piedi dove si applicano vincoli di spazio."
+      },
+      "platformApplications": {
+        "title": "Applicazioni di Piattaforma",
+        "description": "Pannelli senza flangia a larghezza intera specificamente progettati per la sicurezza dell'estremità della piattaforma e la sicurezza dei passeggeri."
+      },
+      "transitNetworks": {
+        "title": "Reti di Trasporto",
+        "description": "Efficacia comprovata su reti ferroviarie leggere, metropolitane e pesanti per prevenzione completa dell'intrusione."
+      }
+    },
+    "cta": {
+      "title": "Migliora la Sicurezza della Tua Rete",
+      "description": "Scopri come i Pannelli Anti-Intrusione possono ridurre l'accesso non autorizzato fino al 78% fornendo soluzioni di sicurezza ferroviaria ambientalmente sostenibili.",
+      "securityConsultation": "Consulenza Sicurezza"
+    }
+  },
+  "walkwayPage": {
+    "sustainability": {
+      "title": "Soluzioni per Camminamenti Sostenibili",
+      "beyondConcreteTitle": "Oltre il Calcestruzzo",
+      "paragraph1": "Il Pannello per Camminamenti Rosehill offre un'alternativa più sicura, sostenibile e conveniente ai blocchi di pavimentazione in calcestruzzo tradizionali e ai sentieri in aggregato.",
+      "paragraph2": "Con preparazione minima del terreno richiesta e capacità di montaggio indipendenti dalle condizioni meteorologiche, questi pannelli offrono benefici immediati fornendo prestazioni eccezionali a lungo termine con impatto ambientale ridotto.",
+      "environmentalTitle": "Benefici Ambientali:",
+      "environmentalText": "Impronta di carbonio significativamente ridotta rispetto alle alternative in calcestruzzo, con piena riutilizzabilità e design rilocabile che offre benefici ambientali sia immediati che a lungo termine.",
+      "comparisonTitle": "Confronto Vita di Progetto",
+      "concreteLabel": "Calcestruzzo Tradizionale",
+      "concreteYears": "20-25",
+      "concreteDesc": "Anni vita tipica con sostituzione richiesta",
+      "walkwayLabel": "Pannelli per Camminamenti",
+      "walkwayYears": "40+",
+      "walkwayDesc": "Anni vita di progetto con piena riutilizzabilità",
+      "comparisonNote": "Vita utile estesa con design riutilizzabile e rilocabile"
+    },
+    "benefits": {
+      "title": "Perché Scegliere i Pannelli per Camminamenti?",
+      "carbonFootprint": {
+        "title": "Impronta di Carbonio Ridotta",
+        "desc": "Impatto ambientale significativamente ridotto rispetto al calcestruzzo con composizione in gomma riciclata e design riutilizzabile."
+      },
+      "quickInstallation": {
+        "title": "Installazione Rapida",
+        "desc": "Montaggio indipendente dalle condizioni meteorologiche con preparazione minima del terreno e opzioni di installazione flessibili per dispiegamento rapido."
+      },
+      "slipResistant": {
+        "title": "Sicurezza Antiscivolo",
+        "desc": "Superficie antiscivolo PSV 45 migliora la sicurezza dei lavoratori e fornisce accesso affidabile in tutte le condizioni meteorologiche."
+      },
+      "minimalMaintenance": {
+        "title": "Manutenzione Minima",
+        "desc": "Design resistente a erbacce e roditori con requisiti di manutenzione continua minimi riduce i costi del ciclo di vita."
+      },
+      "fullyReusable": {
+        "title": "Completamente Riutilizzabile",
+        "desc": "Completa riutilizzabilità e design rilocabile consente ai pannelli di essere spostati e riutilizzati più volte attraverso i progetti."
+      },
+      "lowerCosts": {
+        "title": "Costi di Vita Ridotti",
+        "desc": "Vita di progetto estesa di 40+ anni e riutilizzabilità offrono valore superiore rispetto alle soluzioni in calcestruzzo tradizionali."
+      }
+    },
+    "specs": {
+      "title": "Specifiche Tecniche",
+      "intro1": "I Pannelli per Camminamenti sono progettati per prestazioni a lungo termine con costruzione modulare che consente installazione flessibile in varie applicazioni di percorso di accesso. La superficie antiscivolo soddisfa gli standard PSV 45 per accesso pedonale sicuro.",
+      "intro2": "Ogni pannello di 700mm × 500mm è progettato per installazione semplice con preparazione minima del terreno, rendendoli ideali per soluzioni di sentiero temporanee e permanenti dove la sostenibilità ambientale è una priorità.",
+      "tableTitle": "Specifiche Pannello per Camminamenti",
+      "panelSize": "Dimensione Pannello",
+      "panelSizeValue": "700mm × 500mm",
+      "surfaceStandard": "Standard Superficie",
+      "surfaceStandardValue": "Antiscivolo (PSV 45)",
+      "groundPrep": "Preparazione Terreno",
+      "groundPrepValue": "Preparazione minima richiesta",
+      "installOptions": "Opzioni di Installazione",
+      "installOptionsValue": "Metodi di installazione flessibili",
+      "weatherDependency": "Dipendenza Meteorologica",
+      "weatherDependencyValue": "Montaggio indipendente dalle condizioni meteorologiche",
+      "resistanceFeatures": "Caratteristiche di Resistenza",
+      "resistanceFeaturesValue": "Resistente a erbacce e roditori",
+      "constructionType": "Tipo di Costruzione",
+      "constructionTypeValue": "Sistema di costruzione modulare",
+      "materialComp": "Composizione Materiale",
+      "materialCompValue": "Composizione in gomma riciclata",
+      "designLife": "Vita di Progetto",
+      "designLifeValue": "40+ anni",
+      "reusability": "Riutilizzabilità",
+      "reusabilityValue": "Completamente riutilizzabile e rilocabile"
+    },
+    "gallery": {
+      "title": "Processo di Installazione"
+    },
+    "applications": {
+      "title": "Applicazioni per Sentieri",
+      "pedestrian": {
+        "title": "Percorsi Pedonali",
+        "desc": "Alternativa alla pavimentazione in calcestruzzo per percorsi di accesso pedonali con sicurezza e benefici ambientali migliorati."
+      },
+      "construction": {
+        "title": "Accesso Cantieri",
+        "desc": "Percorsi di accesso temporanei e permanenti per cantieri edili con installazione rapida e design riutilizzabile."
+      },
+      "industrial": {
+        "title": "Passerelle Industriali",
+        "desc": "Soluzioni di passerella durevoli per impianti industriali che richiedono accesso antiscivolo e indipendente dalle condizioni meteorologiche."
+      },
+      "environmental": {
+        "title": "Siti Ambientali",
+        "desc": "Soluzioni per sentieri sostenibili per aree ambientalmente sensibili con requisiti minimi di disturbo del terreno."
+      }
+    },
+    "cta": {
+      "title": "Pronti per Sentieri Sostenibili?",
+      "text": "Scopri come i Pannelli per Camminamenti possono fornire un'alternativa durevole e riutilizzabile alla pavimentazione in calcestruzzo con vita di progetto di 40+ anni e benefici ambientali migliorati.",
+      "secondaryButton": "Consulenza Sostenibilità"
+    }
   }
 }

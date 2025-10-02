@@ -793,5 +793,493 @@
       "text": "Discover how the CONNECT System can provide dimensional stability and reduce maintenance costs for your rail infrastructure projects.",
       "technicalSupport": "Technical Support"
     }
+  },
+  "interlockingPage": {
+    "hero": {
+      "badge": "MODULAR FLEXIBILITY",
+      "title": "Interlocking RRAP",
+      "subtitle": "High-strength modular Road Rail Access Point system that can be installed independent of sleeper spacing.",
+      "feature1": "Sleeper-spacing independent",
+      "feature2": "Quick installation process",
+      "feature3": "Perfect fit guarantee",
+      "feature4": "Significant cost savings"
+    },
+    "modularSection": {
+      "sectionTitle": "Sleeper-Spacing Independence",
+      "title": "Ultimate Flexibility",
+      "paragraph1": "Individual panels are manufactured to fit the specific rail, sleeper, and fastener type to ensure the perfect fit, then linked together to prevent them becoming dislodged.",
+      "paragraph2": "This innovative approach means you're not constrained by existing sleeper spacing patterns - the system adapts to your infrastructure, not the other way around.",
+      "highlightTitle": "Perfect Fit Guarantee:",
+      "highlightText": "Each panel is custom-manufactured for your specific rail profile, sleeper type, and fastener configuration, ensuring optimal performance and safety.",
+      "diagramTitle": "Sleeper Spacing Comparison",
+      "standardTitle": "Standard System Requirement",
+      "standardMeasurement": "600mm centres (regular spacing)",
+      "interlockingTitle": "Interlocking RRAP Capability",
+      "interlockingMeasurement": "450mm / 825mm / 375mm centres (irregular)",
+      "caption": "Interlocking RRAP adapts to any sleeper spacing configuration - standard systems require 600mm centres"
+    },
+    "benefits": {
+      "sectionTitle": "Why Choose Interlocking RRAP?",
+      "flexibleInstallation": {
+        "title": "Flexible Installation",
+        "description": "Quick and simple installation using connecting bolts with no specific tools required for rapid deployment."
+      },
+      "reducedPossession": {
+        "title": "Reduced Possession",
+        "description": "Designed to be quick and easy to install, significantly reducing track possession times and associated costs."
+      },
+      "perfectFit": {
+        "title": "Perfect Fit",
+        "description": "Individual panels manufactured to fit specific rail, sleeper, and fastener types ensuring optimal performance."
+      },
+      "interlockingDesign": {
+        "title": "Interlocking Design",
+        "description": "Panels are linked together to prevent dislodging while maintaining consistent performance stability."
+      },
+      "costEffective": {
+        "title": "Cost Effective",
+        "description": "Lower installation costs and reduced possession times deliver significant cost savings for rail operators."
+      },
+      "multiPurpose": {
+        "title": "Multi-Purpose",
+        "description": "Ideal for temporary, semi-permanent, and permanent access points with enhanced lateral support."
+      }
+    },
+    "specs": {
+      "sectionTitle": "Technical Specifications",
+      "paragraph1": "The Interlocking RRAP system represents advanced modular engineering, designed specifically to overcome the limitations of traditional fixed-spacing crossing solutions.",
+      "paragraph2": "Each installation is custom-configured to match your exact requirements, from rail profile and gauge type to sleeper configuration and fastener systems.",
+      "paragraph3": "The system's flexibility makes it ideal for challenging installations where standard solutions simply won't fit.",
+      "tableTitle": "Interlocking RRAP Specifications",
+      "designIndependence": "Design Independence",
+      "designIndependenceValue": "Sleeper-spacing independent",
+      "panelLength": "Panel Length",
+      "panelLengthValue": "1800mm compressed length",
+      "connectionSystem": "Connection System",
+      "connectionSystemValue": "Interlocking Connector system",
+      "constructionType": "Construction Type",
+      "constructionTypeValue": "Modular panel construction",
+      "gaugeCompatibility": "Gauge Compatibility",
+      "gaugeCompatibilityValue": "Universal gauge compatibility",
+      "fixingSystem": "Fixing System",
+      "fixingSystemValue": "Protected fixing cavities",
+      "matrixDesign": "Matrix Design",
+      "matrixDesignValue": "Unified matrix design",
+      "edgeBeamSupport": "Edge Beam Support",
+      "edgeBeamSupportValue": "Multiple edge beam compatibility",
+      "installationMethod": "Installation Method",
+      "installationMethodValue": "Connecting bolts system"
+    },
+    "gallery": {
+      "sectionTitle": "Installation Process"
+    },
+    "applications": {
+      "sectionTitle": "Ideal Applications",
+      "temporaryAccess": {
+        "title": "Temporary Access Points",
+        "description": "Perfect for construction projects requiring temporary rail access with rapid deployment and removal capabilities."
+      },
+      "semiPermanent": {
+        "title": "Semi-Permanent Solutions",
+        "description": "Ideal for medium-term projects where flexibility and adaptability to changing requirements is essential."
+      },
+      "permanent": {
+        "title": "Permanent Installations",
+        "description": "Long-term access points for industrial facilities, depots, and maintenance facilities requiring reliable performance."
+      },
+      "irregular": {
+        "title": "Irregular Infrastructure",
+        "description": "Specifically designed for challenging installations where standard spacing solutions won't work."
+      }
+    },
+    "cta": {
+      "title": "Need Flexible Access Solutions?",
+      "description": "Discover how the Interlocking RRAP system can solve your most challenging access point requirements with custom-fit modular design.",
+      "requestQuote": "Request Quote",
+      "technicalSupport": "Technical Support"
+    }
+  },
+  "accessoriesPage": {
+    "hero": {
+      "badge": "COMPLETE SOLUTIONS"
+    },
+    "overview": {
+      "title": "Everything You Need",
+      "paragraph1": "We offer a comprehensive range of spares and accessories designed to support every aspect of your rail crossing installation, maintenance, and operation. From lifting pins and hooks to aid the elevation of our products, to specialised fixings, tools, and finishing solutions.",
+      "paragraph2": "Our extensive inventory includes everything from precision-engineered connector bars and cover plates to line marking systems and specialty fasteners, ensuring you have access to the right components when you need them.",
+      "image1Caption": "Professional Lifting Equipment",
+      "image2Caption": "Specialist Fixings",
+      "image3Caption": "Finishing Solutions",
+      "highlightTitle": "Bespoke Solutions Available:",
+      "highlightText": "Can't find exactly what you need? Our technical team can often develop custom accessories to meet specific project requirements and site conditions."
+    },
+    "categories": {
+      "title": "Accessory Categories",
+      "installation": {
+        "title": "Installation Equipment",
+        "description": "Essential tools and equipment for safe and efficient installation of crossing systems.",
+        "examples": "Lifting pins, lifting hooks, tool kits, restraints"
+      },
+      "fixing": {
+        "title": "Fixing & Connection",
+        "description": "Specialized fasteners, bolts, and connection solutions for secure system assembly.",
+        "examples": "Connector bars, omni screws, M18 bolts, fixing kits"
+      },
+      "protection": {
+        "title": "Protection & Safety",
+        "description": "Safety equipment and protective components for enhanced installation and operation security.",
+        "examples": "Chain guards, deflector plates, movement restrictors"
+      },
+      "finishing": {
+        "title": "Finishing Solutions",
+        "description": "Professional finishing touches including covers, seals, and marking systems.",
+        "examples": "Cover plates, rubber plugs, line marking primer"
+      },
+      "components": {
+        "title": "System Components",
+        "description": "Replacement parts and upgrade components for all crossing system types.",
+        "examples": "Turret baseplates, end restraints, infill components"
+      },
+      "tools": {
+        "title": "Specialist Tools",
+        "description": "Purpose-built tools and equipment designed specifically for Rosehill Rail systems.",
+        "examples": "Impact drivers, specialist sockets, installation aids"
+      }
+    },
+    "gallery": {
+      "title": "Product Examples"
+    },
+    "cta": {
+      "title": "Need Something Specific?",
+      "text": "Our comprehensive accessory range is constantly expanding. Contact us directly for quotations, technical specifications, or to discuss custom solutions for your specific requirements.",
+      "phoneTitle": "Phone Support",
+      "phoneInfo": "+44 (0)1422 839 456<br>Technical advice available",
+      "emailTitle": "Email Enquiries",
+      "emailInfo": "info@rosehillrail.com<br>Detailed specifications provided",
+      "consultationTitle": "Project Consultation",
+      "consultationInfo": "Custom solutions<br>Technical support",
+      "button": "Get Quote & Technical Support"
+    }
+  },
+  "edgebeamsPage": {
+    "hero": {
+      "weightReduction": "Significant weight reduction vs concrete",
+      "recycledRubber": "100% recycled tyre rubber",
+      "coldCure": "Cold cure bonding technology",
+      "compatible": "Compatible with all crossing systems"
+    },
+    "rubberSection": {
+      "title": "Rubber Edge Beams - Our Recommended Solution",
+      "subtitle": "Lightweight Innovation",
+      "description1": "Rosehill Rail's rubber edge beams provide a durable, lightweight alternative to traditional concrete solutions. Manufactured from 100% recycled tyre rubber and bonded using cutting-edge cold cure technology, these beams offer significant weight savings whilst maintaining exceptional durability.",
+      "description2": "With integrated drainage channels, non-spalling design, and strategic lifting points, our rubber edge beams deliver enhanced crossing support with improved sustainability credentials and reduced transport costs.",
+      "advantagesTitle": "Key Advantages:",
+      "advantages": "Network Rail acceptance, quick-fit installation system, and compatibility with all crossing systems make rubber edge beams the preferred choice for most applications."
+    },
+    "weightComparison": {
+      "title": "Weight Comparison",
+      "concrete": {
+        "label": "Traditional Concrete",
+        "value": "Heavy",
+        "desc": "Difficult handling, high transport costs"
+      },
+      "rubber": {
+        "label": "Rubber Edge Beams",
+        "value": "Lightweight",
+        "desc": "Easy handling, reduced transport costs"
+      },
+      "summary": "Significant weight reduction for easier installation and lower logistics costs"
+    },
+    "materials": {
+      "title": "Material Options for Every Application",
+      "rubber": {
+        "description": "Our flagship solution combining sustainability, performance, and cost-effectiveness. Made from 100% recycled tyre rubber with cold cure bonding technology.",
+        "feature1": "100% recycled tyre rubber",
+        "feature2": "Cold cure bonding technology",
+        "feature3": "Significant weight reduction",
+        "feature4": "Network Rail accepted",
+        "feature5": "Integrated drainage channels",
+        "feature6": "Non-spalling design",
+        "feature7": "Quick-fit installation",
+        "feature8": "Extended service life"
+      },
+      "steel": {
+        "name": "Steel Edge Beams",
+        "description": "Maximum durability and strength for high-traffic areas where robustness is critical. Designed for the most demanding conditions.",
+        "feature1": "Maximum durability",
+        "feature2": "High-traffic applications",
+        "feature3": "Extreme strength",
+        "feature4": "Long-term stability",
+        "feature5": "Minimal wear"
+      },
+      "plastic": {
+        "name": "Plastic Edge Beams",
+        "description": "Lightweight, corrosion-resistant option perfect for installations requiring ease of handling and rapid deployment.",
+        "feature1": "Lightweight design",
+        "feature2": "Corrosion resistant",
+        "feature3": "Easy handling",
+        "feature4": "Rapid deployment",
+        "feature5": "Weather resistant"
+      }
+    },
+    "benefits": {
+      "title": "Why Choose Our Edge Beams?",
+      "sustainability": {
+        "title": "Sustainable Materials",
+        "desc": "Rubber edge beams use 100% recycled tyre rubber, delivering improved sustainability credentials and environmental benefits."
+      },
+      "installation": {
+        "title": "Quick Installation",
+        "desc": "Quick-fit installation system with strategic lifting points reduces installation time and associated labour costs."
+      },
+      "durability": {
+        "title": "Enhanced Durability",
+        "desc": "Non-spalling design prevents cracking and maintains structural integrity throughout the extended service life."
+      },
+      "transport": {
+        "title": "Reduced Transport Costs",
+        "desc": "Significant weight reduction versus concrete alternatives lowers transport costs and enables easier handling on site."
+      },
+      "drainage": {
+        "title": "Integrated Drainage",
+        "desc": "Built-in drainage channels prevent water accumulation and reduce maintenance requirements over time."
+      },
+      "compatibility": {
+        "title": "Universal Compatibility",
+        "desc": "Compatible with all crossing systems and available in 1.8-metre standard length for flexible installation options."
+      }
+    },
+    "gallery": {
+      "title": "Installation Examples"
+    },
+    "applications": {
+      "title": "Application Recommendations",
+      "standard": {
+        "title": "Standard Installations",
+        "desc": "Rubber edge beams recommended for most applications due to sustainability, weight reduction, and comprehensive performance benefits."
+      },
+      "heavyDuty": {
+        "title": "Heavy-Duty Requirements",
+        "desc": "Steel edge beams for extreme load conditions and high-traffic areas where maximum durability and strength are critical."
+      },
+      "rapidDeployment": {
+        "title": "Rapid Deployment",
+        "desc": "Plastic edge beams for installations requiring rapid deployment, ease of handling, and corrosion resistance."
+      },
+      "allSystems": {
+        "title": "All Crossing Systems",
+        "desc": "Compatible with CONNECT, LINK, TITAN, Baseplate, and Interlocking RRAP systems for comprehensive crossing support."
+      }
+    },
+    "cta": {
+      "title": "Need the Right Edge Beam Solution?",
+      "text": "Discover how our rubber edge beams can provide lightweight, sustainable crossing support with significant cost and environmental benefits.",
+      "requestQuote": "Request Quote",
+      "consultation": "Material Consultation"
+    }
+  },
+  "antitrespassPage": {
+    "stats": {
+      "sectionTitle": "Proven Security Performance",
+      "reductionNumber": "78%",
+      "reductionLabel": "Reduction in Trespassing Incidents",
+      "variationsNumber": "3",
+      "variationsLabel": "Network Rail Approved Variations",
+      "recycledNumber": "100%",
+      "recycledLabel": "Recycled Rubber Construction",
+      "toolsNumber": "0",
+      "toolsLabel": "Specific Tools Required"
+    },
+    "security": {
+      "sectionTitle": "Enhanced Deterrence Technology",
+      "conicalTitle": "Conical Stud Design",
+      "conicalParagraph1": "Our unique anti-trespass panels feature a sophisticated conical stud design that provides enhanced deterrence while reducing installation time compared to traditional security solutions.",
+      "conicalParagraph2": "Manufactured from 100% recycled rubber, these panels provide an environmentally responsible solution for railway safety while delivering proven results in reducing unauthorised track access.",
+      "networkRailTitle": "Network Rail Approved:",
+      "networkRailDesc": "Three distinct panel variations approved by Network Rail ensure compliance and effectiveness across different railway infrastructure requirements.",
+      "variationsTitle": "Panel Variations",
+      "doubleFlangeTitle": "Double Flange",
+      "doubleFlangeDesc": "For four-foot gauge applications (1490mm × 1300mm × 147mm, 116kg)",
+      "singleFlangeTitle": "Single Flange",
+      "singleFlangeDesc": "For outside four-foot applications (1487mm × 1300mm × 147mm, 110kg)",
+      "flangelessTitle": "Flangeless",
+      "flangelessDesc": "Full-width for platform applications (1484mm × 1300mm × 147mm, 98kg)"
+    },
+    "benefits": {
+      "sectionTitle": "Why Choose Anti-Trespass Panels?",
+      "enhancedSecurity": {
+        "title": "Enhanced Security",
+        "description": "Up to 78% reduction in trespassing incidents significantly improves network safety and passenger security."
+      },
+      "quickInstallation": {
+        "title": "Quick Installation",
+        "description": "Reduced installation time and labour costs with complete fixing kit supplied and no specific tools required."
+      },
+      "networkRailApproved": {
+        "title": "Network Rail Approved",
+        "description": "Three approved panel variations ensure compliance and effectiveness across different railway infrastructure needs."
+      },
+      "environmentallySustainable": {
+        "title": "Environmentally Sustainable",
+        "description": "Manufactured from 100% recycled rubber providing an environmentally responsible safety solution."
+      },
+      "selfDrainingDesign": {
+        "title": "Self-Draining Design",
+        "description": "Self-draining configuration prevents water accumulation and reduces maintenance requirements over time."
+      },
+      "lowerWholeLifeCosts": {
+        "title": "Lower Whole-Life Costs",
+        "description": "Minimised track possession time and simplified maintenance requirements reduce total cost of ownership."
+      }
+    },
+    "specs": {
+      "sectionTitle": "Technical Specifications",
+      "paragraph1": "Anti-Trespass Panels are engineered to provide maximum deterrent effect while maintaining ease of installation and environmental sustainability. The modular construction allows for flexible deployment across various railway environments.",
+      "paragraph2": "Each panel features conical stud design for enhanced deterrence and is manufactured from 100% recycled rubber with self-draining configuration to minimise maintenance requirements.",
+      "tableTitle": "Anti-Trespass Panel Specifications",
+      "designType": "Design Type",
+      "designTypeValue": "Conical stud design",
+      "construction": "Construction",
+      "constructionValue": "Modular construction system",
+      "materialComposition": "Material Composition",
+      "materialCompositionValue": "100% recycled rubber",
+      "approvalStatus": "Approval Status",
+      "approvalStatusValue": "Network Rail approved design",
+      "fixingKit": "Fixing Kit",
+      "fixingKitValue": "Complete fixing kit supplied",
+      "drainage": "Drainage",
+      "drainageValue": "Self-draining configuration",
+      "panelVariations": "Panel Variations",
+      "panelVariationsValue": "Double flange, single flange, flangeless",
+      "standardDimensions": "Standard Dimensions",
+      "standardDimensionsValue": "~1485mm × 1300mm × 147mm",
+      "weightRange": "Weight Range",
+      "weightRangeValue": "98kg - 116kg (varies by type)"
+    },
+    "gallery": {
+      "sectionTitle": "Installation Examples"
+    },
+    "applications": {
+      "sectionTitle": "Security Applications",
+      "fourFootGauge": {
+        "title": "Four-Foot Gauge",
+        "description": "Double flange panels provide comprehensive security coverage for four-foot gauge track configurations."
+      },
+      "outsideFourFoot": {
+        "title": "Outside Four-Foot",
+        "description": "Single flange design optimised for outside four-foot applications where space constraints apply."
+      },
+      "platformApplications": {
+        "title": "Platform Applications",
+        "description": "Full-width flangeless panels specifically designed for platform end security and passenger safety."
+      },
+      "transitNetworks": {
+        "title": "Transit Networks",
+        "description": "Proven effective across light rail, metro, and heavy rail networks for comprehensive trespass prevention."
+      }
+    },
+    "cta": {
+      "title": "Enhance Your Network Security",
+      "description": "Discover how Anti-Trespass Panels can reduce unauthorised access by up to 78% while providing environmentally sustainable rail safety solutions.",
+      "securityConsultation": "Security Consultation"
+    }
+  },
+  "walkwayPage": {
+    "sustainability": {
+      "title": "Sustainable Footpath Solutions",
+      "beyondConcreteTitle": "Beyond Concrete",
+      "paragraph1": "The Rosehill Walkway Panel offers a more secure, sustainable, and cost-effective alternative to traditional concrete paving blocks and aggregate footpaths.",
+      "paragraph2": "With minimal ground preparation required and weather-independent fitting capabilities, these panels deliver immediate benefits while providing exceptional long-term performance with reduced environmental impact.",
+      "environmentalTitle": "Environmental Benefits:",
+      "environmentalText": "Significantly reduced carbon footprint versus concrete alternatives, with full reusability and relocatable design delivering both immediate and long-term environmental benefits.",
+      "comparisonTitle": "Design Life Comparison",
+      "concreteLabel": "Traditional Concrete",
+      "concreteYears": "20-25",
+      "concreteDesc": "Years typical lifespan with replacement required",
+      "walkwayLabel": "Walkway Panels",
+      "walkwayYears": "40+",
+      "walkwayDesc": "Years design life with full reusability",
+      "comparisonNote": "Extended service life with reusable and relocatable design"
+    },
+    "benefits": {
+      "title": "Why Choose Walkway Panels?",
+      "carbonFootprint": {
+        "title": "Reduced Carbon Footprint",
+        "desc": "Significantly lower environmental impact compared to concrete with recycled rubber composition and reusable design."
+      },
+      "quickInstallation": {
+        "title": "Quick Installation",
+        "desc": "Weather-independent fitting with minimal ground preparation and flexible installation options for rapid deployment."
+      },
+      "slipResistant": {
+        "title": "Slip-Resistant Safety",
+        "desc": "PSV 45 slip-resistant surface enhances worker safety and provides reliable access in all weather conditions."
+      },
+      "minimalMaintenance": {
+        "title": "Minimal Maintenance",
+        "desc": "Weed and rodent resistant design with minimal ongoing maintenance requirements reduces lifecycle costs."
+      },
+      "fullyReusable": {
+        "title": "Fully Reusable",
+        "desc": "Complete reusability and relocatable design allows panels to be moved and reused multiple times across projects."
+      },
+      "lowerCosts": {
+        "title": "Lower Lifetime Costs",
+        "desc": "Extended 40+ year design life and reusability deliver superior value compared to traditional concrete solutions."
+      }
+    },
+    "specs": {
+      "title": "Technical Specifications",
+      "intro1": "Walkway Panels are engineered for long-term performance with modular construction that allows for flexible installation across various access route applications. The slip-resistant surface meets PSV 45 standards for safe pedestrian access.",
+      "intro2": "Each 700mm × 500mm panel is designed for simple installation with minimal ground preparation, making them ideal for temporary and permanent footpath solutions where environmental sustainability is a priority.",
+      "tableTitle": "Walkway Panel Specifications",
+      "panelSize": "Panel Size",
+      "panelSizeValue": "700mm × 500mm",
+      "surfaceStandard": "Surface Standard",
+      "surfaceStandardValue": "Slip-resistant (PSV 45)",
+      "groundPrep": "Ground Preparation",
+      "groundPrepValue": "Minimal preparation required",
+      "installOptions": "Installation Options",
+      "installOptionsValue": "Flexible installation methods",
+      "weatherDependency": "Weather Dependency",
+      "weatherDependencyValue": "Weather-independent fitting",
+      "resistanceFeatures": "Resistance Features",
+      "resistanceFeaturesValue": "Weed and rodent resistant",
+      "constructionType": "Construction Type",
+      "constructionTypeValue": "Modular construction system",
+      "materialComp": "Material Composition",
+      "materialCompValue": "Recycled rubber composition",
+      "designLife": "Design Life",
+      "designLifeValue": "40+ years",
+      "reusability": "Reusability",
+      "reusabilityValue": "Fully reusable and relocatable"
+    },
+    "gallery": {
+      "title": "Installation Process"
+    },
+    "applications": {
+      "title": "Footpath Applications",
+      "pedestrian": {
+        "title": "Pedestrian Pathways",
+        "desc": "Alternative to concrete paving for pedestrian access routes with enhanced safety and environmental benefits."
+      },
+      "construction": {
+        "title": "Construction Access",
+        "desc": "Temporary and permanent access routes for construction sites with quick installation and reusable design."
+      },
+      "industrial": {
+        "title": "Industrial Walkways",
+        "desc": "Durable walkway solutions for industrial facilities requiring slip-resistant and weather-independent access."
+      },
+      "environmental": {
+        "title": "Environmental Sites",
+        "desc": "Sustainable footpath solutions for environmentally sensitive areas with minimal ground disturbance requirements."
+      }
+    },
+    "cta": {
+      "title": "Ready for Sustainable Footpaths?",
+      "text": "Discover how Walkway Panels can provide a durable, reusable alternative to concrete paving with 40+ year design life and enhanced environmental benefits.",
+      "secondaryButton": "Sustainability Consultation"
+    }
   }
 }
