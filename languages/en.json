@@ -94,7 +94,56 @@
   },
   "drainage": {
     "title": "Railway Drainage Solutions",
-    "subtitle": "Advanced trackside water management with sustainable drainage systems designed specifically for railway environments and Network Rail compliance."
+    "subtitle": "Advanced trackside water management with sustainable drainage systems designed specifically for railway environments and Network Rail compliance.",
+    "modularTitle": "Modular Trackside Drainage Systems",
+    "intro": "Our revolutionary drainage technology transforms railway water management through innovative polymer solutions made from 100% recycled materials. Designed specifically for the challenging demands of railway environments.",
+    "benefits": {
+      "rapidInstall": "Rapid Installation: Significantly faster deployment than traditional concrete systems, minimising track downtime",
+      "superiorPerformance": "Superior Performance: Enhanced hydraulic capacity with proven flood protection capabilities",
+      "networkRailApproved": "Network Rail Approved: Fully compliant with railway infrastructure standards and specifications",
+      "sustainable": "Sustainable Solution: 614kg CO₂e savings per m³ compared to concrete alternatives",
+      "modularDesign": "Modular Design: Flexible system adapts to various trackside configurations and drainage requirements",
+      "provenDurability": "Proven Durability: Engineered for the demanding conditions of railway environments"
+    },
+    "outro": "Essential for trackside areas, cutting drainage, platform water management, and any railway surface where effective water management is critical for operational safety and infrastructure protection.",
+    "cta": "Explore Railway Drainage Solutions"
+  },
+  "homepage": {
+    "featuredProducts": {
+      "title": "Featured Crossing Systems",
+      "subtitle": "Our flagship railway crossing systems engineered for superior performance"
+    },
+    "benefits": {
+      "title": "The Rosehill Rail Advantage",
+      "subtitle": "Three decades of innovation in railway crossing technology",
+      "ukManufacturing": {
+        "title": "UK Manufacturing",
+        "description": "Based in Sowerby Bridge, West Yorkshire, with strategic access to major transport links for efficient global delivery."
+      },
+      "recycledMaterials": {
+        "title": "100% Recycled Materials",
+        "description": "Sustainably manufactured from recycled tyre rubber using our unique cold cure bonding process, supporting circular economy goals."
+      },
+      "bespokeManufacturing": {
+        "title": "Bespoke Manufacturing",
+        "description": "Custom solutions tailored to your specific project needs with comprehensive quality assurance and ISO 9001:2008 certification."
+      },
+      "fullTraceability": {
+        "title": "Full Traceability",
+        "description": "Every panel marked with essential information and digitally tracked back to order and manufacturing batch for complete peace of mind."
+      }
+    },
+    "history": {
+      "highlight": "Since 1991",
+      "title": "A Proud History Spanning Three Decades in the Rail Industry",
+      "paragraph1": "Rosehill Rail began its journey in 1991 when approached by Reidel Omni to develop a faster, more environmentally friendly polyurethane-based system for bonding rubber panels. Our innovative cold cure bonding process reduced curing time to just 1.5 hours, revolutionising production efficiency.",
+      "paragraph2": "After purchasing Omni's moulds in 1999, we established Rosehill Rail and continue our dedication to innovation and sustainability in rail technology, collaborating with worldwide rail infrastructure firms to develop bespoke crossing solutions."
+    },
+    "cta": {
+      "title": "Ready to discuss your rail crossing project?",
+      "consultation": "Request Consultation",
+      "catalogue": "Download Product Catalogue"
+    }
   },
   "products": {
     "title": "Complete Rail Infrastructure Solutions",
