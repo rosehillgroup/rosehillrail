@@ -171,6 +171,7 @@
       "description": "Horizontales Verbindungssystem für Hochgeschwindigkeitsverkehr. NEUE Nut-und-Feder-Verbindungen verhindern Plattentrennung unter dynamischen Lasten.",
       "tags": {
         "waveEffect": "Welleneffekt-Management",
+        "highSpeed": "Hochgeschwindigkeitsbereit",
         "ukManufactured": "UK-Herstellung",
         "universalGauge": "Universelle Spurweite"
       },
@@ -190,6 +191,7 @@
       "description": "Schnellinstallationssystem ideal für durchschnittlich große Übergänge. Platten können zugeschnitten werden, um Laschen, Führungsschienen und enge Kurven zu umschließen.",
       "tags": {
         "cutToFit": "Maßgeschnitten",
+        "quickInstall": "Extrem schnelle Installation",
         "noSpecialTools": "Keine Spezialwerkzeuge",
         "tramwaySuitable": "Straßenbahngeeignet"
       }
@@ -209,8 +211,10 @@
       "description": "Platten mit konischem Stiftdesign reduzieren unbefugten Gleiszugang um bis zu 78%. In drei Varianten für verschiedene Anwendungen erhältlich.",
       "tags": {
         "reduction78": "78% Reduzierung",
-        "selfDraining": "Selbstentwässernd",
-        "variations3": "3 Varianten"
+        "variations3": "3 Varianten",
+        "recycledRubber": "100% recycelter Gummi",
+        "fixingKitSupplied": "Komplettes Befestigungskit mitgeliefert",
+        "selfDraining": "Selbstentwässernd"
       },
       "badge": "Network Rail zugelassen"
     },
@@ -220,8 +224,13 @@
       "tags": {
         "year40Life": "40 Jahre Lebensdauer",
         "reusable": "Wiederverwendbar",
-        "weatherResistant": "Wetterbeständig"
-      }
+        "weatherResistant": "Wetterbeständig",
+        "modularPanels": "Modulare Platten 700mm × 500mm",
+        "slipResistant": "Rutschfeste Oberfläche (PSV 45)",
+        "minimalPrep": "Minimale Bodenvorbereitung",
+        "fullyReusable": "Vollständig wiederverwendbar und versetzbar"
+      },
+      "badge": "40+ JAHRE AUSLEGUNGSLEBENSDAUER"
     },
     "rubberEdgeBeams": {
       "name": "Gummi-Randträger",
@@ -1253,7 +1262,8 @@
       "designLife": "Auslegungslebensdauer",
       "designLifeValue": "40+ Jahre",
       "reusability": "Wiederverwendbarkeit",
-      "reusabilityValue": "Vollständig wiederverwendbar und verlegbar"
+      "reusabilityValue": "Vollständig wiederverwendbar und verlegbar",
+      "panelConnectionTitle": "Plattenverbindungsdetails"
     },
     "gallery": {
       "title": "Installationsprozess"

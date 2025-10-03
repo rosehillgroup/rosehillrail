@@ -171,6 +171,7 @@
       "description": "Horizontal linking system designed for high-speed rail. NEW tongue and groove connections prevent panel separation under dynamic loads.",
       "tags": {
         "waveEffect": "Wave effect management",
+        "highSpeed": "High-Speed Ready",
         "ukManufactured": "UK manufactured",
         "universalGauge": "Universal gauge"
       },
@@ -190,6 +191,7 @@
       "description": "Fast installation system ideal for average-sized crossings. Panels can be cut to fit around fishplates, check rails, and tight curves.",
       "tags": {
         "cutToFit": "Cut-to-fit",
+        "quickInstall": "Extremely quick installation",
         "noSpecialTools": "No special tools",
         "tramwaySuitable": "Tramway suitable"
       }
@@ -209,8 +211,10 @@
       "description": "Conical stud design panels reducing unauthorised track access by up to 78%. Available in three variations for different applications.",
       "tags": {
         "reduction78": "78% reduction",
-        "selfDraining": "Self-draining",
-        "variations3": "3 variations"
+        "variations3": "3 variations",
+        "recycledRubber": "100% recycled rubber",
+        "fixingKitSupplied": "Complete fixing kit supplied",
+        "selfDraining": "Self-draining"
       },
       "badge": "Network Rail Approved"
     },
@@ -220,8 +224,13 @@
       "tags": {
         "year40Life": "40 year life",
         "reusable": "Reusable",
-        "weatherResistant": "Weather resistant"
-      }
+        "weatherResistant": "Weather resistant",
+        "modularPanels": "700mm × 500mm modular panels",
+        "slipResistant": "Slip-resistant surface (PSV 45)",
+        "minimalPrep": "Minimal ground preparation",
+        "fullyReusable": "Fully reusable and relocatable"
+      },
+      "badge": "40+ YEAR DESIGN LIFE"
     },
     "rubberEdgeBeams": {
       "name": "Rubber Edge Beams",
@@ -1253,7 +1262,8 @@
       "designLife": "Design Life",
       "designLifeValue": "40+ years",
       "reusability": "Reusability",
-      "reusabilityValue": "Fully reusable and relocatable"
+      "reusabilityValue": "Fully reusable and relocatable",
+      "panelConnectionTitle": "Panel Connection Details"
     },
     "gallery": {
       "title": "Installation Process"

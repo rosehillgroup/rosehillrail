@@ -171,6 +171,7 @@
       "description": "Système de liaison horizontale conçu pour le rail à grande vitesse. NOUVEAU système de rainure et languette empêche la séparation des panneaux sous charges dynamiques.",
       "tags": {
         "waveEffect": "Gestion effet de vague",
+        "highSpeed": "Prêt pour la Grande Vitesse",
         "ukManufactured": "Fabriqué au Royaume-Uni",
         "universalGauge": "Écartement universel"
       },
@@ -190,6 +191,7 @@
       "description": "Système d'installation rapide idéal pour les passages à niveau de taille moyenne. Les panneaux peuvent être découpés pour s'adapter aux éclisses, contre-rails et courbes serrées.",
       "tags": {
         "cutToFit": "Découpe sur mesure",
+        "quickInstall": "Installation extrêmement rapide",
         "noSpecialTools": "Sans outils spéciaux",
         "tramwaySuitable": "Adapté tramway"
       }
@@ -209,8 +211,10 @@
       "description": "Panneaux à picots coniques réduisant l'accès non autorisé aux voies jusqu'à 78%. Disponibles en trois variantes pour différentes applications.",
       "tags": {
         "reduction78": "Réduction de 78%",
-        "selfDraining": "Auto-drainant",
-        "variations3": "3 variantes"
+        "variations3": "3 variantes",
+        "recycledRubber": "100% caoutchouc recyclé",
+        "fixingKitSupplied": "Kit de fixation complet fourni",
+        "selfDraining": "Auto-drainant"
       },
       "badge": "Approuvé Network Rail"
     },
@@ -220,8 +224,13 @@
       "tags": {
         "year40Life": "Durée de vie 40 ans",
         "reusable": "Réutilisable",
-        "weatherResistant": "Résistant aux intempéries"
-      }
+        "weatherResistant": "Résistant aux intempéries",
+        "modularPanels": "Panneaux modulaires 700mm × 500mm",
+        "slipResistant": "Surface antidérapante (PSV 45)",
+        "minimalPrep": "Préparation minimale du sol",
+        "fullyReusable": "Entièrement réutilisable et relocalisable"
+      },
+      "badge": "DURÉE DE VIE 40+ ANS"
     },
     "rubberEdgeBeams": {
       "name": "Longrines en Caoutchouc",
@@ -1253,7 +1262,8 @@
       "designLife": "Durée de Vie de Conception",
       "designLifeValue": "40+ ans",
       "reusability": "Réutilisabilité",
-      "reusabilityValue": "Entièrement réutilisable et relocalisable"
+      "reusabilityValue": "Entièrement réutilisable et relocalisable",
+      "panelConnectionTitle": "Détails de Connexion des Panneaux"
     },
     "gallery": {
       "title": "Processus d'Installation"

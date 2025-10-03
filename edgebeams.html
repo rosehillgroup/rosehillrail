@@ -378,10 +378,10 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, 
-                rgba(26, 54, 93, 0.95) 0%, 
-                rgba(45, 74, 113, 0.85) 50%,
-                rgba(26, 54, 93, 0.95) 100%);
+            background: linear-gradient(135deg,
+                rgba(26, 54, 93, 0.6) 0%,
+                rgba(45, 74, 113, 0.5) 50%,
+                rgba(26, 54, 93, 0.6) 100%);
             z-index: 2;
         }
 
@@ -816,6 +816,33 @@
             margin-top: 40px;
         }
 
+        /* Rubber Edge Beam Images */
+        .rubber-images {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .rubber-images picture {
+            display: block;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .rubber-images picture:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+
+        .rubber-images img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
         .gallery-item {
             position: relative;
             border-radius: 12px;
@@ -1062,8 +1089,13 @@
             }
 
             .benefits-grid,
-            .gallery-grid {
+            .gallery-grid,
+            .rubber-images {
                 grid-template-columns: 1fr;
+            }
+
+            .rubber-images {
+                gap: 20px;
             }
         }
 
@@ -1336,6 +1368,26 @@
     <section class="rubber-section">
         <div class="container">
             <h2 class="section-title" data-i18n="edgebeamsPage.rubberSection.title">Rubber Edge Beams - Our Recommended Solution</h2>
+
+            <!-- Rubber Edge Beam Images -->
+            <div class="rubber-images">
+                <picture>
+                    <source srcset="Edge%20Beam%20Images/rubber_edge_01.avif" type="image/avif">
+                    <source srcset="Edge%20Beam%20Images/rubber_edge_01.webp" type="image/webp">
+                    <img src="Edge%20Beam%20Images/rubber_edge_01.jpg" alt="Rubber edge beam installation detail" loading="lazy">
+                </picture>
+                <picture>
+                    <source srcset="Edge%20Beam%20Images/rubber_edge_02.avif" type="image/avif">
+                    <source srcset="Edge%20Beam%20Images/rubber_edge_02.webp" type="image/webp">
+                    <img src="Edge%20Beam%20Images/rubber_edge_02.jpg" alt="Rubber edge beam showing drainage channels" loading="lazy">
+                </picture>
+                <picture>
+                    <source srcset="Edge%20Beam%20Images/rubber_edge_03.avif" type="image/avif">
+                    <source srcset="Edge%20Beam%20Images/rubber_edge_03.webp" type="image/webp">
+                    <img src="Edge%20Beam%20Images/rubber_edge_03.jpg" alt="Rubber edge beam construction detail" loading="lazy">
+                </picture>
+            </div>
+
             <div class="rubber-content">
                 <div class="rubber-text">
                     <h3 data-i18n="edgebeamsPage.rubberSection.subtitle">Lightweight Innovation</h3>

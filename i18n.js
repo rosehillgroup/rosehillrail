@@ -155,7 +155,7 @@ class RosehillI18n {
         if (updates.length > 0) {
             requestAnimationFrame(() => {
                 updates.forEach(({ element, translation }) => {
-                    element.textContent = translation;
+                    element.innerHTML = translation;
                 });
             });
         }

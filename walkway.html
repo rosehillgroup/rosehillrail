@@ -377,10 +377,10 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, 
-                rgba(26, 54, 93, 0.95) 0%, 
-                rgba(45, 74, 113, 0.85) 50%,
-                rgba(26, 54, 93, 0.95) 100%);
+            background: linear-gradient(135deg,
+                rgba(26, 54, 93, 0.6) 0%,
+                rgba(45, 74, 113, 0.5) 50%,
+                rgba(26, 54, 93, 0.6) 100%);
             z-index: 2;
         }
 
@@ -481,7 +481,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 60px;
-            align-items: center;
+            align-items: start;
         }
 
         .sustainability-text h3 {
@@ -710,6 +710,44 @@
             font-weight: 600;
             color: #1a365d;
             background: #f8f9fa;
+        }
+
+        .panel-grid-container {
+            margin-top: 40px;
+        }
+
+        .panel-grid-container h3 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .panel-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .panel-grid picture {
+            display: block;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .panel-grid picture:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+
+        .panel-grid img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
         /* Installation Gallery */
@@ -953,6 +991,11 @@
             .specs-content {
                 grid-template-columns: 1fr;
                 gap: 40px;
+            }
+
+            .panel-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
             }
 
             .lifespan-comparison {
@@ -1226,10 +1269,10 @@
                 <h1 data-i18n="products.walkwayPanels.name">Walkway Panels</h1>
                 <p class="subtitle" data-i18n="products.walkwayPanels.description">Sustainable alternative to concrete paving blocks with slip-resistant surface, full reusability, and weather-independent installation for footpaths and access routes.</p>
                 <ul class="hero-features">
-                    <li><span class="check">✓</span><span data-i18n="products.walkwayPanels.tags.year40Life">700mm × 500mm modular panels</span></li>
-                    <li><span class="check">✓</span><span data-i18n="products.walkwayPanels.tags.reusable">Slip-resistant surface (PSV 45)</span></li>
-                    <li><span class="check">✓</span><span data-i18n="products.walkwayPanels.tags.weatherResistant">Minimal ground preparation</span></li>
-                    <li><span class="check">✓</span>Fully reusable and relocatable</li>
+                    <li><span class="check">✓</span><span data-i18n="products.walkwayPanels.tags.modularPanels">700mm × 500mm modular panels</span></li>
+                    <li><span class="check">✓</span><span data-i18n="products.walkwayPanels.tags.slipResistant">Slip-resistant surface (PSV 45)</span></li>
+                    <li><span class="check">✓</span><span data-i18n="products.walkwayPanels.tags.minimalPrep">Minimal ground preparation</span></li>
+                    <li><span class="check">✓</span><span data-i18n="products.walkwayPanels.tags.fullyReusable">Fully reusable and relocatable</span></li>
                 </ul>
             </div>
             <div class="hero-image">
@@ -1249,12 +1292,13 @@
             <div class="sustainability-content">
                 <div class="sustainability-text">
                     <h3 data-i18n="walkwayPage.sustainability.beyondConcreteTitle">Beyond Concrete</h3>
+                    <picture style="display: block; margin: 25px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <source srcset="Walkway Panel Images/panel05.avif" type="image/avif">
+                        <source srcset="Walkway Panel Images/panel05.webp" type="image/webp">
+                        <img src="Walkway Panel Images/panel05.jpg" alt="Rosehill Walkway Panels installed as sustainable footpath solution" style="width: 100%; height: auto; display: block;" loading="lazy">
+                    </picture>
                     <p data-i18n="walkwayPage.sustainability.paragraph1">The Rosehill Walkway Panel offers a more secure, sustainable, and cost-effective alternative to traditional concrete paving blocks and aggregate footpaths.</p>
                     <p data-i18n="walkwayPage.sustainability.paragraph2">With minimal ground preparation required and weather-independent fitting capabilities, these panels deliver immediate benefits while providing exceptional long-term performance with reduced environmental impact.</p>
-                    <div class="sustainability-highlight">
-                        <h4 data-i18n="walkwayPage.sustainability.environmentalTitle">Environmental Benefits:</h4>
-                        <p data-i18n="walkwayPage.sustainability.environmentalText">Significantly reduced carbon footprint versus concrete alternatives, with full reusability and relocatable design delivering both immediate and long-term environmental benefits.</p>
-                    </div>
                 </div>
                 <div class="lifespan-demo">
                     <h4 style="font-family: 'Overpass', sans-serif; color: #1a365d; margin-bottom: 25px;" data-i18n="walkwayPage.sustainability.comparisonTitle">Design Life Comparison</h4>
@@ -1272,7 +1316,11 @@
                             <div class="lifespan-desc" data-i18n="walkwayPage.sustainability.walkwayDesc">Years design life with full reusability</div>
                         </div>
                     </div>
-                    <p style="color: #666; font-size: 0.9rem;" data-i18n="walkwayPage.sustainability.comparisonNote">Extended service life with reusable and relocatable design</p>
+                    <p style="color: #666; font-size: 0.9rem; margin-bottom: 30px;" data-i18n="walkwayPage.sustainability.comparisonNote">Extended service life with reusable and relocatable design</p>
+                    <div class="sustainability-highlight">
+                        <h4 data-i18n="walkwayPage.sustainability.environmentalTitle">Environmental Benefits:</h4>
+                        <p data-i18n="walkwayPage.sustainability.environmentalText">Significantly reduced carbon footprint versus concrete alternatives, with full reusability and relocatable design delivering both immediate and long-term environmental benefits.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1325,6 +1373,31 @@
                     <h2 data-i18n="walkwayPage.specs.title">Technical Specifications</h2>
                     <p data-i18n="walkwayPage.specs.intro1">Walkway Panels are engineered for long-term performance with modular construction that allows for flexible installation across various access route applications. The slip-resistant surface meets PSV 45 standards for safe pedestrian access.</p>
                     <p data-i18n="walkwayPage.specs.intro2">Each 700mm × 500mm panel is designed for simple installation with minimal ground preparation, making them ideal for temporary and permanent footpath solutions where environmental sustainability is a priority.</p>
+                    <div class="panel-grid-container">
+                        <h3 data-i18n="walkwayPage.specs.panelConnectionTitle">Panel Connection Details</h3>
+                        <div class="panel-grid">
+                            <picture>
+                                <source srcset="Walkway Panel Images/panel01.avif" type="image/avif">
+                                <source srcset="Walkway Panel Images/panel01.webp" type="image/webp">
+                                <img src="Walkway Panel Images/panel01.jpg" alt="Walkway panel connection detail showing modular fitting system" loading="lazy">
+                            </picture>
+                            <picture>
+                                <source srcset="Walkway Panel Images/panel02.avif" type="image/avif">
+                                <source srcset="Walkway Panel Images/panel02.webp" type="image/webp">
+                                <img src="Walkway Panel Images/panel02.jpg" alt="Interlocking walkway panel assembly demonstration" loading="lazy">
+                            </picture>
+                            <picture>
+                                <source srcset="Walkway Panel Images/panel03.avif" type="image/avif">
+                                <source srcset="Walkway Panel Images/panel03.webp" type="image/webp">
+                                <img src="Walkway Panel Images/panel03.jpg" alt="Walkway panel edge connection and alignment" loading="lazy">
+                            </picture>
+                            <picture>
+                                <source srcset="Walkway Panel Images/panel04.avif" type="image/avif">
+                                <source srcset="Walkway Panel Images/panel04.webp" type="image/webp">
+                                <img src="Walkway Panel Images/panel04.jpg" alt="Complete walkway panel installation showing seamless connections" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
                 </div>
                 <div class="specs-table">
                     <table>

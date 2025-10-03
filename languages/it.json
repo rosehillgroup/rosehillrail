@@ -171,6 +171,7 @@
       "description": "Sistema di collegamento orizzontale progettato per ferrovie ad alta velocità. NUOVE connessioni a incastro maschio-femmina prevengono la separazione dei pannelli sotto carichi dinamici.",
       "tags": {
         "waveEffect": "Gestione effetto onda",
+        "highSpeed": "Pronto per l'Alta Velocità",
         "ukManufactured": "Prodotto nel Regno Unito",
         "universalGauge": "Scartamento universale"
       },
@@ -190,6 +191,7 @@
       "description": "Sistema di installazione rapida ideale per attraversamenti di dimensioni medie. I pannelli possono essere tagliati per adattarsi a giunzioni, controrotaie e curve strette.",
       "tags": {
         "cutToFit": "Taglio su misura",
+        "quickInstall": "Installazione estremamente rapida",
         "noSpecialTools": "Nessun attrezzo speciale",
         "tramwaySuitable": "Adatto per tramvie"
       }
@@ -209,8 +211,10 @@
       "description": "Pannelli con design a stud conico che riducono l'accesso non autorizzato al binario fino al 78%. Disponibili in tre varianti per diverse applicazioni.",
       "tags": {
         "reduction78": "Riduzione del 78%",
-        "selfDraining": "Auto-drenante",
-        "variations3": "3 varianti"
+        "variations3": "3 varianti",
+        "recycledRubber": "100% gomma riciclata",
+        "fixingKitSupplied": "Kit di fissaggio completo fornito",
+        "selfDraining": "Auto-drenante"
       },
       "badge": "Approvato Network Rail"
     },
@@ -220,8 +224,13 @@
       "tags": {
         "year40Life": "Vita di 40 anni",
         "reusable": "Riutilizzabile",
-        "weatherResistant": "Resistente alle intemperie"
-      }
+        "weatherResistant": "Resistente alle intemperie",
+        "modularPanels": "Pannelli modulari 700mm × 500mm",
+        "slipResistant": "Superficie antiscivolo (PSV 45)",
+        "minimalPrep": "Preparazione minima del terreno",
+        "fullyReusable": "Completamente riutilizzabile e rilocabile"
+      },
+      "badge": "VITA PROGETTUALE 40+ ANNI"
     },
     "rubberEdgeBeams": {
       "name": "Travi di Bordo in Gomma",
@@ -1253,7 +1262,8 @@
       "designLife": "Vita di Progetto",
       "designLifeValue": "40+ anni",
       "reusability": "Riutilizzabilità",
-      "reusabilityValue": "Completamente riutilizzabile e rilocabile"
+      "reusabilityValue": "Completamente riutilizzabile e rilocabile",
+      "panelConnectionTitle": "Dettagli di Connessione dei Pannelli"
     },
     "gallery": {
       "title": "Processo di Installazione"
