@@ -126,7 +126,7 @@
       },
       "bespokeManufacturing": {
         "title": "Maßgeschneiderte Fertigung",
-        "description": "Kundenspezifische Lösungen zugeschnitten auf Ihre spezifischen Projektanforderungen mit umfassender Qualitätssicherung und ISO 9001:2008 Zertifizierung."
+        "description": "Kundenspezifische Lösungen zugeschnitten auf Ihre spezifischen Projektanforderungen mit umfassender Qualitätssicherung und ISO 9001:2015 Zertifizierung."
       },
       "fullTraceability": {
         "title": "Vollständige Rückverfolgbarkeit",
@@ -282,7 +282,7 @@
     },
     "precisionQuality": {
       "title": "Präzision & Qualität",
-      "description": "ISO 9001:2008-zertifiziert mit jährlichen NQA-Audits. Unsere hochmoderne computergesteuerte Fertigung wird von hochqualifizierten Fachkräften mit speziell entwickelten Maschinen für Bahnübergangsplatten überwacht."
+      "description": "ISO 9001:2015-zertifiziert mit jährlichen NQA-Audits. Unsere hochmoderne computergesteuerte Fertigung wird von hochqualifizierten Fachkräften mit speziell entwickelten Maschinen für Bahnübergangsplatten überwacht."
     },
     "completeTraceability": {
       "title": "Vollständige Rückverfolgbarkeit",
@@ -371,9 +371,9 @@
     "products": "Produkte",
     "company": "Unternehmen",
     "qualityCompliance": "Qualität & Konformität",
-    "complianceText": "Alle Komponenten von Rosehill Rail entwickelt mit exklusiven Designrechten. Qualitätsgesichert nach ISO 9001:2008-Standard mit jährlichen NQA-Audits.",
+    "complianceText": "Alle Komponenten von Rosehill Rail entwickelt mit exklusiven Designrechten. Qualitätsgesichert nach ISO 9001:2015-Standard mit jährlichen NQA-Audits.",
     "accreditations": "Akkreditierungen:",
-    "accreditationsList": "ISO 9001:2008 • Network Rail zugelassen • Vollständige Rückverfolgbarkeit",
+    "accreditationsList": "ISO 9001:2015 • Network Rail zugelassen • Vollständige Rückverfolgbarkeit",
     "copyright": "© 2025 Rosehill Rail. Eine Division der Rosehill Group. Alle Rechte vorbehalten.",
     "links": {
       "walkwayPanels": "Gehwegplatten",

@@ -1160,11 +1160,32 @@
             box-shadow: 0 10px 40px rgba(0,0,0,0.15);
             padding: 30px;
             width: 320px;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
             opacity: 0;
             visibility: hidden;
             transition: all 0.3s ease;
             z-index: 1000;
             margin-top: 10px;
+        }
+
+        /* Custom scrollbar styling for mega menu */
+        .mega-menu::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .mega-menu::-webkit-scrollbar-track {
+            background: #f0f4f8;
+            border-radius: 10px;
+        }
+
+        .mega-menu::-webkit-scrollbar-thumb {
+            background: #cbd5e0;
+            border-radius: 10px;
+        }
+
+        .mega-menu::-webkit-scrollbar-thumb:hover {
+            background: #a0aec0;
         }
 
         .nav-item:hover .mega-menu {
@@ -2282,7 +2303,7 @@
                 <div class="benefit-item">
                     <div class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" style="width: 2.5rem; height: 2.5rem; fill: currentColor;"><rect x="22" y="19" width="4" height="2"/><path d="M17.61328,12.9375L11.22559,24l6.3877,11.0625h12.77344L36.77441,24l-6.3877-11.0625H17.61328z M29,21 c0.55273,0,1,0.44727,1,1s-0.44727,1-1,1h-1v2h1c0.55273,0,1,0.44727,1,1s-0.44727,1-1,1h-1v2h1c0.55273,0,1,0.44727,1,1 s-0.44727,1-1,1h-1v1c0,0.55273-0.44727,1-1,1s-1-0.44727-1-1v-1h-4v1c0,0.55273-0.44727,1-1,1s-1-0.44727-1-1v-1h-1 c-0.55273,0-1-0.44727-1-1s0.44727-1,1-1h1v-2h-1c-0.55273,0-1-0.44727-1-1s0.44727-1,1-1h1v-2h-1c-0.55273,0-1-0.44727-1-1 s0.44727-1,1-1h1v-2h-1c-0.55273,0-1-0.44727-1-1s0.44727-1,1-1h1v-1c0-0.55273,0.44727-1,1-1s1,0.44727,1,1v1h4v-1 c0-0.55273,0.44727-1,1-1s1,0.44727,1,1v1h1c0.55273,0,1,0.44727,1,1s-0.44727,1-1,1h-1v2H29z"/><rect x="22" y="27" width="4" height="2"/><rect x="22" y="23" width="4" height="2"/><path d="M24,5C13.52344,5,5,13.52344,5,24s8.52344,19,19,19s19-8.52344,19-19S34.47656,5,24,5z M31.83008,36.5625 c-0.17871,0.30957-0.50879,0.5-0.86621,0.5H17.03613c-0.35742,0-0.6875-0.19043-0.86621-0.5L9.20508,24.5 c-0.17871-0.30957-0.17871-0.69043,0-1l6.96484-12.0625c0.17871-0.30957,0.50879-0.5,0.86621-0.5h13.92773 c0.35742,0,0.6875,0.19043,0.86621,0.5L38.79492,23.5c0.17871,0.30957,0.17871,0.69043,0,1L31.83008,36.5625z"/></svg></div>
                     <h3 class="benefit-title" data-i18n="homepage.benefits.bespokeManufacturing.title">Bespoke Manufacturing</h3>
-                    <p class="benefit-description" data-i18n="homepage.benefits.bespokeManufacturing.description">Custom solutions tailored to your specific project needs with comprehensive quality assurance and ISO 9001:2008 certification.</p>
+                    <p class="benefit-description" data-i18n="homepage.benefits.bespokeManufacturing.description">Custom solutions tailored to your specific project needs with comprehensive quality assurance and ISO 9001:2015 certification.</p>
                 </div>
 
                 <div class="benefit-item">
@@ -2368,10 +2389,10 @@
 
                 <div class="footer-section">
                     <h3 data-i18n="footer.qualityCompliance">Quality & Compliance</h3>
-                    <p data-i18n="footer.complianceText">All components designed by Rosehill Rail with exclusive design rights. Quality assured to ISO 9001:2008 standard with annual NQA audits.</p>
+                    <p data-i18n="footer.complianceText">All components designed by Rosehill Rail with exclusive design rights. Quality assured to ISO 9001:2015 standard with annual NQA audits.</p>
                     <p style="margin-top: 20px;">
                         <strong data-i18n="footer.accreditations">Accreditations:</strong><br>
-                        <span data-i18n="footer.accreditationsList">ISO 9001:2008 • Network Rail Approved • Full Traceability</span>
+                        <span data-i18n="footer.accreditationsList">ISO 9001:2015 • Network Rail Approved • Full Traceability</span>
                     </p>
                 </div>
             </div>

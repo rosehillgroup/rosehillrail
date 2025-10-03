@@ -126,7 +126,7 @@
       },
       "bespokeManufacturing": {
         "title": "Fabrication Sur Mesure",
-        "description": "Solutions personnalisées adaptées aux besoins spécifiques de votre projet avec assurance qualité complète et certification ISO 9001:2008."
+        "description": "Solutions personnalisées adaptées aux besoins spécifiques de votre projet avec assurance qualité complète et certification ISO 9001:2015."
       },
       "fullTraceability": {
         "title": "Traçabilité Complète",
@@ -282,7 +282,7 @@
     },
     "precisionQuality": {
       "title": "Précision & Qualité",
-      "description": "Certifié ISO 9001:2008 avec audits annuels NQA. Notre fabrication de pointe contrôlée par ordinateur est supervisée par des professionnels hautement qualifiés utilisant des machines spécialement conçues pour les panneaux de traversée ferroviaire."
+      "description": "Certifié ISO 9001:2015 avec audits annuels NQA. Notre fabrication de pointe contrôlée par ordinateur est supervisée par des professionnels hautement qualifiés utilisant des machines spécialement conçues pour les panneaux de traversée ferroviaire."
     },
     "completeTraceability": {
       "title": "Traçabilité Complète",
@@ -371,9 +371,9 @@
     "products": "Produits",
     "company": "Société",
     "qualityCompliance": "Qualité & Conformité",
-    "complianceText": "Tous les composants conçus par Rosehill Rail avec droits de conception exclusifs. Qualité assurée selon la norme ISO 9001:2008 avec audits annuels NQA.",
+    "complianceText": "Tous les composants conçus par Rosehill Rail avec droits de conception exclusifs. Qualité assurée selon la norme ISO 9001:2015 avec audits annuels NQA.",
     "accreditations": "Accréditations :",
-    "accreditationsList": "ISO 9001:2008 • Approuvé Network Rail • Traçabilité Complète",
+    "accreditationsList": "ISO 9001:2015 • Approuvé Network Rail • Traçabilité Complète",
     "copyright": "© 2025 Rosehill Rail. Division du Groupe Rosehill. Tous droits réservés.",
     "links": {
       "walkwayPanels": "Panneaux de Cheminement",

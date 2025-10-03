@@ -28,5 +28,25 @@ http://rosehillrail.netlify.app/* https://rosehillrail.netlify.app/:splat 301!
 /accessories /accessories.html 301!
 /edgebeams /edgebeams.html 301!
 
+# Old rosehillrail.com product URL redirects
+/products/titan-system/ /titan.html 301!
+/products/titan-system /titan.html 301!
+/products/extreme-condition-panels/ /connect.html 301!
+/products/extreme-condition-panels /connect.html 301!
+/products/link-system/ /link.html 301!
+/products/link-system /link.html 301!
+/products/base-plate-system/ /baseplate.html 301!
+/products/base-plate-system /baseplate.html 301!
+/products/interlocking-rrap-system/ /interlocking.html 301!
+/products/interlocking-rrap-system /interlocking.html 301!
+/products/rosehill-rubber-edge-beams/ /edgebeams.html 301!
+/products/rosehill-rubber-edge-beams /edgebeams.html 301!
+/products/anti-trespass-panels/ /antitrespass.html 301!
+/products/anti-trespass-panels /antitrespass.html 301!
+/walkway-panels/ /walkway.html 301!
+/walkway-panels /walkway.html 301!
+/products/spares/ /accessories.html 301!
+/products/spares /accessories.html 301!
+
 # Fallback for 404 errors
 /* /index.html 404

@@ -244,11 +244,32 @@
             box-shadow: 0 10px 40px rgba(0,0,0,0.15);
             padding: 30px;
             width: 320px;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
             opacity: 0;
             visibility: hidden;
             transition: all 0.3s ease;
             z-index: 1000;
             margin-top: 10px;
+        }
+
+        /* Custom scrollbar styling for mega menu */
+        .mega-menu::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .mega-menu::-webkit-scrollbar-track {
+            background: #f0f4f8;
+            border-radius: 10px;
+        }
+
+        .mega-menu::-webkit-scrollbar-thumb {
+            background: #cbd5e0;
+            border-radius: 10px;
+        }
+
+        .mega-menu::-webkit-scrollbar-thumb:hover {
+            background: #a0aec0;
         }
 
         .nav-item:hover .mega-menu {
@@ -1626,10 +1647,10 @@
 
                 <div class="footer-section">
                     <h3 data-i18n="footer.qualityCompliance">Quality & Compliance</h3>
-                    <p data-i18n="footer.complianceText">All components designed by Rosehill Rail with exclusive design rights. Quality assured to ISO 9001:2008 standard with annual NQA audits.</p>
+                    <p data-i18n="footer.complianceText">All components designed by Rosehill Rail with exclusive design rights. Quality assured to ISO 9001:2015 standard with annual NQA audits.</p>
                     <p style="margin-top: 20px;">
                         <strong data-i18n="footer.accreditations">Accreditations:</strong><br>
-                        <span data-i18n="footer.accreditationsList">ISO 9001:2008 • Network Rail Approved • Full Traceability</span>
+                        <span data-i18n="footer.accreditationsList">ISO 9001:2015 • Network Rail Approved • Full Traceability</span>
                     </p>
                 </div>
             </div>

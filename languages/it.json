@@ -126,7 +126,7 @@
       },
       "bespokeManufacturing": {
         "title": "Produzione Su Misura",
-        "description": "Soluzioni personalizzate su misura per le esigenze specifiche del vostro progetto con garanzia di qualità completa e certificazione ISO 9001:2008."
+        "description": "Soluzioni personalizzate su misura per le esigenze specifiche del vostro progetto con garanzia di qualità completa e certificazione ISO 9001:2015."
       },
       "fullTraceability": {
         "title": "Tracciabilità Completa",
@@ -282,7 +282,7 @@
     },
     "precisionQuality": {
       "title": "Precisione e Qualità",
-      "description": "Certificazione ISO 9001:2008 con audit NQA annuali. La nostra produzione all'avanguardia controllata da computer è supervisionata da professionisti altamente qualificati che utilizzano macchinari appositamente costruiti per pannelli di attraversamento ferroviario."
+      "description": "Certificazione ISO 9001:2015 con audit NQA annuali. La nostra produzione all'avanguardia controllata da computer è supervisionata da professionisti altamente qualificati che utilizzano macchinari appositamente costruiti per pannelli di attraversamento ferroviario."
     },
     "completeTraceability": {
       "title": "Tracciabilità Completa",
@@ -371,9 +371,9 @@
     "products": "Prodotti",
     "company": "Azienda",
     "qualityCompliance": "Qualità e Conformità",
-    "complianceText": "Tutti i componenti progettati da Rosehill Rail con diritti di design esclusivi. Qualità assicurata secondo lo standard ISO 9001:2008 con audit NQA annuali.",
+    "complianceText": "Tutti i componenti progettati da Rosehill Rail con diritti di design esclusivi. Qualità assicurata secondo lo standard ISO 9001:2015 con audit NQA annuali.",
     "accreditations": "Accreditamenti:",
-    "accreditationsList": "ISO 9001:2008 • Approvato Network Rail • Tracciabilità Completa",
+    "accreditationsList": "ISO 9001:2015 • Approvato Network Rail • Tracciabilità Completa",
     "copyright": "© 2025 Rosehill Rail. Una Divisione del Gruppo Rosehill. Tutti i diritti riservati.",
     "links": {
       "walkwayPanels": "Pannelli per Camminamenti",
