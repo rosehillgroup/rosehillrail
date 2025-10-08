@@ -11,42 +11,58 @@ http://www.rosehillrail.com/* https://rail.rosehill.group/:splat 301!
 http://rail.rosehill.group/* https://rail.rosehill.group/:splat 301!
 http://rosehillrail.netlify.app/* https://rosehillrail.netlify.app/:splat 301!
 
-# Clean URLs - redirect to canonical .html version
-/home /index.html 301!
-/about /about.html 301!
-/products /products.html 301!
-/contact /contact.html 301!
+# Clean URLs - remove .html extension (redirect .html to clean)
+/about.html /about 301
+/products.html /products 301
+/contact.html /contact 301
+/thank-you.html /thank-you 301
+/antitrespass.html /antitrespass 301
+/baseplate.html /baseplate 301
+/connect.html /connect 301
+/interlocking.html /interlocking 301
+/link.html /link 301
+/titan.html /titan 301
+/walkway.html /walkway 301
+/accessories.html /accessories 301
+/edgebeams.html /edgebeams 301
 
-# Product page redirects
-/antitrespass /antitrespass.html 301!
-/baseplate /baseplate.html 301!
-/connect /connect.html 301!
-/interlocking /interlocking.html 301!
-/link /link.html 301!
-/titan /titan.html 301!
-/walkway /walkway.html 301!
-/accessories /accessories.html 301!
-/edgebeams /edgebeams.html 301!
+# Serve HTML files without extension
+/about /about.html 200
+/products /products.html 200
+/contact /contact.html 200
+/thank-you /thank-you.html 200
+/antitrespass /antitrespass.html 200
+/baseplate /baseplate.html 200
+/connect /connect.html 200
+/interlocking /interlocking.html 200
+/link /link.html 200
+/titan /titan.html 200
+/walkway /walkway.html 200
+/accessories /accessories.html 200
+/edgebeams /edgebeams.html 200
+
+# Legacy clean URL redirects (for backwards compatibility)
+/home /index.html 301
 
 # Old rosehillrail.com product URL redirects
-/products/titan-system/ /titan.html 301!
-/products/titan-system /titan.html 301!
-/products/extreme-condition-panels/ /connect.html 301!
-/products/extreme-condition-panels /connect.html 301!
-/products/link-system/ /link.html 301!
-/products/link-system /link.html 301!
-/products/base-plate-system/ /baseplate.html 301!
-/products/base-plate-system /baseplate.html 301!
-/products/interlocking-rrap-system/ /interlocking.html 301!
-/products/interlocking-rrap-system /interlocking.html 301!
-/products/rosehill-rubber-edge-beams/ /edgebeams.html 301!
-/products/rosehill-rubber-edge-beams /edgebeams.html 301!
-/products/anti-trespass-panels/ /antitrespass.html 301!
-/products/anti-trespass-panels /antitrespass.html 301!
-/walkway-panels/ /walkway.html 301!
-/walkway-panels /walkway.html 301!
-/products/spares/ /accessories.html 301!
-/products/spares /accessories.html 301!
+/products/titan-system/ /titan 301!
+/products/titan-system /titan 301!
+/products/extreme-condition-panels/ /connect 301!
+/products/extreme-condition-panels /connect 301!
+/products/link-system/ /link 301!
+/products/link-system /link 301!
+/products/base-plate-system/ /baseplate 301!
+/products/base-plate-system /baseplate 301!
+/products/interlocking-rrap-system/ /interlocking 301!
+/products/interlocking-rrap-system /interlocking 301!
+/products/rosehill-rubber-edge-beams/ /edgebeams 301!
+/products/rosehill-rubber-edge-beams /edgebeams 301!
+/products/anti-trespass-panels/ /antitrespass 301!
+/products/anti-trespass-panels /antitrespass 301!
+/walkway-panels/ /walkway 301!
+/walkway-panels /walkway 301!
+/products/spares/ /accessories 301!
+/products/spares /accessories 301!
 
 # Fallback for 404 errors
-/* /index.html 404
+/* /404.html 404
