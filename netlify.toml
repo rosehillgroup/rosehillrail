@@ -37,3 +37,9 @@
   for = "/*.png"
   [headers.values]
     Cache-Control = "public, max-age=2592000"
+
+# Custom 404 page
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
