@@ -42,23 +42,29 @@
 # French - rewrite /fr/* to serve root files with lang=fr
 [[redirects]]
   from = "/fr/*"
-  to = "/:splat?lang=fr"
+  to = "/:splat"
   status = 200
-  force = false
+  force = true
+  [redirects.query]
+    lang = "fr"
 
 # Italian - rewrite /it/* to serve root files with lang=it
 [[redirects]]
   from = "/it/*"
-  to = "/:splat?lang=it"
+  to = "/:splat"
   status = 200
-  force = false
+  force = true
+  [redirects.query]
+    lang = "it"
 
 # German - rewrite /de/* to serve root files with lang=de
 [[redirects]]
   from = "/de/*"
-  to = "/:splat?lang=de"
+  to = "/:splat"
   status = 200
-  force = false
+  force = true
+  [redirects.query]
+    lang = "de"
 
 # Custom 404 page
 [[redirects]]
