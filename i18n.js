@@ -418,13 +418,6 @@ class RosehillI18n {
                 return;
             }
 
-            // Skip non-HTML files
-            if (!href.endsWith('.html')) {
-                skippedCount++;
-                if (skippedCount + updatedCount < 5) console.log(`  → Skipped: doesn't end with .html`);
-                return;
-            }
-
             // Skip language switcher links (they have data-language attribute)
             if (link.hasAttribute('data-language')) {
                 skippedCount++;
@@ -432,8 +425,28 @@ class RosehillI18n {
                 return;
             }
 
+            // Skip non-page links (images, CSS, JS, etc.)
+            // Allow links with or without .html extension
+            const hasExtension = href.includes('.');
+            const isNonHtmlFile = hasExtension && !href.endsWith('.html');
+            if (isNonHtmlFile) {
+                skippedCount++;
+                if (skippedCount + updatedCount < 5) console.log(`  → Skipped: non-HTML file`);
+                return;
+            }
+
             // Remove leading slash if present
-            const cleanHref = href.startsWith('/') ? href.substring(1) : href;
+            let cleanHref = href.startsWith('/') ? href.substring(1) : href;
+
+            // Add .html if not present and not root
+            if (cleanHref && !cleanHref.endsWith('.html')) {
+                cleanHref = cleanHref + '.html';
+            }
+
+            // Handle root "/" case
+            if (!cleanHref || cleanHref === '/') {
+                cleanHref = 'index.html';
+            }
 
             // Prepend language prefix
             const newHref = `/${currentLang}/${cleanHref}`;
