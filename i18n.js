@@ -160,6 +160,9 @@ class RosehillI18n {
 
         // Update language switcher display
         this.updateLanguageSwitcherDisplay();
+
+        // Update navigation links to preserve language prefix
+        this.updateNavigationLinks();
     }
 
     updateTranslatableElements() {
@@ -347,6 +350,50 @@ class RosehillI18n {
             } else {
                 option.classList.remove('active');
             }
+        });
+    }
+
+    updateNavigationLinks() {
+        // Only update links if we're on a language-specific URL
+        const currentLang = this.getLanguageFromPath();
+        if (!currentLang) return; // We're on English, links are correct as-is
+
+        // Get all links on the page
+        const links = document.querySelectorAll('a[href]');
+
+        links.forEach(link => {
+            const href = link.getAttribute('href');
+
+            // Skip if:
+            // - No href
+            // - External link (starts with http/https)
+            // - Anchor link (starts with #)
+            // - Already has language prefix
+            // - Not an HTML file
+            // - Data/javascript protocol
+            if (!href ||
+                href.startsWith('http://') ||
+                href.startsWith('https://') ||
+                href.startsWith('#') ||
+                href.startsWith(`/${currentLang}/`) ||
+                href.startsWith('javascript:') ||
+                href.startsWith('mailto:') ||
+                href.startsWith('tel:') ||
+                !href.endsWith('.html')) {
+                return;
+            }
+
+            // Skip language switcher links (they have data-language attribute)
+            if (link.hasAttribute('data-language')) {
+                return;
+            }
+
+            // Remove leading slash if present
+            const cleanHref = href.startsWith('/') ? href.substring(1) : href;
+
+            // Prepend language prefix
+            const newHref = `/${currentLang}/${cleanHref}`;
+            link.setAttribute('href', newHref);
         });
     }
 
