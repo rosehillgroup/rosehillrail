@@ -38,33 +38,8 @@
   [headers.values]
     Cache-Control = "public, max-age=2592000"
 
-# Language-based URL routing
-# French - rewrite /fr/* to serve root files with lang=fr
-[[redirects]]
-  from = "/fr/*"
-  to = "/:splat"
-  status = 200
-  force = true
-  [redirects.query]
-    lang = "fr"
-
-# Italian - rewrite /it/* to serve root files with lang=it
-[[redirects]]
-  from = "/it/*"
-  to = "/:splat"
-  status = 200
-  force = true
-  [redirects.query]
-    lang = "it"
-
-# German - rewrite /de/* to serve root files with lang=de
-[[redirects]]
-  from = "/de/*"
-  to = "/:splat"
-  status = 200
-  force = true
-  [redirects.query]
-    lang = "de"
+# Language routing now handled by geo-cookie edge function
+# Edge functions run before redirects and handle /fr/*, /it/*, /de/* paths
 
 # Custom 404 page
 [[redirects]]

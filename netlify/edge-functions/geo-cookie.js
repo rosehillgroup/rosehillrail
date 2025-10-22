@@ -1,4 +1,20 @@
 export default async (request, context) => {
+  // Handle language-prefixed URLs (e.g., /fr/products.html → /products.html?lang=fr)
+  const url = new URL(request.url);
+  const languageMatch = url.pathname.match(/^\/(fr|it|de)\/(.*)/);
+
+  if (languageMatch) {
+    const [, lang, path] = languageMatch;
+
+    // Rewrite URL to root file with language query param
+    const newUrl = new URL(`/${path}`, url.origin);
+    newUrl.searchParams.set('lang', lang);
+
+    // Rewrite the request to the root file (keeps /fr/ URL in browser)
+    return context.rewrite(newUrl);
+  }
+
+  // Original geo-cookie functionality for non-language paths
   // Netlify adds IP-derived geo on the request at the edge
   // @ts-ignore
   const g = context.geo || {};
