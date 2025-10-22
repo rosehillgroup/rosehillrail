@@ -39,21 +39,46 @@ class RosehillI18n {
         // Initialize language switcher
         this.initLanguageSwitcher();
 
+        // Inject hreflang tags for SEO
+        this.injectHreflangTags();
+
         this.isLoaded = true;
         this.dispatchEvent('i18nLoaded');
     }
 
     detectLanguage() {
-        // Check localStorage first
+        // Priority 1: Check URL query parameter (from Netlify rewrite)
+        const urlParams = new URLSearchParams(window.location.search);
+        const urlLang = urlParams.get('lang');
+        if (urlLang && this.supportedLanguages.includes(urlLang)) {
+            this.currentLanguage = urlLang;
+            localStorage.setItem('rosehill_rail_language', urlLang);
+            return;
+        }
+
+        // Priority 2: Check URL path for language prefix (direct navigation)
+        const pathLang = this.getLanguageFromPath();
+        if (pathLang) {
+            this.currentLanguage = pathLang;
+            localStorage.setItem('rosehill_rail_language', pathLang);
+            return;
+        }
+
+        // Priority 3: Check localStorage
         const savedLang = localStorage.getItem('rosehill_rail_language');
         if (savedLang && this.supportedLanguages.includes(savedLang)) {
             this.currentLanguage = savedLang;
             return;
         }
 
-        // Always default to English for new visitors
-        // Browser language detection removed to ensure consistent English default
+        // Priority 4: Default to English for new visitors
         this.currentLanguage = this.defaultLanguage;
+    }
+
+    getLanguageFromPath() {
+        const path = window.location.pathname;
+        const match = path.match(/^\/(fr|it|de)\//);
+        return match ? match[1] : null;
     }
 
     getBrowserLanguage() {
@@ -249,17 +274,37 @@ class RosehillI18n {
             return;
         }
 
-        this.currentLanguage = newLanguage;
+        // Build new URL with language prefix and navigate
+        const newUrl = this.buildLanguageUrl(newLanguage);
+
+        // Save preference before navigation
         localStorage.setItem('rosehill_rail_language', newLanguage);
 
-        // Load new translations
-        await this.loadTranslations();
+        // Navigate to new URL (this will reload page with correct language)
+        window.location.href = newUrl;
+    }
 
-        // Apply new language
-        this.applyLanguage();
+    buildLanguageUrl(language) {
+        // Get current path without query params
+        const currentPath = window.location.pathname;
 
-        // Dispatch event
-        this.dispatchEvent('languageChanged', { language: newLanguage });
+        // Remove any existing language prefix
+        const cleanPath = currentPath.replace(/^\/(fr|it|de)\//, '/');
+
+        // Get just the filename
+        let fileName = cleanPath.split('/').pop();
+        if (!fileName || fileName === '') {
+            fileName = 'index.html';
+        }
+
+        // Build new URL with language prefix
+        if (language === 'en') {
+            // English - no prefix, root level
+            return `/${fileName}`;
+        } else {
+            // Other languages - add prefix
+            return `/${language}/${fileName}`;
+        }
     }
 
     initLanguageSwitcher() {
@@ -288,15 +333,73 @@ class RosehillI18n {
             desktopToggle.innerHTML = `${this.currentLanguage.toUpperCase()} ${arrowText}`;
         }
 
-        // Update active states on all language options
+        // Update hrefs and active states on all language options
         document.querySelectorAll('[data-language]').forEach(option => {
             const lang = option.getAttribute('data-language');
+
+            // Update href to point to correct language URL
+            const languageUrl = this.buildLanguageUrl(lang);
+            option.setAttribute('href', languageUrl);
+
+            // Update active state
             if (lang === this.currentLanguage) {
                 option.classList.add('active');
             } else {
                 option.classList.remove('active');
             }
         });
+    }
+
+    injectHreflangTags() {
+        // Remove any existing hreflang tags first
+        document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(tag => tag.remove());
+
+        // Get current page filename
+        const currentPath = window.location.pathname;
+        const cleanPath = currentPath.replace(/^\/(fr|it|de)\//, '/');
+        let fileName = cleanPath.split('/').pop();
+        if (!fileName || fileName === '') {
+            fileName = 'index.html';
+        }
+
+        const baseUrl = window.location.origin;
+        const head = document.head;
+
+        // Add hreflang for each language
+        this.supportedLanguages.forEach(lang => {
+            const link = document.createElement('link');
+            link.rel = 'alternate';
+            link.hreflang = lang;
+
+            if (lang === 'en') {
+                link.href = `${baseUrl}/${fileName}`;
+            } else {
+                link.href = `${baseUrl}/${lang}/${fileName}`;
+            }
+
+            head.appendChild(link);
+        });
+
+        // Add x-default hreflang (pointing to English)
+        const defaultLink = document.createElement('link');
+        defaultLink.rel = 'alternate';
+        defaultLink.hreflang = 'x-default';
+        defaultLink.href = `${baseUrl}/${fileName}`;
+        head.appendChild(defaultLink);
+
+        // Update canonical tag to current language version
+        let canonicalLink = document.querySelector('link[rel="canonical"]');
+        if (!canonicalLink) {
+            canonicalLink = document.createElement('link');
+            canonicalLink.rel = 'canonical';
+            head.appendChild(canonicalLink);
+        }
+
+        if (this.currentLanguage === 'en') {
+            canonicalLink.href = `${baseUrl}/${fileName}`;
+        } else {
+            canonicalLink.href = `${baseUrl}/${this.currentLanguage}/${fileName}`;
+        }
     }
 
     dispatchEvent(eventName, detail = {}) {
