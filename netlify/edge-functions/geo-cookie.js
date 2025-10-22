@@ -6,12 +6,22 @@ export default async (request, context) => {
   if (languageMatch) {
     const [, lang, path] = languageMatch;
 
-    // Rewrite URL to root file with language query param
-    const newUrl = new URL(`/${path}`, url.origin);
-    newUrl.searchParams.set('lang', lang);
+    // Only rewrite HTML pages, not assets (images, CSS, JS, manifests, etc.)
+    // Check if this is a page request (no extension or .html extension)
+    const hasExtension = path.includes('.');
+    const isHtmlPage = !hasExtension || path.endsWith('.html');
 
-    // Rewrite the request to the root file (keeps /fr/ URL in browser)
-    return context.rewrite(newUrl);
+    if (isHtmlPage) {
+      // Rewrite URL to root file with language query param
+      const newUrl = new URL(`/${path}`, url.origin);
+      newUrl.searchParams.set('lang', lang);
+
+      // Rewrite the request to the root file (keeps /fr/ URL in browser)
+      return context.rewrite(newUrl);
+    }
+
+    // For non-HTML assets, let them 404 (they shouldn't be at /fr/* paths)
+    // The browser will then try the root path via normal fallback
   }
 
   // Original geo-cookie functionality for non-language paths

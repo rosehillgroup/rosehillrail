@@ -354,86 +354,43 @@ class RosehillI18n {
     }
 
     updateNavigationLinks() {
-        console.log('[i18n] updateNavigationLinks() called');
-        console.log('[i18n] this.currentLanguage:', this.currentLanguage);
-
         // Use the already-detected current language
         // Note: We can't use getLanguageFromPath() because edge function rewrites
         // the pathname server-side, so window.location.pathname shows the rewritten path
         const currentLang = this.currentLanguage;
 
         // Only update links if we're not on English
-        if (!currentLang || currentLang === 'en') {
-            console.log('[i18n] Skipping link updates - language is', currentLang);
-            return;
-        }
+        if (!currentLang || currentLang === 'en') return;
 
         // Get all links on the page
         const links = document.querySelectorAll('a[href]');
-        console.log('[i18n] Found', links.length, 'total links on page');
-
-        let updatedCount = 0;
-        let skippedCount = 0;
 
         links.forEach(link => {
             const href = link.getAttribute('href');
 
-            // Log first 5 hrefs to see what we're dealing with
-            if (skippedCount + updatedCount < 5) {
-                console.log(`[i18n] Checking link href: "${href}"`);
-            }
-
             // Skip if no href
-            if (!href) {
-                skippedCount++;
-                if (skippedCount + updatedCount < 5) console.log(`  → Skipped: no href`);
-                return;
-            }
+            if (!href) return;
 
             // Skip external links
-            if (href.startsWith('http://') || href.startsWith('https://')) {
-                skippedCount++;
-                if (skippedCount + updatedCount < 5) console.log(`  → Skipped: external link`);
-                return;
-            }
+            if (href.startsWith('http://') || href.startsWith('https://')) return;
 
             // Skip anchor links
-            if (href.startsWith('#')) {
-                skippedCount++;
-                if (skippedCount + updatedCount < 5) console.log(`  → Skipped: anchor link`);
-                return;
-            }
+            if (href.startsWith('#')) return;
 
             // Skip if already has language prefix
-            if (href.startsWith(`/${currentLang}/`)) {
-                skippedCount++;
-                if (skippedCount + updatedCount < 5) console.log(`  → Skipped: already has /${currentLang}/ prefix`);
-                return;
-            }
+            if (href.startsWith(`/${currentLang}/`)) return;
 
             // Skip protocol links
-            if (href.startsWith('javascript:') || href.startsWith('mailto:') || href.startsWith('tel:')) {
-                skippedCount++;
-                if (skippedCount + updatedCount < 5) console.log(`  → Skipped: protocol link`);
-                return;
-            }
+            if (href.startsWith('javascript:') || href.startsWith('mailto:') || href.startsWith('tel:')) return;
 
             // Skip language switcher links (they have data-language attribute)
-            if (link.hasAttribute('data-language')) {
-                skippedCount++;
-                if (skippedCount + updatedCount < 5) console.log(`  → Skipped: language switcher`);
-                return;
-            }
+            if (link.hasAttribute('data-language')) return;
 
             // Skip non-page links (images, CSS, JS, etc.)
             // Allow links with or without .html extension
             const hasExtension = href.includes('.');
             const isNonHtmlFile = hasExtension && !href.endsWith('.html');
-            if (isNonHtmlFile) {
-                skippedCount++;
-                if (skippedCount + updatedCount < 5) console.log(`  → Skipped: non-HTML file`);
-                return;
-            }
+            if (isNonHtmlFile) return;
 
             // Remove leading slash if present
             let cleanHref = href.startsWith('/') ? href.substring(1) : href;
@@ -451,14 +408,7 @@ class RosehillI18n {
             // Prepend language prefix
             const newHref = `/${currentLang}/${cleanHref}`;
             link.setAttribute('href', newHref);
-            updatedCount++;
-
-            if (updatedCount <= 5) {
-                console.log(`[i18n] Updated: "${href}" → "${newHref}"`);
-            }
         });
-
-        console.log(`[i18n] Links updated: ${updatedCount}, skipped: ${skippedCount}`);
     }
 
     injectHreflangTags() {
