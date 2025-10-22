@@ -378,29 +378,57 @@ class RosehillI18n {
         links.forEach(link => {
             const href = link.getAttribute('href');
 
-            // Skip if:
-            // - No href
-            // - External link (starts with http/https)
-            // - Anchor link (starts with #)
-            // - Already has language prefix
-            // - Not an HTML file
-            // - Data/javascript protocol
-            if (!href ||
-                href.startsWith('http://') ||
-                href.startsWith('https://') ||
-                href.startsWith('#') ||
-                href.startsWith(`/${currentLang}/`) ||
-                href.startsWith('javascript:') ||
-                href.startsWith('mailto:') ||
-                href.startsWith('tel:') ||
-                !href.endsWith('.html')) {
+            // Log first 5 hrefs to see what we're dealing with
+            if (skippedCount + updatedCount < 5) {
+                console.log(`[i18n] Checking link href: "${href}"`);
+            }
+
+            // Skip if no href
+            if (!href) {
                 skippedCount++;
+                if (skippedCount + updatedCount < 5) console.log(`  → Skipped: no href`);
+                return;
+            }
+
+            // Skip external links
+            if (href.startsWith('http://') || href.startsWith('https://')) {
+                skippedCount++;
+                if (skippedCount + updatedCount < 5) console.log(`  → Skipped: external link`);
+                return;
+            }
+
+            // Skip anchor links
+            if (href.startsWith('#')) {
+                skippedCount++;
+                if (skippedCount + updatedCount < 5) console.log(`  → Skipped: anchor link`);
+                return;
+            }
+
+            // Skip if already has language prefix
+            if (href.startsWith(`/${currentLang}/`)) {
+                skippedCount++;
+                if (skippedCount + updatedCount < 5) console.log(`  → Skipped: already has /${currentLang}/ prefix`);
+                return;
+            }
+
+            // Skip protocol links
+            if (href.startsWith('javascript:') || href.startsWith('mailto:') || href.startsWith('tel:')) {
+                skippedCount++;
+                if (skippedCount + updatedCount < 5) console.log(`  → Skipped: protocol link`);
+                return;
+            }
+
+            // Skip non-HTML files
+            if (!href.endsWith('.html')) {
+                skippedCount++;
+                if (skippedCount + updatedCount < 5) console.log(`  → Skipped: doesn't end with .html`);
                 return;
             }
 
             // Skip language switcher links (they have data-language attribute)
             if (link.hasAttribute('data-language')) {
                 skippedCount++;
+                if (skippedCount + updatedCount < 5) console.log(`  → Skipped: language switcher`);
                 return;
             }
 
