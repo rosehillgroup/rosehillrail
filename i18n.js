@@ -354,9 +354,13 @@ class RosehillI18n {
     }
 
     updateNavigationLinks() {
-        // Only update links if we're on a language-specific URL
-        const currentLang = this.getLanguageFromPath();
-        if (!currentLang) return; // We're on English, links are correct as-is
+        // Use the already-detected current language
+        // Note: We can't use getLanguageFromPath() because edge function rewrites
+        // the pathname server-side, so window.location.pathname shows the rewritten path
+        const currentLang = this.currentLanguage;
+
+        // Only update links if we're not on English
+        if (!currentLang || currentLang === 'en') return;
 
         // Get all links on the page
         const links = document.querySelectorAll('a[href]');
