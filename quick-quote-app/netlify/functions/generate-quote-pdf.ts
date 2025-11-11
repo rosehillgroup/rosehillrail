@@ -114,7 +114,7 @@ export const handler: Handler = async (event) => {
     const browser = await puppeteer.launch({
       args: chromium.args,
       executablePath: await chromium.executablePath(),
-      headless: chromium.headless,
+      headless: true,
       defaultViewport: { width: 1240, height: 1754, deviceScaleFactor: 1 } // approx A4 @ 96dpi
     })
     const page = await browser.newPage()
