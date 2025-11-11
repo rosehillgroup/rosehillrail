@@ -10,6 +10,10 @@ import { QuotePDF } from "@/lib/pdf-template";
 import type { QuoteInput } from "@/lib/types";
 import type { PricedBOMLine, QuoteTotals } from "@/lib/pricing";
 
+// Force Node runtime (not Edge)
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+
 export async function POST(request: NextRequest) {
   try {
     // Parse request body
