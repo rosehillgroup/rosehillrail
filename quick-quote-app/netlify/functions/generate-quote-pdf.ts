@@ -3,7 +3,7 @@ import chromium from '@sparticuz/chromium'
 import puppeteer from 'puppeteer-core'
 
 type Line = {
-  code: string; name: string; unit: string;
+  product: string; name: string; unit: string;
   qty: number; unit_price: number; line_total: number;
 }
 
@@ -24,7 +24,7 @@ function buildHtml(p: Payload) {
   const ccy = p.currency || 'EUR'
   const rows = (p.lines || []).map(l => `
     <tr>
-      <td>${escapeHtml(l.code)}</td>
+      <td>${escapeHtml(l.product)}</td>
       <td>${escapeHtml(l.name)}</td>
       <td class="t-right">${escapeHtml(l.unit)}</td>
       <td class="t-right">${l.qty ?? 0}</td>
