@@ -135,7 +135,7 @@ export const handler: Handler = async (event) => {
         'Content-Disposition': 'inline; filename="quote.pdf"',
         'Cache-Control': 'no-store'
       },
-      body: pdf.toString('base64'),
+      body: Buffer.from(pdf).toString('base64'),
       isBase64Encoded: true
     }
   } catch (err: any) {
