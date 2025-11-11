@@ -1,0 +1,88 @@
+code,name,category,unit,active
+BASEPLATED CHAIN GUARD,BASEPLATED CHAIN GUARD,,,True
+CONNECT CHAIN GUARD,CONNECT CHAIN GUARD,,,True
+Connect End Restraint,Connect End Restraint,,,True
+FP A(B),FP A(B),,,True
+FP JV,FP JV,,,True
+FP JV H K,FP JV H K,,,True
+FP JV LO,FP JV LO,,,True
+FP JV LOL,FP JV LOL,,,True
+FP N,FP N,,,True
+FP N LO,FP N LO,,,True
+FP P(B),FP P(B),,,True
+FP P(B) H K,FP P(B) H K,,,True
+FP P(B) LO,FP P(B) LO,,,True
+FP TC,FP TC,,,True
+FP TC H K,FP TC H K,,,True
+FP TC LO,FP TC LO,,,True
+Field Connecting Plates,Field Connecting Plates,,,True
+GP A(B),GP A(B),,,True
+GP JV,GP JV,,,True
+GP JV H K,GP JV H K,,,True
+GP JV LO,GP JV LO,,,True
+GP JV LOL,GP JV LOL,,,True
+GP N,GP N,,,True
+GP N LO,GP N LO,,,True
+GP P(B),GP P(B),,,True
+GP P(B) H K,GP P(B) H K,,,True
+GP P(B) LO,GP P(B) LO,,,True
+GP TC,GP TC,,,True
+GP TC H K,GP TC H K,,,True
+GP TC LO,GP TC LO,,,True
+Gauge Connecting PlateS,Gauge Connecting PlateS,,,True
+HANDLEBAR LINK,HANDLEBAR LINK,,,True
+INTERLOCKER CHAIN GUARD,INTERLOCKER CHAIN GUARD,,,True
+LINK CHAIN GUARD,LINK CHAIN GUARD,,,True
+LOOP,LOOP,,,True
+Link Connector,Link Connector,,,True
+Link End Restraint,Link End Restraint,,,True
+Movement Restrictor,Movement Restrictor,,,True
+NGP JV,NGP JV,,,True
+NGP JV H K,NGP JV H K,,,True
+NGP JV LO,NGP JV LO,,,True
+NGP N,NGP N,,,True
+NGP P(B),NGP P(B),,,True
+NGP TC,NGP TC,,,True
+NGP TC H K,NGP TC H K,,,True
+PVC AEB @ 1.8m,PVC AEB @ 1.8m,,,True
+PVC AEB @ 3.6m,PVC AEB @ 3.6m,,,True
+REB TC,REB TC,,,True
+Rubber Edge Beam Baseplate,Rubber Edge Beam Baseplate,,,True
+SWFP JV,SWFP JV,,,True
+SWFP JV H K,SWFP JV H K,,,True
+SWFP JV LOL,SWFP JV LOL,,,True
+SWFP N LO,SWFP N LO,,,True
+SWFP P(B),SWFP P(B),,,True
+SWFP P(B) H K,SWFP P(B) H K,,,True
+SWFP P(B) LO,SWFP P(B) LO,,,True
+SWFP TC H K,SWFP TC H K,,,True
+SWFP TC LO,SWFP TC LO,,,True
+Steel AEB @ 1.8m,Steel AEB @ 1.8m,,,True
+Steel AEB @ 3.6m,Steel AEB @ 3.6m,,,True
+Strand Movement Restrictor,Strand Movement Restrictor,,,True
+WFP A(B),WFP A(B),,,True
+WFP JV,WFP JV,,,True
+WFP JV H K,WFP JV H K,,,True
+WFP JV LOL,WFP JV LOL,,,True
+WFP N,WFP N,,,True
+WFP N LO,WFP N LO,,,True
+WFP P(B),WFP P(B),,,True
+WFP P(B) H K,WFP P(B) H K,,,True
+WFP P(B) LO,WFP P(B) LO,,,True
+WFP TC,WFP TC,,,True
+WFP TC H K,WFP TC H K,,,True
+WFP TC LO,WFP TC LO,,,True
+WGP A(B),WGP A(B),,,True
+WGP JV,WGP JV,,,True
+WGP JV H K,WGP JV H K,,,True
+WGP N,WGP N,,,True
+WGP N LO,WGP N LO,,,True
+WGP P(B),WGP P(B),,,True
+WGP P(B) H K,WGP P(B) H K,,,True
+WGP P(B) LO,WGP P(B) LO,,,True
+WGP TC,WGP TC,,,True
+WGP TC H K,WGP TC H K,,,True
+WGP TC LO,WGP TC LO,,,True
+ZR Turret,ZR Turret,,,True
+ZR Winged,ZR Winged,,,True
+ZR Winged 1UT,ZR Winged 1UT,,,True

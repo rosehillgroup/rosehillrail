@@ -3,9 +3,11 @@
  * Generates a PDF quote document
  */
 
+import React from "react";
 import { NextRequest, NextResponse } from "next/server";
 import { renderToStream } from "@react-pdf/renderer";
 import { QuotePDF } from "@/lib/pdf-template";
+import { SimplePDF } from "@/lib/pdf-template-simple";
 import type { QuoteInput } from "@/lib/types";
 import type { PricedBOMLine, QuoteTotals } from "@/lib/pricing";
 
@@ -33,9 +35,11 @@ export async function POST(request: NextRequest) {
     const filename = `RosehillRail_Quote_${projectName}_${date}.pdf`;
 
     // Generate PDF stream
-    const stream = await renderToStream(
-      <QuotePDF input={input} bom={bom} totals={totals} />
-    );
+    // TEMP: Using SimplePDF for testing
+    const stream = await renderToStream(<SimplePDF />);
+    // const stream = await renderToStream(
+    //   <QuotePDF input={input} bom={bom} totals={totals} />
+    // );
 
     // Return PDF as downloadable file
     return new NextResponse(stream as any, {

@@ -1,0 +1,451 @@
+[
+  {
+    "id": "assembly.gauge_panel.ngp",
+    "description": "Narrow Gauge Panel assembly (gauge <= 1420mm)",
+    "selector": {
+      "gauge_panel_type": ["NGP"]
+    },
+    "lines": [
+      {
+        "product": "NGP_{material}_{connection}",
+        "qty": "panels_per_track * 2 * tracks",
+        "unit": "each"
+      }
+    ]
+  },
+  {
+    "id": "assembly.gauge_panel.gp",
+    "description": "Standard Gauge Panel assembly (1421mm < gauge < 1455mm)",
+    "selector": {
+      "gauge_panel_type": ["GP"]
+    },
+    "lines": [
+      {
+        "product": "GP_{material}_{connection}",
+        "qty": "panels_per_track * 2 * tracks",
+        "unit": "each"
+      }
+    ]
+  },
+  {
+    "id": "assembly.gauge_panel.wgp",
+    "description": "Wide Gauge Panel assembly (gauge >= 1455mm)",
+    "selector": {
+      "gauge_panel_type": ["WGP"]
+    },
+    "lines": [
+      {
+        "product": "WGP_{material}_{connection}",
+        "qty": "panels_per_track * 2 * tracks",
+        "unit": "each"
+      }
+    ]
+  },
+  {
+    "id": "assembly.field_panel.fp",
+    "description": "Field Panel assembly (436mm < gauge <= 565mm)",
+    "selector": {
+      "field_panel_type": ["FP"]
+    },
+    "lines": [
+      {
+        "product": "FP_{material}_{connection}",
+        "qty": "panels_per_track * 2 * tracks",
+        "unit": "each"
+      }
+    ]
+  },
+  {
+    "id": "assembly.field_panel.wfp",
+    "description": "Wide Field Panel assembly (565mm < gauge <= 840mm)",
+    "selector": {
+      "field_panel_type": ["WFP"]
+    },
+    "lines": [
+      {
+        "product": "WFP_{material}_{connection}",
+        "qty": "panels_per_track * 2 * tracks",
+        "unit": "each"
+      }
+    ]
+  },
+  {
+    "id": "assembly.field_panel.swfp",
+    "description": "Super Wide Field Panel assembly (gauge > 840mm)",
+    "selector": {
+      "field_panel_type": ["SWFP"]
+    },
+    "lines": [
+      {
+        "product": "SWFP_{material}_{connection}",
+        "qty": "panels_per_track * 2 * tracks",
+        "unit": "each"
+      }
+    ]
+  },
+  {
+    "id": "assembly.edge_beam.reb_tc",
+    "description": "Rubber Edge Beam TC - continuous lengths",
+    "selector": {
+      "edge_beam": ["REB TC"]
+    },
+    "lines": [
+      {
+        "product": "REB TC",
+        "qty": "rhr_len * 2",
+        "unit": "m",
+        "description": "Continuous rubber beam, 2 edges"
+      }
+    ]
+  },
+  {
+    "id": "assembly.edge_beam.pvc_1_8",
+    "description": "PVC Aluminum Edge Beam @ 1.8m segments",
+    "selector": {
+      "edge_beam": ["PVC AEB @ 1.8m"]
+    },
+    "lines": [
+      {
+        "product": "PVC AEB @ 1.8m",
+        "qty": "panels_per_track * 2",
+        "unit": "each",
+        "description": "1.8m PVC segments"
+      }
+    ]
+  },
+  {
+    "id": "assembly.edge_beam.pvc_3_6",
+    "description": "PVC Aluminum Edge Beam @ 3.6m segments",
+    "selector": {
+      "edge_beam": ["PVC AEB @ 3.6m"]
+    },
+    "lines": [
+      {
+        "product": "PVC AEB @ 3.6m",
+        "qty": "ceil(rhr_len / 3.6) * 2",
+        "unit": "each",
+        "description": "3.6m PVC segments"
+      }
+    ]
+  },
+  {
+    "id": "assembly.edge_beam.steel_1_8",
+    "description": "Steel Aluminum Edge Beam @ 1.8m segments",
+    "selector": {
+      "edge_beam": ["Steel AEB @ 1.8m"]
+    },
+    "lines": [
+      {
+        "product": "Steel AEB @ 1.8m",
+        "qty": "panels_per_track * 2",
+        "unit": "each",
+        "description": "1.8m Steel segments"
+      }
+    ]
+  },
+  {
+    "id": "assembly.edge_beam.steel_3_6",
+    "description": "Steel Aluminum Edge Beam @ 3.6m segments",
+    "selector": {
+      "edge_beam": ["Steel AEB @ 3.6m"]
+    },
+    "lines": [
+      {
+        "product": "Steel AEB @ 3.6m",
+        "qty": "ceil(rhr_len / 3.6) * 2",
+        "unit": "each",
+        "description": "3.6m Steel segments"
+      }
+    ]
+  },
+  {
+    "id": "assembly.edge_beam.reb_baseplate",
+    "description": "Rubber Edge Beam Baseplates",
+    "selector": {
+      "edge_beam": ["REB TC"]
+    },
+    "lines": [
+      {
+        "product": "Rubber Edge Beam Baseplate",
+        "qty": "panels_per_track * 2",
+        "unit": "each",
+        "description": "One baseplate per 1.8m segment per edge"
+      }
+    ]
+  },
+  {
+    "id": "assembly.edge_beam.customer_concrete",
+    "description": "Customer supplies concrete edge beam - no components",
+    "selector": {
+      "edge_beam": ["Customer Concrete"]
+    },
+    "lines": []
+  },
+  {
+    "id": "assembly.connecting_plates.field",
+    "description": "Field Connecting Plates - join field panel segments",
+    "selector": {},
+    "lines": [
+      {
+        "product": "Field Connecting Plates",
+        "qty": "joints * tracks * 2",
+        "unit": "each",
+        "description": "2 plates per joint (left and right sides)"
+      }
+    ]
+  },
+  {
+    "id": "assembly.connecting_plates.gauge",
+    "description": "Gauge Connecting Plates - join gauge panel segments",
+    "selector": {},
+    "lines": [
+      {
+        "product": "Gauge Connecting PlateS",
+        "qty": "joints * tracks * 2",
+        "unit": "each",
+        "description": "2 plates per joint (left and right sides)"
+      }
+    ]
+  },
+  {
+    "id": "assembly.chain_guard.bp",
+    "description": "Baseplated Chain Guard for BP connection",
+    "selector": {
+      "connection": ["BP"]
+    },
+    "lines": [
+      {
+        "product": "BASEPLATED CHAIN GUARD",
+        "qty": "tracks * 2",
+        "unit": "each",
+        "description": "2 per track (one at each end)"
+      }
+    ]
+  },
+  {
+    "id": "assembly.chain_guard.lo",
+    "description": "Link Chain Guard for LO connection",
+    "selector": {
+      "connection": ["LO"]
+    },
+    "lines": [
+      {
+        "product": "LINK CHAIN GUARD",
+        "qty": "tracks * 2",
+        "unit": "each",
+        "description": "2 per track (one at each end)"
+      }
+    ]
+  },
+  {
+    "id": "assembly.chain_guard.hk",
+    "description": "Connect Chain Guard for HK connection",
+    "selector": {
+      "connection": ["HK"]
+    },
+    "lines": [
+      {
+        "product": "CONNECT CHAIN GUARD",
+        "qty": "tracks * 2",
+        "unit": "each",
+        "description": "2 per track (one at each end)"
+      }
+    ]
+  },
+  {
+    "id": "assembly.chain_guard.lol",
+    "description": "Interlocker Chain Guard for LOL connection",
+    "selector": {
+      "connection": ["LOL"]
+    },
+    "lines": [
+      {
+        "product": "INTERLOCKER CHAIN GUARD",
+        "qty": "tracks * 2",
+        "unit": "each",
+        "description": "2 per track (one at each end)"
+      }
+    ]
+  },
+  {
+    "id": "assembly.end_restraint.link",
+    "description": "Link End Restraint for LO and LOL connections",
+    "selector": {
+      "connection": ["LO", "LOL"]
+    },
+    "lines": [
+      {
+        "product": "Link End Restraint",
+        "qty": "tracks * 2",
+        "unit": "each",
+        "description": "2 per track (one at each end)"
+      }
+    ]
+  },
+  {
+    "id": "assembly.end_restraint.connect",
+    "description": "Connect End Restraint for HK connection",
+    "selector": {
+      "connection": ["HK"]
+    },
+    "lines": [
+      {
+        "product": "Connect End Restraint",
+        "qty": "tracks * 2",
+        "unit": "each",
+        "description": "2 per track (one at each end)"
+      }
+    ]
+  },
+  {
+    "id": "assembly.ancillary.loop",
+    "description": "LOOP components for LO connection",
+    "selector": {
+      "connection": ["LO"]
+    },
+    "lines": [
+      {
+        "product": "LOOP",
+        "qty": "panels_per_track * tracks",
+        "unit": "each",
+        "description": "1 loop per panel per track"
+      }
+    ]
+  },
+  {
+    "id": "assembly.ancillary.handlebar_link",
+    "description": "HANDLEBAR LINK components for HK connection",
+    "selector": {
+      "connection": ["HK"]
+    },
+    "lines": [
+      {
+        "product": "HANDLEBAR LINK",
+        "qty": "panels_per_track * tracks * 2",
+        "unit": "each",
+        "description": "2 handlebar links per panel per track"
+      }
+    ]
+  },
+  {
+    "id": "assembly.ancillary.link_connector",
+    "description": "Link Connector for LOL connection",
+    "selector": {
+      "connection": ["LOL"]
+    },
+    "lines": [
+      {
+        "product": "Link Connector",
+        "qty": "panels_per_track * tracks",
+        "unit": "each",
+        "description": "1 connector per panel per track"
+      }
+    ]
+  },
+  {
+    "id": "assembly.ancillary.movement_restrictor",
+    "description": "Movement Restrictor for LO and LOL connections",
+    "selector": {
+      "connection": ["LO", "LOL"]
+    },
+    "lines": [
+      {
+        "product": "Movement Restrictor",
+        "qty": "tracks * 2",
+        "unit": "each",
+        "description": "2 per track (one at each end)"
+      }
+    ]
+  },
+  {
+    "id": "assembly.ancillary.strand_movement_restrictor",
+    "description": "Strand Movement Restrictor for specific applications",
+    "selector": {
+      "requires_strand_restrictor": [true]
+    },
+    "lines": [
+      {
+        "product": "Strand Movement Restrictor",
+        "qty": "tracks * 2",
+        "unit": "each",
+        "description": "2 per track when required"
+      }
+    ]
+  },
+  {
+    "id": "assembly.zr.turret",
+    "description": "ZR Turret for rail restraint system",
+    "selector": {
+      "zr_required": [true]
+    },
+    "lines": [
+      {
+        "product": "ZR Turret",
+        "qty": "panels_per_track * tracks * 2",
+        "unit": "each",
+        "description": "2 turrets per panel per track (left and right rail)"
+      }
+    ]
+  },
+  {
+    "id": "assembly.zr.winged",
+    "description": "ZR Winged plates for rail restraint system",
+    "selector": {
+      "zr_required": [true],
+      "single_unit_transition": [false]
+    },
+    "lines": [
+      {
+        "product": "ZR Winged",
+        "qty": "panels_per_track * tracks * 2",
+        "unit": "each",
+        "description": "2 winged plates per panel per track"
+      }
+    ]
+  },
+  {
+    "id": "assembly.zr.winged_1ut",
+    "description": "ZR Winged 1UT for single unit transition",
+    "selector": {
+      "zr_required": [true],
+      "single_unit_transition": [true]
+    },
+    "lines": [
+      {
+        "product": "ZR Winged 1UT",
+        "qty": "tracks * 2",
+        "unit": "each",
+        "description": "2 per track for single unit transition"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "version": "1.0",
+      "created": "2025-11-11",
+      "description": "Complete assembly definitions for Quick Quote system",
+      "total_assemblies": 28,
+      "notes": [
+        "Product codes use token replacement: {material}, {connection}",
+        "Quantities use expression evaluation with context variables",
+        "Selector matching determines which assemblies apply to a configuration",
+        "Empty selector {} means assembly always applies",
+        "Multiple selectors can match - all matching assemblies are included"
+      ],
+      "quantity_variables": {
+        "rhr_len": "Rounded RHR length (multiple of 1.8m)",
+        "panels_per_track": "Number of 1.8m panels per track",
+        "tracks": "Number of tracks",
+        "joints": "Number of panel joints (panels_per_track - 1)",
+        "gauge_panel_type": "Determined gauge panel type (NGP/GP/WGP)",
+        "zr_required": "Boolean - ZR system required flag"
+      },
+      "token_replacement_rules": [
+        "{material} replaced with selected material (P(B), A(B), JV, N, TC)",
+        "{connection} replaced with selected connection (BP, LO, HK, LOL, SF2K, PCK)",
+        "BP connection may omit connection suffix in some products",
+        "JV material with certain connections follows special naming"
+      ]
+    }
+  }
+]
