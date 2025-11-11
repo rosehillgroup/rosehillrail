@@ -105,7 +105,7 @@ export default function Step6Summary() {
         },
         body: JSON.stringify({
           project: formData.project_name || "Untitled",
-          customer: formData.customer || "",
+          customer: "",
           currency: formData.currency || "EUR",
           subtotal: quoteResult.subtotal,
           tax: quoteResult.tax,
