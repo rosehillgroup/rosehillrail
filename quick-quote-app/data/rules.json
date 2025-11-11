@@ -1,0 +1,391 @@
+{
+  "version": "1.0",
+  "description": "Complete rules engine configuration for Quick Quote",
+  "helpers": [
+    {
+      "id": "round_length",
+      "description": "Round design length up to nearest 1.8m increment",
+      "compute": {
+        "rhr_len": "ceil(design_len/1.8)*1.8"
+      }
+    },
+    {
+      "id": "calc_tracks",
+      "description": "Ensure minimum 1 track",
+      "compute": {
+        "tracks": "max(1, tracks)"
+      }
+    },
+    {
+      "id": "calc_panels",
+      "description": "Calculate number of 1.8m panel segments",
+      "compute": {
+        "panels_per_track": "ceil(rhr_len/1.8)"
+      }
+    },
+    {
+      "id": "determine_gauge_panel_type",
+      "description": "Determine NGP/GP/WGP based on gauge width",
+      "compute": {
+        "gauge_panel_type": "gauge <= 1420 ? 'NGP' : (gauge >= 1455 ? 'WGP' : 'GP')"
+      }
+    },
+    {
+      "id": "calc_connections_needed",
+      "description": "Calculate number of panel joints",
+      "compute": {
+        "joints": "max(0, panels_per_track - 1)"
+      }
+    },
+    {
+      "id": "requires_zr_system",
+      "description": "Determine if ZR rail restraint system is required",
+      "compute": {
+        "zr_required": "(usage == 'Ultra Heavy') or (traffic_class == 'Heavy' and speed_kph > 40) or (gauge > 1435 and speed_kph > 60)"
+      }
+    }
+  ],
+  "allowedConnections": [
+    {
+      "id": "conn_sleeper_spacing",
+      "description": "Base connection availability based on sleeper spacing",
+      "when": {
+        "sleeperSpacing600": false
+      },
+      "allow": ["BP"],
+      "reason": "Only baseplated connections available when sleeper spacing is not 600mm"
+    },
+    {
+      "id": "conn_sleeper_spacing_600",
+      "description": "Extended connection options for 600mm sleeper spacing",
+      "when": {
+        "sleeperSpacing600": true
+      },
+      "allow": ["JV", "LO", "HK", "LOL", "SF2K", "PCK", "BP"]
+    },
+    {
+      "id": "conn_ultra_heavy",
+      "description": "Ultra Heavy usage excludes LO connection",
+      "when": {
+        "usage": "Ultra Heavy"
+      },
+      "exclude": ["LO"],
+      "reason": "LO connection insufficient for ultra heavy loading"
+    },
+    {
+      "id": "conn_heavy",
+      "description": "Heavy usage allows most connections",
+      "when": {
+        "usage": "Heavy"
+      },
+      "allow": ["JV", "LO", "HK", "LOL", "SF2K", "BP"]
+    },
+    {
+      "id": "conn_medium_heavy",
+      "description": "Medium to Heavy allows all connections",
+      "when": {
+        "usage": "Medium to Heavy"
+      },
+      "allow": ["JV", "LO", "HK", "LOL", "SF2K", "PCK", "BP"]
+    },
+    {
+      "id": "conn_light_medium",
+      "description": "Light to Medium excludes specialized connections",
+      "when": {
+        "usage": "Light to Medium"
+      },
+      "allow": ["JV", "LO", "HK", "LOL", "BP"],
+      "reason": "Specialized connections (SF2K, PCK) not required for light loads"
+    },
+    {
+      "id": "conn_pedestrian",
+      "description": "Pedestrian usage needs only basic connections",
+      "when": {
+        "usage": "Pedestrian & Cycles"
+      },
+      "allow": ["LO", "BP"],
+      "reason": "Lighter connections sufficient for pedestrian traffic"
+    },
+    {
+      "id": "conn_agricultural",
+      "description": "Agricultural machinery connections",
+      "when": {
+        "usage": "Agricultural"
+      },
+      "allow": ["JV", "LO", "BP"]
+    },
+    {
+      "id": "conn_rail_access",
+      "description": "Rail road access points use baseplated only",
+      "when": {
+        "usage": "Rail Road Access"
+      },
+      "allow": ["BP"],
+      "reason": "Baseplate only for rail access points"
+    },
+    {
+      "id": "conn_high_speed_exclude",
+      "description": "Exclude certain connections at high speed",
+      "when": {
+        "speed_kph": ">80"
+      },
+      "exclude": ["LOL", "SF2K"],
+      "reason": "LOL and SF2K not suitable for speeds above 80 km/h due to vibration"
+    },
+    {
+      "id": "conn_angle_restriction",
+      "description": "Angle restrictions for specialized connections",
+      "when": {
+        "or": [
+          { "crossing_angle": "<45" },
+          { "crossing_angle": ">90" }
+        ]
+      },
+      "exclude": ["SF2K"],
+      "reason": "SF2K has geometric limitations outside 45-90 degree range"
+    }
+  ],
+  "materialCompatibility": [
+    {
+      "id": "mat_bp_compat",
+      "description": "Baseplated connection material compatibility",
+      "when": {
+        "connection": "BP"
+      },
+      "allow": ["P(B)", "A(B)", "N", "TC"],
+      "exclude": ["JV"]
+    },
+    {
+      "id": "mat_lo_compat",
+      "description": "Loop Connect material compatibility",
+      "when": {
+        "connection": "LO"
+      },
+      "allow": ["P(B)", "JV", "N", "TC"],
+      "exclude": ["A(B)"]
+    },
+    {
+      "id": "mat_hk_compat",
+      "description": "High K connection material compatibility",
+      "when": {
+        "connection": "HK"
+      },
+      "allow": ["P(B)", "A(B)", "JV", "TC"],
+      "exclude": ["N"]
+    },
+    {
+      "id": "mat_lol_compat",
+      "description": "Loop Interlocker material compatibility",
+      "when": {
+        "connection": "LOL"
+      },
+      "allow": ["JV"],
+      "exclude": ["P(B)", "A(B)", "N", "TC"]
+    },
+    {
+      "id": "mat_sf2k_compat",
+      "description": "SF2K special connection - limited materials",
+      "when": {
+        "connection": "SF2K"
+      },
+      "allow": [],
+      "exclude": ["P(B)", "A(B)", "JV", "N", "TC"],
+      "reason": "SF2K uses specialized materials - contact engineering"
+    },
+    {
+      "id": "mat_pck_compat",
+      "description": "PCK special connection - limited materials",
+      "when": {
+        "connection": "PCK"
+      },
+      "allow": [],
+      "exclude": ["P(B)", "A(B)", "JV", "N", "TC"],
+      "reason": "PCK uses specialized materials - contact engineering"
+    }
+  ],
+  "validation": [
+    {
+      "id": "len_min",
+      "assert": "design_len>=1.0",
+      "message": "Design length must be at least 1.0m"
+    },
+    {
+      "id": "len_max",
+      "assert": "design_len<=50.0",
+      "message": "Design length exceeds maximum of 50.0m"
+    },
+    {
+      "id": "len_typical",
+      "assert": "design_len>=3.6 and design_len<=20.0",
+      "level": "warning",
+      "message": "Design length outside typical range (3.6m - 20.0m)"
+    },
+    {
+      "id": "tracks_min",
+      "assert": "tracks>=1",
+      "message": "At least 1 track required"
+    },
+    {
+      "id": "tracks_max",
+      "assert": "tracks<=10",
+      "message": "Maximum 10 tracks supported"
+    },
+    {
+      "id": "tracks_typical",
+      "assert": "tracks>=1 and tracks<=4",
+      "level": "warning",
+      "message": "Track count outside typical range (1-4 tracks)"
+    },
+    {
+      "id": "gauge_min",
+      "assert": "gauge>=600",
+      "message": "Gauge too narrow - minimum 600mm"
+    },
+    {
+      "id": "gauge_max",
+      "assert": "gauge<=1700",
+      "message": "Gauge too wide - maximum 1700mm"
+    },
+    {
+      "id": "gauge_standard",
+      "assert": "gauge>=1000 and gauge<=1520",
+      "level": "info",
+      "message": "Gauge is within standard range"
+    },
+    {
+      "id": "speed_min",
+      "assert": "speed_kph>=0",
+      "message": "Speed cannot be negative"
+    },
+    {
+      "id": "speed_max",
+      "assert": "speed_kph<=120",
+      "message": "Speed exceeds maximum of 120 km/h"
+    },
+    {
+      "id": "speed_bounds",
+      "assert": "speed_kph>=0 and speed_kph<=120",
+      "message": "Speed out of supported range (0-120 km/h)"
+    },
+    {
+      "id": "speed_high_warning",
+      "assert": "speed_kph<=100",
+      "level": "warning",
+      "message": "Speed above 100 km/h may require additional engineering review"
+    },
+    {
+      "id": "angle_min",
+      "assert": "crossing_angle>=30",
+      "message": "Crossing angle too acute - minimum 30 degrees"
+    },
+    {
+      "id": "angle_max",
+      "assert": "crossing_angle<=90",
+      "message": "Crossing angle must be 90 degrees or less"
+    },
+    {
+      "id": "angle_recommended",
+      "assert": "crossing_angle>=45",
+      "level": "warning",
+      "message": "Crossing angles below 45 degrees may require special engineering"
+    },
+    {
+      "id": "angle_optimal",
+      "assert": "crossing_angle>=60 and crossing_angle<=90",
+      "level": "info",
+      "message": "Crossing angle is in optimal range (60-90 degrees)"
+    },
+    {
+      "id": "spacing_min",
+      "assert": "tracks==1 or track_spacing>=3.0",
+      "message": "Track spacing too narrow - minimum 3.0m for safety clearance"
+    },
+    {
+      "id": "spacing_typical",
+      "assert": "tracks==1 or (track_spacing>=3.5 and track_spacing<=5.0)",
+      "level": "info",
+      "message": "Track spacing is within typical range (3.5m - 5.0m)"
+    },
+    {
+      "id": "spacing_wide",
+      "assert": "tracks==1 or track_spacing<=6.0",
+      "level": "warning",
+      "message": "Track spacing unusually wide - exceeds 6.0m"
+    }
+  ],
+  "edgeBeamDefaults": [
+    {
+      "id": "edge_ultra_heavy",
+      "when": {
+        "usage": "Ultra Heavy"
+      },
+      "default": "Steel AEB @ 3.6m",
+      "alternatives": ["REB TC", "Customer Concrete"]
+    },
+    {
+      "id": "edge_heavy",
+      "when": {
+        "usage": "Heavy"
+      },
+      "default": "Steel AEB @ 3.6m",
+      "alternatives": ["PVC AEB @ 3.6m", "REB TC", "Customer Concrete"]
+    },
+    {
+      "id": "edge_medium_heavy",
+      "when": {
+        "usage": "Medium to Heavy"
+      },
+      "default": "PVC AEB @ 3.6m",
+      "alternatives": ["REB TC", "Steel AEB @ 3.6m", "Customer Concrete"]
+    },
+    {
+      "id": "edge_light_medium",
+      "when": {
+        "usage": "Light to Medium"
+      },
+      "default": "PVC AEB @ 3.6m",
+      "alternatives": ["REB TC", "Customer Concrete"]
+    },
+    {
+      "id": "edge_pedestrian",
+      "when": {
+        "usage": "Pedestrian & Cycles"
+      },
+      "default": "REB TC",
+      "alternatives": ["PVC AEB @ 1.8m", "Customer Concrete"]
+    },
+    {
+      "id": "edge_agricultural",
+      "when": {
+        "usage": "Agricultural"
+      },
+      "default": "REB TC",
+      "alternatives": ["PVC AEB @ 3.6m", "Customer Concrete"]
+    }
+  ],
+  "metadata": {
+    "created": "2025-11-11",
+    "version": "1.0",
+    "description": "Complete rules engine configuration extracted from RHR_Quick_Quote V2.xlsx",
+    "total_rules": 47,
+    "connection_types": ["BP", "LO", "HK", "LOL", "SF2K", "PCK"],
+    "material_types": ["P(B)", "A(B)", "JV", "N", "TC"],
+    "usage_types": [
+      "Ultra Heavy",
+      "Heavy",
+      "Medium to Heavy",
+      "Light to Medium",
+      "Pedestrian & Cycles",
+      "Agricultural",
+      "Rail Road Access"
+    ],
+    "edge_beam_types": [
+      "REB TC",
+      "PVC AEB @ 1.8m",
+      "PVC AEB @ 3.6m",
+      "Steel AEB @ 1.8m",
+      "Steel AEB @ 3.6m",
+      "Customer Concrete"
+    ]
+  }
+}

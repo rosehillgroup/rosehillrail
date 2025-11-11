@@ -1,0 +1,1026 @@
+{
+  "description": "Test fixtures for Quick Quote Excel parity testing",
+  "version": "1.0",
+  "created": "2025-11-11",
+  "fixtures": [
+    {
+      "id": "fixture-001-simple-single-track",
+      "name": "Simple Single Track - FP TC LO",
+      "input": {
+        "project_name": "Test Project 1",
+        "country": "Germany",
+        "currency": "EUR",
+        "design_len": 3.6,
+        "tracks": 1,
+        "gauge": 1435,
+        "track_spacing": 0,
+        "crossing_angle": 90,
+        "sleeper_spacing_600": true,
+        "usage": "Medium to Heavy",
+        "traffic_class": "Medium",
+        "speed_kph": 50,
+        "field_panel_type": "FP",
+        "edge_beam": "REB TC",
+        "connection": "LO",
+        "material": "TC"
+      },
+      "expected": {
+        "rhr_len": 3.6,
+        "bom": [
+          {
+            "code": "FP TC LO",
+            "name": "FP TC LO",
+            "qty": 4,
+            "unit": "each",
+            "unit_price": 620.55,
+            "line_total": 2482.20
+          },
+          {
+            "code": "GP TC LO",
+            "name": "GP TC LO",
+            "qty": 4,
+            "unit": "each",
+            "unit_price": 635.85,
+            "line_total": 2543.40
+          },
+          {
+            "code": "REB TC",
+            "name": "REB TC",
+            "qty": 7.2,
+            "unit": "m",
+            "unit_price": 84.15,
+            "line_total": 605.88
+          },
+          {
+            "code": "Rubber Edge Beam Baseplate",
+            "name": "Rubber Edge Beam Baseplate",
+            "qty": 4,
+            "unit": "each",
+            "unit_price": 76.50,
+            "line_total": 306.00
+          },
+          {
+            "code": "Field Connecting Plates",
+            "name": "Field Connecting Plates",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 46.65,
+            "line_total": 93.30
+          },
+          {
+            "code": "Gauge Connecting PlateS",
+            "name": "Gauge Connecting PlateS",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 46.65,
+            "line_total": 93.30
+          },
+          {
+            "code": "LINK CHAIN GUARD",
+            "name": "LINK CHAIN GUARD",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 97.20,
+            "line_total": 194.40
+          },
+          {
+            "code": "Link End Restraint",
+            "name": "Link End Restraint",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 191.25,
+            "line_total": 382.50
+          },
+          {
+            "code": "LOOP",
+            "name": "LOOP",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 147.15,
+            "line_total": 294.30
+          },
+          {
+            "code": "Movement Restrictor",
+            "name": "Movement Restrictor",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 73.35,
+            "line_total": 146.70
+          }
+        ],
+        "subtotal": 7141.98,
+        "tax": 0,
+        "total": 7141.98
+      }
+    },
+    {
+      "id": "fixture-002-multi-track",
+      "name": "Multi-Track - 2 Tracks with WFP",
+      "input": {
+        "project_name": "Test Project 2",
+        "country": "Germany",
+        "currency": "EUR",
+        "design_len": 7.2,
+        "tracks": 2,
+        "gauge": 1435,
+        "track_spacing": 4.5,
+        "crossing_angle": 90,
+        "sleeper_spacing_600": true,
+        "usage": "Heavy",
+        "traffic_class": "Heavy",
+        "speed_kph": 60,
+        "field_panel_type": "WFP",
+        "edge_beam": "Steel AEB @ 3.6m",
+        "connection": "HK",
+        "material": "P(B)"
+      },
+      "expected": {
+        "rhr_len": 7.2,
+        "bom": [
+          {
+            "code": "WFP P(B) H K",
+            "name": "WFP P(B) H K",
+            "qty": 16,
+            "unit": "each",
+            "unit_price": 746.55,
+            "line_total": 11944.80
+          },
+          {
+            "code": "GP P(B) H K",
+            "name": "GP P(B) H K",
+            "qty": 16,
+            "unit": "each",
+            "unit_price": 735.75,
+            "line_total": 11772.00
+          },
+          {
+            "code": "Steel AEB @ 3.6m",
+            "name": "Steel AEB @ 3.6m",
+            "qty": 4,
+            "unit": "each",
+            "unit_price": 382.50,
+            "line_total": 1530.00
+          },
+          {
+            "code": "Field Connecting Plates",
+            "name": "Field Connecting Plates",
+            "qty": 12,
+            "unit": "each",
+            "unit_price": 46.65,
+            "line_total": 559.80
+          },
+          {
+            "code": "Gauge Connecting PlateS",
+            "name": "Gauge Connecting PlateS",
+            "qty": 12,
+            "unit": "each",
+            "unit_price": 46.65,
+            "line_total": 559.80
+          },
+          {
+            "code": "CONNECT CHAIN GUARD",
+            "name": "CONNECT CHAIN GUARD",
+            "qty": 4,
+            "unit": "each",
+            "unit_price": 97.20,
+            "line_total": 388.80
+          },
+          {
+            "code": "Connect End Restraint",
+            "name": "Connect End Restraint",
+            "qty": 4,
+            "unit": "each",
+            "unit_price": 191.25,
+            "line_total": 765.00
+          },
+          {
+            "code": "HANDLEBAR LINK",
+            "name": "HANDLEBAR LINK",
+            "qty": 16,
+            "unit": "each",
+            "unit_price": 73.35,
+            "line_total": 1173.60
+          }
+        ],
+        "subtotal": 28693.80,
+        "tax": 0,
+        "total": 28693.80
+      }
+    },
+    {
+      "id": "fixture-003-narrow-gauge",
+      "name": "Narrow Gauge - NGP with JV material",
+      "input": {
+        "project_name": "Test Project 3",
+        "country": "Germany",
+        "currency": "EUR",
+        "design_len": 5.4,
+        "tracks": 1,
+        "gauge": 1000,
+        "track_spacing": 0,
+        "crossing_angle": 90,
+        "sleeper_spacing_600": true,
+        "usage": "Light to Medium",
+        "traffic_class": "Light",
+        "speed_kph": 30,
+        "field_panel_type": "FP",
+        "edge_beam": "PVC AEB @ 3.6m",
+        "connection": "LO",
+        "material": "JV"
+      },
+      "expected": {
+        "rhr_len": 5.4,
+        "bom": [
+          {
+            "code": "FP JV LO",
+            "name": "FP JV LO",
+            "qty": 6,
+            "unit": "each",
+            "unit_price": 620.55,
+            "line_total": 3723.30
+          },
+          {
+            "code": "NGP JV LO",
+            "name": "NGP JV LO",
+            "qty": 6,
+            "unit": "each",
+            "unit_price": 551.25,
+            "line_total": 3307.50
+          },
+          {
+            "code": "PVC AEB @ 3.6m",
+            "name": "PVC AEB @ 3.6m",
+            "qty": 4,
+            "unit": "each",
+            "unit_price": 255.00,
+            "line_total": 1020.00
+          },
+          {
+            "code": "Field Connecting Plates",
+            "name": "Field Connecting Plates",
+            "qty": 4,
+            "unit": "each",
+            "unit_price": 46.65,
+            "line_total": 186.60
+          },
+          {
+            "code": "Gauge Connecting PlateS",
+            "name": "Gauge Connecting PlateS",
+            "qty": 4,
+            "unit": "each",
+            "unit_price": 46.65,
+            "line_total": 186.60
+          },
+          {
+            "code": "LINK CHAIN GUARD",
+            "name": "LINK CHAIN GUARD",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 97.20,
+            "line_total": 194.40
+          },
+          {
+            "code": "Link End Restraint",
+            "name": "Link End Restraint",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 191.25,
+            "line_total": 382.50
+          },
+          {
+            "code": "LOOP",
+            "name": "LOOP",
+            "qty": 3,
+            "unit": "each",
+            "unit_price": 147.15,
+            "line_total": 441.45
+          },
+          {
+            "code": "Movement Restrictor",
+            "name": "Movement Restrictor",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 73.35,
+            "line_total": 146.70
+          }
+        ],
+        "subtotal": 9589.05,
+        "tax": 0,
+        "total": 9589.05
+      }
+    },
+    {
+      "id": "fixture-004-wide-gauge",
+      "name": "Wide Gauge - WGP with gauge widening",
+      "input": {
+        "project_name": "Test Project 4",
+        "country": "Germany",
+        "currency": "EUR",
+        "design_len": 3.6,
+        "tracks": 1,
+        "gauge": 1465,
+        "track_spacing": 0,
+        "crossing_angle": 90,
+        "sleeper_spacing_600": true,
+        "usage": "Medium to Heavy",
+        "traffic_class": "Medium",
+        "speed_kph": 50,
+        "field_panel_type": "WFP",
+        "edge_beam": "REB TC",
+        "connection": "HK",
+        "material": "TC"
+      },
+      "expected": {
+        "rhr_len": 3.6,
+        "bom": [
+          {
+            "code": "WFP TC H K",
+            "name": "WFP TC H K",
+            "qty": 4,
+            "unit": "each",
+            "unit_price": 746.55,
+            "line_total": 2986.20
+          },
+          {
+            "code": "WGP TC H K",
+            "name": "WGP TC H K",
+            "qty": 4,
+            "unit": "each",
+            "unit_price": 735.75,
+            "line_total": 2943.00
+          },
+          {
+            "code": "REB TC",
+            "name": "REB TC",
+            "qty": 7.2,
+            "unit": "m",
+            "unit_price": 84.15,
+            "line_total": 605.88
+          },
+          {
+            "code": "Rubber Edge Beam Baseplate",
+            "name": "Rubber Edge Beam Baseplate",
+            "qty": 4,
+            "unit": "each",
+            "unit_price": 76.50,
+            "line_total": 306.00
+          },
+          {
+            "code": "Field Connecting Plates",
+            "name": "Field Connecting Plates",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 46.65,
+            "line_total": 93.30
+          },
+          {
+            "code": "Gauge Connecting PlateS",
+            "name": "Gauge Connecting PlateS",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 46.65,
+            "line_total": 93.30
+          },
+          {
+            "code": "CONNECT CHAIN GUARD",
+            "name": "CONNECT CHAIN GUARD",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 97.20,
+            "line_total": 194.40
+          },
+          {
+            "code": "Connect End Restraint",
+            "name": "Connect End Restraint",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 191.25,
+            "line_total": 382.50
+          },
+          {
+            "code": "HANDLEBAR LINK",
+            "name": "HANDLEBAR LINK",
+            "qty": 8,
+            "unit": "each",
+            "unit_price": 73.35,
+            "line_total": 586.80
+          }
+        ],
+        "subtotal": 8191.38,
+        "tax": 0,
+        "total": 8191.38
+      }
+    },
+    {
+      "id": "fixture-005-super-wide",
+      "name": "Super Wide Field Panel - SWFP",
+      "input": {
+        "project_name": "Test Project 5",
+        "country": "Germany",
+        "currency": "EUR",
+        "design_len": 5.4,
+        "tracks": 1,
+        "gauge": 1520,
+        "track_spacing": 0,
+        "crossing_angle": 90,
+        "sleeper_spacing_600": true,
+        "usage": "Heavy",
+        "traffic_class": "Heavy",
+        "speed_kph": 70,
+        "field_panel_type": "SWFP",
+        "edge_beam": "Steel AEB @ 1.8m",
+        "connection": "HK",
+        "material": "P(B)"
+      },
+      "expected": {
+        "rhr_len": 5.4,
+        "bom": [
+          {
+            "code": "SWFP P(B) H K",
+            "name": "SWFP P(B) H K",
+            "qty": 6,
+            "unit": "each",
+            "unit_price": 882.90,
+            "line_total": 5297.40
+          },
+          {
+            "code": "WGP P(B) H K",
+            "name": "WGP P(B) H K",
+            "qty": 6,
+            "unit": "each",
+            "unit_price": 735.75,
+            "line_total": 4414.50
+          },
+          {
+            "code": "Steel AEB @ 1.8m",
+            "name": "Steel AEB @ 1.8m",
+            "qty": 6,
+            "unit": "each",
+            "unit_price": 191.25,
+            "line_total": 1147.50
+          },
+          {
+            "code": "Field Connecting Plates",
+            "name": "Field Connecting Plates",
+            "qty": 4,
+            "unit": "each",
+            "unit_price": 46.65,
+            "line_total": 186.60
+          },
+          {
+            "code": "Gauge Connecting PlateS",
+            "name": "Gauge Connecting PlateS",
+            "qty": 4,
+            "unit": "each",
+            "unit_price": 46.65,
+            "line_total": 186.60
+          },
+          {
+            "code": "CONNECT CHAIN GUARD",
+            "name": "CONNECT CHAIN GUARD",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 97.20,
+            "line_total": 194.40
+          },
+          {
+            "code": "Connect End Restraint",
+            "name": "Connect End Restraint",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 191.25,
+            "line_total": 382.50
+          },
+          {
+            "code": "HANDLEBAR LINK",
+            "name": "HANDLEBAR LINK",
+            "qty": 12,
+            "unit": "each",
+            "unit_price": 73.35,
+            "line_total": 880.20
+          }
+        ],
+        "subtotal": 12689.70,
+        "tax": 0,
+        "total": 12689.70
+      }
+    },
+    {
+      "id": "fixture-006-interlocker",
+      "name": "Interlocker Connection - LOL",
+      "input": {
+        "project_name": "Test Project 6",
+        "country": "Germany",
+        "currency": "EUR",
+        "design_len": 3.6,
+        "tracks": 1,
+        "gauge": 1435,
+        "track_spacing": 0,
+        "crossing_angle": 90,
+        "sleeper_spacing_600": true,
+        "usage": "Medium to Heavy",
+        "traffic_class": "Medium",
+        "speed_kph": 40,
+        "field_panel_type": "WFP",
+        "edge_beam": "PVC AEB @ 1.8m",
+        "connection": "LOL",
+        "material": "JV"
+      },
+      "expected": {
+        "rhr_len": 3.6,
+        "bom": [
+          {
+            "code": "WFP JV LOL",
+            "name": "WFP JV LOL",
+            "qty": 4,
+            "unit": "each",
+            "unit_price": 746.55,
+            "line_total": 2986.20
+          },
+          {
+            "code": "GP JV LOL",
+            "name": "GP JV LOL",
+            "qty": 4,
+            "unit": "each",
+            "unit_price": 635.85,
+            "line_total": 2543.40
+          },
+          {
+            "code": "PVC AEB @ 1.8m",
+            "name": "PVC AEB @ 1.8m",
+            "qty": 4,
+            "unit": "each",
+            "unit_price": 127.50,
+            "line_total": 510.00
+          },
+          {
+            "code": "Field Connecting Plates",
+            "name": "Field Connecting Plates",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 46.65,
+            "line_total": 93.30
+          },
+          {
+            "code": "Gauge Connecting PlateS",
+            "name": "Gauge Connecting PlateS",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 46.65,
+            "line_total": 93.30
+          },
+          {
+            "code": "INTERLOCKER CHAIN GUARD",
+            "name": "INTERLOCKER CHAIN GUARD",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 97.20,
+            "line_total": 194.40
+          },
+          {
+            "code": "Link End Restraint",
+            "name": "Link End Restraint",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 191.25,
+            "line_total": 382.50
+          },
+          {
+            "code": "Link Connector",
+            "name": "Link Connector",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 147.15,
+            "line_total": 294.30
+          },
+          {
+            "code": "Movement Restrictor",
+            "name": "Movement Restrictor",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 73.35,
+            "line_total": 146.70
+          }
+        ],
+        "subtotal": 7244.10,
+        "tax": 0,
+        "total": 7244.10
+      }
+    },
+    {
+      "id": "fixture-007-minimum-length",
+      "name": "Minimum Length - 1.8m crossing",
+      "input": {
+        "project_name": "Test Project 7",
+        "country": "Germany",
+        "currency": "EUR",
+        "design_len": 1.8,
+        "tracks": 1,
+        "gauge": 1435,
+        "track_spacing": 0,
+        "crossing_angle": 90,
+        "sleeper_spacing_600": true,
+        "usage": "Light to Medium",
+        "traffic_class": "Light",
+        "speed_kph": 30,
+        "field_panel_type": "FP",
+        "edge_beam": "REB TC",
+        "connection": "LO",
+        "material": "TC"
+      },
+      "expected": {
+        "rhr_len": 1.8,
+        "bom": [
+          {
+            "code": "FP TC LO",
+            "name": "FP TC LO",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 620.55,
+            "line_total": 1241.10
+          },
+          {
+            "code": "GP TC LO",
+            "name": "GP TC LO",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 635.85,
+            "line_total": 1271.70
+          },
+          {
+            "code": "REB TC",
+            "name": "REB TC",
+            "qty": 3.6,
+            "unit": "m",
+            "unit_price": 84.15,
+            "line_total": 302.94
+          },
+          {
+            "code": "Rubber Edge Beam Baseplate",
+            "name": "Rubber Edge Beam Baseplate",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 76.50,
+            "line_total": 153.00
+          },
+          {
+            "code": "LINK CHAIN GUARD",
+            "name": "LINK CHAIN GUARD",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 97.20,
+            "line_total": 194.40
+          },
+          {
+            "code": "Link End Restraint",
+            "name": "Link End Restraint",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 191.25,
+            "line_total": 382.50
+          },
+          {
+            "code": "LOOP",
+            "name": "LOOP",
+            "qty": 1,
+            "unit": "each",
+            "unit_price": 147.15,
+            "line_total": 147.15
+          },
+          {
+            "code": "Movement Restrictor",
+            "name": "Movement Restrictor",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 73.35,
+            "line_total": 146.70
+          }
+        ],
+        "subtotal": 3839.49,
+        "tax": 0,
+        "total": 3839.49
+      },
+      "notes": "No connecting plates needed for single 1.8m segment"
+    },
+    {
+      "id": "fixture-008-ultra-heavy",
+      "name": "Ultra Heavy Usage - Mining application",
+      "input": {
+        "project_name": "Test Project 8",
+        "country": "Germany",
+        "currency": "EUR",
+        "design_len": 7.2,
+        "tracks": 2,
+        "gauge": 1435,
+        "track_spacing": 4.2,
+        "crossing_angle": 90,
+        "sleeper_spacing_600": true,
+        "usage": "Ultra Heavy",
+        "traffic_class": "Ultra Heavy",
+        "speed_kph": 30,
+        "field_panel_type": "FP",
+        "edge_beam": "Steel AEB @ 3.6m",
+        "connection": "HK",
+        "material": "TC",
+        "requires_zr_system": true
+      },
+      "expected": {
+        "rhr_len": 7.2,
+        "bom": [
+          {
+            "code": "FP TC H K",
+            "name": "FP TC H K",
+            "qty": 16,
+            "unit": "each",
+            "unit_price": 620.55,
+            "line_total": 9928.80
+          },
+          {
+            "code": "GP TC H K",
+            "name": "GP TC H K",
+            "qty": 16,
+            "unit": "each",
+            "unit_price": 635.85,
+            "line_total": 10173.60
+          },
+          {
+            "code": "Steel AEB @ 3.6m",
+            "name": "Steel AEB @ 3.6m",
+            "qty": 4,
+            "unit": "each",
+            "unit_price": 382.50,
+            "line_total": 1530.00
+          },
+          {
+            "code": "Field Connecting Plates",
+            "name": "Field Connecting Plates",
+            "qty": 12,
+            "unit": "each",
+            "unit_price": 46.65,
+            "line_total": 559.80
+          },
+          {
+            "code": "Gauge Connecting PlateS",
+            "name": "Gauge Connecting PlateS",
+            "qty": 12,
+            "unit": "each",
+            "unit_price": 46.65,
+            "line_total": 559.80
+          },
+          {
+            "code": "CONNECT CHAIN GUARD",
+            "name": "CONNECT CHAIN GUARD",
+            "qty": 4,
+            "unit": "each",
+            "unit_price": 97.20,
+            "line_total": 388.80
+          },
+          {
+            "code": "Connect End Restraint",
+            "name": "Connect End Restraint",
+            "qty": 4,
+            "unit": "each",
+            "unit_price": 191.25,
+            "line_total": 765.00
+          },
+          {
+            "code": "HANDLEBAR LINK",
+            "name": "HANDLEBAR LINK",
+            "qty": 16,
+            "unit": "each",
+            "unit_price": 73.35,
+            "line_total": 1173.60
+          },
+          {
+            "code": "ZR Turret",
+            "name": "ZR Turret",
+            "qty": 16,
+            "unit": "each",
+            "unit_price": 127.50,
+            "line_total": 2040.00
+          },
+          {
+            "code": "ZR Winged",
+            "name": "ZR Winged",
+            "qty": 16,
+            "unit": "each",
+            "unit_price": 147.15,
+            "line_total": 2354.40
+          }
+        ],
+        "subtotal": 29473.80,
+        "tax": 0,
+        "total": 29473.80
+      },
+      "notes": "Ultra Heavy usage requires ZR rail restraint system"
+    },
+    {
+      "id": "fixture-009-pedestrian",
+      "name": "Pedestrian & Cycles - Lightweight crossing",
+      "input": {
+        "project_name": "Test Project 9",
+        "country": "Germany",
+        "currency": "EUR",
+        "design_len": 5.0,
+        "tracks": 1,
+        "gauge": 1435,
+        "track_spacing": 0,
+        "crossing_angle": 90,
+        "sleeper_spacing_600": true,
+        "usage": "Pedestrian & Cycles",
+        "traffic_class": "Pedestrian",
+        "speed_kph": 20,
+        "field_panel_type": "FP",
+        "edge_beam": "REB TC",
+        "connection": "LO",
+        "material": "TC"
+      },
+      "expected": {
+        "rhr_len": 5.4,
+        "bom": [
+          {
+            "code": "FP TC LO",
+            "name": "FP TC LO",
+            "qty": 6,
+            "unit": "each",
+            "unit_price": 620.55,
+            "line_total": 3723.30
+          },
+          {
+            "code": "GP TC LO",
+            "name": "GP TC LO",
+            "qty": 6,
+            "unit": "each",
+            "unit_price": 635.85,
+            "line_total": 3815.10
+          },
+          {
+            "code": "REB TC",
+            "name": "REB TC",
+            "qty": 10.8,
+            "unit": "m",
+            "unit_price": 84.15,
+            "line_total": 908.82
+          },
+          {
+            "code": "Rubber Edge Beam Baseplate",
+            "name": "Rubber Edge Beam Baseplate",
+            "qty": 6,
+            "unit": "each",
+            "unit_price": 76.50,
+            "line_total": 459.00
+          },
+          {
+            "code": "Field Connecting Plates",
+            "name": "Field Connecting Plates",
+            "qty": 4,
+            "unit": "each",
+            "unit_price": 46.65,
+            "line_total": 186.60
+          },
+          {
+            "code": "Gauge Connecting PlateS",
+            "name": "Gauge Connecting PlateS",
+            "qty": 4,
+            "unit": "each",
+            "unit_price": 46.65,
+            "line_total": 186.60
+          },
+          {
+            "code": "LINK CHAIN GUARD",
+            "name": "LINK CHAIN GUARD",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 97.20,
+            "line_total": 194.40
+          },
+          {
+            "code": "Link End Restraint",
+            "name": "Link End Restraint",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 191.25,
+            "line_total": 382.50
+          },
+          {
+            "code": "LOOP",
+            "name": "LOOP",
+            "qty": 3,
+            "unit": "each",
+            "unit_price": 147.15,
+            "line_total": 441.45
+          },
+          {
+            "code": "Movement Restrictor",
+            "name": "Movement Restrictor",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 73.35,
+            "line_total": 146.70
+          }
+        ],
+        "subtotal": 10444.47,
+        "tax": 0,
+        "total": 10444.47
+      },
+      "notes": "5.0m design length rounds up to 5.4m RHR length"
+    },
+    {
+      "id": "fixture-010-customer-concrete",
+      "name": "Customer Concrete Edge Beam",
+      "input": {
+        "project_name": "Test Project 10",
+        "country": "Germany",
+        "currency": "EUR",
+        "design_len": 3.6,
+        "tracks": 1,
+        "gauge": 1435,
+        "track_spacing": 0,
+        "crossing_angle": 90,
+        "sleeper_spacing_600": true,
+        "usage": "Medium to Heavy",
+        "traffic_class": "Medium",
+        "speed_kph": 50,
+        "field_panel_type": "FP",
+        "edge_beam": "Customer Concrete",
+        "connection": "HK",
+        "material": "P(B)"
+      },
+      "expected": {
+        "rhr_len": 3.6,
+        "bom": [
+          {
+            "code": "FP P(B) H K",
+            "name": "FP P(B) H K",
+            "qty": 4,
+            "unit": "each",
+            "unit_price": 620.55,
+            "line_total": 2482.20
+          },
+          {
+            "code": "GP P(B) H K",
+            "name": "GP P(B) H K",
+            "qty": 4,
+            "unit": "each",
+            "unit_price": 735.75,
+            "line_total": 2943.00
+          },
+          {
+            "code": "Field Connecting Plates",
+            "name": "Field Connecting Plates",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 46.65,
+            "line_total": 93.30
+          },
+          {
+            "code": "Gauge Connecting PlateS",
+            "name": "Gauge Connecting PlateS",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 46.65,
+            "line_total": 93.30
+          },
+          {
+            "code": "CONNECT CHAIN GUARD",
+            "name": "CONNECT CHAIN GUARD",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 97.20,
+            "line_total": 194.40
+          },
+          {
+            "code": "Connect End Restraint",
+            "name": "Connect End Restraint",
+            "qty": 2,
+            "unit": "each",
+            "unit_price": 191.25,
+            "line_total": 382.50
+          },
+          {
+            "code": "HANDLEBAR LINK",
+            "name": "HANDLEBAR LINK",
+            "qty": 8,
+            "unit": "each",
+            "unit_price": 73.35,
+            "line_total": 586.80
+          }
+        ],
+        "subtotal": 6775.50,
+        "tax": 0,
+        "total": 6775.50
+      },
+      "notes": "No edge beam components included - customer supplies concrete edge beam"
+    }
+  ],
+  "validation_notes": [
+    "All prices are from price_list.default.csv dated 2025-11-10",
+    "All calculations use EUR currency",
+    "Tax rate is 0% for test fixtures (to be added per customer location)",
+    "rhr_len is always a multiple of 1.8m due to rounding",
+    "Quantities follow exact Excel formulas documented in EXCEL_FORMULAS.md",
+    "Product codes follow naming convention: {PanelType}_{Material}_{Connection}",
+    "ZR system is triggered by Ultra Heavy usage or specific conditions",
+    "Connection types are filtered based on usage, speed, and sleeper spacing"
+  ]
+}
