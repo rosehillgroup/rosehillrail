@@ -86,7 +86,7 @@ The rules engine processes business logic from \`rules.json\` and \`assemblies.j
 The pricing resolver handles price lookups with precedence:
 
 1. **Customer-specific price list** (if date-valid)
-2. **Organization default price list**
+2. **Organisation default price list**
 3. **Global default price list**
 4. **Block quote if missing** - No fallback
 

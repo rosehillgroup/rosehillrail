@@ -42,7 +42,7 @@ const usageTypes: { value: UsageType; label: string; description: string }[] = [
   {
     value: "Rail Road Access",
     label: "Rail Road Access Point",
-    description: "Specialized access for rail maintenance",
+    description: "Specialised access for rail maintenance",
   },
 ];
 

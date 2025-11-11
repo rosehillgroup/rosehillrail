@@ -90,12 +90,12 @@
     },
     {
       "id": "conn_light_medium",
-      "description": "Light to Medium excludes specialized connections",
+      "description": "Light to Medium excludes specialised connections",
       "when": {
         "usage": "Light to Medium"
       },
       "allow": ["JV", "LO", "HK", "LOL", "BP"],
-      "reason": "Specialized connections (SF2K, PCK) not required for light loads"
+      "reason": "Specialised connections (SF2K, PCK) not required for light loads"
     },
     {
       "id": "conn_pedestrian",
@@ -134,7 +134,7 @@
     },
     {
       "id": "conn_angle_restriction",
-      "description": "Angle restrictions for specialized connections",
+      "description": "Angle restrictions for specialised connections",
       "when": {
         "or": [
           { "crossing_angle": "<45" },
@@ -190,7 +190,7 @@
       },
       "allow": [],
       "exclude": ["P(B)", "A(B)", "JV", "N", "TC"],
-      "reason": "SF2K uses specialized materials - contact engineering"
+      "reason": "SF2K uses specialised materials - contact engineering"
     },
     {
       "id": "mat_pck_compat",
@@ -200,7 +200,7 @@
       },
       "allow": [],
       "exclude": ["P(B)", "A(B)", "JV", "N", "TC"],
-      "reason": "PCK uses specialized materials - contact engineering"
+      "reason": "PCK uses specialised materials - contact engineering"
     }
   ],
   "validation": [

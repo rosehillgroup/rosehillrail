@@ -42,7 +42,7 @@ const connectionTypes: {
     value: "SF2K",
     label: "SF2K",
     fullName: "Special Connection SF2K",
-    description: "Specialized connection for specific applications",
+    description: "Specialised connection for specific applications",
   },
   {
     value: "PCK",

@@ -77,7 +77,7 @@ export class PricingResolver {
   }
 
   /**
-   * Load organization price list
+   * Load organisation price list
    */
   loadOrgPriceList(orgId: string, priceList: PriceList): void {
     this.orgPriceLists.set(orgId, priceList);
@@ -151,7 +151,7 @@ export class PricingResolver {
   /**
    * Select appropriate price list based on precedence
    * 1. Customer-specific price list (if date-valid)
-   * 2. Organization default price list
+   * 2. Organisation default price list
    * 3. Global default price list
    */
   private selectPriceList(context: PricingContext): PriceList | null {
@@ -165,7 +165,7 @@ export class PricingResolver {
       }
     }
 
-    // 2. Try organization default list
+    // 2. Try organisation default list
     if (org_id) {
       const orgList = this.orgPriceLists.get(org_id);
       if (orgList && this.isValidForDate(orgList, quote_date)) {
