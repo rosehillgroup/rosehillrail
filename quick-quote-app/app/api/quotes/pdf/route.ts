@@ -3,6 +3,7 @@
  * Generates a PDF quote document
  */
 
+import React from "react";
 import { NextRequest, NextResponse } from "next/server";
 import { renderToBuffer } from "@react-pdf/renderer";
 import { QuotePDF } from "@/lib/pdf-template";
@@ -29,7 +30,7 @@ export async function POST(request: NextRequest) {
 
     // Generate PDF
     const pdfBuffer = await renderToBuffer(
-      QuotePDF({ input, bom, totals })
+      React.createElement(QuotePDF, { input, bom, totals }) as any
     );
 
     // Create filename
@@ -38,7 +39,7 @@ export async function POST(request: NextRequest) {
     const filename = `RosehillRail_Quote_${projectName}_${date}.pdf`;
 
     // Return PDF as downloadable file
-    return new NextResponse(pdfBuffer, {
+    return new NextResponse(new Uint8Array(pdfBuffer), {
       status: 200,
       headers: {
         "Content-Type": "application/pdf",
