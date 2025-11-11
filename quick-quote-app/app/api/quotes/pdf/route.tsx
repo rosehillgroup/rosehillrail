@@ -3,9 +3,8 @@
  * Generates a PDF quote document
  */
 
-import React from "react";
 import { NextRequest, NextResponse } from "next/server";
-import { renderToBuffer } from "@react-pdf/renderer";
+import { pdf } from "@react-pdf/renderer";
 import { QuotePDF } from "@/lib/pdf-template";
 import type { QuoteInput } from "@/lib/types";
 import type { PricedBOMLine, QuoteTotals } from "@/lib/pricing";
@@ -29,9 +28,11 @@ export async function POST(request: NextRequest) {
     }
 
     // Generate PDF
-    const pdfBuffer = await renderToBuffer(
-      React.createElement(QuotePDF, { input, bom, totals }) as any
-    );
+    const pdfDoc = pdf(<QuotePDF input={input} bom={bom} totals={totals} />);
+    const pdfBlob = await pdfDoc.toBlob();
+
+    // Convert blob to array buffer
+    const arrayBuffer = await pdfBlob.arrayBuffer();
 
     // Create filename
     const projectName = input.project_name.replace(/[^a-z0-9]/gi, "_");
@@ -39,12 +40,11 @@ export async function POST(request: NextRequest) {
     const filename = `RosehillRail_Quote_${projectName}_${date}.pdf`;
 
     // Return PDF as downloadable file
-    return new NextResponse(new Uint8Array(pdfBuffer), {
+    return new NextResponse(arrayBuffer, {
       status: 200,
       headers: {
         "Content-Type": "application/pdf",
         "Content-Disposition": `attachment; filename="${filename}"`,
-        "Content-Length": pdfBuffer.length.toString(),
       },
     });
   } catch (error) {

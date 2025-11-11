@@ -175,7 +175,9 @@ export const QuotePDF: React.FC<QuotePDFProps> = ({ input, bom, totals }) => {
         {/* Header */}
         <View style={styles.header}>
           <View>
-            <Image src="/rosehill_rail_logo.png" style={styles.logo} />
+            <Text style={{ fontSize: 18, fontFamily: "Helvetica-Bold", color: colors.primaryBlue }}>
+              ROSEHILL RAIL
+            </Text>
           </View>
           <View style={styles.companyInfo}>
             <Text style={{ fontFamily: "Helvetica-Bold", fontSize: 11, color: colors.primaryBlue, marginBottom: 5 }}>
