@@ -181,7 +181,8 @@ interface QuotePDFProps {
   totals: QuoteTotals;
 }
 
-export const QuotePDF: React.FC<QuotePDFProps> = ({ input, bom, totals }) => {
+export function QuotePDF(props: QuotePDFProps) {
+  const { input, bom, totals } = props;
   const quoteDate = new Date().toLocaleDateString("en-GB");
   const rhrLength = Math.ceil(input.design_len / 1.8) * 1.8;
 
@@ -334,4 +335,4 @@ export const QuotePDF: React.FC<QuotePDFProps> = ({ input, bom, totals }) => {
       </Page>
     </Document>
   );
-};
+}
