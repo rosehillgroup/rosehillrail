@@ -97,20 +97,24 @@ export default function Step6Summary() {
     if (!quoteResult) return;
 
     try {
-      // Call PDF generation API
-      const response = await fetch("/api/quotes/pdf", {
+      // Call Netlify Function for PDF generation (HTML→PDF via Puppeteer)
+      const response = await fetch("/.netlify/functions/generate-quote-pdf", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          input: formData,
-          bom: quoteResult.bom,
-          totals: {
-            subtotal: quoteResult.subtotal,
-            tax: quoteResult.tax,
-            tax_rate: 0,
-            total: quoteResult.total,
+          project: formData.project_name || "Untitled",
+          customer: formData.customer || "",
+          currency: formData.currency || "EUR",
+          subtotal: quoteResult.subtotal,
+          tax: quoteResult.tax,
+          total: quoteResult.total,
+          lines: quoteResult.bom,
+          meta: {
+            rule_set_version: quoteResult.rule_set_version,
+            price_list_id: quoteResult.price_list_id,
+            compute_hash: quoteResult.compute_hash,
           },
         }),
       });
