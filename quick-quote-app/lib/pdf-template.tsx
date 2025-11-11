@@ -228,15 +228,15 @@ export const QuotePDF: React.FC<QuotePDFProps> = ({ input, bom, totals }) => {
           <Text style={styles.sectionTitle}>Configuration Summary</Text>
           <View style={styles.row}>
             <Text style={styles.label}>Design Length:</Text>
-            <Text style={styles.value}>{input.design_len}m (RHR: {rhrLength.toFixed(1)}m)</Text>
+            <Text style={styles.value}>{String(input.design_len)}m (RHR: {String(rhrLength.toFixed(1))}m)</Text>
           </View>
           <View style={styles.row}>
             <Text style={styles.label}>Number of Tracks:</Text>
-            <Text style={styles.value}>{input.tracks}</Text>
+            <Text style={styles.value}>{String(input.tracks)}</Text>
           </View>
           <View style={styles.row}>
             <Text style={styles.label}>Rail Gauge:</Text>
-            <Text style={styles.value}>{input.gauge}mm</Text>
+            <Text style={styles.value}>{String(input.gauge)}mm</Text>
           </View>
           {input.tracks > 1 && input.track_spacing ? (
             <View style={styles.row}>
@@ -246,31 +246,31 @@ export const QuotePDF: React.FC<QuotePDFProps> = ({ input, bom, totals }) => {
           ) : null}
           <View style={styles.row}>
             <Text style={styles.label}>Crossing Angle:</Text>
-            <Text style={styles.value}>{input.crossing_angle}°</Text>
+            <Text style={styles.value}>{String(input.crossing_angle)}°</Text>
           </View>
           <View style={styles.row}>
             <Text style={styles.label}>Usage Type:</Text>
-            <Text style={styles.value}>{input.usage}</Text>
+            <Text style={styles.value}>{String(input.usage)}</Text>
           </View>
           <View style={styles.row}>
             <Text style={styles.label}>Speed:</Text>
-            <Text style={styles.value}>{input.speed_kph} km/h</Text>
+            <Text style={styles.value}>{String(input.speed_kph)} km/h</Text>
           </View>
           <View style={styles.row}>
             <Text style={styles.label}>Field Panel Type:</Text>
-            <Text style={styles.value}>{input.field_panel_type}</Text>
+            <Text style={styles.value}>{String(input.field_panel_type)}</Text>
           </View>
           <View style={styles.row}>
             <Text style={styles.label}>Edge Beam:</Text>
-            <Text style={styles.value}>{input.edge_beam}</Text>
+            <Text style={styles.value}>{String(input.edge_beam)}</Text>
           </View>
           <View style={styles.row}>
             <Text style={styles.label}>Connection Type:</Text>
-            <Text style={styles.value}>{input.connection}</Text>
+            <Text style={styles.value}>{String(input.connection)}</Text>
           </View>
           <View style={styles.row}>
             <Text style={styles.label}>Material:</Text>
-            <Text style={styles.value}>{input.material}</Text>
+            <Text style={styles.value}>{String(input.material)}</Text>
           </View>
         </View>
 
@@ -293,11 +293,11 @@ export const QuotePDF: React.FC<QuotePDFProps> = ({ input, bom, totals }) => {
                 key={index}
                 style={index % 2 === 0 ? styles.tableRow : styles.tableRowAlt}
               >
-                <Text style={styles.col1}>{line.name}</Text>
-                <Text style={styles.col2}>{line.qty}</Text>
-                <Text style={styles.col3}>{line.unit}</Text>
-                <Text style={styles.col4}>{formatCurrency(line.unit_price)}</Text>
-                <Text style={styles.col5}>{formatCurrency(line.line_total)}</Text>
+                <Text style={styles.col1}>{String(line.name)}</Text>
+                <Text style={styles.col2}>{String(line.qty)}</Text>
+                <Text style={styles.col3}>{String(line.unit)}</Text>
+                <Text style={styles.col4}>{String(formatCurrency(line.unit_price))}</Text>
+                <Text style={styles.col5}>{String(formatCurrency(line.line_total))}</Text>
               </View>
             ))}
           </View>
@@ -306,17 +306,17 @@ export const QuotePDF: React.FC<QuotePDFProps> = ({ input, bom, totals }) => {
           <View style={styles.totalsSection}>
             <View style={styles.totalRow}>
               <Text>Subtotal:</Text>
-              <Text>{formatCurrency(totals.subtotal)}</Text>
+              <Text>{String(formatCurrency(totals.subtotal))}</Text>
             </View>
             {totals.tax > 0 ? (
               <View style={styles.totalRow}>
-                <Text>Tax ({(totals.tax_rate * 100).toFixed(0)}%):</Text>
-                <Text>{formatCurrency(totals.tax)}</Text>
+                <Text>Tax ({String((totals.tax_rate * 100).toFixed(0))}%):</Text>
+                <Text>{String(formatCurrency(totals.tax))}</Text>
               </View>
             ) : null}
             <View style={styles.grandTotalRow}>
               <Text>Total:</Text>
-              <Text>{formatCurrency(totals.total)}</Text>
+              <Text>{String(formatCurrency(totals.total))}</Text>
             </View>
           </View>
         </View>
