@@ -2,5 +2,9 @@
   command = "npm run build"
   publish = ".next"
 
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["@react-pdf/renderer", "react", "react-dom"]
+
 [[plugins]]
   package = "@netlify/plugin-nextjs"

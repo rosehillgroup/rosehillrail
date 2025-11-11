@@ -23,7 +23,12 @@ function SimplePDF() {
 
 export async function GET(request: NextRequest) {
   try {
+    // Diagnostic: Check for React duplication
+    console.log('[PDF Smoketest] Starting PDF generation');
+    console.log('[PDF Smoketest] React version:', React.version);
+
     const pdfBuffer = await renderToBuffer(<SimplePDF />);
+    console.log('[PDF Smoketest] PDF generated successfully');
 
     return new NextResponse(new Uint8Array(pdfBuffer), {
       status: 200,
