@@ -93,6 +93,46 @@ export default function Step6Summary() {
     URL.revokeObjectURL(url);
   };
 
+  const exportPDF = async () => {
+    if (!quoteResult) return;
+
+    try {
+      // Call PDF generation API
+      const response = await fetch("/api/quotes/pdf", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          input: formData,
+          bom: quoteResult.bom,
+          totals: {
+            subtotal: quoteResult.subtotal,
+            tax: quoteResult.tax,
+            tax_rate: 0,
+            total: quoteResult.total,
+          },
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to generate PDF");
+      }
+
+      // Download PDF
+      const blob = await response.blob();
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = `quote-${formData.project_name || "export"}.pdf`;
+      link.click();
+      URL.revokeObjectURL(url);
+    } catch (err) {
+      console.error("Error generating PDF:", err);
+      alert("Failed to generate PDF. Please try again.");
+    }
+  };
+
   return (
     <div className="space-y-6">
       <div>
@@ -273,7 +313,7 @@ export default function Step6Summary() {
                   Export CSV
                 </button>
                 <button
-                  onClick={() => alert("PDF export coming soon!")}
+                  onClick={exportPDF}
                   className="inline-flex items-center px-4 py-2 border border-transparent rounded-lg text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                 >
                   <svg
