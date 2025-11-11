@@ -217,9 +217,9 @@ export const QuotePDF: React.FC<QuotePDFProps> = ({ input, bom, totals }) => {
         {/* Title */}
         <View style={styles.titleContainer}>
           <Text style={styles.title}>Rail Crossing Quotation</Text>
-          <Text style={styles.subtitle}>Project: {input.project_name}</Text>
+          <Text style={styles.subtitle}>Project: {String(input.project_name || '')}</Text>
           <Text style={styles.dateText}>
-            Quote Date: {quoteDate}
+            Quote Date: {String(quoteDate)}
           </Text>
         </View>
 
@@ -238,12 +238,12 @@ export const QuotePDF: React.FC<QuotePDFProps> = ({ input, bom, totals }) => {
             <Text style={styles.label}>Rail Gauge:</Text>
             <Text style={styles.value}>{input.gauge}mm</Text>
           </View>
-          {input.tracks > 1 && input.track_spacing && (
+          {input.tracks > 1 && input.track_spacing ? (
             <View style={styles.row}>
               <Text style={styles.label}>Track Spacing:</Text>
-              <Text style={styles.value}>{input.track_spacing}m</Text>
+              <Text style={styles.value}>{String(input.track_spacing)}m</Text>
             </View>
-          )}
+          ) : null}
           <View style={styles.row}>
             <Text style={styles.label}>Crossing Angle:</Text>
             <Text style={styles.value}>{input.crossing_angle}°</Text>
@@ -308,12 +308,12 @@ export const QuotePDF: React.FC<QuotePDFProps> = ({ input, bom, totals }) => {
               <Text>Subtotal:</Text>
               <Text>{formatCurrency(totals.subtotal)}</Text>
             </View>
-            {totals.tax > 0 && (
+            {totals.tax > 0 ? (
               <View style={styles.totalRow}>
                 <Text>Tax ({(totals.tax_rate * 100).toFixed(0)}%):</Text>
                 <Text>{formatCurrency(totals.tax)}</Text>
               </View>
-            )}
+            ) : null}
             <View style={styles.grandTotalRow}>
               <Text>Total:</Text>
               <Text>{formatCurrency(totals.total)}</Text>
