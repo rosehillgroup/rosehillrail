@@ -149,6 +149,30 @@ const styles = StyleSheet.create({
     fontSize: 8,
     color: colors.darkGray,
   },
+  logoText: {
+    fontSize: 18,
+    fontFamily: "Helvetica-Bold",
+    color: colors.primaryBlue,
+  },
+  companyName: {
+    fontFamily: "Helvetica-Bold",
+    fontSize: 11,
+    color: colors.primaryBlue,
+    marginBottom: 5,
+  },
+  contactText: {
+    marginTop: 5,
+  },
+  titleContainer: {
+    marginBottom: 20,
+  },
+  dateText: {
+    fontSize: 9,
+    color: colors.darkGray,
+  },
+  footerRight: {
+    textAlign: "right",
+  },
 });
 
 interface QuotePDFProps {
@@ -175,26 +199,26 @@ export const QuotePDF: React.FC<QuotePDFProps> = ({ input, bom, totals }) => {
         {/* Header */}
         <View style={styles.header}>
           <View>
-            <Text style={{ fontSize: 18, fontFamily: "Helvetica-Bold", color: colors.primaryBlue }}>
+            <Text style={styles.logoText}>
               ROSEHILL RAIL
             </Text>
           </View>
           <View style={styles.companyInfo}>
-            <Text style={{ fontFamily: "Helvetica-Bold", fontSize: 11, color: colors.primaryBlue, marginBottom: 5 }}>
+            <Text style={styles.companyName}>
               Rosehill Rail
             </Text>
             <Text>Beech Road</Text>
             <Text>Sowerby Bridge</Text>
-            <Text style={{ marginTop: 5 }}>Tel: +44 (0)1422 839 456</Text>
+            <Text style={styles.contactText}>Tel: +44 (0)1422 839 456</Text>
             <Text>Email: info@rosehillrail.com</Text>
           </View>
         </View>
 
         {/* Title */}
-        <View style={{ marginBottom: 20 }}>
+        <View style={styles.titleContainer}>
           <Text style={styles.title}>Rail Crossing Quotation</Text>
           <Text style={styles.subtitle}>Project: {input.project_name}</Text>
-          <Text style={{ fontSize: 9, color: colors.darkGray }}>
+          <Text style={styles.dateText}>
             Quote Date: {quoteDate}
           </Text>
         </View>
@@ -303,7 +327,7 @@ export const QuotePDF: React.FC<QuotePDFProps> = ({ input, bom, totals }) => {
             <Text>This quotation is valid for 30 days from the date of issue.</Text>
             <Text>All prices exclude delivery and installation unless otherwise stated.</Text>
           </View>
-          <View style={{ textAlign: "right" }}>
+          <View style={styles.footerRight}>
             <Text>Page 1 of 1</Text>
           </View>
         </View>
