@@ -4,7 +4,7 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
-import { pdf } from "@react-pdf/renderer";
+import { renderToStream } from "@react-pdf/renderer";
 import { QuotePDF } from "@/lib/pdf-template";
 import type { QuoteInput } from "@/lib/types";
 import type { PricedBOMLine, QuoteTotals } from "@/lib/pricing";
@@ -27,20 +27,18 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Generate PDF
-    const pdfDoc = pdf(<QuotePDF input={input} bom={bom} totals={totals} />);
-    const pdfBlob = await pdfDoc.toBlob();
-
-    // Convert blob to array buffer
-    const arrayBuffer = await pdfBlob.arrayBuffer();
-
     // Create filename
     const projectName = input.project_name.replace(/[^a-z0-9]/gi, "_");
     const date = new Date().toISOString().split("T")[0];
     const filename = `RosehillRail_Quote_${projectName}_${date}.pdf`;
 
+    // Generate PDF stream
+    const stream = await renderToStream(
+      <QuotePDF input={input} bom={bom} totals={totals} />
+    );
+
     // Return PDF as downloadable file
-    return new NextResponse(arrayBuffer, {
+    return new NextResponse(stream as any, {
       status: 200,
       headers: {
         "Content-Type": "application/pdf",
