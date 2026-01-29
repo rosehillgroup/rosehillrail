@@ -84,6 +84,8 @@
     </script>
 
     <style>
+        .hidden { display: none; }
+
         * {
             margin: 0;
             padding: 0;
@@ -521,65 +523,6 @@
         }
 
         /* ============================================
-           SECTION 2: ANIMATED STATISTICS MARQUEE
-           ============================================ */
-        .stats-marquee {
-            background: #0f2440;
-            padding: 25px 0;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .marquee-track {
-            display: flex;
-            animation: marquee-scroll 30s linear infinite;
-            width: max-content;
-        }
-
-        .stats-marquee:hover .marquee-track {
-            animation-play-state: paused;
-        }
-
-        @keyframes marquee-scroll {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-        .stat-item {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            padding: 0 60px;
-            white-space: nowrap;
-            color: white;
-        }
-
-        .stat-number {
-            font-family: 'Overpass', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #ff6b35;
-        }
-
-        .stat-label {
-            font-size: 1rem;
-            opacity: 0.9;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .stat-divider {
-            width: 4px;
-            height: 4px;
-            background: #ff6b35;
-            border-radius: 50%;
-        }
-
-        /* ============================================
            SECTION 3: TECHNOLOGY EXPLAINER SPLIT
            ============================================ */
         .technology-section {
@@ -674,15 +617,17 @@
         }
 
         .tech-visual {
-            background: #f0f4f8;
+            background: #1a365d;
             position: relative;
             overflow: hidden;
+            padding: 40px 0 40px 40px;
         }
 
         .tech-image {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 20px 0 0 20px;
         }
 
         .strand-animation-container {
@@ -752,137 +697,6 @@
             color: #1a365d;
             margin-top: 30px;
             text-align: center;
-        }
-
-        /* ============================================
-           SECTION 4: KEY FEATURES GRID
-           ============================================ */
-        .features-section {
-            padding: 100px 0;
-            background: white;
-        }
-
-        .features-header {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 20px 60px;
-        }
-
-        .features-header h2 {
-            font-family: 'Overpass', sans-serif;
-            font-size: 2.8rem;
-            font-weight: 600;
-            color: #1a365d;
-            margin-bottom: 20px;
-        }
-
-        .scroll-hint {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: #666;
-            font-size: 1rem;
-        }
-
-        .scroll-arrow {
-            display: inline-flex;
-            animation: scroll-hint 1.5s ease-in-out infinite;
-        }
-
-        @keyframes scroll-hint {
-            0%, 100% {
-                transform: translateX(0);
-            }
-            50% {
-                transform: translateX(10px);
-            }
-        }
-
-        .features-carousel {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 20px 40px;
-        }
-
-        .feature-card {
-            background: white;
-            border-radius: 16px;
-            padding: 40px;
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            border: 1px solid rgba(0, 0, 0, 0.05);
-        }
-
-        .feature-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg, #ff6b35, #e55a2b);
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 0.4s ease;
-        }
-
-        .feature-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .feature-card:hover {
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
-            transform: translateY(-10px);
-        }
-
-        .feature-number {
-            font-family: 'Overpass', sans-serif;
-            font-size: 4rem;
-            font-weight: 700;
-            color: rgba(26, 54, 93, 0.1);
-            line-height: 1;
-            margin-bottom: 20px;
-        }
-
-        .feature-card h3 {
-            font-family: 'Overpass', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #1a365d;
-            margin-bottom: 15px;
-        }
-
-        .feature-card p {
-            color: #666;
-            font-size: 1.05rem;
-            line-height: 1.7;
-        }
-
-        .feature-image-placeholder {
-            height: 180px;
-            background: linear-gradient(135deg, #e8f4fd, #d1e8f8);
-            border-radius: 12px;
-            margin-top: 25px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.9rem;
-            color: #1a365d;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .feature-image {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 12px;
-            margin-top: 25px;
         }
 
         /* ============================================
@@ -1415,11 +1229,6 @@
                 justify-content: center;
             }
 
-            .features-carousel {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 20px;
-            }
-
             .technology-section {
                 grid-template-columns: 1fr;
             }
@@ -1469,10 +1278,6 @@
         @media (max-width: 768px) {
             .hero-title {
                 font-size: 2.5rem;
-            }
-
-            .features-carousel {
-                grid-template-columns: 1fr;
             }
 
             .benefits-grid {
@@ -1535,14 +1340,7 @@
                 min-height: 300px;
             }
 
-            .features-carousel {
-                padding: 0 20px 40px;
-                gap: 15px;
-            }
 
-            .feature-card {
-                padding: 25px;
-            }
 
             .masonry-grid {
                 grid-template-columns: 1fr;
@@ -1823,46 +1621,7 @@
         </div>
     </section>
 
-    <!-- Section 2: Animated Statistics Marquee -->
-    <section class="stats-marquee">
-        <div class="marquee-track">
-            <div class="stat-item">
-                <span class="stat-number">Extended</span><span class="stat-label" data-i18n="strandlockPage.stats.span">Spans</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-                <span class="stat-number" data-target="50">50</span><span class="stat-label" data-i18n="strandlockPage.stats.faster">% Faster Install</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-                <span class="stat-number" data-target="100">100</span><span class="stat-label" data-i18n="strandlockPage.stats.offsite">% Off-Site Assembly</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-                <span class="stat-number" data-target="25">25+</span><span class="stat-label" data-i18n="strandlockPage.stats.lifespan">Year Lifespan</span>
-            </div>
-            <div class="stat-divider"></div>
-            <!-- Duplicate for seamless loop -->
-            <div class="stat-item">
-                <span class="stat-number">Extended</span><span class="stat-label" data-i18n="strandlockPage.stats.span">Spans</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-                <span class="stat-number">50</span><span class="stat-label" data-i18n="strandlockPage.stats.faster">% Faster Install</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-                <span class="stat-number">100</span><span class="stat-label" data-i18n="strandlockPage.stats.offsite">% Off-Site Assembly</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-                <span class="stat-number">25+</span><span class="stat-label" data-i18n="strandlockPage.stats.lifespan">Year Lifespan</span>
-            </div>
-            <div class="stat-divider"></div>
-        </div>
-    </section>
-
-    <!-- Section 3: Technology Explainer Split Screen -->
+    <!-- Section 2: Technology Explainer Split Screen -->
     <section class="technology-section" id="technology">
         <div class="tech-content">
             <h2 data-i18n="strandlockPage.technology.title">What is <span>StrandLock?</span></h2>
@@ -1905,36 +1664,7 @@
         </div>
     </section>
 
-    <!-- Section 4: Horizontal Scroll Features Gallery -->
-    <section class="features-section">
-        <div class="features-header">
-            <h2 data-i18n="strandlockPage.features.title">Key Features</h2>
-        </div>
-        <div class="features-carousel" id="features-carousel">
-            <div class="feature-card">
-                <span class="feature-number">01</span>
-                <h3 data-i18n="strandlockPage.features.feature1.title">Extended Spans</h3>
-                <p data-i18n="strandlockPage.features.feature1.description">Extended span capability accommodates wider crossings and complex geometries that would challenge conventional systems.</p>
-            </div>
-            <div class="feature-card">
-                <span class="feature-number">02</span>
-                <h3 data-i18n="strandlockPage.features.feature2.title">Modular Design</h3>
-                <p data-i18n="strandlockPage.features.feature2.description">Fully compatible with Rosehill Rail gauge panels, field panels, and edge beam solutions for complete system integration.</p>
-            </div>
-            <div class="feature-card">
-                <span class="feature-number">03</span>
-                <h3 data-i18n="strandlockPage.features.feature3.title">Off-Site Assembly</h3>
-                <p data-i18n="strandlockPage.features.feature3.description">Pre-assembled modules arrive ready for rapid installation, minimising track possession time and labour requirements on site.</p>
-            </div>
-            <div class="feature-card">
-                <span class="feature-number">04</span>
-                <h3 data-i18n="strandlockPage.features.feature4.title">All-Weather Installation</h3>
-                <p data-i18n="strandlockPage.features.feature4.description">Robust design allows installation in challenging weather conditions without compromising structural integrity or performance.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 5: Asymmetric Offset Benefits Grid -->
+    <!-- Section 3: Asymmetric Offset Benefits Grid -->
     <section class="benefits-section">
         <div class="container">
             <div class="benefits-header">
@@ -2105,7 +1835,12 @@
         </div>
         <div class="cta-form-container">
             <h3 data-i18n="strandlockPage.cta.formTitle">Quick Enquiry</h3>
-            <form class="quick-contact-form" action="contact.html" method="get">
+            <form name="strandlock-enquiry" class="quick-contact-form" method="POST" netlify data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html">
+                <input type="hidden" name="form-name" value="strandlock-enquiry">
+                <input type="hidden" name="subject" value="StrandLock Quick Enquiry - Rosehill Rail">
+                <p class="hidden">
+                    <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                </p>
                 <div class="form-group">
                     <label for="name" data-i18n="strandlockPage.cta.nameLabel">Your Name</label>
                     <input type="text" id="name" name="name" required placeholder="Enter your name">
@@ -2210,37 +1945,6 @@
             });
         }
 
-        // Horizontal drag-to-scroll for features carousel
-        const carousel = document.getElementById('features-carousel');
-        let isDown = false;
-        let startX;
-        let scrollLeft;
-
-        carousel.addEventListener('mousedown', (e) => {
-            isDown = true;
-            carousel.style.cursor = 'grabbing';
-            startX = e.pageX - carousel.offsetLeft;
-            scrollLeft = carousel.scrollLeft;
-        });
-
-        carousel.addEventListener('mouseleave', () => {
-            isDown = false;
-            carousel.style.cursor = 'grab';
-        });
-
-        carousel.addEventListener('mouseup', () => {
-            isDown = false;
-            carousel.style.cursor = 'grab';
-        });
-
-        carousel.addEventListener('mousemove', (e) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - carousel.offsetLeft;
-            const walk = (x - startX) * 2;
-            carousel.scrollLeft = scrollLeft - walk;
-        });
-
         // Intersection Observer for benefit cards reveal animation
         const observerOptions = {
             threshold: 0.2,
@@ -2259,41 +1963,6 @@
 
         document.querySelectorAll('.benefit-card').forEach(card => {
             benefitObserver.observe(card);
-        });
-
-        // Number counter animation
-        const counterObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const counter = entry.target;
-                    const target = parseInt(counter.getAttribute('data-target'));
-                    if (target && !counter.classList.contains('counted')) {
-                        counter.classList.add('counted');
-                        animateCounter(counter, target);
-                    }
-                }
-            });
-        }, { threshold: 0.5 });
-
-        function animateCounter(element, target) {
-            let current = 0;
-            const increment = target / 50;
-            const timer = setInterval(() => {
-                current += increment;
-                if (current >= target) {
-                    clearInterval(timer);
-                    current = target;
-                }
-                if (target === 25) {
-                    element.textContent = Math.floor(current) + '+';
-                } else {
-                    element.textContent = Math.floor(current);
-                }
-            }, 30);
-        }
-
-        document.querySelectorAll('.stat-number[data-target]').forEach(counter => {
-            counterObserver.observe(counter);
         });
 
         // Smooth scroll for anchor links
