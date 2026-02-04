@@ -1295,7 +1295,7 @@
   },
   "strandlockPage": {
     "hero": {
-      "title": "StrandLock<br>Level Crossing System",
+      "title": "StrandLock<br><span>Level Crossing System</span>",
       "subtitle": "Locked-in stability for the most demanding rail crossings. Post-tensioned steel strand technology delivers exceptional structural integrity.",
       "primaryCta": "Get in Touch",
       "secondaryCta": "Explore Technology"

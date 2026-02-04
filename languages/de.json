@@ -1295,7 +1295,7 @@
   },
   "strandlockPage": {
     "hero": {
-      "title": "StrandLock<br>Bahnübergangssystem",
+      "title": "StrandLock<br><span>Bahnübergangssystem</span>",
       "subtitle": "Festverriegelte Stabilität für die anspruchsvollsten Bahnübergänge. Nachgespannte Stahlseil-Technologie liefert außergewöhnliche strukturelle Integrität.",
       "primaryCta": "Kontakt aufnehmen",
       "secondaryCta": "Technologie erkunden"
