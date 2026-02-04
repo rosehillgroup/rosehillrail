@@ -1304,9 +1304,13 @@
       "title": "Cos'è <span>StrandLock?</span>",
       "intro": "StrandLock si basa sul familiare processo di installazione Rosehill Baseplate, con un miglioramento chiave. I canali integrati nei pannelli consentono di far passare un trefolo d'acciaio continuo, ingrassato e rivestito attraverso l'attraversamento una volta completata l'installazione.",
       "description": "Il trefolo viene ancorato ad entrambe le estremità e tensionato utilizzando un martinetto idraulico, bloccando saldamente l'intero assemblaggio dell'attraversamento. Questa azione di bloccaggio meccanico aumenta significativamente la stabilità.",
+      "step1Title": "Installare i pannelli",
       "step1": "I pannelli StrandLock vengono installati utilizzando i metodi standard di Rosehill Rail",
+      "step2Title": "Infilare il trefolo",
       "step2": "Il trefolo d'acciaio viene infilato attraverso i canali integrati dei pannelli",
+      "step3Title": "Tensionare & Bloccare",
       "step3": "Ancoraggi installati e pannelli serrati alla lunghezza di attraversamento desiderata",
+      "step4Title": "Sigillare & Proteggere",
       "step4": "Trefolo sigillato e protetto per prevenire l'infiltrazione d'acqua"
     },
     "benefits": {

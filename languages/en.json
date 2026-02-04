@@ -1304,9 +1304,13 @@
       "title": "What is <span>StrandLock?</span>",
       "intro": "StrandLock builds on the familiar Rosehill Baseplate installation process, with one key enhancement. Integrated channels within the panels allow a continuous, greased and sheathed steel strand to be threaded through the crossing once installation is complete.",
       "description": "The strand is anchored at both ends and tensioned using a hydraulic jack, locking the entire crossing assembly firmly into place. This mechanical locking action significantly increases stability.",
+      "step1Title": "Install Panels",
       "step1": "StrandLock panels are installed using standard Rosehill Rail methods",
+      "step2Title": "Thread Strand",
       "step2": "Steel strand is threaded through the integrated panel channels",
+      "step3Title": "Tension & Lock",
       "step3": "Anchors installed and panels tightened to desired crossing length",
+      "step4Title": "Seal & Protect",
       "step4": "Strand sealed and protected to prevent water ingress"
     },
     "benefits": {

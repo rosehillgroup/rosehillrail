@@ -1304,9 +1304,13 @@
       "title": "Qu'est-ce que <span>StrandLock ?</span>",
       "intro": "StrandLock s'appuie sur le processus d'installation familier de Rosehill Baseplate, avec une amélioration clé. Des canaux intégrés dans les panneaux permettent de faire passer un câble d'acier continu, graissé et gainé à travers le passage une fois l'installation terminée.",
       "description": "Le câble est ancré aux deux extrémités et tendu à l'aide d'un vérin hydraulique, verrouillant fermement l'ensemble du passage en place. Cette action de verrouillage mécanique augmente considérablement la stabilité.",
+      "step1Title": "Installer les panneaux",
       "step1": "Les panneaux StrandLock sont installés selon les méthodes standard de Rosehill Rail",
+      "step2Title": "Enfiler le câble",
       "step2": "Le câble d'acier est enfilé à travers les canaux intégrés des panneaux",
+      "step3Title": "Tendre & Verrouiller",
       "step3": "Ancres installées et panneaux serrés à la longueur de passage souhaitée",
+      "step4Title": "Sceller & Protéger",
       "step4": "Câble scellé et protégé pour empêcher l'infiltration d'eau"
     },
     "benefits": {
