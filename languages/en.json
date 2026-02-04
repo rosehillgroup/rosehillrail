@@ -1292,5 +1292,106 @@
       "text": "Discover how Walkway Panels can provide a durable, reusable alternative to concrete paving with 40+ year design life and enhanced environmental benefits.",
       "secondaryButton": "Sustainability Consultation"
     }
+  },
+  "strandlockPage": {
+    "hero": {
+      "title": "StrandLock<br>Level Crossing System",
+      "subtitle": "Locked-in stability for the most demanding rail crossings. Post-tensioned steel strand technology delivers exceptional structural integrity.",
+      "primaryCta": "Get in Touch",
+      "secondaryCta": "Explore Technology"
+    },
+    "technology": {
+      "title": "What is <span>StrandLock?</span>",
+      "intro": "StrandLock builds on the familiar Rosehill Baseplate installation process, with one key enhancement. Integrated channels within the panels allow a continuous, greased and sheathed steel strand to be threaded through the crossing once installation is complete.",
+      "description": "The strand is anchored at both ends and tensioned using a hydraulic jack, locking the entire crossing assembly firmly into place. This mechanical locking action significantly increases stability.",
+      "step1": "StrandLock panels are installed using standard Rosehill Rail methods",
+      "step2": "Steel strand is threaded through the integrated panel channels",
+      "step3": "Anchors installed and panels tightened to desired crossing length",
+      "step4": "Strand sealed and protected to prevent water ingress"
+    },
+    "benefits": {
+      "title": "Key Benefits",
+      "benefit1": {
+        "title": "Enhanced Structural Performance",
+        "description": "The tensioned strand links every panel, improving load transfer and reducing relative movement between components. The result is a locked, unified crossing structure that resists panel migration and maintains alignment over time."
+      },
+      "benefit2": {
+        "title": "Greater Design Flexibility",
+        "description": "StrandLock accommodates crossing angles and layouts that would otherwise prevent the use of a standard baseplate solution. Particularly suited to higher crossing angles and complex geometries."
+      },
+      "benefit3": {
+        "title": "Reduced Maintenance Risk",
+        "description": "By locking panels together, joint wear and long-term movement are minimised, helping maintain ride quality and geometry throughout the service life of the crossing."
+      },
+      "benefit4": {
+        "title": "Familiar Installation Process",
+        "description": "Installers benefit from a process that closely mirrors existing Baseplate installations, with minimal additional steps or specialist equipment required for the strand tensioning operation."
+      },
+      "benefit5": {
+        "title": "Circular Economy",
+        "description": "With no moulded metalwork within the panels, StrandLock crossings can be fully granulated at end of life — supporting a circular economy and reducing waste to landfill."
+      },
+      "benefit6": {
+        "title": "Long-Term Dimensional Stability",
+        "description": "Critical for locations where maintaining precise alignment is essential. The post-tensioning system ensures the crossing maintains its geometry under repeated dynamic loading."
+      }
+    },
+    "gallery": {
+      "title": "Installation Gallery"
+    },
+    "specs": {
+      "title": "Technical Specifications",
+      "pullQuote": "\"Once installed and tensioned, the system acts as a single, unified structure, improving load distribution under repeated rail and road traffic loading.\"",
+      "property": "Property",
+      "specification": "Specification",
+      "panelMaterial": "Panel Material",
+      "panelMaterialValue": "Moulded Polymer Composite",
+      "reinforcement": "Reinforcement",
+      "reinforcementValue": "Post-Tensioned Steel Strand",
+      "strandType": "Strand Type",
+      "strandTypeValue": "Greased & Sheathed for Corrosion Protection",
+      "tensioning": "Tensioning Method",
+      "tensioningValue": "Hydraulic Jack",
+      "compatibility": "System Compatibility",
+      "compatibilityValue": "All Rosehill Gauge Panels, Field Panels & Edge Beams",
+      "applications": "Recommended Applications",
+      "applicationsValue": "High Crossing Angles, Dynamic Loading, Complex Geometry"
+    },
+    "applications": {
+      "rail": {
+        "title": "Heavy Rail Crossings",
+        "description": "Engineered for main line railway crossings where structural integrity under high-frequency, heavy axle loads is essential. The unified structure resists the dynamic forces that cause conventional crossings to degrade.",
+        "feature1": "Higher crossing angles accommodated",
+        "feature2": "Increased vibration resistance",
+        "feature3": "Long-term dimensional stability"
+      },
+      "tram": {
+        "title": "Tramway & Light Rail",
+        "description": "Ideal for urban tramway systems where aesthetics, ride quality, and minimal maintenance disruption are priorities. The locked panel system maintains smooth running surfaces across the service life.",
+        "feature1": "Superior ride quality maintained",
+        "feature2": "Minimised joint wear",
+        "feature3": "Reduced maintenance frequency"
+      },
+      "road": {
+        "title": "High-Traffic Road Crossings",
+        "description": "Designed to withstand combined rail and heavy road vehicle loading. The post-tensioned system distributes loads across the entire crossing structure, preventing localised stress damage.",
+        "feature1": "HGV traffic rated",
+        "feature2": "Improved load distribution",
+        "feature3": "Extended service life"
+      }
+    },
+    "cta": {
+      "title": "Speak to Our Rail Specialists",
+      "description": "If you are planning a level crossing project and need guidance on whether StrandLock is the right solution, our technical team is here to help.",
+      "support": "Our technical team can support system selection, design guidance, and installation planning to ensure the most appropriate solution is specified for each site.",
+      "phone": "Phone:",
+      "email": "Email:",
+      "formTitle": "Quick Enquiry",
+      "nameLabel": "Your Name",
+      "emailLabel": "Email Address",
+      "messageLabel": "Your Message",
+      "submitButton": "Send Enquiry",
+      "alternative": "Or visit our <a href=\"contact.html\">full contact page</a>"
+    }
   }
 }

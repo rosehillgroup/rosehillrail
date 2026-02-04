@@ -1292,5 +1292,106 @@
       "text": "Scopri come i Pannelli per Camminamenti possono fornire un'alternativa durevole e riutilizzabile alla pavimentazione in calcestruzzo con vita di progetto di 40+ anni e benefici ambientali migliorati.",
       "secondaryButton": "Consulenza Sostenibilità"
     }
+  },
+  "strandlockPage": {
+    "hero": {
+      "title": "StrandLock<br>Sistema di Attraversamento Ferroviario",
+      "subtitle": "Stabilità bloccata per gli attraversamenti ferroviari più esigenti. La tecnologia del trefolo d'acciaio post-teso offre un'eccezionale integrità strutturale.",
+      "primaryCta": "Contattaci",
+      "secondaryCta": "Esplora la Tecnologia"
+    },
+    "technology": {
+      "title": "Cos'è <span>StrandLock?</span>",
+      "intro": "StrandLock si basa sul familiare processo di installazione Rosehill Baseplate, con un miglioramento chiave. I canali integrati nei pannelli consentono di far passare un trefolo d'acciaio continuo, ingrassato e rivestito attraverso l'attraversamento una volta completata l'installazione.",
+      "description": "Il trefolo viene ancorato ad entrambe le estremità e tensionato utilizzando un martinetto idraulico, bloccando saldamente l'intero assemblaggio dell'attraversamento. Questa azione di bloccaggio meccanico aumenta significativamente la stabilità.",
+      "step1": "I pannelli StrandLock vengono installati utilizzando i metodi standard di Rosehill Rail",
+      "step2": "Il trefolo d'acciaio viene infilato attraverso i canali integrati dei pannelli",
+      "step3": "Ancoraggi installati e pannelli serrati alla lunghezza di attraversamento desiderata",
+      "step4": "Trefolo sigillato e protetto per prevenire l'infiltrazione d'acqua"
+    },
+    "benefits": {
+      "title": "Vantaggi Principali",
+      "benefit1": {
+        "title": "Prestazioni Strutturali Migliorate",
+        "description": "Il trefolo tensionato collega ogni pannello, migliorando il trasferimento del carico e riducendo i movimenti relativi tra i componenti. Il risultato è una struttura di attraversamento bloccata e unificata che resiste alla migrazione dei pannelli e mantiene l'allineamento nel tempo."
+      },
+      "benefit2": {
+        "title": "Maggiore Flessibilità di Progettazione",
+        "description": "StrandLock si adatta ad angoli e configurazioni di attraversamento che altrimenti impedirebbero l'uso di una soluzione baseplate standard. Particolarmente adatto per angoli di attraversamento più elevati e geometrie complesse."
+      },
+      "benefit3": {
+        "title": "Rischio di Manutenzione Ridotto",
+        "description": "Bloccando insieme i pannelli, l'usura dei giunti e i movimenti a lungo termine sono minimizzati, aiutando a mantenere la qualità di marcia e la geometria per tutta la vita utile dell'attraversamento."
+      },
+      "benefit4": {
+        "title": "Processo di Installazione Familiare",
+        "description": "Gli installatori beneficiano di un processo che rispecchia da vicino le installazioni Baseplate esistenti, con passaggi aggiuntivi minimi o attrezzature specializzate richieste per l'operazione di tensionamento del trefolo."
+      },
+      "benefit5": {
+        "title": "Economia Circolare",
+        "description": "Senza parti metalliche stampate nei pannelli, gli attraversamenti StrandLock possono essere completamente granulati a fine vita — supportando un'economia circolare e riducendo i rifiuti in discarica."
+      },
+      "benefit6": {
+        "title": "Stabilità Dimensionale a Lungo Termine",
+        "description": "Critico per le posizioni dove il mantenimento di un allineamento preciso è essenziale. Il sistema post-teso garantisce che l'attraversamento mantenga la sua geometria sotto carichi dinamici ripetuti."
+      }
+    },
+    "gallery": {
+      "title": "Galleria di Installazione"
+    },
+    "specs": {
+      "title": "Specifiche Tecniche",
+      "pullQuote": "\"Una volta installato e tensionato, il sistema agisce come una singola struttura unificata, migliorando la distribuzione del carico sotto il carico ripetuto del traffico ferroviario e stradale.\"",
+      "property": "Proprietà",
+      "specification": "Specifica",
+      "panelMaterial": "Materiale del Pannello",
+      "panelMaterialValue": "Composito Polimerico Stampato",
+      "reinforcement": "Rinforzo",
+      "reinforcementValue": "Trefolo d'Acciaio Post-Teso",
+      "strandType": "Tipo di Trefolo",
+      "strandTypeValue": "Ingrassato e Rivestito per Protezione dalla Corrosione",
+      "tensioning": "Metodo di Tensionamento",
+      "tensioningValue": "Martinetto Idraulico",
+      "compatibility": "Compatibilità Sistema",
+      "compatibilityValue": "Tutti i Pannelli di Sagoma, Pannelli di Campo e Travi di Bordo Rosehill",
+      "applications": "Applicazioni Raccomandate",
+      "applicationsValue": "Angoli di Attraversamento Elevati, Carico Dinamico, Geometria Complessa"
+    },
+    "applications": {
+      "rail": {
+        "title": "Attraversamenti Ferroviari Pesanti",
+        "description": "Progettato per attraversamenti ferroviari di linee principali dove l'integrità strutturale sotto carichi assiali pesanti e ad alta frequenza è essenziale. La struttura unificata resiste alle forze dinamiche che degradano gli attraversamenti convenzionali.",
+        "feature1": "Angoli di attraversamento più elevati accomodati",
+        "feature2": "Maggiore resistenza alle vibrazioni",
+        "feature3": "Stabilità dimensionale a lungo termine"
+      },
+      "tram": {
+        "title": "Tram e Metropolitana Leggera",
+        "description": "Ideale per sistemi tramviari urbani dove l'estetica, la qualità di marcia e le minime interruzioni di manutenzione sono prioritarie. Il sistema di pannelli bloccati mantiene superfici di rotolamento lisce per tutta la durata di vita.",
+        "feature1": "Qualità di marcia superiore mantenuta",
+        "feature2": "Usura dei giunti minimizzata",
+        "feature3": "Frequenza di manutenzione ridotta"
+      },
+      "road": {
+        "title": "Attraversamenti Stradali ad Alto Traffico",
+        "description": "Progettato per resistere al carico combinato ferroviario e di veicoli stradali pesanti. Il sistema post-teso distribuisce i carichi su tutta la struttura dell'attraversamento, prevenendo danni da stress localizzati.",
+        "feature1": "Traffico mezzi pesanti ammesso",
+        "feature2": "Distribuzione del carico migliorata",
+        "feature3": "Vita utile estesa"
+      }
+    },
+    "cta": {
+      "title": "Parla con i Nostri Specialisti Ferroviari",
+      "description": "Se stai pianificando un progetto di attraversamento ferroviario e hai bisogno di indicazioni su se StrandLock sia la soluzione giusta, il nostro team tecnico è qui per aiutarti.",
+      "support": "Il nostro team tecnico può supportare la selezione del sistema, la guida alla progettazione e la pianificazione dell'installazione per garantire che la soluzione più appropriata sia specificata per ogni sito.",
+      "phone": "Telefono:",
+      "email": "Email:",
+      "formTitle": "Richiesta Rapida",
+      "nameLabel": "Il Tuo Nome",
+      "emailLabel": "Indirizzo Email",
+      "messageLabel": "Il Tuo Messaggio",
+      "submitButton": "Invia Richiesta",
+      "alternative": "Oppure visita la nostra <a href=\"contact.html\">pagina contatti completa</a>"
+    }
   }
 }

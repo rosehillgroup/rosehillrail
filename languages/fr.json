@@ -1292,5 +1292,106 @@
       "text": "Découvrez comment les Panneaux de Cheminement peuvent fournir une alternative durable et réutilisable au pavage en béton avec une durée de vie de conception de 40+ ans et des avantages environnementaux améliorés.",
       "secondaryButton": "Consultation Durabilité"
     }
+  },
+  "strandlockPage": {
+    "hero": {
+      "title": "StrandLock<br>Système de Passage à Niveau",
+      "subtitle": "Stabilité verrouillée pour les passages à niveau les plus exigeants. La technologie de câble d'acier post-tendu offre une intégrité structurelle exceptionnelle.",
+      "primaryCta": "Nous Contacter",
+      "secondaryCta": "Explorer la Technologie"
+    },
+    "technology": {
+      "title": "Qu'est-ce que <span>StrandLock ?</span>",
+      "intro": "StrandLock s'appuie sur le processus d'installation familier de Rosehill Baseplate, avec une amélioration clé. Des canaux intégrés dans les panneaux permettent de faire passer un câble d'acier continu, graissé et gainé à travers le passage une fois l'installation terminée.",
+      "description": "Le câble est ancré aux deux extrémités et tendu à l'aide d'un vérin hydraulique, verrouillant fermement l'ensemble du passage en place. Cette action de verrouillage mécanique augmente considérablement la stabilité.",
+      "step1": "Les panneaux StrandLock sont installés selon les méthodes standard de Rosehill Rail",
+      "step2": "Le câble d'acier est enfilé à travers les canaux intégrés des panneaux",
+      "step3": "Ancres installées et panneaux serrés à la longueur de passage souhaitée",
+      "step4": "Câble scellé et protégé pour empêcher l'infiltration d'eau"
+    },
+    "benefits": {
+      "title": "Avantages Clés",
+      "benefit1": {
+        "title": "Performance Structurelle Améliorée",
+        "description": "Le câble tendu relie chaque panneau, améliorant le transfert de charge et réduisant les mouvements relatifs entre les composants. Le résultat est une structure de passage verrouillée et unifiée qui résiste à la migration des panneaux et maintient l'alignement dans le temps."
+      },
+      "benefit2": {
+        "title": "Plus Grande Flexibilité de Conception",
+        "description": "StrandLock s'adapte aux angles et configurations de passage qui empêcheraient autrement l'utilisation d'une solution baseplate standard. Particulièrement adapté aux angles de passage plus élevés et aux géométries complexes."
+      },
+      "benefit3": {
+        "title": "Risque de Maintenance Réduit",
+        "description": "En verrouillant les panneaux ensemble, l'usure des joints et les mouvements à long terme sont minimisés, aidant à maintenir la qualité de roulement et la géométrie tout au long de la durée de vie du passage."
+      },
+      "benefit4": {
+        "title": "Processus d'Installation Familier",
+        "description": "Les installateurs bénéficient d'un processus qui ressemble étroitement aux installations Baseplate existantes, avec des étapes supplémentaires minimales ou un équipement spécialisé requis pour l'opération de tension du câble."
+      },
+      "benefit5": {
+        "title": "Économie Circulaire",
+        "description": "Sans pièces métalliques moulées dans les panneaux, les passages StrandLock peuvent être entièrement granulés en fin de vie — soutenant une économie circulaire et réduisant les déchets en décharge."
+      },
+      "benefit6": {
+        "title": "Stabilité Dimensionnelle à Long Terme",
+        "description": "Critique pour les emplacements où le maintien d'un alignement précis est essentiel. Le système de post-tension garantit que le passage maintient sa géométrie sous chargement dynamique répété."
+      }
+    },
+    "gallery": {
+      "title": "Galerie d'Installation"
+    },
+    "specs": {
+      "title": "Spécifications Techniques",
+      "pullQuote": "\"Une fois installé et tendu, le système agit comme une structure unique et unifiée, améliorant la distribution des charges sous le chargement répété du trafic ferroviaire et routier.\"",
+      "property": "Propriété",
+      "specification": "Spécification",
+      "panelMaterial": "Matériau du Panneau",
+      "panelMaterialValue": "Composite Polymère Moulé",
+      "reinforcement": "Renforcement",
+      "reinforcementValue": "Câble d'Acier Post-Tendu",
+      "strandType": "Type de Câble",
+      "strandTypeValue": "Graissé et Gainé pour Protection Contre la Corrosion",
+      "tensioning": "Méthode de Tension",
+      "tensioningValue": "Vérin Hydraulique",
+      "compatibility": "Compatibilité Système",
+      "compatibilityValue": "Tous les Panneaux de Voie, Panneaux de Champ et Poutres de Rive Rosehill",
+      "applications": "Applications Recommandées",
+      "applicationsValue": "Angles de Passage Élevés, Chargement Dynamique, Géométrie Complexe"
+    },
+    "applications": {
+      "rail": {
+        "title": "Passages Ferroviaires Lourds",
+        "description": "Conçu pour les passages à niveau de lignes principales où l'intégrité structurelle sous des charges d'essieu lourdes et à haute fréquence est essentielle. La structure unifiée résiste aux forces dynamiques qui dégradent les passages conventionnels.",
+        "feature1": "Angles de passage plus élevés accommodés",
+        "feature2": "Résistance accrue aux vibrations",
+        "feature3": "Stabilité dimensionnelle à long terme"
+      },
+      "tram": {
+        "title": "Tramway et Métro Léger",
+        "description": "Idéal pour les systèmes de tramway urbain où l'esthétique, la qualité de roulement et les perturbations de maintenance minimales sont prioritaires. Le système de panneaux verrouillés maintient des surfaces de roulement lisses tout au long de la durée de vie.",
+        "feature1": "Qualité de roulement supérieure maintenue",
+        "feature2": "Usure des joints minimisée",
+        "feature3": "Fréquence de maintenance réduite"
+      },
+      "road": {
+        "title": "Passages Routiers à Fort Trafic",
+        "description": "Conçu pour résister au chargement combiné ferroviaire et routier lourd. Le système post-tendu distribue les charges sur toute la structure du passage, empêchant les dommages de contrainte localisés.",
+        "feature1": "Trafic poids lourds autorisé",
+        "feature2": "Distribution de charge améliorée",
+        "feature3": "Durée de vie prolongée"
+      }
+    },
+    "cta": {
+      "title": "Parlez à Nos Spécialistes Ferroviaires",
+      "description": "Si vous planifiez un projet de passage à niveau et avez besoin de conseils pour savoir si StrandLock est la bonne solution, notre équipe technique est là pour vous aider.",
+      "support": "Notre équipe technique peut soutenir la sélection du système, les conseils de conception et la planification de l'installation pour s'assurer que la solution la plus appropriée est spécifiée pour chaque site.",
+      "phone": "Téléphone :",
+      "email": "Email :",
+      "formTitle": "Demande Rapide",
+      "nameLabel": "Votre Nom",
+      "emailLabel": "Adresse Email",
+      "messageLabel": "Votre Message",
+      "submitButton": "Envoyer la Demande",
+      "alternative": "Ou visitez notre <a href=\"contact.html\">page de contact complète</a>"
+    }
   }
 }
