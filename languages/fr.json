@@ -252,7 +252,7 @@
     },
     "accessories": {
       "name": "Accessoires & Pièces Détachées",
-      "description": "Gamme complète de broches de levage, crochets, primaire de marquage au sol et vis omni pour soutenir vos besoins d'installation et de maintenance.",
+      "description": "Gamme complète de broches de levage, crochets et vis omni pour soutenir vos besoins d'installation et de maintenance.",
       "tags": {
         "installationAids": "Aides à l'installation",
         "maintenanceTools": "Outils de maintenance",
@@ -916,7 +916,7 @@
     "overview": {
       "title": "Tout Ce Dont Vous Avez Besoin",
       "paragraph1": "Nous offrons une gamme complète de pièces détachées et d'accessoires conçus pour soutenir tous les aspects de l'installation, de la maintenance et de l'exploitation de votre passage à niveau ferroviaire. Des broches et crochets de levage pour faciliter l'élévation de nos produits, aux fixations spécialisées, outils et solutions de finition.",
-      "paragraph2": "Notre vaste inventaire comprend tout, des barres de connexion et plaques de couverture de précision aux systèmes de marquage de lignes et fixations spécialisées, garantissant que vous avez accès aux bons composants quand vous en avez besoin.",
+      "paragraph2": "Notre vaste inventaire comprend tout, des barres de connexion et plaques de couverture de précision aux fixations spécialisées, garantissant que vous avez accès aux bons composants quand vous en avez besoin.",
       "image1Caption": "Équipement de Levage Professionnel",
       "image2Caption": "Fixations Spécialisées",
       "image3Caption": "Solutions de Finition",
@@ -942,8 +942,8 @@
       },
       "finishing": {
         "title": "Solutions de Finition",
-        "description": "Touches de finition professionnelles incluant couvercles, joints et systèmes de marquage.",
-        "examples": "Plaques de couverture, bouchons en caoutchouc, primaire de marquage de lignes"
+        "description": "Touches de finition professionnelles incluant couvercles et joints.",
+        "examples": "Plaques de couverture, bouchons en caoutchouc"
       },
       "components": {
         "title": "Composants du Système",

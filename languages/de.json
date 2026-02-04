@@ -252,7 +252,7 @@
     },
     "accessories": {
       "name": "Zubehör & Ersatzteile",
-      "description": "Komplettes Sortiment an Hebestiften, Haken, Fahrbahnmarkierungsgrundierung und Universalschrauben zur Unterstützung Ihrer Installations- und Wartungsanforderungen.",
+      "description": "Komplettes Sortiment an Hebestiften, Haken und Universalschrauben zur Unterstützung Ihrer Installations- und Wartungsanforderungen.",
       "tags": {
         "installationAids": "Installationshilfen",
         "maintenanceTools": "Wartungswerkzeuge",
@@ -916,7 +916,7 @@
     "overview": {
       "title": "Alles Was Sie Benötigen",
       "paragraph1": "Wir bieten ein umfassendes Sortiment an Ersatzteilen und Zubehör, das entwickelt wurde, um alle Aspekte Ihrer Bahnübergangsinstallation, Wartung und Betrieb zu unterstützen. Von Hebestiften und Haken zur Erleichterung der Hebung unserer Produkte bis zu spezialisierten Befestigungen, Werkzeugen und Endbearbeitungslösungen.",
-      "paragraph2": "Unser umfangreiches Inventar umfasst alles von präzisionsgefertigten Verbindungsstangen und Abdeckplatten bis zu Fahrbahnmarkierungssystemen und spezialisierten Befestigungen, um sicherzustellen, dass Sie Zugang zu den richtigen Komponenten haben, wenn Sie sie benötigen.",
+      "paragraph2": "Unser umfangreiches Inventar umfasst alles von präzisionsgefertigten Verbindungsstangen und Abdeckplatten bis zu spezialisierten Befestigungen, um sicherzustellen, dass Sie Zugang zu den richtigen Komponenten haben, wenn Sie sie benötigen.",
       "image1Caption": "Professionelle Hebeausrüstung",
       "image2Caption": "Spezialisierte Befestigungen",
       "image3Caption": "Endbearbeitungslösungen",
@@ -942,8 +942,8 @@
       },
       "finishing": {
         "title": "Endbearbeitungslösungen",
-        "description": "Professionelle Abschlussarbeiten einschließlich Abdeckungen, Dichtungen und Markierungssystemen.",
-        "examples": "Abdeckplatten, Gummistopfen, Fahrbahnmarkierungsgrundierung"
+        "description": "Professionelle Abschlussarbeiten einschließlich Abdeckungen und Dichtungen.",
+        "examples": "Abdeckplatten, Gummistopfen"
       },
       "components": {
         "title": "Systemkomponenten",

@@ -252,7 +252,7 @@
     },
     "accessories": {
       "name": "Accessori e Ricambi",
-      "description": "Gamma completa di perni di sollevamento, ganci, primer per marcatura linee e viti omni per supportare le vostre esigenze di installazione e manutenzione.",
+      "description": "Gamma completa di perni di sollevamento, ganci e viti omni per supportare le vostre esigenze di installazione e manutenzione.",
       "tags": {
         "installationAids": "Aiuti per installazione",
         "maintenanceTools": "Strumenti di manutenzione",
@@ -916,7 +916,7 @@
     "overview": {
       "title": "Tutto Ciò di Cui Hai Bisogno",
       "paragraph1": "Offriamo una gamma completa di ricambi e accessori progettati per supportare ogni aspetto dell'installazione, manutenzione e funzionamento del vostro attraversamento ferroviario. Dai perni e ganci di sollevamento per facilitare l'elevazione dei nostri prodotti, a fissaggi specializzati, strumenti e soluzioni di finitura.",
-      "paragraph2": "Il nostro vasto inventario include tutto, dalle barre di connessione e piastre di copertura di precisione ai sistemi di marcatura linee e fissaggi specializzati, garantendo di avere accesso ai componenti giusti quando ne avete bisogno.",
+      "paragraph2": "Il nostro vasto inventario include tutto, dalle barre di connessione e piastre di copertura di precisione ai fissaggi specializzati, garantendo di avere accesso ai componenti giusti quando ne avete bisogno.",
       "image1Caption": "Attrezzatura di Sollevamento Professionale",
       "image2Caption": "Fissaggi Specializzati",
       "image3Caption": "Soluzioni di Finitura",
@@ -942,8 +942,8 @@
       },
       "finishing": {
         "title": "Soluzioni di Finitura",
-        "description": "Tocchi finali professionali inclusi coperture, guarnizioni e sistemi di marcatura.",
-        "examples": "Piastre di copertura, tappi in gomma, primer per marcatura linee"
+        "description": "Tocchi finali professionali inclusi coperture e guarnizioni.",
+        "examples": "Piastre di copertura, tappi in gomma"
       },
       "components": {
         "title": "Componenti del Sistema",

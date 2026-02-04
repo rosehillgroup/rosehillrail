@@ -252,7 +252,7 @@
     },
     "accessories": {
       "name": "Accessories & Spares",
-      "description": "Complete range of lifting pins, hooks, line marking primer, and omni screws to support your installation and maintenance needs.",
+      "description": "Complete range of lifting pins, hooks, and omni screws to support your installation and maintenance needs.",
       "tags": {
         "installationAids": "Installation aids",
         "maintenanceTools": "Maintenance tools",
@@ -916,7 +916,7 @@
     "overview": {
       "title": "Everything You Need",
       "paragraph1": "We offer a comprehensive range of spares and accessories designed to support every aspect of your rail crossing installation, maintenance, and operation. From lifting pins and hooks to aid the elevation of our products, to specialised fixings, tools, and finishing solutions.",
-      "paragraph2": "Our extensive inventory includes everything from precision-engineered connector bars and cover plates to line marking systems and specialty fasteners, ensuring you have access to the right components when you need them.",
+      "paragraph2": "Our extensive inventory includes everything from precision-engineered connector bars and cover plates to specialty fasteners, ensuring you have access to the right components when you need them.",
       "image1Caption": "Professional Lifting Equipment",
       "image2Caption": "Specialist Fixings",
       "image3Caption": "Finishing Solutions",
@@ -942,8 +942,8 @@
       },
       "finishing": {
         "title": "Finishing Solutions",
-        "description": "Professional finishing touches including covers, seals, and marking systems.",
-        "examples": "Cover plates, rubber plugs, line marking primer"
+        "description": "Professional finishing touches including covers and seals.",
+        "examples": "Cover plates, rubber plugs"
       },
       "components": {
         "title": "System Components",
