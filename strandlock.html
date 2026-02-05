@@ -559,28 +559,34 @@
             margin-bottom: 25px;
         }
 
+        .tech-steps-section {
+            background: #1a365d;
+            padding: 0 max(20px, calc((100vw - 1400px) / 2 + 20px)) 60px;
+        }
+
         .tech-process-list {
             list-style: none;
-            margin-top: 30px;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
         }
 
         .tech-process-list li {
             display: flex;
-            align-items: flex-start;
-            gap: 20px;
-            padding: 24px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 16px;
+            padding: 30px 20px;
             background: rgba(255, 255, 255, 0.06);
-            border-radius: 10px;
-            border-left: 3px solid #ff6b35;
+            border-radius: 12px;
+            border-top: 3px solid #ff6b35;
             transition: all 0.3s ease;
         }
 
         .tech-process-list li:hover {
             background: rgba(255, 255, 255, 0.12);
-            transform: translateX(6px);
+            transform: translateY(-4px);
         }
 
         .process-number {
@@ -601,7 +607,8 @@
         .process-text {
             display: flex;
             flex-direction: column;
-            gap: 4px;
+            align-items: center;
+            gap: 6px;
         }
 
         .process-text strong {
@@ -612,7 +619,7 @@
 
         .process-text span {
             font-size: 0.95rem;
-            opacity: 0.75;
+            color: rgba(255, 255, 255, 0.75);
             line-height: 1.5;
         }
 
@@ -1238,7 +1245,15 @@
             }
 
             .tech-visual {
-                min-height: 400px;
+                min-height: 300px;
+            }
+
+            .tech-steps-section {
+                padding: 0 20px 40px;
+            }
+
+            .tech-process-list {
+                grid-template-columns: repeat(2, 1fr);
             }
 
             .specs-container {
@@ -1340,7 +1355,9 @@
                 min-height: 300px;
             }
 
-
+            .tech-process-list {
+                grid-template-columns: 1fr;
+            }
 
             .masonry-grid {
                 grid-template-columns: 1fr;
@@ -1628,41 +1645,44 @@
             <h2 data-i18n="strandlockPage.technology.title">What is <span>StrandLock?</span></h2>
             <p data-i18n="strandlockPage.technology.intro">StrandLock builds on the familiar Rosehill Baseplate installation process, with one key enhancement. Integrated channels within the panels allow a continuous, greased and sheathed steel strand to be threaded through the crossing once installation is complete.</p>
             <p data-i18n="strandlockPage.technology.description">The strand is anchored at both ends and tensioned using a hydraulic jack, locking the entire crossing assembly firmly into place. This mechanical locking action significantly increases stability.</p>
-
-            <ol class="tech-process-list">
-                <li>
-                    <span class="process-number">1</span>
-                    <div class="process-text">
-                        <strong data-i18n="strandlockPage.technology.step1Title">Install Panels</strong>
-                        <span data-i18n="strandlockPage.technology.step1">StrandLock panels are installed using standard Rosehill Rail methods</span>
-                    </div>
-                </li>
-                <li>
-                    <span class="process-number">2</span>
-                    <div class="process-text">
-                        <strong data-i18n="strandlockPage.technology.step2Title">Thread Strand</strong>
-                        <span data-i18n="strandlockPage.technology.step2">Steel strand is threaded through the integrated panel channels</span>
-                    </div>
-                </li>
-                <li>
-                    <span class="process-number">3</span>
-                    <div class="process-text">
-                        <strong data-i18n="strandlockPage.technology.step3Title">Tension &amp; Lock</strong>
-                        <span data-i18n="strandlockPage.technology.step3">Anchors installed and panels tightened to desired crossing length</span>
-                    </div>
-                </li>
-                <li>
-                    <span class="process-number">4</span>
-                    <div class="process-text">
-                        <strong data-i18n="strandlockPage.technology.step4Title">Seal &amp; Protect</strong>
-                        <span data-i18n="strandlockPage.technology.step4">Strand sealed and protected to prevent water ingress</span>
-                    </div>
-                </li>
-            </ol>
         </div>
         <div class="tech-visual">
             <img src="StrandLock/optimized/strandlock_wide.jpg" alt="StrandLock level crossing system installed on railway track" class="tech-image">
         </div>
+    </section>
+
+    <!-- Installation Steps -->
+    <section class="tech-steps-section">
+        <ol class="tech-process-list">
+            <li>
+                <span class="process-number">1</span>
+                <div class="process-text">
+                    <strong data-i18n="strandlockPage.technology.step1Title">Install Panels</strong>
+                    <span data-i18n="strandlockPage.technology.step1">StrandLock panels are installed using standard Rosehill Rail methods</span>
+                </div>
+            </li>
+            <li>
+                <span class="process-number">2</span>
+                <div class="process-text">
+                    <strong data-i18n="strandlockPage.technology.step2Title">Thread Strand</strong>
+                    <span data-i18n="strandlockPage.technology.step2">Steel strand is threaded through the integrated panel channels</span>
+                </div>
+            </li>
+            <li>
+                <span class="process-number">3</span>
+                <div class="process-text">
+                    <strong data-i18n="strandlockPage.technology.step3Title">Tension &amp; Lock</strong>
+                    <span data-i18n="strandlockPage.technology.step3">Anchors installed and panels tightened to desired crossing length</span>
+                </div>
+            </li>
+            <li>
+                <span class="process-number">4</span>
+                <div class="process-text">
+                    <strong data-i18n="strandlockPage.technology.step4Title">Seal &amp; Protect</strong>
+                    <span data-i18n="strandlockPage.technology.step4">Strand sealed and protected to prevent water ingress</span>
+                </div>
+            </li>
+        </ol>
     </section>
 
     <!-- Section 3: Asymmetric Offset Benefits Grid -->
