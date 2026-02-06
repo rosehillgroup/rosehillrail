@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
     <meta name="description" content="StrandLock Level Crossing System - Locked-in stability for the most demanding rail crossings. Post-tensioned steel strand technology for exceptional structural integrity.">
     <meta name="keywords" content="StrandLock, level crossing system, post-tensioned crossing, steel strand reinforcement, rail crossing, Rosehill Rail, baseplate system, structural integrity, railway crossing">
     <title>StrandLock Level Crossing System - Post-Tensioned Rail Crossing | Rosehill Rail</title>
@@ -59,18 +58,6 @@
             "@type": "Organization",
             "name": "Rosehill Rail",
             "url": "https://rail.rosehill.group"
-        },
-        "offers": {
-            "@type": "Offer",
-            "url": "https://rail.rosehill.group/strandlock.html",
-            "priceCurrency": "GBP",
-            "price": "0",
-            "availability": "https://schema.org/InStock",
-            "itemCondition": "https://schema.org/NewCondition",
-            "seller": {
-                "@type": "Organization",
-                "name": "Rosehill Rail"
-            }
         },
         "material": "Polymer with Steel Strand Reinforcement",
         "additionalProperty": [
@@ -391,6 +378,10 @@
             z-index: 1;
         }
 
+        .hero-background picture {
+            display: contents;
+        }
+
         .hero-background img {
             width: 100%;
             height: 100%;
@@ -425,32 +416,6 @@
         .hero-text-content {
             color: white;
             max-width: 750px;
-        }
-
-        .new-product-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: #ff6b35;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 30px;
-            font-weight: 700;
-            font-size: 0.85rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 30px;
-            animation: pulse-glow 2s ease-in-out infinite;
-            box-shadow: 0 0 30px rgba(255, 107, 53, 0.4);
-        }
-
-        @keyframes pulse-glow {
-            0%, 100% {
-                box-shadow: 0 0 20px rgba(255, 107, 53, 0.4);
-            }
-            50% {
-                box-shadow: 0 0 40px rgba(255, 107, 53, 0.7);
-            }
         }
 
         .hero-title {
@@ -637,75 +602,6 @@
             border-radius: 20px 0 0 20px;
         }
 
-        .strand-animation-container {
-            width: 100%;
-            max-width: 500px;
-            aspect-ratio: 1;
-            position: relative;
-        }
-
-        .strand-diagram {
-            width: 100%;
-            height: 100%;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 40px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .panel-row {
-            display: flex;
-            gap: 8px;
-            margin: 10px 0;
-            position: relative;
-        }
-
-        .panel-block {
-            width: 60px;
-            height: 40px;
-            background: linear-gradient(135deg, #2d4a71, #1a365d);
-            border-radius: 4px;
-            position: relative;
-        }
-
-        .strand-line {
-            position: absolute;
-            height: 4px;
-            background: linear-gradient(90deg, #ff6b35, #e55a2b);
-            top: 50%;
-            left: 0;
-            right: 0;
-            transform: translateY(-50%);
-            border-radius: 2px;
-            animation: strand-pulse 2s ease-in-out infinite;
-        }
-
-        @keyframes strand-pulse {
-            0%, 100% {
-                opacity: 0.7;
-                box-shadow: 0 0 10px rgba(255, 107, 53, 0.3);
-            }
-            50% {
-                opacity: 1;
-                box-shadow: 0 0 20px rgba(255, 107, 53, 0.6);
-            }
-        }
-
-        .diagram-label {
-            font-family: 'Overpass', sans-serif;
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: #1a365d;
-            margin-top: 30px;
-            text-align: center;
-        }
-
         /* ============================================
            SECTION 5: KEY BENEFITS
            ============================================ */
@@ -877,15 +773,15 @@
         }
 
         .application-band:nth-child(1) .app-image-bg {
-            background-image: url('StrandLock/optimized/app-heavy-rail.jpg');
+            background-image: url('app-heavy-rail.jpg');
         }
 
         .application-band:nth-child(2) .app-image-bg {
-            background-image: url('StrandLock/optimized/app-tramway.jpg');
+            background-image: url('app-tramway.jpg');
         }
 
         .application-band:nth-child(3) .app-image-bg {
-            background-image: url('StrandLock/optimized/app-road-crossing.jpg');
+            background-image: url('app-road-crossing.jpg');
         }
 
         .app-content {
@@ -980,22 +876,9 @@
         .gallery-item:nth-child(6) { grid-column: span 1; grid-row: span 1; }
         .gallery-item:nth-child(7) { grid-column: span 1; grid-row: span 1; }
 
-        .gallery-placeholder {
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, #2d4a71, #1a365d);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 0.9rem;
-            text-align: center;
-            padding: 20px;
-            transition: transform 0.5s ease;
-        }
-
-        .gallery-item:hover .gallery-placeholder {
-            transform: scale(1.1);
+        .gallery-item picture,
+        .tech-visual picture {
+            display: contents;
         }
 
         .gallery-item img {
@@ -1007,23 +890,6 @@
 
         .gallery-item:hover img {
             transform: scale(1.1);
-        }
-
-        .gallery-caption {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding: 30px 20px 20px;
-            background: linear-gradient(to top, rgba(26, 54, 93, 0.95), transparent);
-            color: white;
-            font-weight: 600;
-            transform: translateY(100%);
-            transition: transform 0.4s ease;
-        }
-
-        .gallery-item:hover .gallery-caption {
-            transform: translateY(0);
         }
 
         /* ============================================
@@ -1342,14 +1208,6 @@
                 font-size: 1.1rem;
             }
 
-            .stat-number {
-                font-size: 1.8rem;
-            }
-
-            .stat-item {
-                padding: 0 30px;
-            }
-
             .tech-content,
             .tech-visual {
                 min-height: 300px;
@@ -1541,7 +1399,7 @@
                                         Crossing Systems
                                     </h4>
                                     <ul class="mega-menu-links">
-                                        <li><a href="connect.html" data-i18n="navigation.connectSystem">CONNECT System</a></li>
+                                        <li><a href="strandlock.html" data-i18n="navigation.strandLockSystem">StrandLock System</a></li>
                                         <li><a href="link.html" data-i18n="navigation.linkSystem">LINK System</a></li>
                                         <li><a href="interlocking.html" data-i18n="navigation.interlockingRRAP">Interlocking RRAP</a></li>
                                         <li><a href="baseplate.html" data-i18n="navigation.baseplateSystem">Baseplate System</a></li>
@@ -1617,7 +1475,11 @@
     <!-- Section 1: Product Hero -->
     <section class="strandlock-hero">
         <div class="hero-background">
-            <img src="StrandLock/optimized/strandlock-hero.jpg" alt="Completed StrandLock level crossing installation at Paris rail depot showing the unified structure with Rosehill Rail branding">
+            <picture>
+                <source srcset="strandlock-hero.avif" type="image/avif">
+                <source srcset="strandlock-hero.webp" type="image/webp">
+                <img src="strandlock-hero.jpg" alt="Completed StrandLock level crossing installation at Paris rail depot showing the unified structure with Rosehill Rail branding" width="1920" height="1281">
+            </picture>
         </div>
         <div class="hero-content-wrapper">
             <div class="hero-text-content">
@@ -1628,7 +1490,7 @@
                 <p class="hero-subtitle" data-i18n="strandlockPage.hero.subtitle">Locked-in stability for the most demanding rail crossings. Post-tensioned steel strand technology delivers exceptional structural integrity.</p>
                 <div class="hero-cta-group">
                     <a href="contact.html" class="btn-hero-primary" data-i18n="strandlockPage.hero.primaryCta">
-                        Request Technical Consultation
+                        Get in Touch
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                     </a>
                     <a href="#technology" class="btn-hero-secondary" data-i18n="strandlockPage.hero.secondaryCta">
@@ -1647,7 +1509,11 @@
             <p data-i18n="strandlockPage.technology.description">The strand is anchored at both ends and tensioned using a hydraulic jack, locking the entire crossing assembly firmly into place. This mechanical locking action significantly increases stability.</p>
         </div>
         <div class="tech-visual">
-            <img src="StrandLock/optimized/strandlock_wide.jpg" alt="StrandLock level crossing system installed on railway track" class="tech-image">
+            <picture>
+                <source srcset="strandlock_wide.avif" type="image/avif">
+                <source srcset="strandlock_wide.webp" type="image/webp">
+                <img src="strandlock_wide.jpg" alt="StrandLock level crossing system installed on railway track" class="tech-image" width="1500" height="1125" loading="lazy">
+            </picture>
         </div>
     </section>
 
@@ -1706,7 +1572,7 @@
                 </div>
                 <div class="benefit-card">
                     <h3 data-i18n="strandlockPage.benefits.benefit4.title">Familiar Installation Process</h3>
-                    <p data-i18n="strandlockPage.benefits.benefit4.description">Installers benefit from a process that closely mirrors existing Baseplate installations, with minimal additional steps or specialist equipment required for the strand tensioning operation.</p>
+                    <p data-i18n="strandlockPage.benefits.benefit4.description">Installers benefit from a process that closely mirrors existing Baseplate installations, with minimal additional training required. The strand tensioning operation uses a hydraulic jack, available from Rosehill Rail.</p>
                 </div>
                 <div class="benefit-card">
                     <h3 data-i18n="strandlockPage.benefits.benefit5.title">Circular Economy</h3>
@@ -1714,7 +1580,7 @@
                 </div>
                 <div class="benefit-card">
                     <h3 data-i18n="strandlockPage.benefits.benefit6.title">Long-Term Dimensional Stability</h3>
-                    <p data-i18n="strandlockPage.benefits.benefit6.description">Critical for locations where maintaining precise alignment is essential. The post-tensioning system ensures the crossing maintains its geometry under repeated dynamic loading.</p>
+                    <p data-i18n="strandlockPage.benefits.benefit6.description">Critical for locations where maintaining precise alignment is essential. The post-tensioning system ensures the crossing maintains its geometry under repeated dynamic loading. Because the panels are held under compression, they are also less susceptible to gapping caused by thermal expansion and contraction in varying weather conditions.</p>
                 </div>
             </div>
         </div>
@@ -1729,25 +1595,53 @@
         </div>
         <div class="masonry-grid">
             <div class="gallery-item">
-                <img src="StrandLock/optimized/gallery-1.jpg" alt="StrandLock panel being positioned at Paris rail depot" loading="lazy">
+                <picture>
+                    <source srcset="gallery-1.avif" type="image/avif">
+                    <source srcset="gallery-1.webp" type="image/webp">
+                    <img src="gallery-1.jpg" alt="StrandLock panel being positioned at Paris rail depot" width="800" height="534" loading="lazy">
+                </picture>
             </div>
             <div class="gallery-item">
-                <img src="StrandLock/optimized/gallery-2.jpg" alt="StrandLock installation work at Paris crossing" loading="lazy">
+                <picture>
+                    <source srcset="gallery-2.avif" type="image/avif">
+                    <source srcset="gallery-2.webp" type="image/webp">
+                    <img src="gallery-2.jpg" alt="StrandLock installation work at Paris crossing" width="800" height="534" loading="lazy">
+                </picture>
             </div>
             <div class="gallery-item">
-                <img src="StrandLock/optimized/gallery-3.jpg" alt="StrandLock strand threading and tensioning process" loading="lazy">
+                <picture>
+                    <source srcset="gallery-3.avif" type="image/avif">
+                    <source srcset="gallery-3.webp" type="image/webp">
+                    <img src="gallery-3.jpg" alt="StrandLock strand threading and tensioning process" width="800" height="534" loading="lazy">
+                </picture>
             </div>
             <div class="gallery-item">
-                <img src="StrandLock/optimized/gallery-4.jpg" alt="StrandLock panel connection detail" loading="lazy">
+                <picture>
+                    <source srcset="gallery-4.avif" type="image/avif">
+                    <source srcset="gallery-4.webp" type="image/webp">
+                    <img src="gallery-4.jpg" alt="StrandLock panel connection detail" width="800" height="534" loading="lazy">
+                </picture>
             </div>
             <div class="gallery-item">
-                <img src="StrandLock/optimized/gallery-5.jpg" alt="StrandLock hydraulic equipment in use" loading="lazy">
+                <picture>
+                    <source srcset="gallery-5.avif" type="image/avif">
+                    <source srcset="gallery-5.webp" type="image/webp">
+                    <img src="gallery-5.jpg" alt="StrandLock hydraulic equipment in use" width="800" height="534" loading="lazy">
+                </picture>
             </div>
             <div class="gallery-item">
-                <img src="StrandLock/optimized/gallery-6.jpg" alt="StrandLock installation crew at work" loading="lazy">
+                <picture>
+                    <source srcset="gallery-6.avif" type="image/avif">
+                    <source srcset="gallery-6.webp" type="image/webp">
+                    <img src="gallery-6.jpg" alt="StrandLock installation crew at work" width="800" height="534" loading="lazy">
+                </picture>
             </div>
             <div class="gallery-item">
-                <img src="StrandLock/optimized/gallery-7.jpg" alt="Completed StrandLock crossing detail" loading="lazy">
+                <picture>
+                    <source srcset="gallery-7.avif" type="image/avif">
+                    <source srcset="gallery-7.webp" type="image/webp">
+                    <img src="gallery-7.jpg" alt="Completed StrandLock crossing detail" width="800" height="534" loading="lazy">
+                </picture>
             </div>
         </div>
     </section>
@@ -1923,7 +1817,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p data-i18n="footer.copyright">&copy; 2025 Rosehill Rail. A Division of <a href="https://rosehill.group/" style="color: #ff6b35; text-decoration: underline;">Rosehill Group</a>. All rights reserved.</p>
+                <p data-i18n="footer.copyright">&copy; 2026 Rosehill Rail. A Division of <a href="https://rosehill.group/" style="color: #ff6b35; text-decoration: underline;">Rosehill Group</a>. All rights reserved.</p>
                 <p style="margin-top: 10px;">
                     <a href="privacy-policy.html" style="color: #ff6b35;">Privacy Policy</a> |
                     <a href="terms-of-use.html" style="color: #ff6b35;">Terms of Use</a> |

@@ -17,6 +17,7 @@
     "safetySolutions": "Solutions de Sécurité",
     "edgeSolutions": "Solutions de Bordure",
     "connectSystem": "Système CONNECT",
+    "strandLockSystem": "Système StrandLock",
     "linkSystem": "Système LINK",
     "interlockingRRAP": "RRAP à Emboîtement",
     "baseplateSystem": "Système à Selle",
@@ -48,6 +49,10 @@
       },
       "connectSystem": {
         "name": "Système CONNECT",
+        "grade": "Usage Intensif"
+      },
+      "strandLockSystem": {
+        "name": "Système StrandLock",
         "grade": "Usage Intensif"
       },
       "linkSystem": {
@@ -165,6 +170,17 @@
         "allGauges": "Tous écartements"
       },
       "badge": "Trafic Lourd"
+    },
+    "strandLockSystem": {
+      "name": "Système StrandLock",
+      "description": "Système de passage à niveau post-tendu avec renforcement par torons d'acier pour une stabilité dimensionnelle verrouillée sur les passages ferroviaires les plus exigeants.",
+      "tags": {
+        "strandReinforced": "Renforcé par torons d'acier",
+        "postTensioned": "Post-tendu",
+        "dimensionalStability": "Stabilité dimensionnelle",
+        "allGauges": "Tous écartements"
+      },
+      "badge": "Post-Tendu"
     },
     "linkSystem": {
       "name": "Système LINK",
@@ -383,7 +399,7 @@
     "complianceText": "Tous les composants conçus par Rosehill Rail avec droits de conception exclusifs. Qualité assurée selon la norme ISO 9001:2015 avec audits annuels NQA.",
     "accreditations": "Accréditations :",
     "accreditationsList": "ISO 9001:2015 • Approuvé Network Rail • Traçabilité Complète",
-    "copyright": "© 2025 Rosehill Rail. Division du Groupe Rosehill. Tous droits réservés.",
+    "copyright": "© 2026 Rosehill Rail. Division du Groupe Rosehill. Tous droits réservés.",
     "links": {
       "walkwayPanels": "Panneaux de Cheminement",
       "edgeBeams": "Longrines",
@@ -1078,7 +1094,7 @@
       },
       "allSystems": {
         "title": "Tous les Systèmes de Traversée",
-        "desc": "Compatible avec les systèmes CONNECT, LINK, TITAN, à Selle et RRAP à Emboîtement pour un support de traversée complet."
+        "desc": "Compatible avec les systèmes StrandLock, LINK, TITAN, à Selle et RRAP à Emboîtement pour un support de traversée complet."
       }
     },
     "cta": {
@@ -1298,7 +1314,7 @@
       "title": "StrandLock<br><span>Système de Passage à Niveau</span>",
       "subtitle": "Stabilité verrouillée pour les passages à niveau les plus exigeants. La technologie de câble d'acier post-tendu offre une intégrité structurelle exceptionnelle.",
       "primaryCta": "Nous Contacter",
-      "secondaryCta": "Explorer la Technologie"
+      "secondaryCta": "Comment ça marche"
     },
     "technology": {
       "title": "Qu'est-ce que <span>StrandLock ?</span>",
@@ -1329,7 +1345,7 @@
       },
       "benefit4": {
         "title": "Processus d'Installation Familier",
-        "description": "Les installateurs bénéficient d'un processus qui ressemble étroitement aux installations Baseplate existantes, avec des étapes supplémentaires minimales ou un équipement spécialisé requis pour l'opération de tension du câble."
+        "description": "Les installateurs bénéficient d'un processus qui ressemble étroitement aux installations Baseplate existantes, avec une formation supplémentaire minimale requise. L'opération de tension du câble utilise un vérin hydraulique, disponible auprès de Rosehill Rail."
       },
       "benefit5": {
         "title": "Économie Circulaire",
@@ -1337,7 +1353,7 @@
       },
       "benefit6": {
         "title": "Stabilité Dimensionnelle à Long Terme",
-        "description": "Critique pour les emplacements où le maintien d'un alignement précis est essentiel. Le système de post-tension garantit que le passage maintient sa géométrie sous chargement dynamique répété."
+        "description": "Critique pour les emplacements où le maintien d'un alignement précis est essentiel. Le système de post-tension garantit que le passage maintient sa géométrie sous chargement dynamique répété. Les panneaux étant maintenus sous compression, ils sont également moins susceptibles de présenter des écarts causés par la dilatation et la contraction thermiques selon les conditions météorologiques."
       }
     },
     "gallery": {

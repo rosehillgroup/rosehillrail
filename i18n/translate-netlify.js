@@ -13,7 +13,7 @@ const CONFIG = {
   priorityPages: [
     'index.html', 'contact.html', 'products.html', 'about.html',
     'walkway.html', 'baseplate.html', 'titan.html', 'edgebeams.html',
-    'interlocking.html', 'connect.html', 'antitrespass.html',
+    'interlocking.html', 'connect.html', 'strandlock.html', 'antitrespass.html',
     'link.html', 'accessories.html', 'thank-you.html'
   ]
 };

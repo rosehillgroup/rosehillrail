@@ -17,6 +17,7 @@
     "safetySolutions": "Sicherheitslösungen",
     "edgeSolutions": "Randbefestigungen",
     "connectSystem": "CONNECT System",
+    "strandLockSystem": "StrandLock System",
     "linkSystem": "LINK System",
     "interlockingRRAP": "Interlocking RRAP",
     "baseplateSystem": "Grundplatten-System",
@@ -48,6 +49,10 @@
       },
       "connectSystem": {
         "name": "CONNECT System",
+        "grade": "Hohe Nutzung"
+      },
+      "strandLockSystem": {
+        "name": "StrandLock System",
         "grade": "Hohe Nutzung"
       },
       "linkSystem": {
@@ -165,6 +170,17 @@
         "allGauges": "Alle Spurweiten"
       },
       "badge": "Starker Verkehr"
+    },
+    "strandLockSystem": {
+      "name": "StrandLock System",
+      "description": "Nachgespanntes Bahnübergangssystem mit Stahllitzenarmierung für eingerastete Formstabilität an den anspruchsvollsten Bahnübergängen.",
+      "tags": {
+        "strandReinforced": "Stahllitzenarmiert",
+        "postTensioned": "Nachgespannt",
+        "dimensionalStability": "Formstabilität",
+        "allGauges": "Alle Spurweiten"
+      },
+      "badge": "Nachgespannt"
     },
     "linkSystem": {
       "name": "LINK System",
@@ -383,7 +399,7 @@
     "complianceText": "Alle Komponenten von Rosehill Rail entwickelt mit exklusiven Designrechten. Qualitätsgesichert nach ISO 9001:2015-Standard mit jährlichen NQA-Audits.",
     "accreditations": "Akkreditierungen:",
     "accreditationsList": "ISO 9001:2015 • Network Rail zugelassen • Vollständige Rückverfolgbarkeit",
-    "copyright": "© 2025 Rosehill Rail. Eine Division der Rosehill Group. Alle Rechte vorbehalten.",
+    "copyright": "© 2026 Rosehill Rail. Eine Division der Rosehill Group. Alle Rechte vorbehalten.",
     "links": {
       "walkwayPanels": "Gehwegplatten",
       "edgeBeams": "Randträger",
@@ -1078,7 +1094,7 @@
       },
       "allSystems": {
         "title": "Alle Übergangssysteme",
-        "desc": "Kompatibel mit CONNECT, LINK, TITAN, Grundplatten- und Interlocking RRAP-Systemen für umfassende Übergangsunterstützung."
+        "desc": "Kompatibel mit StrandLock, LINK, TITAN, Grundplatten- und Interlocking RRAP-Systemen für umfassende Übergangsunterstützung."
       }
     },
     "cta": {
@@ -1298,7 +1314,7 @@
       "title": "StrandLock<br><span>Bahnübergangssystem</span>",
       "subtitle": "Festverriegelte Stabilität für die anspruchsvollsten Bahnübergänge. Nachgespannte Stahlseil-Technologie liefert außergewöhnliche strukturelle Integrität.",
       "primaryCta": "Kontakt aufnehmen",
-      "secondaryCta": "Technologie erkunden"
+      "secondaryCta": "So funktioniert es"
     },
     "technology": {
       "title": "Was ist <span>StrandLock?</span>",
@@ -1329,7 +1345,7 @@
       },
       "benefit4": {
         "title": "Vertrauter Installationsprozess",
-        "description": "Installateure profitieren von einem Prozess, der bestehenden Baseplate-Installationen sehr ähnlich ist, mit minimalen zusätzlichen Schritten oder Spezialausrüstung für den Seilspannvorgang."
+        "description": "Installateure profitieren von einem Prozess, der bestehenden Baseplate-Installationen sehr ähnlich ist, mit minimalem zusätzlichem Schulungsaufwand. Der Seilspannvorgang erfolgt mit einer Hydraulikpresse, die von Rosehill Rail erhältlich ist."
       },
       "benefit5": {
         "title": "Kreislaufwirtschaft",
@@ -1337,7 +1353,7 @@
       },
       "benefit6": {
         "title": "Langfristige Dimensionsstabilität",
-        "description": "Entscheidend für Standorte, an denen die Aufrechterhaltung einer präzisen Ausrichtung unerlässlich ist. Das Nachspannsystem stellt sicher, dass der Übergang seine Geometrie unter wiederholter dynamischer Belastung beibehält."
+        "description": "Entscheidend für Standorte, an denen die Aufrechterhaltung einer präzisen Ausrichtung unerlässlich ist. Das Nachspannsystem stellt sicher, dass der Übergang seine Geometrie unter wiederholter dynamischer Belastung beibehält. Da die Platten unter Kompression gehalten werden, sind sie auch weniger anfällig für Fugenbildung durch thermische Ausdehnung und Kontraktion bei wechselnden Wetterbedingungen."
       }
     },
     "gallery": {

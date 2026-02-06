@@ -17,6 +17,7 @@
     "safetySolutions": "Safety Solutions",
     "edgeSolutions": "Edge Solutions",
     "connectSystem": "CONNECT System",
+    "strandLockSystem": "StrandLock System",
     "linkSystem": "LINK System",
     "interlockingRRAP": "Interlocking RRAP",
     "baseplateSystem": "Baseplate System",
@@ -48,6 +49,10 @@
       },
       "connectSystem": {
         "name": "CONNECT System",
+        "grade": "High Use"
+      },
+      "strandLockSystem": {
+        "name": "StrandLock System",
         "grade": "High Use"
       },
       "linkSystem": {
@@ -165,6 +170,17 @@
         "allGauges": "All gauges"
       },
       "badge": "Heavy Traffic"
+    },
+    "strandLockSystem": {
+      "name": "StrandLock System",
+      "description": "Post-tensioned level crossing system with steel strand reinforcement for locked-in dimensional stability on the most demanding rail crossings.",
+      "tags": {
+        "strandReinforced": "Steel strand reinforced",
+        "postTensioned": "Post-tensioned",
+        "dimensionalStability": "Dimensional stability",
+        "allGauges": "All gauges"
+      },
+      "badge": "Post-Tensioned"
     },
     "linkSystem": {
       "name": "LINK System",
@@ -383,7 +399,7 @@
     "complianceText": "All components designed by Rosehill Rail with exclusive design rights. Quality assured to ISO 9001:2015 standard with annual NQA audits.",
     "accreditations": "Accreditations:",
     "accreditationsList": "ISO 9001:2015 • Network Rail Approved • Full Traceability",
-    "copyright": "© 2025 Rosehill Rail. A Division of Rosehill Group. All rights reserved.",
+    "copyright": "© 2026 Rosehill Rail. A Division of Rosehill Group. All rights reserved.",
     "links": {
       "walkwayPanels": "Walkway Panels",
       "edgeBeams": "Edge Beams",
@@ -1078,7 +1094,7 @@
       },
       "allSystems": {
         "title": "All Crossing Systems",
-        "desc": "Compatible with CONNECT, LINK, TITAN, Baseplate, and Interlocking RRAP systems for comprehensive crossing support."
+        "desc": "Compatible with StrandLock, LINK, TITAN, Baseplate, and Interlocking RRAP systems for comprehensive crossing support."
       }
     },
     "cta": {
@@ -1298,7 +1314,7 @@
       "title": "StrandLock<br><span>Level Crossing System</span>",
       "subtitle": "Locked-in stability for the most demanding rail crossings. Post-tensioned steel strand technology delivers exceptional structural integrity.",
       "primaryCta": "Get in Touch",
-      "secondaryCta": "Explore Technology"
+      "secondaryCta": "How It Works"
     },
     "technology": {
       "title": "What is <span>StrandLock?</span>",
@@ -1329,7 +1345,7 @@
       },
       "benefit4": {
         "title": "Familiar Installation Process",
-        "description": "Installers benefit from a process that closely mirrors existing Baseplate installations, with minimal additional steps or specialist equipment required for the strand tensioning operation."
+        "description": "Installers benefit from a process that closely mirrors existing Baseplate installations, with minimal additional training required. The strand tensioning operation uses a hydraulic jack, available from Rosehill Rail."
       },
       "benefit5": {
         "title": "Circular Economy",
@@ -1337,7 +1353,7 @@
       },
       "benefit6": {
         "title": "Long-Term Dimensional Stability",
-        "description": "Critical for locations where maintaining precise alignment is essential. The post-tensioning system ensures the crossing maintains its geometry under repeated dynamic loading."
+        "description": "Critical for locations where maintaining precise alignment is essential. The post-tensioning system ensures the crossing maintains its geometry under repeated dynamic loading. Because the panels are held under compression, they are also less susceptible to gapping caused by thermal expansion and contraction in varying weather conditions."
       }
     },
     "gallery": {

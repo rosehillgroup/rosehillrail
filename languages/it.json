@@ -17,6 +17,7 @@
     "safetySolutions": "Soluzioni di Sicurezza",
     "edgeSolutions": "Soluzioni per Bordi",
     "connectSystem": "Sistema CONNECT",
+    "strandLockSystem": "Sistema StrandLock",
     "linkSystem": "Sistema LINK",
     "interlockingRRAP": "RRAP ad Incastro",
     "baseplateSystem": "Sistema a Piastra di Base",
@@ -48,6 +49,10 @@
       },
       "connectSystem": {
         "name": "Sistema CONNECT",
+        "grade": "Alto Utilizzo"
+      },
+      "strandLockSystem": {
+        "name": "Sistema StrandLock",
         "grade": "Alto Utilizzo"
       },
       "linkSystem": {
@@ -165,6 +170,17 @@
         "allGauges": "Tutti gli scartamenti"
       },
       "badge": "Traffico Pesante"
+    },
+    "strandLockSystem": {
+      "name": "Sistema StrandLock",
+      "description": "Sistema per passaggi a livello post-teso con rinforzo in trefoli d'acciaio per una stabilità dimensionale bloccata sugli attraversamenti ferroviari più esigenti.",
+      "tags": {
+        "strandReinforced": "Rinforzo in trefoli d'acciaio",
+        "postTensioned": "Post-teso",
+        "dimensionalStability": "Stabilità dimensionale",
+        "allGauges": "Tutti gli scartamenti"
+      },
+      "badge": "Post-Teso"
     },
     "linkSystem": {
       "name": "Sistema LINK",
@@ -383,7 +399,7 @@
     "complianceText": "Tutti i componenti progettati da Rosehill Rail con diritti di design esclusivi. Qualità assicurata secondo lo standard ISO 9001:2015 con audit NQA annuali.",
     "accreditations": "Accreditamenti:",
     "accreditationsList": "ISO 9001:2015 • Approvato Network Rail • Tracciabilità Completa",
-    "copyright": "© 2025 Rosehill Rail. Una Divisione del Gruppo Rosehill. Tutti i diritti riservati.",
+    "copyright": "© 2026 Rosehill Rail. Una Divisione del Gruppo Rosehill. Tutti i diritti riservati.",
     "links": {
       "walkwayPanels": "Pannelli per Camminamenti",
       "edgeBeams": "Travi di Bordo",
@@ -1078,7 +1094,7 @@
       },
       "allSystems": {
         "title": "Tutti i Sistemi di Attraversamento",
-        "desc": "Compatibile con sistemi CONNECT, LINK, TITAN, Piastra di Base e RRAP ad Incastro per supporto di attraversamento completo."
+        "desc": "Compatibile con sistemi StrandLock, LINK, TITAN, Piastra di Base e RRAP ad Incastro per supporto di attraversamento completo."
       }
     },
     "cta": {
@@ -1298,7 +1314,7 @@
       "title": "StrandLock<br><span>Sistema di Attraversamento Ferroviario</span>",
       "subtitle": "Stabilità bloccata per gli attraversamenti ferroviari più esigenti. La tecnologia del trefolo d'acciaio post-teso offre un'eccezionale integrità strutturale.",
       "primaryCta": "Contattaci",
-      "secondaryCta": "Esplora la Tecnologia"
+      "secondaryCta": "Come funziona"
     },
     "technology": {
       "title": "Cos'è <span>StrandLock?</span>",
@@ -1329,7 +1345,7 @@
       },
       "benefit4": {
         "title": "Processo di Installazione Familiare",
-        "description": "Gli installatori beneficiano di un processo che rispecchia da vicino le installazioni Baseplate esistenti, con passaggi aggiuntivi minimi o attrezzature specializzate richieste per l'operazione di tensionamento del trefolo."
+        "description": "Gli installatori beneficiano di un processo che rispecchia da vicino le installazioni Baseplate esistenti, con una formazione aggiuntiva minima richiesta. L'operazione di tensionamento del trefolo utilizza un martinetto idraulico, disponibile presso Rosehill Rail."
       },
       "benefit5": {
         "title": "Economia Circolare",
@@ -1337,7 +1353,7 @@
       },
       "benefit6": {
         "title": "Stabilità Dimensionale a Lungo Termine",
-        "description": "Critico per le posizioni dove il mantenimento di un allineamento preciso è essenziale. Il sistema post-teso garantisce che l'attraversamento mantenga la sua geometria sotto carichi dinamici ripetuti."
+        "description": "Critico per le posizioni dove il mantenimento di un allineamento preciso è essenziale. Il sistema post-teso garantisce che l'attraversamento mantenga la sua geometria sotto carichi dinamici ripetuti. Poiché i pannelli sono mantenuti sotto compressione, sono anche meno soggetti a fessurazioni causate dalla dilatazione e contrazione termica in condizioni meteorologiche variabili."
       }
     },
     "gallery": {
