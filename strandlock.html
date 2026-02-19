@@ -524,70 +524,6 @@
             margin-bottom: 25px;
         }
 
-        .tech-steps-section {
-            background: #1a365d;
-            padding: 0 max(20px, calc((100vw - 1400px) / 2 + 20px)) 60px;
-        }
-
-        .tech-process-list {
-            list-style: none;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-        }
-
-        .tech-process-list li {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 16px;
-            padding: 30px 20px;
-            background: rgba(255, 255, 255, 0.06);
-            border-radius: 12px;
-            border-top: 3px solid #ff6b35;
-            transition: all 0.3s ease;
-        }
-
-        .tech-process-list li:hover {
-            background: rgba(255, 255, 255, 0.12);
-            transform: translateY(-4px);
-        }
-
-        .process-number {
-            flex-shrink: 0;
-            width: 44px;
-            height: 44px;
-            background: rgba(255, 107, 53, 0.15);
-            color: #ff6b35;
-            border: 2px solid rgba(255, 107, 53, 0.4);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 1.1rem;
-        }
-
-        .process-text {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .process-text strong {
-            font-size: 1.05rem;
-            font-weight: 600;
-            color: white;
-        }
-
-        .process-text span {
-            font-size: 0.95rem;
-            color: rgba(255, 255, 255, 0.75);
-            line-height: 1.5;
-        }
-
         .tech-visual {
             background: #1a365d;
             position: relative;
@@ -600,6 +536,92 @@
             height: 100%;
             object-fit: cover;
             border-radius: 20px 0 0 20px;
+        }
+
+        /* Installation Steps (image-based 3x2 grid) */
+        .install-steps-section {
+            background: #1a365d;
+            padding: 0 max(20px, calc((100vw - 1400px) / 2 + 20px)) 60px;
+        }
+
+        .install-steps-heading {
+            font-family: 'Overpass', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #ff6b35;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            margin-bottom: 24px;
+        }
+
+        .install-steps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .install-step-card {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .install-step-image-wrap {
+            position: relative;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .install-step-image-wrap picture {
+            display: contents;
+        }
+
+        .install-step-image-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .install-step-card:hover .install-step-image-wrap img {
+            transform: scale(1.05);
+        }
+
+        .install-step-number {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 36px;
+            height: 36px;
+            background: rgba(26, 54, 93, 0.9);
+            color: white;
+            font-family: 'Overpass', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            border-radius: 8px 0 8px 0;
+        }
+
+        .install-step-text {
+            padding: 12px 0 0;
+        }
+
+        .install-step-title {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 4px;
+        }
+
+        .install-step-desc {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.45;
         }
 
         /* ============================================
@@ -1114,11 +1136,11 @@
                 min-height: 300px;
             }
 
-            .tech-steps-section {
+            .install-steps-section {
                 padding: 0 20px 40px;
             }
 
-            .tech-process-list {
+            .install-steps-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
 
@@ -1213,7 +1235,7 @@
                 min-height: 300px;
             }
 
-            .tech-process-list {
+            .install-steps-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -1518,37 +1540,101 @@
     </section>
 
     <!-- Installation Steps -->
-    <section class="tech-steps-section">
-        <ol class="tech-process-list">
-            <li>
-                <span class="process-number">1</span>
-                <div class="process-text">
-                    <strong data-i18n="strandlockPage.technology.step1Title">Install Panels</strong>
-                    <span data-i18n="strandlockPage.technology.step1">StrandLock panels are installed using standard Rosehill Rail methods</span>
+    <section class="install-steps-section">
+        <h2 class="install-steps-heading" data-i18n="strandlockPage.technology.stepsHeading">Installation Sequence</h2>
+        <div class="install-steps-grid">
+
+            <div class="install-step-card">
+                <div class="install-step-image-wrap">
+                    <picture>
+                        <source srcset="gallery-1.avif" type="image/avif">
+                        <source srcset="gallery-1.webp" type="image/webp">
+                        <img src="gallery-1.jpg" alt="Crane lowering StrandLock panel into position on the track" width="800" height="534" loading="lazy">
+                    </picture>
+                    <div class="install-step-number">1</div>
                 </div>
-            </li>
-            <li>
-                <span class="process-number">2</span>
-                <div class="process-text">
-                    <strong data-i18n="strandlockPage.technology.step2Title">Thread Strand</strong>
-                    <span data-i18n="strandlockPage.technology.step2">Steel strand is threaded through the integrated panel channels</span>
+                <div class="install-step-text">
+                    <div class="install-step-title" data-i18n="strandlockPage.technology.step1Title">Position Panels</div>
+                    <div class="install-step-desc" data-i18n="strandlockPage.technology.step1">Lift and place panels using standard Rosehill installation methods.</div>
                 </div>
-            </li>
-            <li>
-                <span class="process-number">3</span>
-                <div class="process-text">
-                    <strong data-i18n="strandlockPage.technology.step3Title">Tension &amp; Lock</strong>
-                    <span data-i18n="strandlockPage.technology.step3">Anchors installed and panels tightened to desired crossing length</span>
+            </div>
+
+            <div class="install-step-card">
+                <div class="install-step-image-wrap">
+                    <picture>
+                        <source srcset="gallery-2.avif" type="image/avif">
+                        <source srcset="gallery-2.webp" type="image/webp">
+                        <img src="gallery-2.jpg" alt="Worker feeding steel strand through integrated panel channels" width="800" height="534" loading="lazy">
+                    </picture>
+                    <div class="install-step-number">2</div>
                 </div>
-            </li>
-            <li>
-                <span class="process-number">4</span>
-                <div class="process-text">
-                    <strong data-i18n="strandlockPage.technology.step4Title">Seal &amp; Protect</strong>
-                    <span data-i18n="strandlockPage.technology.step4">Strand sealed and protected to prevent water ingress</span>
+                <div class="install-step-text">
+                    <div class="install-step-title" data-i18n="strandlockPage.technology.step2Title">Thread Strand</div>
+                    <div class="install-step-desc" data-i18n="strandlockPage.technology.step2">Feed the greased and sheathed steel strand through integrated panel channels.</div>
                 </div>
-            </li>
-        </ol>
+            </div>
+
+            <div class="install-step-card">
+                <div class="install-step-image-wrap">
+                    <picture>
+                        <source srcset="gallery-3.avif" type="image/avif">
+                        <source srcset="gallery-3.webp" type="image/webp">
+                        <img src="gallery-3.jpg" alt="Installing end anchorage components on the strand" width="800" height="534" loading="lazy">
+                    </picture>
+                    <div class="install-step-number">3</div>
+                </div>
+                <div class="install-step-text">
+                    <div class="install-step-title" data-i18n="strandlockPage.technology.step3Title">Fit Anchors</div>
+                    <div class="install-step-desc" data-i18n="strandlockPage.technology.step3">Install the end anchorage components and prepare the strand for tensioning.</div>
+                </div>
+            </div>
+
+            <div class="install-step-card">
+                <div class="install-step-image-wrap">
+                    <picture>
+                        <source srcset="gallery-5.avif" type="image/avif">
+                        <source srcset="gallery-5.webp" type="image/webp">
+                        <img src="gallery-5.jpg" alt="Connecting the hydraulic jack to the strand anchor point" width="800" height="534" loading="lazy">
+                    </picture>
+                    <div class="install-step-number">4</div>
+                </div>
+                <div class="install-step-text">
+                    <div class="install-step-title" data-i18n="strandlockPage.technology.step4Title">Connect Jack</div>
+                    <div class="install-step-desc" data-i18n="strandlockPage.technology.step4">Connect the hydraulic jack and coupler to the strand end at the anchor point.</div>
+                </div>
+            </div>
+
+            <div class="install-step-card">
+                <div class="install-step-image-wrap">
+                    <picture>
+                        <source srcset="gallery-6.avif" type="image/avif">
+                        <source srcset="gallery-6.webp" type="image/webp">
+                        <img src="gallery-6.jpg" alt="Tensioning the strand and checking compression and alignment" width="800" height="534" loading="lazy">
+                    </picture>
+                    <div class="install-step-number">5</div>
+                </div>
+                <div class="install-step-text">
+                    <div class="install-step-title" data-i18n="strandlockPage.technology.step5Title">Tension &amp; Check</div>
+                    <div class="install-step-desc" data-i18n="strandlockPage.technology.step5">Tension the strand to specification, then confirm compression and alignment.</div>
+                </div>
+            </div>
+
+            <div class="install-step-card">
+                <div class="install-step-image-wrap">
+                    <picture>
+                        <source srcset="gallery-7.avif" type="image/avif">
+                        <source srcset="gallery-7.webp" type="image/webp">
+                        <img src="gallery-7.jpg" alt="Sealing access points to protect the completed assembly" width="800" height="534" loading="lazy">
+                    </picture>
+                    <div class="install-step-number">6</div>
+                </div>
+                <div class="install-step-text">
+                    <div class="install-step-title" data-i18n="strandlockPage.technology.step6Title">Seal &amp; Protect</div>
+                    <div class="install-step-desc" data-i18n="strandlockPage.technology.step6">Cap and seal the access points to prevent water ingress and protect the assembly.</div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <!-- Section 3: Asymmetric Offset Benefits Grid -->
@@ -1596,51 +1682,51 @@
         <div class="masonry-grid">
             <div class="gallery-item">
                 <picture>
-                    <source srcset="gallery-1.avif" type="image/avif">
-                    <source srcset="gallery-1.webp" type="image/webp">
-                    <img src="gallery-1.jpg" alt="StrandLock panel being positioned at Paris rail depot" width="800" height="534" loading="lazy">
+                    <source srcset="czech-1.avif" type="image/avif">
+                    <source srcset="czech-1.webp" type="image/webp">
+                    <img src="czech-1.jpg" alt="Installation crew positioning StrandLock panels on the track" width="800" height="600" loading="lazy">
                 </picture>
             </div>
             <div class="gallery-item">
                 <picture>
-                    <source srcset="gallery-2.avif" type="image/avif">
-                    <source srcset="gallery-2.webp" type="image/webp">
-                    <img src="gallery-2.jpg" alt="StrandLock installation work at Paris crossing" width="800" height="534" loading="lazy">
+                    <source srcset="czech-3.avif" type="image/avif">
+                    <source srcset="czech-3.webp" type="image/webp">
+                    <img src="czech-3.jpg" alt="Team working together during StrandLock panel installation" width="800" height="600" loading="lazy">
                 </picture>
             </div>
             <div class="gallery-item">
                 <picture>
-                    <source srcset="gallery-3.avif" type="image/avif">
-                    <source srcset="gallery-3.webp" type="image/webp">
-                    <img src="gallery-3.jpg" alt="StrandLock strand threading and tensioning process" width="800" height="534" loading="lazy">
+                    <source srcset="czech-6.avif" type="image/avif">
+                    <source srcset="czech-6.webp" type="image/webp">
+                    <img src="czech-6.jpg" alt="Worker inspecting completed StrandLock crossing surface with tools and signage visible" width="800" height="600" loading="lazy">
                 </picture>
             </div>
             <div class="gallery-item">
                 <picture>
-                    <source srcset="gallery-4.avif" type="image/avif">
-                    <source srcset="gallery-4.webp" type="image/webp">
-                    <img src="gallery-4.jpg" alt="StrandLock panel connection detail" width="800" height="534" loading="lazy">
+                    <source srcset="czech-2.avif" type="image/avif">
+                    <source srcset="czech-2.webp" type="image/webp">
+                    <img src="czech-2.jpg" alt="Workers walking along the completed StrandLock crossing" width="800" height="600" loading="lazy">
                 </picture>
             </div>
             <div class="gallery-item">
                 <picture>
-                    <source srcset="gallery-5.avif" type="image/avif">
-                    <source srcset="gallery-5.webp" type="image/webp">
-                    <img src="gallery-5.jpg" alt="StrandLock hydraulic equipment in use" width="800" height="534" loading="lazy">
+                    <source srcset="czech-5.avif" type="image/avif">
+                    <source srcset="czech-5.webp" type="image/webp">
+                    <img src="czech-5.jpg" alt="Excavator lifting a StrandLock panel into position on the rail" width="800" height="600" loading="lazy">
                 </picture>
             </div>
             <div class="gallery-item">
                 <picture>
-                    <source srcset="gallery-6.avif" type="image/avif">
-                    <source srcset="gallery-6.webp" type="image/webp">
-                    <img src="gallery-6.jpg" alt="StrandLock installation crew at work" width="800" height="534" loading="lazy">
+                    <source srcset="czech-7.avif" type="image/avif">
+                    <source srcset="czech-7.webp" type="image/webp">
+                    <img src="czech-7.jpg" alt="Completed StrandLock crossing viewed along the track with autumn trees" width="800" height="600" loading="lazy">
                 </picture>
             </div>
             <div class="gallery-item">
                 <picture>
-                    <source srcset="gallery-7.avif" type="image/avif">
-                    <source srcset="gallery-7.webp" type="image/webp">
-                    <img src="gallery-7.jpg" alt="Completed StrandLock crossing detail" width="800" height="534" loading="lazy">
+                    <source srcset="czech-8.avif" type="image/avif">
+                    <source srcset="czech-8.webp" type="image/webp">
+                    <img src="czech-8.jpg" alt="Completed StrandLock crossing with Rosehill Rail branding and installation crew" width="800" height="600" loading="lazy">
                 </picture>
             </div>
         </div>
