@@ -38,3 +38,12 @@ build/
 
 # Netlify
 .netlify/
+
+# Internal documents — technical data sheets, installation guides, quotes
+Technical Data Sheets/
+LINK System/
+TITAN Images/
+StrandLock/
+Accessories Images/
+Case Studies/
+Quotes/

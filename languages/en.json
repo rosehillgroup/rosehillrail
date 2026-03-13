@@ -289,7 +289,7 @@
     "innovationBreakthrough": {
       "year": "1990s",
       "title": "Innovation Breakthrough",
-      "description": "Our team successfully developed a cold cure bonding process, reducing curing time to just 1.5 hours - a massive improvement over traditional vulcanisation methods that required extended high-temperature heating."
+      "description": "Our team successfully developed a cold cure bonding process using pre-vulcanised recycled tyre rubber crumb bonded with polyurethane, reducing curing time to just 1.5 hours — a massive improvement over traditional methods that required extended high-temperature heating of raw rubber."
     },
     "independenceGrowth": {
       "year": "1999",
@@ -1354,7 +1354,7 @@
       },
       "benefit5": {
         "title": "Circular Economy",
-        "description": "With no moulded metalwork within the panels, StrandLock crossings can be fully granulated at end of life — supporting a circular economy and reducing waste to landfill."
+        "description": "Manufactured from recycled tyre rubber with no moulded metalwork within the panels, StrandLock crossings can be fully granulated at end of life — supporting a circular economy and reducing waste to landfill."
       },
       "benefit6": {
         "title": "Long-Term Dimensional Stability",
@@ -1370,13 +1370,13 @@
       "property": "Property",
       "specification": "Specification",
       "panelMaterial": "Panel Material",
-      "panelMaterialValue": "Moulded Polymer Composite",
+      "panelMaterialValue": "Recycled SBR Rubber Composite",
       "reinforcement": "Reinforcement",
       "reinforcementValue": "Post-Tensioned Steel Strand",
       "strandType": "Strand Type",
       "strandTypeValue": "Greased & Sheathed for Corrosion Protection",
       "tensioning": "Tensioning Method",
-      "tensioningValue": "Hydraulic Jack",
+      "tensioningValue": "Hydraulic Jack (CCL System)",
       "compatibility": "System Compatibility",
       "compatibilityValue": "All Rosehill Gauge Panels, Field Panels & Edge Beams",
       "applications": "Recommended Applications",

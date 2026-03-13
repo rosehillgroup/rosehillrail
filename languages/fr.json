@@ -289,7 +289,7 @@
     "innovationBreakthrough": {
       "year": "Années 1990",
       "title": "Percée Technologique",
-      "description": "Notre équipe a développé avec succès un processus de durcissement à froid, réduisant le temps de durcissement à seulement 1,5 heure - une amélioration majeure par rapport aux méthodes de vulcanisation traditionnelles nécessitant un chauffage prolongé à haute température."
+      "description": "Notre équipe a développé avec succès un processus de collage à froid utilisant des granulés de pneus recyclés pré-vulcanisés liés au polyuréthane, réduisant le temps de durcissement à seulement 1,5 heure — une amélioration majeure par rapport aux méthodes traditionnelles nécessitant un chauffage prolongé à haute température du caoutchouc brut."
     },
     "independenceGrowth": {
       "year": "1999",
@@ -1354,7 +1354,7 @@
       },
       "benefit5": {
         "title": "Économie Circulaire",
-        "description": "Sans pièces métalliques moulées dans les panneaux, les passages StrandLock peuvent être entièrement granulés en fin de vie — soutenant une économie circulaire et réduisant les déchets en décharge."
+        "description": "Fabriqués à partir de caoutchouc de pneus recyclé, sans pièces métalliques moulées dans les panneaux, les passages StrandLock peuvent être entièrement granulés en fin de vie — soutenant une économie circulaire et réduisant les déchets en décharge."
       },
       "benefit6": {
         "title": "Stabilité Dimensionnelle à Long Terme",
@@ -1370,13 +1370,13 @@
       "property": "Propriété",
       "specification": "Spécification",
       "panelMaterial": "Matériau du Panneau",
-      "panelMaterialValue": "Composite Polymère Moulé",
+      "panelMaterialValue": "Composite de Caoutchouc SBR Recyclé",
       "reinforcement": "Renforcement",
       "reinforcementValue": "Câble d'Acier Post-Tendu",
       "strandType": "Type de Câble",
       "strandTypeValue": "Graissé et Gainé pour Protection Contre la Corrosion",
       "tensioning": "Méthode de Tension",
-      "tensioningValue": "Vérin Hydraulique",
+      "tensioningValue": "Vérin Hydraulique (Système CCL)",
       "compatibility": "Compatibilité Système",
       "compatibilityValue": "Tous les Panneaux de Voie, Panneaux de Champ et Poutres de Rive Rosehill",
       "applications": "Applications Recommandées",

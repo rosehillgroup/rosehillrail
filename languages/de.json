@@ -289,7 +289,7 @@
     "innovationBreakthrough": {
       "year": "1990er",
       "title": "Innovationsdurchbruch",
-      "description": "Unser Team entwickelte erfolgreich einen Kalthärtungsprozess, der die Aushärtezeit auf nur 1,5 Stunden reduzierte – eine massive Verbesserung gegenüber traditionellen Vulkanisierungsmethoden, die eine langwierige Hochtemperaturerhitzung erforderten."
+      "description": "Unser Team entwickelte erfolgreich ein Kalthärtungsverfahren unter Verwendung von vorvulkanisiertem recyceltem Reifengummigranulat, gebunden mit Polyurethan, das die Aushärtezeit auf nur 1,5 Stunden reduzierte — eine massive Verbesserung gegenüber traditionellen Methoden, die eine langwierige Hochtemperaturerhitzung von Rohgummi erforderten."
     },
     "independenceGrowth": {
       "year": "1999",
@@ -1354,7 +1354,7 @@
       },
       "benefit5": {
         "title": "Kreislaufwirtschaft",
-        "description": "Ohne eingeformte Metallteile in den Platten können StrandLock-Übergänge am Ende ihrer Lebensdauer vollständig granuliert werden — dies unterstützt eine Kreislaufwirtschaft und reduziert Deponieabfälle."
+        "description": "Hergestellt aus recyceltem Reifengummi, ohne eingeformte Metallteile in den Platten, können StrandLock-Übergänge am Ende ihrer Lebensdauer vollständig granuliert werden — dies unterstützt eine Kreislaufwirtschaft und reduziert Deponieabfälle."
       },
       "benefit6": {
         "title": "Langfristige Dimensionsstabilität",
@@ -1370,13 +1370,13 @@
       "property": "Eigenschaft",
       "specification": "Spezifikation",
       "panelMaterial": "Plattenmaterial",
-      "panelMaterialValue": "Geformter Polymerverbund",
+      "panelMaterialValue": "Recycelter SBR-Gummi-Verbund",
       "reinforcement": "Verstärkung",
       "reinforcementValue": "Nachgespanntes Stahlseil",
       "strandType": "Seiltyp",
       "strandTypeValue": "Gefettet & Ummantelt für Korrosionsschutz",
       "tensioning": "Spannmethode",
-      "tensioningValue": "Hydraulikpresse",
+      "tensioningValue": "Hydraulikpresse (CCL-System)",
       "compatibility": "Systemkompatibilität",
       "compatibilityValue": "Alle Rosehill Spurplatten, Feldplatten & Randbalken",
       "applications": "Empfohlene Anwendungen",

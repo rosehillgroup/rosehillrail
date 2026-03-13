@@ -8,12 +8,13 @@
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
-    "node-fetch": "^2.6.7"
+    "node-fetch": "^2.6.7",
+    "playwright": "^1.58.2"
   },
   "keywords": [
     "i18n",
     "translation",
-    "deepl", 
+    "deepl",
     "static-site",
     "multilingual",
     "rail"

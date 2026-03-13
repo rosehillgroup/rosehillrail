@@ -289,7 +289,7 @@
     "innovationBreakthrough": {
       "year": "Anni '90",
       "title": "Innovazione Rivoluzionaria",
-      "description": "Il nostro team ha sviluppato con successo un processo di incollaggio a indurimento a freddo, riducendo il tempo di indurimento a sole 1,5 ore - un enorme miglioramento rispetto ai metodi tradizionali di vulcanizzazione che richiedevano riscaldamento prolungato ad alta temperatura."
+      "description": "Il nostro team ha sviluppato con successo un processo di incollaggio a indurimento a freddo utilizzando granulato di pneumatici riciclati pre-vulcanizzati legato con poliuretano, riducendo il tempo di indurimento a sole 1,5 ore — un enorme miglioramento rispetto ai metodi tradizionali che richiedevano riscaldamento prolungato ad alta temperatura della gomma grezza."
     },
     "independenceGrowth": {
       "year": "1999",
@@ -1354,7 +1354,7 @@
       },
       "benefit5": {
         "title": "Economia Circolare",
-        "description": "Senza parti metalliche stampate nei pannelli, gli attraversamenti StrandLock possono essere completamente granulati a fine vita — supportando un'economia circolare e riducendo i rifiuti in discarica."
+        "description": "Prodotti con gomma di pneumatici riciclata, senza parti metalliche stampate nei pannelli, gli attraversamenti StrandLock possono essere completamente granulati a fine vita — supportando un'economia circolare e riducendo i rifiuti in discarica."
       },
       "benefit6": {
         "title": "Stabilità Dimensionale a Lungo Termine",
@@ -1370,13 +1370,13 @@
       "property": "Proprietà",
       "specification": "Specifica",
       "panelMaterial": "Materiale del Pannello",
-      "panelMaterialValue": "Composito Polimerico Stampato",
+      "panelMaterialValue": "Composito di Gomma SBR Riciclata",
       "reinforcement": "Rinforzo",
       "reinforcementValue": "Trefolo d'Acciaio Post-Teso",
       "strandType": "Tipo di Trefolo",
       "strandTypeValue": "Ingrassato e Rivestito per Protezione dalla Corrosione",
       "tensioning": "Metodo di Tensionamento",
-      "tensioningValue": "Martinetto Idraulico",
+      "tensioningValue": "Martinetto Idraulico (Sistema CCL)",
       "compatibility": "Compatibilità Sistema",
       "compatibilityValue": "Tutti i Pannelli di Sagoma, Pannelli di Campo e Travi di Bordo Rosehill",
       "applications": "Applicazioni Raccomandate",
